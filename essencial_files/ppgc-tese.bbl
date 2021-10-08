@@ -5,11 +5,10 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.1 }
 
-\bibitem[Adams and Raubal 2009]{Adams2009Conceptual}
-\abntrefinfo{Adams and Raubal}{ADAMS; RAUBAL}{2009}
-{ADAMS, B.; RAUBAL, M. Conceptual space markup language (csml): Towards the
-  cognitive semantic web. In:  IEEE INTERNATIONAL CONFERENCE ON SEMANTIC
-  COMPUTING, 2009, Berkeley, USA. \textbf{Proceedings...} Washington, USA:
-  IEEE, 2009. p. 253–260.}
+\bibitem[Aydemir 2012]{Aydemir2012Exploiting}
+\abntrefinfo{Aydemir}{AYDEMIR}{2012}
+{AYDEMIR, A.
+\textbf{Exploiting structure in man-made environments}.
+Thesis (PhD) --- KTH Royal Institute of Technology, 2012.}
 
 \end{thebibliography}

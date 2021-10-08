@@ -1,10 +1,8 @@
+\babel@toc {english}{}
 \babel@toc {brazilian}{}
 \babel@toc {english}{}
 \babel@toc {brazilian}{}
-\contentsline {chapter}{1~Introdu\IeC {\c c}\IeC {\~a}o}{11}{CHAPTER.1}
-\contentsline {section}{\numberline {1.1}Figuras e tabelas}{11}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}Formato de Figuras}{12}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {1.1.2}Classifica\IeC {\c c}\IeC {\~a}o dos etc.}{12}{subsection.1.1.2}
-\contentsline {section}{\numberline {1.2}Sobre as refer\IeC {\^e}ncias bibliogr\IeC {\'a}ficas}{13}{section.1.2}
-\contentsline {chapter}{\xspace {}Refer{\^e}ncias}{14}{schapter.8}
-\contentsline {chapter}{\MakeUppercase {Ap{\^e}ndice} A~--- Resumo expandido}{15}{CHAPTER.A}
+\babel@toc {english}{}
+\contentsline {chapter}{1~Introduction}{11}{CHAPTER.1}
+\contentsline {chapter}{\xspace {}References}{12}{schapter.8}
+\contentsline {chapter}{\MakeUppercase {Appendix} A~--- Resumo expandido}{13}{CHAPTER.A}
