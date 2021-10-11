@@ -1,5 +1,29 @@
 \chapter{Introduction}
-Robotics has been changing its focus from factory floors to everyday living spaces, such as offices, houses, health-care centers, airports, and etc~\cite{Aydemir2012Exploiting}. 
+The first decades of research in Mobile Robotics, from the beginning until 2004, handled the challenges of connecting efficiency and data association. They introduced probabilistic formulations to path planning, exploration, simultaneous localization and mapping (SLAM), and many other areas. Some of the approaches from these areas are still popular nowadays, such as RaoBlackwellised Particle Filters and Extended Kalman Filters. The majority of them were based on ultrasonic or lidar sensors, as they were the most popular and robust sensors at the time. Consequently, the outcome maps were mostly 2D grid ones, in which the cells represented the free, occupied, and unknown regions. 
+
+After building a solid foundation, the research community moved forward, concentrating on improving the properties like observability, convergence, and consistency of the already proposed and the new approaches.
+Using visual sensors as one of the main ways to read the environment is another highlight for this period (2004-2015), given the considerable improvement in such sensors regarding the data quality and camera's size and price. In fact, building 2D and 3D maps from the environment with a visual sensor resulted in a new term, Visual SLAM. 
+
+Simultaneously to algorithmic advances, mobile robotics shifted its focus from factory floors and assembly lines to everyday living spaces. Mobile robotics is increasingly demanded in our daily lives, whether with simple vacuum cleaners or complex autonomous cars. However, the progress on these fronts (software and hardware) is not enough for the robots to deal with more high-level tasks, such as interacting with the objects within the environment. 
+
+Despite the robustness of the robotics algorithms, the researchers realized the limitations of purely geometric maps and that the robot's perception should be improved. For example, a vacuum cleaner robot a few years ago would be asked to clean all the free spaces within the environment and avoid obstacles. In contrast, now it has to clean the kitchen on Mondays and the living room on Wednesdays. The difference between the two versions of robots in this example is the capability of going beyond basic geometry representations to obtain a high-level understanding of the environment. 
+
+The association of semantic concepts (or information) to geometric entities in the map is called semantic mapping, one of the newest topics the researchers have explored. It enhances the robot's autonomy and robustness in many ways, besides facilitating some high-level tasks.
+Fig.~\ref{} is an image from Zoox's autonomous car, and it illustrates the advantage of using semantic information in robotics tasks. With the geometric perception, the car would probably map the scene as four obstacles in its front, and two are closer to it than the other two. Differently, with a semantic perception, the car would understand that there are people within its field of view. Most importantly, it would estimate that one of them is distracted using his phone, and another is holding a stop sign. The semantic information here plays an important role, combining the information of a person with a phone, which means it is very likely that this person is distracted, and hence, the car should drive itself even more carefully. 
+
+ 
+
+
+The first years of research in the field of Mobile Robotics saw the introduction of many probabilistic formulations for SLAM, path planning,  
+-At the beginning, Robotics was interested in estimating the obstacle's positions and the free space in the environment (Robotics has started with robots operating in assembly lines in factories, and now it is shifting to everyday living spaces)
+
+
+
+-However, this field has evolved and expanded the varieties of places the robots operate
+-By operating in more different environment and developing many tasks, researchers started including many sensors to the robots in order to make it more capable of acquiring data
+-However, that is not necessary if we can process the sensor readings and estimate more information besides the raw data
+
+Robotics has been changing its focus from factory floors to everyday living spaces, such as offices, houses, hospitals, airports, and etc~\cite{Aydemir2012Exploiting}. 
 
 %\begin{itemize}
 %    \item \emph{cite}: Unicórnios são verdes \cite{Adams2009Conceptual};

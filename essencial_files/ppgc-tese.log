@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.7)  8 OCT 2021 16:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.7)  11 OCT 2021 01:39
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -880,46 +880,51 @@ Now handling font encoding PU ...
    defining Unicode char U+2026 (decimal 8230)
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
-)) (./ppgc-tese.aux)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+\c@subfigure=\count269
+\c@subtable=\count270
+)
+(./ppgc-tese.aux)
 \openout1 = `ppgc-tese.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 116.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 117.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 116.
+(lastpage)             ! on input line 117.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count269
+\scratchcounter=\count271
 \scratchdimen=\dimen165
 \scratchbox=\box43
-\nofMPsegments=\count270
-\nofMParguments=\count271
+\nofMPsegments=\count272
+\nofMParguments=\count273
 \everyMPshowfont=\toks22
-\MPscratchCnt=\count272
+\MPscratchCnt=\count274
 \MPscratchDim=\dimen166
-\MPnumerator=\count273
-\makeMPintoPDFobject=\count274
+\MPnumerator=\count275
+\makeMPintoPDFobject=\count276
 \everyMPtoPDFconversion=\toks23
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -939,26 +944,29 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 116.
-Package tocstyle Info: prepare \l@part for redefinition on input line 116.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 117.
+Package tocstyle Info: prepare \l@part for redefinition on input line 117.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 116.
-Package tocstyle Info: prepare \l@chapter for redefinition on input line 116.
-Package tocstyle Info: prepare \l@section for redefinition on input line 116.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 117.
+Package tocstyle Info: prepare \l@chapter for redefinition on input line 117.
+Package tocstyle Info: prepare \l@section for redefinition on input line 117.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 116.
+(Font)              <12> on input line 117.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 116.
+(Font)              <8> on input line 117.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 116.
-Package tocstyle Info: prepare \l@subsection for redefinition on input line 116
+(Font)              <6> on input line 117.
+Package tocstyle Info: prepare \l@subsection for redefinition on input line 117
 .
 Package tocstyle Info: prepare \l@subsubsection for redefinition on input line 
-116.
-Package tocstyle Info: prepare \l@table for redefinition on input line 116.
-Package tocstyle Info: prepare \l@figure for redefinition on input line 116.
+117.
+Package tocstyle Info: prepare \l@table for redefinition on input line 117.
+Package tocstyle Info: prepare \l@subtable for redefinition on input line 117.
+Package tocstyle Info: prepare \l@figure for redefinition on input line 117.
+Package tocstyle Info: prepare \l@subfigure for redefinition on input line 117.
+
 \AtBeginShipoutBox=\box44
-Package hyperref Info: Link coloring ON on input line 116.
+Package hyperref Info: Link coloring ON on input line 117.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -966,11 +974,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count275
+\c@section@level=\count277
 )
-LaTeX Info: Redefining \ref on input line 116.
-LaTeX Info: Redefining \pageref on input line 116.
-LaTeX Info: Redefining \nameref on input line 116.
+LaTeX Info: Redefining \ref on input line 117.
+LaTeX Info: Redefining \pageref on input line 117.
+LaTeX Info: Redefining \nameref on input line 117.
 
 (./ppgc-tese.out) (./ppgc-tese.out)
 \@outlinefile=\write3
@@ -1019,19 +1027,19 @@ Package caption Info: End \AtBeginDocument code.
 
 
 ]
-LaTeX Font Info:    Try loading font information for T1+phv on input line 128.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 129.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 128.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 129.
  [3
 
 ] [4
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 142--147
+Underfull \hbox (badness 10000) in paragraph at lines 143--148
 
  []
 
@@ -1039,18 +1047,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 142--147
 
 ]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 156.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 157.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 156.
+(babel)             in language  on input line 157.
 
-Overfull \hbox (2.44447pt too wide) in paragraph at lines 161--162
+Overfull \hbox (2.44447pt too wide) in paragraph at lines 162--163
 \T1/ptm/b/n/12 Palavras-chave: \T1/ptm/m/n/12 Elec-tro-nic for-mat-ting of do-c
 u-ments. Ins-ti-tuto de In-for-má-tica da UFRGS.
  []
 
 [6
 
-] (./ppgc-tese.lof)
+] (./ppgc-tese.lof
+number indent by \l@... (lof, 1):  18.0pt
+text indent by \l@... (lof, 1):  27.60004pt
+number indent by parent (lof, 1):  18.0pt
+text indent calculated (lof, 1): 21.0pt
+number indent calculated (lof, 1): 18.0pt
+text noindent (lof, 1): 21.0pt
+number noindent (lof, 1): 0.0pt
+)
 \tf@lof=\write4
 \openout4 = `ppgc-tese.lof'.
 
@@ -1092,52 +1108,67 @@ number noindent (toc, 0): 0.0pt
 
  (./chapters/01_introduction.tex [10
 
-]) (./ppgc-tese.bbl [11
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-])
+ [11
+
+]
+<figs/zoox_semantic.png, id=107, 1886.04625pt x 963.6pt>
+File: figs/zoox_semantic.png Graphic file (type png)
+<use figs/zoox_semantic.png>
+Package pdftex.def Info: figs/zoox_semantic.png  used on input line 17.
+(pdftex.def)             Requested size: 384.1096pt x 196.24538pt.
+)
+(./ppgc-tese.bbl
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 12
  []
 
-[12
+[12 <./figs/zoox_semantic.png>]) [13
 
 ]
-Overfull \hbox (12.71632pt too wide) in paragraph at lines 221--229
+Overfull \hbox (12.71632pt too wide) in paragraph at lines 222--230
 \T1/ptm/b/n/12 Resolução 02/2021 -- Redação de Teses e Dis-ser-tações em In-glê
 s \T1/ptm/m/n/12 Dis-ser-tações de Mestrado
  []
 
 
 AED: lastpage setting LastPage
-[13
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+\T1/ptm/m/n/10.95 14
+ []
+
+[14
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 231.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 231.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 232.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 232.
  (./ppgc-tese.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 231.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 231.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 232.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 232.
 Package rerunfilecheck Info: File `ppgc-tese.out' has not changed.
 (rerunfilecheck)             Checksum: DA5213A2ACFBBF4102F7443BBBA8070A;1283.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 231.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 232.
  ) 
 Here is how much of TeX's memory you used:
- 21174 strings out of 492982
- 356608 string characters out of 6134896
- 432575 words of memory out of 5000000
- 24505 multiletter control sequences out of 15000+600000
+ 21280 strings out of 492982
+ 358851 string characters out of 6134896
+ 437025 words of memory out of 5000000
+ 24604 multiletter control sequences out of 15000+600000
  564807 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,6n,45p,10365b,499s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,8n,45p,10365b,499s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8
 a.pfb>
-Output written on ppgc-tese.pdf (13 pages, 59238 bytes).
+Output written on ppgc-tese.pdf (14 pages, 2077922 bytes).
 PDF statistics:
- 143 PDF objects out of 1000 (max. 8388607)
- 122 compressed objects within 2 object streams
- 33 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 153 PDF objects out of 1000 (max. 8388607)
+ 129 compressed objects within 2 object streams
+ 35 named destinations out of 1000 (max. 500000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
 
