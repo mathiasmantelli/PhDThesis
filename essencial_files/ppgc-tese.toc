@@ -4,5 +4,5 @@
 \babel@toc {brazilian}{}
 \babel@toc {english}{}
 \contentsline {chapter}{1~Introduction}{11}{CHAPTER.1}
-\contentsline {chapter}{\xspace {}References}{13}{schapter.8}
-\contentsline {chapter}{\MakeUppercase {Appendix} A~--- Resumo expandido}{14}{CHAPTER.A}
+\contentsline {chapter}{\xspace {}References}{15}{schapter.8}
+\contentsline {chapter}{\MakeUppercase {Appendix} A~--- Resumo expandido}{16}{CHAPTER.A}

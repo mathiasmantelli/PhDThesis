@@ -32,7 +32,8 @@
 
 % Necessário para incluir figuras
 \usepackage{graphicx}           % pacote para importar figuras
-
+\usepackage{subcaption}
+\captionsetup{compatibility=false}
 
 \usepackage{times}              % pacote para usar fonte Adobe Times
 % \usepackage{palatino}

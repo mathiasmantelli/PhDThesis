@@ -2,16 +2,39 @@
 The first decades of research in Mobile Robotics, from the beginning until 2004, handled the challenges of connecting efficiency and data association. They introduced probabilistic formulations to path planning, exploration, simultaneous localization and mapping (SLAM), and many other areas. Some of the approaches from these areas are still popular nowadays, such as RaoBlackwellised Particle Filters and Extended Kalman Filters. The majority of them were based on ultrasonic or lidar sensors, as they were the most popular and robust sensors at the time. Consequently, the outcome maps were mostly 2D grid ones, in which the cells represented the free, occupied, and unknown regions. 
 
 After building a solid foundation, the research community moved forward, concentrating on improving the properties like observability, convergence, and consistency of the already proposed and the new approaches.
-Using visual sensors as one of the main ways to read the environment is another highlight for this period (2004-2015), given the considerable improvement in such sensors regarding the data quality and camera's size and price. In fact, building 2D and 3D maps from the environment with a visual sensor resulted in a new term, Visual SLAM. 
+Using visual sensors as one of the main ways to read the environment is another highlight for this period (2004-2015), given the considerable improvement in such sensors regarding the data quality and cameras' size and price. In fact, building 2D and 3D maps from the environment with a visual sensor resulted in a new term, Visual SLAM. 
 
-Simultaneously to algorithmic advances, mobile robotics shifted its focus from factory floors and assembly lines to everyday living spaces. Mobile robotics is increasingly demanded in our daily lives, whether with simple vacuum cleaners or complex autonomous cars. However, the progress on these fronts (software and hardware) is not enough for the robots to deal with more high-level tasks, such as interacting with the objects within the environment. 
+Simultaneously to algorithmic advances, mobile robotics shifted its focus from factory floors and assembly lines to everyday living spaces. Mobile robotics is increasingly demanded in our daily lives, whether with simple vacuum cleaners or complex autonomous cars. However, this demand for robots to perform high-level tasks in different scenarios, such as a service robot interacting with the objects within the environment or a ground robot avoiding mud terrains, revealed the geometric robots' perception weaknesses.
 
-Despite the robustness of the robotics algorithms, the researchers realized the limitations of purely geometric maps and that the robot's perception should be improved. For example, a vacuum cleaner robot a few years ago would be asked to clean all the free spaces within the environment and avoid obstacles. In contrast, now it has to clean the kitchen on Mondays and the living room on Wednesdays. The difference between the two versions of robots in this example is the capability of going beyond basic geometry representations to obtain a high-level understanding of the environment. 
+Despite the progress on the software and hardware fronts, the researchers realized the limitations of purely geometric maps and that the robot's perception should be improved. For example, a vacuum cleaner robot a few years ago would be asked to clean all the free spaces within the environment and avoid obstacles. A 2D grid lidar-based SLAM would be enough for this task, as the robot would map the free space and avoid the obstacles. In contrast, now it has to clean the kitchen on Mondays and the living room on Wednesdays, which brings the question: "what is a kitchen for the robot? Is there a sensor that reads house rooms and informs what each room is?". Hence, the difference between the two versions of robots in this example is the capability of going beyond basic geometry representations to obtain a high-level understanding of the environment. 
 
-The association of semantic concepts (or information) to geometric entities in the map is called semantic mapping, one of the newest topics the researchers have explored. It enhances the robot's autonomy and robustness in many ways, besides facilitating some high-level tasks.
-Fig.~\ref{} is an image from Zoox's autonomous car, and it illustrates the advantage of using semantic information in robotics tasks. With the geometric perception, the car would probably map the scene as four obstacles in its front, and two are closer to it than the other two. Differently, with a semantic perception, the car would understand that there are people within its field of view. Most importantly, it would estimate that one of them is distracted using his phone, and another is holding a stop sign. The semantic information here plays an important role, combining the information of a person with a phone, which means it is very likely that this person is distracted, and hence, the car should drive itself even more carefully. 
+The association of semantic information (or concepts) to geometric entities in the map is called semantic mapping, one of the newest topics the researchers have explored. It enhances the robot's autonomy and robustness in many ways, besides facilitating some high-level tasks.
+Fig.~\ref{fig:zoox_semantic} is an image from Zoox's autonomous car, and it illustrates the advantage of using semantic information in robotics tasks. The car would probably map this scene with its geometric perception as four obstacles in its front, and two are closer than the other two. Differently, with a semantic perception, the car estimates three people and a truck within the scene. Most importantly, it estimates that one person is distracted using his phone, and another is holding a stop sign. Combining the detection of a walking person and a phone allows the car to estimate the semantic information that this person is likely distracted. Hence, the car should drive itself even more carefully. This whole process is natural for human drivers, but the same can not be said about robots. 
 
- 
+
+\begin{figure}    
+    \centering
+    \begin{subfigure}[b]{0.9\columnwidth}
+    \includegraphics[width=\textwidth]{figs/zoox_semantic.png}
+    \end{subfigure}
+    \caption{\small  plane.}
+    \label{fig:zoox_semantic}
+\end{figure}
+
+As semantic information is more like a specific knowledge inferred from the robot's surroundings than a specific type of data from a sensor reading, several questions need to be answered before using it in a robotic task. We see the following as noteworthy challenges: 
+\begin{itemize}
+	\item Deciding on what type of semantic information is possible to infer or estimate from the robot's surroundings that is relevant to the task
+	\item How to perform the inferring or estimate the semantic information
+	\item How to use the semantic information to improve the robot's performance in a given task
+\end{itemize}
+
+The first point is frequently discussed in its geometric version, as semantic information is relatively new in the literature. Briefly, for the context of a given robotic task, what information is not explicitly in the environment but could be inferred or estimated to improve the robot's performance? This demands a deep understanding of the task and the general environment characteristics where the robot operates. An inspiration for answering this point is to consider how humans behave and solve such a task and how we connect and process the environment's information to accomplish the task efficiently. 
+
+Second, depending on the needed semantic information, it may be necessary to use methods based on machine learning to estimate it. For example, training a deep learning model for estimating terrain traversability for an outdoor ground robot may provide a suitable result. However,  besides the training requirement, the solution's quality depends on the training data, and this approach does not scale well. Probabilistic-based estimations appear as a second option, as it does not require a large set of data for training, and accepts a wide range of different models.
+
+The third and last point, the proper use of the inferred semantic information in the robot's system, is crucial for successful task completion. As the robot gains more information from the environment, it is important to keep updating the estimations, and it is even better if the estimations become more robust over time. 
+
+The exploitation of semantic information in robotics is an idea that has recently gained attention from researchers, and thus, most of the challenging problems are still unsolved. A simply way of pushing the limits further and exploring these problems is to study the advantages of semantic information in different areas. We have chosen a task with a high difficulty level that can benefit from semantic information, object search (OS) in indoor and unknown environments, a yet unsolved problem in robotics. 
 
 
 The first years of research in the field of Mobile Robotics saw the introduction of many probabilistic formulations for SLAM, path planning,  
