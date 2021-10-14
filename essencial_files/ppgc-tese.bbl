@@ -5,4 +5,22 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.1 }
 
+\bibitem[Aydemir 2012]{Aydemir2012Exploiting}
+\abntrefinfo{Aydemir}{AYDEMIR}{2012}
+{AYDEMIR, A.
+\textbf{Exploiting structure in man-made environments}.
+Thesis (PhD) --- KTH Royal Institute of Technology, 2012.}
+
+\bibitem[Cesar et al. 2016]{Cesar2016Simultaneous}
+\abntrefinfo{Cesar et al.}{CESAR et al.}{2016}
+{CESAR, C. et al. Simultaneous localization and mapping: Present future and the
+  robust-perception age.
+\textbf{arXiv preprint arXiv: 1606.05830}, 2016.}
+
+\bibitem[Salas-Moreno 2014]{Salas2014Dense}
+\abntrefinfo{Salas-Moreno}{SALAS-MORENO}{2014}
+{SALAS-MORENO, R.~F.
+\textbf{Dense Semantic SLAM.}
+Thesis (PhD) --- Imperial College London, 2014.}
+
 \end{thebibliography}

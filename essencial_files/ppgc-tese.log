@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.7)  13 OCT 2021 01:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.7)  13 OCT 2021 18:28
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1134,7 +1134,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [11
 
 ]
-<figs/zoox_semantic.png, id=117, 1886.04625pt x 963.6pt>
+<figs/zoox_semantic.png, id=130, 1886.04625pt x 963.6pt>
 File: figs/zoox_semantic.png Graphic file (type png)
 <use figs/zoox_semantic.png>
 Package pdftex.def Info: figs/zoox_semantic.png  used on input line 17.
@@ -1159,11 +1159,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 14
  []
 
-[14]
-
-LaTeX Warning: Empty `thebibliography' environment on input line 8.
-
-) [15
+[14]) [15
 
 ]
 Overfull \hbox (12.71632pt too wide) in paragraph at lines 222--230
@@ -1191,10 +1187,10 @@ Package rerunfilecheck Info: File `ppgc-tese.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 232.
  ) 
 Here is how much of TeX's memory you used:
- 21305 strings out of 492982
- 359295 string characters out of 6134896
- 437849 words of memory out of 5000000
- 24626 multiletter control sequences out of 15000+600000
+ 21319 strings out of 492982
+ 359696 string characters out of 6134896
+ 437436 words of memory out of 5000000
+ 24635 multiletter control sequences out of 15000+600000
  564807 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,8n,45p,10365b,499s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1204,10 +1200,10 @@ f-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
 es/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
 
-Output written on ppgc-tese.pdf (16 pages, 2088269 bytes).
+Output written on ppgc-tese.pdf (16 pages, 2093652 bytes).
 PDF statistics:
- 175 PDF objects out of 1000 (max. 8388607)
- 148 compressed objects within 2 object streams
- 38 named destinations out of 1000 (max. 500000)
+ 191 PDF objects out of 1000 (max. 8388607)
+ 164 compressed objects within 2 object streams
+ 43 named destinations out of 1000 (max. 500000)
  102 words of extra memory for PDF output out of 10000 (max. 10000000)
 
