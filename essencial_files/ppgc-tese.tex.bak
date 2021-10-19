@@ -172,11 +172,9 @@ the abstract should not contain more than 500~words.}
 % As abreviações devem estar em ordem alfabética (levando em conta só a abreviação mesmo,
 % não o que significa cada palavra).
 \begin{listofabbrv}{SPMD}
-        \item[ABNT] Associação Brasileira de Normas Técnicas
-        \item[NUMA] Non-Uniform Memory Access
-        \item[SIMD] Single Instruction Multiple Data
-        \item[SMP] Symmetric Multi-Processor
-        \item[SPMD] Single Program Multiple Data
+        \item[OS] Object Search
+        \item[SLAM] Simultaneous Localization and Mapping
+
 \end{listofabbrv}
 
 % idem para a lista de símbolos
@@ -192,6 +190,7 @@ the abstract should not contain more than 500~words.}
 
 % introducao
 \input{chapters/01_introduction}
+\input{chapters/02_theoretical_background}
 
 
 % e aqui vai a parte principal

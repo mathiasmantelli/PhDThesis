@@ -6,5 +6,6 @@
 \contentsline {chapter}{1~Introduction}{11}{CHAPTER.1}
 \contentsline {section}{\numberline {1.1}Outline}{14}{section.1.1}
 \contentsline {section}{\numberline {1.2}Contributions}{14}{section.1.2}
-\contentsline {chapter}{\xspace {}References}{15}{schapter.8}
-\contentsline {chapter}{\MakeUppercase {Appendix} A~--- Resumo expandido}{16}{CHAPTER.A}
+\contentsline {chapter}{2~Theoretical Background}{16}{CHAPTER.2}
+\contentsline {chapter}{\xspace {}References}{17}{schapter.8}
+\contentsline {chapter}{\MakeUppercase {Appendix} A~--- Resumo expandido}{18}{CHAPTER.A}
