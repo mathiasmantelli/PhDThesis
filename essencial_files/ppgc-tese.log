@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.7)  20 OCT 2021 02:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.7)  21 OCT 2021 02:08
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1249,7 +1249,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [15
 
-])
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1257,12 +1257,22 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 16
  []
 
-[16] (./ppgc-tese.bbl [17])
+[16]
+Overfull \hbox (18.1255pt too wide) in paragraph at lines 23--24
+[]\T1/ptm/m/n/12 Many other lo-cal-iza-tion al-go-rithms im-ple-ment Markov lo-
+cal-iza-tion in mo-bile robotics.
+ []
+
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17]
+(./ppgc-tese.bbl
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 18
  []
 
-[18
+[18]) [19
 
 ]
 Overfull \hbox (12.71632pt too wide) in paragraph at lines 225--233
@@ -1272,7 +1282,12 @@ s \T1/ptm/m/n/12 Dis-ser-tações de Mestrado
 
 
 AED: lastpage setting LastPage
-[19
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+\T1/ptm/m/n/10.95 20
+ []
+
+[20
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 235.
@@ -1285,9 +1300,9 @@ Package rerunfilecheck Info: File `ppgc-tese.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 235.
  ) 
 Here is how much of TeX's memory you used:
- 22400 strings out of 492982
- 375266 string characters out of 6134896
- 461561 words of memory out of 5000000
+ 22401 strings out of 492982
+ 375273 string characters out of 6134896
+ 462561 words of memory out of 5000000
  25676 multiletter control sequences out of 15000+600000
  568250 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1302,10 +1317,10 @@ msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/u
 hvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ppgc-tese.pdf (19 pages, 2145670 bytes).
+Output written on ppgc-tese.pdf (20 pages, 2149505 bytes).
 PDF statistics:
- 229 PDF objects out of 1000 (max. 8388607)
- 194 compressed objects within 2 object streams
- 46 named destinations out of 1000 (max. 500000)
+ 233 PDF objects out of 1000 (max. 8388607)
+ 197 compressed objects within 2 object streams
+ 47 named destinations out of 1000 (max. 500000)
  110 words of extra memory for PDF output out of 10000 (max. 10000000)
 
