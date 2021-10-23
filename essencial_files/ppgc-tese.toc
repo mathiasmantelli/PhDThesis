@@ -8,6 +8,6 @@
 \contentsline {section}{\numberline {1.2}Contributions}{13}{section.1.2}
 \contentsline {chapter}{2~Theoretical Background}{15}{CHAPTER.2}
 \contentsline {section}{\numberline {2.1}The Basics of Mobile Robotics}{15}{section.2.1}
-\contentsline {section}{\numberline {2.2}OS problem formulation}{19}{section.2.2}
-\contentsline {chapter}{\xspace {}References}{22}{schapter.7}
-\contentsline {chapter}{\MakeUppercase {Appendix} A~--- Resumo expandido}{23}{CHAPTER.A}
+\contentsline {section}{\numberline {2.2}OS problem formulation}{20}{section.2.2}
+\contentsline {chapter}{\xspace {}References}{23}{schapter.7}
+\contentsline {chapter}{\MakeUppercase {Appendix} A~--- Resumo expandido}{24}{CHAPTER.A}
