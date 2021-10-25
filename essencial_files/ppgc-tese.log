@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.7)  23 OCT 2021 02:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.7)  25 OCT 2021 01:17
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -963,36 +963,32 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_below_intertext_sep=\dimen178
 \l_MT_above_shortintertext_sep=\dimen179
 \l_MT_below_shortintertext_sep=\dimen180
-) (./ppgc-tese.aux
-
-LaTeX Warning: Label `chp02_fig:problems_robotics' multiply defined.
-
-)
+) (./ppgc-tese.aux)
 \openout1 = `ppgc-tese.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 121.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 123.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 121.
+(lastpage)             ! on input line 123.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1025,23 +1021,23 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 121.
-Package tocstyle Info: prepare \l@part for redefinition on input line 121.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 123.
+Package tocstyle Info: prepare \l@part for redefinition on input line 123.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 121.
-Package tocstyle Info: prepare \l@chapter for redefinition on input line 121.
-Package tocstyle Info: prepare \l@section for redefinition on input line 121.
-Package tocstyle Info: prepare \l@subsection for redefinition on input line 121
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 123.
+Package tocstyle Info: prepare \l@chapter for redefinition on input line 123.
+Package tocstyle Info: prepare \l@section for redefinition on input line 123.
+Package tocstyle Info: prepare \l@subsection for redefinition on input line 123
 .
 Package tocstyle Info: prepare \l@subsubsection for redefinition on input line 
-121.
-Package tocstyle Info: prepare \l@table for redefinition on input line 121.
-Package tocstyle Info: prepare \l@subtable for redefinition on input line 121.
-Package tocstyle Info: prepare \l@figure for redefinition on input line 121.
-Package tocstyle Info: prepare \l@subfigure for redefinition on input line 121.
+123.
+Package tocstyle Info: prepare \l@table for redefinition on input line 123.
+Package tocstyle Info: prepare \l@subtable for redefinition on input line 123.
+Package tocstyle Info: prepare \l@figure for redefinition on input line 123.
+Package tocstyle Info: prepare \l@subfigure for redefinition on input line 123.
 
 \AtBeginShipoutBox=\box46
-Package hyperref Info: Link coloring ON on input line 121.
+Package hyperref Info: Link coloring ON on input line 123.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1051,9 +1047,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count290
 )
-LaTeX Info: Redefining \ref on input line 121.
-LaTeX Info: Redefining \pageref on input line 121.
-LaTeX Info: Redefining \nameref on input line 121.
+LaTeX Info: Redefining \ref on input line 123.
+LaTeX Info: Redefining \pageref on input line 123.
+LaTeX Info: Redefining \nameref on input line 123.
 
 (./ppgc-tese.out) (./ppgc-tese.out)
 \@outlinefile=\write3
@@ -1102,17 +1098,17 @@ Package caption Info: End \AtBeginDocument code.
 
 
 ]
-LaTeX Font Info:    Try loading font information for T1+phv on input line 133.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 135.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 133.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 135.
  [3
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 147--152
+Underfull \hbox (badness 10000) in paragraph at lines 149--154
 
  []
 
@@ -1120,11 +1116,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 147--152
 
 ]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 161.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 163.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 161.
+(babel)             in language  on input line 163.
 
-Overfull \hbox (2.44447pt too wide) in paragraph at lines 166--167
+Overfull \hbox (2.44447pt too wide) in paragraph at lines 168--169
 \T1/ptm/b/n/12 Palavras-chave: \T1/ptm/m/n/12 Elec-tro-nic for-mat-ting of do-c
 u-ments. Ins-ti-tuto de In-for-má-tica da UFRGS.
  []
@@ -1270,36 +1266,42 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [14]
+Overfull \hbox (1.42294pt too wide) in paragraph at lines 11--12
+\T1/ptm/m/n/12 of robot's poses from time step $\OT1/cmr/m/n/12 0$ \T1/ptm/m/n/
+12 to time step $\OML/cmm/m/it/12 t$ \T1/ptm/m/n/12 is de-fined as $[]$. 
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [15
 
 ]
-<figs/caption_example.pdf, id=173, 589.25142pt x 102.93457pt>
+<figs/caption_example.pdf, id=176, 589.25142pt x 102.93457pt>
 File: figs/caption_example.pdf Graphic file (type pdf)
 <use figs/caption_example.pdf>
-Package pdftex.def Info: figs/caption_example.pdf  used on input line 23.
+Package pdftex.def Info: figs/caption_example.pdf  used on input line 21.
 (pdftex.def)             Requested size: 298.75264pt x 52.18965pt.
-<figs/localization_example.pdf, id=174, 403.93408pt x 676.47733pt>
+<figs/localization_example.pdf, id=177, 403.93408pt x 676.47733pt>
 File: figs/localization_example.pdf Graphic file (type pdf)
 <use figs/localization_example.pdf>
-Package pdftex.def Info: figs/localization_example.pdf  used on input line 26.
+Package pdftex.def Info: figs/localization_example.pdf  used on input line 24.
 (pdftex.def)             Requested size: 132.30428pt x 221.57632pt.
-<figs/mapping_example.pdf, id=175, 403.93408pt x 676.47733pt>
+<figs/mapping_example.pdf, id=178, 403.93408pt x 676.47733pt>
 File: figs/mapping_example.pdf Graphic file (type pdf)
 <use figs/mapping_example.pdf>
-Package pdftex.def Info: figs/mapping_example.pdf  used on input line 29.
+Package pdftex.def Info: figs/mapping_example.pdf  used on input line 28.
 (pdftex.def)             Requested size: 132.30428pt x 221.57632pt.
-<figs/slam_example.pdf, id=176, 403.93408pt x 676.47733pt>
+<figs/slam_example.pdf, id=179, 403.93408pt x 676.47733pt>
 File: figs/slam_example.pdf Graphic file (type pdf)
 <use figs/slam_example.pdf>
 Package pdftex.def Info: figs/slam_example.pdf  used on input line 32.
 (pdftex.def)             Requested size: 132.30428pt x 221.57632pt.
-<figs/graphical_models_loc_map_slam.pdf, id=177, 162.54477pt x 95.43788pt>
+<figs/graphical_models_loc_map_slam.pdf, id=188, 162.54477pt x 95.43788pt>
 File: figs/graphical_models_loc_map_slam.pdf Graphic file (type pdf)
 <use figs/graphical_models_loc_map_slam.pdf>
 Package pdftex.def Info: figs/graphical_models_loc_map_slam.pdf  used on input 
-line 42.
+line 45.
 (pdftex.def)             Requested size: 426.79135pt x 250.60971pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1319,12 +1321,6 @@ iple pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ./figs/slam_example.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
 >] [17 <./figs/graphical_models_loc_map_slam.pdf>]
-Overfull \hbox (18.1255pt too wide) in paragraph at lines 57--58
-[]\T1/ptm/m/n/12 Many other lo-cal-iza-tion al-go-rithms im-ple-ment Markov lo-
-cal-iza-tion in mo-bile robotics.
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1343,54 +1339,41 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 20
  []
 
-[20])
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [21]
-(./ppgc-tese.bbl
+[20]) (./ppgc-tese.bbl [21])
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 22
  []
 
-[22]) [23
+[22
 
 ]
-Overfull \hbox (12.71632pt too wide) in paragraph at lines 225--233
+Overfull \hbox (12.71632pt too wide) in paragraph at lines 227--235
 \T1/ptm/b/n/12 Resolução 02/2021 -- Redação de Teses e Dis-ser-tações em In-glê
 s \T1/ptm/m/n/12 Dis-ser-tações de Mestrado
  []
 
 
 AED: lastpage setting LastPage
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 24
- []
-
-[24
+[23
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 235.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 235.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 237.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 237.
  (./ppgc-tese.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 235.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 235.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 237.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 237.
 Package rerunfilecheck Info: File `ppgc-tese.out' has not changed.
 (rerunfilecheck)             Checksum: B7CE054515C421ED613BE796C2253EBA;2017.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 235.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 237.
  ) 
 Here is how much of TeX's memory you used:
- 22437 strings out of 492982
- 376283 string characters out of 6134896
- 463677 words of memory out of 5000000
- 25700 multiletter control sequences out of 15000+600000
+ 22516 strings out of 492982
+ 378316 string characters out of 6134896
+ 465645 words of memory out of 5000000
+ 25767 multiletter control sequences out of 15000+600000
  569894 words of font info for 65 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 48i,8n,45p,10365b,497s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 1142 hyphenation exceptions out of 8191
+ 48i,8n,47p,10365b,497s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/
@@ -1401,10 +1384,10 @@ msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/u
 hvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ppgc-tese.pdf (24 pages, 2293391 bytes).
+Output written on ppgc-tese.pdf (23 pages, 2297065 bytes).
 PDF statistics:
- 394 PDF objects out of 1000 (max. 8388607)
- 298 compressed objects within 3 object streams
- 54 named destinations out of 1000 (max. 500000)
+ 462 PDF objects out of 1000 (max. 8388607)
+ 362 compressed objects within 4 object streams
+ 65 named destinations out of 1000 (max. 500000)
  143 words of extra memory for PDF output out of 10000 (max. 10000000)
 

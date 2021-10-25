@@ -11,16 +11,91 @@
 \textbf{Exploiting structure in man-made environments}.
 Thesis (PhD) --- KTH Royal Institute of Technology, 2012.}
 
+\bibitem[Burgard et al. 1998]{Burgard1998Integrating}
+\abntrefinfo{Burgard et al.}{BURGARD et al.}{1998}
+{BURGARD, W. et al. Integrating global position estimation and position
+  tracking for mobile robots: the dynamic markov localization approach.
+v.~2, p. 730--735, 1998.}
+
 \bibitem[Cesar et al. 2016]{Cesar2016Simultaneous}
 \abntrefinfo{Cesar et al.}{CESAR et al.}{2016}
 {CESAR, C. et al. Simultaneous localization and mapping: Present future and the
   robust-perception age.
 \textbf{arXiv preprint arXiv: 1606.05830}, 2016.}
 
+\bibitem[Dellaert et al. 1999]{Dellaert1999Monte}
+\abntrefinfo{Dellaert et al.}{DELLAERT et al.}{1999}
+{DELLAERT, F. et al. Monte carlo localization for mobile robots.
+v.~2, p. 1322--1328, 1999.}
+
+\bibitem[Doucet et al. 2000]{Doucet2000Rao}
+\abntrefinfo{Doucet et al.}{DOUCET et al.}{2000}
+{DOUCET, A. et al. Rao-blackwellised particle filtering for dynamic bayesian
+  networks.
+\textbf{Conference on Uncertainty in Artificial Intelligence}, 2000.}
+
+\bibitem[Engel, Sch{\"o}ps and Cremers 2014]{Engel2014Lsd}
+\abntrefinfo{Engel, Sch{\"o}ps and Cremers}{ENGEL; SCH{\"O}PS; CREMERS}{2014}
+{ENGEL, J.; SCH{\"O}PS, T.; CREMERS, D. Lsd-slam: Large-scale direct monocular
+  slam.
+p. 834--849, 2014.}
+
+\bibitem[Grisetti, Stachniss and Burgard 2007]{Grisetti2007Improved}
+\abntrefinfo{Grisetti, Stachniss and Burgard}{GRISETTI; STACHNISS;
+  BURGARD}{2007}
+{GRISETTI, G.; STACHNISS, C.; BURGARD, W. Improved techniques for grid mapping
+  with rao-blackwellized particle filters.
+\textbf{IEEE transactions on Robotics}, IEEE, v.~23, n.~1, p. 34--46, 2007.}
+
+\bibitem[Grisettiyz, Stachniss and Burgard 2005]{Grisettiyz2005Improving}
+\abntrefinfo{Grisettiyz, Stachniss and Burgard}{GRISETTIYZ; STACHNISS;
+  BURGARD}{2005}
+{GRISETTIYZ, G.; STACHNISS, C.; BURGARD, W. Improving grid-based slam with
+  rao-blackwellized particle filters by adaptive proposals and selective
+  resampling.
+p. 2432--2437, 2005.}
+
+\bibitem[Leonard and Durrant-Whyte 1991]{Leonard1991Mobile}
+\abntrefinfo{Leonard and Durrant-Whyte}{LEONARD; DURRANT-WHYTE}{1991}
+{LEONARD, J.~J.; DURRANT-WHYTE, H.~F. Mobile robot localization by tracking
+  geometric beacons.
+\textbf{IEEE Transactions on robotics and Automation}, v.~7, n.~3, p. 376--382,
+  1991.}
+
+\bibitem[Maffei 2017]{Maffei2017Translating}
+\abntrefinfo{Maffei}{MAFFEI}{2017}
+{MAFFEI, R. d.~Q.
+\textbf{Translating sensor measurements into texts for localization and mapping
+  with mobile robots.}
+Thesis (PhD) --- Federal University of Rio Grande do Sul, 2017.}
+
+\bibitem[Mur-Artal, Montiel and Tardos 2015]{Mur2015Orb}
+\abntrefinfo{Mur-Artal, Montiel and Tardos}{MUR-ARTAL; MONTIEL; TARDOS}{2015}
+{MUR-ARTAL, R.; MONTIEL, J. M.~M.; TARDOS, J.~D. Orb-slam: a versatile and
+  accurate monocular slam system.
+\textbf{IEEE transactions on robotics}, IEEE, v.~31, n.~5, p. 1147--1163,
+  2015.}
+
+\bibitem[Murphy et al. 1999]{Murphy1999Bayesian}
+\abntrefinfo{Murphy et al.}{MURPHY et al.}{1999}
+{MURPHY, K.~P. et al. Bayesian map learning in dynamic environments.
+p. 1015--1021, 1999.}
+
 \bibitem[Salas-Moreno 2014]{Salas2014Dense}
 \abntrefinfo{Salas-Moreno}{SALAS-MORENO}{2014}
 {SALAS-MORENO, R.~F.
 \textbf{Dense Semantic SLAM.}
 Thesis (PhD) --- Imperial College London, 2014.}
+
+\bibitem[Salas-Moreno et al. 2013]{Salas2013Slam++}
+\abntrefinfo{Salas-Moreno et al.}{SALAS-MORENO et al.}{2013}
+{SALAS-MORENO, R.~F. et al. Slam++: Simultaneous localisation and mapping at
+  the level of objects.
+p. 1352--1359, 2013.}
+
+\bibitem[Thrun, Burgard and Fox 2006]{Thrun2006Probabilistic}
+\abntrefinfo{Thrun, Burgard and Fox}{THRUN; BURGARD; FOX}{2006}
+{THRUN, S.; BURGARD, W.; FOX, D. \textbf{Probabilistic Robotics}. [S.l.]:
+  Massachusetts Institute of Technology, 2006.}
 
 \end{thebibliography}

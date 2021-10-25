@@ -1,4 +1,4 @@
-%
+ %
 % exemplo genérico de uso da classe iiufrgs.cls
 % $Id: iiufrgs.tex,v 1.1.1.1 2005/01/18 23:54:42 avila Exp $
 %
@@ -42,6 +42,8 @@
 
 \usepackage[alf,abnt-emphasize=bf]{abntex2cite}	% pacote para usar citações abnt
 
+
+\hyphenation{ro-bo-tics}
 
 \newcommand{\bs}{\boldsymbol}
 
