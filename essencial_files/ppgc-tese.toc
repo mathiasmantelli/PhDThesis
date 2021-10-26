@@ -3,11 +3,29 @@
 \babel@toc {english}{}
 \babel@toc {brazilian}{}
 \babel@toc {english}{}
-\contentsline {chapter}{1~Introduction}{10}{CHAPTER.1}
-\contentsline {section}{\numberline {1.1}Outline}{13}{section.1.1}
-\contentsline {section}{\numberline {1.2}Contributions}{13}{section.1.2}
-\contentsline {chapter}{2~Theoretical Background}{15}{CHAPTER.2}
-\contentsline {section}{\numberline {2.1}The Basics of Mobile Robotics}{15}{section.2.1}
-\contentsline {section}{\numberline {2.2}OS problem formulation}{20}{section.2.2}
-\contentsline {chapter}{\xspace {}References}{22}{schapter.7}
-\contentsline {chapter}{\MakeUppercase {Appendix} A~--- Resumo expandido}{23}{CHAPTER.A}
+\contentsline {chapter}{1~Introduction}{11}{CHAPTER.1}
+\contentsline {section}{\numberline {1.1}Outline}{14}{section.1.1}
+\contentsline {section}{\numberline {1.2}Contributions}{14}{section.1.2}
+\contentsline {chapter}{2~Theoretical Background}{16}{CHAPTER.2}
+\contentsline {section}{\numberline {2.1}The Basics of Mobile Robotics}{16}{section.2.1}
+\contentsline {section}{\numberline {2.2}OS problem formulation}{21}{section.2.2}
+\contentsline {chapter}{3~Semantic Active Visual Search system based on text information for large and unknown environments}{23}{CHAPTER.3}
+\contentsline {section}{\numberline {3.1}Introduction}{23}{section.3.1}
+\contentsline {section}{\numberline {3.2}Related Work}{26}{section.3.2}
+\contentsline {section}{\numberline {3.3}Semantic-based AVS system}{31}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Overview}{31}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Mapping module}{32}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Map Segmentation module}{32}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Final formula}{36}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Growing Direction factor}{37}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}Parity factor}{40}{subsection.3.3.6}
+\contentsline {subsection}{\numberline {3.3.7}Robot and Door Orientation factors}{41}{subsection.3.3.7}
+\contentsline {subsection}{\numberline {3.3.8}Distance factor}{42}{subsection.3.3.8}
+\contentsline {section}{\numberline {3.4}Experiments and Results}{43}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Simulated Experiment Setup}{44}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Semantic and Greedy AVS systems}{46}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Human participants performance in object searching task}{52}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Experiments Using a Physical Robot}{55}{subsection.3.4.4}
+\contentsline {section}{\numberline {3.5}Conclusion}{58}{section.3.5}
+\contentsline {chapter}{\xspace {}References}{61}{schapter.7}
+\contentsline {chapter}{\MakeUppercase {Appendix} A~--- Resumo expandido}{65}{CHAPTER.A}

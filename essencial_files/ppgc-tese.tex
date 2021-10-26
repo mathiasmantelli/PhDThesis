@@ -26,6 +26,9 @@
 %   * oneside    -- Desliga frente-e-verso
 %   * nominatalocal -- Lê os dados da nominata do arquivo nominatalocal.def
 
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{amsmath}
+\usepackage{siunitx}
 
 % Use unicode
 \usepackage[utf8]{inputenc}   % pacote para acentuação
@@ -44,7 +47,8 @@
 
 
 \hyphenation{ro-bo-tics}
-
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
 \newcommand{\bs}{\boldsymbol}
 
 %
@@ -197,6 +201,7 @@ the abstract should not contain more than 500~words.}
 % introducao
 \input{chapters/01_introduction}
 \input{chapters/02_theoretical_background}
+\input{chapters/03_text_semantic_information}
 
 
 % e aqui vai a parte principal

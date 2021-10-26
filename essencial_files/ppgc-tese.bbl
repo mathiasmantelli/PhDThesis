@@ -5,11 +5,75 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.1 }
 
+\bibitem[Amherst 2012]{University2012Room}
+\abntrefinfo{Amherst}{AMHERST}{2012}
+{AMHERST, U. \textbf{Room Numbering Guidelines}. [S.l.]: University of
+  Massachusetts Amherst, 2012.}
+
 \bibitem[Aydemir 2012]{Aydemir2012Exploiting}
 \abntrefinfo{Aydemir}{AYDEMIR}{2012}
 {AYDEMIR, A.
 \textbf{Exploiting structure in man-made environments}.
 Thesis (PhD) --- KTH Royal Institute of Technology, 2012.}
+
+\bibitem[Aydemir et al. 2011]{Aydemir2011Plan}
+\abntrefinfo{Aydemir et al.}{AYDEMIR et al.}{2011}
+{AYDEMIR, A. et al. Plan-based object search and exploration using semantic
+  spatial knowledge in the real world. In:  \textbf{ECMR}. [S.l.: s.n.], 2011.
+  p. 13--18.}
+
+\bibitem[Aydemir and Jensfelt 2012]{Aydemir2012ExploitingAnd}
+\abntrefinfo{Aydemir and Jensfelt}{AYDEMIR; JENSFELT}{2012}
+{AYDEMIR, A.; JENSFELT, P. Exploiting and modeling local 3d structure for
+  predicting object locations. In:  IEEE. \textbf{International Conference on
+  Intelligent Robots and Systems}. [S.l.], 2012. p. 3885--3892.}
+
+\bibitem[Aydemir, Jensfelt and Folkesson 2012]{Aydemir2012What}
+\abntrefinfo{Aydemir, Jensfelt and Folkesson}{AYDEMIR; JENSFELT;
+  FOLKESSON}{2012}
+{AYDEMIR, A.; JENSFELT, P.; FOLKESSON, J. What can we learn from 38,000 rooms?
+  reasoning about unexplored space in indoor environments. In:  IEEE.
+  \textbf{International Conference on Intelligent Robots and Systems}. [S.l.],
+  2012. p. 4675--4682.}
+
+\bibitem[Aydemir et al. 2013]{Aydemir2013Active}
+\abntrefinfo{Aydemir et al.}{AYDEMIR et al.}{2013}
+{AYDEMIR, A. et al. Active visual object search in unknown environments using
+  uncertain semantics. In:  \textbf{Transactions on Robotics}. [S.l.]: IEEE,
+  2013. v.~29, n.~4, p. 986--1002.}
+
+\bibitem[Aydemir et al. 2011]{Aydemir2011Object}
+\abntrefinfo{Aydemir et al.}{AYDEMIR et al.}{2011a}
+{AYDEMIR, A. et al. Object search guided by semantic spatial knowledge. In:
+  \textbf{The RSS}. [S.l.: s.n.], 2011. v.~11.}
+
+\bibitem[Aydemir et al. 2011]{Aydemir2011Search}
+\abntrefinfo{Aydemir et al.}{AYDEMIR et al.}{2011b}
+{AYDEMIR, A. et al. Search in the real world: Active visual object search based
+  on spatial relations. In:  IEEE. \textbf{International Conference on Robotics
+  and Automation}. [S.l.], 2011. p. 2818--2824.}
+
+\bibitem[Barber et al. 2018]{Barber2018Mobile}
+\abntrefinfo{Barber et al.}{BARBER et al.}{2018}
+{BARBER, R. et al. Mobile robot navigation in indoor environments: Geometric,
+  topological, and semantic navigation. In:  . [S.l.]: IntechOpen, 2018.}
+
+\bibitem[Begum and Karray 2010]{Begum2010Visual}
+\abntrefinfo{Begum and Karray}{BEGUM; KARRAY}{2010}
+{BEGUM, M.; KARRAY, F. Visual attention for robotic cognition: a survey. In:
+  \textbf{Transactions on Autonomous Mental Development}. [S.l.]: IEEE, 2010.
+  v.~3, n.~1, p. 92--105.}
+
+\bibitem[Borenstein and Koren 1991]{Borenstein1991Histogramic}
+\abntrefinfo{Borenstein and Koren}{BORENSTEIN; KOREN}{1991}
+{BORENSTEIN, J.; KOREN, Y. Histogramic in-motion mapping for mobile robot
+  obstacle avoidance. In:  \textbf{Transactions on Robotics and Automation}.
+  [S.l.: s.n.], 1991.}
+
+\bibitem[Borji et al. 2019]{Borji2019Salient}
+\abntrefinfo{Borji et al.}{BORJI et al.}{2019}
+{BORJI, A. et al. Salient object detection: A survey. In:
+  \textbf{Computational visual media}. [S.l.]: Springer, 2019. p. 1--34.}
 
 \bibitem[Burgard et al. 1998]{Burgard1998Integrating}
 \abntrefinfo{Burgard et al.}{BURGARD et al.}{1998}
@@ -23,10 +87,28 @@ v.~2, p. 730--735, 1998.}
   robust-perception age.
 \textbf{arXiv preprint arXiv: 1606.05830}, 2016.}
 
+\bibitem[Chen, Li and Kwok 2011]{Chen2011Active}
+\abntrefinfo{Chen, Li and Kwok}{CHEN; LI; KWOK}{2011}
+{CHEN, S.; LI, Y.; KWOK, N.~M. Active vision in robotic systems: A survey of
+  recent developments. In:  \textbf{The International Journal of Robotics
+  Research}. [S.l.: s.n.], 2011. v.~30, n.~11, p. 1343--1377.}
+
+\bibitem[Chung, Hollinger and Isler 2011]{Chung2011Search}
+\abntrefinfo{Chung, Hollinger and Isler}{CHUNG; HOLLINGER; ISLER}{2011}
+{CHUNG, T.~H.; HOLLINGER, G.~A.; ISLER, V. Search and pursuit-evasion in mobile
+  robotics. In:  \textbf{Autonomous robots}. [S.l.]: Springer, 2011. v.~31,
+  n.~4, p.~299.}
+
 \bibitem[Dellaert et al. 1999]{Dellaert1999Monte}
 \abntrefinfo{Dellaert et al.}{DELLAERT et al.}{1999}
 {DELLAERT, F. et al. Monte carlo localization for mobile robots.
 v.~2, p. 1322--1328, 1999.}
+
+\bibitem[DiCarlo, Zoccolan and Rust 2012]{Dicarlo2012How}
+\abntrefinfo{DiCarlo, Zoccolan and Rust}{DICARLO; ZOCCOLAN; RUST}{2012}
+{DICARLO, J.~J.; ZOCCOLAN, D.; RUST, N.~C. How does the brain solve visual
+  object recognition? In:  \textbf{Neuron}. [S.l.]: Elsevier, 2012. v.~73,
+  n.~3, p. 415--434.}
 
 \bibitem[Doucet et al. 2000]{Doucet2000Rao}
 \abntrefinfo{Doucet et al.}{DOUCET et al.}{2000}
@@ -34,11 +116,23 @@ v.~2, p. 1322--1328, 1999.}
   networks.
 \textbf{Conference on Uncertainty in Artificial Intelligence}, 2000.}
 
+\bibitem[Ekvall, Kragic and Jensfelt 2007]{Ekvall2007Object}
+\abntrefinfo{Ekvall, Kragic and Jensfelt}{EKVALL; KRAGIC; JENSFELT}{2007}
+{EKVALL, S.; KRAGIC, D.; JENSFELT, P. Object detection and mapping for service
+  robot tasks. In:  \textbf{Robotica}. [S.l.: s.n.], 2007. v.~25, n.~2, p.
+  175--187.}
+
 \bibitem[Engel, Sch{\"o}ps and Cremers 2014]{Engel2014Lsd}
 \abntrefinfo{Engel, Sch{\"o}ps and Cremers}{ENGEL; SCH{\"O}PS; CREMERS}{2014}
 {ENGEL, J.; SCH{\"O}PS, T.; CREMERS, D. Lsd-slam: Large-scale direct monocular
   slam.
 p. 834--849, 2014.}
+
+\bibitem[Girdhar, Whitney and Dudek 2014]{Girdhar2014Curiosity}
+\abntrefinfo{Girdhar, Whitney and Dudek}{GIRDHAR; WHITNEY; DUDEK}{2014}
+{GIRDHAR, Y.; WHITNEY, D.; DUDEK, G. Curiosity based exploration for learning
+  terrain models. In:  \textbf{International Conference on Robotics and
+  Automation}. [S.l.]: IEEE, 2014.}
 
 \bibitem[Grisetti, Stachniss and Burgard 2007]{Grisetti2007Improved}
 \abntrefinfo{Grisetti, Stachniss and Burgard}{GRISETTI; STACHNISS;
@@ -55,6 +149,22 @@ p. 834--849, 2014.}
   resampling.
 p. 2432--2437, 2005.}
 
+\bibitem[Guo and Hall 1989]{Guo1989Parallel}
+\abntrefinfo{Guo and Hall}{GUO; HALL}{1989}
+{GUO, Z.; HALL, R.~W. Parallel thinning with two-subiteration algorithms. In:
+  \textbf{Communications of the ACM}. [S.l.]: ACM, 1989. v.~32, n.~3, p.
+  359--373.}
+
+\bibitem[Haines 2014]{Brian2014Abasic}
+\abntrefinfo{Haines}{HAINES}{2014}
+{HAINES, B. \textbf{A basic model for numbering your rooms and spaces}. [S.l.]:
+  FM:Systems, 2014.}
+
+\bibitem[Jung, Kim and Jain 2004]{Jung2004Text}
+\abntrefinfo{Jung, Kim and Jain}{JUNG; KIM; JAIN}{2004}
+{JUNG, K.; KIM, K.~I.; JAIN, A.~K. Text information extraction in images and
+  video: a survey. In:  \textbf{Pattern Recognition}. [S.l.: s.n.], 2004.}
+
 \bibitem[Leonard and Durrant-Whyte 1991]{Leonard1991Mobile}
 \abntrefinfo{Leonard and Durrant-Whyte}{LEONARD; DURRANT-WHYTE}{1991}
 {LEONARD, J.~J.; DURRANT-WHYTE, H.~F. Mobile robot localization by tracking
@@ -62,12 +172,29 @@ p. 2432--2437, 2005.}
 \textbf{IEEE Transactions on robotics and Automation}, v.~7, n.~3, p. 376--382,
   1991.}
 
+\bibitem[Li et al. 2016]{Quattrini2016ASemantically}
+\abntrefinfo{Li et al.}{LI et al.}{2016}
+{LI, A. Q. et al. A semantically-informed multirobot system for exploration of
+  relevant areas in search and rescue settings. In:  \textbf{Autonomous
+  Robots}. [S.l.: s.n.], 2016.}
+
+\bibitem[Maffei et al. 2015]{Maffei2015Using}
+\abntrefinfo{Maffei et al.}{MAFFEI et al.}{2015}
+{MAFFEI, R. et al. Using n-grams of spatial densities to construct maps. In:
+  \textbf{International Conference on Intelligent Robots and Systems}. [S.l.:
+  s.n.], 2015.}
+
 \bibitem[Maffei 2017]{Maffei2017Translating}
 \abntrefinfo{Maffei}{MAFFEI}{2017}
 {MAFFEI, R. d.~Q.
 \textbf{Translating sensor measurements into texts for localization and mapping
   with mobile robots.}
 Thesis (PhD) --- Federal University of Rio Grande do Sul, 2017.}
+
+\bibitem[McKim 1919]{McKim1919Hotel}
+\abntrefinfo{McKim}{MCKIM}{1919}
+{MCKIM. \textbf{\MakeUppercase{H}otel - \MakeUppercase{P}ennsylvania typical
+  floor plan.} 1919. \textit{\url{https://bit.ly/36Y6t5P}}.}
 
 \bibitem[Mur-Artal, Montiel and Tardos 2015]{Mur2015Orb}
 \abntrefinfo{Mur-Artal, Montiel and Tardos}{MUR-ARTAL; MONTIEL; TARDOS}{2015}
@@ -81,6 +208,41 @@ Thesis (PhD) --- Federal University of Rio Grande do Sul, 2017.}
 {MURPHY, K.~P. et al. Bayesian map learning in dynamic environments.
 p. 1015--1021, 1999.}
 
+\bibitem[Neumann and Matas 2012]{Neumann2012Realtime}
+\abntrefinfo{Neumann and Matas}{NEUMANN; MATAS}{2012}
+{NEUMANN, L.; MATAS, J. Real-time scene text localization and recognition. In:
+  \textbf{Conference on Computer Vision and Pattern Recognition}. [S.l.: s.n.],
+  2012.}
+
+\bibitem[Prestes et al. 2002]{Prestes2002Exploration}
+\abntrefinfo{Prestes et al.}{PRESTES et al.}{2002}
+{PRESTES, E. et al. Exploration method using harmonic functions. In:
+  \textbf{Robotics and Autonomous Systems}. [S.l.: s.n.], 2002.}
+
+\bibitem[Rasouli et al. 2020]{Rasouli2020Attention}
+\abntrefinfo{Rasouli et al.}{RASOULI et al.}{2020}
+{RASOULI, A. et al. Attention-based active visual search for mobile robots. In:
+   \textbf{Autonomous Robots}. [S.l.]: Springer, 2020. v.~44, n.~2, p.
+  131--146.}
+
+\bibitem[Rasouli and Tsotsos 2017]{Rasouli2017Integrating}
+\abntrefinfo{Rasouli and Tsotsos}{RASOULI; TSOTSOS}{2017}
+{RASOULI, A.; TSOTSOS, J.~K. Integrating three mechanisms of visual attention
+  for active visual search. In:  \textbf{arXiv preprint arXiv:1702.04292}.
+  [S.l.: s.n.], 2017.}
+
+\bibitem[Rogers and Christensen 2013]{Rogers2013Robot}
+\abntrefinfo{Rogers and Christensen}{ROGERS; CHRISTENSEN}{2013}
+{ROGERS, J.~G.; CHRISTENSEN, H.~I. Robot planning with a semantic map. In:
+  \textbf{International Conference on Robotics and Automation}. [S.l.: s.n.],
+  2013.}
+
+\bibitem[Saidi, Stasse and Yokoi 2007]{Saidi2007Active}
+\abntrefinfo{Saidi, Stasse and Yokoi}{SAIDI; STASSE; YOKOI}{2007}
+{SAIDI, F.; STASSE, O.; YOKOI, K. Active visual search by a humanoid robot. In:
+   \textbf{Robotics: Viable Robotic Service to Human}. [S.l.]: Springer, 2007.
+  p. 171--184.}
+
 \bibitem[Salas-Moreno 2014]{Salas2014Dense}
 \abntrefinfo{Salas-Moreno}{SALAS-MORENO}{2014}
 {SALAS-MORENO, R.~F.
@@ -93,9 +255,75 @@ Thesis (PhD) --- Imperial College London, 2014.}
   the level of objects.
 p. 1352--1359, 2013.}
 
+\bibitem[Schulz et al. 2015]{Schulz2015Robot}
+\abntrefinfo{Schulz et al.}{SCHULZ et al.}{2015}
+{SCHULZ, R. et al. Robot navigation using human cues: A robot navigation system
+  for symbolic goal-directed exploration. In:  \textbf{International Conference
+  on Robotics and Automation}. [S.l.: s.n.], 2015.}
+
+\bibitem[Sjöö, Aydemir and Jensfelt 2012]{Sjoo2012Topological}
+\abntrefinfo{Sjöö, Aydemir and Jensfelt}{SJöö; AYDEMIR; JENSFELT}{2012}
+{SJöö, K.; AYDEMIR, A.; JENSFELT, P. Topological spatial relations for active
+  visual search. In:  \textbf{Robotics and Autonomous Systems}. [S.l.: s.n.],
+  2012. v.~60, n.~9.
+ISSN 0921-8890.}
+
+\bibitem[Sjöö et al. 2009]{Sjoo2009Object}
+\abntrefinfo{Sjöö et al.}{SJöö et al.}{2009}
+{SJöö, K. et al. Object search and localization for an indoor mobile robot.
+  In:  \textbf{Journal of Computing and Information Technology}. [S.l.]:
+  SRCE-University Computing Centre, 2009. v.~17, n.~1.}
+
+\bibitem[Talbot et al. 2016]{Talbot2016Find}
+\abntrefinfo{Talbot et al.}{TALBOT et al.}{2016}
+{TALBOT, B. et al. Find my office: Navigating real space from semantic
+  descriptions. In:  \textbf{International Conference on Robotics and
+  Automation}. [S.l.: s.n.], 2016.}
+
 \bibitem[Thrun, Burgard and Fox 2006]{Thrun2006Probabilistic}
 \abntrefinfo{Thrun, Burgard and Fox}{THRUN; BURGARD; FOX}{2006}
 {THRUN, S.; BURGARD, W.; FOX, D. \textbf{Probabilistic Robotics}. [S.l.]:
   Massachusetts Institute of Technology, 2006.}
+
+\bibitem[Tsotsos 1992]{Tsotsos1992Onthe}
+\abntrefinfo{Tsotsos}{TSOTSOS}{1992}
+{TSOTSOS, J.~K. On the relative complexity of active vs. passive visual search.
+  In:  \textbf{International journal of computer vision}. [S.l.]: Springer,
+  1992. v.~7, n.~2, p. 127--141.}
+
+\bibitem[University 2017]{Stanford2017Room}
+\abntrefinfo{University}{UNIVERSITY}{2017}
+{UNIVERSITY, S. \textbf{Room Numbering Guidelines}. [S.l.]: Stanford
+  University, 2017.}
+
+\bibitem[Veiga et al. 2016]{Veiga2016Efficient}
+\abntrefinfo{Veiga et al.}{VEIGA et al.}{2016}
+{VEIGA, T.~S. et al. {Efficient object search for mobile robots in dynamic
+  environments: Semantic map as an input for the decision maker}. In:
+  \textbf{International Conference on Intelligent Robots and Systems}. [S.l.:
+  s.n.], 2016.}
+
+\bibitem[Ye and Tsotsos 1996]{Ye1996Collaborative}
+\abntrefinfo{Ye and Tsotsos}{YE; TSOTSOS}{1996}
+{YE, Y.; TSOTSOS, J.~K. On the collaborative object search team: a formulation.
+  In:  \textbf{Distributed Artificial Intelligence Meets Machine Learning
+  Learning in Multi-Agent Environments}. [S.l.]: Springer, 1996. p. 94--116.}
+
+\bibitem[Ye and Tsotsos 2001]{Ye2001AComplexity}
+\abntrefinfo{Ye and Tsotsos}{YE; TSOTSOS}{2001}
+{YE, Y.; TSOTSOS, J.~K. A complexity-level analysis of the sensor planning task
+  for object search. In:  \textbf{Computational Intelligence}. [S.l.: s.n.],
+  2001. v.~17, n.~4, p. 605--620.}
+
+\bibitem[Zeng, R{\"o}fer and Jenkins 2020]{Zeng2020Semantic}
+\abntrefinfo{Zeng, R{\"o}fer and Jenkins}{ZENG; R{\"O}FER; JENKINS}{2020}
+{ZENG, Z.; R{\"O}FER, A.; JENKINS, O.~C. Semantic linking maps for active
+  visual object search. In:  \textbf{arXiv preprint arXiv:2006.10807}. [S.l.:
+  s.n.], 2020.}
+
+\bibitem[Zhang et al. 2013]{Zhang2013Text}
+\abntrefinfo{Zhang et al.}{ZHANG et al.}{2013}
+{ZHANG, H. et al. Text extraction from natural scene image: A survey. In:
+  \textbf{Neurocomputing}. [S.l.: s.n.], 2013.}
 
 \end{thebibliography}

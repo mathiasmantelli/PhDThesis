@@ -12,4 +12,16 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Different scenarios used on our simulated tests.\relax }}{46}{table.caption.11}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Results of the greedy and our semantic AVS systems in the \textit {Normal} scenario. All the results are shown in meters.\relax }}{49}{table.caption.13}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Results of the greedy and our semantic AVS systems in the \textit {Inverse} scenario. All the results are shown in meters.\relax }}{50}{table.caption.14}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Results of the greedy and our semantic AVS systems in the \textit {Hotel} scenario. All the results are shown in meters.\relax }}{51}{table.caption.15}
+\contentsline {table}{\numberline {3.5}{\ignorespaces Results of the greedy and our semantic AVS systems in the \textit {KTH} scenario. All the results are shown in meters.\relax }}{51}{table.caption.16}
+\contentsline {table}{\numberline {3.6}{\ignorespaces The average and the standard deviations from the \textit {Normal} scenario, Tab.~\ref {fig:resultsNormal}, and the optimal solution (shortest path) between each goal-door and the starting position. All the results are shown in meters.\relax }}{52}{table.caption.17}
+\contentsline {table}{\numberline {3.7}{\ignorespaces The average and the standard deviations from the \textit {Inverse} scenario, Tab.~\ref {fig:resultsInverse}, and the optimal solution (shortest path) between each goal-door and the starting position. All the results are in meters.\relax }}{52}{table.caption.18}
+\contentsline {table}{\numberline {3.8}{\ignorespaces The average and the standard deviations from the \textit {Hotel} scenario, Tab.~\ref {fig:resultsHotel}, and the optimal solution (shortest path) between each goal-door and the starting position. All the results are in meters.\relax }}{52}{table.caption.19}
+\contentsline {table}{\numberline {3.9}{\ignorespaces The average and the standard deviations from the \textit {KTH} scenario, Tab.~\ref {fig:resultsKTH}, and the optimal solution (shortest path) between each goal-door and the starting position. All the results are in meters.\relax }}{52}{table.caption.20}
+\contentsline {table}{\numberline {3.10}{\ignorespaces Comparison of the optimal solution (shortest path) of each goal-door from each scenario, with the averages from Tabs.~\ref {fig:resultsNormal}, ~\ref {fig:resultsInverse}, and~\ref {fig:resultsHotel}. The shortest path is equivalent to $100\%$, and the figure shows how large the averages are in comparison with the optimal solution.\relax }}{53}{table.caption.21}
+\contentsline {table}{\numberline {3.11}{\ignorespaces Human performance to the problem of AVS system. It is compared to the greedy and semantic systems, in which all of them had to find two goal-doors, one in each scenario. The results are presented in meters.\relax }}{54}{table.caption.22}
+\addvspace {10\p@ }
 \addvspace {10\p@ }
