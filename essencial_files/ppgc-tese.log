@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.7)  26 OCT 2021 00:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.7)  27 OCT 2021 01:05
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -793,6 +793,41 @@ Package: l3keys2e 2018/02/21 LaTeX2e option processing using LaTeX3 keys
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator.sty
 Package: translator 2018/01/04 v1.12 Easy translation of strings in LaTeX
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/textgreek/textgreek.sty
+Package: textgreek 2011/10/09 v0.7 Greek symbols in text
+Package textgreek Info: Loading the definitions for the Greek fontencoding. on 
+input line 39.
+
+(/usr/share/texlive/texmf-dist/tex/latex/greek-fontenc/lgrenc.def
+File: lgrenc.def 2015/12/07 v0.13.1 LGR Greek font encoding definitions
+
+(/usr/share/texlive/texmf-dist/tex/latex/greek-fontenc/greek-fontenc.def
+File: greek-fontenc.def 2015/08/04 v0.13 Common Greek font encoding definitions
+
+))
+Package textgreek Info: Loaded fontmap: {eur/*/*}{U/eur/*/*} {phv/*/*}{U/psy/*/
+*}. on input line 69.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2016/04/27 v1.618033 publication quality tables
+\heavyrulewidth=\dimen186
+\lightrulewidth=\dimen187
+\cmidrulewidth=\dimen188
+\belowrulesep=\dimen189
+\belowbottomsep=\dimen190
+\aboverulesep=\dimen191
+\abovetopsep=\dimen192
+\cmidrulesep=\dimen193
+\cmidrulekern=\dimen194
+\defaultaddspace=\dimen195
+\@cmidla=\count298
+\@cmidlb=\count299
+\@aboverulesep=\dimen196
+\@belowrulesep=\dimen197
+\@thisruleclass=\count300
+\@lastruleclass=\count301
+\@thisrulewidth=\dimen198
+)
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks25
@@ -1104,6 +1139,366 @@ Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
+Now handling font encoding LGR ...
+... processing UTF-8 mapping file for font encoding LGR
+
+(/usr/share/texlive/texmf-dist/tex/latex/greek-inputenc/lgrenc.dfu
+File: lgrenc.dfu 2015/08/05 1.6 UTF-8 support for Greek
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+0259 (decimal 601)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+0374 (decimal 884)
+   defining Unicode char U+0375 (decimal 885)
+   defining Unicode char U+037A (decimal 890)
+   defining Unicode char U+037E (decimal 894)
+   defining Unicode char U+0384 (decimal 900)
+   defining Unicode char U+0385 (decimal 901)
+   defining Unicode char U+0386 (decimal 902)
+   defining Unicode char U+0387 (decimal 903)
+   defining Unicode char U+0388 (decimal 904)
+   defining Unicode char U+0389 (decimal 905)
+   defining Unicode char U+038A (decimal 906)
+   defining Unicode char U+038C (decimal 908)
+   defining Unicode char U+038E (decimal 910)
+   defining Unicode char U+038F (decimal 911)
+   defining Unicode char U+0390 (decimal 912)
+   defining Unicode char U+0391 (decimal 913)
+   defining Unicode char U+0392 (decimal 914)
+   defining Unicode char U+0393 (decimal 915)
+   defining Unicode char U+0394 (decimal 916)
+   defining Unicode char U+0395 (decimal 917)
+   defining Unicode char U+0396 (decimal 918)
+   defining Unicode char U+0397 (decimal 919)
+   defining Unicode char U+0398 (decimal 920)
+   defining Unicode char U+0399 (decimal 921)
+   defining Unicode char U+039A (decimal 922)
+   defining Unicode char U+039B (decimal 923)
+   defining Unicode char U+039C (decimal 924)
+   defining Unicode char U+039D (decimal 925)
+   defining Unicode char U+039E (decimal 926)
+   defining Unicode char U+039F (decimal 927)
+   defining Unicode char U+03A0 (decimal 928)
+   defining Unicode char U+03A1 (decimal 929)
+   defining Unicode char U+03A3 (decimal 931)
+   defining Unicode char U+03A4 (decimal 932)
+   defining Unicode char U+03A5 (decimal 933)
+   defining Unicode char U+03A6 (decimal 934)
+   defining Unicode char U+03A7 (decimal 935)
+   defining Unicode char U+03A8 (decimal 936)
+   defining Unicode char U+03A9 (decimal 937)
+   defining Unicode char U+03AA (decimal 938)
+   defining Unicode char U+03AB (decimal 939)
+   defining Unicode char U+03AC (decimal 940)
+   defining Unicode char U+03AD (decimal 941)
+   defining Unicode char U+03AE (decimal 942)
+   defining Unicode char U+03AF (decimal 943)
+   defining Unicode char U+03B0 (decimal 944)
+   defining Unicode char U+03B1 (decimal 945)
+   defining Unicode char U+03B2 (decimal 946)
+   defining Unicode char U+03B3 (decimal 947)
+   defining Unicode char U+03B4 (decimal 948)
+   defining Unicode char U+03B5 (decimal 949)
+   defining Unicode char U+03B6 (decimal 950)
+   defining Unicode char U+03B7 (decimal 951)
+   defining Unicode char U+03B8 (decimal 952)
+   defining Unicode char U+03B9 (decimal 953)
+   defining Unicode char U+03BA (decimal 954)
+   defining Unicode char U+03BB (decimal 955)
+   defining Unicode char U+03BC (decimal 956)
+   defining Unicode char U+03BD (decimal 957)
+   defining Unicode char U+03BE (decimal 958)
+   defining Unicode char U+03BF (decimal 959)
+   defining Unicode char U+03C0 (decimal 960)
+   defining Unicode char U+03C1 (decimal 961)
+   defining Unicode char U+03C2 (decimal 962)
+   defining Unicode char U+03C3 (decimal 963)
+   defining Unicode char U+03C4 (decimal 964)
+   defining Unicode char U+03C5 (decimal 965)
+   defining Unicode char U+03C6 (decimal 966)
+   defining Unicode char U+03C7 (decimal 967)
+   defining Unicode char U+03C8 (decimal 968)
+   defining Unicode char U+03C9 (decimal 969)
+   defining Unicode char U+03CA (decimal 970)
+   defining Unicode char U+03CB (decimal 971)
+   defining Unicode char U+03CC (decimal 972)
+   defining Unicode char U+03CD (decimal 973)
+   defining Unicode char U+03CE (decimal 974)
+   defining Unicode char U+03D0 (decimal 976)
+   defining Unicode char U+03D1 (decimal 977)
+   defining Unicode char U+03D5 (decimal 981)
+   defining Unicode char U+03D6 (decimal 982)
+   defining Unicode char U+03D8 (decimal 984)
+   defining Unicode char U+03D9 (decimal 985)
+   defining Unicode char U+03DA (decimal 986)
+   defining Unicode char U+03DB (decimal 987)
+   defining Unicode char U+03DC (decimal 988)
+   defining Unicode char U+03DD (decimal 989)
+   defining Unicode char U+03DF (decimal 991)
+   defining Unicode char U+03E0 (decimal 992)
+   defining Unicode char U+03E1 (decimal 993)
+   defining Unicode char U+03F0 (decimal 1008)
+   defining Unicode char U+03F1 (decimal 1009)
+   defining Unicode char U+03F4 (decimal 1012)
+   defining Unicode char U+03F5 (decimal 1013)
+   defining Unicode char U+1F00 (decimal 7936)
+   defining Unicode char U+1F01 (decimal 7937)
+   defining Unicode char U+1F02 (decimal 7938)
+   defining Unicode char U+1F03 (decimal 7939)
+   defining Unicode char U+1F04 (decimal 7940)
+   defining Unicode char U+1F05 (decimal 7941)
+   defining Unicode char U+1F06 (decimal 7942)
+   defining Unicode char U+1F07 (decimal 7943)
+   defining Unicode char U+1F08 (decimal 7944)
+   defining Unicode char U+1F09 (decimal 7945)
+   defining Unicode char U+1F0A (decimal 7946)
+   defining Unicode char U+1F0B (decimal 7947)
+   defining Unicode char U+1F0C (decimal 7948)
+   defining Unicode char U+1F0D (decimal 7949)
+   defining Unicode char U+1F0E (decimal 7950)
+   defining Unicode char U+1F0F (decimal 7951)
+   defining Unicode char U+1F10 (decimal 7952)
+   defining Unicode char U+1F11 (decimal 7953)
+   defining Unicode char U+1F12 (decimal 7954)
+   defining Unicode char U+1F13 (decimal 7955)
+   defining Unicode char U+1F14 (decimal 7956)
+   defining Unicode char U+1F15 (decimal 7957)
+   defining Unicode char U+1F18 (decimal 7960)
+   defining Unicode char U+1F19 (decimal 7961)
+   defining Unicode char U+1F1A (decimal 7962)
+   defining Unicode char U+1F1B (decimal 7963)
+   defining Unicode char U+1F1C (decimal 7964)
+   defining Unicode char U+1F1D (decimal 7965)
+   defining Unicode char U+1F20 (decimal 7968)
+   defining Unicode char U+1F21 (decimal 7969)
+   defining Unicode char U+1F22 (decimal 7970)
+   defining Unicode char U+1F23 (decimal 7971)
+   defining Unicode char U+1F24 (decimal 7972)
+   defining Unicode char U+1F25 (decimal 7973)
+   defining Unicode char U+1F26 (decimal 7974)
+   defining Unicode char U+1F27 (decimal 7975)
+   defining Unicode char U+1F28 (decimal 7976)
+   defining Unicode char U+1F29 (decimal 7977)
+   defining Unicode char U+1F2A (decimal 7978)
+   defining Unicode char U+1F2B (decimal 7979)
+   defining Unicode char U+1F2C (decimal 7980)
+   defining Unicode char U+1F2D (decimal 7981)
+   defining Unicode char U+1F2E (decimal 7982)
+   defining Unicode char U+1F2F (decimal 7983)
+   defining Unicode char U+1F30 (decimal 7984)
+   defining Unicode char U+1F31 (decimal 7985)
+   defining Unicode char U+1F32 (decimal 7986)
+   defining Unicode char U+1F33 (decimal 7987)
+   defining Unicode char U+1F34 (decimal 7988)
+   defining Unicode char U+1F35 (decimal 7989)
+   defining Unicode char U+1F36 (decimal 7990)
+   defining Unicode char U+1F37 (decimal 7991)
+   defining Unicode char U+1F38 (decimal 7992)
+   defining Unicode char U+1F39 (decimal 7993)
+   defining Unicode char U+1F3A (decimal 7994)
+   defining Unicode char U+1F3B (decimal 7995)
+   defining Unicode char U+1F3C (decimal 7996)
+   defining Unicode char U+1F3D (decimal 7997)
+   defining Unicode char U+1F3E (decimal 7998)
+   defining Unicode char U+1F3F (decimal 7999)
+   defining Unicode char U+1F40 (decimal 8000)
+   defining Unicode char U+1F41 (decimal 8001)
+   defining Unicode char U+1F42 (decimal 8002)
+   defining Unicode char U+1F43 (decimal 8003)
+   defining Unicode char U+1F44 (decimal 8004)
+   defining Unicode char U+1F45 (decimal 8005)
+   defining Unicode char U+1F48 (decimal 8008)
+   defining Unicode char U+1F49 (decimal 8009)
+   defining Unicode char U+1F4A (decimal 8010)
+   defining Unicode char U+1F4B (decimal 8011)
+   defining Unicode char U+1F4C (decimal 8012)
+   defining Unicode char U+1F4D (decimal 8013)
+   defining Unicode char U+1F50 (decimal 8016)
+   defining Unicode char U+1F51 (decimal 8017)
+   defining Unicode char U+1F52 (decimal 8018)
+   defining Unicode char U+1F53 (decimal 8019)
+   defining Unicode char U+1F54 (decimal 8020)
+   defining Unicode char U+1F55 (decimal 8021)
+   defining Unicode char U+1F56 (decimal 8022)
+   defining Unicode char U+1F57 (decimal 8023)
+   defining Unicode char U+1F59 (decimal 8025)
+   defining Unicode char U+1F5B (decimal 8027)
+   defining Unicode char U+1F5D (decimal 8029)
+   defining Unicode char U+1F5F (decimal 8031)
+   defining Unicode char U+1F60 (decimal 8032)
+   defining Unicode char U+1F61 (decimal 8033)
+   defining Unicode char U+1F62 (decimal 8034)
+   defining Unicode char U+1F63 (decimal 8035)
+   defining Unicode char U+1F64 (decimal 8036)
+   defining Unicode char U+1F65 (decimal 8037)
+   defining Unicode char U+1F66 (decimal 8038)
+   defining Unicode char U+1F67 (decimal 8039)
+   defining Unicode char U+1F68 (decimal 8040)
+   defining Unicode char U+1F69 (decimal 8041)
+   defining Unicode char U+1F6A (decimal 8042)
+   defining Unicode char U+1F6B (decimal 8043)
+   defining Unicode char U+1F6C (decimal 8044)
+   defining Unicode char U+1F6D (decimal 8045)
+   defining Unicode char U+1F6E (decimal 8046)
+   defining Unicode char U+1F6F (decimal 8047)
+   defining Unicode char U+1F70 (decimal 8048)
+   defining Unicode char U+1F71 (decimal 8049)
+   defining Unicode char U+1F72 (decimal 8050)
+   defining Unicode char U+1F73 (decimal 8051)
+   defining Unicode char U+1F74 (decimal 8052)
+   defining Unicode char U+1F75 (decimal 8053)
+   defining Unicode char U+1F76 (decimal 8054)
+   defining Unicode char U+1F77 (decimal 8055)
+   defining Unicode char U+1F78 (decimal 8056)
+   defining Unicode char U+1F79 (decimal 8057)
+   defining Unicode char U+1F7A (decimal 8058)
+   defining Unicode char U+1F7B (decimal 8059)
+   defining Unicode char U+1F7C (decimal 8060)
+   defining Unicode char U+1F7D (decimal 8061)
+   defining Unicode char U+1F80 (decimal 8064)
+   defining Unicode char U+1F81 (decimal 8065)
+   defining Unicode char U+1F82 (decimal 8066)
+   defining Unicode char U+1F83 (decimal 8067)
+   defining Unicode char U+1F84 (decimal 8068)
+   defining Unicode char U+1F85 (decimal 8069)
+   defining Unicode char U+1F86 (decimal 8070)
+   defining Unicode char U+1F87 (decimal 8071)
+   defining Unicode char U+1F88 (decimal 8072)
+   defining Unicode char U+1F89 (decimal 8073)
+   defining Unicode char U+1F8A (decimal 8074)
+   defining Unicode char U+1F8B (decimal 8075)
+   defining Unicode char U+1F8C (decimal 8076)
+   defining Unicode char U+1F8D (decimal 8077)
+   defining Unicode char U+1F8E (decimal 8078)
+   defining Unicode char U+1F8F (decimal 8079)
+   defining Unicode char U+1F90 (decimal 8080)
+   defining Unicode char U+1F91 (decimal 8081)
+   defining Unicode char U+1F92 (decimal 8082)
+   defining Unicode char U+1F93 (decimal 8083)
+   defining Unicode char U+1F94 (decimal 8084)
+   defining Unicode char U+1F95 (decimal 8085)
+   defining Unicode char U+1F96 (decimal 8086)
+   defining Unicode char U+1F97 (decimal 8087)
+   defining Unicode char U+1F98 (decimal 8088)
+   defining Unicode char U+1F99 (decimal 8089)
+   defining Unicode char U+1F9A (decimal 8090)
+   defining Unicode char U+1F9B (decimal 8091)
+   defining Unicode char U+1F9C (decimal 8092)
+   defining Unicode char U+1F9D (decimal 8093)
+   defining Unicode char U+1F9E (decimal 8094)
+   defining Unicode char U+1F9F (decimal 8095)
+   defining Unicode char U+1FA0 (decimal 8096)
+   defining Unicode char U+1FA1 (decimal 8097)
+   defining Unicode char U+1FA2 (decimal 8098)
+   defining Unicode char U+1FA3 (decimal 8099)
+   defining Unicode char U+1FA4 (decimal 8100)
+   defining Unicode char U+1FA5 (decimal 8101)
+   defining Unicode char U+1FA6 (decimal 8102)
+   defining Unicode char U+1FA7 (decimal 8103)
+   defining Unicode char U+1FA8 (decimal 8104)
+   defining Unicode char U+1FA9 (decimal 8105)
+   defining Unicode char U+1FAA (decimal 8106)
+   defining Unicode char U+1FAB (decimal 8107)
+   defining Unicode char U+1FAC (decimal 8108)
+   defining Unicode char U+1FAD (decimal 8109)
+   defining Unicode char U+1FAE (decimal 8110)
+   defining Unicode char U+1FAF (decimal 8111)
+   defining Unicode char U+1FB0 (decimal 8112)
+   defining Unicode char U+1FB1 (decimal 8113)
+   defining Unicode char U+1FB2 (decimal 8114)
+   defining Unicode char U+1FB3 (decimal 8115)
+   defining Unicode char U+1FB4 (decimal 8116)
+   defining Unicode char U+1FB6 (decimal 8118)
+   defining Unicode char U+1FB7 (decimal 8119)
+   defining Unicode char U+1FB8 (decimal 8120)
+   defining Unicode char U+1FB9 (decimal 8121)
+   defining Unicode char U+1FBA (decimal 8122)
+   defining Unicode char U+1FBB (decimal 8123)
+   defining Unicode char U+1FBC (decimal 8124)
+   defining Unicode char U+1FBD (decimal 8125)
+   defining Unicode char U+1FBE (decimal 8126)
+   defining Unicode char U+1FBF (decimal 8127)
+   defining Unicode char U+1FC0 (decimal 8128)
+   defining Unicode char U+1FC1 (decimal 8129)
+   defining Unicode char U+1FC2 (decimal 8130)
+   defining Unicode char U+1FC3 (decimal 8131)
+   defining Unicode char U+1FC4 (decimal 8132)
+   defining Unicode char U+1FC6 (decimal 8134)
+   defining Unicode char U+1FC7 (decimal 8135)
+   defining Unicode char U+1FC8 (decimal 8136)
+   defining Unicode char U+1FC9 (decimal 8137)
+   defining Unicode char U+1FCA (decimal 8138)
+   defining Unicode char U+1FCB (decimal 8139)
+   defining Unicode char U+1FCC (decimal 8140)
+   defining Unicode char U+1FCD (decimal 8141)
+   defining Unicode char U+1FCE (decimal 8142)
+   defining Unicode char U+1FCF (decimal 8143)
+   defining Unicode char U+1FD0 (decimal 8144)
+   defining Unicode char U+1FD1 (decimal 8145)
+   defining Unicode char U+1FD2 (decimal 8146)
+   defining Unicode char U+1FD3 (decimal 8147)
+   defining Unicode char U+1FD6 (decimal 8150)
+   defining Unicode char U+1FD7 (decimal 8151)
+   defining Unicode char U+1FD8 (decimal 8152)
+   defining Unicode char U+1FD9 (decimal 8153)
+   defining Unicode char U+1FDA (decimal 8154)
+   defining Unicode char U+1FDB (decimal 8155)
+   defining Unicode char U+1FDD (decimal 8157)
+   defining Unicode char U+1FDE (decimal 8158)
+   defining Unicode char U+1FDF (decimal 8159)
+   defining Unicode char U+1FE0 (decimal 8160)
+   defining Unicode char U+1FE1 (decimal 8161)
+   defining Unicode char U+1FE2 (decimal 8162)
+   defining Unicode char U+1FE3 (decimal 8163)
+   defining Unicode char U+1FE4 (decimal 8164)
+   defining Unicode char U+1FE5 (decimal 8165)
+   defining Unicode char U+1FE6 (decimal 8166)
+   defining Unicode char U+1FE7 (decimal 8167)
+   defining Unicode char U+1FE8 (decimal 8168)
+   defining Unicode char U+1FE9 (decimal 8169)
+   defining Unicode char U+1FEA (decimal 8170)
+   defining Unicode char U+1FEB (decimal 8171)
+   defining Unicode char U+1FEC (decimal 8172)
+   defining Unicode char U+1FED (decimal 8173)
+   defining Unicode char U+1FEE (decimal 8174)
+   defining Unicode char U+1FEF (decimal 8175)
+   defining Unicode char U+1FF2 (decimal 8178)
+   defining Unicode char U+1FF3 (decimal 8179)
+   defining Unicode char U+1FF4 (decimal 8180)
+   defining Unicode char U+1FF6 (decimal 8182)
+   defining Unicode char U+1FF7 (decimal 8183)
+   defining Unicode char U+1FF8 (decimal 8184)
+   defining Unicode char U+1FF9 (decimal 8185)
+   defining Unicode char U+1FFA (decimal 8186)
+   defining Unicode char U+1FFB (decimal 8187)
+   defining Unicode char U+1FFC (decimal 8188)
+   defining Unicode char U+1FFD (decimal 8189)
+   defining Unicode char U+1FFE (decimal 8190)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+10144 (decimal 65860)
+   defining Unicode char U+10145 (decimal 65861)
+   defining Unicode char U+10146 (decimal 65862)
+   defining Unicode char U+10147 (decimal 65863)
+)
    defining Unicode char U+00A9 (decimal 169)
    defining Unicode char U+00AA (decimal 170)
    defining Unicode char U+00AE (decimal 174)
@@ -1117,8 +1512,8 @@ Now handling font encoding PU ...
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
-\c@subfigure=\count298
-\c@subtable=\count299
+\c@subfigure=\count302
+\c@subtable=\count303
 )
 (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
@@ -1130,55 +1525,62 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count300
-\l_MT_multwidth_dim=\dimen186
+\g_MT_multlinerow_int=\count304
+\l_MT_multwidth_dim=\dimen199
 \origjot=\skip81
-\l_MT_shortvdotswithinadjustabove_dim=\dimen187
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen188
-\l_MT_above_intertext_sep=\dimen189
-\l_MT_below_intertext_sep=\dimen190
-\l_MT_above_shortintertext_sep=\dimen191
-\l_MT_below_shortintertext_sep=\dimen192
+\l_MT_shortvdotswithinadjustabove_dim=\dimen256
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen257
+\l_MT_above_intertext_sep=\dimen258
+\l_MT_below_intertext_sep=\dimen259
+\l_MT_above_shortintertext_sep=\dimen260
+\l_MT_below_shortintertext_sep=\dimen261
 )
 (./ppgc-tese.aux)
 \openout1 = `ppgc-tese.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 127.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 129.
+LaTeX Font Info:    Try loading font information for LGR+cmr on input line 129.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
+File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
+)
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 129.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 127.
+(lastpage)             ! on input line 129.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count301
-\scratchdimen=\dimen193
+\scratchcounter=\count305
+\scratchdimen=\dimen262
 \scratchbox=\box52
-\nofMPsegments=\count302
-\nofMParguments=\count303
+\nofMPsegments=\count306
+\nofMParguments=\count307
 \everyMPshowfont=\toks27
-\MPscratchCnt=\count304
-\MPscratchDim=\dimen194
-\MPnumerator=\count305
-\makeMPintoPDFobject=\count306
+\MPscratchCnt=\count308
+\MPscratchDim=\dimen263
+\MPnumerator=\count309
+\makeMPintoPDFobject=\count310
 \everyMPtoPDFconversion=\toks28
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1198,33 +1600,33 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 127.
-Package tocstyle Info: prepare \l@part for redefinition on input line 127.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 129.
+Package tocstyle Info: prepare \l@part for redefinition on input line 129.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 127.
-Package tocstyle Info: prepare \l@chapter for redefinition on input line 127.
-Package tocstyle Info: prepare \l@section for redefinition on input line 127.
-LaTeX Font Info:    Try loading font information for U+msa on input line 127.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 129.
+Package tocstyle Info: prepare \l@chapter for redefinition on input line 129.
+Package tocstyle Info: prepare \l@section for redefinition on input line 129.
+LaTeX Font Info:    Try loading font information for U+msa on input line 129.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 127.
+LaTeX Font Info:    Try loading font information for U+msb on input line 129.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Package tocstyle Info: prepare \l@subsection for redefinition on input line 127
+Package tocstyle Info: prepare \l@subsection for redefinition on input line 129
 .
 Package tocstyle Info: prepare \l@subsubsection for redefinition on input line 
-127.
-Package tocstyle Info: prepare \l@table for redefinition on input line 127.
-Package tocstyle Info: prepare \l@subtable for redefinition on input line 127.
-Package tocstyle Info: prepare \l@figure for redefinition on input line 127.
-Package tocstyle Info: prepare \l@subfigure for redefinition on input line 127.
+129.
+Package tocstyle Info: prepare \l@table for redefinition on input line 129.
+Package tocstyle Info: prepare \l@subtable for redefinition on input line 129.
+Package tocstyle Info: prepare \l@figure for redefinition on input line 129.
+Package tocstyle Info: prepare \l@subfigure for redefinition on input line 129.
 
 \AtBeginShipoutBox=\box53
-Package hyperref Info: Link coloring ON on input line 127.
+Package hyperref Info: Link coloring ON on input line 129.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1232,11 +1634,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count307
+\c@section@level=\count311
 )
-LaTeX Info: Redefining \ref on input line 127.
-LaTeX Info: Redefining \pageref on input line 127.
-LaTeX Info: Redefining \nameref on input line 127.
+LaTeX Info: Redefining \ref on input line 129.
+LaTeX Info: Redefining \pageref on input line 129.
+LaTeX Info: Redefining \nameref on input line 129.
 
 (./ppgc-tese.out) (./ppgc-tese.out)
 \@outlinefile=\write3
@@ -1360,8 +1762,8 @@ Dictionary: translator-basic-dictionary, Language: English
 (/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
-\c__siunitx_mathsf_int=\count308
-\c__siunitx_mathtt_int=\count309
+\c__siunitx_mathsf_int=\count312
+\c__siunitx_mathtt_int=\count313
 
 [1
 
@@ -1369,17 +1771,17 @@ File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 
 
 ]
-LaTeX Font Info:    Try loading font information for T1+phv on input line 139.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 141.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 139.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 141.
  [3
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 153--158
+Underfull \hbox (badness 10000) in paragraph at lines 155--160
 
  []
 
@@ -1387,11 +1789,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 153--158
 
 ]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 167.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 169.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 167.
+(babel)             in language  on input line 169.
 
-Overfull \hbox (2.44447pt too wide) in paragraph at lines 172--173
+Overfull \hbox (2.44447pt too wide) in paragraph at lines 174--175
 \T1/ptm/b/n/12 Palavras-chave: \T1/ptm/m/n/12 Elec-tro-nic for-mat-ting of do-c
 u-ments. Ins-ti-tuto de In-for-má-tica da UFRGS.
  []
@@ -1502,7 +1904,7 @@ number noindent (lof, 1): 0.0pt
 \openout4 = `ppgc-tese.lof'.
 
 
-Underfull \vbox (badness 4328) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6
 
@@ -1669,69 +2071,6 @@ text indent calculated (toc, 1): 21.0pt
 number indent calculated (toc, 1): 18.0pt
 text noindent (toc, 1): 30.0pt
 number noindent (toc, 1): 0.0pt
-number indent by \l@... (toc, 1):  18.0pt
-text indent by \l@... (toc, 1):  27.60004pt
-number indent by parent (toc, 1):  18.0pt
-text indent calculated (toc, 1): 21.0pt
-number indent calculated (toc, 1): 18.0pt
-text noindent (toc, 1): 30.0pt
-number noindent (toc, 1): 0.0pt
-number indent by \l@... (toc, 1):  18.0pt
-text indent by \l@... (toc, 1):  27.60004pt
-number indent by parent (toc, 1):  18.0pt
-text indent calculated (toc, 1): 21.0pt
-number indent calculated (toc, 1): 18.0pt
-text noindent (toc, 1): 30.0pt
-number noindent (toc, 1): 0.0pt
-number indent by \l@... (toc, 2):  45.60004pt
-text indent by \l@... (toc, 2):  38.39996pt
-number indent by parent (toc, 2):  39.0pt
-text indent calculated (toc, 2): 30.0pt
-number indent calculated (toc, 2): 39.0pt
-text noindent (toc, 2): 30.0pt
-number noindent (toc, 2): 0.0pt
-number indent by \l@... (toc, 2):  45.60004pt
-text indent by \l@... (toc, 2):  38.39996pt
-number indent by parent (toc, 2):  39.0pt
-text indent calculated (toc, 2): 30.0pt
-number indent calculated (toc, 2): 39.0pt
-text noindent (toc, 2): 30.0pt
-number noindent (toc, 2): 0.0pt
-number indent by \l@... (toc, 2):  45.60004pt
-text indent by \l@... (toc, 2):  38.39996pt
-number indent by parent (toc, 2):  39.0pt
-text indent calculated (toc, 2): 30.0pt
-number indent calculated (toc, 2): 39.0pt
-text noindent (toc, 2): 30.0pt
-number noindent (toc, 2): 0.0pt
-number indent by \l@... (toc, 2):  45.60004pt
-text indent by \l@... (toc, 2):  38.39996pt
-number indent by parent (toc, 2):  39.0pt
-text indent calculated (toc, 2): 30.0pt
-number indent calculated (toc, 2): 39.0pt
-text noindent (toc, 2): 30.0pt
-number noindent (toc, 2): 0.0pt
-number indent by \l@... (toc, 2):  45.60004pt
-text indent by \l@... (toc, 2):  38.39996pt
-number indent by parent (toc, 2):  39.0pt
-text indent calculated (toc, 2): 30.0pt
-number indent calculated (toc, 2): 39.0pt
-text noindent (toc, 2): 30.0pt
-number noindent (toc, 2): 0.0pt
-number indent by \l@... (toc, 2):  45.60004pt
-text indent by \l@... (toc, 2):  38.39996pt
-number indent by parent (toc, 2):  39.0pt
-text indent calculated (toc, 2): 30.0pt
-number indent calculated (toc, 2): 39.0pt
-text noindent (toc, 2): 30.0pt
-number noindent (toc, 2): 0.0pt
-number indent by \l@... (toc, 2):  45.60004pt
-text indent by \l@... (toc, 2):  38.39996pt
-number indent by parent (toc, 2):  39.0pt
-text indent calculated (toc, 2): 30.0pt
-number indent calculated (toc, 2): 39.0pt
-text noindent (toc, 2): 30.0pt
-number noindent (toc, 2): 0.0pt
 number indent by \l@... (toc, 2):  45.60004pt
 text indent by \l@... (toc, 2):  38.39996pt
 number indent by parent (toc, 2):  39.0pt
@@ -1774,6 +2113,76 @@ text indent calculated (toc, 2): 30.0pt
 number indent calculated (toc, 2): 39.0pt
 text noindent (toc, 2): 30.0pt
 number noindent (toc, 2): 0.0pt
+number indent by \l@... (toc, 2):  45.60004pt
+text indent by \l@... (toc, 2):  38.39996pt
+number indent by parent (toc, 2):  39.0pt
+text indent calculated (toc, 2): 30.0pt
+number indent calculated (toc, 2): 39.0pt
+text noindent (toc, 2): 30.0pt
+number noindent (toc, 2): 0.0pt
+number indent by \l@... (toc, 2):  45.60004pt
+text indent by \l@... (toc, 2):  38.39996pt
+number indent by parent (toc, 2):  39.0pt
+text indent calculated (toc, 2): 30.0pt
+number indent calculated (toc, 2): 39.0pt
+text noindent (toc, 2): 30.0pt
+number noindent (toc, 2): 0.0pt
+number indent by \l@... (toc, 2):  45.60004pt
+text indent by \l@... (toc, 2):  38.39996pt
+number indent by parent (toc, 2):  39.0pt
+text indent calculated (toc, 2): 30.0pt
+number indent calculated (toc, 2): 39.0pt
+text noindent (toc, 2): 30.0pt
+number noindent (toc, 2): 0.0pt
+number indent by \l@... (toc, 2):  45.60004pt
+text indent by \l@... (toc, 2):  38.39996pt
+number indent by parent (toc, 2):  39.0pt
+text indent calculated (toc, 2): 30.0pt
+number indent calculated (toc, 2): 39.0pt
+text noindent (toc, 2): 30.0pt
+number noindent (toc, 2): 0.0pt
+number indent by \l@... (toc, 1):  18.0pt
+text indent by \l@... (toc, 1):  27.60004pt
+number indent by parent (toc, 1):  18.0pt
+text indent calculated (toc, 1): 21.0pt
+number indent calculated (toc, 1): 18.0pt
+text noindent (toc, 1): 30.0pt
+number noindent (toc, 1): 0.0pt
+number indent by \l@... (toc, 2):  45.60004pt
+text indent by \l@... (toc, 2):  38.39996pt
+number indent by parent (toc, 2):  39.0pt
+text indent calculated (toc, 2): 30.0pt
+number indent calculated (toc, 2): 39.0pt
+text noindent (toc, 2): 30.0pt
+number noindent (toc, 2): 0.0pt
+number indent by \l@... (toc, 2):  45.60004pt
+text indent by \l@... (toc, 2):  38.39996pt
+number indent by parent (toc, 2):  39.0pt
+text indent calculated (toc, 2): 30.0pt
+number indent calculated (toc, 2): 39.0pt
+text noindent (toc, 2): 30.0pt
+number noindent (toc, 2): 0.0pt
+number indent by \l@... (toc, 2):  45.60004pt
+text indent by \l@... (toc, 2):  38.39996pt
+number indent by parent (toc, 2):  39.0pt
+text indent calculated (toc, 2): 30.0pt
+number indent calculated (toc, 2): 39.0pt
+text noindent (toc, 2): 30.0pt
+number noindent (toc, 2): 0.0pt
+number indent by \l@... (toc, 2):  45.60004pt
+text indent by \l@... (toc, 2):  38.39996pt
+number indent by parent (toc, 2):  39.0pt
+text indent calculated (toc, 2): 30.0pt
+number indent calculated (toc, 2): 39.0pt
+text noindent (toc, 2): 30.0pt
+number noindent (toc, 2): 0.0pt
+number indent by \l@... (toc, 1):  18.0pt
+text indent by \l@... (toc, 1):  27.60004pt
+number indent by parent (toc, 1):  18.0pt
+text indent calculated (toc, 1): 21.0pt
+number indent calculated (toc, 1): 18.0pt
+text noindent (toc, 1): 30.0pt
+number noindent (toc, 1): 0.0pt
 number indent by \l@... (toc, 1):  18.0pt
 text indent by \l@... (toc, 1):  27.60004pt
 number indent by parent (toc, 1):  18.0pt
@@ -1813,7 +2222,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [11
 
 ]
-<figs/zoox_semantic.png, id=348, 1886.04625pt x 963.6pt>
+<figs/zoox_semantic.png, id=351, 1886.04625pt x 963.6pt>
 File: figs/zoox_semantic.png Graphic file (type png)
 <use figs/zoox_semantic.png>
 Package pdftex.def Info: figs/zoox_semantic.png  used on input line 18.
@@ -1851,27 +2260,27 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [16
 
 ]
-<figs/caption_example.pdf, id=380, 589.25142pt x 102.93457pt>
+<figs/caption_example.pdf, id=384, 589.25142pt x 102.93457pt>
 File: figs/caption_example.pdf Graphic file (type pdf)
 <use figs/caption_example.pdf>
 Package pdftex.def Info: figs/caption_example.pdf  used on input line 21.
 (pdftex.def)             Requested size: 298.75264pt x 52.18965pt.
-<figs/localization_example.pdf, id=381, 403.93408pt x 676.47733pt>
+<figs/localization_example.pdf, id=385, 403.93408pt x 676.47733pt>
 File: figs/localization_example.pdf Graphic file (type pdf)
 <use figs/localization_example.pdf>
 Package pdftex.def Info: figs/localization_example.pdf  used on input line 24.
 (pdftex.def)             Requested size: 132.30428pt x 221.57632pt.
-<figs/mapping_example.pdf, id=382, 403.93408pt x 676.47733pt>
+<figs/mapping_example.pdf, id=386, 403.93408pt x 676.47733pt>
 File: figs/mapping_example.pdf Graphic file (type pdf)
 <use figs/mapping_example.pdf>
 Package pdftex.def Info: figs/mapping_example.pdf  used on input line 28.
 (pdftex.def)             Requested size: 132.30428pt x 221.57632pt.
-<figs/slam_example.pdf, id=383, 403.93408pt x 676.47733pt>
+<figs/slam_example.pdf, id=387, 403.93408pt x 676.47733pt>
 File: figs/slam_example.pdf Graphic file (type pdf)
 <use figs/slam_example.pdf>
 Package pdftex.def Info: figs/slam_example.pdf  used on input line 32.
 (pdftex.def)             Requested size: 132.30428pt x 221.57632pt.
-<figs/graphical_models_loc_map_slam.pdf, id=392, 162.54477pt x 95.43788pt>
+<figs/graphical_models_loc_map_slam.pdf, id=396, 162.54477pt x 95.43788pt>
 File: figs/graphical_models_loc_map_slam.pdf Graphic file (type pdf)
 <use figs/graphical_models_loc_map_slam.pdf>
 Package pdftex.def Info: figs/graphical_models_loc_map_slam.pdf  used on input 
@@ -1920,12 +2329,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [23
 
 ]
-Overfull \hbox (14.79309pt too wide) in paragraph at lines 11--12
-\T1/ptm/m/n/12 prob-lem ([][]SJöö; AY-DEMIR; JENS-FELT[][], [][]2012[][]; [][]A
-Y-DEMIR et al.[][], [][]2013[][]; [][]EK-VALL; KRAGIC;
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1948,6 +2351,27 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [27]
+<figs/1.jpeg, id=725, 595.46408pt x 548.64127pt>
+File: figs/1.jpeg Graphic file (type jpg)
+<use figs/1.jpeg>
+Package pdftex.def Info: figs/1.jpeg  used on input line 61.
+(pdftex.def)             Requested size: 192.0548pt x 176.9501pt.
+<figs/2.jpeg, id=726, 595.46408pt x 548.64127pt>
+File: figs/2.jpeg Graphic file (type jpg)
+<use figs/2.jpeg>
+Package pdftex.def Info: figs/2.jpeg  used on input line 67.
+(pdftex.def)             Requested size: 192.0548pt x 176.9501pt.
+<figs/3.jpeg, id=727, 595.46408pt x 548.64127pt>
+File: figs/3.jpeg Graphic file (type jpg)
+<use figs/3.jpeg>
+Package pdftex.def Info: figs/3.jpeg  used on input line 74.
+(pdftex.def)             Requested size: 192.0548pt x 176.9501pt.
+<figs/4.jpeg, id=728, 595.46408pt x 548.64127pt>
+File: figs/4.jpeg Graphic file (type jpg)
+<use figs/4.jpeg>
+Package pdftex.def Info: figs/4.jpeg  used on input line 80.
+(pdftex.def)             Requested size: 192.0548pt x 176.9501pt.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1955,7 +2379,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 28
  []
 
-[28]
+[28 <./figs/1.jpeg> <./figs/2.jpeg> <./figs/3.jpeg> <./figs/4.jpeg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [29]
@@ -1967,34 +2391,15 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [30]
+<figs/ImageProcessing.jpeg, id=775, 1339.53972pt x 351.17113pt>
+File: figs/ImageProcessing.jpeg Graphic file (type jpg)
+<use figs/ImageProcessing.jpeg>
+Package pdftex.def Info: figs/ImageProcessing.jpeg  used on input line 138.
+(pdftex.def)             Requested size: 384.1096pt x 100.69566pt.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [31]
-<figs/1.jpeg, id=837, 595.46408pt x 548.64127pt>
-File: figs/1.jpeg Graphic file (type jpg)
-<use figs/1.jpeg>
-Package pdftex.def Info: figs/1.jpeg  used on input line 66.
-(pdftex.def)             Requested size: 196.32687pt x 180.88474pt.
-<figs/2.jpeg, id=838, 595.46408pt x 548.64127pt>
-File: figs/2.jpeg Graphic file (type jpg)
-<use figs/2.jpeg>
-Package pdftex.def Info: figs/2.jpeg  used on input line 67.
-(pdftex.def)             Requested size: 196.32687pt x 180.88474pt.
-<figs/3.jpeg, id=839, 595.46408pt x 548.64127pt>
-File: figs/3.jpeg Graphic file (type jpg)
-<use figs/3.jpeg>
-Package pdftex.def Info: figs/3.jpeg  used on input line 70.
-(pdftex.def)             Requested size: 196.32687pt x 180.88474pt.
-<figs/4.jpeg, id=840, 595.46408pt x 548.64127pt>
-File: figs/4.jpeg Graphic file (type jpg)
-<use figs/4.jpeg>
-Package pdftex.def Info: figs/4.jpeg  used on input line 71.
-(pdftex.def)             Requested size: 196.32687pt x 180.88474pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
+ [31 <./figs/ImageProcessing.jpeg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2003,23 +2408,55 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [32]
-Underfull \vbox (badness 3068) has occurred while \output is active []
-
- [33 <./figs/1.jpeg> <./figs/2.jpeg> <./figs/3.jpeg> <./figs/4.jpeg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [33]
+<figs/growing_direction_empty.jpeg, id=805, 486.18pt x 205.3125pt>
+File: figs/growing_direction_empty.jpeg Graphic file (type jpg)
+<use figs/growing_direction_empty.jpeg>
+Package pdftex.def Info: figs/growing_direction_empty.jpeg  used on input line 
+183.
+(pdftex.def)             Requested size: 192.0548pt x 81.10223pt.
+<figs/growing_direction_arrows.jpeg, id=806, 486.18pt x 205.3125pt>
+File: figs/growing_direction_arrows.jpeg Graphic file (type jpg)
+<use figs/growing_direction_arrows.jpeg>
+Package pdftex.def Info: figs/growing_direction_arrows.jpeg  used on input line
+ 189.
+(pdftex.def)             Requested size: 192.0548pt x 81.10223pt.
+<figs/growing_direction_door_signs_linegedup.jpeg, id=807, 486.18pt x 205.3125p
+t>
+File: figs/growing_direction_door_signs_linegedup.jpeg Graphic file (type jpg)
+<use figs/growing_direction_door_signs_linegedup.jpeg>
+Package pdftex.def Info: figs/growing_direction_door_signs_linegedup.jpeg  used
+ on input line 196.
+(pdftex.def)             Requested size: 192.0548pt x 81.10223pt.
+<figs/growing_direction_all_arrows.jpeg, id=808, 486.18pt x 205.3125pt>
+File: figs/growing_direction_all_arrows.jpeg Graphic file (type jpg)
+<use figs/growing_direction_all_arrows.jpeg>
+Package pdftex.def Info: figs/growing_direction_all_arrows.jpeg  used on input 
+line 202.
+(pdftex.def)             Requested size: 192.0548pt x 81.10223pt.
+<figs/all_doorlabelsequences.jpeg, id=810, 2756.43887pt x 345.0638pt>
+File: figs/all_doorlabelsequences.jpeg Graphic file (type jpg)
+<use figs/all_doorlabelsequences.jpeg>
+Package pdftex.def Info: figs/all_doorlabelsequences.jpeg  used on input line 2
+26.
+(pdftex.def)             Requested size: 426.79135pt x 53.4264pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 34
  []
 
-[34]
-<figs/ImageProcessing.jpeg, id=889, 1339.53972pt x 351.17113pt>
-File: figs/ImageProcessing.jpeg Graphic file (type jpg)
-<use figs/ImageProcessing.jpeg>
-Package pdftex.def Info: figs/ImageProcessing.jpeg  used on input line 127.
-(pdftex.def)             Requested size: 384.1096pt x 100.69566pt.
- [35 <./figs/ImageProcessing.jpeg>]
+[34 <./figs/growing_direction_empty.jpeg> <./figs/growing_direction_arrows.jpeg
+> <./figs/growing_direction_door_signs_linegedup.jpeg> <./figs/growing_directio
+n_all_arrows.jpeg>]
+Underfull \vbox (badness 1803) has occurred while \output is active []
+
+ [35 <./figs/all_doorlabelsequences.jpeg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2028,81 +2465,30 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [36]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [37]
-<figs/growing_direction_empty.jpeg, id=919, 486.18pt x 205.3125pt>
-File: figs/growing_direction_empty.jpeg Graphic file (type jpg)
-<use figs/growing_direction_empty.jpeg>
-Package pdftex.def Info: figs/growing_direction_empty.jpeg  used on input line 
-170.
-(pdftex.def)             Requested size: 204.85802pt x 86.50948pt.
-<figs/growing_direction_arrows.jpeg, id=920, 486.18pt x 205.3125pt>
-File: figs/growing_direction_arrows.jpeg Graphic file (type jpg)
-<use figs/growing_direction_arrows.jpeg>
-Package pdftex.def Info: figs/growing_direction_arrows.jpeg  used on input line
- 171.
-(pdftex.def)             Requested size: 204.85802pt x 86.50948pt.
-<figs/growing_direction_door_signs_linegedup.jpeg, id=921, 486.18pt x 205.3125p
-t>
-File: figs/growing_direction_door_signs_linegedup.jpeg Graphic file (type jpg)
-<use figs/growing_direction_door_signs_linegedup.jpeg>
-Package pdftex.def Info: figs/growing_direction_door_signs_linegedup.jpeg  used
- on input line 173.
-(pdftex.def)             Requested size: 204.85802pt x 86.50948pt.
-<figs/growing_direction_all_arrows.jpeg, id=922, 486.18pt x 205.3125pt>
-File: figs/growing_direction_all_arrows.jpeg Graphic file (type jpg)
-<use figs/growing_direction_all_arrows.jpeg>
-Package pdftex.def Info: figs/growing_direction_all_arrows.jpeg  used on input 
-line 174.
-(pdftex.def)             Requested size: 204.85802pt x 86.50948pt.
+<figs/all_direction.jpeg, id=829, 2760.51042pt x 497.7469pt>
+File: figs/all_direction.jpeg Graphic file (type jpg)
+<use figs/all_direction.jpeg>
+Package pdftex.def Info: figs/all_direction.jpeg  used on input line 270.
+(pdftex.def)             Requested size: 426.79135pt x 76.9525pt.
+ [37 <./figs/all_direction.jpeg>]
+<figs/all_distance.jpeg, id=839, 2761.5283pt x 489.6038pt>
+File: figs/all_distance.jpeg Graphic file (type jpg)
+<use figs/all_distance.jpeg>
+Package pdftex.def Info: figs/all_distance.jpeg  used on input line 297.
+(pdftex.def)             Requested size: 426.79135pt x 75.66368pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 38
  []
 
-[38 <./figs/growing_direction_empty.jpeg> <./figs/growing_direction_arrows.jpeg
-> <./figs/growing_direction_door_signs_linegedup.jpeg> <./figs/growing_directio
-n_all_arrows.jpeg>]
-<figs/all_doorlabelsequences.jpeg, id=931, 2756.43887pt x 345.0638pt>
-File: figs/all_doorlabelsequences.jpeg Graphic file (type jpg)
-<use figs/all_doorlabelsequences.jpeg>
-Package pdftex.def Info: figs/all_doorlabelsequences.jpeg  used on input line 1
-84.
-(pdftex.def)             Requested size: 426.79135pt x 53.4264pt.
- [39 <./figs/all_doorlabelsequences.jpeg>]
+[38 <./figs/all_distance.jpeg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 40
- []
-
-[40]
-<figs/all_direction.jpeg, id=946, 2760.51042pt x 497.7469pt>
-File: figs/all_direction.jpeg Graphic file (type jpg)
-<use figs/all_direction.jpeg>
-Package pdftex.def Info: figs/all_direction.jpeg  used on input line 228.
-(pdftex.def)             Requested size: 426.79135pt x 76.9525pt.
- [41 <./figs/all_direction.jpeg>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 42
- []
-
-[42]
-<figs/all_distance.jpeg, id=961, 2761.5283pt x 489.6038pt>
-File: figs/all_distance.jpeg Graphic file (type jpg)
-<use figs/all_distance.jpeg>
-Package pdftex.def Info: figs/all_distance.jpeg  used on input line 255.
-(pdftex.def)             Requested size: 426.79135pt x 75.66368pt.
- [43 <./figs/all_distance.jpeg>]
-<figs/drawing2.jpeg, id=979, 473.74315pt x 152.758pt>
+ [39]
+<figs/drawing2.jpeg, id=862, 473.74315pt x 152.758pt>
 File: figs/drawing2.jpeg Graphic file (type jpg)
 <use figs/drawing2.jpeg>
-Package pdftex.def Info: figs/drawing2.jpeg  used on input line 287.
+Package pdftex.def Info: figs/drawing2.jpeg  used on input line 328.
 (pdftex.def)             Requested size: 426.79135pt x 137.6231pt.
 
 
@@ -2113,44 +2499,46 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 44
+\T1/ptm/m/n/10.95 40
  []
 
-[44] [45 <./figs/drawing2.jpeg>]
-<figs/map_normal_redcircles.jpeg, id=1003, 1301.68124pt x 870.525pt>
+[40]
+<figs/map_normal_redcircles.jpeg, id=879, 1301.68124pt x 870.525pt>
 File: figs/map_normal_redcircles.jpeg Graphic file (type jpg)
 <use figs/map_normal_redcircles.jpeg>
-Package pdftex.def Info: figs/map_normal_redcircles.jpeg  used on input line 31
-1.
-(pdftex.def)             Requested size: 213.39568pt x 142.7006pt.
-<figs/map_inverse_redcircles.jpeg, id=1004, 1301.68124pt x 868.8825pt>
+Package pdftex.def Info: figs/map_normal_redcircles.jpeg  used on input line 35
+2.
+(pdftex.def)             Requested size: 170.71393pt x 114.16846pt.
+<figs/map_inverse_redcircles.jpeg, id=880, 1301.68124pt x 868.8825pt>
 File: figs/map_inverse_redcircles.jpeg Graphic file (type jpg)
 <use figs/map_inverse_redcircles.jpeg>
 Package pdftex.def Info: figs/map_inverse_redcircles.jpeg  used on input line 3
-13.
-(pdftex.def)             Requested size: 213.39568pt x 142.43135pt.
-<figs/hotel2_PAPER.jpeg, id=1005, 1616.0375pt x 968.61874pt>
+54.
+(pdftex.def)             Requested size: 170.71393pt x 113.95303pt.
+<figs/hotel2_PAPER.jpeg, id=881, 1616.0375pt x 968.61874pt>
 File: figs/hotel2_PAPER.jpeg Graphic file (type jpg)
 <use figs/hotel2_PAPER.jpeg>
-Package pdftex.def Info: figs/hotel2_PAPER.jpeg  used on input line 315.
-(pdftex.def)             Requested size: 226.19888pt x 135.57614pt.
-<figs/KTH_CampusValhallava_finished.jpeg, id=1006, 223.09435pt x 291.49706pt>
+Package pdftex.def Info: figs/hotel2_PAPER.jpeg  used on input line 356.
+(pdftex.def)             Requested size: 183.51715pt x 109.99211pt.
+<figs/KTH_CampusValhallava_finished.jpeg, id=882, 223.09435pt x 291.49706pt>
 File: figs/KTH_CampusValhallava_finished.jpeg Graphic file (type jpg)
 <use figs/KTH_CampusValhallava_finished.jpeg>
 Package pdftex.def Info: figs/KTH_CampusValhallava_finished.jpeg  used on input
- line 317.
-(pdftex.def)             Requested size: 226.19888pt x 295.5528pt.
+ line 358.
+(pdftex.def)             Requested size: 183.51715pt x 239.78082pt.
 
+Underfull \vbox (badness 1314) has occurred while \output is active []
 
-LaTeX Warning: Float too large for page by 118.50531pt on input line 321.
-
-
+ [41 <./figs/drawing2.jpeg>]
 Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 46
+\T1/ptm/m/n/10.95 42
  []
 
-[46] [47 <./figs/map_normal_redcircles.jpeg> <./figs/map_inverse_redcircles.jpe
-g> <./figs/hotel2_PAPER.jpeg> <./figs/KTH_CampusValhallava_finished.jpeg>]
+[42 <./figs/map_normal_redcircles.jpeg> <./figs/map_inverse_redcircles.jpeg> <.
+/figs/hotel2_PAPER.jpeg> <./figs/KTH_CampusValhallava_finished.jpeg>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [43]
 Package epstopdf Info: Source file: <figs/RESULTS_NORMAL_NEW.eps>
 (epstopdf)                    date: 2021-10-19 16:05:04
 (epstopdf)                    size: 289027 bytes
@@ -2160,18 +2548,18 @@ df>
 (epstopdf)                    size: 279818 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/RESULTS_NORMAL_NEW-eps
 -converted-to.pdf figs/RESULTS_NORMAL_NEW.eps>
-(epstopdf)             \includegraphics on input line 337.
+(epstopdf)             \includegraphics on input line 378.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figs/RESULTS_NORMAL_NEW-eps-converted-to.pdf):
  PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/RESULTS_NORMAL_NEW-eps-converted-to.pdf, id=1034, 924.45375pt x 876.27374
-pt>
+<figs/RESULTS_NORMAL_NEW-eps-converted-to.pdf, id=918, 924.45375pt x 876.27374p
+t>
 File: figs/RESULTS_NORMAL_NEW-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/RESULTS_NORMAL_NEW-eps-converted-to.pdf>
 Package pdftex.def Info: figs/RESULTS_NORMAL_NEW-eps-converted-to.pdf  used on 
-input line 337.
+input line 378.
 (pdftex.def)             Requested size: 405.45047pt x 384.31815pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2185,18 +2573,18 @@ pdf>
 (epstopdf)                    size: 283972 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/RESULTS_INVERSE_NEW-ep
 s-converted-to.pdf figs/RESULTS_INVERSE_NEW.eps>
-(epstopdf)             \includegraphics on input line 344.
+(epstopdf)             \includegraphics on input line 385.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figs/RESULTS_INVERSE_NEW-eps-converted-to.pdf)
 : PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/RESULTS_INVERSE_NEW-eps-converted-to.pdf, id=1035, 924.45375pt x 875.27pt
->
+<figs/RESULTS_INVERSE_NEW-eps-converted-to.pdf, id=919, 924.45375pt x 875.27pt>
+
 File: figs/RESULTS_INVERSE_NEW-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/RESULTS_INVERSE_NEW-eps-converted-to.pdf>
 Package pdftex.def Info: figs/RESULTS_INVERSE_NEW-eps-converted-to.pdf  used on
- input line 344.
+ input line 385.
 (pdftex.def)             Requested size: 405.45047pt x 383.87793pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2210,28 +2598,19 @@ f>
 (epstopdf)                    size: 172048 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/RESULTS_HOTEL_NEW-eps-
 converted-to.pdf figs/RESULTS_HOTEL_NEW.eps>
-(epstopdf)             \includegraphics on input line 353.
+(epstopdf)             \includegraphics on input line 394.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figs/RESULTS_HOTEL_NEW-eps-converted-to.pdf): 
 PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/RESULTS_HOTEL_NEW-eps-converted-to.pdf, id=1040, 571.13374pt x 545.03625p
-t>
+<figs/RESULTS_HOTEL_NEW-eps-converted-to.pdf, id=924, 571.13374pt x 545.03625pt
+>
 File: figs/RESULTS_HOTEL_NEW-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/RESULTS_HOTEL_NEW-eps-converted-to.pdf>
 Package pdftex.def Info: figs/RESULTS_HOTEL_NEW-eps-converted-to.pdf  used on i
-nput line 353.
+nput line 394.
 (pdftex.def)             Requested size: 405.45047pt x 386.92854pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 48
- []
-
-[48]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -2244,17 +2623,17 @@ Package epstopdf Info: Source file: <figs/RESULTS_KTH_NEW.eps>
 (epstopdf)                    size: 38737 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/RESULTS_KTH_NEW-eps-co
 nverted-to.pdf figs/RESULTS_KTH_NEW.eps>
-(epstopdf)             \includegraphics on input line 360.
+(epstopdf)             \includegraphics on input line 401.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figs/RESULTS_KTH_NEW-eps-converted-to.pdf): PD
 F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/RESULTS_KTH_NEW-eps-converted-to.pdf, id=1045, 431.6125pt x 140.525pt>
+<figs/RESULTS_KTH_NEW-eps-converted-to.pdf, id=925, 431.6125pt x 140.525pt>
 File: figs/RESULTS_KTH_NEW-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/RESULTS_KTH_NEW-eps-converted-to.pdf>
 Package pdftex.def Info: figs/RESULTS_KTH_NEW-eps-converted-to.pdf  used on inp
-ut line 360.
+ut line 401.
 (pdftex.def)             Requested size: 405.45047pt x 132.01202pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2268,24 +2647,33 @@ rted-to.pdf>
 (epstopdf)                    size: 84003 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/RESULTS_NORMAL_SHORTES
 T_NEW-eps-converted-to.pdf figs/RESULTS_NORMAL_SHORTEST_NEW.eps>
-(epstopdf)             \includegraphics on input line 369.
+(epstopdf)             \includegraphics on input line 410.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figs/RESULTS_NORMAL_SHORTEST_NEW-eps-converted
 -to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> all
 owed
-<figs/RESULTS_NORMAL_SHORTEST_NEW-eps-converted-to.pdf, id=1057, 1215.54124pt x
- 313.17pt>
+<figs/RESULTS_NORMAL_SHORTEST_NEW-eps-converted-to.pdf, id=937, 1215.54124pt x 
+313.17pt>
 File: figs/RESULTS_NORMAL_SHORTEST_NEW-eps-converted-to.pdf Graphic file (type 
 pdf)
 <use figs/RESULTS_NORMAL_SHORTEST_NEW-eps-converted-to.pdf>
 Package pdftex.def Info: figs/RESULTS_NORMAL_SHORTEST_NEW-eps-converted-to.pdf 
- used on input line 369.
+ used on input line 410.
 (pdftex.def)             Requested size: 405.45047pt x 104.45982pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+\T1/ptm/m/n/10.95 44
+ []
+
+[44]
 Package epstopdf Info: Source file: <figs/RESULTS_INVERSE_SHORTEST_NEW.eps>
 (epstopdf)                    date: 2021-10-19 16:05:06
 (epstopdf)                    size: 90003 bytes
@@ -2295,20 +2683,20 @@ erted-to.pdf>
 (epstopdf)                    size: 86657 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/RESULTS_INVERSE_SHORTE
 ST_NEW-eps-converted-to.pdf figs/RESULTS_INVERSE_SHORTEST_NEW.eps>
-(epstopdf)             \includegraphics on input line 378.
+(epstopdf)             \includegraphics on input line 419.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figs/RESULTS_INVERSE_SHORTEST_NEW-eps-converte
 d-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> al
 lowed
-<figs/RESULTS_INVERSE_SHORTEST_NEW-eps-converted-to.pdf, id=1061, 1215.54124pt 
-x 314.17375pt>
+<figs/RESULTS_INVERSE_SHORTEST_NEW-eps-converted-to.pdf, id=945, 1215.54124pt x
+ 314.17375pt>
 File: figs/RESULTS_INVERSE_SHORTEST_NEW-eps-converted-to.pdf Graphic file (type
  pdf)
 <use figs/RESULTS_INVERSE_SHORTEST_NEW-eps-converted-to.pdf>
 Package pdftex.def Info: figs/RESULTS_INVERSE_SHORTEST_NEW-eps-converted-to.pdf
-  used on input line 378.
+  used on input line 419.
 (pdftex.def)             Requested size: 405.45047pt x 104.79463pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2322,20 +2710,20 @@ ted-to.pdf>
 (epstopdf)                    size: 90193 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/RESULTS_HOTEL_SHORTEST
 _NEW-eps-converted-to.pdf figs/RESULTS_HOTEL_SHORTEST_NEW.eps>
-(epstopdf)             \includegraphics on input line 385.
+(epstopdf)             \includegraphics on input line 426.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figs/RESULTS_HOTEL_SHORTEST_NEW-eps-converted-
 to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allo
 wed
-<figs/RESULTS_HOTEL_SHORTEST_NEW-eps-converted-to.pdf, id=1064, 1215.54124pt x 
-314.17375pt>
+<figs/RESULTS_HOTEL_SHORTEST_NEW-eps-converted-to.pdf, id=948, 1215.54124pt x 3
+14.17375pt>
 File: figs/RESULTS_HOTEL_SHORTEST_NEW-eps-converted-to.pdf Graphic file (type p
 df)
 <use figs/RESULTS_HOTEL_SHORTEST_NEW-eps-converted-to.pdf>
 Package pdftex.def Info: figs/RESULTS_HOTEL_SHORTEST_NEW-eps-converted-to.pdf  
-used on input line 385.
+used on input line 426.
 (pdftex.def)             Requested size: 405.45047pt x 104.79463pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2349,20 +2737,20 @@ d-to.pdf>
 (epstopdf)                    size: 14732 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/RESULTS_KTH_SHORTEST_N
 EW-eps-converted-to.pdf figs/RESULTS_KTH_SHORTEST_NEW.eps>
-(epstopdf)             \includegraphics on input line 392.
+(epstopdf)             \includegraphics on input line 433.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figs/RESULTS_KTH_SHORTEST_NEW-eps-converted-to
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
-<figs/RESULTS_KTH_SHORTEST_NEW-eps-converted-to.pdf, id=1067, 375.4025pt x 63.2
-3625pt>
+<figs/RESULTS_KTH_SHORTEST_NEW-eps-converted-to.pdf, id=951, 375.4025pt x 63.23
+625pt>
 File: figs/RESULTS_KTH_SHORTEST_NEW-eps-converted-to.pdf Graphic file (type pdf
 )
 <use figs/RESULTS_KTH_SHORTEST_NEW-eps-converted-to.pdf>
 Package pdftex.def Info: figs/RESULTS_KTH_SHORTEST_NEW-eps-converted-to.pdf  us
-ed on input line 392.
+ed on input line 433.
 (pdftex.def)             Requested size: 405.45047pt x 68.30183pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2370,23 +2758,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [49 <./figs/RESULTS_NORMAL_NEW-eps-converted-to.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+ [45 <./figs/RESULTS_NORMAL_NEW-eps-converted-to.pdf>]
 Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 50
+\T1/ptm/m/n/10.95 46
  []
 
-[50 <./figs/RESULTS_INVERSE_NEW-eps-converted-to.pdf>] [51 <./figs/RESULTS_HOTE
-L_NEW-eps-converted-to.pdf> <./figs/RESULTS_KTH_NEW-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 52
- []
-
-[52 <./figs/RESULTS_NORMAL_SHORTEST_NEW-eps-converted-to.pdf> <./figs/RESULTS_I
-NVERSE_SHORTEST_NEW-eps-converted-to.pdf> <./figs/RESULTS_HOTEL_SHORTEST_NEW-ep
-s-converted-to.pdf> <./figs/RESULTS_KTH_SHORTEST_NEW-eps-converted-to.pdf>]
+[46 <./figs/RESULTS_INVERSE_NEW-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figs/RESULTS_COMPARISON_PERCENTAGE_NEW.eps
 >
 (epstopdf)                    date: 2021-10-19 16:05:06
@@ -2397,22 +2774,36 @@ Package epstopdf Info: Source file: <figs/RESULTS_COMPARISON_PERCENTAGE_NEW.eps
 (epstopdf)                    size: 126080 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/RESULTS_COMPARISON_PER
 CENTAGE_NEW-eps-converted-to.pdf figs/RESULTS_COMPARISON_PERCENTAGE_NEW.eps>
-(epstopdf)             \includegraphics on input line 409.
+(epstopdf)             \includegraphics on input line 450.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figs/RESULTS_COMPARISON_PERCENTAGE_NEW-eps-con
 verted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.
 5> allowed
-<figs/RESULTS_COMPARISON_PERCENTAGE_NEW-eps-converted-to.pdf, id=1125, 1460.456
-25pt x 514.92375pt>
+<figs/RESULTS_COMPARISON_PERCENTAGE_NEW-eps-converted-to.pdf, id=982, 1460.4562
+5pt x 514.92375pt>
 File: figs/RESULTS_COMPARISON_PERCENTAGE_NEW-eps-converted-to.pdf Graphic file 
 (type pdf)
 <use figs/RESULTS_COMPARISON_PERCENTAGE_NEW-eps-converted-to.pdf>
 Package pdftex.def Info: figs/RESULTS_COMPARISON_PERCENTAGE_NEW-eps-converted-t
-o.pdf  used on input line 409.
+o.pdf  used on input line 450.
 (pdftex.def)             Requested size: 405.45047pt x 142.95195pt.
-[53 <./figs/RESULTS_COMPARISON_PERCENTAGE_NEW-eps-converted-to.pdf>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[47 <./figs/RESULTS_HOTEL_NEW-eps-converted-to.pdf> <./figs/RESULTS_KTH_NEW-eps
+-converted-to.pdf>]
+Underfull \hbox (badness 10000) has occurred while \output is active
+\T1/ptm/m/n/10.95 48
+ []
+
+[48 <./figs/RESULTS_NORMAL_SHORTEST_NEW-eps-converted-to.pdf> <./figs/RESULTS_I
+NVERSE_SHORTEST_NEW-eps-converted-to.pdf> <./figs/RESULTS_HOTEL_SHORTEST_NEW-ep
+s-converted-to.pdf> <./figs/RESULTS_KTH_SHORTEST_NEW-eps-converted-to.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [49 <./figs/RESULTS_COMPARISON_PERCENTAGE_NEW-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figs/RESULTS_HUMANS_NEW.eps>
 (epstopdf)                    date: 2021-10-19 16:05:06
 (epstopdf)                    size: 150065 bytes
@@ -2422,45 +2813,43 @@ df>
 (epstopdf)                    size: 144551 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/RESULTS_HUMANS_NEW-eps
 -converted-to.pdf figs/RESULTS_HUMANS_NEW.eps>
-(epstopdf)             \includegraphics on input line 424.
+(epstopdf)             \includegraphics on input line 465.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figs/RESULTS_HUMANS_NEW-eps-converted-to.pdf):
  PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/RESULTS_HUMANS_NEW-eps-converted-to.pdf, id=1137, 1056.94875pt x 492.8412
+<figs/RESULTS_HUMANS_NEW-eps-converted-to.pdf, id=1021, 1056.94875pt x 492.8412
 5pt>
 File: figs/RESULTS_HUMANS_NEW-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/RESULTS_HUMANS_NEW-eps-converted-to.pdf>
 Package pdftex.def Info: figs/RESULTS_HUMANS_NEW-eps-converted-to.pdf  used on 
-input line 424.
+input line 465.
 (pdftex.def)             Requested size: 405.45047pt x 189.05637pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 54
+\T1/ptm/m/n/10.95 50
  []
 
-[54 <./figs/RESULTS_HUMANS_NEW-eps-converted-to.pdf>]
-<figs/real_environment_map.jpeg, id=1148, 1068.44624pt x 306.32625pt>
+[50 <./figs/RESULTS_HUMANS_NEW-eps-converted-to.pdf>]
+<figs/real_environment_map.jpeg, id=1032, 1068.44624pt x 306.32625pt>
 File: figs/real_environment_map.jpeg Graphic file (type jpg)
 <use figs/real_environment_map.jpeg>
-Package pdftex.def Info: figs/real_environment_map.jpeg  used on input line 438
+Package pdftex.def Info: figs/real_environment_map.jpeg  used on input line 479
 .
 (pdftex.def)             Requested size: 407.58652pt x 116.8539pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figs/real_scenario_labeled2.jpeg, id=1149, 533.8125pt x 500.9625pt>
+<figs/real_scenario_labeled2.jpeg, id=1033, 533.8125pt x 500.9625pt>
 File: figs/real_scenario_labeled2.jpeg Graphic file (type jpg)
 <use figs/real_scenario_labeled2.jpeg>
 Package pdftex.def Info: figs/real_scenario_labeled2.jpeg  used on input line 4
-45.
+86.
 (pdftex.def)             Requested size: 384.1096pt x 360.48633pt.
+ [51 <./figs/real_environment_map.jpeg>]
+Underfull \hbox (badness 10000) has occurred while \output is active
+\T1/ptm/m/n/10.95 52
+ []
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [55]
+[52 <./figs/real_scenario_labeled2.jpeg>]
 Package epstopdf Info: Source file: <figs/1_Real_Exploration_11.eps>
 (epstopdf)                    date: 2021-10-19 16:05:04
 (epstopdf)                    size: 149132 bytes
@@ -2470,18 +2859,18 @@ o.pdf>
 (epstopdf)                    size: 98242 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/1_Real_Exploration_11-
 eps-converted-to.pdf figs/1_Real_Exploration_11.eps>
-(epstopdf)             \includegraphics on input line 455.
+(epstopdf)             \includegraphics on input line 510.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figs/1_Real_Exploration_11-eps-converted-to.pd
 f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/1_Real_Exploration_11-eps-converted-to.pdf, id=1156, 1515.6625pt x 734.74
+<figs/1_Real_Exploration_11-eps-converted-to.pdf, id=1043, 1515.6625pt x 734.74
 5pt>
 File: figs/1_Real_Exploration_11-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/1_Real_Exploration_11-eps-converted-to.pdf>
 Package pdftex.def Info: figs/1_Real_Exploration_11-eps-converted-to.pdf  used 
-on input line 455.
+on input line 510.
 (pdftex.def)             Requested size: 192.0548pt x 93.09856pt.
 Package epstopdf Info: Source file: <figs/2_Real_Exploration_22.eps>
 (epstopdf)                    date: 2021-10-19 16:05:06
@@ -2492,18 +2881,18 @@ o.pdf>
 (epstopdf)                    size: 110413 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/2_Real_Exploration_22-
 eps-converted-to.pdf figs/2_Real_Exploration_22.eps>
-(epstopdf)             \includegraphics on input line 456.
+(epstopdf)             \includegraphics on input line 516.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figs/2_Real_Exploration_22-eps-converted-to.pd
 f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/2_Real_Exploration_22-eps-converted-to.pdf, id=1157, 1515.6625pt x 734.74
+<figs/2_Real_Exploration_22-eps-converted-to.pdf, id=1044, 1515.6625pt x 734.74
 5pt>
 File: figs/2_Real_Exploration_22-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/2_Real_Exploration_22-eps-converted-to.pdf>
 Package pdftex.def Info: figs/2_Real_Exploration_22-eps-converted-to.pdf  used 
-on input line 456.
+on input line 516.
 (pdftex.def)             Requested size: 192.0548pt x 93.09856pt.
 Package epstopdf Info: Source file: <figs/3_Real_Exploration_33.eps>
 (epstopdf)                    date: 2021-10-19 16:05:06
@@ -2514,18 +2903,18 @@ o.pdf>
 (epstopdf)                    size: 122856 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/3_Real_Exploration_33-
 eps-converted-to.pdf figs/3_Real_Exploration_33.eps>
-(epstopdf)             \includegraphics on input line 457.
+(epstopdf)             \includegraphics on input line 523.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figs/3_Real_Exploration_33-eps-converted-to.pd
 f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/3_Real_Exploration_33-eps-converted-to.pdf, id=1158, 1515.6625pt x 734.74
+<figs/3_Real_Exploration_33-eps-converted-to.pdf, id=1045, 1515.6625pt x 734.74
 5pt>
 File: figs/3_Real_Exploration_33-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/3_Real_Exploration_33-eps-converted-to.pdf>
 Package pdftex.def Info: figs/3_Real_Exploration_33-eps-converted-to.pdf  used 
-on input line 457.
+on input line 523.
 (pdftex.def)             Requested size: 192.0548pt x 93.09856pt.
 Package epstopdf Info: Source file: <figs/4_Real_Exploration_44.eps>
 (epstopdf)                    date: 2021-10-19 16:05:06
@@ -2536,18 +2925,18 @@ o.pdf>
 (epstopdf)                    size: 130777 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/4_Real_Exploration_44-
 eps-converted-to.pdf figs/4_Real_Exploration_44.eps>
-(epstopdf)             \includegraphics on input line 458.
+(epstopdf)             \includegraphics on input line 529.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figs/4_Real_Exploration_44-eps-converted-to.pd
 f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/4_Real_Exploration_44-eps-converted-to.pdf, id=1159, 1515.6625pt x 734.74
+<figs/4_Real_Exploration_44-eps-converted-to.pdf, id=1046, 1515.6625pt x 734.74
 5pt>
 File: figs/4_Real_Exploration_44-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/4_Real_Exploration_44-eps-converted-to.pdf>
 Package pdftex.def Info: figs/4_Real_Exploration_44-eps-converted-to.pdf  used 
-on input line 458.
+on input line 529.
 (pdftex.def)             Requested size: 192.0548pt x 93.09856pt.
 Package epstopdf Info: Source file: <figs/5_Real_Exploration_55.eps>
 (epstopdf)                    date: 2021-10-19 16:05:06
@@ -2558,18 +2947,18 @@ o.pdf>
 (epstopdf)                    size: 140226 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/5_Real_Exploration_55-
 eps-converted-to.pdf figs/5_Real_Exploration_55.eps>
-(epstopdf)             \includegraphics on input line 459.
+(epstopdf)             \includegraphics on input line 536.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figs/5_Real_Exploration_55-eps-converted-to.pd
 f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/5_Real_Exploration_55-eps-converted-to.pdf, id=1160, 1515.6625pt x 734.74
+<figs/5_Real_Exploration_55-eps-converted-to.pdf, id=1047, 1515.6625pt x 734.74
 5pt>
 File: figs/5_Real_Exploration_55-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/5_Real_Exploration_55-eps-converted-to.pdf>
 Package pdftex.def Info: figs/5_Real_Exploration_55-eps-converted-to.pdf  used 
-on input line 459.
+on input line 536.
 (pdftex.def)             Requested size: 192.0548pt x 93.09856pt.
 Package epstopdf Info: Source file: <figs/6_Real_Exploration_66.eps>
 (epstopdf)                    date: 2021-10-19 16:05:06
@@ -2580,41 +2969,54 @@ o.pdf>
 (epstopdf)                    size: 141696 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/6_Real_Exploration_66-
 eps-converted-to.pdf figs/6_Real_Exploration_66.eps>
-(epstopdf)             \includegraphics on input line 460.
+(epstopdf)             \includegraphics on input line 542.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figs/6_Real_Exploration_66-eps-converted-to.pd
 f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/6_Real_Exploration_66-eps-converted-to.pdf, id=1161, 1515.6625pt x 734.74
+<figs/6_Real_Exploration_66-eps-converted-to.pdf, id=1048, 1515.6625pt x 734.74
 5pt>
 File: figs/6_Real_Exploration_66-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/6_Real_Exploration_66-eps-converted-to.pdf>
 Package pdftex.def Info: figs/6_Real_Exploration_66-eps-converted-to.pdf  used 
-on input line 460.
+on input line 542.
 (pdftex.def)             Requested size: 192.0548pt x 93.09856pt.
+[53 <./figs/1_Real_Exploration_11-eps-converted-to.pdf> <./figs/2_Real_Explorat
+ion_22-eps-converted-to.pdf> <./figs/3_Real_Exploration_33-eps-converted-to.pdf
+> <./figs/4_Real_Exploration_44-eps-converted-to.pdf> <./figs/5_Real_Exploratio
+n_55-eps-converted-to.pdf> <./figs/6_Real_Exploration_66-eps-converted-to.pdf>]
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \vbox (badness 4492) has occurred while \output is active []
+Underfull \hbox (badness 10000) has occurred while \output is active
+\T1/ptm/m/n/10.95 54
+ []
+
+[54]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [55]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 56
  []
 
-[56 <./figs/real_environment_map.jpeg>] [57 <./figs/real_scenario_labeled2.jpeg
->]
+[56]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [57]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 58
  []
 
-[58 <./figs/1_Real_Exploration_11-eps-converted-to.pdf> <./figs/2_Real_Explorat
-ion_22-eps-converted-to.pdf> <./figs/3_Real_Exploration_33-eps-converted-to.pdf
-> <./figs/4_Real_Exploration_44-eps-converted-to.pdf> <./figs/5_Real_Exploratio
-n_55-eps-converted-to.pdf> <./figs/6_Real_Exploration_66-eps-converted-to.pdf>]
-)
+[58])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [59]
@@ -2636,7 +3038,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [64]
-Overfull \hbox (12.71632pt too wide) in paragraph at lines 232--240
+Overfull \hbox (12.71632pt too wide) in paragraph at lines 234--242
 \T1/ptm/b/n/12 Resolução 02/2021 -- Redação de Teses e Dis-ser-tações em In-glê
 s \T1/ptm/m/n/12 Dis-ser-tações de Mestrado
  []
@@ -2646,20 +3048,20 @@ AED: lastpage setting LastPage
 [65
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 242.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 242.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 244.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 244.
  (./ppgc-tese.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 242.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 242.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 244.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 244.
 Package rerunfilecheck Info: File `ppgc-tese.out' has not changed.
-(rerunfilecheck)             Checksum: CCFFD546713B11166F6A9E9F38D14CC8;6087.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 242.
+(rerunfilecheck)             Checksum: 4D70A79BFC405370900B09FEE29B66E1;6321.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 244.
  ) 
 Here is how much of TeX's memory you used:
- 25795 strings out of 492982
- 463543 string characters out of 6134896
- 538616 words of memory out of 5000000
- 28815 multiletter control sequences out of 15000+600000
+ 26960 strings out of 492982
+ 481969 string characters out of 6134896
+ 550168 words of memory out of 5000000
+ 29957 multiletter control sequences out of 15000+600000
  592317 words of font info for 112 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  48i,13n,47p,10365b,993s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2680,10 +3082,10 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/ut
 mr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ppgc-tese.pdf (65 pages, 7046666 bytes).
+Output written on ppgc-tese.pdf (65 pages, 7045898 bytes).
 PDF statistics:
- 1337 PDF objects out of 1440 (max. 8388607)
- 1119 compressed objects within 12 object streams
- 203 named destinations out of 1000 (max. 500000)
- 462 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1334 PDF objects out of 1440 (max. 8388607)
+ 1116 compressed objects within 12 object streams
+ 204 named destinations out of 1000 (max. 500000)
+ 470 words of extra memory for PDF output out of 10000 (max. 10000000)
 

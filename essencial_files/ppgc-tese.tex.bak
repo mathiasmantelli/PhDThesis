@@ -29,6 +29,8 @@
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{amsmath}
 \usepackage{siunitx}
+\usepackage{textgreek}
+\usepackage{booktabs}
 
 % Use unicode
 \usepackage[utf8]{inputenc}   % pacote para acentuação
