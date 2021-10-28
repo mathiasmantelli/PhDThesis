@@ -136,10 +136,17 @@ p. 834--849, 2014.}
 
 \bibitem[Grisetti, Stachniss and Burgard 2007]{Grisetti2007Improved}
 \abntrefinfo{Grisetti, Stachniss and Burgard}{GRISETTI; STACHNISS;
-  BURGARD}{2007}
+  BURGARD}{2007a}
 {GRISETTI, G.; STACHNISS, C.; BURGARD, W. Improved techniques for grid mapping
   with rao-blackwellized particle filters.
 \textbf{IEEE transactions on Robotics}, IEEE, v.~23, n.~1, p. 34--46, 2007.}
+
+\bibitem[Grisetti, Stachniss and Burgard 2007]{Grisetti2007Gmapping}
+\abntrefinfo{Grisetti, Stachniss and Burgard}{GRISETTI; STACHNISS;
+  BURGARD}{2007b}
+{GRISETTI, G.; STACHNISS, C.; BURGARD, W. Improved techniques for grid mapping
+  with rao-blackwellized particle filters. In:  \textbf{Transactions on
+  Robotics}. [S.l.: s.n.], 2007.}
 
 \bibitem[Grisettiyz, Stachniss and Burgard 2005]{Grisettiyz2005Improving}
 \abntrefinfo{Grisettiyz, Stachniss and Burgard}{GRISETTIYZ; STACHNISS;

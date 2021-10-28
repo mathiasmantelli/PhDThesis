@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.7)  27 OCT 2021 01:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.7)  28 OCT 2021 03:22
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1535,7 +1535,32 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_above_shortintertext_sep=\dimen260
 \l_MT_below_shortintertext_sep=\dimen261
 )
-(./ppgc-tese.aux)
+(./ppgc-tese.aux
+
+LaTeX Warning: Label `fig:realResults_a' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:realResults_a' multiply defined.
+
+
+LaTeX Warning: Label `fig:realResults_b' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:realResults_b' multiply defined.
+
+
+LaTeX Warning: Label `fig:realResults_c' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:realResults_c' multiply defined.
+
+
+LaTeX Warning: Label `fig:realResults_d' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:realResults_d' multiply defined.
+
+)
 \openout1 = `ppgc-tese.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 129.
@@ -1562,7 +1587,8 @@ File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
 LaTeX Font Info:    ... okay on input line 129.
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 129.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 Package lastpage Info: Please have a look at the pageslts package at
@@ -1903,13 +1929,9 @@ number noindent (lof, 1): 0.0pt
 \tf@lof=\write4
 \openout4 = `ppgc-tese.lof'.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [6
 
-]
-[7] (./ppgc-tese.lot
+] (./ppgc-tese.lot
 number indent by \l@... (lot, 1):  18.0pt
 text indent by \l@... (lot, 1):  27.60004pt
 number indent by parent (lot, 1):  18.0pt
@@ -1952,12 +1974,6 @@ text indent calculated (lot, 1): 27.0pt
 number indent calculated (lot, 1): 18.0pt
 text noindent (lot, 1): 27.0pt
 number noindent (lot, 1): 0.0pt
-
-Overfull \hbox (11.9018pt too wide) in paragraph at lines 20--20
- [][] \T1/ptm/m/n/12 Ta-ble [][][]The av-er-age and the stan-dard de-vi-a-tions
- from the \T1/ptm/m/it/12 Nor-mal \T1/ptm/m/n/12 sce-nario, Tab. [][]3.2[][], 
- []
-
 number indent by \l@... (lot, 1):  18.0pt
 text indent by \l@... (lot, 1):  27.60004pt
 number indent by parent (lot, 1):  18.0pt
@@ -1965,13 +1981,6 @@ text indent calculated (lot, 1): 27.0pt
 number indent calculated (lot, 1): 18.0pt
 text noindent (lot, 1): 27.0pt
 number noindent (lot, 1): 0.0pt
-
-Overfull \hbox (9.93394pt too wide) in paragraph at lines 21--21
- [][] \T1/ptm/m/n/12 Ta-ble [][][]The av-er-age and the stan-dard de-vi-a-tions
- from the \T1/ptm/m/it/12 In-verse \T1/ptm/m/n/12 sce-nario, Tab. [][]3.3[][], 
-
- []
-
 number indent by \l@... (lot, 1):  18.0pt
 text indent by \l@... (lot, 1):  27.60004pt
 number indent by parent (lot, 1):  18.0pt
@@ -1979,12 +1988,6 @@ text indent calculated (lot, 1): 27.0pt
 number indent calculated (lot, 1): 18.0pt
 text noindent (lot, 1): 27.0pt
 number noindent (lot, 1): 0.0pt
-
-Overfull \hbox (1.89381pt too wide) in paragraph at lines 22--22
- [][] \T1/ptm/m/n/12 Ta-ble [][][]The av-er-age and the stan-dard de-vi-a-tions
- from the \T1/ptm/m/it/12 Ho-tel \T1/ptm/m/n/12 sce-nario, Tab. [][]3.4[][], 
- []
-
 number indent by \l@... (lot, 1):  18.0pt
 text indent by \l@... (lot, 1):  27.60004pt
 number indent by parent (lot, 1):  18.0pt
@@ -2010,9 +2013,9 @@ number noindent (lot, 1): 0.0pt
 \tf@lot=\write5
 \openout5 = `ppgc-tese.lot'.
 
- [8
+ [7
 
-] [9
+] [8
 
 ] (./ppgc-tese.toc
 number indent by \l@... (toc, 0):  0.0pt
@@ -2106,6 +2109,20 @@ text indent calculated (toc, 2): 30.0pt
 number indent calculated (toc, 2): 39.0pt
 text noindent (toc, 2): 30.0pt
 number noindent (toc, 2): 0.0pt
+number indent by \l@... (toc, 2):  45.60004pt
+text indent by \l@... (toc, 2):  38.39996pt
+number indent by parent (toc, 2):  39.0pt
+text indent calculated (toc, 2): 30.0pt
+number indent calculated (toc, 2): 39.0pt
+text noindent (toc, 2): 30.0pt
+number noindent (toc, 2): 0.0pt
+number indent by \l@... (toc, 1):  18.0pt
+text indent by \l@... (toc, 1):  27.60004pt
+number indent by parent (toc, 1):  18.0pt
+text indent calculated (toc, 1): 21.0pt
+number indent calculated (toc, 1): 18.0pt
+text noindent (toc, 1): 30.0pt
+number noindent (toc, 1): 0.0pt
 number indent by \l@... (toc, 2):  45.60004pt
 text indent by \l@... (toc, 2):  38.39996pt
 number indent by parent (toc, 2):  39.0pt
@@ -2208,7 +2225,7 @@ number noindent (toc, 0): 0.0pt
 \tf@toc=\write6
 \openout6 = `ppgc-tese.toc'.
 
- (./chapters/01_introduction.tex [10
+ (./chapters/01_introduction.tex [9
 
 ]
 Overfull \hbox (0.45055pt too wide) in paragraph at lines 4--6
@@ -2219,32 +2236,38 @@ rob-a-bilis-tic ap-proaches,
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+\T1/ptm/m/n/10.95 10
+ []
+
+[10
 
 ]
-<figs/zoox_semantic.png, id=351, 1886.04625pt x 963.6pt>
+<figs/zoox_semantic.png, id=301, 1886.04625pt x 963.6pt>
 File: figs/zoox_semantic.png Graphic file (type png)
 <use figs/zoox_semantic.png>
 Package pdftex.def Info: figs/zoox_semantic.png  used on input line 18.
 (pdftex.def)             Requested size: 384.1096pt x 196.24538pt.
+ [11 <./figs/zoox_semantic.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 12
  []
 
-[12 <./figs/zoox_semantic.png>]
+[12]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+ [13])
+(./chapters/02_theoretical_background.tex
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 14
  []
 
-[14]) (./chapters/02_theoretical_background.tex [15]
-Overfull \hbox (1.42294pt too wide) in paragraph at lines 11--12
+[14]
+Overfull \hbox (1.42294pt too wide) in paragraph at lines 12--13
 \T1/ptm/m/n/12 of robot's poses from time step $\OT1/cmr/m/n/12 0$ \T1/ptm/m/n/
 12 to time step $\OML/cmm/m/it/12 t$ \T1/ptm/m/n/12 is de-fined as $[]$. 
  []
@@ -2252,41 +2275,41 @@ Overfull \hbox (1.42294pt too wide) in paragraph at lines 11--12
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [15
+
+]
+<figs/caption_example.pdf, id=334, 589.25142pt x 102.93457pt>
+File: figs/caption_example.pdf Graphic file (type pdf)
+<use figs/caption_example.pdf>
+Package pdftex.def Info: figs/caption_example.pdf  used on input line 22.
+(pdftex.def)             Requested size: 298.75264pt x 52.18965pt.
+<figs/localization_example.pdf, id=335, 403.93408pt x 676.47733pt>
+File: figs/localization_example.pdf Graphic file (type pdf)
+<use figs/localization_example.pdf>
+Package pdftex.def Info: figs/localization_example.pdf  used on input line 25.
+(pdftex.def)             Requested size: 132.30428pt x 221.57632pt.
+<figs/mapping_example.pdf, id=336, 403.93408pt x 676.47733pt>
+File: figs/mapping_example.pdf Graphic file (type pdf)
+<use figs/mapping_example.pdf>
+Package pdftex.def Info: figs/mapping_example.pdf  used on input line 29.
+(pdftex.def)             Requested size: 132.30428pt x 221.57632pt.
+<figs/slam_example.pdf, id=337, 403.93408pt x 676.47733pt>
+File: figs/slam_example.pdf Graphic file (type pdf)
+<use figs/slam_example.pdf>
+Package pdftex.def Info: figs/slam_example.pdf  used on input line 33.
+(pdftex.def)             Requested size: 132.30428pt x 221.57632pt.
+<figs/graphical_models_loc_map_slam.pdf, id=346, 162.54477pt x 95.43788pt>
+File: figs/graphical_models_loc_map_slam.pdf Graphic file (type pdf)
+<use figs/graphical_models_loc_map_slam.pdf>
+Package pdftex.def Info: figs/graphical_models_loc_map_slam.pdf  used on input 
+line 46.
+(pdftex.def)             Requested size: 426.79135pt x 250.60971pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 16
  []
 
-[16
-
-]
-<figs/caption_example.pdf, id=384, 589.25142pt x 102.93457pt>
-File: figs/caption_example.pdf Graphic file (type pdf)
-<use figs/caption_example.pdf>
-Package pdftex.def Info: figs/caption_example.pdf  used on input line 21.
-(pdftex.def)             Requested size: 298.75264pt x 52.18965pt.
-<figs/localization_example.pdf, id=385, 403.93408pt x 676.47733pt>
-File: figs/localization_example.pdf Graphic file (type pdf)
-<use figs/localization_example.pdf>
-Package pdftex.def Info: figs/localization_example.pdf  used on input line 24.
-(pdftex.def)             Requested size: 132.30428pt x 221.57632pt.
-<figs/mapping_example.pdf, id=386, 403.93408pt x 676.47733pt>
-File: figs/mapping_example.pdf Graphic file (type pdf)
-<use figs/mapping_example.pdf>
-Package pdftex.def Info: figs/mapping_example.pdf  used on input line 28.
-(pdftex.def)             Requested size: 132.30428pt x 221.57632pt.
-<figs/slam_example.pdf, id=387, 403.93408pt x 676.47733pt>
-File: figs/slam_example.pdf Graphic file (type pdf)
-<use figs/slam_example.pdf>
-Package pdftex.def Info: figs/slam_example.pdf  used on input line 32.
-(pdftex.def)             Requested size: 132.30428pt x 221.57632pt.
-<figs/graphical_models_loc_map_slam.pdf, id=396, 162.54477pt x 95.43788pt>
-File: figs/graphical_models_loc_map_slam.pdf Graphic file (type pdf)
-<use figs/graphical_models_loc_map_slam.pdf>
-Package pdftex.def Info: figs/graphical_models_loc_map_slam.pdf  used on input 
-line 45.
-(pdftex.def)             Requested size: 426.79135pt x 250.60971pt.
- [17 <./figs/caption_example.pdf> <./figs/localization_example.pdf
+[16 <./figs/caption_example.pdf> <./figs/localization_example.pdf
 
 pdfTeX warning: pdflatex (file ./figs/localization_example.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
@@ -2298,12 +2321,15 @@ iple pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./figs/slam_example.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
->]
+>] [17 <./figs/graphical_models_loc_map_slam.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 18
  []
 
-[18 <./figs/graphical_models_loc_map_slam.pdf>]
+[18]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [19]
@@ -2314,21 +2340,20 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 20
  []
 
-[20]
+[20]) (./chapters/03_text_semantic_information.tex [21]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21])
-(./chapters/03_text_semantic_information.tex
+
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 22
  []
 
-[22]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [23
+[22
 
 ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2348,30 +2373,27 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [26]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [27]
-<figs/1.jpeg, id=725, 595.46408pt x 548.64127pt>
+<figs/1.jpeg, id=678, 595.46408pt x 548.64127pt>
 File: figs/1.jpeg Graphic file (type jpg)
 <use figs/1.jpeg>
 Package pdftex.def Info: figs/1.jpeg  used on input line 61.
 (pdftex.def)             Requested size: 192.0548pt x 176.9501pt.
-<figs/2.jpeg, id=726, 595.46408pt x 548.64127pt>
+<figs/2.jpeg, id=679, 595.46408pt x 548.64127pt>
 File: figs/2.jpeg Graphic file (type jpg)
 <use figs/2.jpeg>
 Package pdftex.def Info: figs/2.jpeg  used on input line 67.
 (pdftex.def)             Requested size: 192.0548pt x 176.9501pt.
-<figs/3.jpeg, id=727, 595.46408pt x 548.64127pt>
+<figs/3.jpeg, id=680, 595.46408pt x 548.64127pt>
 File: figs/3.jpeg Graphic file (type jpg)
 <use figs/3.jpeg>
 Package pdftex.def Info: figs/3.jpeg  used on input line 74.
 (pdftex.def)             Requested size: 192.0548pt x 176.9501pt.
-<figs/4.jpeg, id=728, 595.46408pt x 548.64127pt>
+<figs/4.jpeg, id=681, 595.46408pt x 548.64127pt>
 File: figs/4.jpeg Graphic file (type jpg)
 <use figs/4.jpeg>
 Package pdftex.def Info: figs/4.jpeg  used on input line 80.
 (pdftex.def)             Requested size: 192.0548pt x 176.9501pt.
-
+ [27 <./figs/1.jpeg> <./figs/2.jpeg> <./figs/3.jpeg> <./figs/4.jpeg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2379,27 +2401,24 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 28
  []
 
-[28 <./figs/1.jpeg> <./figs/2.jpeg> <./figs/3.jpeg> <./figs/4.jpeg>]
+[28]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [29]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 30
- []
-
-[30]
-<figs/ImageProcessing.jpeg, id=775, 1339.53972pt x 351.17113pt>
+<figs/ImageProcessing.jpeg, id=731, 1339.53972pt x 351.17113pt>
 File: figs/ImageProcessing.jpeg Graphic file (type jpg)
 <use figs/ImageProcessing.jpeg>
 Package pdftex.def Info: figs/ImageProcessing.jpeg  used on input line 138.
 (pdftex.def)             Requested size: 384.1096pt x 100.69566pt.
 
+Underfull \hbox (badness 10000) has occurred while \output is active
+\T1/ptm/m/n/10.95 30
+ []
+
+[30 <./figs/ImageProcessing.jpeg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [31 <./figs/ImageProcessing.jpeg>]
+ [31]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2408,70 +2427,64 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [32]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [33]
-<figs/growing_direction_empty.jpeg, id=805, 486.18pt x 205.3125pt>
+<figs/growing_direction_empty.jpeg, id=761, 486.18pt x 205.3125pt>
 File: figs/growing_direction_empty.jpeg Graphic file (type jpg)
 <use figs/growing_direction_empty.jpeg>
 Package pdftex.def Info: figs/growing_direction_empty.jpeg  used on input line 
 183.
 (pdftex.def)             Requested size: 192.0548pt x 81.10223pt.
-<figs/growing_direction_arrows.jpeg, id=806, 486.18pt x 205.3125pt>
+<figs/growing_direction_arrows.jpeg, id=762, 486.18pt x 205.3125pt>
 File: figs/growing_direction_arrows.jpeg Graphic file (type jpg)
 <use figs/growing_direction_arrows.jpeg>
 Package pdftex.def Info: figs/growing_direction_arrows.jpeg  used on input line
  189.
 (pdftex.def)             Requested size: 192.0548pt x 81.10223pt.
-<figs/growing_direction_door_signs_linegedup.jpeg, id=807, 486.18pt x 205.3125p
+<figs/growing_direction_door_signs_linegedup.jpeg, id=763, 486.18pt x 205.3125p
 t>
 File: figs/growing_direction_door_signs_linegedup.jpeg Graphic file (type jpg)
 <use figs/growing_direction_door_signs_linegedup.jpeg>
 Package pdftex.def Info: figs/growing_direction_door_signs_linegedup.jpeg  used
  on input line 196.
 (pdftex.def)             Requested size: 192.0548pt x 81.10223pt.
-<figs/growing_direction_all_arrows.jpeg, id=808, 486.18pt x 205.3125pt>
+<figs/growing_direction_all_arrows.jpeg, id=764, 486.18pt x 205.3125pt>
 File: figs/growing_direction_all_arrows.jpeg Graphic file (type jpg)
 <use figs/growing_direction_all_arrows.jpeg>
 Package pdftex.def Info: figs/growing_direction_all_arrows.jpeg  used on input 
 line 202.
 (pdftex.def)             Requested size: 192.0548pt x 81.10223pt.
-<figs/all_doorlabelsequences.jpeg, id=810, 2756.43887pt x 345.0638pt>
+ [33 <./figs/growing_direction_empty.jpeg> <./figs/growing_direction_arrows.jpe
+g> <./figs/growing_direction_door_signs_linegedup.jpeg> <./figs/growing_directi
+on_all_arrows.jpeg>]
+<figs/all_doorlabelsequences.jpeg, id=773, 2756.43887pt x 345.0638pt>
 File: figs/all_doorlabelsequences.jpeg Graphic file (type jpg)
 <use figs/all_doorlabelsequences.jpeg>
 Package pdftex.def Info: figs/all_doorlabelsequences.jpeg  used on input line 2
 26.
 (pdftex.def)             Requested size: 426.79135pt x 53.4264pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 34
  []
 
-[34 <./figs/growing_direction_empty.jpeg> <./figs/growing_direction_arrows.jpeg
-> <./figs/growing_direction_door_signs_linegedup.jpeg> <./figs/growing_directio
-n_all_arrows.jpeg>]
-Underfull \vbox (badness 1803) has occurred while \output is active []
-
- [35 <./figs/all_doorlabelsequences.jpeg>]
+[34 <./figs/all_doorlabelsequences.jpeg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [35]
+<figs/all_direction.jpeg, id=788, 2760.51042pt x 497.7469pt>
+File: figs/all_direction.jpeg Graphic file (type jpg)
+<use figs/all_direction.jpeg>
+Package pdftex.def Info: figs/all_direction.jpeg  used on input line 270.
+(pdftex.def)             Requested size: 426.79135pt x 76.9525pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 36
  []
 
-[36]
-<figs/all_direction.jpeg, id=829, 2760.51042pt x 497.7469pt>
-File: figs/all_direction.jpeg Graphic file (type jpg)
-<use figs/all_direction.jpeg>
-Package pdftex.def Info: figs/all_direction.jpeg  used on input line 270.
-(pdftex.def)             Requested size: 426.79135pt x 76.9525pt.
- [37 <./figs/all_direction.jpeg>]
-<figs/all_distance.jpeg, id=839, 2761.5283pt x 489.6038pt>
+[36 <./figs/all_direction.jpeg>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [37]
+<figs/all_distance.jpeg, id=803, 2761.5283pt x 489.6038pt>
 File: figs/all_distance.jpeg Graphic file (type jpg)
 <use figs/all_distance.jpeg>
 Package pdftex.def Info: figs/all_distance.jpeg  used on input line 297.
@@ -2482,13 +2495,10 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [38 <./figs/all_distance.jpeg>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [39]
-<figs/drawing2.jpeg, id=862, 473.74315pt x 152.758pt>
+<figs/drawing2.jpeg, id=820, 473.74315pt x 152.758pt>
 File: figs/drawing2.jpeg Graphic file (type jpg)
 <use figs/drawing2.jpeg>
-Package pdftex.def Info: figs/drawing2.jpeg  used on input line 328.
+Package pdftex.def Info: figs/drawing2.jpeg  used on input line 327.
 (pdftex.def)             Requested size: 426.79135pt x 137.6231pt.
 
 
@@ -2497,496 +2507,495 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
+ [39]
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 40
  []
 
-[40]
-<figs/map_normal_redcircles.jpeg, id=879, 1301.68124pt x 870.525pt>
+[40 <./figs/drawing2.jpeg>]
+<figs/map_normal_redcircles.jpeg, id=845, 1301.68124pt x 870.525pt>
 File: figs/map_normal_redcircles.jpeg Graphic file (type jpg)
 <use figs/map_normal_redcircles.jpeg>
 Package pdftex.def Info: figs/map_normal_redcircles.jpeg  used on input line 35
-2.
+3.
 (pdftex.def)             Requested size: 170.71393pt x 114.16846pt.
-<figs/map_inverse_redcircles.jpeg, id=880, 1301.68124pt x 868.8825pt>
+<figs/map_inverse_redcircles.jpeg, id=846, 1301.68124pt x 868.8825pt>
 File: figs/map_inverse_redcircles.jpeg Graphic file (type jpg)
 <use figs/map_inverse_redcircles.jpeg>
 Package pdftex.def Info: figs/map_inverse_redcircles.jpeg  used on input line 3
-54.
+59.
 (pdftex.def)             Requested size: 170.71393pt x 113.95303pt.
-<figs/hotel2_PAPER.jpeg, id=881, 1616.0375pt x 968.61874pt>
+<figs/hotel2_PAPER.jpeg, id=847, 1616.0375pt x 968.61874pt>
 File: figs/hotel2_PAPER.jpeg Graphic file (type jpg)
 <use figs/hotel2_PAPER.jpeg>
-Package pdftex.def Info: figs/hotel2_PAPER.jpeg  used on input line 356.
+Package pdftex.def Info: figs/hotel2_PAPER.jpeg  used on input line 366.
 (pdftex.def)             Requested size: 183.51715pt x 109.99211pt.
-<figs/KTH_CampusValhallava_finished.jpeg, id=882, 223.09435pt x 291.49706pt>
+<figs/KTH_CampusValhallava_finished.jpeg, id=848, 223.09435pt x 291.49706pt>
 File: figs/KTH_CampusValhallava_finished.jpeg Graphic file (type jpg)
 <use figs/KTH_CampusValhallava_finished.jpeg>
 Package pdftex.def Info: figs/KTH_CampusValhallava_finished.jpeg  used on input
- line 358.
-(pdftex.def)             Requested size: 183.51715pt x 239.78082pt.
+ line 373.
+(pdftex.def)             Requested size: 157.9107pt x 206.32385pt.
+ [41 <./figs/map_normal_redcircles.jpeg> <./figs/map_inverse_redcircles.jpeg> <
+./figs/hotel2_PAPER.jpeg> <./figs/KTH_CampusValhallava_finished.jpeg>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Underfull \vbox (badness 1314) has occurred while \output is active []
 
- [41 <./figs/drawing2.jpeg>]
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 42
  []
 
-[42 <./figs/map_normal_redcircles.jpeg> <./figs/map_inverse_redcircles.jpeg> <.
-/figs/hotel2_PAPER.jpeg> <./figs/KTH_CampusValhallava_finished.jpeg>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [43]
-Package epstopdf Info: Source file: <figs/RESULTS_NORMAL_NEW.eps>
-(epstopdf)                    date: 2021-10-19 16:05:04
-(epstopdf)                    size: 289027 bytes
-(epstopdf)             Output file: <figs/RESULTS_NORMAL_NEW-eps-converted-to.p
-df>
-(epstopdf)                    date: 2021-10-26 00:55:21
-(epstopdf)                    size: 279818 bytes
-(epstopdf)             Command: <epstopdf --outfile=figs/RESULTS_NORMAL_NEW-eps
--converted-to.pdf figs/RESULTS_NORMAL_NEW.eps>
-(epstopdf)             \includegraphics on input line 378.
+[42]
+Package epstopdf Info: Source file: <figs/RESULTS_NORMAL_NEW_T.eps>
+(epstopdf)                    date: 2021-01-09 13:33:04
+(epstopdf)                    size: 142305 bytes
+(epstopdf)             Output file: <figs/RESULTS_NORMAL_NEW_T-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2021-10-27 22:47:41
+(epstopdf)                    size: 139327 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs/RESULTS_NORMAL_NEW_T-e
+ps-converted-to.pdf figs/RESULTS_NORMAL_NEW_T.eps>
+(epstopdf)             \includegraphics on input line 404.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./figs/RESULTS_NORMAL_NEW-eps-converted-to.pdf):
- PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/RESULTS_NORMAL_NEW-eps-converted-to.pdf, id=918, 924.45375pt x 876.27374p
-t>
-File: figs/RESULTS_NORMAL_NEW-eps-converted-to.pdf Graphic file (type pdf)
-<use figs/RESULTS_NORMAL_NEW-eps-converted-to.pdf>
-Package pdftex.def Info: figs/RESULTS_NORMAL_NEW-eps-converted-to.pdf  used on 
-input line 378.
-(pdftex.def)             Requested size: 405.45047pt x 384.31815pt.
+pdfTeX warning: pdflatex (file ./figs/RESULTS_NORMAL_NEW_T-eps-converted-to.pdf
+): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figs/RESULTS_NORMAL_NEW_T-eps-converted-to.pdf, id=876, 472.76625pt x 523.9575
+pt>
+File: figs/RESULTS_NORMAL_NEW_T-eps-converted-to.pdf Graphic file (type pdf)
+<use figs/RESULTS_NORMAL_NEW_T-eps-converted-to.pdf>
+Package pdftex.def Info: figs/RESULTS_NORMAL_NEW_T-eps-converted-to.pdf  used o
+n input line 404.
+(pdftex.def)             Requested size: 213.39568pt x 236.50623pt.
+Package epstopdf Info: Source file: <figs/RESULTS_INVERSE_NEW_T.eps>
+(epstopdf)                    date: 2021-01-09 13:33:04
+(epstopdf)                    size: 144375 bytes
+(epstopdf)             Output file: <figs/RESULTS_INVERSE_NEW_T-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2021-10-27 22:38:16
+(epstopdf)                    size: 141278 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs/RESULTS_INVERSE_NEW_T-
+eps-converted-to.pdf figs/RESULTS_INVERSE_NEW_T.eps>
+(epstopdf)             \includegraphics on input line 411.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./figs/RESULTS_INVERSE_NEW_T-eps-converted-to.pd
+f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figs/RESULTS_INVERSE_NEW_T-eps-converted-to.pdf, id=877, 472.76625pt x 525.965
+pt>
+File: figs/RESULTS_INVERSE_NEW_T-eps-converted-to.pdf Graphic file (type pdf)
+<use figs/RESULTS_INVERSE_NEW_T-eps-converted-to.pdf>
+Package pdftex.def Info: figs/RESULTS_INVERSE_NEW_T-eps-converted-to.pdf  used 
+on input line 411.
+(pdftex.def)             Requested size: 213.39568pt x 237.41238pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Package epstopdf Info: Source file: <figs/RESULTS_INVERSE_NEW.eps>
-(epstopdf)                    date: 2021-10-19 16:05:06
-(epstopdf)                    size: 292908 bytes
-(epstopdf)             Output file: <figs/RESULTS_INVERSE_NEW-eps-converted-to.
+Package epstopdf Info: Source file: <figs/RESULTS_HOTEL_NEW_T.eps>
+(epstopdf)                    date: 2021-01-09 13:33:04
+(epstopdf)                    size: 147322 bytes
+(epstopdf)             Output file: <figs/RESULTS_HOTEL_NEW_T-eps-converted-to.
 pdf>
-(epstopdf)                    date: 2021-10-26 00:54:19
-(epstopdf)                    size: 283972 bytes
-(epstopdf)             Command: <epstopdf --outfile=figs/RESULTS_INVERSE_NEW-ep
-s-converted-to.pdf figs/RESULTS_INVERSE_NEW.eps>
-(epstopdf)             \includegraphics on input line 385.
+(epstopdf)                    date: 2021-10-27 22:47:41
+(epstopdf)                    size: 144171 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs/RESULTS_HOTEL_NEW_T-ep
+s-converted-to.pdf figs/RESULTS_HOTEL_NEW_T.eps>
+(epstopdf)             \includegraphics on input line 420.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./figs/RESULTS_INVERSE_NEW-eps-converted-to.pdf)
+pdfTeX warning: pdflatex (file ./figs/RESULTS_HOTEL_NEW_T-eps-converted-to.pdf)
 : PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/RESULTS_INVERSE_NEW-eps-converted-to.pdf, id=919, 924.45375pt x 875.27pt>
-
-File: figs/RESULTS_INVERSE_NEW-eps-converted-to.pdf Graphic file (type pdf)
-<use figs/RESULTS_INVERSE_NEW-eps-converted-to.pdf>
-Package pdftex.def Info: figs/RESULTS_INVERSE_NEW-eps-converted-to.pdf  used on
- input line 385.
-(pdftex.def)             Requested size: 405.45047pt x 383.87793pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <figs/RESULTS_HOTEL_NEW.eps>
-(epstopdf)                    date: 2021-10-19 16:05:06
-(epstopdf)                    size: 172713 bytes
-(epstopdf)             Output file: <figs/RESULTS_HOTEL_NEW-eps-converted-to.pd
-f>
-(epstopdf)                    date: 2021-10-26 00:54:19
-(epstopdf)                    size: 172048 bytes
-(epstopdf)             Command: <epstopdf --outfile=figs/RESULTS_HOTEL_NEW-eps-
-converted-to.pdf figs/RESULTS_HOTEL_NEW.eps>
-(epstopdf)             \includegraphics on input line 394.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex (file ./figs/RESULTS_HOTEL_NEW-eps-converted-to.pdf): 
-PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/RESULTS_HOTEL_NEW-eps-converted-to.pdf, id=924, 571.13374pt x 545.03625pt
+<figs/RESULTS_HOTEL_NEW_T-eps-converted-to.pdf, id=882, 472.76625pt x 525.965pt
 >
-File: figs/RESULTS_HOTEL_NEW-eps-converted-to.pdf Graphic file (type pdf)
-<use figs/RESULTS_HOTEL_NEW-eps-converted-to.pdf>
-Package pdftex.def Info: figs/RESULTS_HOTEL_NEW-eps-converted-to.pdf  used on i
-nput line 394.
-(pdftex.def)             Requested size: 405.45047pt x 386.92854pt.
+File: figs/RESULTS_HOTEL_NEW_T-eps-converted-to.pdf Graphic file (type pdf)
+<use figs/RESULTS_HOTEL_NEW_T-eps-converted-to.pdf>
+Package pdftex.def Info: figs/RESULTS_HOTEL_NEW_T-eps-converted-to.pdf  used on
+ input line 420.
+(pdftex.def)             Requested size: 213.39568pt x 237.41238pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Package epstopdf Info: Source file: <figs/RESULTS_KTH_NEW.eps>
-(epstopdf)                    date: 2021-10-19 16:05:06
-(epstopdf)                    size: 39950 bytes
-(epstopdf)             Output file: <figs/RESULTS_KTH_NEW-eps-converted-to.pdf>
-
-(epstopdf)                    date: 2021-10-26 00:54:19
-(epstopdf)                    size: 38737 bytes
-(epstopdf)             Command: <epstopdf --outfile=figs/RESULTS_KTH_NEW-eps-co
-nverted-to.pdf figs/RESULTS_KTH_NEW.eps>
-(epstopdf)             \includegraphics on input line 401.
+Package epstopdf Info: Source file: <figs/RESULTS_KTH_NEW_T.eps>
+(epstopdf)                    date: 2021-01-09 13:33:04
+(epstopdf)                    size: 55393 bytes
+(epstopdf)             Output file: <figs/RESULTS_KTH_NEW_T-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2021-10-27 22:47:41
+(epstopdf)                    size: 54383 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs/RESULTS_KTH_NEW_T-eps-
+converted-to.pdf figs/RESULTS_KTH_NEW_T.eps>
+(epstopdf)             \includegraphics on input line 427.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./figs/RESULTS_KTH_NEW-eps-converted-to.pdf): PD
-F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/RESULTS_KTH_NEW-eps-converted-to.pdf, id=925, 431.6125pt x 140.525pt>
-File: figs/RESULTS_KTH_NEW-eps-converted-to.pdf Graphic file (type pdf)
-<use figs/RESULTS_KTH_NEW-eps-converted-to.pdf>
-Package pdftex.def Info: figs/RESULTS_KTH_NEW-eps-converted-to.pdf  used on inp
-ut line 401.
-(pdftex.def)             Requested size: 405.45047pt x 132.01202pt.
+pdfTeX warning: pdflatex (file ./figs/RESULTS_KTH_NEW_T-eps-converted-to.pdf): 
+PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figs/RESULTS_KTH_NEW_T-eps-converted-to.pdf, id=883, 473.77pt x 241.90375pt>
+File: figs/RESULTS_KTH_NEW_T-eps-converted-to.pdf Graphic file (type pdf)
+<use figs/RESULTS_KTH_NEW_T-eps-converted-to.pdf>
+Package pdftex.def Info: figs/RESULTS_KTH_NEW_T-eps-converted-to.pdf  used on i
+nput line 427.
+(pdftex.def)             Requested size: 213.39568pt x 108.95903pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Package epstopdf Info: Source file: <figs/RESULTS_NORMAL_SHORTEST_NEW.eps>
-(epstopdf)                    date: 2021-10-19 16:05:04
-(epstopdf)                    size: 87627 bytes
-(epstopdf)             Output file: <figs/RESULTS_NORMAL_SHORTEST_NEW-eps-conve
-rted-to.pdf>
-(epstopdf)                    date: 2021-10-26 00:54:19
-(epstopdf)                    size: 84003 bytes
+[43 <./figs/RESULTS_NORMAL_NEW_T-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figs/RESULTS_NORMAL_SHORTEST_NEW_T.eps>
+(epstopdf)                    date: 2021-01-09 13:32:29
+(epstopdf)                    size: 41979 bytes
+(epstopdf)             Output file: <figs/RESULTS_NORMAL_SHORTEST_NEW_T-eps-con
+verted-to.pdf>
+(epstopdf)                    date: 2021-10-27 22:48:12
+(epstopdf)                    size: 40065 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/RESULTS_NORMAL_SHORTES
-T_NEW-eps-converted-to.pdf figs/RESULTS_NORMAL_SHORTEST_NEW.eps>
-(epstopdf)             \includegraphics on input line 410.
+T_NEW_T-eps-converted-to.pdf figs/RESULTS_NORMAL_SHORTEST_NEW_T.eps>
+(epstopdf)             \includegraphics on input line 436.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./figs/RESULTS_NORMAL_SHORTEST_NEW-eps-converted
--to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> all
-owed
-<figs/RESULTS_NORMAL_SHORTEST_NEW-eps-converted-to.pdf, id=937, 1215.54124pt x 
-313.17pt>
-File: figs/RESULTS_NORMAL_SHORTEST_NEW-eps-converted-to.pdf Graphic file (type 
-pdf)
-<use figs/RESULTS_NORMAL_SHORTEST_NEW-eps-converted-to.pdf>
-Package pdftex.def Info: figs/RESULTS_NORMAL_SHORTEST_NEW-eps-converted-to.pdf 
- used on input line 410.
-(pdftex.def)             Requested size: 405.45047pt x 104.45982pt.
+pdfTeX warning: pdflatex (file ./figs/RESULTS_NORMAL_SHORTEST_NEW_T-eps-convert
+ed-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> a
+llowed
+<figs/RESULTS_NORMAL_SHORTEST_NEW_T-eps-converted-to.pdf, id=904, 621.32124pt x
+ 163.61125pt>
+File: figs/RESULTS_NORMAL_SHORTEST_NEW_T-eps-converted-to.pdf Graphic file (typ
+e pdf)
+<use figs/RESULTS_NORMAL_SHORTEST_NEW_T-eps-converted-to.pdf>
+Package pdftex.def Info: figs/RESULTS_NORMAL_SHORTEST_NEW_T-eps-converted-to.pd
+f  used on input line 436.
+(pdftex.def)             Requested size: 213.39568pt x 56.19128pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 44
  []
 
-[44]
-Package epstopdf Info: Source file: <figs/RESULTS_INVERSE_SHORTEST_NEW.eps>
-(epstopdf)                    date: 2021-10-19 16:05:06
-(epstopdf)                    size: 90003 bytes
-(epstopdf)             Output file: <figs/RESULTS_INVERSE_SHORTEST_NEW-eps-conv
-erted-to.pdf>
-(epstopdf)                    date: 2021-10-26 00:54:19
-(epstopdf)                    size: 86657 bytes
+[44 <./figs/RESULTS_INVERSE_NEW_T-eps-converted-to.pdf> <./figs/RESULTS_HOTEL_N
+EW_T-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figs/RESULTS_INVERSE_SHORTEST_NEW_T.eps>
+(epstopdf)                    date: 2021-01-09 13:32:31
+(epstopdf)                    size: 43093 bytes
+(epstopdf)             Output file: <figs/RESULTS_INVERSE_SHORTEST_NEW_T-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2021-10-27 22:47:41
+(epstopdf)                    size: 41166 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/RESULTS_INVERSE_SHORTE
-ST_NEW-eps-converted-to.pdf figs/RESULTS_INVERSE_SHORTEST_NEW.eps>
-(epstopdf)             \includegraphics on input line 419.
+ST_NEW_T-eps-converted-to.pdf figs/RESULTS_INVERSE_SHORTEST_NEW_T.eps>
+(epstopdf)             \includegraphics on input line 445.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./figs/RESULTS_INVERSE_SHORTEST_NEW-eps-converte
+pdfTeX warning: pdflatex (file ./figs/RESULTS_INVERSE_SHORTEST_NEW_T-eps-conver
+ted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> 
+allowed
+<figs/RESULTS_INVERSE_SHORTEST_NEW_T-eps-converted-to.pdf, id=920, 619.31375pt 
+x 162.6075pt>
+File: figs/RESULTS_INVERSE_SHORTEST_NEW_T-eps-converted-to.pdf Graphic file (ty
+pe pdf)
+<use figs/RESULTS_INVERSE_SHORTEST_NEW_T-eps-converted-to.pdf>
+Package pdftex.def Info: figs/RESULTS_INVERSE_SHORTEST_NEW_T-eps-converted-to.p
+df  used on input line 445.
+(pdftex.def)             Requested size: 213.39568pt x 56.03017pt.
+Package epstopdf Info: Source file: <figs/RESULTS_HOTEL_SHORTEST_NEW_T.eps>
+(epstopdf)                    date: 2021-01-09 13:32:27
+(epstopdf)                    size: 44810 bytes
+(epstopdf)             Output file: <figs/RESULTS_HOTEL_SHORTEST_NEW_T-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2021-10-27 22:47:41
+(epstopdf)                    size: 42948 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs/RESULTS_HOTEL_SHORTEST
+_NEW_T-eps-converted-to.pdf figs/RESULTS_HOTEL_SHORTEST_NEW_T.eps>
+(epstopdf)             \includegraphics on input line 452.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./figs/RESULTS_HOTEL_SHORTEST_NEW_T-eps-converte
 d-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> al
 lowed
-<figs/RESULTS_INVERSE_SHORTEST_NEW-eps-converted-to.pdf, id=945, 1215.54124pt x
- 314.17375pt>
-File: figs/RESULTS_INVERSE_SHORTEST_NEW-eps-converted-to.pdf Graphic file (type
+<figs/RESULTS_HOTEL_SHORTEST_NEW_T-eps-converted-to.pdf, id=923, 621.32124pt x 
+162.6075pt>
+File: figs/RESULTS_HOTEL_SHORTEST_NEW_T-eps-converted-to.pdf Graphic file (type
  pdf)
-<use figs/RESULTS_INVERSE_SHORTEST_NEW-eps-converted-to.pdf>
-Package pdftex.def Info: figs/RESULTS_INVERSE_SHORTEST_NEW-eps-converted-to.pdf
-  used on input line 419.
-(pdftex.def)             Requested size: 405.45047pt x 104.79463pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <figs/RESULTS_HOTEL_SHORTEST_NEW.eps>
-(epstopdf)                    date: 2021-10-19 16:05:06
-(epstopdf)                    size: 93481 bytes
-(epstopdf)             Output file: <figs/RESULTS_HOTEL_SHORTEST_NEW-eps-conver
+<use figs/RESULTS_HOTEL_SHORTEST_NEW_T-eps-converted-to.pdf>
+Package pdftex.def Info: figs/RESULTS_HOTEL_SHORTEST_NEW_T-eps-converted-to.pdf
+  used on input line 452.
+(pdftex.def)             Requested size: 213.39568pt x 55.84656pt.
+Package epstopdf Info: Source file: <figs/RESULTS_KTH_SHORTEST_NEW_T.eps>
+(epstopdf)                    date: 2021-01-09 13:32:30
+(epstopdf)                    size: 24614 bytes
+(epstopdf)             Output file: <figs/RESULTS_KTH_SHORTEST_NEW_T-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2021-10-26 00:54:20
-(epstopdf)                    size: 90193 bytes
-(epstopdf)             Command: <epstopdf --outfile=figs/RESULTS_HOTEL_SHORTEST
-_NEW-eps-converted-to.pdf figs/RESULTS_HOTEL_SHORTEST_NEW.eps>
-(epstopdf)             \includegraphics on input line 426.
+(epstopdf)                    date: 2021-10-27 22:47:41
+(epstopdf)                    size: 24175 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs/RESULTS_KTH_SHORTEST_N
+EW_T-eps-converted-to.pdf figs/RESULTS_KTH_SHORTEST_NEW_T.eps>
+(epstopdf)             \includegraphics on input line 459.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./figs/RESULTS_HOTEL_SHORTEST_NEW-eps-converted-
+pdfTeX warning: pdflatex (file ./figs/RESULTS_KTH_SHORTEST_NEW_T-eps-converted-
 to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allo
 wed
-<figs/RESULTS_HOTEL_SHORTEST_NEW-eps-converted-to.pdf, id=948, 1215.54124pt x 3
-14.17375pt>
-File: figs/RESULTS_HOTEL_SHORTEST_NEW-eps-converted-to.pdf Graphic file (type p
+<figs/RESULTS_KTH_SHORTEST_NEW_T-eps-converted-to.pdf, id=926, 621.32124pt x 10
+0.375pt>
+File: figs/RESULTS_KTH_SHORTEST_NEW_T-eps-converted-to.pdf Graphic file (type p
 df)
-<use figs/RESULTS_HOTEL_SHORTEST_NEW-eps-converted-to.pdf>
-Package pdftex.def Info: figs/RESULTS_HOTEL_SHORTEST_NEW-eps-converted-to.pdf  
-used on input line 426.
-(pdftex.def)             Requested size: 405.45047pt x 104.79463pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <figs/RESULTS_KTH_SHORTEST_NEW.eps>
-(epstopdf)                    date: 2021-10-19 16:05:06
-(epstopdf)                    size: 15377 bytes
-(epstopdf)             Output file: <figs/RESULTS_KTH_SHORTEST_NEW-eps-converte
-d-to.pdf>
-(epstopdf)                    date: 2021-10-26 00:54:20
-(epstopdf)                    size: 14732 bytes
-(epstopdf)             Command: <epstopdf --outfile=figs/RESULTS_KTH_SHORTEST_N
-EW-eps-converted-to.pdf figs/RESULTS_KTH_SHORTEST_NEW.eps>
-(epstopdf)             \includegraphics on input line 433.
+<use figs/RESULTS_KTH_SHORTEST_NEW_T-eps-converted-to.pdf>
+Package pdftex.def Info: figs/RESULTS_KTH_SHORTEST_NEW_T-eps-converted-to.pdf  
+used on input line 459.
+(pdftex.def)             Requested size: 213.39568pt x 34.47318pt.
+[45 <./figs/RESULTS_KTH_NEW_T-eps-converted-to.pdf> <./figs/RESULTS_NORMAL_SHOR
+TEST_NEW_T-eps-converted-to.pdf> <./figs/RESULTS_INVERSE_SHORTEST_NEW_T-eps-con
+verted-to.pdf> <./figs/RESULTS_HOTEL_SHORTEST_NEW_T-eps-converted-to.pdf> <./fi
+gs/RESULTS_KTH_SHORTEST_NEW_T-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figs/RESULTS_COMPARISON_PERCENTAGE_NEW_T.e
+ps>
+(epstopdf)                    date: 2021-01-09 13:33:04
+(epstopdf)                    size: 56431 bytes
+(epstopdf)             Output file: <figs/RESULTS_COMPARISON_PERCENTAGE_NEW_T-e
+ps-converted-to.pdf>
+(epstopdf)                    date: 2021-10-27 22:44:37
+(epstopdf)                    size: 55259 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs/RESULTS_COMPARISON_PER
+CENTAGE_NEW_T-eps-converted-to.pdf figs/RESULTS_COMPARISON_PERCENTAGE_NEW_T.eps
+>
+(epstopdf)             \includegraphics on input line 476.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./figs/RESULTS_KTH_SHORTEST_NEW-eps-converted-to
-.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
-d
-<figs/RESULTS_KTH_SHORTEST_NEW-eps-converted-to.pdf, id=951, 375.4025pt x 63.23
-625pt>
-File: figs/RESULTS_KTH_SHORTEST_NEW-eps-converted-to.pdf Graphic file (type pdf
-)
-<use figs/RESULTS_KTH_SHORTEST_NEW-eps-converted-to.pdf>
-Package pdftex.def Info: figs/RESULTS_KTH_SHORTEST_NEW-eps-converted-to.pdf  us
-ed on input line 433.
-(pdftex.def)             Requested size: 405.45047pt x 68.30183pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+pdfTeX warning: pdflatex (file ./figs/RESULTS_COMPARISON_PERCENTAGE_NEW_T-eps-c
+onverted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <
+1.5> allowed
+<figs/RESULTS_COMPARISON_PERCENTAGE_NEW_T-eps-converted-to.pdf, id=962, 506.893
+75pt x 211.79124pt>
+File: figs/RESULTS_COMPARISON_PERCENTAGE_NEW_T-eps-converted-to.pdf Graphic fil
+e (type pdf)
+<use figs/RESULTS_COMPARISON_PERCENTAGE_NEW_T-eps-converted-to.pdf>
+Package pdftex.def Info: figs/RESULTS_COMPARISON_PERCENTAGE_NEW_T-eps-converted
+-to.pdf  used on input line 476.
+(pdftex.def)             Requested size: 213.39568pt x 89.15854pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [45 <./figs/RESULTS_NORMAL_NEW-eps-converted-to.pdf>]
+
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 46
  []
 
-[46 <./figs/RESULTS_INVERSE_NEW-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <figs/RESULTS_COMPARISON_PERCENTAGE_NEW.eps
->
-(epstopdf)                    date: 2021-10-19 16:05:06
-(epstopdf)                    size: 127787 bytes
-(epstopdf)             Output file: <figs/RESULTS_COMPARISON_PERCENTAGE_NEW-eps
--converted-to.pdf>
-(epstopdf)                    date: 2021-10-26 00:54:20
-(epstopdf)                    size: 126080 bytes
-(epstopdf)             Command: <epstopdf --outfile=figs/RESULTS_COMPARISON_PER
-CENTAGE_NEW-eps-converted-to.pdf figs/RESULTS_COMPARISON_PERCENTAGE_NEW.eps>
-(epstopdf)             \includegraphics on input line 450.
+[46 <./figs/RESULTS_COMPARISON_PERCENTAGE_NEW_T-eps-converted-to.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [47]
+Package epstopdf Info: Source file: <figs/RESULTS_HUMANS_NEW_T.eps>
+(epstopdf)                    date: 2021-01-09 13:32:25
+(epstopdf)                    size: 78988 bytes
+(epstopdf)             Output file: <figs/RESULTS_HUMANS_NEW_T-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2021-10-27 22:47:41
+(epstopdf)                    size: 75781 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs/RESULTS_HUMANS_NEW_T-e
+ps-converted-to.pdf figs/RESULTS_HUMANS_NEW_T.eps>
+(epstopdf)             \includegraphics on input line 491.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./figs/RESULTS_COMPARISON_PERCENTAGE_NEW-eps-con
-verted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.
-5> allowed
-<figs/RESULTS_COMPARISON_PERCENTAGE_NEW-eps-converted-to.pdf, id=982, 1460.4562
-5pt x 514.92375pt>
-File: figs/RESULTS_COMPARISON_PERCENTAGE_NEW-eps-converted-to.pdf Graphic file 
-(type pdf)
-<use figs/RESULTS_COMPARISON_PERCENTAGE_NEW-eps-converted-to.pdf>
-Package pdftex.def Info: figs/RESULTS_COMPARISON_PERCENTAGE_NEW-eps-converted-t
-o.pdf  used on input line 450.
-(pdftex.def)             Requested size: 405.45047pt x 142.95195pt.
+pdfTeX warning: pdflatex (file ./figs/RESULTS_HUMANS_NEW_T-eps-converted-to.pdf
+): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figs/RESULTS_HUMANS_NEW_T-eps-converted-to.pdf, id=979, 617.30624pt x 336.2562
+6pt>
+File: figs/RESULTS_HUMANS_NEW_T-eps-converted-to.pdf Graphic file (type pdf)
+<use figs/RESULTS_HUMANS_NEW_T-eps-converted-to.pdf>
+Package pdftex.def Info: figs/RESULTS_HUMANS_NEW_T-eps-converted-to.pdf  used o
+n input line 491.
+(pdftex.def)             Requested size: 213.39568pt x 116.23941pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[47 <./figs/RESULTS_HOTEL_NEW-eps-converted-to.pdf> <./figs/RESULTS_KTH_NEW-eps
--converted-to.pdf>]
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 48
  []
 
-[48 <./figs/RESULTS_NORMAL_SHORTEST_NEW-eps-converted-to.pdf> <./figs/RESULTS_I
-NVERSE_SHORTEST_NEW-eps-converted-to.pdf> <./figs/RESULTS_HOTEL_SHORTEST_NEW-ep
-s-converted-to.pdf> <./figs/RESULTS_KTH_SHORTEST_NEW-eps-converted-to.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [49 <./figs/RESULTS_COMPARISON_PERCENTAGE_NEW-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <figs/RESULTS_HUMANS_NEW.eps>
-(epstopdf)                    date: 2021-10-19 16:05:06
-(epstopdf)                    size: 150065 bytes
-(epstopdf)             Output file: <figs/RESULTS_HUMANS_NEW-eps-converted-to.p
-df>
-(epstopdf)                    date: 2021-10-26 00:54:20
-(epstopdf)                    size: 144551 bytes
-(epstopdf)             Command: <epstopdf --outfile=figs/RESULTS_HUMANS_NEW-eps
--converted-to.pdf figs/RESULTS_HUMANS_NEW.eps>
-(epstopdf)             \includegraphics on input line 465.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex (file ./figs/RESULTS_HUMANS_NEW-eps-converted-to.pdf):
- PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/RESULTS_HUMANS_NEW-eps-converted-to.pdf, id=1021, 1056.94875pt x 492.8412
-5pt>
-File: figs/RESULTS_HUMANS_NEW-eps-converted-to.pdf Graphic file (type pdf)
-<use figs/RESULTS_HUMANS_NEW-eps-converted-to.pdf>
-Package pdftex.def Info: figs/RESULTS_HUMANS_NEW-eps-converted-to.pdf  used on 
-input line 465.
-(pdftex.def)             Requested size: 405.45047pt x 189.05637pt.
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 50
- []
-
-[50 <./figs/RESULTS_HUMANS_NEW-eps-converted-to.pdf>]
-<figs/real_environment_map.jpeg, id=1032, 1068.44624pt x 306.32625pt>
+[48 <./figs/RESULTS_HUMANS_NEW_T-eps-converted-to.pdf>]
+<figs/real_environment_map.jpeg, id=991, 1068.44624pt x 306.32625pt>
 File: figs/real_environment_map.jpeg Graphic file (type jpg)
 <use figs/real_environment_map.jpeg>
-Package pdftex.def Info: figs/real_environment_map.jpeg  used on input line 479
+Package pdftex.def Info: figs/real_environment_map.jpeg  used on input line 505
 .
-(pdftex.def)             Requested size: 407.58652pt x 116.8539pt.
-<figs/real_scenario_labeled2.jpeg, id=1033, 533.8125pt x 500.9625pt>
+(pdftex.def)             Requested size: 320.0935pt x 91.7677pt.
+<figs/real_scenario_labeled2.jpeg, id=992, 533.8125pt x 500.9625pt>
 File: figs/real_scenario_labeled2.jpeg Graphic file (type jpg)
 <use figs/real_scenario_labeled2.jpeg>
-Package pdftex.def Info: figs/real_scenario_labeled2.jpeg  used on input line 4
-86.
-(pdftex.def)             Requested size: 384.1096pt x 360.48633pt.
- [51 <./figs/real_environment_map.jpeg>]
-Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 52
- []
+Package pdftex.def Info: figs/real_scenario_labeled2.jpeg  used on input line 5
+12.
+(pdftex.def)             Requested size: 213.39568pt x 200.26678pt.
+ [49 <./figs/real_environment_map.jpeg> <./figs/real_scenario_labeled2.jpeg>]
 
-[52 <./figs/real_scenario_labeled2.jpeg>]
-Package epstopdf Info: Source file: <figs/1_Real_Exploration_11.eps>
-(epstopdf)                    date: 2021-10-19 16:05:04
-(epstopdf)                    size: 149132 bytes
-(epstopdf)             Output file: <figs/1_Real_Exploration_11-eps-converted-t
-o.pdf>
-(epstopdf)                    date: 2021-10-26 00:54:20
-(epstopdf)                    size: 98242 bytes
-(epstopdf)             Command: <epstopdf --outfile=figs/1_Real_Exploration_11-
-eps-converted-to.pdf figs/1_Real_Exploration_11.eps>
-(epstopdf)             \includegraphics on input line 510.
+LaTeX Warning: File `figs/1_Real_Exploration_111.eps' not found on input line 5
+39.
+
+Package epstopdf Info: Source file: <figs/1_Real_Exploration_111.eps>
+(epstopdf)             Output file: <figs/1_Real_Exploration_111-eps-converted-
+to.pdf>
+(epstopdf)                    date: 2021-10-28 02:44:06
+(epstopdf)                    size: 89751 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs/1_Real_Exploration_111
+-eps-converted-to.pdf figs/1_Real_Exploration_111.eps>
+(epstopdf)             \includegraphics on input line 539.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./figs/1_Real_Exploration_11-eps-converted-to.pd
-f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/1_Real_Exploration_11-eps-converted-to.pdf, id=1043, 1515.6625pt x 734.74
-5pt>
-File: figs/1_Real_Exploration_11-eps-converted-to.pdf Graphic file (type pdf)
-<use figs/1_Real_Exploration_11-eps-converted-to.pdf>
-Package pdftex.def Info: figs/1_Real_Exploration_11-eps-converted-to.pdf  used 
-on input line 510.
+pdfTeX warning: pdflatex (file ./figs/1_Real_Exploration_111-eps-converted-to.p
+df): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figs/1_Real_Exploration_111-eps-converted-to.pdf, id=1006, 1515.6625pt x 734.7
+45pt>
+File: figs/1_Real_Exploration_111-eps-converted-to.pdf Graphic file (type pdf)
+<use figs/1_Real_Exploration_111-eps-converted-to.pdf>
+Package pdftex.def Info: figs/1_Real_Exploration_111-eps-converted-to.pdf  used
+ on input line 539.
 (pdftex.def)             Requested size: 192.0548pt x 93.09856pt.
 Package epstopdf Info: Source file: <figs/2_Real_Exploration_22.eps>
-(epstopdf)                    date: 2021-10-19 16:05:06
-(epstopdf)                    size: 213431 bytes
+(epstopdf)                    date: 2021-10-28 02:46:06
+(epstopdf)                    size: 335630 bytes
 (epstopdf)             Output file: <figs/2_Real_Exploration_22-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2021-10-26 00:54:20
-(epstopdf)                    size: 110413 bytes
+(epstopdf)                    date: 2021-10-28 02:48:23
+(epstopdf)                    size: 99287 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/2_Real_Exploration_22-
 eps-converted-to.pdf figs/2_Real_Exploration_22.eps>
-(epstopdf)             \includegraphics on input line 516.
+(epstopdf)             \includegraphics on input line 545.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figs/2_Real_Exploration_22-eps-converted-to.pd
 f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/2_Real_Exploration_22-eps-converted-to.pdf, id=1044, 1515.6625pt x 734.74
+<figs/2_Real_Exploration_22-eps-converted-to.pdf, id=1007, 1515.6625pt x 734.74
 5pt>
 File: figs/2_Real_Exploration_22-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/2_Real_Exploration_22-eps-converted-to.pdf>
 Package pdftex.def Info: figs/2_Real_Exploration_22-eps-converted-to.pdf  used 
-on input line 516.
+on input line 545.
 (pdftex.def)             Requested size: 192.0548pt x 93.09856pt.
 Package epstopdf Info: Source file: <figs/3_Real_Exploration_33.eps>
-(epstopdf)                    date: 2021-10-19 16:05:06
-(epstopdf)                    size: 236857 bytes
+(epstopdf)                    date: 2021-10-28 02:46:35
+(epstopdf)                    size: 392428 bytes
 (epstopdf)             Output file: <figs/3_Real_Exploration_33-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2021-10-26 00:54:21
-(epstopdf)                    size: 122856 bytes
+(epstopdf)                    date: 2021-10-28 02:48:23
+(epstopdf)                    size: 111078 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/3_Real_Exploration_33-
 eps-converted-to.pdf figs/3_Real_Exploration_33.eps>
-(epstopdf)             \includegraphics on input line 523.
+(epstopdf)             \includegraphics on input line 552.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figs/3_Real_Exploration_33-eps-converted-to.pd
 f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/3_Real_Exploration_33-eps-converted-to.pdf, id=1045, 1515.6625pt x 734.74
+<figs/3_Real_Exploration_33-eps-converted-to.pdf, id=1008, 1515.6625pt x 734.74
 5pt>
 File: figs/3_Real_Exploration_33-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/3_Real_Exploration_33-eps-converted-to.pdf>
 Package pdftex.def Info: figs/3_Real_Exploration_33-eps-converted-to.pdf  used 
-on input line 523.
+on input line 552.
 (pdftex.def)             Requested size: 192.0548pt x 93.09856pt.
 Package epstopdf Info: Source file: <figs/4_Real_Exploration_44.eps>
-(epstopdf)                    date: 2021-10-19 16:05:06
-(epstopdf)                    size: 253209 bytes
+(epstopdf)                    date: 2021-10-28 02:47:04
+(epstopdf)                    size: 409128 bytes
 (epstopdf)             Output file: <figs/4_Real_Exploration_44-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2021-10-26 00:54:21
-(epstopdf)                    size: 130777 bytes
+(epstopdf)                    date: 2021-10-28 02:48:24
+(epstopdf)                    size: 117861 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/4_Real_Exploration_44-
 eps-converted-to.pdf figs/4_Real_Exploration_44.eps>
-(epstopdf)             \includegraphics on input line 529.
+(epstopdf)             \includegraphics on input line 558.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figs/4_Real_Exploration_44-eps-converted-to.pd
 f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/4_Real_Exploration_44-eps-converted-to.pdf, id=1046, 1515.6625pt x 734.74
+<figs/4_Real_Exploration_44-eps-converted-to.pdf, id=1009, 1515.6625pt x 734.74
 5pt>
 File: figs/4_Real_Exploration_44-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/4_Real_Exploration_44-eps-converted-to.pdf>
 Package pdftex.def Info: figs/4_Real_Exploration_44-eps-converted-to.pdf  used 
-on input line 529.
+on input line 558.
 (pdftex.def)             Requested size: 192.0548pt x 93.09856pt.
 Package epstopdf Info: Source file: <figs/5_Real_Exploration_55.eps>
-(epstopdf)                    date: 2021-10-19 16:05:06
-(epstopdf)                    size: 271764 bytes
+(epstopdf)                    date: 2021-10-28 02:47:33
+(epstopdf)                    size: 453279 bytes
 (epstopdf)             Output file: <figs/5_Real_Exploration_55-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2021-10-26 00:54:21
-(epstopdf)                    size: 140226 bytes
+(epstopdf)                    date: 2021-10-28 02:48:24
+(epstopdf)                    size: 126097 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/5_Real_Exploration_55-
 eps-converted-to.pdf figs/5_Real_Exploration_55.eps>
-(epstopdf)             \includegraphics on input line 536.
+(epstopdf)             \includegraphics on input line 565.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figs/5_Real_Exploration_55-eps-converted-to.pd
 f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/5_Real_Exploration_55-eps-converted-to.pdf, id=1047, 1515.6625pt x 734.74
+<figs/5_Real_Exploration_55-eps-converted-to.pdf, id=1010, 1515.6625pt x 734.74
 5pt>
 File: figs/5_Real_Exploration_55-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/5_Real_Exploration_55-eps-converted-to.pdf>
 Package pdftex.def Info: figs/5_Real_Exploration_55-eps-converted-to.pdf  used 
-on input line 536.
+on input line 565.
 (pdftex.def)             Requested size: 192.0548pt x 93.09856pt.
 Package epstopdf Info: Source file: <figs/6_Real_Exploration_66.eps>
-(epstopdf)                    date: 2021-10-19 16:05:06
-(epstopdf)                    size: 216255 bytes
+(epstopdf)                    date: 2021-10-28 02:59:47
+(epstopdf)                    size: 216596 bytes
 (epstopdf)             Output file: <figs/6_Real_Exploration_66-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2021-10-26 00:54:21
-(epstopdf)                    size: 141696 bytes
+(epstopdf)                    date: 2021-10-28 02:59:53
+(epstopdf)                    size: 141818 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/6_Real_Exploration_66-
 eps-converted-to.pdf figs/6_Real_Exploration_66.eps>
-(epstopdf)             \includegraphics on input line 542.
+(epstopdf)             \includegraphics on input line 571.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figs/6_Real_Exploration_66-eps-converted-to.pd
 f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/6_Real_Exploration_66-eps-converted-to.pdf, id=1048, 1515.6625pt x 734.74
+<figs/6_Real_Exploration_66-eps-converted-to.pdf, id=1011, 1515.6625pt x 734.74
 5pt>
 File: figs/6_Real_Exploration_66-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/6_Real_Exploration_66-eps-converted-to.pdf>
 Package pdftex.def Info: figs/6_Real_Exploration_66-eps-converted-to.pdf  used 
-on input line 542.
+on input line 571.
 (pdftex.def)             Requested size: 192.0548pt x 93.09856pt.
-[53 <./figs/1_Real_Exploration_11-eps-converted-to.pdf> <./figs/2_Real_Explorat
-ion_22-eps-converted-to.pdf> <./figs/3_Real_Exploration_33-eps-converted-to.pdf
-> <./figs/4_Real_Exploration_44-eps-converted-to.pdf> <./figs/5_Real_Exploratio
-n_55-eps-converted-to.pdf> <./figs/6_Real_Exploration_66-eps-converted-to.pdf>]
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+\T1/ptm/m/n/10.95 50
+ []
+
+[50]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [51 <./figs/1_Real_Exploration_111-eps-converted-to.pdf> <./figs/2_Real_Explor
+ation_22-eps-converted-to.pdf> <./figs/3_Real_Exploration_33-eps-converted-to.p
+df> <./figs/4_Real_Exploration_44-eps-converted-to.pdf> <./figs/5_Real_Explorat
+ion_55-eps-converted-to.pdf> <./figs/6_Real_Exploration_66-eps-converted-to.pdf
+>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+\T1/ptm/m/n/10.95 52
+ []
+
+[52]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [53]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2997,47 +3006,25 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [54]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [55]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+ [55])
+(./ppgc-tese.bbl
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 56
  []
 
-[56]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[56] [57
 
- [57]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+]
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 58
  []
 
-[58])
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [59]
-(./ppgc-tese.bbl
+[58] [59])
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 60
  []
 
-[60] [61
-
-]
-Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 62
- []
-
-[62] [63])
-Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 64
- []
-
-[64]
+[60]
 Overfull \hbox (12.71632pt too wide) in paragraph at lines 234--242
 \T1/ptm/b/n/12 Resolução 02/2021 -- Redação de Teses e Dis-ser-tações em In-glê
 s \T1/ptm/m/n/12 Dis-ser-tações de Mestrado
@@ -3045,7 +3032,7 @@ s \T1/ptm/m/n/12 Dis-ser-tações de Mestrado
 
 
 AED: lastpage setting LastPage
-[65
+[61
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 244.
@@ -3054,17 +3041,21 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 244.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 244.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 244.
 Package rerunfilecheck Info: File `ppgc-tese.out' has not changed.
-(rerunfilecheck)             Checksum: 4D70A79BFC405370900B09FEE29B66E1;6321.
+(rerunfilecheck)             Checksum: 0F4EC87A00018A86EE5BFAC12F06F09E;6673.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 244.
  ) 
 Here is how much of TeX's memory you used:
- 26960 strings out of 492982
- 481969 string characters out of 6134896
- 550168 words of memory out of 5000000
- 29957 multiletter control sequences out of 15000+600000
+ 26967 strings out of 492982
+ 482299 string characters out of 6134896
+ 541947 words of memory out of 5000000
+ 29965 multiletter control sequences out of 15000+600000
  592317 words of font info for 112 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 48i,13n,47p,10365b,993s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,13n,47p,10365b,994s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist
@@ -3082,10 +3073,10 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/ut
 mr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ppgc-tese.pdf (65 pages, 7045898 bytes).
+Output written on ppgc-tese.pdf (61 pages, 6418897 bytes).
 PDF statistics:
- 1334 PDF objects out of 1440 (max. 8388607)
- 1116 compressed objects within 12 object streams
- 204 named destinations out of 1000 (max. 500000)
- 470 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1288 PDF objects out of 1440 (max. 8388607)
+ 1070 compressed objects within 11 object streams
+ 203 named destinations out of 1000 (max. 500000)
+ 486 words of extra memory for PDF output out of 10000 (max. 10000000)
 
