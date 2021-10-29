@@ -5,6 +5,11 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.1 }
 
+\bibitem[Afif et al. 2019]{Afif2019ANovel}
+\abntrefinfo{Afif et al.}{AFIF et al.}{2019}
+{AFIF, M. et al. A novel dataset for intelligent indoor object detection
+  systems. In:  . [S.l.: s.n.], 2019. v.~1.}
+
 \bibitem[Amherst 2012]{University2012Room}
 \abntrefinfo{Amherst}{AMHERST}{2012}
 {AMHERST, U. \textbf{Room Numbering Guidelines}. [S.l.]: University of
@@ -64,6 +69,11 @@ Thesis (PhD) --- KTH Royal Institute of Technology, 2012.}
   \textbf{Transactions on Autonomous Mental Development}. [S.l.]: IEEE, 2010.
   v.~3, n.~1, p. 92--105.}
 
+\bibitem[Bjelonic 2016--2018]{Bjelonic2018Yolo}
+\abntrefinfo{Bjelonic}{BJELONIC}{2016--2018}
+{BJELONIC, M. \textbf{{YOLO ROS}: Real-Time Object Detection for {ROS}}.
+  2016--2018. \url{https://github.com/leggedrobotics/darknet_ros}.}
+
 \bibitem[Borenstein and Koren 1991]{Borenstein1991Histogramic}
 \abntrefinfo{Borenstein and Koren}{BORENSTEIN; KOREN}{1991}
 {BORENSTEIN, J.; KOREN, Y. Histogramic in-motion mapping for mobile robot
@@ -81,6 +91,13 @@ Thesis (PhD) --- KTH Royal Institute of Technology, 2012.}
   tracking for mobile robots: the dynamic markov localization approach.
 v.~2, p. 730--735, 1998.}
 
+\bibitem[Cabanillas, Morales and Sucar 2010]{Cabanillas2010Efficient}
+\abntrefinfo{Cabanillas, Morales and Sucar}{CABANILLAS; MORALES; SUCAR}{2010}
+{CABANILLAS, J.; MORALES, E.~F.; SUCAR, L.~E. An efficient strategy for fast
+  object search considering the robot’s perceptual limitations. In:
+  SPRINGER. \textbf{Ibero-American Conference on Artificial Intelligence}.
+  [S.l.], 2010. p. 552--561.}
+
 \bibitem[Cesar et al. 2016]{Cesar2016Simultaneous}
 \abntrefinfo{Cesar et al.}{CESAR et al.}{2016}
 {CESAR, C. et al. Simultaneous localization and mapping: Present future and the
@@ -93,16 +110,34 @@ v.~2, p. 730--735, 1998.}
   recent developments. In:  \textbf{The International Journal of Robotics
   Research}. [S.l.: s.n.], 2011. v.~30, n.~11, p. 1343--1377.}
 
+\bibitem[Chen and Lee 2013]{Chen2013Visual}
+\abntrefinfo{Chen and Lee}{CHEN; LEE}{2013}
+{CHEN, X.; LEE, S. Visual search of an object in cluttered environments for
+  robotic errand service. In:  \textbf{2013 IEEE International Conference on
+  Systems, Man, and Cybernetics}. [S.l.: s.n.], 2013. p. 4060--4065.}
+
 \bibitem[Chung, Hollinger and Isler 2011]{Chung2011Search}
 \abntrefinfo{Chung, Hollinger and Isler}{CHUNG; HOLLINGER; ISLER}{2011}
 {CHUNG, T.~H.; HOLLINGER, G.~A.; ISLER, V. Search and pursuit-evasion in mobile
   robotics. In:  \textbf{Autonomous robots}. [S.l.]: Springer, 2011. v.~31,
   n.~4, p.~299.}
 
+\bibitem[Cook 2010]{Cook2010Learning}
+\abntrefinfo{Cook}{COOK}{2010}
+{COOK, D.~J. Learning setting-generalized activity models for smart spaces. In:
+   . [S.l.]: NIH Public Access, 2010. v.~2010, n.~99, p.~1.}
+
 \bibitem[Dellaert et al. 1999]{Dellaert1999Monte}
 \abntrefinfo{Dellaert et al.}{DELLAERT et al.}{1999}
 {DELLAERT, F. et al. Monte carlo localization for mobile robots.
 v.~2, p. 1322--1328, 1999.}
+
+\bibitem[Deyle, Reynolds and Kemp 2014]{Deyle2014Finding}
+\abntrefinfo{Deyle, Reynolds and Kemp}{DEYLE; REYNOLDS; KEMP}{2014}
+{DEYLE, T.; REYNOLDS, M.~S.; KEMP, C.~C. Finding and navigating to household
+  objects with uhf rfid tags by optimizing rf signal strength. In:
+  \textbf{2014 IEEE/RSJ International Conference on Intelligent Robots and
+  Systems}. [S.l.: s.n.], 2014. p. 2579--2586.}
 
 \bibitem[DiCarlo, Zoccolan and Rust 2012]{Dicarlo2012How}
 \abntrefinfo{DiCarlo, Zoccolan and Rust}{DICARLO; ZOCCOLAN; RUST}{2012}
@@ -127,6 +162,17 @@ v.~2, p. 1322--1328, 1999.}
 {ENGEL, J.; SCH{\"O}PS, T.; CREMERS, D. Lsd-slam: Large-scale direct monocular
   slam.
 p. 834--849, 2014.}
+
+\bibitem[Forssen et al. 2008]{Forssen2008Informed}
+\abntrefinfo{Forssen et al.}{FORSSEN et al.}{2008}
+{FORSSEN, P.-E. et al. Informed visual search: Combining attention and object
+  recognition. In:  \textbf{2008 IEEE International Conference on Robotics and
+  Automation}. [S.l.: s.n.], 2008. p. 935--942.}
+
+\bibitem[Gerkey 2013--2020]{Gerkey2020Gmapping}
+\abntrefinfo{Gerkey}{GERKEY}{2013--2020}
+{GERKEY, B. \textbf{{Gmapping package}: laser-based Simultaneous Localization
+  and Mapping for {ROS}}. 2013--2020. \url{http://wiki.ros.org/gmapping}.}
 
 \bibitem[Girdhar, Whitney and Dudek 2014]{Girdhar2014Curiosity}
 \abntrefinfo{Girdhar, Whitney and Dudek}{GIRDHAR; WHITNEY; DUDEK}{2014}
@@ -167,10 +213,40 @@ p. 2432--2437, 2005.}
 {HAINES, B. \textbf{A basic model for numbering your rooms and spaces}. [S.l.]:
   FM:Systems, 2014.}
 
+\bibitem[Howard and Roy 2003]{Howard2003Radish}
+\abntrefinfo{Howard and Roy}{HOWARD; ROY}{2003}
+{HOWARD, A.; ROY, N. \textbf{The Robotics Data Set Repository (Radish)}. 2003.
+Available from Internet: \url{http://radish.sourceforge.net/}.}
+
 \bibitem[Jung, Kim and Jain 2004]{Jung2004Text}
 \abntrefinfo{Jung, Kim and Jain}{JUNG; KIM; JAIN}{2004}
 {JUNG, K.; KIM, K.~I.; JAIN, A.~K. Text information extraction in images and
   video: a survey. In:  \textbf{Pattern Recognition}. [S.l.: s.n.], 2004.}
+
+\bibitem[Kinney 1993]{Kinney1993Heatmaps}
+\abntrefinfo{Kinney}{KINNEY}{1993}
+{Cormac Kinney. \textbf{HEATMAPS, United States Patent and Trademark Office,
+  United States, 75263259}. 1993.}
+
+\bibitem[Krajn{\'\i}k et al. 2014]{Krajnik2014Long}
+\abntrefinfo{Krajn{\'\i}k et al.}{KRAJN{\'I}K et al.}{2014}
+{KRAJN{\'I}K, T. et al. Long-term topological localisation for service robots
+  in dynamic environments using spectral maps. In:  IEEE. \textbf{2014 IEEE/RSJ
+  International Conference on Intelligent Robots and Systems}. [S.l.], 2014. p.
+  4537--4542.}
+
+\bibitem[Krajn{\'\i}k et al. 2015]{Krajnik2015Where}
+\abntrefinfo{Krajn{\'\i}k et al.}{KRAJN{\'I}K et al.}{2015}
+{KRAJN{\'I}K, T. et al. Where's waldo at time t? using spatio-temporal models
+  for mobile robot search. In:  IEEE. \textbf{2015 IEEE International
+  Conference on Robotics and Automation (ICRA)}. [S.l.], 2015. p. 2140--2146.}
+
+\bibitem[Krajn\'{\i}k et al. 2020]{Krajnik2020Chronorobotics}
+\abntrefinfo{Krajn\'{\i}k et al.}{KRAJN\'{I}K et al.}{2020}
+{KRAJN\'{I}K, T. et al. Chronorobotics: Representing the structure of time for
+  service robots. In:  \textbf{International Symposium on Computer Science and
+  Intelligent Control}. New York, NY, USA: Association for Computing Machinery,
+  2020.}
 
 \bibitem[Leonard and Durrant-Whyte 1991]{Leonard1991Mobile}
 \abntrefinfo{Leonard and Durrant-Whyte}{LEONARD; DURRANT-WHYTE}{1991}
@@ -184,6 +260,24 @@ p. 2432--2437, 2005.}
 {LI, A. Q. et al. A semantically-informed multirobot system for exploration of
   relevant areas in search and rescue settings. In:  \textbf{Autonomous
   Robots}. [S.l.: s.n.], 2016.}
+
+\bibitem[L{\'o}pez et al. 2008]{Lopez2008Hybrid}
+\abntrefinfo{L{\'o}pez et al.}{L{\'O}PEZ et al.}{2008}
+{L{\'O}PEZ, D.~G. et al. Hybrid laser and vision based object search and
+  localization. In:  IEEE. \textbf{2008 IEEE International Conference on
+  Robotics and Automation}. [S.l.], 2008. p. 2636--2643.}
+
+\bibitem[Lu et al. 2020]{Lu2020Service}
+\abntrefinfo{Lu et al.}{LU et al.}{2020}
+{LU, V.~N. et al. Service robots, customers and service employees: what can we
+  learn from the academic literature and where are the gaps? In:  . [S.l.]:
+  Emerald Publishing Limited, 2020.}
+
+\bibitem[Luo et al. 2007]{Luo2007Incremental}
+\abntrefinfo{Luo et al.}{LUO et al.}{2007}
+{LUO, J. et al. Incremental learning for place recognition in dynamic
+  environments. In:  IEEE. \textbf{2007 IEEE/RSJ International Conference on
+  Intelligent Robots and Systems}. [S.l.], 2007. p. 721--728.}
 
 \bibitem[Maffei et al. 2015]{Maffei2015Using}
 \abntrefinfo{Maffei et al.}{MAFFEI et al.}{2015}
@@ -203,6 +297,12 @@ Thesis (PhD) --- Federal University of Rio Grande do Sul, 2017.}
 {MCKIM. \textbf{\MakeUppercase{H}otel - \MakeUppercase{P}ennsylvania typical
   floor plan.} 1919. \textit{\url{https://bit.ly/36Y6t5P}}.}
 
+\bibitem[Meger et al. 2010]{Meger2010Curious}
+\abntrefinfo{Meger et al.}{MEGER et al.}{2010}
+{MEGER, D. et al. Curious george: An integrated visual search platform. In:
+  IEEE. \textbf{2010 Canadian Conference on Computer and Robot Vision}. [S.l.],
+  2010. p. 107--114.}
+
 \bibitem[Mur-Artal, Montiel and Tardos 2015]{Mur2015Orb}
 \abntrefinfo{Mur-Artal, Montiel and Tardos}{MUR-ARTAL; MONTIEL; TARDOS}{2015}
 {MUR-ARTAL, R.; MONTIEL, J. M.~M.; TARDOS, J.~D. Orb-slam: a versatile and
@@ -221,6 +321,18 @@ p. 1015--1021, 1999.}
   \textbf{Conference on Computer Vision and Pattern Recognition}. [S.l.: s.n.],
   2012.}
 
+\bibitem[Paulius and Sun 2019]{Paulius2019Survey}
+\abntrefinfo{Paulius and Sun}{PAULIUS; SUN}{2019}
+{PAULIUS, D.; SUN, Y. A survey of knowledge representation in service robotics.
+  In:  . [S.l.]: Elsevier, 2019. v.~118, p. 13--30.}
+
+\bibitem[Portugal, Ara{\'u}jo and Couceiro 2021]{Portugal2021Improving}
+\abntrefinfo{Portugal, Ara{\'u}jo and Couceiro}{PORTUGAL; ARA{\'U}JO;
+  COUCEIRO}{2021}
+{PORTUGAL, D.; ARA{\'U}JO, A.~G.; COUCEIRO, M.~S. Improving the robustness of a
+  service robot for continuous indoor monitoring: An incremental approach. In:
+  . [S.l.]: SAGE Publications Sage UK: London, England, 2021. v.~18, n.~3.}
+
 \bibitem[Prestes et al. 2002]{Prestes2002Exploration}
 \abntrefinfo{Prestes et al.}{PRESTES et al.}{2002}
 {PRESTES, E. et al. Exploration method using harmonic functions. In:
@@ -237,6 +349,11 @@ p. 1015--1021, 1999.}
 {RASOULI, A.; TSOTSOS, J.~K. Integrating three mechanisms of visual attention
   for active visual search. In:  \textbf{arXiv preprint arXiv:1702.04292}.
   [S.l.: s.n.], 2017.}
+
+\bibitem[Robots and robotics devices - Vocabulary 2012]{ISO8373}
+\abntrefinfo{Robots\ldots}{ROBOTS\ldots}{2012}
+{ROBOTS and robotics devices - Vocabulary.
+[S.l.], 2012. v.~2012.}
 
 \bibitem[Rogers and Christensen 2013]{Rogers2013Robot}
 \abntrefinfo{Rogers and Christensen}{ROGERS; CHRISTENSEN}{2013}
@@ -281,6 +398,12 @@ ISSN 0921-8890.}
   In:  \textbf{Journal of Computing and Information Technology}. [S.l.]:
   SRCE-University Computing Centre, 2009. v.~17, n.~1.}
 
+\bibitem[Sprute et al. 2017]{Sprute2017Ambient}
+\abntrefinfo{Sprute et al.}{SPRUTE et al.}{2017}
+{SPRUTE, D. et al. Ambient assisted robot object search. In:  SPRINGER.
+  \textbf{International Conference on Smart Homes and Health Telematics}.
+  [S.l.], 2017. p. 112--123.}
+
 \bibitem[Talbot et al. 2016]{Talbot2016Find}
 \abntrefinfo{Talbot et al.}{TALBOT et al.}{2016}
 {TALBOT, B. et al. Find my office: Navigating real space from semantic
@@ -291,6 +414,17 @@ ISSN 0921-8890.}
 \abntrefinfo{Thrun, Burgard and Fox}{THRUN; BURGARD; FOX}{2006}
 {THRUN, S.; BURGARD, W.; FOX, D. \textbf{Probabilistic Robotics}. [S.l.]:
   Massachusetts Institute of Technology, 2006.}
+
+\bibitem[Torresen, Kurazume and Prestes 2020]{Torresen2020Special}
+\abntrefinfo{Torresen, Kurazume and Prestes}{TORRESEN; KURAZUME; PRESTES}{2020}
+{TORRESEN, J.; KURAZUME, R.; PRESTES, E. Special issue on elderly care robotics
+  -- technology and ethics. In:  . [S.l.]: Springer Nature BV, 2020. v.~98,
+  n.~1, p.~3--4.}
+
+\bibitem[Torresen et al. 2018]{Torresen2018Robot}
+\abntrefinfo{Torresen et al.}{TORRESEN et al.}{2018}
+{TORRESEN, J. et al. Robot companions for older people -- ethical concerns. In:
+   . [S.l.: s.n.], 2018. p.~53.}
 
 \bibitem[Tsotsos 1992]{Tsotsos1992Onthe}
 \abntrefinfo{Tsotsos}{TSOTSOS}{1992}
@@ -310,11 +444,27 @@ ISSN 0921-8890.}
   \textbf{International Conference on Intelligent Robots and Systems}. [S.l.:
   s.n.], 2016.}
 
+\bibitem[Vintr et al. 2019]{Vintr2019Spatio}
+\abntrefinfo{Vintr et al.}{VINTR et al.}{2019}
+{VINTR, T. et al. Spatio-temporal representation for long-term anticipation of
+  human presence in service robotics. In:  IEEE. \textbf{2019 International
+  Conference on Robotics and Automation (ICRA)}. [S.l.], 2019. p. 2620--2626.}
+
+\bibitem[Wang et al. 2018]{Wang2018Efficient}
+\abntrefinfo{Wang et al.}{WANG et al.}{2018}
+{WANG, C. et al. Efficient object search with belief road map using mobile
+  robot. In:  . [S.l.]: IEEE, 2018. v.~3, n.~4, p. 3081--3088.}
+
 \bibitem[Ye and Tsotsos 1996]{Ye1996Collaborative}
 \abntrefinfo{Ye and Tsotsos}{YE; TSOTSOS}{1996}
 {YE, Y.; TSOTSOS, J.~K. On the collaborative object search team: a formulation.
   In:  \textbf{Distributed Artificial Intelligence Meets Machine Learning
   Learning in Multi-Agent Environments}. [S.l.]: Springer, 1996. p. 94--116.}
+
+\bibitem[Ye and Tsotsos 1999]{Ye1999Sensor}
+\abntrefinfo{Ye and Tsotsos}{YE; TSOTSOS}{1999}
+{YE, Y.; TSOTSOS, J.~K. Sensor planning for 3d object search. In:  . [S.l.]:
+  Elsevier, 1999. v.~73, n.~2, p. 145--168.}
 
 \bibitem[Ye and Tsotsos 2001]{Ye2001AComplexity}
 \abntrefinfo{Ye and Tsotsos}{YE; TSOTSOS}{2001}
@@ -332,5 +482,11 @@ ISSN 0921-8890.}
 \abntrefinfo{Zhang et al.}{ZHANG et al.}{2013}
 {ZHANG, H. et al. Text extraction from natural scene image: A survey. In:
   \textbf{Neurocomputing}. [S.l.: s.n.], 2013.}
+
+\bibitem[Zhou et al. 2020]{Zhou2020Cascaded}
+\abntrefinfo{Zhou et al.}{ZHOU et al.}{2020}
+{ZHOU, T. et al. Cascaded human-object interaction recognition. In:
+  \textbf{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}. [S.l.: s.n.], 2020. p. 4263--4272.}
 
 \end{thebibliography}

@@ -31,6 +31,8 @@
 \usepackage{siunitx}
 \usepackage{textgreek}
 \usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{lscape}
 
 % Use unicode
 \usepackage[utf8]{inputenc}   % pacote para acentuação
@@ -204,6 +206,7 @@ the abstract should not contain more than 500~words.}
 \input{chapters/01_introduction}
 \input{chapters/02_theoretical_background}
 \input{chapters/03_text_semantic_information}
+\input{chapters/04_temporal_semantic_information}
 
 
 % e aqui vai a parte principal
