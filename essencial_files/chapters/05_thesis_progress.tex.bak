@@ -1,0 +1,138 @@
+\chapter{Discussion on thesis progress}
+
+\section{Thesis Schedule}
+
+The works on this PhD study started back in 2013. All developed, ongoing and future activities are listed in Table \ref{chp05b_tab:activities}. The schedule for these activities is presented in Table \ref{chp05b_tab:schedule}.
+In short, we spent the initial one and a half years of the period studying robot state estimation, with focus on graph-based SLAM approaches, culminating in the realization of the qualifying exam. During the following two years we have developed our approach for translating raw sensor readings obtained by a robot into a simplified text and solving the robot state estimation problem by finding matches of words in texts. In this last year, we are working on the long-term place recognition strategy. % quickly described in previous section
+%and also preparing the thesis.
+
+\pagebreak
+
+~
+
+\newcounter{RowNo} \setcounter{RowNo}{0}
+\newcounter{SubRowNo}[RowNo] \setcounter{SubRowNo}{0}
+\renewcommand{\theRowNo}{\Alph{RowNo}}
+\renewcommand{\theSubRowNo}{\theRowNo.\arabic{SubRowNo}}
+\newenvironment{RowNo}{ \refstepcounter{RowNo} \theRowNo. }{}
+\newenvironment{SubRowNo}{ \refstepcounter{SubRowNo} \hspace{20pt}\theSubRowNo. }{}
+
+%\newcounter{magicrownumbers1}
+\newcounter{magicrownumbers2}
+%\newcommand\rownumber{\Alph{magicrownumbers1}.}
+%\newcommand\RowNo[1]{\refstepcounter{magicrownumbers1}\label{#1}\\[-15pt]\hline\rownumber}
+%\newcommand\subrownumber{\hspace{20pt}\rownumber\arabic{magicrownumbers2}.}
+%\newcommand\SubRowNo[1]{\refstepcounter{magicrownumbers2}\label{#1}\subrownumber}
+\newcommand\ResetSubRow{\setcounter{magicrownumbers2}{0}}
+
+\captionof{table}{Activities developed in this work}
+\label{chp05b_tab:activities}
+{
+\footnotesize
+\begin{tabularx}{\linewidth}{p{\textwidth}}
+\toprule
+    \hspace{170pt} \textbf{List of Activities}\\\hline
+    \RowNo \label{chp05b:it-SLAM} Thorough studies of robot state estimation techniques:\\
+        \ResetSubRow
+        \SubRowNo \label{chp05b:it-kf} Study and implementation of approaches based on Kalman filter: Extended (EKF-SLAM) and Unscented (UKF-SLAM);\\
+        \SubRowNo \label{chp05b:it-pf} Study and implementation of approaches based on particle filter: Monte Carlo Localization (MCL) and Rao-Blackwellized Particle Filters (RBPF);\\
+        \SubRowNo \label{chp05b:it-graph} Study of graph-based SLAM, including front-end techniques (place recognition) and back-end techniques (graph optimization);\\
+        \SubRowNo \label{chp05b:it-gauss} Study and implementation of the Gauss-Newton back-end for graph-based SLAM approaches;\\\hline
+    \RowNo \label{chp05b:it-QE} Qualifying Exam;\\\hline
+    \RowNo \label{chp05b:it-FSD} Free-Space Density (FSD) - translating sensor measurements into simple observation values:\\
+        \ResetSubRow
+        \SubRowNo \label{chp05b:it-obs} Study of observation model techniques for robots equipped with laser sensors;\\
+        \SubRowNo \label{chp05b:it-kde} Development of a novel observation model (FSD) based on kernel density estimation;\\
+        \SubRowNo \label{chp05b:it-mcl} Application of the FSD in Monte Carlo Localization;\\
+        \SubRowNo \label{chp05b:it-exp1} Evaluation of the method through experiments in simulated and real scenarios;\\\hline
+    \RowNo \label{chp05b:it-NGSlam} N-Gram SLAM - Translating simple observation values into words:\\
+        \ResetSubRow
+        \SubRowNo \label{chp05b:it-ngrams} Study of techniques from shallow linguistic processing, focusing on $n$-grams;\\
+        \SubRowNo \label{chp05b:it-word} Development of a compact word representation for contiguous regions;\\
+        \SubRowNo \label{chp05b:it-match} Development of a SLAM front-end based on the matching of words using $n$-grams;\\
+        \SubRowNo \label{chp05b:it-exp2} Evaluation of the method through experiments in simulated and real scenarios;\\\hline
+    \RowNo \label{chp05b:it-long} Extending the N-Gram SLAM for lifelong operation (i.e. dealing with semi-static environments):\\
+        \ResetSubRow
+        \SubRowNo \label{chp05b:it-lifelong} Study of long-term SLAM approaches;\\
+        \SubRowNo \label{chp05b:it-multi} Development of a multi-level word representation to describe semi-static regions;\\
+        \SubRowNo \label{chp05b:it-multimatch} Extending the N-Gram SLAM for matching multi-level words;\\
+        \SubRowNo \label{chp05b:it-exp3} Evaluation of the method through experiments in simulated and real scenarios;\\\hline
+    \RowNo \label{chp05b:it-TW} Thesis writing.\\\hline
+    \RowNo \label{chp05b:it-TPD} Thesis Proposal Defense;\\\hline
+    \RowNo \label{chp05b:it-TD} Thesis Defense;\\\hline
+    \RowNo \label{chp05b:it-pub1} Publications associated to this thesis.\\\hline
+    \RowNo \label{chp05b:it-pub2} Other publications.\\\bottomrule
+\end{tabularx}%\\[0.3cm]
+}
+
+\newcommand{\CellCA}{\cellcolor{green!70!black}}  % CA - concluded activity
+\newcommand{\CellCSA}{\cellcolor{green!50!yellow}} % CSA - concluded subactivity
+%\newcommand{\CellOA}{\cellcolor{blue!80!}}  % OA - ongoing activity
+%\newcommand{\CellOSA}{\cellcolor{blue!50!}} % OSA - ongoing subactivity
+%\newcommand{\CellSA}{\cellcolor{red!80!}}  % SA - scheduled activity
+%\newcommand{\CellSSA}{\cellcolor{red!50!}} % SSA - scheduled subactivity
+\newcommand{\CellSA}{\cellcolor{blue!80!}}  % SA - scheduled activity
+\newcommand{\CellSSA}{\cellcolor{blue!50!}} % SSA - scheduled subactivity
+
+
+\begin {table}
+    \footnotesize
+    \caption{Schedule followed in this thesis proposal.}
+    \resizebox{\textwidth}{!}{
+        \begin{tabular}{|c|c c c c|c c c c|c c c c|c c c c|c c c c|}
+            \hline
+            \multirow{3}{*}{\textbf{Activities}} & \multicolumn{20}{c|}{\textbf{Period (quarters of year)}} \\ \cline{2-21}
+                             & \multicolumn{4}{c|}{2017} & \multicolumn{4}{c|}{2018} & \multicolumn{4}{c|}{2019} & \multicolumn{4}{c|}{2020} & \multicolumn{4}{c|}{2021}\\
+                             & Q1 & Q2 & Q3 & Q4 & Q1 & Q2 & Q3 & Q4 & Q1 & Q2 & Q3 & Q4 & Q1 & Q2 & Q3 & Q4 & Q1 & Q2 & Q3 & Q4\\
+%                             & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 \\
+             \hline
+             \ref{chp05b:it-SLAM}     & \CellCA & \CellCA & \CellCA & \CellCA & \CellCA & \CellCA &   &   &   &    &    &    &    &  &  &   &   &   &   &\\
+             \ref{chp05b:it-kf}       & \CellCSA & \CellCSA & \CellCSA &   &   &   &   &   &   &    &    &    &    &    &    &    &   &   &   &\\
+             \ref{chp05b:it-pf}       & \CellCSA & \CellCSA & \CellCSA &   &   &   &   &   &   &    &    &    &    &    &    &    &   &   &   &\\
+             \ref{chp05b:it-graph}    &   &   & \CellCSA & \CellCSA & \CellCSA & \CellCSA &   &   &   &    &    &    &    &    &    &   &   &   &   &\\
+             \ref{chp05b:it-gauss}    &   &   &   &   & \CellCSA & \CellCSA &   &   &   &    &    &    &    &    &    &    &   &   &   &\\\hline
+
+             \ref{chp05b:it-QE}      &   &   &   &   &  & \CellCA  &   &   &   &    &    &    &    &    &    &  &   &   & &  \\\hline
+
+             \ref{chp05b:it-FSD}       &   &   &   &   &   &   & \CellCA & \CellCA & \CellCA &   &    &    &    &    &    &  &   &   & &  \\
+             \ref{chp05b:it-obs}       &   &   &   &   &   &   & \CellCSA &   &   &   &    &    &    &    &    &  &   &   & &  \\
+             \ref{chp05b:it-kde}       &   &   &   &   &   &   & \CellCSA & \CellCSA &   &   &    &    &    &    &    &  &   &   & &  \\
+             \ref{chp05b:it-mcl}       &   &   &   &   &   &   & \CellCSA & \CellCSA &   &   &    &    &    &    &    &  &   &   & &  \\
+             \ref{chp05b:it-exp1}      &   &   &   &   &   &   &   & \CellCSA & \CellCSA &  &    &    &    &    &    &  &   &   & & \\\hline
+
+             \ref{chp05b:it-NGSlam}     &   &   &   &   &   &   &   &   & \CellCA & \CellCA & \CellCA &    &    &    & \CellSA &   &   &   & & \\
+             \ref{chp05b:it-ngrams}     &   &   &   &   &   &   &   &   & \CellCSA &    &    &    &    &    &    &  &   &   & &  \\
+             \ref{chp05b:it-word}       &   &   &   &   &   &   &   &   & \CellCSA & \CellCSA &   &    &    &    &    &   &   &   & & \\
+             \ref{chp05b:it-match}      &   &   &   &   &   &   &   &   & \CellCSA & \CellCSA &   &    &    &    &    &  &   &   & &  \\
+             \ref{chp05b:it-exp2}       &   &   &   &   &   &   &   &   &   & \CellCSA & \CellCSA &    &    &    & \CellSSA &   &   &   & & \\\hline
+
+             \ref{chp05b:it-long}       &   &   &   &   &   &   &   &   &   &    & \CellCA & \CellCA & \CellCA & \CellCA & \CellSA &  &   &   & &  \\
+             \ref{chp05b:it-lifelong}   &   &   &   &   &   &   &   &   &   &    & \CellCSA & \CellCSA &    &    &    &  &   &   & &  \\
+             \ref{chp05b:it-multi}      &   &   &   &   &   &   &   &   &   &    &    & \CellCSA & \CellCSA &    &    &  &   &   & &  \\
+             \ref{chp05b:it-multimatch} &   &   &   &   &   &   &   &   &   &    &    & \CellCSA & \CellCSA &    &    &  &   &   & &  \\
+             \ref{chp05b:it-exp3}       &   &   &   &   &   &   &   &   &   &    &    &    & \CellCSA & \CellCSA & \CellSSA &  &   &   & & \\\hline
+
+             \ref{chp05b:it-TW}      &   &   &   &   &   &   &   &   &   &    &    &    & \CellCA  & \CellCA  &  \CellSA  & \CellSA  &   &   & & \\\hline
+             \ref{chp05b:it-TPD}     &   &   &   &   &   &   &   &   &   &    &    &    &    &   & \CellSA  &   &   &   & & \\\hline
+             \ref{chp05b:it-TD}      &   &   &   &   &   &   &   &   &   &    &    &    &    &    &    &  \CellSA &   &   & & \\\hline
+             \ref{chp05b:it-pub1}    &   &   &   &   &   &   &   &   &   & \CellCA &   & \CellCA &    &   &  \CellSA  &  \CellSA &   &   & & \\\hline
+             \ref{chp05b:it-pub2}    &   &   & \CellCA &   &   & \CellCA & \CellCA & \CellCA &   & \CellCA & \CellCA &    &    &    &   &  &   &   & & \\\hline
+        \end{tabular}
+    }
+    \vspace{0.2cm}
+    \\
+    \centering
+    \resizebox{0.65\textwidth}{!}{
+        \begin{tabular}{ c c c c c }
+          \CellCA & Concluded activity & & \CellSA & Ongoing/Remaining activity \vspace{0.1cm}\\ 
+          \CellCSA  & Concluded sub-activity & & \CellSSA & Ongoing/Remaining sub-activity \vspace{0.1cm} \\
+        \end{tabular}
+    }
+%    \resizebox{0.85\textwidth}{!}{
+%        \begin{tabular}{ c c c c c c c c }
+%          \CellCA & Concluded activity & & \CellOA & Ongoing activity & & \CellSA & Scheduled activity \vspace{0.1cm}\\ 
+%          \CellCSA  & Concluded sub-activity & & \CellOSA & Ongoing sub-activity & & \CellSSA & Scheduled sub-activity \vspace{0.1cm} \\
+%        \end{tabular}
+%    }
+    \label{chp05b_tab:schedule}
+\end{table}
