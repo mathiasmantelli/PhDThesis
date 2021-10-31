@@ -1,5 +1,14 @@
 \chapter{Discussion on thesis progress}
 
+In this thesis proposal, we have investigated the usage of semantic information in the context of OS problems. Our focus is on expanding and improving the robots' perception to perform high-level tasks in everyday living spaces. The majority of the proposed solutions to the OS problems depend on geometric information only, such as the object's 3D format or color, or require a preparation step, like informing which room is more likely to contain which object. The disadvantages of such proposals are that they are limited to the raw data read by the sensors and are not easy to deploy due to the preparation step they need before operating. Our approaches go beyond the geometric information and just the sensor readings, inferring semantic information that complements the robot's perception and enhances its performance in OS tasks. 
+
+We proposed two OS systems based on semantic information inferred from two sources hardly explored in the mobile robotics field, text and dynamism. In the first system, we exploited the text of door labels, which were numbers, to find a target door in a large and unknown environment. 
+This strategy is inspired by how humans behave under the same circumstances, i.e., looking for a door label in an unknown environment. Besides comparing each detected door label with the target one to check whether they are equal, humans also reason over the sequence of the door labels to estimate if the current corridor is promising to bring them to the target door. The search strategy of our first system combines semantic information (the parity and growth properties of the numbers) and geometric information (the corridor's orientation and the distance between the robot and the promising regions) to estimate which corridor of the building is more favorable. In case the robot is in a corridor that becomes less likely to contain the target door as the robot moves through it, the OS system guides the robot towards another one. Since the environment is entirely unknown to the system and no map is provided beforehand, it is doubtful that the robot will take the optimum path until the target door label while searching. Hence, more than guiding the robot straight towards the target's position, our OS system estimates when the current corridor is hopeless, and the robot should go elsewhere. The experiments in simulation and the physical world attest to that behavior from our semantic OS system, in which it always accomplishes the OS task. 
+
+The second OS system aims to explore another source of information that promises to be helpful but neglected by the research community, the dynamic agents in the environment. The search strategy of this system also works in a way that mimics humans, because it assumes that objects are movable in real life, and it tries to understand how they move to estimate their future position. The semantic part of this strategy processes the data the system gathers over a while and calculates the target object's position based on its history of positions. As the estimations of this system are computed based on the collected data from the same environment, it allows our system to adapt to the person's routine and habits that interact with the objects. Hence, even though our system is generic and can be deployed in any environment, it adapts to the local singularities. Besides, the results of this system suggest that the more constant and repetitive the routine is, the more confident are the estimations. However, as also shown by the results, our system finds the target object even when the object's placement has not a pattern. 
+
+\section{Ongoing and Future Work}
+
 \section{Thesis Schedule}
 
 The works on this PhD study started back in 2013. All developed, ongoing and future activities are listed in Table \ref{chp05b_tab:activities}. The schedule for these activities is presented in Table \ref{chp05b_tab:schedule}.
@@ -32,10 +41,10 @@ In short, we spent the initial one and a half years of the period studying robot
 \begin{tabularx}{\linewidth}{p{\textwidth}}
 \toprule
     \hspace{170pt} \textbf{List of Activities}\\\hline
-    \RowNo \label{chp05b:it-SLAM} Thorough studies of robot state estimation techniques:\\
+    \RowNo \label{chp05b:it-SLAM} Thorough studies of mobile robotics foundations:\\
         \ResetSubRow
-        \SubRowNo \label{chp05b:it-kf} Study and implementation of approaches based on Kalman filter: Extended (EKF-SLAM) and Unscented (UKF-SLAM);\\
-        \SubRowNo \label{chp05b:it-pf} Study and implementation of approaches based on particle filter: Monte Carlo Localization (MCL) and Rao-Blackwellized Particle Filters (RBPF);\\
+        %\SubRowNo \label{chp05b:it-kf} Study and implementation of approaches based on Kalman filter: Extended (EKF-SLAM) and Unscented (UKF-SLAM);\\
+        \SubRowNo \label{chp05b:it-pf} Study and implementation of approaches based on particle filter: Monte Carlo Localization (MCL) and GMapping ;\\
         \SubRowNo \label{chp05b:it-graph} Study of graph-based SLAM, including front-end techniques (place recognition) and back-end techniques (graph optimization);\\
         \SubRowNo \label{chp05b:it-gauss} Study and implementation of the Gauss-Newton back-end for graph-based SLAM approaches;\\\hline
     \RowNo \label{chp05b:it-QE} Qualifying Exam;\\\hline

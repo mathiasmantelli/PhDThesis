@@ -51,6 +51,7 @@
 \contentsline {subsection}{\numberline {4.5.2}Spatio-Temporal models}{86}{subsection.4.5.2}
 \contentsline {section}{\numberline {4.6}Summary}{90}{section.4.6}
 \contentsline {chapter}{5~Discussion on thesis progress}{92}{CHAPTER.5}
-\contentsline {section}{\numberline {5.1}Thesis Schedule}{92}{section.5.1}
-\contentsline {chapter}{\xspace {}References}{95}{schapter.7}
-\contentsline {chapter}{\MakeUppercase {Appendix} A~--- Resumo expandido}{101}{CHAPTER.A}
+\contentsline {section}{\numberline {5.1}Ongoing and Future Work}{93}{section.5.1}
+\contentsline {section}{\numberline {5.2}Thesis Schedule}{93}{section.5.2}
+\contentsline {chapter}{\xspace {}References}{97}{schapter.7}
+\contentsline {chapter}{\MakeUppercase {Appendix} A~--- Resumo expandido}{103}{CHAPTER.A}
