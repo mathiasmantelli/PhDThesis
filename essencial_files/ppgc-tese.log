@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.7)  31 OCT 2021 01:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.7)  1 NOV 2021 02:42
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -3860,11 +3860,11 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 
 Package caption Warning: \captionsetup{type*=...} or \captionof
-(caption)                outside box or environment on input line 39.
+(caption)                outside box or environment on input line 44.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.0pt too wide) in alignment at lines 76--76
+Overfull \hbox (12.0pt too wide) in alignment at lines 83--83
  [] 
  []
 
@@ -3872,10 +3872,6 @@ Overfull \hbox (12.0pt too wide) in alignment at lines 76--76
 Overfull \hbox (12.0pt too wide) has occurred while \output is active
  [] 
  []
-
-
-LaTeX Warning: Reference `chp05b:it-kf' on page 95 undefined on input line 132.
-
 
 ) (./ppgc-tese.bbl [95]
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -3910,10 +3906,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 253.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 253.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 253.
 Package rerunfilecheck Info: File `ppgc-tese.out' has not changed.
-(rerunfilecheck)             Checksum: B9DAC9AAA3181891B4EA5B7DD549C738;11642.
-
-
-LaTeX Warning: There were undefined references.
+(rerunfilecheck)             Checksum: E257D2B5A5E9362E900E731576F13616;11690.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -3921,10 +3914,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 253.
  ) 
 Here is how much of TeX's memory you used:
- 28220 strings out of 492982
- 504642 string characters out of 6134896
- 638443 words of memory out of 5000000
- 31002 multiletter control sequences out of 15000+600000
+ 28227 strings out of 492982
+ 504851 string characters out of 6134896
+ 648100 words of memory out of 5000000
+ 31007 multiletter control sequences out of 15000+600000
  598536 words of font info for 118 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  48i,17n,47p,10365b,1046s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3946,10 +3939,10 @@ t/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utm
 r8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ppgc-tese.pdf (103 pages, 12749109 bytes).
+Output written on ppgc-tese.pdf (103 pages, 12749998 bytes).
 PDF statistics:
- 2045 PDF objects out of 2073 (max. 8388607)
- 1715 compressed objects within 18 object streams
- 351 named destinations out of 1000 (max. 500000)
+ 2049 PDF objects out of 2073 (max. 8388607)
+ 1719 compressed objects within 18 object streams
+ 353 named destinations out of 1000 (max. 500000)
  825 words of extra memory for PDF output out of 10000 (max. 10000000)
 

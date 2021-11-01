@@ -30,7 +30,7 @@
 \contentsline {subsection}{\numberline {3.4.4}Experiments Using a Physical Robot}{50}{subsection.3.4.4}
 \contentsline {section}{\numberline {3.5}Related Work}{51}{section.3.5}
 \contentsline {section}{\numberline {3.6}Summary}{56}{section.3.6}
-\contentsline {chapter}{4~Temporal OS system based on heat maps}{58}{CHAPTER.4}
+\contentsline {chapter}{4~Temporal Semantic OS system based on heat maps}{58}{CHAPTER.4}
 \contentsline {section}{\numberline {4.1}Introduction}{58}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Proposal and contributions}{60}{subsection.4.1.1}
 \contentsline {section}{\numberline {4.2}System Overview}{61}{section.4.2}
@@ -52,6 +52,6 @@
 \contentsline {section}{\numberline {4.6}Summary}{90}{section.4.6}
 \contentsline {chapter}{5~Discussion on thesis progress}{92}{CHAPTER.5}
 \contentsline {section}{\numberline {5.1}Ongoing and Future Work}{93}{section.5.1}
-\contentsline {section}{\numberline {5.2}Thesis Schedule}{93}{section.5.2}
+\contentsline {section}{\numberline {5.2}Thesis Schedule}{94}{section.5.2}
 \contentsline {chapter}{\xspace {}References}{97}{schapter.7}
 \contentsline {chapter}{\MakeUppercase {Appendix} A~--- Resumo expandido}{103}{CHAPTER.A}

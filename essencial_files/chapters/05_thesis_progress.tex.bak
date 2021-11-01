@@ -9,11 +9,18 @@ The second OS system aims to explore another source of information that promises
 
 \section{Ongoing and Future Work}
 
+We are focusing our efforts on extending our last semantic OS system to understand better the humans' routine, which is ideal for service robots that interact with people for long periods. In a typical scenario, a person does not move an object without reason, i.e., humans do not randomly interact with objects to change their positions. Usually, there is a purpose behind a change in the object's position. We can associate this reason with an activity carried out by a person, such as taking a cup of coffee to the desk in the working area after a break. If we consider a person as the target object, as we did in one of our previous experiments, another example would be a person that moves within a house just when it is needed, as we tend to be inactive whenever possible~\cite{Lieberman2015Exercise}. The sequence of activities carried out by a person, also known as routine (or habits), has different patterns depending on the period of time is considered. There are the activities that are executed daily, whereas others are weekly or even monthly.  
+
+Back to our temporal, semantic Os system, imagine a scenario where a person takes their backpack to work, which means it is not within the house during working hours, except for the weekend. In this context, if the person requests our system to find the backpack at any working hour, it would probably estimate that the object is not in the house, even during the weekends. This confusion is because our semantic OS system computes its estimations based on the hours of the day, and the weekday concept does not exist, i.e., all weekdays are equal as if the person's routine was the same throughout the week. However, as we argued, this assumption does not hold true, and in some cases, the robot may not find the target object as efficiently as it would with this new concept. After incorporating the weekday concept, we believe that our semantic OS system will have a more refined understanding of the placement of the objects, and by consequence, will be able to be more accurate in its estimations. In summary, the more our system understands how the objects are moved through a period of time, the more efficient the semantic OS system becomes. 
+
+Lastly, due to the pandemic situation and the recommendations from the health organizations, we have not been able to perform experiments with the physical robot. We understand that such experiments are important to this research, and including their results in this thesis would be beneficial. Hence, we aim to deploy our algorithm to a robot and carry out several experiments as soon as we can access the Phi Robotics Research Lab at the Federal University of Rio Grande do Sul. 
+
+
+%Our semantic, temporal OS system aims to incorporate the person's routine, memorizing the past object's presence information to estimate where it will be in the future. So far, we rely only on the time of the day, but we understand that a person's routine may change depending on the weekday. The HH106 dataset presented a pattern in the human's activities, and it is possible to infer other semantic information based on the weekdays, hence improving the efficiency of our system. As future work, we aim to incorporate the days of the week into our OS system, which is another semantic information helpful in understanding the objects' position changes. Then, the OS system would estimate the most promising region for finding a target object based on both the request hour and weekday for a given request search. Despite demanding more data to start searching, we believe adding this semantic information would make the system more robust and adjustable to a person. Lastly, we were not allowed to conduct experiments with physical robots in our research lab due to the pandemic. When possible, we aim to test our OS system in a real scenario to evaluate its performance. 
+
 \section{Thesis Schedule}
 
-The works on this PhD study started back in 2013. All developed, ongoing and future activities are listed in Table \ref{chp05b_tab:activities}. The schedule for these activities is presented in Table \ref{chp05b_tab:schedule}.
-In short, we spent the initial one and a half years of the period studying robot state estimation, with focus on graph-based SLAM approaches, culminating in the realization of the qualifying exam. During the following two years we have developed our approach for translating raw sensor readings obtained by a robot into a simplified text and solving the robot state estimation problem by finding matches of words in texts. In this last year, we are working on the long-term place recognition strategy. % quickly described in previous section
-%and also preparing the thesis.
+Since 2017, when this research work on this PhD study started, two works have been developed, and one more is for the near future. The schedule for the developed and future activities is presented in Table~\ref{chp05b_tab:activities}. The first year we focused on fulfilling most of the requirements from the PhD program, which includes the courses and the qualifying exam. The following year our focus changed to studying the OS problem and the mobile robotics problems necessary to solve it, i.e., exploration, mapping, and localization. For the next year and a half, we have developed our first semantic OS system that relies on text to infer the semantic concepts of parity and growth from door label numbers. In this last year and a half, we have developed our second OS system, based on dynamic agents.
 
 \pagebreak
 
@@ -41,31 +48,33 @@ In short, we spent the initial one and a half years of the period studying robot
 \begin{tabularx}{\linewidth}{p{\textwidth}}
 \toprule
     \hspace{170pt} \textbf{List of Activities}\\\hline
-    \RowNo \label{chp05b:it-SLAM} Thorough studies of mobile robotics foundations:\\
+    \RowNo \label{chp05b:it-SLAM} Post-Graduate Program requirements:\\
         \ResetSubRow
-        %\SubRowNo \label{chp05b:it-kf} Study and implementation of approaches based on Kalman filter: Extended (EKF-SLAM) and Unscented (UKF-SLAM);\\
-        \SubRowNo \label{chp05b:it-pf} Study and implementation of approaches based on particle filter: Monte Carlo Localization (MCL) and GMapping ;\\
-        \SubRowNo \label{chp05b:it-graph} Study of graph-based SLAM, including front-end techniques (place recognition) and back-end techniques (graph optimization);\\
-        \SubRowNo \label{chp05b:it-gauss} Study and implementation of the Gauss-Newton back-end for graph-based SLAM approaches;\\\hline
-    \RowNo \label{chp05b:it-QE} Qualifying Exam;\\\hline
-    \RowNo \label{chp05b:it-FSD} Free-Space Density (FSD) - translating sensor measurements into simple observation values:\\
+        \SubRowNo \label{chp05b:it-pf} Courses;\\
+        \SubRowNo \label{chp05b:it-graph} Qualifying Exam;\\\hline
+    \RowNo \label{chp05b:it-FSD} Investigation of the OS problem:\\
         \ResetSubRow
-        \SubRowNo \label{chp05b:it-obs} Study of observation model techniques for robots equipped with laser sensors;\\
-        \SubRowNo \label{chp05b:it-kde} Development of a novel observation model (FSD) based on kernel density estimation;\\
-        \SubRowNo \label{chp05b:it-mcl} Application of the FSD in Monte Carlo Localization;\\
-        \SubRowNo \label{chp05b:it-exp1} Evaluation of the method through experiments in simulated and real scenarios;\\\hline
-    \RowNo \label{chp05b:it-NGSlam} N-Gram SLAM - Translating simple observation values into words:\\
+        \SubRowNo \label{chp05b:it-obs} Study and implementation of Monte Carlo localization based on laser sensors;\\
+        \SubRowNo \label{chp05b:it-kde} Study and implementation of 2D grid mapping techniques based on laser sensors;\\
+        \SubRowNo \label{chp05b:it-mcl} Study and implementation of exploration techniques based on 2D grid maps;\\\hline
+    \RowNo \label{chp05b:it-NGSlam} Semantic OS based on text information in large and unknown environments:\\
         \ResetSubRow
-        \SubRowNo \label{chp05b:it-ngrams} Study of techniques from shallow linguistic processing, focusing on $n$-grams;\\
-        \SubRowNo \label{chp05b:it-word} Development of a compact word representation for contiguous regions;\\
-        \SubRowNo \label{chp05b:it-match} Development of a SLAM front-end based on the matching of words using $n$-grams;\\
-        \SubRowNo \label{chp05b:it-exp2} Evaluation of the method through experiments in simulated and real scenarios;\\\hline
-    \RowNo \label{chp05b:it-long} Extending the N-Gram SLAM for lifelong operation (i.e. dealing with semi-static environments):\\
+        \SubRowNo \label{chp05b:it-ngrams} Study and implementation of optical character recognition (OCR) techniques from RGB images;\\
+        \SubRowNo \label{chp05b:it-word} Development of the framework containing the basic components for our semantic OS system;\\
+        \SubRowNo \label{chp05b:it-match} Development of the search strategy based on OCR;\\
+        \SubRowNo \label{chp05b:it-exp2} Evaluation of the system through experiments in simulated scenarios and with human volunteers;\\\hline
+    \RowNo \label{chp05b:it-long} Temporal, Semantic OS system based on heat maps:\\
         \ResetSubRow
-        \SubRowNo \label{chp05b:it-lifelong} Study of long-term SLAM approaches;\\
-        \SubRowNo \label{chp05b:it-multi} Development of a multi-level word representation to describe semi-static regions;\\
-        \SubRowNo \label{chp05b:it-multimatch} Extending the N-Gram SLAM for matching multi-level words;\\
-        \SubRowNo \label{chp05b:it-exp3} Evaluation of the method through experiments in simulated and real scenarios;\\\hline
+        \SubRowNo \label{chp05b:it-lifelong} Study of long-term robotic approaches and dynamic agents modeling;\\
+        \SubRowNo \label{chp05b:it-multi} Study of Robot Operating System (ROS);\\
+        \SubRowNo \label{chp05b:it-multimatch} Development of the framework containing the basic components for our temporal, semantic OS system;\\
+        \SubRowNo \label{chp05b:it-searchstrategy} Development of the search strategy that incorporates dynamic agents in the searching;\\        
+        \SubRowNo \label{chp05b:it-exp3} Evaluation of the system through experiments in simulated scenarios and with datasets;\\\hline
+    \RowNo \label{chp05b:it-longextend} Extending our Temporal, Semantic OS system based on heat maps:\\  
+        \ResetSubRow          
+        \SubRowNo \label{chp05b:it-lifelongext} Extending the search strategy to incorporate the weekday concept;\\        
+        \SubRowNo \label{chp05b:it-exp3ext} Evaluation of the system through experiments in simulated scenarios and with datasets;\\\hline
+    
     \RowNo \label{chp05b:it-TW} Thesis writing.\\\hline
     \RowNo \label{chp05b:it-TPD} Thesis Proposal Defense;\\\hline
     \RowNo \label{chp05b:it-TD} Thesis Defense;\\\hline
@@ -84,48 +93,49 @@ In short, we spent the initial one and a half years of the period studying robot
 \newcommand{\CellSSA}{\cellcolor{blue!50!}} % SSA - scheduled subactivity
 
 
+
 \begin {table}
     \footnotesize
     \caption{Schedule followed in this thesis proposal.}
     \resizebox{\textwidth}{!}{
-        \begin{tabular}{|c|c c c c|c c c c|c c c c|c c c c|c c c c|}
+        \begin{tabular}{|c|c c c c|c c c c|c c c c|c c c c|c c c c|c c|}
             \hline
-            \multirow{3}{*}{\textbf{Activities}} & \multicolumn{20}{c|}{\textbf{Period (quarters of year)}} \\ \cline{2-21}
-                             & \multicolumn{4}{c|}{2017} & \multicolumn{4}{c|}{2018} & \multicolumn{4}{c|}{2019} & \multicolumn{4}{c|}{2020} & \multicolumn{4}{c|}{2021}\\
-                             & Q1 & Q2 & Q3 & Q4 & Q1 & Q2 & Q3 & Q4 & Q1 & Q2 & Q3 & Q4 & Q1 & Q2 & Q3 & Q4 & Q1 & Q2 & Q3 & Q4\\
+            \multirow{3}{*}{\textbf{Activities}} & \multicolumn{22}{c|}{\textbf{Period (quarters of year)}} \\ \cline{2-23}
+                             & \multicolumn{4}{c|}{2017} & \multicolumn{4}{c|}{2018} & \multicolumn{4}{c|}{2019} & \multicolumn{4}{c|}{2020} & \multicolumn{4}{c|}{2021} & \multicolumn{2}{c|}{2022}\\
+                             & Q1 & Q2 & Q3 & Q4 & Q1 & Q2 & Q3 & Q4 & Q1 & Q2 & Q3 & Q4 & Q1 & Q2 & Q3 & Q4 & Q1 & Q2 & Q3 & Q4 & Q1 & Q2\\
 %                             & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 \\
              \hline
-             \ref{chp05b:it-SLAM}     & \CellCA & \CellCA & \CellCA & \CellCA & \CellCA & \CellCA &   &   &   &    &    &    &    &  &  &   &   &   &   &\\
-             \ref{chp05b:it-kf}       & \CellCSA & \CellCSA & \CellCSA &   &   &   &   &   &   &    &    &    &    &    &    &    &   &   &   &\\
-             \ref{chp05b:it-pf}       & \CellCSA & \CellCSA & \CellCSA &   &   &   &   &   &   &    &    &    &    &    &    &    &   &   &   &\\
-             \ref{chp05b:it-graph}    &   &   & \CellCSA & \CellCSA & \CellCSA & \CellCSA &   &   &   &    &    &    &    &    &    &   &   &   &   &\\
-             \ref{chp05b:it-gauss}    &   &   &   &   & \CellCSA & \CellCSA &   &   &   &    &    &    &    &    &    &    &   &   &   &\\\hline
+             \ref{chp05b:it-SLAM}     & \CellCA & \CellCA & \CellCA & \CellCA &  &  &   &   &   &    &    &    &    &  &  &   &   &   &   &  &   &\\
+             \ref{chp05b:it-pf}       & \CellCSA & \CellCSA & \CellCSA & \CellCSA  &   &   &   &   &   &    &    &    &    &    &    &    &   &   &   &  &   &\\
+             \ref{chp05b:it-graph}    &   &   &  &  \CellCSA &  &  &   &   &   &    &    &    &    &    &    &   &   &   &   &  &   &\\\hline
 
-             \ref{chp05b:it-QE}      &   &   &   &   &  & \CellCA  &   &   &   &    &    &    &    &    &    &  &   &   & &  \\\hline
+             \ref{chp05b:it-FSD}       &   &   &   &   & \CellCA  & \CellCA  & \CellCA & \CellCA & &   &    &    &    &    &    &  &   &   & &   &   & \\
+             \ref{chp05b:it-obs}       &   &   &   &   & \CellCSA  & \CellCSA  &  &   &   &   &    &    &    &    &    &  &   &   & &    &   &\\
+             \ref{chp05b:it-kde}       &   &   &   &   &   & \CellCSA  & \CellCSA & &   &   &    &    &    &    &    &  &   &   & &    &   &\\
+             \ref{chp05b:it-mcl}       &   &   &   &   &   &   & \CellCSA & \CellCSA &   &   &    &    &    &    &    &  &   &   & &    &   &\\\hline
 
-             \ref{chp05b:it-FSD}       &   &   &   &   &   &   & \CellCA & \CellCA & \CellCA &   &    &    &    &    &    &  &   &   & &  \\
-             \ref{chp05b:it-obs}       &   &   &   &   &   &   & \CellCSA &   &   &   &    &    &    &    &    &  &   &   & &  \\
-             \ref{chp05b:it-kde}       &   &   &   &   &   &   & \CellCSA & \CellCSA &   &   &    &    &    &    &    &  &   &   & &  \\
-             \ref{chp05b:it-mcl}       &   &   &   &   &   &   & \CellCSA & \CellCSA &   &   &    &    &    &    &    &  &   &   & &  \\
-             \ref{chp05b:it-exp1}      &   &   &   &   &   &   &   & \CellCSA & \CellCSA &  &    &    &    &    &    &  &   &   & & \\\hline
+             \ref{chp05b:it-NGSlam}     &   &   &   &   &   &   &   &   & \CellCA & \CellCA & \CellCA &  \CellCA  &  \CellCA  &  \CellCA  & &   &   &   & &   &   &\\
+             \ref{chp05b:it-ngrams}     &   &   &   &   &   &   &   &   & \CellCSA &  \CellCSA  &    &    &    &    &    &  &   &   & &    &   &\\
+             \ref{chp05b:it-word}       &   &   &   &   &   &   &   &   &          & \CellCSA & \CellCSA  & \CellCSA &    &    &    &   &   &   & &   &   &\\
+             \ref{chp05b:it-match}      &   &   &   &   &   &   &   &   &          &          &           & \CellCSA & \CellCSA &    &    &  &   &   & &   &   & \\
+             \ref{chp05b:it-exp2}       &   &   &   &   &   &   &   &   &          &          &           &          & \CellCSA &  \CellCSA  &  &   &   &   & &   &   &\\\hline
 
-             \ref{chp05b:it-NGSlam}     &   &   &   &   &   &   &   &   & \CellCA & \CellCA & \CellCA &    &    &    & \CellSA &   &   &   & & \\
-             \ref{chp05b:it-ngrams}     &   &   &   &   &   &   &   &   & \CellCSA &    &    &    &    &    &    &  &   &   & &  \\
-             \ref{chp05b:it-word}       &   &   &   &   &   &   &   &   & \CellCSA & \CellCSA &   &    &    &    &    &   &   &   & & \\
-             \ref{chp05b:it-match}      &   &   &   &   &   &   &   &   & \CellCSA & \CellCSA &   &    &    &    &    &  &   &   & &  \\
-             \ref{chp05b:it-exp2}       &   &   &   &   &   &   &   &   &   & \CellCSA & \CellCSA &    &    &    & \CellSSA &   &   &   & & \\\hline
+             \ref{chp05b:it-long}       &   &   &   &   &   &   &   &   &          &          &          &  &  & & \CellCA & \CellCA & \CellCA & \CellCA & \CellCA & \CellCA   &   &\\
+             \ref{chp05b:it-lifelong}   &   &   &   &   &   &   &   &   &   &    &  &  &    &    &  \CellCSA  &  &   &   & &    &   &\\
+             \ref{chp05b:it-multi}      &   &   &   &   &   &   &   &   &   &    &    &  &  &    &  \CellCSA  & \CellCSA &   &   & &   &   & \\
+             \ref{chp05b:it-multimatch} &   &   &   &   &   &   &   &   &   &    &    &  &  &    &    & \CellCSA & \CellCSA  & \CellCSA  & &   &   & \\
+             \ref{chp05b:it-searchstrategy} &   &   &   &   &   &   &   &   &   &    &    &  &  &    &    &  &   &  \CellCSA & \CellCSA &   &   & \\             
+             \ref{chp05b:it-exp3}       &   &   &   &   &   &   &   &   &   &    &    &    &  &  &  &  &   &   & \CellCSA & \CellCSA   &   & \\\hline
 
-             \ref{chp05b:it-long}       &   &   &   &   &   &   &   &   &   &    & \CellCA & \CellCA & \CellCA & \CellCA & \CellSA &  &   &   & &  \\
-             \ref{chp05b:it-lifelong}   &   &   &   &   &   &   &   &   &   &    & \CellCSA & \CellCSA &    &    &    &  &   &   & &  \\
-             \ref{chp05b:it-multi}      &   &   &   &   &   &   &   &   &   &    &    & \CellCSA & \CellCSA &    &    &  &   &   & &  \\
-             \ref{chp05b:it-multimatch} &   &   &   &   &   &   &   &   &   &    &    & \CellCSA & \CellCSA &    &    &  &   &   & &  \\
-             \ref{chp05b:it-exp3}       &   &   &   &   &   &   &   &   &   &    &    &    & \CellCSA & \CellCSA & \CellSSA &  &   &   & & \\\hline
+             \ref{chp05b:it-longextend} &   &   &   &   &   &   &   &   &   &    &    &  &  &    &    &  & &  & &   & \CellSA  & \CellSA \\
+             \ref{chp05b:it-lifelongext} &   &   &   &   &   &   &   &   &   &    &    &  &  &    &    &  &   &   & &   & \CellSSA   & \\             
+             \ref{chp05b:it-exp3ext}       &   &   &   &   &   &   &   &   &   &    &    &    &  &  &  &  &   &   & & &   & \CellSSA \\\hline
 
-             \ref{chp05b:it-TW}      &   &   &   &   &   &   &   &   &   &    &    &    & \CellCA  & \CellCA  &  \CellSA  & \CellSA  &   &   & & \\\hline
-             \ref{chp05b:it-TPD}     &   &   &   &   &   &   &   &   &   &    &    &    &    &   & \CellSA  &   &   &   & & \\\hline
-             \ref{chp05b:it-TD}      &   &   &   &   &   &   &   &   &   &    &    &    &    &    &    &  \CellSA &   &   & & \\\hline
-             \ref{chp05b:it-pub1}    &   &   &   &   &   &   &   &   &   & \CellCA &   & \CellCA &    &   &  \CellSA  &  \CellSA &   &   & & \\\hline
-             \ref{chp05b:it-pub2}    &   &   & \CellCA &   &   & \CellCA & \CellCA & \CellCA &   & \CellCA & \CellCA &    &    &    &   &  &   &   & & \\\hline
+             \ref{chp05b:it-TW}      &   &   &   &   &   &   &   &   &   &    &    &    &  & & &   &   &   & \CellCA & \CellCA  & \CellSA  & \CellSA \\\hline
+             \ref{chp05b:it-TPD}     &   &   &   &   &   &   &   &   &   &    &    &    &    &   &   &   &   &   & & \CellSA  &   & \\\hline
+             \ref{chp05b:it-TD}      &   &   &   &   &   &   &   &   &   &    &    &    &    &    &    &   &   &   & &   &   & \CellSA \\\hline
+             \ref{chp05b:it-pub1}    &   &   &   &   &   &   &   &   &   &  &   &  &    &   &  &  & \CellCA  &   & & \CellSA &   & \\\hline
+             \ref{chp05b:it-pub2}    &   &   &   & \CellCA  &   & \CellCA &  & & \CellCA  &  & & \CellCA &    & \CellCA   & \CellCA  &  \CellCA &   & \CellCA & & \CellCA &   & \\\hline
         \end{tabular}
     }
     \vspace{0.2cm}
