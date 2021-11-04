@@ -71,32 +71,32 @@ This section details our semantic OS system and how it works. It starts with the
 \label{subsec:heat_map}
 The heat map is a visual technique widely used for visualizing complex spatial patterns, proposed by Kinney~\cite{Kinney1993Heatmaps}. It provides a meaningful and straightforward understanding for humans and processing programs. In this work, the discrete distribution of objects' presence is processed into a continuous color distribution, in which the most likely regions to find the target object are intuitively revealed. 
 
-The 2D grid map $\bs{m}$ that has been built by the SLAM system during the recording mode is used for computing the heat map~\textbf{H}. Both maps are equal in terms of the number of cells and size, but the difference is that a cell $\mathbf{c} \in \bs{m}$ is either free, occupied, or unknown, whereas the same cell $\mathbf{c} \in \mathbf{H}$ is the heat value that represents how likely that location is to contain a certain object. A cell~\textbf{c} in both $\bs{m}$ and~\textbf{H} represents the exactly same place in the environment. Hence, only the cells that are either free or occupied in $\bs{m}$ are likely to have a heat value different than zero in \textbf{H}, as there are no objects on unknown regions in~$\bs{m}$.
+The 2D grid map $\bs{m}$ that has been built by the SLAM system during the recording mode is used for computing the heat map~\textbf{H}. Both maps are equal in terms of the number of cells and size, but the difference is that a cell ${c} \in \bs{m}$ is either free, occupied, or unknown, whereas the same cell ${c} \in \mathbf{H}$ is the heat value that represents how likely that location is to contain a certain object. A cell ${c}$ in both $\bs{m}$ and~\textbf{H} represents the exactly same place in the environment. Hence, only the cells that are either free or occupied in $\bs{m}$ are likely to have a heat value different than zero in \textbf{H}, as there are no objects on unknown regions in~$\bs{m}$.
 
-All the~\textit{n} objects that have been detected on the recording mode are represented by the set $\mathbf{O}$, in which $\mathbf{O} = \{\mathbf{o}_1, \mathbf{o}_1, \cdots, \mathbf{o}_n\}$. Each $\mathbf{o}_i \in \mathbf{O}$ is composed by its position within~\textbf{H}, its category, the hour it has been detected, and the robot's position during the detection, i.e., $\mathbf{o}_i = (p_i^\mathbf{o}, c_i^\mathbf{o}, h_i^\mathbf{o}, r_i^\mathbf{o})$. To compute~\textbf{H}, we represent the presence of the object $\mathbf{o}_i \in \mathbf{O}$ by a weighted circular kernel $K(\cdot)$ of radius~\textit{r}. Let~\textbf{T} be the set of cells within the area of $K(\cdot)$ for a given~\textit{r}, and $\mathbf{T} \in \mathbf{H}$. For each cell $\mathbf{c} \in \mathbf{T}$, $K(\cdot)$ is defined as
+All the~\textit{n} objects that have been detected on the recording mode are represented by the set $\mathbf{O}$, in which $\mathbf{O} = \{{o}_1, {o}_1, \cdots, {o}_n\}$. Each ${o}_i \in \mathbf{O}$ is composed by its position within~\textbf{H}, its category, the hour it has been detected, and the robot's position during the detection, i.e., ${o}_i = (p_i^{o}, c_i^{o}, h_i^{o}, r_i^{o})$. To compute~\textbf{H}, we represent the presence of the object ${o}_i \in \mathbf{O}$ by a weighted circular kernel $K(\cdot)$ of radius~\textit{r}. Let~\textbf{T} be the set of cells within the area of $K(\cdot)$ for a given~\textit{r}, and $\mathbf{T} \in \mathbf{H}$. For each cell ${c} \in \mathbf{T}$, $K(\cdot)$ is defined as
 \begin{equation}
-K(\left \| \mathbf{c} - p_i^\mathbf{o} \right \|, h_i^\mathbf{o}) = 
+K(\left \| {c} - p_i^{o} \right \|, h_i^{o}) = 
   \begin{cases}
- W(h, h_i^\mathbf{o})Q(\mathbf{c})a, & \quad  if \left \| \mathbf{c} - p_i^\mathbf{o} \right \| \leqslant~r\\ 
+ W(h, h_i^{o})Q({c})a, & \quad  if \left \| {c} - p_i^{o} \right \| \leqslant~r\\ 
  \hfill 0,  & \quad \text{otherwise}
   \end{cases}    
 \label{eq:kernel_definition}
 \end{equation}
-where ~$\left \| \mathbf{c} - p_i^\mathbf{o} \right \|$ is the Manhattan distance from the current cell being measured, $\mathbf{c} \in \mathbf{T}$ to the centre of the kernel, $p_i^\mathbf{o} \in \mathbf{H}$, \textit{a} is the height of $K(\cdot)$. The function $Q(\cdot)$ is defined as
+where ~$\left \| {c} - p_i^{o} \right \|$ is the Manhattan distance from the current cell being measured, ${c} \in \mathbf{T}$ to the centre of the kernel, $p_i^{o} \in \mathbf{H}$, \textit{a} is the height of $K(\cdot)$. The function $Q(\cdot)$ is defined as
 \begin{equation}
-Q(\mathbf{c}) = 
+Q({c}) = 
   \begin{cases}
-    0, & \quad \text{if}~\mathbf{c}~\text{is unknown in }\bs{m}\\ 
+    0, & \quad \text{if}~{c}~\text{is unknown in }\bs{m}\\ 
     1, & \quad \text{otherwise}
   \end{cases} 
 \label{eq:q_function_unknown_cells}  
 \end{equation}
-and $W(h, \mathbf{o}_i^h)$ is defined as
+and $W(h, {o}_i^h)$ is defined as
 \begin{equation}
-W(h, h_i^\mathbf{o}) = 1 - \frac{\left | h - h_i^\mathbf{o} \right |}{12} 
+W(h, h_i^{o}) = 1 - \frac{\left | h - h_i^{o} \right |}{12} 
 \label{eq:hour_weight}
 \end{equation}
-where $h$ is the hour the robot is performing the search, and $h_i^\mathbf{o}$ is the hour the object $\mathbf{o}_i$ has been detected. Here is important to mention that we use the 24-hour notation. Hence, $W(h, h_i^\mathbf{o})$ is equal to one when $h$ and $h_i^\mathbf{o}$ are equal, and it is zero when they are 12 hours apart from each other, i.e., the largest difference in hours between two different time stamps. In our work, Eq.~\ref{eq:hour_weight} computes the weight of the object $\mathbf{o}_i$, in which the closer both arguments are, the more important the object becomes for the search. For example, if the robot has detected an object two times, at 8:00 in position A and 14:00 in position B, and it is performing the search at 10:00, it will probably start searching the object in A, as 8:00 is closer to 10:00 than 14:00.
+where $h$ is the hour the robot is performing the search, and $h_i^{o}$ is the hour the object ${o}_i$ has been detected. Here is important to mention that we use the 24-hour notation. Hence, $W(h, h_i^{o})$ is equal to one when $h$ and $h_i^{o}$ are equal, and it is zero when they are 12 hours apart from each other, i.e., the largest difference in hours between two different time stamps. In our work, Eq.~\ref{eq:hour_weight} computes the weight of the object ${o}_i$, in which the closer both arguments are, the more important the object becomes for the search. For example, if the robot has detected an object two times, at 8:00 in position A and 14:00 in position B, and it is performing the search at 10:00, it will probably start searching the object in A, as 8:00 is closer to 10:00 than 14:00.
 
 The first part of computing the heat map~\textbf{H} is depicted in Fig.~\ref{fig:kernel_heat_map}. 
 %The map of the environment in simulation is illustrated in Fig.~\ref{fig:kernel_heat_map}-(a), and in Fig.~\ref{fig:kernel_heat_map}-(b) the map~\textbf{M} is presented. 
@@ -110,9 +110,9 @@ The outcome of Eq.~\ref{eq:kernel_definition} is shown in Fig.~\ref{fig:kernel_h
 \label{fig:kernel_heat_map}
 \end{figure}
 
-The computed heat map in Fig.~\ref{fig:kernel_heat_map}c reduces the searching space since our system does not consider the colder spots (green region) in~\textbf{H}. Besides, the object's category information reduces the searching space even more, as there is no point in searching in a warm spot that represents a book if our system is looking for a mug. Since the category of a detected object $\mathbf{o}_i$ is known, $c_i^\mathbf{o}$, our system ignores warm spots from objects with different categories than the target.
+The computed heat map in Fig.~\ref{fig:kernel_heat_map}c reduces the searching space since our system does not consider the colder spots (green region) in~\textbf{H}. Besides, the object's category information reduces the searching space even more, as there is no point in searching in a warm spot that represents a book if our system is looking for a mug. Since the category of a detected object ${o}_i$ is known, $c_i^{o}$, our system ignores warm spots from objects with different categories than the target.
 
- A third search space reduction comes with a subtraction on the circular kernel's angle. During the search, our OS system guides the robot towards the edge of the most promising kernel. The edge, yellow cells  in~\textbf{H}, is one of the best regions to place the robot because it is the ideal distance between the robot and the kernel center (or the object's position). However, despite the ideal distance, positioning the robot at any place over the edge does not ensure the object will be either recognized or even within the camera's field of view. This issue is illustrated in Fig.~\ref{fig:bad_robot_placement}, in which the robot is quite close to the compute monitor at the edge of its kernel, but yet the object detection module is not able to detect it. Alternatively, the most appropriate position to place the robot would be the same one that the robot has been when recognizing the object during the recording mode. Thus, it is most likely that the object detection module will recognize the object once again if the robot assumes a similar pose it has assumed before. Hence, our heat map~\textbf{H} is built considering the kernel $K(\cdot)$ in Eq.~\ref{eq:kernel_definition} with an acute angle, instead of considering a \ang{360} one. For a given object~\textbf{o}, its kernel's angle is defined considering its $r^\mathbf{o}$, i.e., the robot's position when it has been recognized. Fig.~\ref{fig:good_robot_placement} illustrates the advantage of restricting the kernel's angle, in which the object detection module recognized the computer monitor.
+ A third search space reduction comes with a subtraction on the circular kernel's angle. During the search, our OS system guides the robot towards the edge of the most promising kernel. The edge, yellow cells  in~\textbf{H}, is one of the best regions to place the robot because it is the ideal distance between the robot and the kernel center (or the object's position). However, despite the ideal distance, positioning the robot at any place over the edge does not ensure the object will be either recognized or even within the camera's field of view. This issue is illustrated in Fig.~\ref{fig:bad_robot_placement}, in which the robot is quite close to the compute monitor at the edge of its kernel, but yet the object detection module is not able to detect it. Alternatively, the most appropriate position to place the robot would be the same one that the robot has been when recognizing the object during the recording mode. Thus, it is most likely that the object detection module will recognize the object once again if the robot assumes a similar pose it has assumed before. Hence, our heat map~\textbf{H} is built considering the kernel $K(\cdot)$ in Eq.~\ref{eq:kernel_definition} with an acute angle, instead of considering a \ang{360} one. For a given object~\textbf{o}, its kernel's angle is defined considering its $r^{o}$, i.e., the robot's position when it has been recognized. Fig.~\ref{fig:good_robot_placement} illustrates the advantage of restricting the kernel's angle, in which the object detection module recognized the computer monitor.
 
 \begin{figure}[!h]
 \centering
@@ -153,9 +153,9 @@ The search space reduction performed while building the heat map~\textbf{H} play
 Our system performs another operation to make it easier to find the target object. In OS systems, one of the main goals is to place the robot at the most appropriate place to accomplish the task. In this chapter, as we already mentioned, the most promising regions to place the robot are at the kernels' edges due to the ideal distance to the objects. However, such edges in the kernel $K(\cdot)$ presented in Eq.~\ref{eq:kernel_definition} are the coldest regions within the kernel area, as the warmest one is at the kernel's center. Hence, if our system computes the inverse $K^i(\cdot)$, the warmest regions becomes the ones at the edge, i.e., the ideal spots to place the robot during the search are the ones with the highest heat value. The $K^i(\cdot)$ is similar to the one presented in Eq.~\ref{eq:kernel_definition}, and it is defined as
 
 \begin{equation}
-K^i(\left \| \mathbf{c} - p_i^\mathbf{o} \right \|, h_i^\mathbf{o}) = 
+K^i(\left \| {c} - p_i^{o} \right \|, h_i^{o}) = 
   \begin{cases}
- W(h, h_i^\mathbf{o})Q(\mathbf{c})(1 - a), & \quad  if \left \| \mathbf{c} - p_i^\mathbf{o} \right \| \leqslant~r\\ 
+ W(h, h_i^{o})Q({c})(1 - a), & \quad  if \left \| {c} - p_i^{o} \right \| \leqslant~r\\ 
  \hfill 0,  & \quad \text{otherwise}
   \end{cases}    
 \label{eq:inverse_kernel}
@@ -193,14 +193,14 @@ Despite the easy readability by humans of~\textbf{H} built by Eq.~\ref{eq:kernel
 
 The process of building the heat map~\textbf{H} and reducing the search space is the first part of our OS system, in which we represent the data from the recording mode on~\textbf{H}. In addition to that, it is also necessary to compute the goal, i.e., the most promising spot in~\textbf{H} that our system estimated to the robot go and find the target object. %In Fig.~\ref{fig:step_by_step_search_space_reduction}-(d), for example, the goal would be one of the two remaining warm spots since they represent objects with the category than the target one. 
 
-The goal computation is similar to the heat map construction because we also use a kernel approach. Our idea here is to analyse the whole~\textbf{H} in small circular kernels, and get the cell $\mathbf{c}_*$ which neighbours have the highest heat value. The final equation for computing the goal cell $\mathbf{c}_* \in \mathbf{H}$ is defined as
+The goal computation is similar to the heat map construction because we also use a kernel approach. Our idea here is to analyse the whole~\textbf{H} in small circular kernels, and get the cell ${c}_*$ which neighbours have the highest heat value. The final equation for computing the goal cell ${c}_* \in \mathbf{H}$ is defined as
 \begin{equation}
-\mathbf{c}_* = \underset{\mathbf{c}\in\mathbf{H}}{\text{arg max}}\big(\Psi(\mathbf{c})\big)    
+{c}_* = \underset{{c}\in\mathbf{H}}{\text{arg max}}\big(\Psi({c})\big)    
 \label{eq:final_equation}
 \end{equation}
-in which the $\Psi(\mathbf{c})$ is defined as
+in which the $\Psi({c})$ is defined as
 \begin{equation}
-\Psi(\mathbf{c}_k) = \sum_{\mathbf{c}}^{\mathbf{T}}Q(\mathbf{c})K'(\left \| \mathbf{c} - \mathbf{c}_k \right \|)
+\Psi({c}_k) = \sum_{{c}}^{\mathbf{T}}Q({c})K'(\left \| {c} - {c}_k \right \|)
 \label{eq:psi_function}
 \end{equation}
 where $\mathbf{T}$ is a set of cells within the kernel area and $\mathbf{T} \subset \mathbf{H}$, and $K'(\cdot)$ is a simpler version of the kernel presented in Eq.~\ref{eq:kernel_definition} defined as

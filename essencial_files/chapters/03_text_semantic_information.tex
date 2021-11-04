@@ -98,40 +98,40 @@ a & \text{, if $d \leq r$} \\
 \end{cases}
 \label{eq:uniformKernel}
 \end{equation}
-where $r$ is the radius and $a$ is the height of $K(\cdot)$, and $d$ is the Manhattan distance from the current cell being measured, $\mathbf{c} \in \mathbf{T}$, to the centre of the kernel, cell $\mathbf{c}_k \in \bs{m}$. $\mathbf{T} \in \bs{m}$ is a subset of cells that have been within the area of the kernel at any moment. For a given cell $\mathbf{c}$, $Q(\cdot)$ tests whether it is free, and it is defined as
+where $r$ is the radius and $a$ is the height of $K(\cdot)$, and $d$ is the Manhattan distance from the current cell being measured, ${c} \in \mathbf{T}$, to the centre of the kernel, cell ${c}_k \in \bs{m}$. $\mathbf{T} \in \bs{m}$ is a subset of cells that have been within the area of the kernel at any moment. For a given cell ${c}$, $Q(\cdot)$ tests whether it is free, and it is defined as
 \begin{equation}
 \label{eq:freeCell}
-    Q(\mathbf{c}) = 
+    Q({c}) = 
 \begin{cases}
-1 & \text{, if $\mathbf{c}$ is a free cell} \\ 
+1 & \text{, if ${c}$ is a free cell} \\ 
 0 & \text{, otherwise.} 
 \end{cases}
 \end{equation}
 
-Combining the previous function into the KDE approach, it is possible to calculate the kernel density. For a cell $\mathbf{c}_k$, its free space $\Psi(\cdot)$ is computed by
+Combining the previous function into the KDE approach, it is possible to calculate the kernel density. For a cell ${c}_k$, its free space $\Psi(\cdot)$ is computed by
 \begin{equation}
 \label{eq:kerneldefinition}
-    \Psi(\mathbf{c}_k) = \sum_\mathbf{c}^\mathbf{T} Q(\mathbf{c})K(\left \| \mathbf{c} - \mathbf{c}_k \right \|).
+    \Psi({c}_k) = \sum_{c}^\mathbf{T} Q({c})K(\left \| {c} - {c}_k \right \|).
 \end{equation}
 %The algorithm, in practice, is working over $\mathbf{M}$. Therefore, $\Psi$ is defined as a sum instead of an integral. 
 
-According to Eq. \ref{eq:freeCell}, when unknown cells are found within the kernel area, it is still possible to compute $\Psi(\cdot)$. Therefore, once unknown cells return zero from Eq. \ref{eq:freeCell}, $\Psi(\cdot)$ can differentiate density measures when obstacles are surrounding $\mathbf{c}$ and decrease the size of the area computed by the kernel.
+According to Eq. \ref{eq:freeCell}, when unknown cells are found within the kernel area, it is still possible to compute $\Psi(\cdot)$. Therefore, once unknown cells return zero from Eq. \ref{eq:freeCell}, $\Psi(\cdot)$ can differentiate density measures when obstacles are surrounding ${c}$ and decrease the size of the area computed by the kernel.
 
-Assuming that the Segmentation module considers different sizes of free areas, and given that Eq. \ref{eq:kerneldefinition} calculates the size of free area surrounding a cell $\mathbf{c}_k \in \bs{m}$, $\Psi(\cdot)$ can be used in the Segmentation module as
+Assuming that the Segmentation module considers different sizes of free areas, and given that Eq. \ref{eq:kerneldefinition} calculates the size of free area surrounding a cell ${c}_k \in \bs{m}$, $\Psi(\cdot)$ can be used in the Segmentation module as
 \begin{equation}
 \label{eq:corridorNotcorridor}
-    \Upsilon(\textbf{c}_k) = \left \lfloor  \Psi(\textbf{c}_k) / \delta  \right \rfloor
+    \Upsilon({c}_k) = \left \lfloor  \Psi({c}_k) / \delta  \right \rfloor
 \end{equation}
 where $\delta$ is a threshold that defines how many different sizes of free areas are considered by the segmentation function, $\Upsilon(\cdot)$. %For instance, if $0 \leq \Psi(\mathbf{c}_k) \leq 800$ and $\delta = 400$, Eq. \ref{eq:corridorNotcorridor} segments free areas in only two different sizes, as illustrated by Fig. \ref{fig:2dmapSegmentation}-(b). On the other hand, if $\delta = 200$, it segments in four sizes. 
 Therefore, a high $\delta$ means Eq. \ref{eq:corridorNotcorridor} considers few different sizes, whereas a low $\delta$ is the opposite. 
 
-A segment $\mathbf{s}$ represents a group of free and adjacent cells from $\bs{m}$ that have the same $\Upsilon(\cdot)$. Fig. \ref{fig:2dmapSegmentation_d} demonstrates different segments, in which each one has a different color. For example, given $\mathbf{c}_0$ and $\mathbf{c}_1$ as two free and neighbouring cells in $\bs{m}$, and that $\Upsilon(\mathbf{c}_0) = \Upsilon(\mathbf{c}_1)$, then both belong to the same segment $\mathbf{s}_0$. Otherwise, a new segment $\mathbf{s}_1$ is created and $\mathbf{c}_1$ is associated to it. Thus, the segmentation of free adjacent cells from $\bs{m}$ is based on Eq. \ref{eq:corridorNotcorridor}.
+A segment $\mathbf{s}$ represents a group of free and adjacent cells from $\bs{m}$ that have the same $\Upsilon(\cdot)$. Fig. \ref{fig:2dmapSegmentation_d} demonstrates different segments, in which each one has a different color. For example, given ${c}_0$ and ${c}_1$ as two free and neighbouring cells in $\bs{m}$, and that $\Upsilon({c}_0) = \Upsilon({c}_1)$, then both belong to the same segment $\mathbf{s}_0$. Otherwise, a new segment $\mathbf{s}_1$ is created and ${c}_1$ is associated to it. Thus, the segmentation of free adjacent cells from $\bs{m}$ is based on Eq. \ref{eq:corridorNotcorridor}.
 
 \subsection{Image Processing module}
 \label{subsec:imageprocessing}
 The last module that completes the basis of our semantic OS system is the Image Processing one. It aims to recognize the number of door signs that may be in an RGB image. The idea here is to use one well-known existing text recognition algorithm \cite{Zhang2013Text,Jung2004Text,Neumann2012Realtime}, since this is not the focus of this thesis, and any approach can be used. The chosen work is the one proposed by \cite{Neumann2012Realtime} due to its real-time recognition aspect and its robustness against noise, and low contrast of characters. Besides, it does not require any information or preparation beforehand.
 
-For a given image $\mathbf{I}$ that was captured by the robot at cell $\mathbf{c}$, for example, Fig.~\ref{fig:imageProcessing}a and Fig.~\ref{fig:imageProcessing}c, the image processing module returns a list $\mathbf{L}$ containing the recognized number from door signs. In the case of Fig.~\ref{fig:imageProcessing}, $\mathbf{L}$ would contain only the number 228. Fig.~\ref{fig:imageProcessing} also shows where the detected door signs are included into the 2D map $\bs{m}$. Fig.~\ref{fig:imageProcessing}c shows an image taken by the camera on the robot's right side, and hence, the number is included in the map at the same side, as shown in Fig.~\ref{fig:imageProcessing}b. Given that the goal of signing rooms is to provide a unique door sign for each of them, it is assumed that there are not two door signs in a corridor identified by the same number. After receiving $\mathbf{L}$, it must be merged with the numbers of the door signs from the nearest segment of $\mathbf{c}$. For this process, it is important to define $S(\mathbf{c})$ as a function that returns the nearest segment of a cell $\mathbf{c}$, and $L(\cdot)$ as a function that returns the list of door signs from a segment. Thus, each door number $l \in \mathbf{L}$ is included in the list of door signs from the segment of $\mathbf{c}$, $l~\cup~L\big(S(\mathbf{c})\big)$. Besides, each $l$ has an occurrence number that increases by one every time the image processing algorithm recognizes it. If the robot revisits a place and recognises a $l$ that already exists in $L\big(S(\mathbf{c})\big)$, then its occurrence number is summed to the one in $L\big(S(\mathbf{c})\big)$. 
+For a given image $\mathbf{I}$ that was captured by the robot at cell ${c}$, for example, Fig.~\ref{fig:imageProcessing}a and Fig.~\ref{fig:imageProcessing}c, the image processing module returns a list $\mathbf{L}$ containing the recognized number from door signs. In the case of Fig.~\ref{fig:imageProcessing}, $\mathbf{L}$ would contain only the number 228. Fig.~\ref{fig:imageProcessing} also shows where the detected door signs are included into the 2D map $\bs{m}$. Fig.~\ref{fig:imageProcessing}c shows an image taken by the camera on the robot's right side, and hence, the number is included in the map at the same side, as shown in Fig.~\ref{fig:imageProcessing}b. Given that the goal of signing rooms is to provide a unique door sign for each of them, it is assumed that there are not two door signs in a corridor identified by the same number. After receiving $\mathbf{L}$, it must be merged with the numbers of the door signs from the nearest segment of ${c}$. For this process, it is important to define $S({c})$ as a function that returns the nearest segment of a cell ${c}$, and $L(\cdot)$ as a function that returns the list of door signs from a segment. Thus, each door number $l \in \mathbf{L}$ is included in the list of door signs from the segment of ${c}$, $l~\cup~L\big(S({c})\big)$. Besides, each $l$ has an occurrence number that increases by one every time the image processing algorithm recognizes it. If the robot revisits a place and recognises a $l$ that already exists in $L\big(S({c})\big)$, then its occurrence number is summed to the one in $L\big(S({c})\big)$. 
 
 \begin{figure}[!h]
 \centering
@@ -150,23 +150,23 @@ Our semantic planner is composed of five different parts, in which two of them a
 \subsection{Final formula}
 \label{subsec:finalFormula}
 %Given that all the five factors are presented and detailed, now we introduce their combination, and how it decides which candidate cell from $\mathbf{C}$ is the best one to the robot finds the goal-door. 
-Our semantic OS system analyses the environment during the searching process while the robot has not found the goal-door. If it realizes the current region of the environment is not promising, the system guides the robot to another direction. To decide the best frontier to go given the set of frontiers, for each candidate cell $\mathbf{c} \in \mathbf{C}$, the planner calculates its attractiveness factor $\varphi(\mathbf{c})$. This factor is the outcome of the combination of five factors briefly presented earlier. These candidate cells in $\mathbf{C}$ are the ones in the center of the free space, i.e., in the Voronoi, and within a frontier, which is the boundary between visited and not visited cells. Graphically speaking, five candidate cells are shown in Fig.~\ref{fig:2dmapSegmentation_a}, represented by the red dots near the pink line ends. In this case, $\mathbf{C} = \{\mathbf{c}_1, \mathbf{c}_2, \cdots, \mathbf{c}_5\}$. The visited cells are the free cells that were within $\mathbf{T}$, represented by the yellow region in Fig. \ref{fig:2dmapSegmentation_b}, whereas the white region represents the free space that is not close enough to the kernel centered at the robot's position. The Final formula explanation is divided into two parts, in which the semantic factor is presented before than the geometric factor. In the following subsections, the components of each factor, i.e., Growing Direction, Parity, Robot and Door Orientations, and Distance, are presented.   
+Our semantic OS system analyses the environment during the searching process while the robot has not found the goal-door. If it realizes the current region of the environment is not promising, the system guides the robot to another direction. To decide the best frontier to go given the set of frontiers, for each candidate cell ${c} \in \mathbf{C}$, the planner calculates its attractiveness factor $\varphi({c})$. This factor is the outcome of the combination of five factors briefly presented earlier. These candidate cells in $\mathbf{C}$ are the ones in the center of the free space, i.e., in the Voronoi, and within a frontier, which is the boundary between visited and not visited cells. Graphically speaking, five candidate cells are shown in Fig.~\ref{fig:2dmapSegmentation_a}, represented by the red dots near the pink line ends. In this case, $\mathbf{C} = \{{c}_1, {c}_2, \cdots, {c}_5\}$. The visited cells are the free cells that were within $\mathbf{T}$, represented by the yellow region in Fig. \ref{fig:2dmapSegmentation_b}, whereas the white region represents the free space that is not close enough to the kernel centered at the robot's position. The Final formula explanation is divided into two parts, in which the semantic factor is presented before than the geometric factor. In the following subsections, the components of each factor, i.e., Growing Direction, Parity, Robot and Door Orientations, and Distance, are presented.   
 
-The semantic factor, $\mathtt{S}(\mathbf{c})$, combines the Growing Direction and the Parity factors, $\varphi_g(\cdot)$ and $\varphi_p(\cdot)$, respectively. The idea of the first factor is to return high values when the segment $S(\mathbf{c})$ is more likely to contain the goal-door given the door sign sequence. On the other hand, the second part of $\mathtt{S}(\mathbf{c})$ aims to analyze the parity of $S(\mathbf{c})$ and compare it to the goal-door parity. When the robot is in a $S(\mathbf{c})$ that is not likely to contain the goal-door, either due to $\varphi_g(\cdot)$ or $\varphi_p(\cdot)$, it should go to another path and continue the active search. Given that both Growing Direction and Parity factors are important, in $\mathtt{S}(\mathbf{c})$ they are multiplied by each other. If one is low, the result of $\mathtt{S}(\mathbf{c})$ will end up being low as well, even when the other is high. It is important to highlight that $\mathtt{S}(\mathbf{c})$ is completely probabilistic, and due to how both $\varphi_g(\cdot)$ and $\varphi_p(\cdot)$ are modelled, $\mathtt{S}(\mathbf{c})$ becomes robust to outliers. The Semantic factor is given by
+The semantic factor, $\mathtt{S}({c})$, combines the Growing Direction and the Parity factors, $\varphi_g(\cdot)$ and $\varphi_p(\cdot)$, respectively. The idea of the first factor is to return high values when the segment $S({c})$ is more likely to contain the goal-door given the door sign sequence. On the other hand, the second part of $\mathtt{S}({c})$ aims to analyze the parity of $S({c})$ and compare it to the goal-door parity. When the robot is in a $S({c})$ that is not likely to contain the goal-door, either due to $\varphi_g(\cdot)$ or $\varphi_p(\cdot)$, it should go to another path and continue the active search. Given that both Growing Direction and Parity factors are important, in $\mathtt{S}({c})$ they are multiplied by each other. If one is low, the result of $\mathtt{S}({c})$ will end up being low as well, even when the other is high. It is important to highlight that $\mathtt{S}({c})$ is completely probabilistic, and due to how both $\varphi_g(\cdot)$ and $\varphi_p(\cdot)$ are modelled, $\mathtt{S}({c})$ becomes robust to outliers. The Semantic factor is given by
 \begin{equation}
-        \mathtt{S}(\mathbf{c}) = \varphi_g(\mathbf{c}) \varphi_p(\mathbf{c})
+        \mathtt{S}({c}) = \varphi_g({c}) \varphi_p({c})
 \end{equation}
 
-Differently, the geometric factor, $\mathtt{G}(\mathbf{c})$, multiplies the Robot and the Door Orientation factors, $\varphi_r(\cdot)$, $\varphi_o(\cdot)$ respectively, by the Distance one, $\varphi_d(\cdot)$, once the further they are, the less they matter. Then, the outcome of these multiplications is summed to the $\varphi_d(\cdot)$. The geometric factor is given by
+Differently, the geometric factor, $\mathtt{G}({c})$, multiplies the Robot and the Door Orientation factors, $\varphi_r(\cdot)$, $\varphi_o(\cdot)$ respectively, by the Distance one, $\varphi_d(\cdot)$, once the further they are, the less they matter. Then, the outcome of these multiplications is summed to the $\varphi_d(\cdot)$. The geometric factor is given by
 \begin{equation}
-        \mathtt{G}(\mathbf{c}) = \frac{\big(\varphi_o(\mathbf{c}) + \varphi_r(\mathbf{c})\big)\varphi_d(\mathbf{c}) + \varphi_d(\mathbf{c})}{3.0}
+        \mathtt{G}({c}) = \frac{\big(\varphi_o({c}) + \varphi_r({c})\big)\varphi_d({c}) + \varphi_d({c})}{3.0}
         \label{eq:geometricfactor}
 \end{equation}
 
-Finally, in order to define the best $\mathbf{c} \in \mathbf{C}$, i.e. the $\mathbf{c}$ that is more like to contain the goal-door, each of them is submitted to the Eq.~\ref{eq:finalEquation}. Here, $\alpha$ is a threshold that controls the importance of the $\mathtt{S}(\mathbf{c})$ and $\mathtt{G}(\mathbf{c})$, and it ranges as $0 \leq \alpha \leq 1$. The outcome of Eq.~\ref{eq:maxfinalEquation} is the $\mathbf{c}_*$, that is the candidate cell in which its $S(\mathbf{c})$ is more likely to contain the goal-door,
+Finally, in order to define the best ${c} \in \mathbf{C}$, i.e. the ${c}$ that is more like to contain the goal-door, each of them is submitted to the Eq.~\ref{eq:finalEquation}. Here, $\alpha$ is a threshold that controls the importance of the $\mathtt{S}({c})$ and $\mathtt{G}({c})$, and it ranges as $0 \leq \alpha \leq 1$. The outcome of Eq.~\ref{eq:maxfinalEquation} is the ${c}_*$, that is the candidate cell in which its $S({c})$ is more likely to contain the goal-door,
 \begin{align}
-    \varphi(\mathbf{c}) &= \mathtt{S}(\mathbf{c}) * \alpha + \mathtt{G}(\mathbf{c}) * (1.0 - \alpha) \label{eq:finalEquation}\\
-    \mathbf{c}_* &= \underset{\mathbf{c} \in \mathbf{C}}{\argmax}(\varphi(\mathbf{c})) \label{eq:maxfinalEquation}
+    \varphi({c}) &= \mathtt{S}({c}) * \alpha + \mathtt{G}({c}) * (1.0 - \alpha) \label{eq:finalEquation}\\
+    {c}_* &= \underset{{c} \in \mathbf{C}}{\argmax}(\varphi({c})) \label{eq:maxfinalEquation}
 \end{align}
 
 
@@ -174,7 +174,7 @@ Finally, in order to define the best $\mathbf{c} \in \mathbf{C}$, i.e. the $\mat
 \label{subsec:growingDirection}
 Usually, doors of buildings are signed in sequence and sorted (either in increasing or decreasing order). For example, the first number of a corridor is smaller than its last one, or in the other way around. This characteristic can be inferred through the door sign sequence analysis. Imagine, for instance, that a robot is in a corridor where the number of the first door sign is larger than the goal-door one, and this corridor has an increasing door sign sequence. Hence, in terms of the Growing Direction factor, the robot should not consider this path as promising since it is not very likely that its door sequence contains the goal-door. Therefore, the proposed Growing Direction factor, semantic information inferred from the door sign sequence, is beneficial to our semantic OS system, given that it indicates the door signs organization in a segment. 
 
-For each $\mathbf{c} \in \mathbf{C}$, the Growing Direction factor first calculates the angle in which the door sign sequence is increasing, $\theta_i\big(S(\mathbf{c})\big)$. To determine it, all the detected door signs of the segment $S(\mathbf{c})$ are considered, $L\big(S(\mathbf{c})\big)$, as illustrated by Fig. \ref{fig:doorsGroingAngle_a}. Then, for all possible pairs of two different door signs, one is larger than the other, the vector that connects them is computed. Fig. \ref{fig:doorsGroingAngle_b} demonstrates an example for door sign number 1, and how the vectors are computed in pairs, such as (1,2), (1,3), (1,4), and (1,5). \textcolor{black}{As it shows, the door sign number 1 has four vectors, while the door sign number 4 has only one. To illustrate, if we align all these detected door signs, as shown by Fig. \ref{fig:doorsGroingAngle_c}, it would be easier to understand that the sum of vectors from Fig. \ref{fig:doorsGroingAngle_b} and the final $\theta_i\big(S(\mathbf{c})\big)$, indicate that the sequence increases to the right. To make this process even clearer, Fig. \ref{fig:doorsGroingAngle_d} repeats the same procedure to the other door signs remaining, i.e., 2, 3, and 4}. Here, it is important to mention that the door signs, i.e., the yellow circles, were represented within the white area to help the explanation. In the simulator, they appear within the grey area, as illustrated in Fig.~\ref{fig:imageProcessing}b.
+For each ${c} \in \mathbf{C}$, the Growing Direction factor first calculates the angle in which the door sign sequence is increasing, $\theta_i\big(S({c})\big)$. To determine it, all the detected door signs of the segment $S({c})$ are considered, $L\big(S({c})\big)$, as illustrated by Fig. \ref{fig:doorsGroingAngle_a}. Then, for all possible pairs of two different door signs, one is larger than the other, the vector that connects them is computed. Fig. \ref{fig:doorsGroingAngle_b} demonstrates an example for door sign number 1, and how the vectors are computed in pairs, such as (1,2), (1,3), (1,4), and (1,5). \textcolor{black}{As it shows, the door sign number 1 has four vectors, while the door sign number 4 has only one. To illustrate, if we align all these detected door signs, as shown by Fig. \ref{fig:doorsGroingAngle_c}, it would be easier to understand that the sum of vectors from Fig. \ref{fig:doorsGroingAngle_b} and the final $\theta_i\big(S({c})\big)$, indicate that the sequence increases to the right. To make this process even clearer, Fig. \ref{fig:doorsGroingAngle_d} repeats the same procedure to the other door signs remaining, i.e., 2, 3, and 4}. Here, it is important to mention that the door signs, i.e., the yellow circles, were represented within the white area to help the explanation. In the simulator, they appear within the grey area, as illustrated in Fig.~\ref{fig:imageProcessing}b.
 
 \begin{figure}[h]
      \centering
@@ -203,7 +203,7 @@ For each $\mathbf{c} \in \mathbf{C}$, the Growing Direction factor first calcula
          \caption{}
          \label{fig:doorsGroingAngle_d}
      \end{subfigure}
-     \caption[Demonstration of how the increasing angle $\theta_i\big(S(\mathbf{c})\big)$ is computed in a segment]{\small Demonstration of how the increasing angle $\theta_i\big(S(\mathbf{c})\big)$ is computed in a segment. All the detected door signs within the segment, (a), are considered to calculate the $\theta_i\big(S(\mathbf{c})\big)$. The first step, (b), illustrates the vectors from door sign 1 to the other door signs, and it is easier to understand the effect of this vector calculation aligning all the door signs, (c). The final step of the vector computation, (d), shows all the vectors.}
+     \caption[Demonstration of how the increasing angle $\theta_i\big(S({c})\big)$ is computed in a segment]{\small Demonstration of how the increasing angle $\theta_i\big(S({c})\big)$ is computed in a segment. All the detected door signs within the segment, (a), are considered to calculate the $\theta_i\big(S({c})\big)$. The first step, (b), illustrates the vectors from door sign 1 to the other door signs, and it is easier to understand the effect of this vector calculation aligning all the door signs, (c). The final step of the vector computation, (d), shows all the vectors.}
      \label{fig:doorsGroingAngle}
  \end{figure}
 
@@ -229,35 +229,35 @@ Fig.~\ref{fig:groingDirection} illustrates a partial map from the simulator used
 \label{fig:groingDirection}
 \end{figure}
 
-One possible solution to deal with the aforementioned third case is to measure whether all the door signs within the sequence are smaller or larger than the goal-door. Hence, the amount of door signs that are smaller or larger than the goal-door are counted by the functions $L^<\big(S(\mathbf{c})\big)$ and $L^>\big(S(\mathbf{c})\big)$, respectively. The factor $\zeta(\cdot)$ measures the possibility of a segment to have door signs smaller or larger than the goal-door, defined by 
+One possible solution to deal with the aforementioned third case is to measure whether all the door signs within the sequence are smaller or larger than the goal-door. Hence, the amount of door signs that are smaller or larger than the goal-door are counted by the functions $L^<\big(S({c})\big)$ and $L^>\big(S({c})\big)$, respectively. The factor $\zeta(\cdot)$ measures the possibility of a segment to have door signs smaller or larger than the goal-door, defined by 
 \begin{equation}
-\zeta\big(S(\mathbf{c})\big) = \frac{\Big(L^<\big(S(\mathbf{c})\big) - L^>\big(S(\mathbf{c})\big)\Big)}{\max\Big(L^<\big(S(\mathbf{c})\big)+L^>\big(S(\mathbf{c})\big), w_g\Big)},
+\zeta\big(S({c})\big) = \frac{\Big(L^<\big(S({c})\big) - L^>\big(S({c})\big)\Big)}{\max\Big(L^<\big(S({c})\big)+L^>\big(S({c})\big), w_g\Big)},
 \label{eq:growingdirectionwg}
 \end{equation} 
-where $-1 \leq \zeta\big(S(\mathbf{c})\big) \leq 1$, in which $\zeta\big(S(\mathbf{c})\big) = 1$ means that in $S(\mathbf{c})$ there are only larger door signs, $\zeta\big(S(\mathbf{c})\big) = -1$ only smaller door signs, and $\zeta\big(S(\mathbf{c})\big) = 0$ that both  $L^<$ and $L^>$ are equal. $w_g$ is a threshold used to control the minimum amount of detected door signs are necessary to this equation reaches 1 or -1.
+where $-1 \leq \zeta\big(S({c})\big) \leq 1$, in which $\zeta\big(S({c})\big) = 1$ means that in $S({c})$ there are only larger door signs, $\zeta\big(S({c})\big) = -1$ only smaller door signs, and $\zeta\big(S({c})\big) = 0$ that both  $L^<$ and $L^>$ are equal. $w_g$ is a threshold used to control the minimum amount of detected door signs are necessary to this equation reaches 1 or -1.
 
-In addition, Growing Direction factor also considers $\theta_f(\mathbf{c})$, that is the Voronoi angle at cell $\mathbf{c}$. The difference angle between $\theta_f(\mathbf{c})$ and $\theta_i\big(S(\mathbf{c})\big)$, measured by $\gamma(\theta_f(\mathbf{c}))$, indicates whether $\theta_f(\mathbf{c})$ is pointing to the same direction than $\theta_i\big(S(\mathbf{c})\big)$. Then,\\
+In addition, Growing Direction factor also considers $\theta_f({c})$, that is the Voronoi angle at cell ${c}$. The difference angle between $\theta_f({c})$ and $\theta_i\big(S({c})\big)$, measured by $\gamma(\theta_f({c}))$, indicates whether $\theta_f({c})$ is pointing to the same direction than $\theta_i\big(S({c})\big)$. Then,\\
 \begin{equation}
-\gamma(\theta_f(\mathbf{c})) = 1.0 + \left | \frac{\theta_f(\mathbf{c}) - \theta_i\big(S(\mathbf{c})\big)}{\pi} \right | * - 2.0,
+\gamma(\theta_f({c})) = 1.0 + \left | \frac{\theta_f({c}) - \theta_i\big(S({c})\big)}{\pi} \right | * - 2.0,
 \end{equation}
-where $-1 \leq \gamma(\theta_f(\mathbf{c})) \leq 1$, in which $\gamma(\theta_f(\mathbf{c})) = 1$ means that $\theta_f(\mathbf{c})$ and $\theta_i\big(S(\mathbf{c})\big)$ are pointing at the same direction, and $\gamma(\theta_f(\mathbf{c})) = -1$ that they are pointing to opposite directions. 
+where $-1 \leq \gamma(\theta_f({c})) \leq 1$, in which $\gamma(\theta_f({c})) = 1$ means that $\theta_f({c})$ and $\theta_i\big(S({c})\big)$ are pointing at the same direction, and $\gamma(\theta_f({c})) = -1$ that they are pointing to opposite directions. 
 
-Now, the Growing Direction factor of a cell $\mathbf{c}$, $\varphi_g(\mathbf{c})$, is defined as
+Now, the Growing Direction factor of a cell ${c}$, $\varphi_g({c})$, is defined as
 \begin{equation}
-\varphi_g(\mathbf{c}) = \frac{\zeta\big(S(\mathbf{c})\big) * \gamma\big(\theta_f(\mathbf{c})\big) + 1.0}{2.0},    
+\varphi_g({c}) = \frac{\zeta\big(S({c})\big) * \gamma\big(\theta_f({c})\big) + 1.0}{2.0},    
 \end{equation}
-where $-1 \leq \varphi_g(\mathbf{c}) \leq 1$, in which $\varphi_g(\mathbf{c}) = -1$ means that is less likely to reach the goal-door given how the door signs are set in $S(\mathbf{c})$, whereas $\varphi_g(\mathbf{c}) = 1$ means that is high likely. When $\varphi_g(\mathbf{c}) = 0$, it means that the Growing Direction factor is not sure about either the growing direction angle, or about the smaller and larger numbers. Hence, it can not indicate whether $\mathbf{c}$ is a very likely frontier.
+where $-1 \leq \varphi_g({c}) \leq 1$, in which $\varphi_g({c}) = -1$ means that is less likely to reach the goal-door given how the door signs are set in $S({c})$, whereas $\varphi_g({c}) = 1$ means that is high likely. When $\varphi_g({c}) = 0$, it means that the Growing Direction factor is not sure about either the growing direction angle, or about the smaller and larger numbers. Hence, it can not indicate whether ${c}$ is a very likely frontier.
  
 \subsection{Parity factor}
 \label{subsec:parity}
 This factor considers the characteristics of a door sign to be either \textit{even} or \textit{odd}, the kind of information that is not explicitly available in the environment, but it can be easily inferred after the number recognition. The idea is to attribute a high probability to corridors that contain mostly door signs with the same parity as the goal-door. It is important to mention that this factor also considers the case in which a corridor contains both even and odd door signs since the probability is proportional to their respective amount.
 
-To calculate the Parity factor, first the amount of door signs from $S(\mathbf{c})$ that has the same or different parity than the goal-door are counted, given by the functions $L^=\big(S(\mathbf{c})\big)$ and $L^{\neq}\big(S(\mathbf{c})\big)$, respectively. Then, for a cell $\mathbf{c} \in \mathbf{C}$, its Parity factor, $\varphi_p(\mathbf{c})$, is given by
+To calculate the Parity factor, first the amount of door signs from $S({c})$ that has the same or different parity than the goal-door are counted, given by the functions $L^=\big(S({c})\big)$ and $L^{\neq}\big(S({c})\big)$, respectively. Then, for a cell ${c} \in \mathbf{C}$, its Parity factor, $\varphi_p({c})$, is given by
 \begin{equation}
-    \varphi_p(\mathbf{c}) = 0.5 + \frac{L^=\big(S(\mathbf{c})\big) - L^{\neq}\big(S(\mathbf{c})\big)}{\max\Big(L^=\big(S(\mathbf{c})\big) + L^{\neq}\big(S(\mathbf{c})\big), w_p\Big)}*0.5
+    \varphi_p({c}) = 0.5 + \frac{L^=\big(S({c})\big) - L^{\neq}\big(S({c})\big)}{\max\Big(L^=\big(S({c})\big) + L^{\neq}\big(S({c})\big), w_p\Big)}*0.5
     \label{eq:paritywp}
 \end{equation}
-where $0 \leq \varphi_p(\mathbf{c}) \leq 1$, and $w_p$ is a threshold used to control the minimum amount of detected door signs that are necessary to this equation reaches 0 or 1. When $\varphi_p(\mathbf{c}) = 1$, it means that all the observed doors have the same parity than the goal-door, whereas $\varphi_p(\mathbf{c}) = 0$ is the opposite. When $\varphi_p(\mathbf{c}) = 0.5$, it means that $L^{\neq}$ and $L^=$ are equal, and therefore is not possible to ensure the parity of the segment $S(\mathbf{c})$.
+where $0 \leq \varphi_p({c}) \leq 1$, and $w_p$ is a threshold used to control the minimum amount of detected door signs that are necessary to this equation reaches 0 or 1. When $\varphi_p({c}) = 1$, it means that all the observed doors have the same parity than the goal-door, whereas $\varphi_p({c}) = 0$ is the opposite. When $\varphi_p({c}) = 0.5$, it means that $L^{\neq}$ and $L^=$ are equal, and therefore is not possible to ensure the parity of the segment $S({c})$.
 
 \subsection{Robot and Door Orientation factors}
 \label{subsec:robotDoorOrientation}
@@ -273,24 +273,24 @@ The scenario in Fig.~\ref{fig:orientationFactors} illustrates the importance of 
 \label{fig:orientationFactors}
 \end{figure}
 
-To calculate the Door Orientation factor, it is considered a history of the $\lambda_d$ most recent robot's orientations when a door sign was detected. Based on this history, it is computed a histogram of such orientations, in which each bin saves the percentage of each possible robot's orientation. Then, given the orientation of $\mathbf{c}$, $\theta_f(\mathbf{c})$, it is consulted in the robot's orientation histogram the probability of finding a door sign considering such orientation, 
+To calculate the Door Orientation factor, it is considered a history of the $\lambda_d$ most recent robot's orientations when a door sign was detected. Based on this history, it is computed a histogram of such orientations, in which each bin saves the percentage of each possible robot's orientation. Then, given the orientation of ${c}$, $\theta_f({c})$, it is consulted in the robot's orientation histogram the probability of finding a door sign considering such orientation, 
 \begin{equation}
 \label{eq:doorOrientation}
-    \varphi_o(\mathbf{c}) = H_d[\theta_f(\mathbf{c})],
+    \varphi_o({c}) = H_d[\theta_f({c})],
 \end{equation}
-where $H_d[\cdot]$ is the door orientation histogram, and the Door Orientation factor is $0 \leq \varphi_o(\mathbf{c}) \leq 1$, in which 1 is 100\% and 0 is 0\%. 
+where $H_d[\cdot]$ is the door orientation histogram, and the Door Orientation factor is $0 \leq \varphi_o({c}) \leq 1$, in which 1 is 100\% and 0 is 0\%. 
 
-The Door and Robot Orientation factors are very similar to each other. The difference between them is that the first one saves the robot's orientation only when a door sign has been recognized. Therefore, it prioritises the $\theta_f(\mathbf{c})$ that has the highest $H_d[\theta_f(\mathbf{c})]$, i.e. the orientation in which the robot has detected most of the door signs. On the other hand, the idea of the second one, the Robot Orientation factor, is to prioritize the $\theta_f(\mathbf{c})$ that is most similar to the robot's orientation that is more frequent, without considering when the door signs were recognized. This factor makes the robot consider other paths that, despite not having door signs, may connect to other more promising ones.
+The Door and Robot Orientation factors are very similar to each other. The difference between them is that the first one saves the robot's orientation only when a door sign has been recognized. Therefore, it prioritises the $\theta_f({c})$ that has the highest $H_d[\theta_f({c})]$, i.e. the orientation in which the robot has detected most of the door signs. On the other hand, the idea of the second one, the Robot Orientation factor, is to prioritize the $\theta_f({c})$ that is most similar to the robot's orientation that is more frequent, without considering when the door signs were recognized. This factor makes the robot consider other paths that, despite not having door signs, may connect to other more promising ones.
 
-As the robot moves through the environment, its $\lambda_r$ most recent orientations are saved, and they are used to compute a histogram. Each histogram bin represents an angle and its percentage in the history of the robot's orientation. Given the calculated histogram, the $\theta_f(\mathbf{c})$ is used as an index to get the probability of that angle, as presented by
+As the robot moves through the environment, its $\lambda_r$ most recent orientations are saved, and they are used to compute a histogram. Each histogram bin represents an angle and its percentage in the history of the robot's orientation. Given the calculated histogram, the $\theta_f({c})$ is used as an index to get the probability of that angle, as presented by
 \begin{equation}
-    \varphi_r(\mathbf{c}) = H_r[\theta_f(\mathbf{c})],
+    \varphi_r({c}) = H_r[\theta_f({c})],
 \end{equation}
-where $H_r[\cdot]$ is the robot orientation histogram, and the Robot Orientation factor is $0 \leq \varphi_r(\mathbf{c}) \leq 1$, in which $\varphi_r(\mathbf{c}) = 1$ means that $\theta_f(\mathbf{c})$ is an orientation that is equal to the unique robot's orientation saved, whereas $\varphi_r(\mathbf{c}) = 0$ means that $\theta_f(\mathbf{c})$ is an orientation that the robot did not do.
+where $H_r[\cdot]$ is the robot orientation histogram, and the Robot Orientation factor is $0 \leq \varphi_r({c}) \leq 1$, in which $\varphi_r({c}) = 1$ means that $\theta_f({c})$ is an orientation that is equal to the unique robot's orientation saved, whereas $\varphi_r({c}) = 0$ means that $\theta_f({c})$ is an orientation that the robot did not do.
 
 \subsection{Distance factor}
 \label{subsubsec:distance}
-The fifth factor that is considered by our Semantic Planner is the distance between the robot cell $\mathbf{c}_r$ and each $\mathbf{c} \in \mathbf{C}$, i.e. the smallest number of Voronoi cells that connects each pair of $(\mathbf{c}_r, \mathbf{c})$. Its goal is to guide the robot towards the closest $\mathbf{c}$, instead of spending battery and time going to the farthest one. Take the Fig.~\ref{fig:distanceFactor} as an example, and suppose that the goal-door is 71. The robot has started at the intersection between corridors 1 and 2, and it has moved to the right corridor, Fig.~\ref{fig:distanceFactor}a. After a few minutes, guided by the Robot and Door Orientation factor, it has chosen to continue the searching on corridor 3. Even though this corridor has the same parity as the goal-door (both are odd), the Growing factor indicates that corridor 3 is not promising. Therefore, the robot should continue the searching in one of the other three options, corridors 1, 2, or 4. The Distance factor is responsible for indicating the closest option to the robot, given by the sum of green cells that connect the robot's current position and each red point near the numbers 1, 2, and 4, as shown in Fig.~\ref{fig:distanceFactor}b. 
+The fifth factor that is considered by our Semantic Planner is the distance between the robot cell ${c}_r$ and each ${c} \in \mathbf{C}$, i.e. the smallest number of Voronoi cells that connects each pair of $({c}_r, {c})$. Its goal is to guide the robot towards the closest ${c}$, instead of spending battery and time going to the farthest one. Take the Fig.~\ref{fig:distanceFactor} as an example, and suppose that the goal-door is 71. The robot has started at the intersection between corridors 1 and 2, and it has moved to the right corridor, Fig.~\ref{fig:distanceFactor}a. After a few minutes, guided by the Robot and Door Orientation factor, it has chosen to continue the searching on corridor 3. Even though this corridor has the same parity as the goal-door (both are odd), the Growing factor indicates that corridor 3 is not promising. Therefore, the robot should continue the searching in one of the other three options, corridors 1, 2, or 4. The Distance factor is responsible for indicating the closest option to the robot, given by the sum of green cells that connect the robot's current position and each red point near the numbers 1, 2, and 4, as shown in Fig.~\ref{fig:distanceFactor}b. 
 
 \begin{figure}[!h]
 \centering
@@ -300,17 +300,17 @@ The fifth factor that is considered by our Semantic Planner is the distance betw
 \label{fig:distanceFactor}
 \end{figure}
 
-The first step of the Distance factor calculation is to find the smallest distance $d_{\ll}$ between $\mathbf{c}_r$ and all $\mathbf{c} \in \mathbf{C}$, considering only the Voronoi cells in $\bs{m}$, in which one cell is considered as one to the distance sum. It is given by
+The first step of the Distance factor calculation is to find the smallest distance $d_{\ll}$ between ${c}_r$ and all ${c} \in \mathbf{C}$, considering only the Voronoi cells in $\bs{m}$, in which one cell is considered as one to the distance sum. It is given by
 \begin{equation}
-    \mathbf{c}_{\ll} = \underset{\mathbf{c} \in \mathbf{C}}\argmin\big(D(\mathbf{c}_r, \mathbf{c})\big)
+    {c}_{\ll} = \underset{{c} \in \mathbf{C}}\argmin\big(D({c}_r, {c})\big)
 \end{equation}
 where $D(\cdot, \cdot)$ is the function that counts the number of cells between two other specific cells. In this factor, only Voronoi cells are counted, regardless they are within mapped or unknown regions.
 
-The idea is that the Distance factor of $\mathbf{c}$, $\varphi_d(\mathbf{c})$, should be high to small distances, and low to the big ones, i.e., give more preference to $\mathbf{c}$ that is closer to the robot. Then
+The idea is that the Distance factor of ${c}$, $\varphi_d({c})$, should be high to small distances, and low to the big ones, i.e., give more preference to ${c}$ that is closer to the robot. Then
 \begin{equation}
-    \varphi_d(\mathbf{c}) = 1.0 - \Big(1.0 - \frac{D(\mathbf{c}_r, \mathbf{c}_{\ll})}{D(\mathbf{c}_r, \mathbf{c})}\Big)^4,
+    \varphi_d({c}) = 1.0 - \Big(1.0 - \frac{D({c}_r, {c}_{\ll})}{D({c}_r, {c})}\Big)^4,
 \end{equation}
-where $0 \leq \varphi_d(\mathbf{c}) \leq 1$, in which $\varphi_d(\mathbf{c}) = 1$ means that $D(\mathbf{c}_r, \mathbf{c})$ is equal to $D(\mathbf{c}_r, \mathbf{c}_{\ll})$, and $\varphi_d(\mathbf{c}) = 0$ means that $D(\mathbf{c}_r, \mathbf{c})$ is so high that makes the division be around zero. 
+where $0 \leq \varphi_d({c}) \leq 1$, in which $\varphi_d({c}) = 1$ means that $D({c}_r, {c})$ is equal to $D({c}_r, {c}_{\ll})$, and $\varphi_d({c}) = 0$ means that $D({c}_r, {c})$ is so high that makes the division be around zero. 
 
 \section{Experiments and Results} 
 \label{sec:experimentsResults}
