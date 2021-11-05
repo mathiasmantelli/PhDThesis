@@ -1,5 +1,5 @@
 \chapter{Discussion on thesis progress}
-
+\label{chap:5_discussion_thesis_progress}
 In this thesis proposal, we have investigated the usage of semantic information in the context of OS problems. Our focus is on expanding and improving the robots' perception to perform high-level tasks in everyday living spaces. The majority of the proposed solutions to the OS problems depend on geometric information only, such as the object's 3D format or color, or require a preparation step, like informing which room is more likely to contain which object. The disadvantages of such proposals are that they are limited to the raw data read by the sensors and are not easy to deploy due to the preparation step they need before operating. Our approaches go beyond the geometric information and just the sensor readings, inferring semantic information that complements the robot's perception and enhances its performance in OS tasks. 
 
 We proposed two OS systems based on semantic information inferred from two sources hardly explored in the mobile robotics field, text and dynamism. In the first system, we exploited the text of door labels, which were numbers, to find a target door in a large and unknown environment. 

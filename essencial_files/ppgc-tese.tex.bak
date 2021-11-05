@@ -123,12 +123,12 @@
 % começar em maíuscula (novo padrão da biblioteca), as demais palavras começam em minúscula, exceto
 % se são nomes próprios.
 %
-\keyword{Formatação eletrônica de documentos}
-\keyword{Padronização de documentos}
-\keyword{Instituto de Informática da UFRGS}
-\keyword{\LaTeX}
-\keyword{ABNT}
-\keyword{UFRGS}
+\keyword{Mobile robotics}
+\keyword{Object search}
+\keyword{Semantic information}
+\keyword{Robotics perception}
+\keyword{Indoor environments}
+
 
 %
 % inicio do documento
@@ -142,6 +142,7 @@
 \maketitle
 
 % DEDICATORIA
+%Entre os mais fortes existem os que nasceram com um dom, e aqueles que trabalham duro… E eu sou um dos que trabalhou duro!”, Rock Lee
 \clearpage
 \begin{flushright}
 \mbox{}\vfill
@@ -159,11 +160,7 @@ it is because I stood on the shoulders of giants.''\\}
 
 % Resumo na língua do documento.
 \begin{abstract}
-Este documento é um exemplo de como formatar documentos para o
-Instituto de Informática da UFRGS usando as classes \LaTeX\
-disponibilizadas pelo UTUG\@. Ao mesmo tempo, pode servir de consulta
-para comandos mais genéricos. \emph{O texto do resumo não deve
-conter mais do que 500 palavras.}
+Nowadays, the mobile robotics research community deals with different high-level tasks that require the robot to manipulate or interact with objects in unexplored parts of the environment or not already in the robot's field of view. To find an object in unknown environments, the robot needs to look for it while gaining information about the environment and making decisions in real-time, known as the object search (OS) problem. The research community has proposed different works for dealing with the OS problem, relying on the objects' color, 3D shape, or its surroundings as visual cues to guide the search. However, this geometric information (i.e., color or size) limits the robot's perception and, consequently, the robot's performance during the search. Therefore, we proposed exploiting the advantages of semantic information inferred from two sources abundant in human-populated environments: text and dynamic agents. First, we propose an OS system for unknown indoor environments that relies on semantic information inferred from texts found in the environment, aiming to find a target door label. The use of semantic information in this scenario allowed the robot to reduce the search costs by avoiding not promising regions to contain the target door label. Our semantic planner reasons over the numbers detected from door labels to decide either to continue the search towards unknown parts of the environment or carefully search in the already known parts. Second, we present another OS system based on semantic information inferred from the changes in the objects' position over time in the environment. Composed by two modes, our system first gathers data from the objects' placement by executing its recording mode. This data is later used when the robot executes the request mode to search for the target object. Both systems were evaluated in different environments and compared against other OS approaches in simulated and real scenarios. The results support our systems' efficiency and demonstrate the improvement in the searching performance with the aid of semantic information.
 \end{abstract}
 
 % Resumo na outra língua, se o documento estiver em português, esse estará em inglês,
@@ -173,11 +170,8 @@ conter mais do que 500 palavras.}
 % O mesmo padrão de capitalizar a primeira palavra de cada palavra-chave deve ser seguido aqui.
 % Seguindo a ideia de não traduzir nomes próprios, nem UFRGS, nem ABNT, nem "Instituto de Informática
 % da UFRGS" são traduzidos.
-\begin{englishabstract}{Using \LaTeX\ to Prepare Documents at II/UFRGS}{Electronic formatting of documents. Instituto de Informática da UFRGS. \LaTeX. ABNT. UFRGS}
-This document is an example on how to prepare documents at II/UFRGS
-using the \LaTeX\ classes provided by the UTUG\@. At the same time, it
-may serve as a guide for general-purpose commands. \emph{The text in
-the abstract should not contain more than 500~words.}
+\begin{englishabstract}{Explorando Informações Semânticas em Ambientes Internos}{Robótica móvel. Busca por objectos. Informação semântica. Percepção robótica. Ambientes internos}
+Atualmente, a comunidade científica de robótica móvel está lidando com diferentes tarefas de alto-nível que requerem o robô manipular ou interagir com objetos em partes não exploradas do ambiente ou que já não estão no campo de visão do robô. Para encontrar um objeto em um ambiente desconhecido, o robô precisa procurar por ele enquanto ganha informação sobre o ambiente e toma decisões em tempo-real, conhecido como o problema de busca por objetos (BPO). A comunidade de pesquisa propôs diferentes trabalhos para abordar o problema de BPO, se baseando na cor, tamanho ou no que existe ao redor dos objetos. Contudo, todas essas informações geométricas (como por exemplo cor ou tamanho) limita a percepção do robô e, por consequência, o seu desempenho durante a busca. Portanto, nós propomos explorar as vantagens de informações semânticas inferidas a partir de duas fontes que são abundantes em ambientes populados por humanos: textos e agentes dinâmicos. Em primeiro lugar, nós propomos um sistema para BPO para ambientes internos que se baseia em informações semânticas inferidas de textos encontrados no ambiente, o que permite o robô a reduzir os custos da busca por evitar regiões não promissoras para o objeto buscado. Nosso planejador semântico raciocina sobre os números detectados de placas de portas para decidir se continua a busca em direção a regiões desconhecidas ou se realiza a busca cuidadosamente em regiões já conhecidas. Em segundo lugar, nós apresentamos outro sistema para BPO baseado em informações semânticas inferidas de mudanças na posição dos objetos ao longo do tempo no ambiente. Composto por dois modos, nosso sistema coleta dados do posicionamento dos objetos executando o seu modo de gravação, que depois será usado quando o robô executa o modo de busca. Ambos os sistemas foram avaliados em diferentes ambientes e comparados contra outros sistemas de BPO em simulação e ambiente real. Os resultados confirmam a eficiência dos nossos sistemas e demonstram a melhora no desempenho da busca com o auxílio das informações semânticas. 
 \end{englishabstract}
 
 % lista de figuras
@@ -193,14 +187,65 @@ the abstract should not contain more than 500~words.}
 \begin{listofabbrv}{SPMD}
         \item[OS] Object Search
         \item[SLAM] Simultaneous Localization and Mapping
+        \item[MCL] Monte Carlo Localization
+        \item[RBPF] Rao-Blackwellized Particle Filter
+        \item[ROI] Region of Interest
+        \item[RGB] Red, Green, Blue
+        \item[RGB-D] Red, Green, Blue, Depth
+        \item[GPS] Global Positioning System
+        \item[BVP] Boundary Value Problem
+        \item[KDE] Kernel Density Estimation
+        \item[HIMM] Histogram In-Motion Mapping
+        \item[DS] Door Simulator
+        \item[YOLO] You Only Look Once                                                        
 
 \end{listofabbrv}
 
 % idem para a lista de símbolos
-%\begin{listofsymbols}{$\alpha\beta\pi\omega$}
-%       \item[$\sum{\frac{a}{b}}$] Somatório do produtório
-%       \item[$\alpha\beta\pi\omega$] Fator de inconstância do resultado
-%\end{listofsymbols}
+\begin{listofsymbols}{$\alpha\beta\pi\omega$}
+	\item [$\bs{x}_t$] robot's pose at time step $t$. It is composed by a three dimensional vector containing $x,y$, which represents the position, and $\theta$, which represents the orientation.
+	\item [$\bs{m}_i$] map of the environment, represented by a list of $N$ objects, in our case grid cells, with $1 \leq n \leq N$, in the environment along with their properties is given by the vector $\bs{m} = (\bs{m}_1, \bs{m}_2, \cdots, \bs{m}_N)^T$.
+	\item [$\bs{u}_t$] control data at instant $t$, and it corresponds to the change of state in the time interval $(t - 1;t]$.
+	\item [$\bs{z}_t$] measurement made by the robot at instant $t$. The vector of all of them acquired at the same instant $t$ is $\bs{z}_t = (\bs{z}^1_t, \bs{z}^2_t, \cdots, \bs{z}^K_t)^T$.
+	\item [$c$] a cell in the 2D grid map $\bs{m}$.
+	\item [$K(\cdot)$] uniform circular kernel that computes the size of the free area covered by it.
+	\item [$d$] Manhattan distance between two cells.
+	\item [$r$] radius of $K(\cdot)$.
+	\item [$a$] height of $K(\cdot)$.
+	\item [$\mathbf{T}$] subset of cells that are within the area of the kernel at any moment.
+	\item [$c_K$] centre of the kernel $K(\cdot)$.
+	\item [$Q(\cdot)$] function that tests whether a cell is free.
+	\item [$\Psi(\cdot)$] function that computes the free space.
+	\item [$\Upsilon(\cdot)$] function that computes the map segmentation.
+	\item [$\delta$] a threshold that defines how many different sizes of free areas are considered by the segmentation function.
+	\item [$\mathbf{s}$] segment from $\bs{m}$.
+	\item [$\mathbf{I}$] image.
+	\item [$\mathbf{L}$] list containing the recognized number from door signs.
+	\item [$S(\cdot)$] function that returns the nearest segment of a cell.
+	\item [$L(\cdot)$] function that returns the list of door signs from a segment.
+	\item [$l$] door number.
+	\item [$\varphi(\cdot)$] attractiveness factor of a cell, the outcome of a combination of other five factors: growing direction, $\varphi_g(\cdot)$, parity, $\varphi_p(\cdot)$, robot orientation, $\varphi_r(\cdot)$, door orientation, $\varphi_o(\cdot)$, and distance, $\varphi_d(\cdot)$.
+	\item [$ \mathtt{S}(\cdot)$] semantic factor, the outcome of the combination of growing direction, $\varphi_g(\cdot)$, parity, $\varphi_p(\cdot)$, factors.
+	\item [$ \mathtt{G}(\cdot)$] geometric factor, the outcome of the combination of  robot orientation, $\varphi_r(\cdot)$, door orientation, $\varphi_o(\cdot)$, and distance, $\varphi_d(\cdot)$, factors.
+	\item [$\mathbf{C}$] set of candidate cells for finding the goal-door.
+	\item [${c}_*$] the candidate cell most promising to bring the robot to the goal-door.
+	\item [$\theta(\cdot)$] function that returns the angle of the growing direction factor.
+	\item [$L^<$, $L^>$] functions that counts the amount of door labels are smaller and larger than the goal-door, respectively. 
+	\item [$\zeta(\cdot)$] function that measures the possibility of a segment to have door signs smaller or larger than the goal-door.
+	\item [$\gamma(\cdot)$] function that measures the difference angle between the increasing angle and the Voronoi angle.
+	\item [$L^{\neq}$, $L^=$] functions that counts the amount of door labels have different or equal parity than the goal-door, respectively. 
+	\item [$w_p$] threshold used to control the minimum amount of detected door signs.
+	\item [${H_{r}[\cdot]}$] the door orientation histogram.
+	\item [$\lambda_r$]	a threshold used to define how many most recent robot's orientations are saved.
+	\item [$D(\cdot, \cdot)$] function that counts the number of cells between two other specific cells.
+	\item [$d_{\ll}$] smallest distance between two cells.
+	\item [$\mathbf{H}$] 2D grid heat map.
+	\item [$\mathbf{O}$]	set of detected objects. 
+	\item [$o$] detected object, composed by its position within~\textbf{H}, its category, the hour it has been detected, and the robot's position during the detection, i.e., ${o} = (p^{o}, c^{o}, h^{o}, r^{o})$.
+	\item [$W(\cdot, \cdot)$] function that measures the weight of the time difference.
+	\item [$K^i(\cdot)$] inversed uniform circular kernel that computes the size of the free area covered by it.
+
+\end{listofsymbols}
 
 % sumario
 \tableofcontents
@@ -240,14 +285,29 @@ the abstract should not contain more than 500~words.}
 
 \chapter{Resumo expandido}
 
-\noindent
-\textbf{Resolução 02/2021 -- Redação de Teses e Dissertações em Inglês}
-Dissertações de Mestrado e Teses de Doutorado do PPGC, bem como outros
-trabalhos escritos tais como Proposta de Tese e PEP, poderão ser
-redigidas em inglês desde que contenham um título e resumo expandido
-redigidos em português. O resumo expandido deve conter no mínimo duas
-páginas inteiras, deve aparecer como apêndice e deve conter as
-principais contribuições e resultados do trabalho.
+As primeiras décadas de pesquisa sobre robótica móvel, a partir do início de 2004, lidaram com os desafios de conectar eficiência e associação de dados. Eles introduziram formulações probabilísticas para planejamento de caminhos, exploração, localização e mapeamento simultâneos, e muitas outras áreas. Algumas das abordagens para estas areas são populares ainda hoje, tal qual o Filtro de Partículas RaoBlackwellised e o Filtro Extendido de Kalman. A maioria deles foram baseados em sensores de laser ou ultrassônicos, já que esse sensores eram os mais populares na época. Consequentemente, os mapas resultantes eram na maioria grades 2D, no qual as células representavam regiões livres, ocupadas (obstáculos), ou desconhecidas~\cite{Cesar2016Simultaneous}. 
 
+Após construir uma fundação sólida para muitos problemas robóticos com abordagens probabilísticas, a comunidade científica deu um passo a frente. Eles concentraram em melhorar as propriedades das abordagens já propostas e das novas também, tais como obersabilidade, convergências, e consistência~\cite{Cesar2016Simultaneous}. Simultaneamente neste período (2004-2015), sensores visuais estiveram nos centros das atenções como uma alternativa para ganhar informação sobre o ambiente. A melhora considerável deles na qualidade e variedade (por exemplo imagens de profundidade, nuvem de pontos e images estéreo) dos dados ajudaram no aumento do seu uso. De fato, construir mapas 2D e 3D do ambiente com sensores visuais resultou em um novo termo, SLAM Visual~\cite{Salas2014Dense}.
+
+A robótica móvel aproveitou formidáveis vantagens ao realizar tarefas que requerem apenas que os robôs naveguem por ambientes livres e desvie de obstáculos. Mover itens do ponto A para o ponto B ou aspirar espaços livres são exemplos de tarefas robóticas com soluções satisfatórias. Contudo, o mesmo nível de sucesso não se aplica até agora para muitas outras tarefas de alto-nível que os robôs supostamente têm que abordar hoje em dia. Desde que a robótica móvel mudou o seu foco de chão de fábrica e linhas de produção para espaços povoado diariamente por pessoas, os robôs são requeridos a desempenhar tarefas tais quais humanos em diferentes cenários que não são necessariamente tão controlados e organizados como o mundo industrial~\cite{Aydemir2012Exploiting}. Se basear apenas em mapas puramente geométricos e ter percepção limitada que não permitem ir além de representações geométricas básicas não permite o robô a obter uma compreensão de alto-nível do ambiente. Isso pode ser a razão para robôs não properarem tanto em tarefas de alto-nível. Os robôs são impedidos de processar os dados do ambiente para inferir ou estimar conhecimentos extras e valiosos para várias tarefas. Nós, então, afirmamos que quando construir robôs autônomos, as informações de alto-nível inferidas a parir das leituras dos sensores (informação semântica) tem que ser explorado para complementar a percepção do robô. 
+
+A associação de informação semântica (ou conceitos) a entidades geométricas no mapa é chamado mapeamento semântico, um dos mais novos tópicos que os pesquisadores têm explorado. Ele realça a autonomia e a robustês do robô em diversas formas, além de facilitar algumas tarefas de alto-nível~\cite{Cesar2016Simultaneous}. A Figura~\ref{fig:zoox_semantic} é uma imagem do carro autônomo da empresa Zoox, e ela ilustra a vantagem de se usar informações semânticas em tarefas robóticas. Se o carro constrói o mapa desta cena com a sua percepção geométrica, ele vai ter a informação de que quatro obstáculos estão na frente do carro, e que dois deles estão mais próximos do carro do que os outros dois. Com uma percepção diferente baseado em informações semânticas, o carro associa o coneceito de ``pessoa" para as três pessoas e ``veículo" para o caminhão presente na cena. Mais importante ainda, a percepção semântica estima que uma das pessoas está distraída usando o seu telefone, e outra está segurando uma placa de páre. Combinando a detecção de uma pessoa caminhando e um celula permite o carro a estimar a informação semântica que esta pessoa está provavelmente distraída. Então, o carro deve dirigir com muito mais cuidado. Todo este processo é natural para motoristas, mas o mesmo não pode ser dito sobre robôs. 
+
+Como informações semânticas são muito mais um tipo de conhecimento muito específico para cada terafa e inferidas a partir do que há ao redor do robô do que um tipo particular de dado das leituras dos sensores, várias questões precisam ser respondidas antes de usá-las em tarefas robóticas. Nós discutir os seguintes tópicos: 
+\begin{itemize}
+	\item Decidir qual tipo de informação semântica é possível inferir e associar ao que há ao redor do robô e que é relevante para a tarefa\;
+	\item Como realizar a inferência ou estimação da informação semântica\; 
+	\item Como usar a informação semântica para melhorar a performance do robô em uma tarefa partícular. 
+\end{itemize}
+
+Uma vez que informação semântica é relativamente nova na literatura, o primeiro ponto é frequentemente discutido no contexto de informação geométrica. Resumidamente, para o contexto de uma terafa robótica, qual informação não está explicitamente disponível no ambiente, mas poderia ser inferida ou estimada para melhorar a performance do robô? Isso demanda uma profunda compreensão da tarefa e das características gerais do ambiente onde o robô opera. Uma inspiração para responder este ponto é considerar como humanos pensam e raciocinam sob as mesmas circunstâncias e resolvem tal  tarefa, e como eles processam as informações do ambiente para realizar a tarefa com eficiência. 
+
+Dependendo da informação semântica disponível, pode ser necessário usar métodos baseados em aprendizagem de máquina para estimá-la. Por exemplo, treinar um modelo de aprendizagem profunda para estimar a traversabilidade de terrenos para um robô terrestre para ambientes externos pode fornecer um resultado adequado. Contudo, apesar da necessidade do treinamento, a qualidade da solução depende dos dados de treinamento, e esta abordagem não escala muito bem. Estimativas baseadas em probabilidade aparecem como uma segunda opção, já que elas não requerem um grande conjunto de dados para treinamento, e aceita uma larga variedade de modelos. 
+
+O terceiro e último ponto, que é o uso apropriado da informação semântica inferida no sistema do robô, é crucial para completar com sucesso uma tarefa. Conforme o robô ganha mais informação do ambiente, é importante manter as estimativas atualizadas, e é ainda melhor se as estimativas se tornam mais robustas ao longo do tempo. 
+
+A exploração de informação semântica na robótica é uma ideia que recentemente tem ganhado atenção dos pesquisadores, e então, a maioria dos desafios estão ainda não resolvidos. Uma forma simples de avançar os limites e investigar este problemas é estudar as vantagens da informação semântica em diferentes áreas. Nesta proposta de tese, nós escolhemos a tarefa com um alto nível de dificuldade que pode ter benefícios com a informação semântica: busca por objetos (BPO) em ambientes internos desconhecidos, um problema ainda não resolvido na robótica. 
+
+Em tarefas de BPO, o objetivo do robô é encontrar um objeto específico no ambiente por meio de um sensor visual. Normalmente, o ambiente é desconhecido para o robô, e os dados que ele usa para a busca são coletados com seus próprios sensores. Uma vez que nós estamos complementando a percepção do robô com modelos de informação semântica pra diferentes tarefas de BPO, o conhecimento extra do ambiente inferido pelo robô tem que auxiliar a busca por reduzir o espaço de busca. O robô planeja a estratégia de busca que estima as regiões mais promissoras que contém o objeto específico. Esta proposta de tese explora os avanços em tarefas de BPO pelo uso de informação semântica inferida a partir de duas fontes de dados ignorados pela comunidade científica: textos e obstáculos dinâmicos. 
 
 \end{document}

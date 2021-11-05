@@ -1,5 +1,5 @@
 \chapter{Temporal Semantic OS system based on heat maps}
-
+\label{chap:4_temporal_os_system}
 \section{Introduction}
 \label{sec:introduction}
 A considerable amount of innovative mobile ground robots have been designed recently~\cite{Portugal2021Improving}. This is partially motivated by their use in indoor and human-centered environments, in which the International Organization for Standardization defines them as service robots~\cite{Lu2020Service, ISO8373}. Furthermore, the increasing number of older people living at home supports the need for service robots to automate processes and tasks that may be tedious, inconvenient, or even challenging for older people~\cite{Paulius2019Survey, Torresen2020Special}. 

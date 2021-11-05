@@ -1,5 +1,5 @@
 \chapter{Text as source of semantic information for visual object search in large and unknown environments}
-
+\label{chap:3_text_os_system}
 \section{Introduction}
 \label{introduction}
 Humans perform several activities that are part of their routine in everyday living spaces, in which searching for objects or regions of interest (ROI) is one of them. It demands visual recognition and high-level reason as essential skills.~\cite{Dicarlo2012How}. In such a real situation, it is not prudent to assume that the desired object or ROI is always present in the human's field of view since the beginning. The environment navigation is another example of daily activities for humans, and it must be as intelligent as possible, even in unknown places~\cite{Talbot2016Find}. In such cases, humans must actively navigate and search for target objects in the environment, relying on their visual recognition abilities~\cite{Dicarlo2012How,Sjoo2012Topological}. 

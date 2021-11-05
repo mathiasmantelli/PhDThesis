@@ -17,7 +17,7 @@ Fig.~\ref{fig:zoox_semantic} is an image from Zoox's autonomous car, and it illu
     \begin{subfigure}[b]{0.9\columnwidth}
     \includegraphics[width=\textwidth]{figs/zoox_semantic.png}
     \end{subfigure}
-    \caption{\small  plane.}
+    \caption[Example of the semantic information inferred from the Zoox autonomous car]{\small  Example of the semantic information inferred from the Zoox autonomous car. Some objects within the scene are associated to meanings, such as humans, vehicles and traffic signs. }
     \label{fig:zoox_semantic}
 \end{figure}
 
@@ -28,13 +28,13 @@ As semantic information is more like a specific knowledge for each task and infe
 	\item How to use semantic information to improve the robot's performance in a particular task.
 \end{itemize}
 
-Since semantic information is relatively new in the literature, the first point is frequently discussed in the context of geometric information. Briefly, for the context of a robotic task, what information is not explicitly in the environment but could be inferred or estimated to improve the robot's performance? This demands a deep understanding of the task and the general environment characteristics where the robot operates. An inspiration for answering this point is to consider how humans reason under the same circumstance and solve such a task and how we process the environment's information to accomplish the task efficiently. 
+Since semantic information is relatively new in the literature, the first point is frequently discussed in the context of geometric information. Briefly, for the context of a robotic task, which is the information that is not explicitly available in the environment but could be inferred or estimated to improve the robot's performance? This demands a deep understanding of the task and the general environment characteristics where the robot operates. An inspiration for answering this point is to consider how humans reason under the same circumstance and solve such a task, and how we process the environment's information to accomplish the task efficiently. 
 
 Second, depending on the needed semantic information, it may be necessary to use methods based on machine learning to estimate it. For example, training a deep learning model for estimating terrain traversability for an outdoor ground robot may provide a suitable result. However,  besides the training requirement, the solution's quality depends on the training data, and this approach does not scale well. Probabilistic-based estimations appear as a second option, as it does not require a large set of data for training, and accepts a wide range of different models.
 
 The third and last point, the proper use of the inferred semantic information in the robot's system, is crucial for successful task completion. As the robot gains more information from the environment, it is important to keep updating the estimations, and it is even better if the estimations become more robust over time. 
 
-The exploitation of semantic information in robotics is an idea that has recently gained attention from researchers, and thus, most of the challenging problems are still unsolved. A simple way of pushing the limits further and exploring these problems is to study the advantages of semantic information in different areas. In this thesis, we have chosen a task with a high difficulty level that can benefit from semantic information: object search (OS) in indoor and unknown environments, a yet unsolved problem in robotics. 
+The exploitation of semantic information in robotics is an idea that has recently gained attention from researchers, and thus, most of the challenging problems are still unsolved. A simple way of pushing the limits further and investigate these problems is to study the advantages of semantic information in different areas. In this thesis, we have chosen a task with a high difficulty level that can benefit from semantic information: object search (OS) in indoor and unknown environments, a yet unsolved problem in robotics. 
 
 In OS tasks, the robot's goal is to find a target object in the environment with a visual sensor. Usually, the environment is unknown to the robot, and the data it uses for searching are gathered with its own sensors. Since we are complementing the robot's perception with semantic information models for different OS tasks, the extra knowledge from the environment inferred by the robot has to aid the OS searching by reducing the search space. The robot plans a search strategy that estimates the most promising regions to contain the target object. This thesis exploits the improvements in OS tasks by the use of semantic information inferred from two different data sources disregarded by the research community: text and dynamic obstacles. 
 
@@ -50,7 +50,7 @@ In OS tasks, the robot's goal is to find a target object in the environment with
 %Robotics has been changing its focus from factory floors to everyday living spaces, such as offices, houses, hospitals, airports, and etc~\cite{Aydemir2012Exploiting}. 
 
 \section{Outline}
-The outline of this thesis is as follows.
+The outline of this thesis is as follows. First, in Chapter~\ref{chap:2_theoretical_background}, we introduce a background on the main problems in mobile robotics, as well as the most popular approaches that deal with each problem. Besides, this chapter also presents the general concepts of the OS problem, which is used throughout this thesis along with the basic concepts of mobile robotics. In Chapter~\ref{chap:3_text_os_system}, we provide our first semantic OS system that is based on text as the main source of semantic information. Next, in Chapter~\ref{chap:4_temporal_os_system}, we discuss our second semantic OS system, which is the one that aims to understand how the objects within the environment are moved through a period of time, to make predictions about their future positions. Lastly, in Chapter~\ref{chap:5_discussion_thesis_progress}, we conclude this thesis proposal by discussing the current contributions and draw the future directions for this PhD work.
 
 \section{Contributions}
 Parts of this thesis have been previously published or submitted as journal articles. The following publications are the results of research carried during this PhD:
