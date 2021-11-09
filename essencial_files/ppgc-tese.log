@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.7)  5 NOV 2021 01:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.7)  9 NOV 2021 00:26
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2296,6 +2296,13 @@ text indent calculated (toc, 1): 21.0pt
 number indent calculated (toc, 1): 18.0pt
 text noindent (toc, 1): 39.0pt
 number noindent (toc, 1): 0.0pt
+number indent by \l@... (toc, 1):  18.0pt
+text indent by \l@... (toc, 1):  27.60004pt
+number indent by parent (toc, 1):  18.0pt
+text indent calculated (toc, 1): 21.0pt
+number indent calculated (toc, 1): 18.0pt
+text noindent (toc, 1): 39.0pt
+number noindent (toc, 1): 0.0pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  18.0pt
 number indent by parent (toc, 0):  0.0pt
@@ -2597,20 +2604,6 @@ text indent calculated (toc, 2): 30.0pt
 number indent calculated (toc, 2): 39.0pt
 text noindent (toc, 2): 39.0pt
 number noindent (toc, 2): 0.0pt
-number indent by \l@... (toc, 1):  18.0pt
-text indent by \l@... (toc, 1):  27.60004pt
-number indent by parent (toc, 1):  18.0pt
-text indent calculated (toc, 1): 21.0pt
-number indent calculated (toc, 1): 18.0pt
-text noindent (toc, 1): 39.0pt
-number noindent (toc, 1): 0.0pt
-number indent by \l@... (toc, 0):  0.0pt
-text indent by \l@... (toc, 0):  18.0pt
-number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 18.0pt
-number indent calculated (toc, 0): 0.0pt
-text noindent (toc, 0): 39.0pt
-number noindent (toc, 0): 0.0pt
 number indent by \l@... (toc, 1):  18.0pt
 text indent by \l@... (toc, 1):  27.60004pt
 number indent by parent (toc, 1):  18.0pt
@@ -2621,6 +2614,20 @@ number noindent (toc, 1): 0.0pt
 [12
 
 ]
+number indent by \l@... (toc, 0):  0.0pt
+text indent by \l@... (toc, 0):  18.0pt
+number indent by parent (toc, 0):  0.0pt
+text indent calculated (toc, 0): 18.0pt
+number indent calculated (toc, 0): 0.0pt
+text noindent (toc, 0): 39.0pt
+number noindent (toc, 0): 0.0pt
+number indent by \l@... (toc, 1):  18.0pt
+text indent by \l@... (toc, 1):  27.60004pt
+number indent by parent (toc, 1):  18.0pt
+text indent calculated (toc, 1): 21.0pt
+number indent calculated (toc, 1): 18.0pt
+text noindent (toc, 1): 39.0pt
+number noindent (toc, 1): 0.0pt
 number indent by \l@... (toc, 1):  18.0pt
 text indent by \l@... (toc, 1):  27.60004pt
 number indent by parent (toc, 1):  18.0pt
@@ -2663,10 +2670,10 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [14
 
 ]
-<figs/zoox_semantic.png, id=498, 1886.04625pt x 963.6pt>
+<figs/zoox_semantic.png, id=504, 1886.04625pt x 963.6pt>
 File: figs/zoox_semantic.png Graphic file (type png)
 <use figs/zoox_semantic.png>
-Package pdftex.def Info: figs/zoox_semantic.png  used on input line 18.
+Package pdftex.def Info: figs/zoox_semantic.png  used on input line 16.
 (pdftex.def)             Requested size: 384.1096pt x 196.24538pt.
  [15 <./figs/zoox_semantic.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2697,27 +2704,27 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [19
 
 ]
-<figs/caption_example.pdf, id=534, 589.25142pt x 102.93457pt>
+<figs/caption_example.pdf, id=539, 589.25142pt x 102.93457pt>
 File: figs/caption_example.pdf Graphic file (type pdf)
 <use figs/caption_example.pdf>
 Package pdftex.def Info: figs/caption_example.pdf  used on input line 23.
 (pdftex.def)             Requested size: 298.75264pt x 52.18965pt.
-<figs/localization_example.pdf, id=535, 403.93408pt x 676.47733pt>
+<figs/localization_example.pdf, id=540, 403.93408pt x 676.47733pt>
 File: figs/localization_example.pdf Graphic file (type pdf)
 <use figs/localization_example.pdf>
 Package pdftex.def Info: figs/localization_example.pdf  used on input line 26.
 (pdftex.def)             Requested size: 132.30428pt x 221.57632pt.
-<figs/mapping_example.pdf, id=536, 403.93408pt x 676.47733pt>
+<figs/mapping_example.pdf, id=541, 403.93408pt x 676.47733pt>
 File: figs/mapping_example.pdf Graphic file (type pdf)
 <use figs/mapping_example.pdf>
 Package pdftex.def Info: figs/mapping_example.pdf  used on input line 30.
 (pdftex.def)             Requested size: 132.30428pt x 221.57632pt.
-<figs/slam_example.pdf, id=537, 403.93408pt x 676.47733pt>
+<figs/slam_example.pdf, id=542, 403.93408pt x 676.47733pt>
 File: figs/slam_example.pdf Graphic file (type pdf)
 <use figs/slam_example.pdf>
 Package pdftex.def Info: figs/slam_example.pdf  used on input line 34.
 (pdftex.def)             Requested size: 132.30428pt x 221.57632pt.
-<figs/graphical_models_loc_map_slam.pdf, id=546, 162.54477pt x 95.43788pt>
+<figs/graphical_models_loc_map_slam.pdf, id=551, 162.54477pt x 95.43788pt>
 File: figs/graphical_models_loc_map_slam.pdf Graphic file (type pdf)
 <use figs/graphical_models_loc_map_slam.pdf>
 Package pdftex.def Info: figs/graphical_models_loc_map_slam.pdf  used on input 
@@ -2792,22 +2799,22 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [30]
-<figs/1.jpeg, id=878, 595.46408pt x 548.64127pt>
+<figs/1.jpeg, id=883, 595.46408pt x 548.64127pt>
 File: figs/1.jpeg Graphic file (type jpg)
 <use figs/1.jpeg>
 Package pdftex.def Info: figs/1.jpeg  used on input line 61.
 (pdftex.def)             Requested size: 192.0548pt x 176.9501pt.
-<figs/2.jpeg, id=879, 595.46408pt x 548.64127pt>
+<figs/2.jpeg, id=884, 595.46408pt x 548.64127pt>
 File: figs/2.jpeg Graphic file (type jpg)
 <use figs/2.jpeg>
 Package pdftex.def Info: figs/2.jpeg  used on input line 67.
 (pdftex.def)             Requested size: 192.0548pt x 176.9501pt.
-<figs/3.jpeg, id=880, 595.46408pt x 548.64127pt>
+<figs/3.jpeg, id=885, 595.46408pt x 548.64127pt>
 File: figs/3.jpeg Graphic file (type jpg)
 <use figs/3.jpeg>
 Package pdftex.def Info: figs/3.jpeg  used on input line 74.
 (pdftex.def)             Requested size: 192.0548pt x 176.9501pt.
-<figs/4.jpeg, id=881, 595.46408pt x 548.64127pt>
+<figs/4.jpeg, id=886, 595.46408pt x 548.64127pt>
 File: figs/4.jpeg Graphic file (type jpg)
 <use figs/4.jpeg>
 Package pdftex.def Info: figs/4.jpeg  used on input line 80.
@@ -2824,7 +2831,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [33]
-<figs/ImageProcessing.jpeg, id=932, 1339.53972pt x 351.17113pt>
+<figs/ImageProcessing.jpeg, id=937, 1339.53972pt x 351.17113pt>
 File: figs/ImageProcessing.jpeg Graphic file (type jpg)
 <use figs/ImageProcessing.jpeg>
 Package pdftex.def Info: figs/ImageProcessing.jpeg  used on input line 138.
@@ -2846,26 +2853,26 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [36]
-<figs/growing_direction_empty.jpeg, id=960, 486.18pt x 205.3125pt>
+<figs/growing_direction_empty.jpeg, id=965, 486.18pt x 205.3125pt>
 File: figs/growing_direction_empty.jpeg Graphic file (type jpg)
 <use figs/growing_direction_empty.jpeg>
 Package pdftex.def Info: figs/growing_direction_empty.jpeg  used on input line 
 183.
 (pdftex.def)             Requested size: 192.0548pt x 81.10223pt.
-<figs/growing_direction_arrows.jpeg, id=961, 486.18pt x 205.3125pt>
+<figs/growing_direction_arrows.jpeg, id=966, 486.18pt x 205.3125pt>
 File: figs/growing_direction_arrows.jpeg Graphic file (type jpg)
 <use figs/growing_direction_arrows.jpeg>
 Package pdftex.def Info: figs/growing_direction_arrows.jpeg  used on input line
  189.
 (pdftex.def)             Requested size: 192.0548pt x 81.10223pt.
-<figs/growing_direction_door_signs_linegedup.jpeg, id=962, 486.18pt x 205.3125p
+<figs/growing_direction_door_signs_linegedup.jpeg, id=967, 486.18pt x 205.3125p
 t>
 File: figs/growing_direction_door_signs_linegedup.jpeg Graphic file (type jpg)
 <use figs/growing_direction_door_signs_linegedup.jpeg>
 Package pdftex.def Info: figs/growing_direction_door_signs_linegedup.jpeg  used
  on input line 196.
 (pdftex.def)             Requested size: 192.0548pt x 81.10223pt.
-<figs/growing_direction_all_arrows.jpeg, id=963, 486.18pt x 205.3125pt>
+<figs/growing_direction_all_arrows.jpeg, id=968, 486.18pt x 205.3125pt>
 File: figs/growing_direction_all_arrows.jpeg Graphic file (type jpg)
 <use figs/growing_direction_all_arrows.jpeg>
 Package pdftex.def Info: figs/growing_direction_all_arrows.jpeg  used on input 
@@ -2874,7 +2881,7 @@ line 202.
  [37 <./figs/growing_direction_empty.jpeg> <./figs/growing_direction_arrows.jpe
 g> <./figs/growing_direction_door_signs_linegedup.jpeg> <./figs/growing_directi
 on_all_arrows.jpeg>]
-<figs/all_doorlabelsequences.jpeg, id=972, 2756.43887pt x 345.0638pt>
+<figs/all_doorlabelsequences.jpeg, id=977, 2756.43887pt x 345.0638pt>
 File: figs/all_doorlabelsequences.jpeg Graphic file (type jpg)
 <use figs/all_doorlabelsequences.jpeg>
 Package pdftex.def Info: figs/all_doorlabelsequences.jpeg  used on input line 2
@@ -2889,7 +2896,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [39]
-<figs/all_direction.jpeg, id=987, 2760.51042pt x 497.7469pt>
+<figs/all_direction.jpeg, id=992, 2760.51042pt x 497.7469pt>
 File: figs/all_direction.jpeg Graphic file (type jpg)
 <use figs/all_direction.jpeg>
 Package pdftex.def Info: figs/all_direction.jpeg  used on input line 270.
@@ -2903,7 +2910,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [41]
-<figs/all_distance.jpeg, id=1001, 2761.5283pt x 489.6038pt>
+<figs/all_distance.jpeg, id=1006, 2761.5283pt x 489.6038pt>
 File: figs/all_distance.jpeg Graphic file (type jpg)
 <use figs/all_distance.jpeg>
 Package pdftex.def Info: figs/all_distance.jpeg  used on input line 297.
@@ -2914,7 +2921,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [42 <./figs/all_distance.jpeg>]
-<figs/drawing2.jpeg, id=1018, 473.74315pt x 152.758pt>
+<figs/drawing2.jpeg, id=1024, 473.74315pt x 152.758pt>
 File: figs/drawing2.jpeg Graphic file (type jpg)
 <use figs/drawing2.jpeg>
 Package pdftex.def Info: figs/drawing2.jpeg  used on input line 327.
@@ -2932,24 +2939,24 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [44 <./figs/drawing2.jpeg>]
-<figs/map_normal_redcircles.jpeg, id=1044, 1301.68124pt x 870.525pt>
+<figs/map_normal_redcircles.jpeg, id=1049, 1301.68124pt x 870.525pt>
 File: figs/map_normal_redcircles.jpeg Graphic file (type jpg)
 <use figs/map_normal_redcircles.jpeg>
 Package pdftex.def Info: figs/map_normal_redcircles.jpeg  used on input line 35
 3.
 (pdftex.def)             Requested size: 170.71393pt x 114.16846pt.
-<figs/map_inverse_redcircles.jpeg, id=1045, 1301.68124pt x 868.8825pt>
+<figs/map_inverse_redcircles.jpeg, id=1050, 1301.68124pt x 868.8825pt>
 File: figs/map_inverse_redcircles.jpeg Graphic file (type jpg)
 <use figs/map_inverse_redcircles.jpeg>
 Package pdftex.def Info: figs/map_inverse_redcircles.jpeg  used on input line 3
 59.
 (pdftex.def)             Requested size: 170.71393pt x 113.95303pt.
-<figs/hotel2_PAPER.jpeg, id=1046, 1616.0375pt x 968.61874pt>
+<figs/hotel2_PAPER.jpeg, id=1051, 1616.0375pt x 968.61874pt>
 File: figs/hotel2_PAPER.jpeg Graphic file (type jpg)
 <use figs/hotel2_PAPER.jpeg>
 Package pdftex.def Info: figs/hotel2_PAPER.jpeg  used on input line 366.
 (pdftex.def)             Requested size: 183.51715pt x 109.99211pt.
-<figs/KTH_CampusValhallava_finished.jpeg, id=1047, 223.09435pt x 291.49706pt>
+<figs/KTH_CampusValhallava_finished.jpeg, id=1052, 223.09435pt x 291.49706pt>
 File: figs/KTH_CampusValhallava_finished.jpeg Graphic file (type jpg)
 <use figs/KTH_CampusValhallava_finished.jpeg>
 Package pdftex.def Info: figs/KTH_CampusValhallava_finished.jpeg  used on input
@@ -2980,7 +2987,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./figs/RESULTS_NORMAL_NEW_T-eps-converted-to.pdf
 ): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/RESULTS_NORMAL_NEW_T-eps-converted-to.pdf, id=1075, 472.76625pt x 523.957
+<figs/RESULTS_NORMAL_NEW_T-eps-converted-to.pdf, id=1080, 472.76625pt x 523.957
 5pt>
 File: figs/RESULTS_NORMAL_NEW_T-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/RESULTS_NORMAL_NEW_T-eps-converted-to.pdf>
@@ -3002,7 +3009,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./figs/RESULTS_INVERSE_NEW_T-eps-converted-to.pd
 f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/RESULTS_INVERSE_NEW_T-eps-converted-to.pdf, id=1076, 472.76625pt x 525.96
+<figs/RESULTS_INVERSE_NEW_T-eps-converted-to.pdf, id=1081, 472.76625pt x 525.96
 5pt>
 File: figs/RESULTS_INVERSE_NEW_T-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/RESULTS_INVERSE_NEW_T-eps-converted-to.pdf>
@@ -3027,7 +3034,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./figs/RESULTS_HOTEL_NEW_T-eps-converted-to.pdf)
 : PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/RESULTS_HOTEL_NEW_T-eps-converted-to.pdf, id=1081, 472.76625pt x 525.965p
+<figs/RESULTS_HOTEL_NEW_T-eps-converted-to.pdf, id=1086, 472.76625pt x 525.965p
 t>
 File: figs/RESULTS_HOTEL_NEW_T-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/RESULTS_HOTEL_NEW_T-eps-converted-to.pdf>
@@ -3052,7 +3059,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./figs/RESULTS_KTH_NEW_T-eps-converted-to.pdf): 
 PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/RESULTS_KTH_NEW_T-eps-converted-to.pdf, id=1082, 473.77pt x 241.90375pt>
+<figs/RESULTS_KTH_NEW_T-eps-converted-to.pdf, id=1087, 473.77pt x 241.90375pt>
 File: figs/RESULTS_KTH_NEW_T-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/RESULTS_KTH_NEW_T-eps-converted-to.pdf>
 Package pdftex.def Info: figs/RESULTS_KTH_NEW_T-eps-converted-to.pdf  used on i
@@ -3078,7 +3085,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./figs/RESULTS_NORMAL_SHORTEST_NEW_T-eps-convert
 ed-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> a
 llowed
-<figs/RESULTS_NORMAL_SHORTEST_NEW_T-eps-converted-to.pdf, id=1102, 621.32124pt 
+<figs/RESULTS_NORMAL_SHORTEST_NEW_T-eps-converted-to.pdf, id=1107, 621.32124pt 
 x 163.61125pt>
 File: figs/RESULTS_NORMAL_SHORTEST_NEW_T-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -3112,7 +3119,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./figs/RESULTS_INVERSE_SHORTEST_NEW_T-eps-conver
 ted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> 
 allowed
-<figs/RESULTS_INVERSE_SHORTEST_NEW_T-eps-converted-to.pdf, id=1118, 619.31375pt
+<figs/RESULTS_INVERSE_SHORTEST_NEW_T-eps-converted-to.pdf, id=1123, 619.31375pt
  x 162.6075pt>
 File: figs/RESULTS_INVERSE_SHORTEST_NEW_T-eps-converted-to.pdf Graphic file (ty
 pe pdf)
@@ -3136,7 +3143,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./figs/RESULTS_HOTEL_SHORTEST_NEW_T-eps-converte
 d-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> al
 lowed
-<figs/RESULTS_HOTEL_SHORTEST_NEW_T-eps-converted-to.pdf, id=1121, 621.32124pt x
+<figs/RESULTS_HOTEL_SHORTEST_NEW_T-eps-converted-to.pdf, id=1126, 621.32124pt x
  162.6075pt>
 File: figs/RESULTS_HOTEL_SHORTEST_NEW_T-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -3160,7 +3167,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./figs/RESULTS_KTH_SHORTEST_NEW_T-eps-converted-
 to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allo
 wed
-<figs/RESULTS_KTH_SHORTEST_NEW_T-eps-converted-to.pdf, id=1124, 621.32124pt x 1
+<figs/RESULTS_KTH_SHORTEST_NEW_T-eps-converted-to.pdf, id=1129, 621.32124pt x 1
 00.375pt>
 File: figs/RESULTS_KTH_SHORTEST_NEW_T-eps-converted-to.pdf Graphic file (type p
 df)
@@ -3190,7 +3197,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./figs/RESULTS_COMPARISON_PERCENTAGE_NEW_T-eps-c
 onverted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <
 1.5> allowed
-<figs/RESULTS_COMPARISON_PERCENTAGE_NEW_T-eps-converted-to.pdf, id=1162, 506.89
+<figs/RESULTS_COMPARISON_PERCENTAGE_NEW_T-eps-converted-to.pdf, id=1167, 506.89
 375pt x 211.79124pt>
 File: figs/RESULTS_COMPARISON_PERCENTAGE_NEW_T-eps-converted-to.pdf Graphic fil
 e (type pdf)
@@ -3225,7 +3232,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./figs/RESULTS_HUMANS_NEW_T-eps-converted-to.pdf
 ): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/RESULTS_HUMANS_NEW_T-eps-converted-to.pdf, id=1178, 617.30624pt x 336.256
+<figs/RESULTS_HUMANS_NEW_T-eps-converted-to.pdf, id=1183, 617.30624pt x 336.256
 26pt>
 File: figs/RESULTS_HUMANS_NEW_T-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/RESULTS_HUMANS_NEW_T-eps-converted-to.pdf>
@@ -3238,13 +3245,13 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [52 <./figs/RESULTS_HUMANS_NEW_T-eps-converted-to.pdf>]
-<figs/real_environment_map.jpeg, id=1190, 1068.44624pt x 306.32625pt>
+<figs/real_environment_map.jpeg, id=1195, 1068.44624pt x 306.32625pt>
 File: figs/real_environment_map.jpeg Graphic file (type jpg)
 <use figs/real_environment_map.jpeg>
 Package pdftex.def Info: figs/real_environment_map.jpeg  used on input line 505
 .
 (pdftex.def)             Requested size: 320.0935pt x 91.7677pt.
-<figs/real_scenario_labeled2.jpeg, id=1191, 533.8125pt x 500.9625pt>
+<figs/real_scenario_labeled2.jpeg, id=1196, 533.8125pt x 500.9625pt>
 File: figs/real_scenario_labeled2.jpeg Graphic file (type jpg)
 <use figs/real_scenario_labeled2.jpeg>
 Package pdftex.def Info: figs/real_scenario_labeled2.jpeg  used on input line 5
@@ -3268,7 +3275,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./figs/1_Real_Exploration_111-eps-converted-to.p
 df): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/1_Real_Exploration_111-eps-converted-to.pdf, id=1204, 1515.6625pt x 734.7
+<figs/1_Real_Exploration_111-eps-converted-to.pdf, id=1209, 1515.6625pt x 734.7
 45pt>
 File: figs/1_Real_Exploration_111-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/1_Real_Exploration_111-eps-converted-to.pdf>
@@ -3290,7 +3297,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./figs/2_Real_Exploration_22-eps-converted-to.pd
 f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/2_Real_Exploration_22-eps-converted-to.pdf, id=1205, 1515.6625pt x 734.74
+<figs/2_Real_Exploration_22-eps-converted-to.pdf, id=1210, 1515.6625pt x 734.74
 5pt>
 File: figs/2_Real_Exploration_22-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/2_Real_Exploration_22-eps-converted-to.pdf>
@@ -3312,7 +3319,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./figs/3_Real_Exploration_33-eps-converted-to.pd
 f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/3_Real_Exploration_33-eps-converted-to.pdf, id=1206, 1515.6625pt x 734.74
+<figs/3_Real_Exploration_33-eps-converted-to.pdf, id=1211, 1515.6625pt x 734.74
 5pt>
 File: figs/3_Real_Exploration_33-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/3_Real_Exploration_33-eps-converted-to.pdf>
@@ -3334,7 +3341,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./figs/4_Real_Exploration_44-eps-converted-to.pd
 f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/4_Real_Exploration_44-eps-converted-to.pdf, id=1207, 1515.6625pt x 734.74
+<figs/4_Real_Exploration_44-eps-converted-to.pdf, id=1212, 1515.6625pt x 734.74
 5pt>
 File: figs/4_Real_Exploration_44-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/4_Real_Exploration_44-eps-converted-to.pdf>
@@ -3356,7 +3363,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./figs/5_Real_Exploration_55-eps-converted-to.pd
 f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/5_Real_Exploration_55-eps-converted-to.pdf, id=1208, 1515.6625pt x 734.74
+<figs/5_Real_Exploration_55-eps-converted-to.pdf, id=1213, 1515.6625pt x 734.74
 5pt>
 File: figs/5_Real_Exploration_55-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/5_Real_Exploration_55-eps-converted-to.pdf>
@@ -3378,7 +3385,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./figs/6_Real_Exploration_66-eps-converted-to.pd
 f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/6_Real_Exploration_66-eps-converted-to.pdf, id=1209, 1515.6625pt x 734.74
+<figs/6_Real_Exploration_66-eps-converted-to.pdf, id=1214, 1515.6625pt x 734.74
 5pt>
 File: figs/6_Real_Exploration_66-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/6_Real_Exploration_66-eps-converted-to.pdf>
@@ -3445,7 +3452,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [62]
-<figs/general_idea_300dpi.png, id=1428, 553.5882pt x 266.1945pt>
+<figs/general_idea_300dpi.png, id=1433, 553.5882pt x 266.1945pt>
 File: figs/general_idea_300dpi.png Graphic file (type png)
 <use figs/general_idea_300dpi.png>
 Package pdftex.def Info: figs/general_idea_300dpi.png  used on input line 27.
@@ -3462,7 +3469,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [64]
-<figs/system_overview.png, id=1440, 462.38298pt x 298.74823pt>
+<figs/system_overview.png, id=1445, 462.38298pt x 298.74823pt>
 File: figs/system_overview.png Graphic file (type png)
 <use figs/system_overview.png>
 Package pdftex.def Info: figs/system_overview.png  used on input line 49.
@@ -3479,7 +3486,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [67]
-<figs/environment_2Dgrid_heatmap_kernel.png, id=1479, 486.618pt x 214.401pt>
+<figs/environment_2Dgrid_heatmap_kernel.png, id=1484, 486.618pt x 214.401pt>
 File: figs/environment_2Dgrid_heatmap_kernel.png Graphic file (type png)
 <use figs/environment_2Dgrid_heatmap_kernel.png>
 Package pdftex.def Info: figs/environment_2Dgrid_heatmap_kernel.png  used on in
@@ -3491,13 +3498,13 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [68 <./figs/environment_2Dgrid_heatmap_kernel.png>]
-<figs/bad_robot_placement_1.png, id=1489, 210.3057pt x 97.8054pt>
+<figs/bad_robot_placement_1.png, id=1494, 210.3057pt x 97.8054pt>
 File: figs/bad_robot_placement_1.png Graphic file (type png)
 <use figs/bad_robot_placement_1.png>
 Package pdftex.def Info: figs/bad_robot_placement_1.png  used on input line 119
 .
 (pdftex.def)             Requested size: 256.07741pt x 119.1045pt.
-<figs/bad_robot_placement_2.png, id=1490, 210.3057pt x 97.8054pt>
+<figs/bad_robot_placement_2.png, id=1495, 210.3057pt x 97.8054pt>
 File: figs/bad_robot_placement_2.png Graphic file (type png)
 <use figs/bad_robot_placement_2.png>
 Package pdftex.def Info: figs/bad_robot_placement_2.png  used on input line 122
@@ -3505,13 +3512,13 @@ Package pdftex.def Info: figs/bad_robot_placement_2.png  used on input line 122
 (pdftex.def)             Requested size: 256.07741pt x 119.1045pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 125.
-<figs/good_robot_placement_1.png, id=1491, 211.0284pt x 94.6737pt>
+<figs/good_robot_placement_1.png, id=1496, 211.0284pt x 94.6737pt>
 File: figs/good_robot_placement_1.png Graphic file (type png)
 <use figs/good_robot_placement_1.png>
 Package pdftex.def Info: figs/good_robot_placement_1.png  used on input line 13
 1.
 (pdftex.def)             Requested size: 256.07741pt x 114.89789pt.
-<figs/good_robot_placement_2.png, id=1492, 211.0284pt x 94.6737pt>
+<figs/good_robot_placement_2.png, id=1497, 211.0284pt x 94.6737pt>
 File: figs/good_robot_placement_2.png Graphic file (type png)
 <use figs/good_robot_placement_2.png>
 Package pdftex.def Info: figs/good_robot_placement_2.png  used on input line 13
@@ -3521,7 +3528,7 @@ Package pdftex.def Info: figs/good_robot_placement_2.png  used on input line 13
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figs/step_by_step.png, id=1494, 318.9516pt x 105.2733pt>
+<figs/step_by_step.png, id=1499, 318.9516pt x 105.2733pt>
 File: figs/step_by_step.png Graphic file (type png)
 <use figs/step_by_step.png>
 Package pdftex.def Info: figs/step_by_step.png  used on input line 145.
@@ -3551,13 +3558,13 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [70 <./figs/good_robot_placement_1.png> <./figs/good_robot_placement_2.png> <./
 figs/step_by_step.png>]
-<figs/normal_kernel_complete_reduced.png, id=1513, 156.8259pt x 104.5506pt>
+<figs/normal_kernel_complete_reduced.png, id=1518, 156.8259pt x 104.5506pt>
 File: figs/normal_kernel_complete_reduced.png Graphic file (type png)
 <use figs/normal_kernel_complete_reduced.png>
 Package pdftex.def Info: figs/normal_kernel_complete_reduced.png  used on input
  line 181.
 (pdftex.def)             Requested size: 192.0548pt x 128.04608pt.
-<figs/inversed_kernel_complete_reduced.png, id=1514, 156.8259pt x 104.5506pt>
+<figs/inversed_kernel_complete_reduced.png, id=1519, 156.8259pt x 104.5506pt>
 File: figs/inversed_kernel_complete_reduced.png Graphic file (type png)
 <use figs/inversed_kernel_complete_reduced.png>
 Package pdftex.def Info: figs/inversed_kernel_complete_reduced.png  used on inp
@@ -3576,18 +3583,18 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [73]
-<figs/simulated_environment.png, id=1559, 255.1131pt x 184.5294pt>
+<figs/simulated_environment.png, id=1564, 255.1131pt x 184.5294pt>
 File: figs/simulated_environment.png Graphic file (type png)
 <use figs/simulated_environment.png>
 Package pdftex.def Info: figs/simulated_environment.png  used on input line 282
 .
 (pdftex.def)             Requested size: 179.25157pt x 129.6568pt.
-<figs/husky_robot.png, id=1560, 163.812pt x 192.9609pt>
+<figs/husky_robot.png, id=1565, 163.812pt x 192.9609pt>
 File: figs/husky_robot.png Graphic file (type png)
 <use figs/husky_robot.png>
 Package pdftex.def Info: figs/husky_robot.png  used on input line 283.
 (pdftex.def)             Requested size: 106.69783pt x 125.68808pt.
-<figs/hh106sensor_map.png, id=1561, 602.25pt x 503.7219pt>
+<figs/hh106sensor_map.png, id=1566, 602.25pt x 503.7219pt>
 File: figs/hh106sensor_map.png Graphic file (type png)
 <use figs/hh106sensor_map.png>
 Package pdftex.def Info: figs/hh106sensor_map.png  used on input line 291.
@@ -3599,7 +3606,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [74 <./figs/simulated_environment.png> <./figs/husky_robot.png> <./figs/hh106se
 nsor_map.png>]
-<figs/brute_force_route2.png, id=1570, 668.4975pt x 488.57532pt>
+<figs/brute_force_route2.png, id=1575, 668.4975pt x 488.57532pt>
 File: figs/brute_force_route2.png Graphic file (type png)
 <use figs/brute_force_route2.png>
 Package pdftex.def Info: figs/brute_force_route2.png  used on input line 306.
@@ -3613,7 +3620,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [76] [77]
-<figs/static_setup.png, id=1606, 527.571pt x 289.08pt>
+<figs/static_setup.png, id=1611, 527.571pt x 289.08pt>
 File: figs/static_setup.png Graphic file (type png)
 <use figs/static_setup.png>
 Package pdftex.def Info: figs/static_setup.png  used on input line 382.
@@ -3623,7 +3630,7 @@ Overfull \hbox (20.48705pt too wide) in paragraph at lines 382--383
  [][] 
  []
 
-<figs/static_inv_setup.png, id=1607, 527.571pt x 289.08pt>
+<figs/static_inv_setup.png, id=1612, 527.571pt x 289.08pt>
 File: figs/static_inv_setup.png Graphic file (type png)
 <use figs/static_inv_setup.png>
 Package pdftex.def Info: figs/static_inv_setup.png  used on input line 388.
@@ -3633,7 +3640,7 @@ Overfull \hbox (20.48705pt too wide) in paragraph at lines 388--389
  [][] 
  []
 
-<figs/mobile_setup.png, id=1608, 527.571pt x 289.08pt>
+<figs/mobile_setup.png, id=1613, 527.571pt x 289.08pt>
 File: figs/mobile_setup.png Graphic file (type png)
 <use figs/mobile_setup.png>
 Package pdftex.def Info: figs/mobile_setup.png  used on input line 394.
@@ -3643,7 +3650,7 @@ Overfull \hbox (20.48705pt too wide) in paragraph at lines 394--395
  [][] 
  []
 
-<figs/mobile_inv_setup.png, id=1609, 527.571pt x 289.08pt>
+<figs/mobile_inv_setup.png, id=1614, 527.571pt x 289.08pt>
 File: figs/mobile_inv_setup.png Graphic file (type png)
 <use figs/mobile_inv_setup.png>
 Package pdftex.def Info: figs/mobile_inv_setup.png  used on input line 400.
@@ -3653,7 +3660,7 @@ Overfull \hbox (20.48705pt too wide) in paragraph at lines 400--401
  [][] 
  []
 
-<figs/shift_setup.png, id=1610, 527.571pt x 289.08pt>
+<figs/shift_setup.png, id=1615, 527.571pt x 289.08pt>
 File: figs/shift_setup.png Graphic file (type png)
 <use figs/shift_setup.png>
 Package pdftex.def Info: figs/shift_setup.png  used on input line 406.
@@ -3663,7 +3670,7 @@ Overfull \hbox (20.48705pt too wide) in paragraph at lines 406--407
  [][] 
  []
 
-<figs/all_combined_setup.png, id=1611, 527.571pt x 289.08pt>
+<figs/all_combined_setup.png, id=1616, 527.571pt x 289.08pt>
 File: figs/all_combined_setup.png Graphic file (type png)
 <use figs/all_combined_setup.png>
 Package pdftex.def Info: figs/all_combined_setup.png  used on input line 412.
@@ -3673,32 +3680,32 @@ Overfull \hbox (20.48705pt too wide) in paragraph at lines 412--413
  [][] 
  []
 
-<figs/BF_roomA2.png, id=1612, 529.98pt x 696.6025pt>
+<figs/BF_roomA2.png, id=1617, 529.98pt x 696.6025pt>
 File: figs/BF_roomA2.png Graphic file (type png)
 <use figs/BF_roomA2.png>
 Package pdftex.def Info: figs/BF_roomA2.png  used on input line 441.
 (pdftex.def)             Requested size: 89.6267pt x 117.80435pt.
-<figs/LS_roomA2.png, id=1613, 529.98pt x 696.6025pt>
+<figs/LS_roomA2.png, id=1618, 529.98pt x 696.6025pt>
 File: figs/LS_roomA2.png Graphic file (type png)
 <use figs/LS_roomA2.png>
 Package pdftex.def Info: figs/LS_roomA2.png  used on input line 447.
 (pdftex.def)             Requested size: 89.6267pt x 117.80435pt.
-<figs/OUR_roomA2.png, id=1614, 529.98pt x 696.6025pt>
+<figs/OUR_roomA2.png, id=1619, 529.98pt x 696.6025pt>
 File: figs/OUR_roomA2.png Graphic file (type png)
 <use figs/OUR_roomA2.png>
 Package pdftex.def Info: figs/OUR_roomA2.png  used on input line 453.
 (pdftex.def)             Requested size: 89.6267pt x 117.80435pt.
-<figs/BF_roomH2.png, id=1615, 529.98pt x 696.6025pt>
+<figs/BF_roomH2.png, id=1620, 529.98pt x 696.6025pt>
 File: figs/BF_roomH2.png Graphic file (type png)
 <use figs/BF_roomH2.png>
 Package pdftex.def Info: figs/BF_roomH2.png  used on input line 459.
 (pdftex.def)             Requested size: 89.6267pt x 117.80435pt.
-<figs/LS_roomH2.png, id=1616, 529.98pt x 696.6025pt>
+<figs/LS_roomH2.png, id=1621, 529.98pt x 696.6025pt>
 File: figs/LS_roomH2.png Graphic file (type png)
 <use figs/LS_roomH2.png>
 Package pdftex.def Info: figs/LS_roomH2.png  used on input line 465.
 (pdftex.def)             Requested size: 89.6267pt x 117.80435pt.
-<figs/OUR_roomH2.png, id=1617, 529.98pt x 696.6025pt>
+<figs/OUR_roomH2.png, id=1622, 529.98pt x 696.6025pt>
 File: figs/OUR_roomH2.png Graphic file (type png)
 <use figs/OUR_roomH2.png>
 Package pdftex.def Info: figs/OUR_roomH2.png  used on input line 471.
@@ -3717,13 +3724,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [79 <./figs/static_setup.png> <./figs/static_inv_setup.png> <./figs/mobile_set
 up.png> <./figs/mobile_inv_setup.png> <./figs/shift_setup.png> <./figs/all_comb
 ined_setup.png>]
-<figs/mobile_inv_modified_setup.png, id=1639, 462.528pt x 346.896pt>
+<figs/mobile_inv_modified_setup.png, id=1644, 462.528pt x 346.896pt>
 File: figs/mobile_inv_modified_setup.png Graphic file (type png)
 <use figs/mobile_inv_modified_setup.png>
 Package pdftex.def Info: figs/mobile_inv_modified_setup.png  used on input line
  514.
 (pdftex.def)             Requested size: 217.66736pt x 163.25285pt.
-<figs/OUR_roomA_roomH2.png, id=1640, 529.98pt x 696.6025pt>
+<figs/OUR_roomA_roomH2.png, id=1645, 529.98pt x 696.6025pt>
 File: figs/OUR_roomA_roomH2.png Graphic file (type png)
 <use figs/OUR_roomA_roomH2.png>
 Package pdftex.def Info: figs/OUR_roomA_roomH2.png  used on input line 520.
@@ -3732,17 +3739,17 @@ Package pdftex.def Info: figs/OUR_roomA_roomH2.png  used on input line 520.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figs/roomH_mugs.png, id=1641, 1229.59375pt x 927.465pt>
+<figs/roomH_mugs.png, id=1646, 1229.59375pt x 927.465pt>
 File: figs/roomH_mugs.png Graphic file (type png)
 <use figs/roomH_mugs.png>
 Package pdftex.def Info: figs/roomH_mugs.png  used on input line 557.
 (pdftex.def)             Requested size: 202.72849pt x 152.9119pt.
-<figs/roomA_mugs.png, id=1642, 1276.77pt x 935.495pt>
+<figs/roomA_mugs.png, id=1647, 1276.77pt x 935.495pt>
 File: figs/roomA_mugs.png Graphic file (type png)
 <use figs/roomA_mugs.png>
 Package pdftex.def Info: figs/roomA_mugs.png  used on input line 563.
 (pdftex.def)             Requested size: 196.32687pt x 143.844pt.
-<figs/roomA_no_mugs.png, id=1643, 1237.62375pt x 933.4875pt>
+<figs/roomA_no_mugs.png, id=1648, 1237.62375pt x 933.4875pt>
 File: figs/roomA_no_mugs.png Graphic file (type png)
 <use figs/roomA_no_mugs.png>
 Package pdftex.def Info: figs/roomA_no_mugs.png  used on input line 569.
@@ -3931,7 +3938,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 313.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 313.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 313.
 Package rerunfilecheck Info: File `ppgc-tese.out' has not changed.
-(rerunfilecheck)             Checksum: 16AA454EB445EF2279AF18CD39C56B31;11822.
+(rerunfilecheck)             Checksum: 0DB297D8B44A23381598811D953A343F;12006.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -3939,10 +3946,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 313.
  ) 
 Here is how much of TeX's memory you used:
- 28236 strings out of 492982
- 505023 string characters out of 6134896
+ 28238 strings out of 492982
+ 505047 string characters out of 6134896
  648215 words of memory out of 5000000
- 31010 multiletter control sequences out of 15000+600000
+ 31011 multiletter control sequences out of 15000+600000
  594037 words of font info for 115 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  48i,17n,47p,10365b,1046s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3964,10 +3971,10 @@ f-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
 es/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
 
-Output written on ppgc-tese.pdf (108 pages, 12757441 bytes).
+Output written on ppgc-tese.pdf (108 pages, 12758655 bytes).
 PDF statistics:
- 2092 PDF objects out of 2487 (max. 8388607)
- 1758 compressed objects within 18 object streams
- 360 named destinations out of 1000 (max. 500000)
- 833 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2099 PDF objects out of 2487 (max. 8388607)
+ 1765 compressed objects within 18 object streams
+ 361 named destinations out of 1000 (max. 500000)
+ 841 words of extra memory for PDF output out of 10000 (max. 10000000)
 
