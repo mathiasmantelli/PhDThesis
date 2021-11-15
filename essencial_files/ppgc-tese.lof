@@ -14,7 +14,7 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Waymo's autonomous car driving itself in a city.}}{16}{figure.caption.1}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Fundamental problems in mobile robots and their state estimation.}}{21}{figure.caption.2}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Graphical model of the fundamental mobile robotics problems.}}{22}{figure.caption.3}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Graphical model of the fundamental mobile robotics problems.}}{23}{figure.caption.3}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Example of our mapping and segmentation modules.}}{32}{figure.caption.4}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Example of the Image Processing module processing two images}}{35}{figure.caption.5}

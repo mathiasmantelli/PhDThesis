@@ -143,13 +143,16 @@
 
 % DEDICATORIA
 %Entre os mais fortes existem os que nasceram com um dom, e aqueles que trabalham duro… E eu sou um dos que trabalhou duro!”, Rock Lee
+%
 \clearpage
 \begin{flushright}
 \mbox{}\vfill
 {\sffamily\itshape
-``If I have seen farther than others,\\
-it is because I stood on the shoulders of giants.''\\}
---- \textsc{Sir~Isaac Newton}
+``You are seeking happiness.\\
+Learn this lesson, once and forever,\\
+that you will find happiness only by\\
+helping others to find it!''\\}
+--- \textsc{Outwitting the Devil}
 \end{flushright}
 
 % AGRADECIMENTOS
@@ -224,7 +227,7 @@ Atualmente, a comunidade científica de robótica móvel está lidando com difer
 	\item [$S(\cdot)$] function that returns the nearest segment of a cell.
 	\item [$L(\cdot)$] function that returns the list of door signs from a segment.
 	\item [$l$] door number.
-	\item [$\varphi(\cdot)$] attractiveness factor of a cell, the outcome of a combination of other five factors: growing direction, $\varphi_g(\cdot)$, parity, $\varphi_p(\cdot)$, robot orientation, $\varphi_r(\cdot)$, door orientation, $\varphi_o(\cdot)$, and distance, $\varphi_d(\cdot)$.
+	\item [$\varphi(\cdot)$] probability distribution for a map cell, $c$, where the target object is in $\bs{m}$.
 	\item [$ \mathtt{S}(\cdot)$] semantic factor, the outcome of the combination of growing direction, $\varphi_g(\cdot)$, parity, $\varphi_p(\cdot)$, factors.
 	\item [$ \mathtt{G}(\cdot)$] geometric factor, the outcome of the combination of  robot orientation, $\varphi_r(\cdot)$, door orientation, $\varphi_o(\cdot)$, and distance, $\varphi_d(\cdot)$, factors.
 	\item [$\mathbf{C}$] set of candidate cells for finding the goal-door.
