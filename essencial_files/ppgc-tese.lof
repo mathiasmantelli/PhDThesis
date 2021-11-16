@@ -29,19 +29,19 @@
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Step-by-step of the performance of our semantic OS system in the physical environment.}}{56}{figure.caption.25}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces One example of our proposed semantic.}}{64}{figure.caption.26}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Flowchart that explains how our proposal works.}}{66}{figure.caption.27}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Flowchart that explains how our OS system works.}}{66}{figure.caption.27}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Example of the computed heat map given a set of detected objects.}}{69}{figure.caption.28}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Example of the robot at the edge of the kernel, and yet not recognising the object.}}{70}{figure.caption.29}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Example of the robot at the edge of the kernel, and yet not recognising the object.}}{71}{figure.caption.29}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Example of the modified kernel with an acute angle, and the recognized object.}}{71}{figure.caption.30}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Step by step of the space reduction performed by our OS system.}}{71}{figure.caption.31}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Step by step of the space reduction performed by our OS system.}}{72}{figure.caption.31}
 \contentsline {figure}{\numberline {4.7}{\ignorespaces The difference between the normal kernel and its inverse.}}{72}{figure.caption.32}
 \contentsline {figure}{\numberline {4.8}{\ignorespaces The seven-rooms environment created on Gazebo simulator and the Husky robot.}}{75}{figure.caption.33}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces The floorplan of the single-resident apartment from the HH106 dataset.}}{75}{figure.caption.34}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces The robot's route for the Brute Force OS approach.}}{76}{figure.caption.35}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces The floorplan of the single-resident apartment from the HH106 dataset.}}{76}{figure.caption.34}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces The robot's route for the Brute Force OS approach.}}{77}{figure.caption.35}
 \contentsline {figure}{\numberline {4.11}{\ignorespaces Results of the three OS systems for both request search times considering many different setups.}}{80}{figure.caption.38}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Examples of the robot's path for the search performed by the three OS systems in both rooms A and H.}}{81}{figure.caption.39}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Examples of the robot's path for the search performed by the three OS systems in both locations A and H.}}{81}{figure.caption.39}
 \contentsline {figure}{\numberline {4.13}{\ignorespaces Results of the three OS systems for the request search at midnight in a modified version of \textit {Mobile-Inv}}}{82}{figure.caption.40}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Results of the three OS systems for both request search times considering many different setups.}}{82}{figure.caption.41}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Results of the three OS systems for both request search times considering many different setups.}}{83}{figure.caption.41}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

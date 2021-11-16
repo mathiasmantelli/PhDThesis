@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.7)  15 NOV 2021 21:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.7)  16 NOV 2021 16:24
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -3648,7 +3648,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [68]
-<figs/environment_2Dgrid_heatmap_kernel.png, id=1504, 243.309pt x 107.2005pt>
+<figs/environment_2Dgrid_heatmap_kernel.png, id=1503, 243.309pt x 107.2005pt>
 File: figs/environment_2Dgrid_heatmap_kernel.png Graphic file (type png)
 <use figs/environment_2Dgrid_heatmap_kernel.png>
 Package pdftex.def Info: figs/environment_2Dgrid_heatmap_kernel.png  used on in
@@ -3669,6 +3669,10 @@ Package pdftex.def Info: figs/bad_robot_placement_2.png  used on input line 122
 (pdftex.def)             Requested size: 256.07741pt x 119.1045pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 125.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 <figs/good_robot_placement_1.png, id=1516, 211.0284pt x 94.6737pt>
 File: figs/good_robot_placement_1.png Graphic file (type png)
 <use figs/good_robot_placement_1.png>
@@ -3682,7 +3686,6 @@ Package pdftex.def Info: figs/good_robot_placement_2.png  used on input line 13
 4.
 (pdftex.def)             Requested size: 256.07741pt x 114.89789pt.
 
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <figs/step_by_step.png, id=1519, 318.9516pt x 105.2733pt>
@@ -3691,11 +3694,8 @@ File: figs/step_by_step.png Graphic file (type png)
 Package pdftex.def Info: figs/step_by_step.png  used on input line 145.
 (pdftex.def)             Requested size: 384.1096pt x 126.78352pt.
 
-Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 70
- []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[70 <./figs/bad_robot_placement_1.png> <./figs/bad_robot_placement_2.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 151.
@@ -3708,30 +3708,38 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 151.
 
-[71 <./figs/good_robot_placement_1.png> <./figs/good_robot_placement_2.png> <./
-figs/step_by_step.png>]
-<figs/normal_kernel_complete_reduced.png, id=1538, 156.8259pt x 104.5506pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+\T1/ptm/m/n/10.95 70
+ []
+
+[70]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [71 <./figs/bad_robot_placement_1.png> <./figs/bad_robot_placement_2.png> <./f
+igs/good_robot_placement_1.png> <./figs/good_robot_placement_2.png>]
+<figs/normal_kernel_complete_reduced.png, id=1537, 156.8259pt x 104.5506pt>
 File: figs/normal_kernel_complete_reduced.png Graphic file (type png)
 <use figs/normal_kernel_complete_reduced.png>
 Package pdftex.def Info: figs/normal_kernel_complete_reduced.png  used on input
  line 181.
 (pdftex.def)             Requested size: 192.0548pt x 128.04608pt.
-<figs/inversed_kernel_complete_reduced.png, id=1539, 156.8259pt x 104.5506pt>
+<figs/inversed_kernel_complete_reduced.png, id=1538, 156.8259pt x 104.5506pt>
 File: figs/inversed_kernel_complete_reduced.png Graphic file (type png)
 <use figs/inversed_kernel_complete_reduced.png>
 Package pdftex.def Info: figs/inversed_kernel_complete_reduced.png  used on inp
 ut line 182.
 (pdftex.def)             Requested size: 192.0548pt x 128.04608pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 72
  []
 
-[72 <./figs/normal_kernel_complete_reduced.png> <./figs/inversed_kernel_complet
-e_reduced.png>]
+[72 <./figs/step_by_step.png> <./figs/normal_kernel_complete_reduced.png> <./fi
+gs/inversed_kernel_complete_reduced.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [73]
@@ -3743,47 +3751,57 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [74]
-<figs/simulated_environment.png, id=1583, 127.677pt x 92.2647pt>
+<figs/simulated_environment.png, id=1584, 127.677pt x 92.2647pt>
 File: figs/simulated_environment.png Graphic file (type png)
 <use figs/simulated_environment.png>
-Package pdftex.def Info: figs/simulated_environment.png  used on input line 282
+Package pdftex.def Info: figs/simulated_environment.png  used on input line 284
 .
 (pdftex.def)             Requested size: 179.25157pt x 129.53853pt.
-<figs/husky_robot.png, id=1584, 163.812pt x 192.9609pt>
+<figs/husky_robot.png, id=1585, 163.812pt x 192.9609pt>
 File: figs/husky_robot.png Graphic file (type png)
 <use figs/husky_robot.png>
-Package pdftex.def Info: figs/husky_robot.png  used on input line 283.
+Package pdftex.def Info: figs/husky_robot.png  used on input line 285.
 (pdftex.def)             Requested size: 106.69783pt x 125.68808pt.
-<figs/hh106sensor_map.png, id=1585, 602.25pt x 503.7219pt>
+<figs/hh106sensor_map.png, id=1586, 602.25pt x 503.7219pt>
 File: figs/hh106sensor_map.png Graphic file (type png)
 <use figs/hh106sensor_map.png>
-Package pdftex.def Info: figs/hh106sensor_map.png  used on input line 291.
+Package pdftex.def Info: figs/hh106sensor_map.png  used on input line 293.
 (pdftex.def)             Requested size: 320.0935pt x 267.73225pt.
 
-Underfull \vbox (badness 3919) has occurred while \output is active []
 
- [75 <./figs/simulated_environment.png> <./figs/husky_robot.png> <./figs/hh106s
-ensor_map.png>]
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [75 <./figs/simulated_environment.png> <./figs/husky_robot.png>]
 <figs/brute_force_route2.png, id=1595, 668.4975pt x 488.57532pt>
 File: figs/brute_force_route2.png Graphic file (type png)
 <use figs/brute_force_route2.png>
-Package pdftex.def Info: figs/brute_force_route2.png  used on input line 306.
+Package pdftex.def Info: figs/brute_force_route2.png  used on input line 308.
 (pdftex.def)             Requested size: 256.07741pt x 187.15901pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 76
  []
 
-[76 <./figs/brute_force_route2.png>] [77]
+[76 <./figs/hh106sensor_map.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
+ [77 <./figs/brute_force_route2.png>]
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 78
  []
 
-[78]
-<figs/static_setup.png, id=1631, 527.571pt x 289.08pt>
+[78] [79]
+<figs/static_setup.png, id=1637, 527.571pt x 289.08pt>
 File: figs/static_setup.png Graphic file (type png)
 <use figs/static_setup.png>
 Package pdftex.def Info: figs/static_setup.png  used on input line 382.
@@ -3793,7 +3811,7 @@ Overfull \hbox (20.48705pt too wide) in paragraph at lines 382--383
  [][] 
  []
 
-<figs/static_inv_setup.png, id=1632, 527.571pt x 289.08pt>
+<figs/static_inv_setup.png, id=1638, 527.571pt x 289.08pt>
 File: figs/static_inv_setup.png Graphic file (type png)
 <use figs/static_inv_setup.png>
 Package pdftex.def Info: figs/static_inv_setup.png  used on input line 388.
@@ -3803,7 +3821,7 @@ Overfull \hbox (20.48705pt too wide) in paragraph at lines 388--389
  [][] 
  []
 
-<figs/mobile_setup.png, id=1633, 527.571pt x 289.08pt>
+<figs/mobile_setup.png, id=1639, 527.571pt x 289.08pt>
 File: figs/mobile_setup.png Graphic file (type png)
 <use figs/mobile_setup.png>
 Package pdftex.def Info: figs/mobile_setup.png  used on input line 394.
@@ -3813,7 +3831,7 @@ Overfull \hbox (20.48705pt too wide) in paragraph at lines 394--395
  [][] 
  []
 
-<figs/mobile_inv_setup.png, id=1634, 527.571pt x 289.08pt>
+<figs/mobile_inv_setup.png, id=1640, 527.571pt x 289.08pt>
 File: figs/mobile_inv_setup.png Graphic file (type png)
 <use figs/mobile_inv_setup.png>
 Package pdftex.def Info: figs/mobile_inv_setup.png  used on input line 400.
@@ -3823,7 +3841,7 @@ Overfull \hbox (20.48705pt too wide) in paragraph at lines 400--401
  [][] 
  []
 
-<figs/shift_setup.png, id=1635, 527.571pt x 289.08pt>
+<figs/shift_setup.png, id=1641, 527.571pt x 289.08pt>
 File: figs/shift_setup.png Graphic file (type png)
 <use figs/shift_setup.png>
 Package pdftex.def Info: figs/shift_setup.png  used on input line 406.
@@ -3833,7 +3851,7 @@ Overfull \hbox (20.48705pt too wide) in paragraph at lines 406--407
  [][] 
  []
 
-<figs/all_combined_setup.png, id=1636, 527.571pt x 289.08pt>
+<figs/all_combined_setup.png, id=1642, 527.571pt x 289.08pt>
 File: figs/all_combined_setup.png Graphic file (type png)
 <use figs/all_combined_setup.png>
 Package pdftex.def Info: figs/all_combined_setup.png  used on input line 412.
@@ -3843,40 +3861,37 @@ Overfull \hbox (20.48705pt too wide) in paragraph at lines 412--413
  [][] 
  []
 
-<figs/BF_roomA2.png, id=1637, 529.98pt x 696.6025pt>
+<figs/BF_roomA2.png, id=1643, 529.98pt x 696.6025pt>
 File: figs/BF_roomA2.png Graphic file (type png)
 <use figs/BF_roomA2.png>
 Package pdftex.def Info: figs/BF_roomA2.png  used on input line 441.
 (pdftex.def)             Requested size: 89.6267pt x 117.80435pt.
-<figs/LS_roomA2.png, id=1638, 529.98pt x 696.6025pt>
+<figs/LS_roomA2.png, id=1644, 529.98pt x 696.6025pt>
 File: figs/LS_roomA2.png Graphic file (type png)
 <use figs/LS_roomA2.png>
 Package pdftex.def Info: figs/LS_roomA2.png  used on input line 447.
 (pdftex.def)             Requested size: 89.6267pt x 117.80435pt.
-<figs/OUR_roomA2.png, id=1639, 529.98pt x 696.6025pt>
+<figs/OUR_roomA2.png, id=1645, 529.98pt x 696.6025pt>
 File: figs/OUR_roomA2.png Graphic file (type png)
 <use figs/OUR_roomA2.png>
 Package pdftex.def Info: figs/OUR_roomA2.png  used on input line 453.
 (pdftex.def)             Requested size: 89.6267pt x 117.80435pt.
-<figs/BF_roomH2.png, id=1640, 529.98pt x 696.6025pt>
+<figs/BF_roomH2.png, id=1646, 529.98pt x 696.6025pt>
 File: figs/BF_roomH2.png Graphic file (type png)
 <use figs/BF_roomH2.png>
 Package pdftex.def Info: figs/BF_roomH2.png  used on input line 459.
 (pdftex.def)             Requested size: 89.6267pt x 117.80435pt.
-<figs/LS_roomH2.png, id=1641, 529.98pt x 696.6025pt>
+<figs/LS_roomH2.png, id=1647, 529.98pt x 696.6025pt>
 File: figs/LS_roomH2.png Graphic file (type png)
 <use figs/LS_roomH2.png>
 Package pdftex.def Info: figs/LS_roomH2.png  used on input line 465.
 (pdftex.def)             Requested size: 89.6267pt x 117.80435pt.
-<figs/OUR_roomH2.png, id=1642, 529.98pt x 696.6025pt>
+<figs/OUR_roomH2.png, id=1648, 529.98pt x 696.6025pt>
 File: figs/OUR_roomH2.png Graphic file (type png)
 <use figs/OUR_roomH2.png>
 Package pdftex.def Info: figs/OUR_roomH2.png  used on input line 471.
 (pdftex.def)             Requested size: 89.6267pt x 117.80435pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [79]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3887,65 +3902,68 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [80 <./figs/static_setup.png> <./figs/static_inv_setup.png> <./figs/mobile_setu
 p.png> <./figs/mobile_inv_setup.png> <./figs/shift_setup.png> <./figs/all_combi
 ned_setup.png>]
-<figs/mobile_inv_modified_setup.png, id=1664, 462.528pt x 346.896pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [81 <./figs/BF_roomA2.png> <./figs/LS_roomA2.png> <./figs/OUR_roomA2.png> <./f
+igs/BF_roomH2.png> <./figs/LS_roomH2.png> <./figs/OUR_roomH2.png>]
+<figs/mobile_inv_modified_setup.png, id=1676, 462.528pt x 346.896pt>
 File: figs/mobile_inv_modified_setup.png Graphic file (type png)
 <use figs/mobile_inv_modified_setup.png>
 Package pdftex.def Info: figs/mobile_inv_modified_setup.png  used on input line
  514.
 (pdftex.def)             Requested size: 217.66736pt x 163.25285pt.
-<figs/OUR_roomA_roomH2.png, id=1665, 529.98pt x 696.6025pt>
+<figs/OUR_roomA_roomH2.png, id=1677, 529.98pt x 696.6025pt>
 File: figs/OUR_roomA_roomH2.png Graphic file (type png)
 <use figs/OUR_roomA_roomH2.png>
 Package pdftex.def Info: figs/OUR_roomA_roomH2.png  used on input line 520.
 (pdftex.def)             Requested size: 105.63153pt x 138.8397pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figs/roomH_mugs.png, id=1666, 1229.59375pt x 927.465pt>
+<figs/roomH_mugs.png, id=1678, 1229.59375pt x 927.465pt>
 File: figs/roomH_mugs.png Graphic file (type png)
 <use figs/roomH_mugs.png>
 Package pdftex.def Info: figs/roomH_mugs.png  used on input line 557.
-(pdftex.def)             Requested size: 202.72849pt x 152.9119pt.
-<figs/roomA_mugs.png, id=1667, 1276.77pt x 935.495pt>
+(pdftex.def)             Requested size: 192.0548pt x 144.85944pt.
+<figs/roomA_mugs.png, id=1679, 1276.77pt x 935.495pt>
 File: figs/roomA_mugs.png Graphic file (type png)
 <use figs/roomA_mugs.png>
 Package pdftex.def Info: figs/roomA_mugs.png  used on input line 563.
 (pdftex.def)             Requested size: 196.32687pt x 143.844pt.
-<figs/roomA_no_mugs.png, id=1668, 1237.62375pt x 933.4875pt>
+<figs/roomA_no_mugs.png, id=1680, 1237.62375pt x 933.4875pt>
 File: figs/roomA_no_mugs.png Graphic file (type png)
 <use figs/roomA_no_mugs.png>
 Package pdftex.def Info: figs/roomA_no_mugs.png  used on input line 569.
 (pdftex.def)             Requested size: 189.92526pt x 143.25043pt.
 
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [81 <./figs/BF_roomA2.png> <./figs/LS_roomA2.png> <./figs/OUR_roomA2.png> <./f
-igs/BF_roomH2.png> <./figs/LS_roomH2.png> <./figs/OUR_roomH2.png>]
-Underfull \vbox (badness 7685) has occurred while \output is active []
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 82
  []
 
-[82 <./figs/mobile_inv_modified_setup.png> <./figs/OUR_roomA_roomH2.png> <./fig
-s/roomH_mugs.png> <./figs/roomA_mugs.png> <./figs/roomA_no_mugs.png>] [83]
+[82 <./figs/mobile_inv_modified_setup.png> <./figs/OUR_roomA_roomH2.png>]
+[83 <./figs/roomH_mugs.png> <./figs/roomA_mugs.png> <./figs/roomA_no_mugs.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 1590) has occurred while \output is active []
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 84
  []
 
-[84] [85]
+[84]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [85]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3975,12 +3993,15 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 90
  []
 
-[90] [91]
+[90]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [91]
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 92
  []
 
-[92]
+[92] [93]
 Overfull \hbox (3.10371pt too wide) in paragraph at lines 767--768
 \T1/ptm/m/n/12 pro-posed sys-tem was eval-u-ated in sim-u-la-tion many times ag
 ainst two other OS ap-proaches,
@@ -3989,20 +4010,15 @@ ainst two other OS ap-proaches,
 ) (./chapters/05_thesis_progress.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [93
 
-
-]
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 94
  []
 
-[94]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[94
 
- [95
 
-]
+] [95]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -4010,10 +4026,20 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 96
  []
 
-[96]
+[96
+
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [97]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+\T1/ptm/m/n/10.95 98
+ []
+
+[98]
 \c@RowNo=\count339
 \c@SubRowNo=\count340
 \c@magicrownumbers2=\count341
@@ -4033,19 +4059,14 @@ Overfull \hbox (12.0pt too wide) has occurred while \output is active
  [] 
  []
 
-) (./ppgc-tese.bbl
-Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 98
- []
-
-[98] [99]
+) (./ppgc-tese.bbl [99]
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 100
  []
 
-[100
+[100] [101
 
-] [101]
+]
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 102
  []
@@ -4055,20 +4076,17 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 104
  []
 
-[104]) [105]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+[104] [105])
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 106
  []
 
-[106
-
-]
+[106]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [107]
+ [107
+
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -4076,16 +4094,25 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 108
  []
 
-[108] 
+[108]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [109]
+
 AED: lastpage setting LastPage
-[109]
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+\T1/ptm/m/n/10.95 110
+ []
+
+[110]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 321.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 321.
  (./ppgc-tese.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 321.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 321.
 Package rerunfilecheck Info: File `ppgc-tese.out' has not changed.
-(rerunfilecheck)             Checksum: 63C107C63DC21F87270B1510994B8C4B;12599.
+(rerunfilecheck)             Checksum: 27BBB4105770C77E41F2B1276EFEFA36;12734.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -4093,9 +4120,9 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 321.
  ) 
 Here is how much of TeX's memory you used:
- 28483 strings out of 492982
- 509244 string characters out of 6134896
- 657054 words of memory out of 5000000
+ 28484 strings out of 492982
+ 509252 string characters out of 6134896
+ 657166 words of memory out of 5000000
  31240 multiletter control sequences out of 15000+600000
  594037 words of font info for 115 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
@@ -4118,10 +4145,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist
 fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
 8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ppgc-tese.pdf (109 pages, 10873333 bytes).
+Output written on ppgc-tese.pdf (110 pages, 10874823 bytes).
 PDF statistics:
- 2129 PDF objects out of 2487 (max. 8388607)
- 1786 compressed objects within 18 object streams
- 365 named destinations out of 1000 (max. 500000)
+ 2134 PDF objects out of 2487 (max. 8388607)
+ 1790 compressed objects within 18 object streams
+ 366 named destinations out of 1000 (max. 500000)
  864 words of extra memory for PDF output out of 10000 (max. 10000000)
 

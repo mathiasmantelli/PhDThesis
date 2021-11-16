@@ -35,25 +35,25 @@
 \contentsline {section}{\numberline {4.1}Introduction}{62}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Proposal and contributions}{64}{subsection.4.1.1}
 \contentsline {section}{\numberline {4.2}System Overview}{65}{section.4.2}
-\contentsline {section}{\numberline {4.3}Our semantic strategy for object search tasks}{67}{section.4.3}
+\contentsline {section}{\numberline {4.3}Our semantic strategy for the object search task}{67}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Heat Map}{68}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Inverse kernel $K(\cdot )$}{71}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Goal Computation}{73}{subsection.4.3.3}
-\contentsline {section}{\numberline {4.4}Experiments and Results}{73}{section.4.4}
+\contentsline {subsection}{\numberline {4.3.2}Inverse kernel $K(\cdot )$}{70}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Goal Computation in the Request mode}{73}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}Experiments and Results}{74}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Simulation and dataset}{74}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Two other object search system to be compared against ours}{76}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.2}Two other object search systems to be compared against ours}{76}{subsection.4.4.2}
 \contentsline {subsubsection}{\numberline {4.4.2.1}Brute Force object search system}{76}{subsubsection.4.4.2.1}
-\contentsline {subsubsection}{\numberline {4.4.2.2}Last Seen object search system}{76}{subsubsection.4.4.2.2}
+\contentsline {subsubsection}{\numberline {4.4.2.2}Last Seen object search system}{77}{subsubsection.4.4.2.2}
 \contentsline {subsection}{\numberline {4.4.3}Simulated Experiment Setup}{77}{subsection.4.4.3}
 \contentsline {subsection}{\numberline {4.4.4}Results and discussion from the simulated experiments}{79}{subsection.4.4.4}
-\contentsline {subsection}{\numberline {4.4.5}Person presence estimation with HH106 dataset}{83}{subsection.4.4.5}
-\contentsline {section}{\numberline {4.5}Related Work}{86}{section.4.5}
+\contentsline {subsection}{\numberline {4.4.5}Person presence estimation with HH106 dataset}{84}{subsection.4.4.5}
+\contentsline {section}{\numberline {4.5}Related Work}{85}{section.4.5}
 \contentsline {subsection}{\numberline {4.5.1}Object search approaches}{86}{subsection.4.5.1}
 \contentsline {subsection}{\numberline {4.5.2}Spatio-Temporal models}{90}{subsection.4.5.2}
-\contentsline {section}{\numberline {4.6}Summary}{93}{section.4.6}
-\contentsline {chapter}{5~Discussion on thesis progress}{95}{CHAPTER.5}
-\contentsline {section}{\numberline {5.1}Ongoing and Future Work}{96}{section.5.1}
-\contentsline {section}{\numberline {5.2}Thesis Schedule}{97}{section.5.2}
-\contentsline {chapter}{\xspace {}References}{100}{schapter.8}
-\contentsline {chapter}{\MakeUppercase {Appendix} A~--- Resumo expandido}{106}{CHAPTER.A}
-\contentsline {section}{\numberline {A.1}Hip\IeC {\'o}tese e objetivos}{107}{section.A.1}
+\contentsline {section}{\numberline {4.6}Summary}{94}{section.4.6}
+\contentsline {chapter}{5~Discussion on thesis progress}{96}{CHAPTER.5}
+\contentsline {section}{\numberline {5.1}Ongoing and Future Work}{97}{section.5.1}
+\contentsline {section}{\numberline {5.2}Thesis Schedule}{98}{section.5.2}
+\contentsline {chapter}{\xspace {}References}{101}{schapter.8}
+\contentsline {chapter}{\MakeUppercase {Appendix} A~--- Resumo expandido}{107}{CHAPTER.A}
+\contentsline {section}{\numberline {A.1}Hip\IeC {\'o}tese e objetivos}{108}{section.A.1}
