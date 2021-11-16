@@ -50,10 +50,10 @@
 \contentsline {section}{\numberline {4.5}Related Work}{86}{section.4.5}
 \contentsline {subsection}{\numberline {4.5.1}Object search approaches}{86}{subsection.4.5.1}
 \contentsline {subsection}{\numberline {4.5.2}Spatio-Temporal models}{90}{subsection.4.5.2}
-\contentsline {section}{\numberline {4.6}Summary}{94}{section.4.6}
-\contentsline {chapter}{5~Discussion on thesis progress}{96}{CHAPTER.5}
-\contentsline {section}{\numberline {5.1}Ongoing and Future Work}{97}{section.5.1}
-\contentsline {section}{\numberline {5.2}Thesis Schedule}{98}{section.5.2}
-\contentsline {chapter}{\xspace {}References}{101}{schapter.8}
-\contentsline {chapter}{\MakeUppercase {Appendix} A~--- Resumo expandido}{107}{CHAPTER.A}
-\contentsline {section}{\numberline {A.1}Hip\IeC {\'o}tese e objetivos}{108}{section.A.1}
+\contentsline {section}{\numberline {4.6}Summary}{93}{section.4.6}
+\contentsline {chapter}{5~Discussion on thesis progress}{95}{CHAPTER.5}
+\contentsline {section}{\numberline {5.1}Ongoing and Future Work}{96}{section.5.1}
+\contentsline {section}{\numberline {5.2}Thesis Schedule}{97}{section.5.2}
+\contentsline {chapter}{\xspace {}References}{100}{schapter.8}
+\contentsline {chapter}{\MakeUppercase {Appendix} A~--- Resumo expandido}{106}{CHAPTER.A}
+\contentsline {section}{\numberline {A.1}Hip\IeC {\'o}tese e objetivos}{107}{section.A.1}
