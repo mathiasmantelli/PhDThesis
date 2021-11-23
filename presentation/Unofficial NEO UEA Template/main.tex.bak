@@ -1,0 +1,75 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+
+%%%%%%%% tema e cor %%%%%%%%
+\mode<presentation> {
+\usetheme{CambridgeUS}
+\usecolortheme{rose}
+\usefonttheme{structuresmallcapsserif}
+
+\setbeamercolor{itemize item}{fg=red}
+\setbeamercolor{itemize subitem}{fg=red}
+\setbeamercolor{itemize subsubitem}{fg=red}
+
+\setbeamertemplate{itemize item}[circle]
+\setbeamertemplate{itemize subitem}[square]
+\setbeamertemplate{itemize subsubitem}[triangle]
+}
+
+\input{config.tex}
+
+%%%%%%%% titulo e subtitulo %%%%%%%%
+\title[Ph.D. Thesis Proposal]{Exploiting semantic information in indoor environments} 
+
+%%%%%%%% nome dos autores %%%%%%%%
+\author[Mantelli, M. F.]{Mathias Fassini Mantelli} 
+
+
+\begin{document}
+\input{files/pre-slides.tex}
+
+%%%%%%%% slides %%%%%%%%
+\section{Introduction} 
+\input{files/introducao.tex}
+
+\section{Justificativa}
+\input{files/justificativa.tex}
+
+\section{Objetivos}
+\input{files/objetivos.tex}
+
+\section{Fundamentação Teórica}
+\input{files/fundamentacao.tex}
+
+\section{Metodologia}
+\input{files/metodologia.tex}
+
+\section{Resultados}
+\input{files/resultados.tex}
+
+\section{Conclusão}
+\input{files/conclusao.tex}
+
+%%%%%%%% agradecimentos %%%%%%%%
+\begin{frame}{Agradecimentos}
+    \large{Agradeço a fulano, ciclano e beltrano que apoiaram o desenvolvimento dessa pesquisa.}
+\end{frame}
+%------------------------------------------------
+
+
+%------------------------------------------------
+%------------------------------------------------
+%%%%%%%% referencias %%%%%%%%
+\nocite{*}
+\begin{frame}[allowframebreaks]{Referências}
+\bibliographystyle{unsrt}
+\bibliography{ref.bib}
+\end{frame}
+
+
+%%%%%%%% repete primeiro slide %%%%%%%%
+\begin{frame}
+\titlepage 
+\end{frame}
+
+
+\end{document}
