@@ -1,0 +1,35 @@
+\usepackage[american]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} 
+\usepackage{booktabs} 
+\usepackage{ragged2e}
+\usepackage{subcaption}
+\usepackage{caption}
+
+\captionsetup{font=scriptsize,labelfont=scriptsize}
+
+\institute[Inf] 
+{
+%================= logos no meio =====================
+%\vspace*{-0.35cm}
+%\includegraphics[width=1.8cm]{img/logo-uea.png}
+%\hspace*{0.25cm}~%
+%\includegraphics[width=1.8cm]{img/logo-neo.png}
+%\vspace*{0.35cm}\\
+Federal University of Rio Grande do Sul \\
+Institute of Informatics\\
+Postgraduate Program in Computing\\
+
+%\medskip
+%\texttt{\{lods.eng,ronety\}@uea.edu.br} % emails
+}
+\vspace{0.5cm}
+\date{\today}
+
+%\AtBeginSection[]
+%{
+%\begin{frame}
+%\frametitle{Conteúdo}
+%\tableofcontents[currentsection]
+%\end{frame}
+%}
