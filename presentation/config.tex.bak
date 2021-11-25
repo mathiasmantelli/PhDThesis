@@ -6,7 +6,7 @@
 \usepackage{subcaption}
 \usepackage{caption}
 
-\captionsetup{font=scriptsize,labelfont=scriptsize}
+%\captionsetup{font=scriptsize,labelfont=scriptsize}
 
 \institute[Inf] 
 {
