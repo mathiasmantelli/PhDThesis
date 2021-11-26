@@ -227,14 +227,31 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}{Semantic perception}
+\begin{frame}{Expand the geometric perception}
 	\begin{columns}[T]
-		\column{0.5\textwidth}
-		\begin{itemize}
-			\item Naming objects and features in the scene
-			\item Associating meaning to the parts of the map
+		\column{0.6\textwidth}
+		\begin{itemize}[<+->]
+			\item \textbf{Associate meaning} to the parts of the \textbf{map}
+			\item \textbf{Understand} the relations between them
+			\item \textbf{Semantic} information + \textbf{semantic} map
+			\item Essential for \textbf{high-level} tasks 
 		\end{itemize}
-		\column{0.5\textwidth}		
+		\column{0.4\textwidth}	
+			\centering
+			\begin{figure}
+			    \begin{subfigure}[b]{.7\columnwidth}
+			    		\centering				
+			    		\includegraphics[width=1\linewidth]{figs/firefighters.png}\vspace{-.1cm}
+			    		\caption{\tiny The sire of the fire truck}
+			    	\end{subfigure}\\
+			    \begin{subfigure}[b]{.7\columnwidth}
+			    		\centering			    	
+			    		\includegraphics[width=1\linewidth]{figs/door_open.png}\vspace{-.1cm}
+			    		\caption{\tiny The car door is open}
+			    	\end{subfigure}
+			    	\vspace{-.1cm}
+				 \caption{\tiny Vacuum cleaner robot in operation.\footnotemark[6]}			 		 
+	         \end{figure}				
 	\end{columns}
 
 \end{frame}

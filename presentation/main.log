@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.7)  25 NOV 2021 01:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.7)  26 NOV 2021 01:03
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1421,25 +1421,69 @@ Package pdftex.def Info: figs/vacuum_cleaner.png  used on input line 226.
 (pdftex.def)             Requested size: 156.0004pt x 104.52576pt.
  [14
 
-] [15
+]
+<figs/firefighters.png, id=453, 178.266pt x 84.7968pt>
+File: figs/firefighters.png Graphic file (type png)
+<use figs/firefighters.png>
+Package pdftex.def Info: figs/firefighters.png  used on input line 257.
+(pdftex.def)             Requested size: 121.33394pt x 57.71797pt.
+<figs/door_open.png, id=454, 178.5069pt x 84.7968pt>
+File: figs/door_open.png Graphic file (type png)
+<use figs/door_open.png>
+Package pdftex.def Info: figs/door_open.png  used on input line 257.
+(pdftex.def)             Requested size: 121.33394pt x 57.63904pt.
+ [15
 
-])
-(./files/justificativa.tex [16
-
-]) (./files/objetivos.tex [17
-
-])
-(./files/fundamentacao.tex [18
-
-] [19
-
-]) (./files/metodologia.tex [20
-
-])
-(./files/resultados.tex [21
+ <./figs/firefighters.png> <./figs/door_open.png>]
+File: figs/firefighters.png Graphic file (type png)
+<use figs/firefighters.png>
+Package pdftex.def Info: figs/firefighters.png  used on input line 257.
+(pdftex.def)             Requested size: 121.33394pt x 57.71797pt.
+File: figs/door_open.png Graphic file (type png)
+<use figs/door_open.png>
+Package pdftex.def Info: figs/door_open.png  used on input line 257.
+(pdftex.def)             Requested size: 121.33394pt x 57.63904pt.
+ [16
 
 ]
-<figs/river.jpg, id=649, 2569.6pt x 1606.0pt>
+File: figs/firefighters.png Graphic file (type png)
+<use figs/firefighters.png>
+Package pdftex.def Info: figs/firefighters.png  used on input line 257.
+(pdftex.def)             Requested size: 121.33394pt x 57.71797pt.
+File: figs/door_open.png Graphic file (type png)
+<use figs/door_open.png>
+Package pdftex.def Info: figs/door_open.png  used on input line 257.
+(pdftex.def)             Requested size: 121.33394pt x 57.63904pt.
+ [17
+
+]
+File: figs/firefighters.png Graphic file (type png)
+<use figs/firefighters.png>
+Package pdftex.def Info: figs/firefighters.png  used on input line 257.
+(pdftex.def)             Requested size: 121.33394pt x 57.71797pt.
+File: figs/door_open.png Graphic file (type png)
+<use figs/door_open.png>
+Package pdftex.def Info: figs/door_open.png  used on input line 257.
+(pdftex.def)             Requested size: 121.33394pt x 57.63904pt.
+ [18
+
+])
+(./files/justificativa.tex [19
+
+]) (./files/objetivos.tex [20
+
+])
+(./files/fundamentacao.tex [21
+
+] [22
+
+]) (./files/metodologia.tex [23
+
+])
+(./files/resultados.tex [24
+
+]
+<figs/river.jpg, id=735, 2569.6pt x 1606.0pt>
 File: figs/river.jpg Graphic file (type jpg)
 <use figs/river.jpg>
 Package pdftex.def Info: figs/river.jpg  used on input line 25.
@@ -1448,17 +1492,17 @@ Package pdftex.def Info: figs/river.jpg  used on input line 25.
 Overfull \vbox (21.42616pt too high) detected at line 25
  []
 
-[22
-
- <./figs/river.jpg>]) (./files/conclusao.tex [23
-
-]) [24
-
-] (./main.bbl)
 [25
 
+ <./figs/river.jpg>]) (./files/conclusao.tex [26
+
+]) [27
+
+] (./main.bbl)
+[28
+
  </usr/share/texlive/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
-[26
+[29
 
 ]
 \tf@nav=\write6
@@ -1479,10 +1523,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: AE5AC7AF32EF6BC3820B590D6B2FD43E;342.
  ) 
 Here is how much of TeX's memory you used:
- 19410 strings out of 492982
- 365210 string characters out of 6134896
+ 19426 strings out of 492982
+ 365490 string characters out of 6134896
  446496 words of memory out of 5000000
- 22424 multiletter control sequences out of 15000+600000
+ 22432 multiletter control sequences out of 15000+600000
  17383 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,19n,58p,771b,929s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1495,10 +1539,10 @@ dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (26 pages, 2290886 bytes).
+Output written on main.pdf (29 pages, 3313857 bytes).
 PDF statistics:
- 842 PDF objects out of 1000 (max. 8388607)
- 771 compressed objects within 8 object streams
- 61 named destinations out of 1000 (max. 500000)
- 159 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 929 PDF objects out of 1000 (max. 8388607)
+ 850 compressed objects within 9 object streams
+ 67 named destinations out of 1000 (max. 500000)
+ 169 words of extra memory for PDF output out of 10000 (max. 10000000)
 
