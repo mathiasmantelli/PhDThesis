@@ -1,0 +1,138 @@
+\begin{frame}{Problems involved in this work}
+	\begin{columns}[T]
+		\column{0.55\textwidth}
+			\begin{itemize}
+				\item \textbf{Mobile robotics} problems:
+				\begin{itemize}[<+->]
+					\item \textbf{Localization}
+				\end{itemize}
+			\end{itemize}
+		\column{0.45\textwidth}
+			\centering
+			\begin{figure}
+				 \includegraphics[width=.55\linewidth]{figs/localization.png}
+				 \caption{\tiny Illustration of the Markov localization algorithm.\footnotemark[7]}			 		 
+	         \end{figure}			
+	\end{columns}	
+	\footnotetext[7]{\tiny Thrun, Sebastian. ``\textit{Probabilistic robotics.}'' Communications of the ACM 45.3 (2002): 52-57.}					
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Problems involved in this work}
+	\begin{columns}[T]
+		\column{0.55\textwidth}
+			\begin{itemize}
+				\item \textbf{Mobile robotics} problems:
+				\begin{itemize}
+					\item \textbf{Localization}
+					\item \textbf{Mapping}
+				\end{itemize}
+			\end{itemize}
+		\column{0.45\textwidth}
+			\centering
+			\begin{figure}
+				 \includegraphics[width=.45\linewidth]{figs/mapping.png}
+				 \caption{\tiny Mapping with position indexed by odometry.\footnotemark[8]}			 		 
+	         \end{figure}			
+	\end{columns}	
+	\footnotetext[8]{\tiny Thrun, Sebastian. ``\textit{Probabilistic robotics.}'' Communications of the ACM 45.3 (2002): 52-57.}					
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Problems involved in this work}
+	\begin{columns}[T]
+		\column{0.55\textwidth}
+			\begin{itemize}
+				\item \textbf{Mobile robotics} problems:
+				\begin{itemize}
+					\item \textbf{Localization}
+					\item \textbf{Mapping}
+					\item Simultaneous localization and mapping (\textbf{SLAM})
+				\end{itemize}
+			\end{itemize}
+		\column{0.45\textwidth}
+			\centering
+			\begin{figure}
+				 \includegraphics[width=.6\linewidth]{figs/slam.png}
+				 \caption{\tiny Occupancy grid map.\footnotemark[9]}			 		 
+	         \end{figure}			
+	\end{columns}	
+	\footnotetext[9]{\tiny Thrun, Sebastian. ``\textit{Probabilistic robotics.}'' Communications of the ACM 45.3 (2002): 52-57.}					
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Problems involved in this work}
+	\begin{columns}[T]
+		\column{0.55\textwidth}
+			\begin{itemize}
+				\item \textbf{Mobile robotics} problems:
+				\begin{itemize}
+					\item \textbf{Localization}
+					\item \textbf{Mapping}
+					\item Simultaneous localization and mapping (\textbf{SLAM})
+				\end{itemize}
+				\item Types of OS problems:
+				\begin{itemize}
+					\item The \textbf{map} and the \textbf{probability distribution} are \textbf{known}		
+				\end{itemize}
+			\end{itemize}
+
+	\end{columns}	
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Problems involved in this work}
+	\begin{columns}[T]
+		\column{0.55\textwidth}
+			\begin{itemize}
+				\item \textbf{Mobile robotics} problems:
+				\begin{itemize}
+					\item \textbf{Localization}
+					\item \textbf{Mapping}
+					\item Simultaneous localization and mapping (\textbf{SLAM})
+				\end{itemize}
+				\item Types of OS problems:
+				\begin{itemize}
+					\item The \textbf{map} and the \textbf{probability distribution} are \textbf{known}
+					\item The \textbf{map} is \textbf{known}		
+				\end{itemize}
+			\end{itemize}
+		\column{0.45\textwidth}
+	\end{columns}	
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Problems involved in this work}
+	\begin{columns}[T]
+		\column{0.55\textwidth}
+			\begin{itemize}
+				\item \textbf{Mobile robotics} problems:
+				\begin{itemize}
+					\item \textbf{Localization}
+					\item \textbf{Mapping}
+					\item Simultaneous localization and mapping (\textbf{SLAM})
+				\end{itemize}
+				\item Types of OS problems:
+				\begin{itemize}
+					\item The \textbf{map} and the \textbf{probability distribution} are \textbf{known}
+					\item The \textbf{map} is \textbf{known}
+					\item The \textbf{map} and the \textbf{probability distribution} are \textbf{unknown}			
+				\end{itemize}
+			\end{itemize}
+		\column{0.45\textwidth}
+			\centering
+			\begin{figure}
+				 \includegraphics[width=.55\linewidth]{figs/localization.png}
+				 \caption{\tiny Vacuum cleaner robot in operation.\footnotemark[5]}			 		 
+	         \end{figure}			
+	\end{columns}	
+	\footnotetext[5]{\tiny Extracted from \textit{youtube.com/watch?v=5O8VmDiab3w}}			
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================

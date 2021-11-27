@@ -35,8 +35,8 @@
 \section{Introduction} 
 \input{files/introducao.tex}
 
-\section{Justificativa}
-\input{files/justificativa.tex}
+\section{Theoretical Background}
+\input{files/background.tex}
 
 \section{Objetivos}
 \input{files/objetivos.tex}
