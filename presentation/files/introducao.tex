@@ -202,7 +202,7 @@
 					\item Does not distinguish obstacles
 					\item Insufficient for high-level tasks
 				\end{itemize}				
-				\item How to overcome these limitations?
+				\item How to \textbf{overcome} these \textbf{limitations}?
 			\end{itemize}
 		
 		\column{0.4\textwidth}	
@@ -229,14 +229,15 @@
 %========================================== ############# ======================================================
 \begin{frame}{Expand the geometric perception}
 	\begin{columns}[T]
-		\column{0.6\textwidth}
+		\column{0.55\textwidth}
+		\vspace{.7cm}
 		\begin{itemize}[<+->]
-			\item \textbf{Associate meaning} to the parts of the \textbf{map}
-			\item \textbf{Understand} the relations between them
-			\item \textbf{Semantic} information + \textbf{semantic} map
-			\item Essential for \textbf{high-level} tasks 
+			\item \textbf{Understand} the \textbf{concepts} of parts of the \textbf{environment} ({\small {Semantic} information})		
+			\item \textbf{Associate them} to the parts of the \textbf{map} ({\small {Semantic} mapping})
+			\item Enhance robot's autonomy and robustness, \textbf{facilitate} more \textbf{complex tasks}
+			\item Essential for \textbf{high-level reasoning}
 		\end{itemize}
-		\column{0.4\textwidth}	
+		\column{0.45\textwidth}	
 			\centering
 			\begin{figure}
 			    \begin{subfigure}[b]{.7\columnwidth}
@@ -258,12 +259,55 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
+\begin{frame}{Hypothesis}
+\centering
 
+\textcolor{red}{\textit{\textbf{Semantic information} associated with the \textbf{spatial} and \textbf{temporal organization} of the environment help mobile robotics to \textbf{overcome} the \textbf{limitations} to deal with \textbf{high-level tasks}.}}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Semantic information within mobile robotics}
+	\begin{itemize}[<+->]
+		\item \textbf{Which} type of \textbf{semantic information} is \textbf{relevant} to the \textbf{task}?
+		\item \textbf{How} to perform the \textbf{inference/estimation} of the semantic information?
+		\item \textbf{How} to \textbf{use} the \textbf{semantic information} to improve the \textbf{robot's performance}?
+		\item We \textbf{investigate} this questions in the context of a \textbf{high-level task}: \textbf{object search} (OS)
+	\end{itemize}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Object search (OS) task}
+	\begin{itemize}[<+->]
+		\item Involves SLAM, path planning, and object recognition	
+		\item The robot looks for a target object in an unknown environment
+		\item The robot's perception is crucial
+		\item We complement the robot's perception by inferring semantic information from:
+		\begin{itemize}
+			\item text
+			\item dynamic obstacles
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Object search (OS) task}
+	\begin{itemize}[<+->]
+		\item Types of OS:
+		\begin{itemize}[<+->]
+			\item The map and the probability distribution are known
+			\item The map is known
+			\item The map and the probability distribution are unknown			
+		\end{itemize}
+	\end{itemize}
+\end{frame}
 %\begin{frame}{First years of robotics}
 %	\begin{columns}
 %		\column{0.5\textwidth}
 %		\begin{itemize}
-%			\item<+-> First decades of mobile robotics
+%			\item<+-> First decades of mobile roboticsff
 %			\begin{itemize}
 %				\item<+-> Lorem ipsum dolor sit amet, consectetur adipiscing elit			
 %				\begin{itemize}
