@@ -1,6 +1,7 @@
 \begin{frame}{Problems involved in this work}
 	\begin{columns}[T]
 		\column{0.55\textwidth}
+			\vspace{.99cm}
 			\begin{itemize}
 				\item \textbf{Mobile robotics} problems:
 				\begin{itemize}[<+->]
@@ -19,7 +20,7 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}{Problems involved in this work}
+\begin{frame}[noframenumbering]{Problems involved in this work}
 	\begin{columns}[T]
 		\column{0.55\textwidth}
 			\begin{itemize}
@@ -41,9 +42,10 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}{Problems involved in this work}
+\begin{frame}[noframenumbering]{Problems involved in this work}
 	\begin{columns}[T]
 		\column{0.55\textwidth}
+			\vspace{-.15cm}
 			\begin{itemize}
 				\item \textbf{Mobile robotics} problems:
 				\begin{itemize}
@@ -64,9 +66,10 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}{Problems involved in this work}
+\begin{frame}[noframenumbering]{Problems involved in this work}
 	\begin{columns}[T]
-		\column{0.55\textwidth}
+		\column{1\textwidth}
+			\vspace{-.82cm}		
 			\begin{itemize}
 				\item \textbf{Mobile robotics} problems:
 				\begin{itemize}
@@ -79,15 +82,16 @@
 					\item The \textbf{map} and the \textbf{probability distribution} are \textbf{known}		
 				\end{itemize}
 			\end{itemize}
-
-	\end{columns}	
+		\column{0.0\textwidth}
+	\end{columns}			
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}{Problems involved in this work}
+\begin{frame}[noframenumbering]{Problems involved in this work}
 	\begin{columns}[T]
-		\column{0.55\textwidth}
+		\column{1\textwidth}
+			\vspace{-.5571cm}				
 			\begin{itemize}
 				\item \textbf{Mobile robotics} problems:
 				\begin{itemize}
@@ -101,15 +105,16 @@
 					\item The \textbf{map} is \textbf{known}		
 				\end{itemize}
 			\end{itemize}
-		\column{0.45\textwidth}
+		\column{0.0\textwidth}
 	\end{columns}	
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}{Problems involved in this work}
+\begin{frame}[noframenumbering]{Problems involved in this work}
 	\begin{columns}[T]
-		\column{0.55\textwidth}
+		\column{1\textwidth}
+			\vspace{-.52cm}				
 			\begin{itemize}
 				\item \textbf{Mobile robotics} problems:
 				\begin{itemize}
@@ -124,14 +129,8 @@
 					\item The \textbf{map} and the \textbf{probability distribution} are \textbf{unknown}			
 				\end{itemize}
 			\end{itemize}
-		\column{0.45\textwidth}
-			\centering
-			\begin{figure}
-				 \includegraphics[width=.55\linewidth]{figs/localization.png}
-				 \caption{\tiny Vacuum cleaner robot in operation.\footnotemark[5]}			 		 
-	         \end{figure}			
+		\column{0.0\textwidth}		
 	\end{columns}	
-	\footnotetext[5]{\tiny Extracted from \textit{youtube.com/watch?v=5O8VmDiab3w}}			
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
