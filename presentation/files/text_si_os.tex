@@ -1,0 +1,248 @@
+\begin{frame}
+\centering
+\textcolor{red}{\textit{\textbf{Text} as \textbf{source} of \textbf{semantic information} for visual \textbf{object search} in large and \textbf{unknown environments}}}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Introduction}
+	\begin{itemize}[<+->]
+		\item Humans and robots in the context of OS
+		\item Courier robot in a large-scale unknown building
+		\item Search strategy plays an important role
+		\item Semantic information may be useful: search cues
+		\item Level of abstraction of the environment
+	\end{itemize}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Proposal and contributions}
+	\begin{itemize}[<+->]
+		\item Semantic OS system for indoor environment
+		\item It searches for a specific door sign (goal-door)
+		\item It was evaluated in simulated and real indoor environments, compared against other OS systems and humans
+		\item The novelties of this work:
+		\begin{itemize}[<+->]
+			\item Target object and scenario
+			\item Textual information and organization of the environment
+			\item Analysis that highlights the advantages of the use of semantic information
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{System Overview}
+	\begin{itemize}[<+->]
+		\item Our system is composed by:
+		\begin{itemize}[<+->]
+			\item Mapping 
+			\item Image Processing
+			\item Map Segmentation
+			\item Semantic Planner
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Mapping module}
+	\begin{itemize}[<+->]
+		\item A 2D grid map is build ({\tiny Simulation and real worlds})
+		\item Voronoi diagram 
+		\item Visited regions
+		\item Boundary Value Problem (BVP)
+	\end{itemize}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Map Segmentation module}
+	\begin{itemize}[<+->]
+		\item Simultaneously to the Mapping module
+		\item Divides the map based on the free space
+		\item Kernel Density Estimation (KDE)
+		\item An abstraction of the 2D grid map for grouping the detected door signs
+	\end{itemize}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Image Processing module}
+	\begin{itemize}[<+->]
+		\item Optical character recognition (OCR)
+		\item Recognize the number of door signs in RGB images
+		\item We use the work proposed by XXXXX
+		\item The recognized numbers are associated to the map segments
+	\end{itemize}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Semantic Planner module}
+	\begin{itemize}[<+->]
+		\item The core of our semantic OS system
+		\item It estimates which regions are more promising to find the goal-door
+		\item It is composed of five different factors:
+		\begin{itemize}[<+->]
+			\item Growing Direction
+			\item Parity
+			\item Doors Orientation
+			\item Robot Orientation
+			\item Distance			
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Growing Direction}
+	\begin{columns}[T]
+		\column{0.55\textwidth}
+		\begin{itemize}[<+->]
+			\item The 
+		\end{itemize}
+		\column{0.55\textwidth}
+	\end{columns}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Parity}
+	\begin{columns}[T]
+		\column{0.55\textwidth}
+		\begin{itemize}[<+->]
+			\item The 
+		\end{itemize}
+		\column{0.55\textwidth}
+	\end{columns}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Door and Robot Orientations}
+	\begin{columns}[T]
+		\column{0.55\textwidth}
+		\begin{itemize}[<+->]
+			\item The 
+		\end{itemize}
+		\column{0.55\textwidth}
+	\end{columns}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Distance}
+	\begin{columns}[T]
+		\column{0.55\textwidth}
+		\begin{itemize}[<+->]
+			\item The 
+		\end{itemize}
+		\column{0.55\textwidth}
+	\end{columns}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Experiments and Results}
+	\begin{columns}[T]
+		\column{0.55\textwidth}
+		\begin{itemize}[<+->]
+			\item Simulated experiment setup
+			\item Maps:
+			\begin{itemize}[<+->]
+				\item Normal
+				\item Inverse
+				\item Hotel
+				\item KTH
+			\end{itemize}
+			\item Greedy OS system
+		\end{itemize}
+		\column{0.55\textwidth}
+	\end{columns}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Experiments and Results}
+	\begin{columns}[T]
+		\column{0.55\textwidth}
+		\begin{itemize}[<+->]
+			\item Normal map
+		\end{itemize}
+		\column{0.55\textwidth}
+	\end{columns}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Experiments and Results}
+	\begin{columns}[T]
+		\column{0.55\textwidth}
+		\begin{itemize}[<+->]
+			\item Inverse map
+		\end{itemize}
+		\column{0.55\textwidth}
+	\end{columns}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Experiments and Results}
+	\begin{columns}[T]
+		\column{0.55\textwidth}
+		\begin{itemize}[<+->]
+			\item Hotel map
+		\end{itemize}
+		\column{0.55\textwidth}
+	\end{columns}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Experiments and Results}
+	\begin{columns}[T]
+		\column{0.55\textwidth}
+		\begin{itemize}[<+->]
+			\item KTH map
+		\end{itemize}
+		\column{0.55\textwidth}
+	\end{columns}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Experiments and Results}
+	\begin{columns}[T]
+		\column{0.55\textwidth}
+		\begin{itemize}[<+->]
+			\item Human participants in OS task
+		\end{itemize}
+		\column{0.55\textwidth}
+	\end{columns}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Experiments and Results}
+	\begin{columns}[T]
+		\column{0.55\textwidth}
+		\begin{itemize}[<+->]
+			\item Physical Robot
+		\end{itemize}
+		\column{0.55\textwidth}
+	\end{columns}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Conclusions}
+	\begin{columns}[T]
+		\column{0.55\textwidth}
+		\begin{itemize}[<+->]
+			\item t
+		\end{itemize}
+		\column{0.55\textwidth}
+	\end{columns}
+\end{frame}
