@@ -43,11 +43,15 @@
 %\section{Objetivos}
 %\input{files/objetivos.tex}
 
-\section{Fundamentação Teórica}
-\input{files/fundamentacao.tex}
+\section{Semi dynamic objects and OS}
+\input{files/temporal_si_os.tex}
+%\section{Fundamentação Teórica}
+%\input{files/fundamentacao.tex}
 
-\section{Metodologia}
-\input{files/metodologia.tex}
+\section{Discussion and Thesis progress}
+\input{files/thesis_progress.tex}
+%\section{Metodologia}
+%\input{files/metodologia.tex}
 
 \section{Resultados}
 \input{files/resultados.tex}

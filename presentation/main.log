@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.7)  29 NOV 2021 01:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.7)  30 NOV 2021 01:29
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1062,26 +1062,7 @@ Package caption Info: Hyperref support is turned off
 )
 \c@subfigure=\count161
 \c@subtable=\count162
-)
-
-! LaTeX Error: Option clash for package xcolor.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.10 
-     
-The package xcolor has already been loaded with options:
-  []
-There has now been an attempt to load it with options
-  [dvipsnames]
-Adding the global options:
-  ,dvipsnames
-to your \documentclass declaration may fix this.
-Try typing  <return>  to proceed.
-
-) (./main.aux)
+)) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
@@ -1651,114 +1632,282 @@ Overfull \hbox (21.43698pt too wide) detected at line 144
 [77
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 164
+Overfull \hbox (21.43698pt too wide) detected at line 158
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [78
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 164
+Overfull \hbox (21.43698pt too wide) detected at line 158
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [79
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 164
+Overfull \hbox (21.43698pt too wide) detected at line 158
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [80
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 164
+Overfull \hbox (21.43698pt too wide) detected at line 178
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [81
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 164
+Overfull \hbox (21.43698pt too wide) detected at line 178
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [82
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 164
+Overfull \hbox (21.43698pt too wide) detected at line 178
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [83
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 164
+Overfull \hbox (21.43698pt too wide) detected at line 178
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [84
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 176
+Overfull \hbox (21.43698pt too wide) detected at line 178
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [85
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 188
+Overfull \hbox (21.43698pt too wide) detected at line 178
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [86
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 200
+Overfull \hbox (21.43698pt too wide) detected at line 178
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [87
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 212
+Overfull \hbox (21.43698pt too wide) detected at line 190
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [88
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 224
+Overfull \hbox (21.43698pt too wide) detected at line 202
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [89
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 236
+Overfull \hbox (21.43698pt too wide) detected at line 214
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [90
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 248
+Overfull \hbox (21.43698pt too wide) detected at line 226
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [91
 
-]) (./files/fundamentacao.tex [92
+]
+Overfull \hbox (21.43698pt too wide) detected at line 238
+[][][] [][][][][][][][][] [][][][][][][] 
+ []
 
-] [93
-
-]) (./files/metodologia.tex [94
-
-])
-(./files/resultados.tex [95
+[92
 
 ]
-<figs/river.jpg, id=2686, 2569.6pt x 1606.0pt>
+Overfull \hbox (21.43698pt too wide) detected at line 250
+[][][] [][][][][][][][][] [][][][][][][] 
+ []
+
+[93
+
+]
+Overfull \hbox (21.43698pt too wide) detected at line 269
+[][][] [][][][][][][][][] [][][][][][][] 
+ []
+
+[94
+
+]
+Overfull \hbox (21.43698pt too wide) detected at line 269
+[][][] [][][][][][][][][] [][][][][][][] 
+ []
+
+[95
+
+]
+Overfull \hbox (21.43698pt too wide) detected at line 269
+[][][] [][][][][][][][][] [][][][][][][] 
+ []
+
+[96
+
+]
+Overfull \hbox (21.43698pt too wide) detected at line 269
+[][][] [][][][][][][][][] [][][][][][][] 
+ []
+
+[97
+
+]
+Overfull \hbox (21.43698pt too wide) detected at line 269
+[][][] [][][][][][][][][] [][][][][][][] 
+ []
+
+[98
+
+]
+Overfull \hbox (21.43698pt too wide) detected at line 269
+[][][] [][][][][][][][][] [][][][][][][] 
+ []
+
+[99
+
+]) (./files/temporal_si_os.tex [100
+
+] [101
+
+] [102
+
+] [103
+
+] [104
+
+] [105
+
+] [106
+
+]
+[107
+
+] [108
+
+] [109
+
+] [110
+
+] [111
+
+] [112
+
+] [113
+
+] [114
+
+] [115
+
+] [116
+
+] [117
+
+] [118
+
+]
+[119
+
+] [120
+
+] [121
+
+] [122
+
+] [123
+
+] [124
+
+] [125
+
+] [126
+
+] [127
+
+] [128
+
+] [129
+
+] [130
+
+]
+[131
+
+] [132
+
+] [133
+
+] [134
+
+] [135
+
+] [136
+
+] [137
+
+] [138
+
+] [139
+
+] [140
+
+] [141
+
+] [142
+
+]
+[143
+
+] [144
+
+]) (./files/thesis_progress.tex [145
+
+] [146
+
+] [147
+
+] [148
+
+] [149
+
+]
+[150
+
+] [151
+
+] [152
+
+] [153
+
+] [154
+
+] [155
+
+] [156
+
+]) (./files/resultados.tex [157
+
+]
+<figs/river.jpg, id=4386, 2569.6pt x 1606.0pt>
 File: figs/river.jpg Graphic file (type jpg)
 <use figs/river.jpg>
 Package pdftex.def Info: figs/river.jpg  used on input line 25.
@@ -1767,17 +1916,17 @@ Package pdftex.def Info: figs/river.jpg  used on input line 25.
 Overfull \vbox (21.42616pt too high) detected at line 25
  []
 
-[96
+[158
 
- <./figs/river.jpg>]) (./files/conclusao.tex [97
+ <./figs/river.jpg>]) (./files/conclusao.tex [159
 
-]) [98
+]) [160
 
 ] (./main.bbl)
-[99
+[161
 
  </usr/share/texlive/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
-[100
+[162
 
 ]
 \tf@nav=\write6
@@ -1789,26 +1938,26 @@ Overfull \vbox (21.42616pt too high) detected at line 25
 \tf@snm=\write8
 \openout8 = `main.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 81.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 81.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 85.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 85.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 81.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 81.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 85.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 85.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C2F4AF5F9D6FA35ABCCB4C54AC4CF58A;353.
+(rerunfilecheck)             Checksum: A7C4BF8FF15600851BCA9C3B381A04E2;369.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 19620 strings out of 492982
- 367437 string characters out of 6134896
+ 19729 strings out of 492982
+ 367610 string characters out of 6134896
  446496 words of memory out of 5000000
- 22481 multiletter control sequences out of 15000+600000
+ 22466 multiletter control sequences out of 15000+600000
  17383 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,19n,58p,771b,929s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,16n,58p,771b,929s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/tex
@@ -1818,10 +1967,10 @@ dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (100 pages, 3603325 bytes).
+Output written on main.pdf (162 pages, 3726312 bytes).
 PDF statistics:
- 2913 PDF objects out of 2984 (max. 8388607)
- 2738 compressed objects within 28 object streams
- 209 named destinations out of 1000 (max. 500000)
- 184 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4636 PDF objects out of 5155 (max. 8388607)
+ 4385 compressed objects within 44 object streams
+ 333 named destinations out of 1000 (max. 500000)
+ 172 words of extra memory for PDF output out of 10000 (max. 10000000)
 
