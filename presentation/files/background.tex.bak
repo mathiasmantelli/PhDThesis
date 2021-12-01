@@ -1,3 +1,11 @@
+\begin{frame}{Theoretical background}
+\centering
+
+\textcolor{red}{\textit{The basics of Mobile Robotics and the Object Search problem}}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
 \begin{frame}{Problems involved in this work}
 	\begin{columns}[T]
 		\column{0.55\textwidth}
@@ -68,7 +76,7 @@
 %========================================== ############# ======================================================
 \begin{frame}[noframenumbering]{Problems involved in this work}
 	\begin{columns}[T]
-		\column{1\textwidth}
+		\column{.55\textwidth}
 			\vspace{-.82cm}		
 			\begin{itemize}
 				\item \textbf{Mobile robotics} problems:
@@ -82,7 +90,12 @@
 					\item The \textbf{map} and the \textbf{probability distribution} are \textbf{known}		
 				\end{itemize}
 			\end{itemize}
-		\column{0.0\textwidth}
+		\column{0.45\textwidth}
+			\centering
+			\begin{figure}
+				 \includegraphics[width=1\linewidth]{figs/os_map_distribution_known.png}
+				 \caption{\tiny Mapping with position indexed by odometry.\footnotemark[8]}			 		 
+	         \end{figure}	
 	\end{columns}			
 \end{frame}
 %========================================== ############# ======================================================
@@ -90,8 +103,8 @@
 %========================================== ############# ======================================================
 \begin{frame}[noframenumbering]{Problems involved in this work}
 	\begin{columns}[T]
-		\column{1\textwidth}
-			\vspace{-.5571cm}				
+		\column{.55\textwidth}
+			\vspace{-.5488cm}				
 			\begin{itemize}
 				\item \textbf{Mobile robotics} problems:
 				\begin{itemize}
@@ -105,7 +118,12 @@
 					\item The \textbf{map} is \textbf{known}		
 				\end{itemize}
 			\end{itemize}
-		\column{0.0\textwidth}
+		\column{0.45\textwidth}
+			\centering
+			\begin{figure}
+				 \includegraphics[width=1\linewidth]{figs/os_map_known.png}
+				 \caption{\tiny Mapping with position indexed by odometry.\footnotemark[8]}			 		 
+	         \end{figure}	
 	\end{columns}	
 \end{frame}
 %========================================== ############# ======================================================
@@ -113,8 +131,8 @@
 %========================================== ############# ======================================================
 \begin{frame}[noframenumbering]{Problems involved in this work}
 	\begin{columns}[T]
-		\column{1\textwidth}
-			\vspace{-.52cm}				
+		\column{.55\textwidth}
+			\vspace{-.265cm}				
 			\begin{itemize}
 				\item \textbf{Mobile robotics} problems:
 				\begin{itemize}
@@ -124,12 +142,17 @@
 				\end{itemize}
 				\item Types of OS problems:
 				\begin{itemize}
-					\item The \textbf{map} and the \textbf{probability distribution} are \textbf{known}
-					\item The \textbf{map} is \textbf{known}
-					\item The \textbf{map} and the \textbf{probability distribution} are \textbf{unknown}			
+					\item The \textbf{map} and the \textbf{probability distribution} are \textbf{known} %os_map_distribution_known.png
+					\item The \textbf{map} is \textbf{known} %os_map_known.png
+					\item The \textbf{map} and the \textbf{probability distribution} are \textbf{unknown} %os_map_distribution_unknown.png
 				\end{itemize}
 			\end{itemize}
-		\column{0.0\textwidth}		
+		\column{0.45\textwidth}
+			\centering
+			\begin{figure}
+				 \includegraphics[width=1\linewidth]{figs/os_map_distribution_unknown.png}
+				 \caption{\tiny Mapping with position indexed by odometry.\footnotemark[8]}			 		 
+	         \end{figure}		
 	\end{columns}	
 \end{frame}
 %========================================== ############# ======================================================

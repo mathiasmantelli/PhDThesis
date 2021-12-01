@@ -235,7 +235,7 @@
 			\item \textbf{Understand} the \textbf{concepts} of parts of the \textbf{environment} ({\small {Semantic} information})		
 			\item \textbf{Associate them} to the parts of the \textbf{map} ({\small {Semantic} mapping})
 			\item Enhance robot's autonomy and robustness, \textbf{facilitate} more \textbf{complex tasks}
-			\item Essential for \textbf{high-level reasoning}
+			\item Essential for \textbf{high-level reasoning} and \textbf{human-robot interaction}
 		\end{itemize}
 		\column{0.45\textwidth}	
 			\centering
@@ -259,6 +259,33 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
+\begin{frame}{Semantic in the robotics field}
+	Amount of publications returned by Google Scholar for the keywords ``Semantic, robotics'':
+	\begin{itemize}
+		\item until 2013: 38.600          
+		\item 2013 - 2015: +15.800
+		\item 2015 - 2017: +17.300
+		\item 2017 - 2019: +21.100
+		\item 2019 - now: +25.500
+	\end{itemize}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Semantic in the robotics field}
+	Amount of publications returned by Google Scholar for the keywords ``Semantic, robotics'':
+	\begin{itemize}
+		\item until 2013: 38.600          
+		\item 2013 - 2015: +15.800
+		\item 2015 - 2017: +17.300
+		\item 2017 - 2019: +21.100
+		\item 2019 - now: +25.500
+	\end{itemize}
+	An \textbf{evidence} of the \textbf{increasing use of semantics in robotics} by the research community
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
 \begin{frame}{Hypothesis}
 \centering
 
@@ -278,12 +305,13 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}{Object search (OS) task}
+\begin{frame}{Object search problem}
 	\begin{itemize}[<+->]
 		\item Challenging and unsolved task for robots
 		\item The robot \textbf{searches} for a \textbf{target object} in an \textbf{unknown environment}
+		\item {Computation of the \textbf{optimal solution} \textit{vs} Estimation that the current goal \textbf{is not promising}}
 		\item The robot's \textbf{perception} is \textbf{crucial}
-		\item We \textit{complement} the robot's \textbf{perception} by \textbf{inferring semantic information} from:
+		\item We \textbf{complement} the robot's \textbf{perception} by \textbf{inferring semantic information} from:
 		\begin{itemize}
 			\item Texts
 			\item Semi-dynamic obstacles

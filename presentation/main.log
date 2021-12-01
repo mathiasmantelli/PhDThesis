@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.7)  30 NOV 2021 01:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.7)  1 DEC 2021 01:18
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1467,16 +1467,16 @@ Package pdftex.def Info: figs/door_open.png  used on input line 258.
 (pdftex.def)             Requested size: 117.00327pt x 55.58176pt.
  [18
 
-]
-
-LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 266.
-
-[19
+] [19
 
 ] [20
 
-] [21
+]
+
+LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
+(Font)              using `OT1/cmss/bx/n' instead on input line 293.
+
+[21
 
 ] [22
 
@@ -1494,56 +1494,307 @@ LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
 
 ] [29
 
-]) (./files/background.tex
-<figs/localization.png, id=867, 309.3156pt x 422.5386pt>
-File: figs/localization.png Graphic file (type png)
-<use figs/localization.png>
-Package pdftex.def Info: figs/localization.png  used on input line 19.
-(pdftex.def)             Requested size: 107.2525pt x 146.51097pt.
-[30
+] [30
 
- <./figs/localization.png>]
-<figs/mapping.png, id=899, 227.6505pt x 197.538pt>
-File: figs/mapping.png Graphic file (type png)
-<use figs/mapping.png>
-Package pdftex.def Info: figs/mapping.png  used on input line 41.
-(pdftex.def)             Requested size: 87.75096pt x 76.14127pt.
- [31
+] [31
 
- <./figs/mapping.png>]
-<figs/slam.png, id=929, 227.6505pt x 126.9543pt>
-File: figs/slam.png Graphic file (type png)
-<use figs/slam.png>
-Package pdftex.def Info: figs/slam.png  used on input line 65.
-(pdftex.def)             Requested size: 117.00327pt x 65.24948pt.
- [32
+] [32
 
- <./figs/slam.png>] [33
-
-] [34
-
-] [35
-
-]) (./files/text_si_os.tex [36
-
-] [37
-
-] [38
-
-] [39
-
-] [40
-
-] [41
-
-] [42
+])
+(./files/background.tex [33
 
 ]
+<figs/localization.png, id=979, 309.3156pt x 422.5386pt>
+File: figs/localization.png Graphic file (type png)
+<use figs/localization.png>
+Package pdftex.def Info: figs/localization.png  used on input line 27.
+(pdftex.def)             Requested size: 107.2525pt x 146.51097pt.
+ [34
+
+ <./figs/localization.png>]
+<figs/mapping.png, id=1009, 227.6505pt x 197.538pt>
+File: figs/mapping.png Graphic file (type png)
+<use figs/mapping.png>
+Package pdftex.def Info: figs/mapping.png  used on input line 49.
+(pdftex.def)             Requested size: 87.75096pt x 76.14127pt.
+ [35
+
+ <./figs/mapping.png>]
+<figs/slam.png, id=1038, 227.6505pt x 126.9543pt>
+File: figs/slam.png Graphic file (type png)
+<use figs/slam.png>
+Package pdftex.def Info: figs/slam.png  used on input line 73.
+(pdftex.def)             Requested size: 117.00327pt x 65.24948pt.
+ [36
+
+ <./figs/slam.png>]
+<figs/os_map_distribution_known.png, id=1067, 148.1535pt x 89.3739pt>
+File: figs/os_map_distribution_known.png Graphic file (type png)
+<use figs/os_map_distribution_known.png>
+Package pdftex.def Info: figs/os_map_distribution_known.png  used on input line
+ 100.
+(pdftex.def)             Requested size: 195.00348pt x 117.64523pt.
+ [37
+
+ <./figs/os_map_distribution_known.png>]
+<figs/os_map_known.png, id=1097, 148.6353pt x 89.6148pt>
+File: figs/os_map_known.png Graphic file (type png)
+<use figs/os_map_known.png>
+Package pdftex.def Info: figs/os_map_known.png  used on input line 128.
+(pdftex.def)             Requested size: 195.00348pt x 117.57811pt.
+
+[38
+
+ <./figs/os_map_known.png>]
+<figs/os_map_distribution_unknown.png, id=1126, 147.9126pt x 89.133pt>
+File: figs/os_map_distribution_unknown.png Graphic file (type png)
+<use figs/os_map_distribution_unknown.png>
+Package pdftex.def Info: figs/os_map_distribution_unknown.png  used on input li
+ne 157.
+(pdftex.def)             Requested size: 195.00348pt x 117.51445pt.
+ [39
+
+ <./figs/os_map_distribution_unknown.png>])
+(./files/text_si_os.tex [40
+
+]
+<figs/traffic_sign.jpg, id=1183, 89.133pt x 129.3633pt>
+File: figs/traffic_sign.jpg Graphic file (type jpg)
+<use figs/traffic_sign.jpg>
+Package pdftex.def Info: figs/traffic_sign.jpg  used on input line 22.
+(pdftex.def)             Requested size: 97.50174pt x 141.52034pt.
+
+
+! Package inputenc Error: Unicode char ​ (U+200B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 \end{frame}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ​ (U+200B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 \end{frame}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[41
+
+ <./figs/traffic_sign.jpg>]
+<figs/corridor_door_signs.jpg, id=1211, 566.115pt x 365.365pt>
+File: figs/corridor_door_signs.jpg Graphic file (type jpg)
+<use figs/corridor_door_signs.jpg>
+Package pdftex.def Info: figs/corridor_door_signs.jpg  used on input line 51.
+(pdftex.def)             Requested size: 86.66748pt x 55.93411pt.
+<figs/lift_robot.png, id=1212, 1927.2pt x 1084.05pt>
+File: figs/lift_robot.png Graphic file (type png)
+<use figs/lift_robot.png>
+Package pdftex.def Info: figs/lift_robot.png  used on input line 51.
+(pdftex.def)             Requested size: 86.66748pt x 48.74706pt.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.51 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<recently read> \egroup 
+                        
+l.51 \end{frame}
+                
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.51 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.51 \end{frame}
+                
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[42
+
+ <./figs/corridor_door_signs.jpg> <./figs/lift_robot.png>]
+File: figs/corridor_door_signs.jpg Graphic file (type jpg)
+<use figs/corridor_door_signs.jpg>
+Package pdftex.def Info: figs/corridor_door_signs.jpg  used on input line 81.
+(pdftex.def)             Requested size: 86.66748pt x 55.93411pt.
+File: figs/lift_robot.png Graphic file (type png)
+<use figs/lift_robot.png>
+Package pdftex.def Info: figs/lift_robot.png  used on input line 81.
+(pdftex.def)             Requested size: 86.66748pt x 48.74706pt.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.81 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<recently read> \egroup 
+                        
+l.81 \end{frame}
+                
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.81 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.81 \end{frame}
+                
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
 [43
 
-] [44
+]
+File: figs/corridor_door_signs.jpg Graphic file (type jpg)
+<use figs/corridor_door_signs.jpg>
+Package pdftex.def Info: figs/corridor_door_signs.jpg  used on input line 112.
+(pdftex.def)             Requested size: 86.66748pt x 55.93411pt.
+File: figs/lift_robot.png Graphic file (type png)
+<use figs/lift_robot.png>
+Package pdftex.def Info: figs/lift_robot.png  used on input line 112.
+(pdftex.def)             Requested size: 86.66748pt x 48.74706pt.
 
-] [45
+! Missing $ inserted.
+<inserted text> 
+                $
+l.112 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<recently read> \egroup 
+                        
+l.112 \end{frame}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.112 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.112 \end{frame}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[44
+
+]
+File: figs/corridor_door_signs.jpg Graphic file (type jpg)
+<use figs/corridor_door_signs.jpg>
+Package pdftex.def Info: figs/corridor_door_signs.jpg  used on input line 144.
+(pdftex.def)             Requested size: 86.66748pt x 55.93411pt.
+File: figs/lift_robot.png Graphic file (type png)
+<use figs/lift_robot.png>
+Package pdftex.def Info: figs/lift_robot.png  used on input line 144.
+(pdftex.def)             Requested size: 86.66748pt x 48.74706pt.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.144 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<recently read> \egroup 
+                        
+l.144 \end{frame}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.144 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.144 \end{frame}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[45
 
 ] [46
 
@@ -1569,12 +1820,12 @@ Package pdftex.def Info: figs/slam.png  used on input line 65.
 
 ] [57
 
-]
-[58
+] [58
 
 ] [59
 
-] [60
+]
+[60
 
 ] [61
 
@@ -1600,207 +1851,206 @@ Package pdftex.def Info: figs/slam.png  used on input line 65.
 
 ] [72
 
-]
-[73
+] [73
+
+] [74
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 108
-[][][] [][][][][][][][][] [][][][][][][] 
- []
-
-[74
-
-]
-Overfull \hbox (21.43698pt too wide) detected at line 120
-[][][] [][][][][][][][][] [][][][][][][] 
- []
-
 [75
 
-]
-Overfull \hbox (21.43698pt too wide) detected at line 132
-[][][] [][][][][][][][][] [][][][][][][] 
- []
+] [76
 
-[76
+] [77
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 144
-[][][] [][][][][][][][][] [][][][][][][] 
- []
-
-[77
-
-]
-Overfull \hbox (21.43698pt too wide) detected at line 158
+Overfull \hbox (21.43698pt too wide) detected at line 236
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [78
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 158
+Overfull \hbox (21.43698pt too wide) detected at line 248
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [79
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 158
+Overfull \hbox (21.43698pt too wide) detected at line 260
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [80
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 178
+Overfull \hbox (21.43698pt too wide) detected at line 272
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [81
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 178
+Overfull \hbox (21.43698pt too wide) detected at line 286
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [82
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 178
+Overfull \hbox (21.43698pt too wide) detected at line 286
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [83
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 178
+Overfull \hbox (21.43698pt too wide) detected at line 286
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [84
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 178
+Overfull \hbox (21.43698pt too wide) detected at line 306
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [85
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 178
+Overfull \hbox (21.43698pt too wide) detected at line 306
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [86
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 178
+Overfull \hbox (21.43698pt too wide) detected at line 306
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [87
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 190
+Overfull \hbox (21.43698pt too wide) detected at line 306
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [88
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 202
+Overfull \hbox (21.43698pt too wide) detected at line 306
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [89
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 214
+Overfull \hbox (21.43698pt too wide) detected at line 306
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [90
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 226
+Overfull \hbox (21.43698pt too wide) detected at line 306
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [91
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 238
+Overfull \hbox (21.43698pt too wide) detected at line 318
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [92
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 250
+Overfull \hbox (21.43698pt too wide) detected at line 330
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [93
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 269
+Overfull \hbox (21.43698pt too wide) detected at line 342
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [94
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 269
+Overfull \hbox (21.43698pt too wide) detected at line 354
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [95
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 269
+Overfull \hbox (21.43698pt too wide) detected at line 366
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [96
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 269
+Overfull \hbox (21.43698pt too wide) detected at line 378
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [97
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 269
+Overfull \hbox (21.43698pt too wide) detected at line 397
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [98
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 269
+Overfull \hbox (21.43698pt too wide) detected at line 397
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [99
 
-]) (./files/temporal_si_os.tex [100
+]
+Overfull \hbox (21.43698pt too wide) detected at line 397
+[][][] [][][][][][][][][] [][][][][][][] 
+ []
 
-] [101
+[100
 
-] [102
+]
+Overfull \hbox (21.43698pt too wide) detected at line 397
+[][][] [][][][][][][][][] [][][][][][][] 
+ []
 
-] [103
+[101
 
-] [104
+]
+Overfull \hbox (21.43698pt too wide) detected at line 397
+[][][] [][][][][][][][][] [][][][][][][] 
+ []
+
+[102
+
+]
+Overfull \hbox (21.43698pt too wide) detected at line 397
+[][][] [][][][][][][][][] [][][][][][][] 
+ []
+
+[103
+
+]) (./files/temporal_si_os.tex [104
 
 ] [105
 
 ] [106
 
-]
-[107
+] [107
 
 ] [108
 
@@ -1808,7 +2058,8 @@ Overfull \hbox (21.43698pt too wide) detected at line 269
 
 ] [110
 
-] [111
+]
+[111
 
 ] [112
 
@@ -1824,8 +2075,7 @@ Overfull \hbox (21.43698pt too wide) detected at line 269
 
 ] [118
 
-]
-[119
+] [119
 
 ] [120
 
@@ -1833,7 +2083,8 @@ Overfull \hbox (21.43698pt too wide) detected at line 269
 
 ] [122
 
-] [123
+]
+[123
 
 ] [124
 
@@ -1849,8 +2100,7 @@ Overfull \hbox (21.43698pt too wide) detected at line 269
 
 ] [130
 
-]
-[131
+] [131
 
 ] [132
 
@@ -1858,7 +2108,8 @@ Overfull \hbox (21.43698pt too wide) detected at line 269
 
 ] [134
 
-] [135
+]
+[135
 
 ] [136
 
@@ -1874,23 +2125,22 @@ Overfull \hbox (21.43698pt too wide) detected at line 269
 
 ] [142
 
-]
-[143
+] [143
 
 ] [144
 
-]) (./files/thesis_progress.tex [145
+] [145
 
 ] [146
 
-] [147
+]
+[147
 
 ] [148
 
-] [149
+]) (./files/thesis_progress.tex [149
 
-]
-[150
+] [150
 
 ] [151
 
@@ -1898,16 +2148,25 @@ Overfull \hbox (21.43698pt too wide) detected at line 269
 
 ] [153
 
-] [154
+]
+[154
 
 ] [155
 
 ] [156
 
-]) (./files/resultados.tex [157
+] [157
+
+] [158
+
+] [159
+
+] [160
+
+]) (./files/resultados.tex [161
 
 ]
-<figs/river.jpg, id=4386, 2569.6pt x 1606.0pt>
+<figs/river.jpg, id=4507, 2569.6pt x 1606.0pt>
 File: figs/river.jpg Graphic file (type jpg)
 <use figs/river.jpg>
 Package pdftex.def Info: figs/river.jpg  used on input line 25.
@@ -1916,17 +2175,17 @@ Package pdftex.def Info: figs/river.jpg  used on input line 25.
 Overfull \vbox (21.42616pt too high) detected at line 25
  []
 
-[158
+[162
 
- <./figs/river.jpg>]) (./files/conclusao.tex [159
+ <./figs/river.jpg>]) (./files/conclusao.tex [163
 
-]) [160
+]) [164
 
 ] (./main.bbl)
-[161
+[165
 
  </usr/share/texlive/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
-[162
+[166
 
 ]
 \tf@nav=\write6
@@ -1951,26 +2210,27 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 19729 strings out of 492982
- 367610 string characters out of 6134896
+ 19791 strings out of 492982
+ 368945 string characters out of 6134896
  446496 words of memory out of 5000000
- 22466 multiletter control sequences out of 15000+600000
+ 22514 multiletter control sequences out of 15000+600000
  17383 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,16n,58p,771b,929s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (162 pages, 3726312 bytes).
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/symbols/msam10.pfb>
+Output written on main.pdf (166 pages, 5513786 bytes).
 PDF statistics:
- 4636 PDF objects out of 5155 (max. 8388607)
- 4385 compressed objects within 44 object streams
- 333 named destinations out of 1000 (max. 500000)
- 172 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4763 PDF objects out of 5155 (max. 8388607)
+ 4496 compressed objects within 45 object streams
+ 341 named destinations out of 1000 (max. 500000)
+ 202 words of extra memory for PDF output out of 10000 (max. 10000000)
 
