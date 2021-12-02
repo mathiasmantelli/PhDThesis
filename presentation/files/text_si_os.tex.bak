@@ -89,7 +89,7 @@
 			\item \textbf{Humans} in \textbf{daily tasks} and the importance of \textbf{texts}
 			\item Robots in the context of OS: \textbf{courier robot} 
 			\item \textbf{Search strategy} in a large-scale unknown building \textbf{plays an important role}
-			\item \textbf{Semantic information} may be useful: \textbf{search cues}
+			\item \textbf{Semantic information} may be useful: \textbf{search cues} inferred from texts
 		\end{itemize}			
 		\column{.4\textwidth}
 			\centering	
@@ -120,7 +120,7 @@
 			\item \textbf{Humans} in \textbf{daily tasks} and the importance of \textbf{texts}
 			\item Robots in the context of OS: \textbf{courier robot} 
 			\item \textbf{Search strategy} in a large-scale unknown building \textbf{plays an important role}
-			\item \textbf{Semantic information} may be useful: \textbf{search cues}
+			\item \textbf{Semantic information} may be useful: \textbf{search cues} inferred from texts
 			\item Level of \textbf{abstraction} of the \textbf{environment}
 		\end{itemize}			
 		\column{.4\textwidth}
@@ -152,9 +152,9 @@
 		\item It was evaluated in simulated and real indoor environments, compared against other OS systems and humans
 		\item The \textbf{novelties} of this work:
 		\begin{itemize}[<+->]
-			\item Target object and scenario
-			\item Textual information and organization of the environment
-			\item Analysis that highlights the advantages of the use of semantic information
+			\item \textbf{Target object} and scenario
+			\item \textbf{Textual information} and \textbf{organization of the environment}
+			\item Analysis that highlights the \textbf{advantages} of the use of \textbf{semantic information}
 		\end{itemize}
 	\end{itemize}
 \end{frame}
@@ -162,58 +162,331 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 \begin{frame}{System overview}
-	\begin{itemize}[<+->]
-		\item Our system is composed by:
-		\begin{itemize}[<+->]
-			\item Mapping 
-			\item Image Processing
-			\item Map Segmentation
-			\item Semantic Planner
+	\begin{columns}[T]
+		\column{.35\textwidth}
+		\begin{itemize}
+			\item Our system is composed by:
+			\begin{itemize}
+				\item Mapping 
+				\item Image Processing
+				\item Map Segmentation
+				\item Semantic Planner
+			\end{itemize}
 		\end{itemize}
-	\end{itemize}
-\end{frame}
+		\column{.65\textwidth}
+			\vspace{1.1cm}
+			$\Bigg\}$\textit{Foundation of our system}\\
+			$\}$ \textit{Core of the contribution}
+	\end{columns}
+\end{frame} 
 %========================================== ############# ======================================================        
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 \begin{frame}{Mapping module}
-	\begin{itemize}[<+->]
-		\item A 2D grid map is build ({\tiny Simulation and real worlds})
-		\item Voronoi diagram 
-		\item Visited regions
-		\item Boundary Value Problem (BVP)
-	\end{itemize}
+	\begin{columns}[T]
+		\column{.5\textwidth}
+		\vspace{.95cm}
+		\begin{itemize}
+			\item A 2D grid map is build ({\small Simulation and real worlds})
+		\end{itemize}
+		\column{.5\textwidth}	
+			\centering	
+			\begin{figure}
+			    \begin{subfigure}[b]{.6\columnwidth}
+			    		\centering			
+					 \includegraphics[width=.8\linewidth]{figs/2d_map_simulation.png}
+     				 \caption{\tiny Corridor and door signs.}			 		 
+			    	\end{subfigure}\\
+			    \begin{subfigure}[b]{.6\columnwidth}
+			    		\centering					    	
+			    		\includegraphics[width=.8\linewidth]{figs/2d_map_real.png}	         
+			    		\caption{\tiny Mobile robot in the lift.}					 
+			    	\end{subfigure}					 
+				 \caption{\tiny Initial works on SLAM}			 
+	         \end{figure}		         		
+	\end{columns}			
+\end{frame}
+%========================================== ############# ======================================================        
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}[noframenumbering]{Mapping module}
+	\begin{columns}[T]
+		\column{.5\textwidth}
+		\vspace{1.2cm}		
+		\begin{itemize}
+			\item A 2D grid map is build ({\small Simulation and real worlds})
+			\item Voronoi diagram 
+		\end{itemize}
+		\column{.5\textwidth}	
+			\centering	
+			\begin{figure}
+			    \begin{subfigure}[b]{.6\columnwidth}
+			    		\centering			
+					 \includegraphics[width=.8\linewidth]{figs/2d_map_voronoi_simulation.png}
+     				 \caption{\tiny Corridor and door signs.}			 		 
+			    	\end{subfigure}\\
+			    \begin{subfigure}[b]{.6\columnwidth}
+			    		\centering					    	
+			    		\includegraphics[width=.8\linewidth]{figs/2d_map_voronoi_real.png}	         
+			    		\caption{\tiny Mobile robot in the lift.}					 
+			    	\end{subfigure}					 
+				 \caption{\tiny Initial works on SLAM}			 
+	         \end{figure}		         		
+	\end{columns}			
+\end{frame}
+%========================================== ############# ======================================================        
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}[noframenumbering]{Mapping module}
+	\begin{columns}[T]
+		\column{.5\textwidth}
+		\vspace{1.2cm}		
+		\begin{itemize}
+			\item A 2D grid map is build ({\small Simulation and real worlds})
+			\item Voronoi diagram 
+			\item Visited regions
+		\end{itemize}
+		\column{.5\textwidth}	
+			\centering	
+			\begin{figure}
+			    \begin{subfigure}[b]{.6\columnwidth}
+			    		\centering			
+					 \includegraphics[width=.8\linewidth]{figs/2d_map_visited_simulation.png}
+     				 \caption{\tiny Corridor and door signs.}			 		 
+			    	\end{subfigure}\\
+			    \begin{subfigure}[b]{.6\columnwidth}
+			    		\centering					    	
+			    		\includegraphics[width=.8\linewidth]{figs/2d_map_visited_real.png}	         
+			    		\caption{\tiny Mobile robot in the lift.}					 
+			    	\end{subfigure}					 
+				 \caption{\tiny Initial works on SLAM}			 
+	         \end{figure}		         		
+	\end{columns}			
+\end{frame}
+%========================================== ############# ======================================================        
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}[noframenumbering]{Mapping module}
+	\begin{columns}[T]
+		\column{.5\textwidth}
+		\vspace{1.2cm}		
+		\begin{itemize}
+			\item A 2D grid map is build ({\small Simulation and real worlds})
+			\item Voronoi diagram 
+			\item Visited regions
+			\item Boundary Value Problem (BVP)
+		\end{itemize}
+		\column{.5\textwidth}	
+			\centering	
+			\begin{figure}
+			    \begin{subfigure}[b]{.6\columnwidth}
+			    		\centering			
+					 \includegraphics[width=.8\linewidth]{figs/2d_map_visited_simulation.png}
+     				 \caption{\tiny Corridor and door signs.}			 		 
+			    	\end{subfigure}\\
+			    \begin{subfigure}[b]{.6\columnwidth}
+			    		\centering					    	
+			    		\includegraphics[width=.8\linewidth]{figs/2d_map_visited_real.png}	         
+			    		\caption{\tiny Mobile robot in the lift.}					 
+			    	\end{subfigure}					 
+				 \caption{\tiny Initial works on SLAM}			 
+	         \end{figure}		         		
+	\end{columns}			
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 \begin{frame}{Map Segmentation module}
-	\begin{itemize}[<+->]
-		\item Simultaneously to the Mapping module
-		\item Divides the map based on the free space
-		\item Kernel Density Estimation (KDE)
-		\item An abstraction of the 2D grid map for grouping the detected door signs
-	\end{itemize}
+	\begin{columns}[T]
+		\column{.5\textwidth}
+		\begin{itemize}
+			\item Divides the map based on the free space	
+		\end{itemize}
+		\column{.5\textwidth}	
+			\centering	
+			\begin{figure}
+			    \begin{subfigure}{.4\columnwidth}		
+					 \includegraphics[width=1\linewidth]{figs/2d_map_segmented.png}
+     				 \caption{\tiny Corridor and door signs.}			 		 
+			    	\end{subfigure}
+			    \begin{subfigure}{.4\columnwidth}
+			    		\includegraphics[width=1\linewidth]{figs/2d_map_segmented_colors.png}	         
+			    		\caption{\tiny Mobile robot in the lift.}					 
+			    	\end{subfigure}					 
+				 \caption{\tiny Initial works on SLAM}			 
+	         \end{figure}		         		
+	\end{columns}		
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}[noframenumbering]{Map Segmentation module}
+	\begin{columns}[T]
+		\column{.5\textwidth}
+		\begin{itemize}
+			\item Divides the map based on the free space	
+			\item Simultaneously to the Mapping module
+		\end{itemize}
+		\column{.5\textwidth}	
+			\centering	
+			\begin{figure}
+			    \begin{subfigure}{.4\columnwidth}
+					 \includegraphics[width=1\linewidth]{figs/2d_map_segmented.png}
+     				 \caption{\tiny Corridor and door signs.}			 		 
+			    	\end{subfigure}
+			    \begin{subfigure}{.4\columnwidth}			    	
+			    		\includegraphics[width=1\linewidth]{figs/2d_map_segmented_colors.png}	         
+			    		\caption{\tiny Mobile robot in the lift.}					 
+			    	\end{subfigure}					 
+				 \caption{\tiny Initial works on SLAM}			 
+	         \end{figure}		         		
+	\end{columns}		
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}[noframenumbering]{Map Segmentation module}
+	\begin{columns}[T]
+		\column{.5\textwidth}
+		\begin{itemize}
+			\item Divides the map based on the free space	
+			\item Simultaneously to the Mapping module
+			\item Kernel Density Estimation (KDE)
+		\end{itemize}
+		\column{.5\textwidth}	
+			\centering	
+			\begin{figure}
+			    \begin{subfigure}{.4\columnwidth}
+					 \includegraphics[width=1\linewidth]{figs/2d_map_segmented.png}
+     				 \caption{\tiny Corridor and door signs.}			 		 
+			    	\end{subfigure}
+			    \begin{subfigure}{.4\columnwidth}					    	
+			    		\includegraphics[width=1\linewidth]{figs/2d_map_segmented_colors.png}	         
+			    		\caption{\tiny Mobile robot in the lift.}					 
+			    	\end{subfigure}					 
+				 \caption{\tiny Initial works on SLAM}			 
+	         \end{figure}	         		
+	\end{columns}		
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}[noframenumbering]{Map Segmentation module}
+	\begin{columns}[T]
+		\column{.5\textwidth}
+		\begin{itemize}
+			\item Divides the map based on the free space	
+			\item Simultaneously to the Mapping module
+			\item Kernel Density Estimation (KDE)
+			\item An abstraction of the 2D grid map for grouping the detected door signs
+		\end{itemize}
+		\column{.5\textwidth}	
+			\centering	
+			\begin{figure}
+			    \begin{subfigure}{.4\columnwidth}
+					 \includegraphics[width=1\linewidth]{figs/2d_map_segmented.png}
+     				 \caption{\tiny Corridor and door signs.}			 		 
+			    	\end{subfigure}
+			    \begin{subfigure}{.4\columnwidth}
+			    		\includegraphics[width=1\linewidth]{figs/2d_map_segmented_colors.png}	         
+			    		\caption{\tiny Mobile robot in the lift.}					 
+			    	\end{subfigure}					 
+				 \caption{\tiny Initial works on SLAM}			 
+	         \end{figure}	         		
+	\end{columns}		
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 \begin{frame}{Image Processing module}
-	\begin{itemize}[<+->]
-		\item Optical character recognition (OCR)
-		\item Recognize the number of door signs in RGB images
-		\item We use the work proposed by XXXXX
-		\item The recognized numbers are associated to the map segments
-	\end{itemize}
+	\begin{columns}[T]
+		\column{0.5\textwidth}
+		\begin{itemize}
+			\item Optical character recognition (OCR)
+		\end{itemize}
+		\column{0.5\textwidth}
+			\centering
+			\begin{figure}
+				 \includegraphics[width=.9\linewidth]{figs/image_processing.png}
+				 \caption{\tiny Illustration of the Markov localization algorithm.}			 		 
+	        \end{figure}			
+	\end{columns}	
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}[noframenumbering]{Image Processing module}
+	\begin{columns}[T]
+		\column{0.5\textwidth}
+		\begin{itemize}
+			\item Optical character recognition (OCR)
+			\item Recognize the number of door signs in RGB images
+		\end{itemize}
+		\column{0.5\textwidth}
+			\centering
+			\begin{figure}
+				 \includegraphics[width=.9\linewidth]{figs/image_processing.png}
+				 \caption{\tiny Illustration of the Markov localization algorithm.}			 		 
+	        \end{figure}			
+	\end{columns}	
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}[noframenumbering]{Image Processing module}
+	\begin{columns}[T]
+		\column{0.5\textwidth}
+		\begin{itemize}
+			\item Optical character recognition (OCR)
+			\item Recognize the number of door signs in RGB images
+			\item We use the work proposed by XXXXX
+		\end{itemize}
+		\column{0.5\textwidth}
+			\centering
+			\begin{figure}
+				 \includegraphics[width=.9\linewidth]{figs/image_processing.png}
+				 \caption{\tiny Illustration of the Markov localization algorithm.}			 		 
+	        \end{figure}			
+	\end{columns}	
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}[noframenumbering]{Image Processing module}
+	\begin{columns}[T]
+		\column{0.5\textwidth}
+		\begin{itemize}
+			\item Optical character recognition (OCR)
+			\item Recognize the number of door signs in RGB images
+			\item We use the work proposed by XXXXX
+			\item The recognized numbers are associated to the map segments
+		\end{itemize}
+		\column{0.5\textwidth}
+			\centering
+			\begin{figure}
+				 \includegraphics[width=.9\linewidth]{figs/image_processing.png}
+				 \caption{\tiny Illustration of the Markov localization algorithm.}			 		 
+	        \end{figure}			
+	\end{columns}	
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 \begin{frame}{Semantic Planner module}
+	\vspace{-1.4cm}	
 	\begin{itemize}[<+->]
-		\item The core of our semantic OS system
 		\item It estimates which regions are more promising to find the goal-door
 		\item It is composed of five different factors:
-		\begin{itemize}[<+->]
+	\end{itemize}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}[noframenumbering]{Semantic Planner module}
+	\begin{itemize}
+		\item It estimates which regions are more promising to find the goal-door
+		\item It is composed of five different factors:
+		\begin{itemize}
 			\item Growing Direction
 			\item Parity
 			\item Doors Orientation
@@ -225,14 +498,65 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
+\begin{frame}[noframenumbering]{Semantic Planner module}
+		\vspace{.8cm}		
+%		\hspace{.15cm}			
+	\begin{columns}			
+		\column{0.755\textwidth}		
+		\begin{itemize}
+			\item It estimates which regions are more promising to find the goal-door
+			\item It is composed of five different factors:	
+			\begin{itemize}
+				\item Growing Direction
+				\item Parity
+				\item Doors Orientation
+				\item Robot Orientation
+				\item Distance			
+			\end{itemize}
+		\end{itemize}
+		\vspace{1.25cm}		
+		\column{0.245\textwidth}		
+			\hspace{-7.6cm}					
+			$\Big\}$\textit{Semantic factors}\\
+			\vspace{0.15cm}
+			\hspace{-7.6cm}						
+			$\Bigg\}$\textit{Geometric factors}		
+	\end{columns}	
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
 \begin{frame}{Growing Direction}
 	\begin{columns}[T]
-		\column{0.55\textwidth}
-		\begin{itemize}[<+->]
-			\item The 
-		\end{itemize}
-		\column{0.55\textwidth}
+		\centering
+		\column{0.5\textwidth}
+			\begin{figure}
+				\includegraphics[width=.7\linewidth]{figs/growing_1.png}
+	         \end{figure}			
+		\column{0.5\textwidth}
+			\begin{figure}
+				\includegraphics[width=.7\linewidth]{figs/growing_2.png}	         
+			\end{figure}					
 	\end{columns}
+	\begin{columns}[T]
+		\centering
+		\column{0.5\textwidth}
+			\begin{figure}
+				\includegraphics[width=.7\linewidth]{figs/growing_3.png}
+	         \end{figure}			
+		\column{0.5\textwidth}
+			\begin{figure}
+				\includegraphics[width=.7\linewidth]{figs/growing_4.png}	         
+			\end{figure}					
+	\end{columns}	
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Growing Direction}
+	\begin{figure}
+		\includegraphics[width=.2\linewidth]{figs/growing_equation.png}	         
+	\end{figure}					
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -249,6 +573,14 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
+\begin{frame}{Parity}
+	\begin{figure}
+		\includegraphics[width=.5\linewidth]{figs/parity_equation.png}	         
+	\end{figure}					
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
 \begin{frame}{Door and Robot Orientations}
 	\begin{columns}[T]
 		\column{0.55\textwidth}
@@ -261,6 +593,15 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
+\begin{frame}{Door and Robot Orientations}
+	\begin{figure}
+		\includegraphics[width=.2\linewidth]{figs/door_orientation_equation.png}	  \\       
+		\includegraphics[width=.2\linewidth]{figs/robot_orientation_equation.png}	         		
+	\end{figure}					
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
 \begin{frame}{Distance}
 	\begin{columns}[T]
 		\column{0.55\textwidth}
@@ -269,6 +610,14 @@
 		\end{itemize}
 		\column{0.55\textwidth}
 	\end{columns}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Distance}
+	\begin{figure}
+		\includegraphics[width=.5\linewidth]{figs/distance_equation.png}	         
+	\end{figure}					
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
