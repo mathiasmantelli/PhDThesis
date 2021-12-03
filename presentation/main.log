@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.7)  2 DEC 2021 19:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.7)  3 DEC 2021 01:33
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1062,6 +1062,13 @@ Package caption Info: Hyperref support is turned off
 )
 \c@subfigure=\count161
 \c@subtable=\count162
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip71
+\multirow@cntb=\count163
+\multirow@dima=\skip72
+\bigstrutjot=\dimen267
 )) (./main.aux)
 \openout1 = `main.aux'.
 
@@ -1116,16 +1123,16 @@ LaTeX Font Info:    ... okay on input line 30.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count163
-\scratchdimen=\dimen267
+\scratchcounter=\count164
+\scratchdimen=\dimen268
 \scratchbox=\box53
-\nofMPsegments=\count164
-\nofMParguments=\count165
+\nofMPsegments=\count165
+\nofMParguments=\count166
 \everyMPshowfont=\toks45
-\MPscratchCnt=\count166
-\MPscratchDim=\dimen268
-\MPnumerator=\count167
-\makeMPintoPDFobject=\count168
+\MPscratchCnt=\count167
+\MPscratchDim=\dimen269
+\MPnumerator=\count168
+\makeMPintoPDFobject=\count169
 \everyMPtoPDFconversion=\toks46
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1154,7 +1161,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count169
+\c@section@level=\count170
 )
 LaTeX Info: Redefining \ref on input line 30.
 LaTeX Info: Redefining \pageref on input line 30.
@@ -2299,20 +2306,224 @@ Overfull \hbox (216.44048pt too wide) detected at line 1064
 
 ]) (./files/temporal_si_os.tex [101
 
-] [102
+]
+<figs/care_o_bot.png, id=3010, 164.5347pt x 82.3878pt>
+File: figs/care_o_bot.png Graphic file (type png)
+<use figs/care_o_bot.png>
+Package pdftex.def Info: figs/care_o_bot.png  used on input line 27.
+(pdftex.def)             Requested size: 175.50194pt x 87.87999pt.
 
-] [103
 
-] [104
+! Package inputenc Error: Unicode char ​ (U+200B)
+(inputenc)                not set up for use with LaTeX.
 
-] [105
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 \end{frame}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
-] [106
 
-] [107
+! Package inputenc Error: Unicode char ​ (U+200B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 \end{frame}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[102
+
+ <./figs/care_o_bot.png>]
+File: figs/care_o_bot.png Graphic file (type png)
+<use figs/care_o_bot.png>
+Package pdftex.def Info: figs/care_o_bot.png  used on input line 27.
+(pdftex.def)             Requested size: 175.50194pt x 87.87999pt.
+
+
+! Package inputenc Error: Unicode char ​ (U+200B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 \end{frame}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ​ (U+200B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 \end{frame}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[103
 
 ]
-[108
+File: figs/care_o_bot.png Graphic file (type png)
+<use figs/care_o_bot.png>
+Package pdftex.def Info: figs/care_o_bot.png  used on input line 27.
+(pdftex.def)             Requested size: 175.50194pt x 87.87999pt.
+
+
+! Package inputenc Error: Unicode char ​ (U+200B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 \end{frame}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ​ (U+200B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 \end{frame}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[104
+
+]
+File: figs/care_o_bot.png Graphic file (type png)
+<use figs/care_o_bot.png>
+Package pdftex.def Info: figs/care_o_bot.png  used on input line 27.
+(pdftex.def)             Requested size: 175.50194pt x 87.87999pt.
+
+
+! Package inputenc Error: Unicode char ​ (U+200B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 \end{frame}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ​ (U+200B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 \end{frame}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[105
+
+]
+File: figs/care_o_bot.png Graphic file (type png)
+<use figs/care_o_bot.png>
+Package pdftex.def Info: figs/care_o_bot.png  used on input line 27.
+(pdftex.def)             Requested size: 175.50194pt x 87.87999pt.
+
+
+! Package inputenc Error: Unicode char ​ (U+200B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 \end{frame}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ​ (U+200B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 \end{frame}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[106
+
+]
+File: figs/care_o_bot.png Graphic file (type png)
+<use figs/care_o_bot.png>
+Package pdftex.def Info: figs/care_o_bot.png  used on input line 27.
+(pdftex.def)             Requested size: 175.50194pt x 87.87999pt.
+
+
+! Package inputenc Error: Unicode char ​ (U+200B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 \end{frame}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ​ (U+200B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 \end{frame}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[107
+
+] [108
 
 ] [109
 
@@ -2320,49 +2531,439 @@ Overfull \hbox (216.44048pt too wide) detected at line 1064
 
 ] [111
 
-] [112
+]
+<figs/general_idea_300dpi.png, id=3293, 208.8603pt x 100.4553pt>
+File: figs/general_idea_300dpi.png Graphic file (type png)
+<use figs/general_idea_300dpi.png>
+Package pdftex.def Info: figs/general_idea_300dpi.png  used on input line 58.
+(pdftex.def)             Requested size: 173.33826pt x 83.37021pt.
 
-] [113
 
-] [114
+! Package inputenc Error: Unicode char ​ (U+200B)
+(inputenc)                not set up for use with LaTeX.
 
-] [115
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 \end{frame}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
-] [116
 
-] [117
+! Package inputenc Error: Unicode char ​ (U+200B)
+(inputenc)                not set up for use with LaTeX.
 
-] [118
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 \end{frame}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
-] [119
+[112
+
+ <./figs/general_idea_300dpi.png>]
+File: figs/general_idea_300dpi.png Graphic file (type png)
+<use figs/general_idea_300dpi.png>
+Package pdftex.def Info: figs/general_idea_300dpi.png  used on input line 58.
+(pdftex.def)             Requested size: 173.33826pt x 83.37021pt.
+
+
+! Package inputenc Error: Unicode char ​ (U+200B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 \end{frame}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ​ (U+200B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 \end{frame}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[113
 
 ]
-[120
+File: figs/general_idea_300dpi.png Graphic file (type png)
+<use figs/general_idea_300dpi.png>
+Package pdftex.def Info: figs/general_idea_300dpi.png  used on input line 58.
+(pdftex.def)             Requested size: 173.33826pt x 83.37021pt.
 
-] [121
 
-] [122
+! Package inputenc Error: Unicode char ​ (U+200B)
+(inputenc)                not set up for use with LaTeX.
 
-] [123
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 \end{frame}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
-] [124
 
-] [125
+! Package inputenc Error: Unicode char ​ (U+200B)
+(inputenc)                not set up for use with LaTeX.
 
-] [126
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 \end{frame}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
-] [127
-
-] [128
-
-] [129
-
-] [130
-
-] [131
+[114
 
 ]
-[132
+File: figs/general_idea_300dpi.png Graphic file (type png)
+<use figs/general_idea_300dpi.png>
+Package pdftex.def Info: figs/general_idea_300dpi.png  used on input line 58.
+(pdftex.def)             Requested size: 173.33826pt x 83.37021pt.
+
+
+! Package inputenc Error: Unicode char ​ (U+200B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 \end{frame}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ​ (U+200B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 \end{frame}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[115
+
+]
+<figs/system_overview_shade.png, id=3405, 244.9953pt x 161.1621pt>
+File: figs/system_overview_shade.png Graphic file (type png)
+<use figs/system_overview_shade.png>
+Package pdftex.def Info: figs/system_overview_shade.png  used on input line 78.
+
+(pdftex.def)             Requested size: 242.67252pt x 159.63948pt.
+
+
+! Package inputenc Error: Unicode char ​ (U+200B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78 \end{frame}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ​ (U+200B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78 \end{frame}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[116
+
+ <./figs/system_overview_shade.png>]
+<figs/system_overview.png, id=3434, 243.5499pt x 157.3077pt>
+File: figs/system_overview.png Graphic file (type png)
+<use figs/system_overview.png>
+Package pdftex.def Info: figs/system_overview.png  used on input line 99.
+(pdftex.def)             Requested size: 242.67252pt x 156.74081pt.
+
+
+! Package inputenc Error: Unicode char ​ (U+200B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.99 \end{frame}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ​ (U+200B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.99 \end{frame}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[117
+
+ <./figs/system_overview.png>]
+<figs/environment_2Dgrid_heatmap_kernel.png, id=3464, 243.309pt x 107.2005pt>
+File: figs/environment_2Dgrid_heatmap_kernel.png Graphic file (type png)
+<use figs/environment_2Dgrid_heatmap_kernel.png>
+Package pdftex.def Info: figs/environment_2Dgrid_heatmap_kernel.png  used on in
+put line 116.
+(pdftex.def)             Requested size: 242.67252pt x 106.92378pt.
+
+
+! Package inputenc Error: Unicode char ​ (U+200B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.116 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ​ (U+200B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.116 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[118
+
+ <./figs/environment_2Dgrid_heatmap_kernel.png>]
+<figs/bad_robot_placement_1.png, id=3493, 210.3057pt x 97.8054pt>
+File: figs/bad_robot_placement_1.png Graphic file (type png)
+<use figs/bad_robot_placement_1.png>
+Package pdftex.def Info: figs/bad_robot_placement_1.png  used on input line 150
+.
+(pdftex.def)             Requested size: 121.3389pt x 56.43018pt.
+<figs/bad_robot_placement_2.png, id=3494, 210.3057pt x 97.8054pt>
+File: figs/bad_robot_placement_2.png Graphic file (type png)
+<use figs/bad_robot_placement_2.png>
+Package pdftex.def Info: figs/bad_robot_placement_2.png  used on input line 150
+.
+(pdftex.def)             Requested size: 121.3389pt x 56.43018pt.
+<figs/good_robot_placement_1.png, id=3495, 211.0284pt x 94.6737pt>
+File: figs/good_robot_placement_1.png Graphic file (type png)
+<use figs/good_robot_placement_1.png>
+Package pdftex.def Info: figs/good_robot_placement_1.png  used on input line 15
+0.
+(pdftex.def)             Requested size: 127.4062pt x 57.15857pt.
+
+Overfull \hbox (6.0673pt too wide) in paragraph at lines 150--150
+[][] 
+ []
+
+<figs/good_robot_placement_2.png, id=3496, 211.0284pt x 94.6737pt>
+File: figs/good_robot_placement_2.png Graphic file (type png)
+<use figs/good_robot_placement_2.png>
+Package pdftex.def Info: figs/good_robot_placement_2.png  used on input line 15
+0.
+(pdftex.def)             Requested size: 127.4062pt x 57.15857pt.
+
+Overfull \hbox (6.0673pt too wide) in paragraph at lines 150--150
+[][] 
+ []
+
+[119
+
+ <./figs/bad_robot_placement_1.png> <./figs/bad_robot_placement_2.png> <./figs/
+good_robot_placement_1.png> <./figs/good_robot_placement_2.png>]
+<figs/normal_kernel_complete_reduced.png, id=3528, 156.8259pt x 104.5506pt>
+File: figs/normal_kernel_complete_reduced.png Graphic file (type png)
+<use figs/normal_kernel_complete_reduced.png>
+Package pdftex.def Info: figs/normal_kernel_complete_reduced.png  used on input
+ line 178.
+(pdftex.def)             Requested size: 117.00327pt x 78.00435pt.
+<figs/inversed_kernel_complete_reduced.png, id=3529, 156.8259pt x 104.5506pt>
+File: figs/inversed_kernel_complete_reduced.png Graphic file (type png)
+<use figs/inversed_kernel_complete_reduced.png>
+Package pdftex.def Info: figs/inversed_kernel_complete_reduced.png  used on inp
+ut line 178.
+(pdftex.def)             Requested size: 117.00327pt x 78.00435pt.
+ [120
+
+ <./figs/normal_kernel_complete_reduced.png> <./figs/inversed_kernel_complete_r
+educed.png>] [121
+
+]
+<figs/simulated_environment.png, id=3588, 127.677pt x 92.2647pt>
+File: figs/simulated_environment.png Graphic file (type png)
+<use figs/simulated_environment.png>
+Package pdftex.def Info: figs/simulated_environment.png  used on input line 205
+.
+(pdftex.def)             Requested size: 117.00327pt x 84.5537pt.
+<figs/husky_robot.png, id=3589, 163.812pt x 192.9609pt>
+File: figs/husky_robot.png Graphic file (type png)
+<use figs/husky_robot.png>
+Package pdftex.def Info: figs/husky_robot.png  used on input line 205.
+(pdftex.def)             Requested size: 65.00226pt x 76.57056pt.
+ [122
+
+ <./figs/simulated_environment.png> <./figs/husky_robot.png>]
+<figs/hh106sensor_map.png, id=3619, 602.25pt x 503.7219pt>
+File: figs/hh106sensor_map.png Graphic file (type png)
+<use figs/hh106sensor_map.png>
+Package pdftex.def Info: figs/hh106sensor_map.png  used on input line 223.
+(pdftex.def)             Requested size: 156.007pt x 130.48036pt.
+
+[123
+
+ <./figs/hh106sensor_map.png>]
+<figs/brute_force_route2.png, id=3648, 668.4975pt x 488.57532pt>
+File: figs/brute_force_route2.png Graphic file (type png)
+<use figs/brute_force_route2.png>
+Package pdftex.def Info: figs/brute_force_route2.png  used on input line 246.
+(pdftex.def)             Requested size: 156.007pt x 114.01752pt.
+ [124
+
+ <./figs/brute_force_route2.png>]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.318 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+File: figs/brute_force_route2.png Graphic file (type png)
+<use figs/brute_force_route2.png>
+Package pdftex.def Info: figs/brute_force_route2.png  used on input line 318.
+(pdftex.def)             Requested size: 88.40236pt x 64.60545pt.
+[125
+
+]
+<figs/static_setup.png, id=3706, 527.571pt x 289.08pt>
+File: figs/static_setup.png Graphic file (type png)
+<use figs/static_setup.png>
+Package pdftex.def Info: figs/static_setup.png  used on input line 340.
+(pdftex.def)             Requested size: 151.66974pt x 83.10764pt.
+<figs/static_inv_setup.png, id=3707, 527.571pt x 289.08pt>
+File: figs/static_inv_setup.png Graphic file (type png)
+<use figs/static_inv_setup.png>
+Package pdftex.def Info: figs/static_inv_setup.png  used on input line 340.
+(pdftex.def)             Requested size: 151.66974pt x 83.10764pt.
+
+Overfull \hbox (4.86665pt too wide) in paragraph at lines 340--340
+ []  [] 
+ []
+
+[126
+
+ <./figs/static_setup.png> <./figs/static_inv_setup.png>]
+<figs/mobile_setup.png, id=3737, 527.571pt x 289.08pt>
+File: figs/mobile_setup.png Graphic file (type png)
+<use figs/mobile_setup.png>
+Package pdftex.def Info: figs/mobile_setup.png  used on input line 364.
+(pdftex.def)             Requested size: 151.66974pt x 83.10764pt.
+<figs/mobile_inv_setup.png, id=3738, 527.571pt x 289.08pt>
+File: figs/mobile_inv_setup.png Graphic file (type png)
+<use figs/mobile_inv_setup.png>
+Package pdftex.def Info: figs/mobile_inv_setup.png  used on input line 364.
+(pdftex.def)             Requested size: 151.66974pt x 83.10764pt.
+
+Overfull \hbox (4.86665pt too wide) in paragraph at lines 364--364
+ []  [] 
+ []
+
+[127
+
+ <./figs/mobile_setup.png> <./figs/mobile_inv_setup.png>]
+<figs/shift_setup.png, id=3769, 527.571pt x 289.08pt>
+File: figs/shift_setup.png Graphic file (type png)
+<use figs/shift_setup.png>
+Package pdftex.def Info: figs/shift_setup.png  used on input line 388.
+(pdftex.def)             Requested size: 151.66974pt x 83.10764pt.
+ [128
+
+ <./figs/shift_setup.png>]
+<figs/mobile_inv_modified_setup.png, id=3798, 462.528pt x 346.896pt>
+File: figs/mobile_inv_modified_setup.png Graphic file (type png)
+<use figs/mobile_inv_modified_setup.png>
+Package pdftex.def Info: figs/mobile_inv_modified_setup.png  used on input line
+ 413.
+(pdftex.def)             Requested size: 106.17067pt x 79.6256pt.
+ [129
+
+ <./figs/mobile_inv_modified_setup.png>]
+<figs/all_combined_setup.png, id=3828, 527.571pt x 289.08pt>
+File: figs/all_combined_setup.png Graphic file (type png)
+<use figs/all_combined_setup.png>
+Package pdftex.def Info: figs/all_combined_setup.png  used on input line 439.
+(pdftex.def)             Requested size: 151.66974pt x 83.10764pt.
+ [130
+
+ <./figs/all_combined_setup.png>]
+Overfull \vbox (9.02467pt too high) detected at line 487
+ []
+
+[131
+
+] [132
 
 ] [133
 
@@ -2376,7 +2977,8 @@ Overfull \hbox (216.44048pt too wide) detected at line 1064
 
 ] [138
 
-] [139
+]) (./files/thesis_progress.tex
+[139
 
 ] [140
 
@@ -2386,12 +2988,11 @@ Overfull \hbox (216.44048pt too wide) detected at line 1064
 
 ] [143
 
-]
-[144
+] [144
 
 ] [145
 
-]) (./files/thesis_progress.tex [146
+] [146
 
 ] [147
 
@@ -2401,25 +3002,11 @@ Overfull \hbox (216.44048pt too wide) detected at line 1064
 
 ] [150
 
-]
-[151
-
-] [152
-
-] [153
-
-] [154
-
-] [155
-
-] [156
-
-] [157
-
-]) (./files/resultados.tex [158
+])
+(./files/resultados.tex [151
 
 ]
-<figs/river.jpg, id=4573, 2569.6pt x 1606.0pt>
+<figs/river.jpg, id=4432, 2569.6pt x 1606.0pt>
 File: figs/river.jpg Graphic file (type jpg)
 <use figs/river.jpg>
 Package pdftex.def Info: figs/river.jpg  used on input line 25.
@@ -2428,17 +3015,17 @@ Package pdftex.def Info: figs/river.jpg  used on input line 25.
 Overfull \vbox (21.42616pt too high) detected at line 25
  []
 
-[159
+[152
 
- <./figs/river.jpg>]) (./files/conclusao.tex [160
+ <./figs/river.jpg>]) (./files/conclusao.tex [153
 
-]) [161
+]) [154
 
 ] (./main.bbl)
-[162
+[155
 
  </usr/share/texlive/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
-[163
+[156
 
 ]
 \tf@nav=\write6
@@ -2461,15 +3048,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 20086 strings out of 492982
- 378231 string characters out of 6134896
- 446497 words of memory out of 5000000
- 22763 multiletter control sequences out of 15000+600000
- 17551 words of font info for 63 fonts, out of 8000000 for 9000
+ 20258 strings out of 492982
+ 382564 string characters out of 6134896
+ 467233 words of memory out of 5000000
+ 22921 multiletter control sequences out of 15000+600000
+ 17845 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,16n,58p,771b,929s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,18n,58p,771b,929s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/tex
@@ -2481,10 +3071,10 @@ type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/symbols/msam10.pfb>
-Output written on main.pdf (163 pages, 12278882 bytes).
+Output written on main.pdf (156 pages, 16347379 bytes).
 PDF statistics:
- 4831 PDF objects out of 5155 (max. 8388607)
- 4459 compressed objects within 45 object streams
- 335 named destinations out of 1000 (max. 500000)
- 457 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4687 PDF objects out of 5155 (max. 8388607)
+ 4280 compressed objects within 43 object streams
+ 323 named destinations out of 1000 (max. 500000)
+ 567 words of extra memory for PDF output out of 10000 (max. 10000000)
 

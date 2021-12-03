@@ -1048,7 +1048,7 @@
 %========================================== ############# ======================================================
 \begin{frame}{Summary}
 	\begin{columns}[T]
-		\column{0.55\textwidth}
+		\column{1\textwidth}
 		\begin{itemize}[<+->]
 			\item Semantic OS system that:
 			\begin{itemize}
