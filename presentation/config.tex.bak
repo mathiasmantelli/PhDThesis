@@ -25,7 +25,7 @@ Postgraduate Program in Computing\\
 %\texttt{\{lods.eng,ronety\}@uea.edu.br} % emails
 }
 \vspace{0.5cm}
-\date{\today}
+\date{\tiny \today}
 
 %\AtBeginSection[]
 %{

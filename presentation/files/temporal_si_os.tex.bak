@@ -180,9 +180,18 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 \begin{frame}{The OS system}
-	\begin{itemize}[<+->]
+	\begin{columns}
+	\column{.3\textwidth}
+	\begin{itemize}
 		\item Goal computation
 	\end{itemize}
+	\column{.7\textwidth}
+		\centering
+		\begin{figure}
+			\includegraphics[width=.8\linewidth]{figs/inversed_kernel_complete_reduced.png}
+%			\caption{\tiny Signs on primary routes, green backgrounds​.}
+		\end{figure}			
+	\end{columns}	
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -403,12 +412,29 @@
 				\item Mobile-Inv modified
 			\end{itemize}
 		\end{itemize}
-		\column{.7\textwidth}
-			\centering
-			\begin{figure}
-	%			\begin{subfigure}{.8\columnwidth}
-					\includegraphics[width=.35\linewidth]{figs/mobile_inv_modified_setup.png}
-			\end{figure}		
+		
+	\column{.3\textwidth}
+		\centering
+		\begin{figure}
+%			\begin{subfigure}{.8\columnwidth}
+				\includegraphics[width=.8\linewidth]{figs/mobile_inv_modified_setup.png}
+		\end{figure}						
+	\column{.3\textwidth}
+		\centering	
+		\begin{figure}			
+%				\caption{\tiny Signs on primary routes, green backgrounds​.}
+%			\end{subfigure}
+%			\begin{subfigure}{.8\columnwidth}		
+				\includegraphics[width=.7\linewidth]{figs/OUR_roomA_roomH2.png}			
+%			\end{subfigure}
+		\end{figure}				
+		
+%		\column{.7\textwidth}
+%			\centering
+%			\begin{figure}
+%	%			\begin{subfigure}{.8\columnwidth}
+%					\includegraphics[width=.35\linewidth]{figs/.png}
+%			\end{figure}		
 	\end{columns}				
 \end{frame}
 %========================================== ############# ======================================================
@@ -447,6 +473,7 @@
 			\item The HH106 dataset 
 		\end{itemize}
 	\column{.7\textwidth}
+	\vspace{-.5cm}
 \begin{table}
 \tiny
 \centering
@@ -482,6 +509,86 @@
 \end{tabular}
 %\label{tab:all_days_hh106}
 \end{table}	
+	\end{columns}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Experiments and results}
+	\begin{columns}
+	\column{.3\textwidth}
+		\begin{itemize}
+			\item The HH106 dataset 
+		\end{itemize}
+	\column{.7\textwidth}
+	\vspace{-.5cm}
+\begin{table}
+\tiny
+\centering
+%\caption[The data from the last day of HH106 used to test our OS system.]{The data from the last day of HH106 used to test our OS system.}
+\begin{tabular}{c|cccccccc}\hline
+\multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Daily \\ Hours\end{tabular}}}  & \multicolumn{8}{c}{\textbf{Locations}}\\
+      & \textbf{W.A.} & \textbf{Liv.R.}    & \textbf{Kit.}    & \textbf{BedR.}    & \textbf{Chair}    & \textbf{Din.R.}    & \textbf{BathR.} & \textbf{O.D.}  \\\cline{1-9}
+%00 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0
+%\\\midrule
+01 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
+02 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
+%03 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0
+%\\\midrule
+04 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
+05 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
+06 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\\hline
+%07 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0
+%\\\midrule
+08 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 \\\hline
+09 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 \\\hline
+10 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\\hline
+11 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 \\\hline
+12 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\\hline
+13 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\\hline
+14 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\\hline
+15 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\\hline
+16 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\\hline
+%17 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0
+%\\\midrule
+18 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\\hline
+19 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\\hline
+20 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\\hline
+21 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
+22 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
+23 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
+\textbf{Total} & 4 & 1 & 1 & 7 & 0 & 1 & 1 & 5
+\end{tabular}
+\label{tab:first_day_hh106}
+\end{table}	
+	\end{columns}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Experiments and results}
+	\begin{columns}
+	\column{.3\textwidth}
+		\begin{itemize}
+			\item The HH106 dataset 
+		\end{itemize}
+	\column{.7\textwidth}
+	\vspace{-.5cm}
+\begin{table}
+\tiny
+\centering
+%\caption[The human's presence estimation from our OS system.]{The human's presence estimation from our OS system.}
+\begin{tabular}{c|cccccccc}\hline
+\textbf{Req.}  & \multicolumn{8}{c}{\textbf{Locations}}\\
+\textbf{Hours}  & \textbf{W.A.} & \textbf{Liv.R.}    & \textbf{Kit.}    & \textbf{BedR.}    & \textbf{Chair}    & \textbf{Din.R.}    & \textbf{BathR.} & \textbf{O.D.}  \\\cline{1-9}
+01 & 59.92 & 35.42 & 24.92 & \textbf{219.66} & 2.0 & 43.5 & 34.92 & 51.25 \\\hline
+10 & 67.42 & 38.58 & 33.83 & 106.08 & 7.83 & 69.58 & 48.33 & \textbf{115.00} \\\hline
+16 & 106.41 & 46.58 & 32.5 & 76.25 & 8.83 & 68.92 & 46.66 & \textbf{109.66} \\\hline
+18 & \textbf{108.41} & 46.08 & 29.66 & 101.25 & 7.16 & 61.75 & 42.66 & 93.50 \\\hline
+22 & 82.58 & 41.42 & 25.16 & \textbf{186.92} & 4.16 & 47.41 & 36.66 & 58.00 \\\hline
+\end{tabular}
+%\label{tab:all_days_hh106_estimations}
+\end{table}
 	\end{columns}
 \end{frame}
 %========================================== ############# ======================================================

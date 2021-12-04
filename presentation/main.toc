@@ -1,8 +1,6 @@
 \babel@toc {american}{}
 \beamer@sectionintoc {1}{Introduction}{2}{0}{1}
-\beamer@sectionintoc {2}{Theoretical Background}{33}{0}{2}
-\beamer@sectionintoc {3}{Text and OS}{40}{0}{3}
-\beamer@sectionintoc {4}{Semi dynamic objects and OS}{101}{0}{4}
-\beamer@sectionintoc {5}{Discussion and Thesis progress}{139}{0}{5}
-\beamer@sectionintoc {6}{Resultados}{151}{0}{6}
-\beamer@sectionintoc {7}{Conclus\IeC {\~a}o}{153}{0}{7}
+\beamer@sectionintoc {2}{Theoretical Background}{32}{0}{2}
+\beamer@sectionintoc {3}{Text and OS}{39}{0}{3}
+\beamer@sectionintoc {4}{Semi dynamic objects and OS}{107}{0}{4}
+\beamer@sectionintoc {5}{Discussion and Thesis progress}{145}{0}{5}

@@ -1,7 +1,7 @@
 \begin{frame}{Theoretical background}
 \centering
 
-\textcolor{red}{\textit{The basics of Mobile Robotics and the Object Search problem}}
+\textcolor{red}{\textit{The \textbf{basics} of \textbf{Mobile Robotics} and the \textbf{Object Search} problem}}
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -75,9 +75,9 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 \begin{frame}[noframenumbering]{Problems involved in this work}
-	\begin{columns}[T]
+	\begin{columns}
 		\column{.55\textwidth}
-			\vspace{-.82cm}		
+			\vspace{-.15cm}		
 			\begin{itemize}
 				\item \textbf{Mobile robotics} problems:
 				\begin{itemize}
@@ -93,8 +93,8 @@
 		\column{0.45\textwidth}
 			\centering
 			\begin{figure}
-				 \includegraphics[width=1\linewidth]{figs/os_map_distribution_known.png}
-				 \caption{\tiny Mapping with position indexed by odometry.\footnotemark[8]}			 		 
+				 \includegraphics[width=.65\linewidth]{figs/os_map_distribution_known.png}
+				 \caption{\tiny Mapping with position indexed by odometry.}			 		 
 	         \end{figure}	
 	\end{columns}			
 \end{frame}
@@ -102,9 +102,9 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 \begin{frame}[noframenumbering]{Problems involved in this work}
-	\begin{columns}[T]
+	\begin{columns}
 		\column{.55\textwidth}
-			\vspace{-.5488cm}				
+			\vspace{.22cm}		
 			\begin{itemize}
 				\item \textbf{Mobile robotics} problems:
 				\begin{itemize}
@@ -121,8 +121,8 @@
 		\column{0.45\textwidth}
 			\centering
 			\begin{figure}
-				 \includegraphics[width=1\linewidth]{figs/os_map_known.png}
-				 \caption{\tiny Mapping with position indexed by odometry.\footnotemark[8]}			 		 
+				 \includegraphics[width=.65\linewidth]{figs/os_map_known.png}
+				 \caption{\tiny Mapping with position indexed by odometry.}			 		 
 	         \end{figure}	
 	\end{columns}	
 \end{frame}
@@ -130,9 +130,9 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 \begin{frame}[noframenumbering]{Problems involved in this work}
-	\begin{columns}[T]
+	\begin{columns}
 		\column{.55\textwidth}
-			\vspace{-.265cm}				
+			\vspace{.75cm}		
 			\begin{itemize}
 				\item \textbf{Mobile robotics} problems:
 				\begin{itemize}
@@ -150,8 +150,8 @@
 		\column{0.45\textwidth}
 			\centering
 			\begin{figure}
-				 \includegraphics[width=1\linewidth]{figs/os_map_distribution_unknown.png}
-				 \caption{\tiny Mapping with position indexed by odometry.\footnotemark[8]}			 		 
+				 \includegraphics[width=.65\linewidth]{figs/os_map_distribution_unknown.png}
+				 \caption{\tiny Mapping with position indexed by odometry.}			 		 
 	         \end{figure}		
 	\end{columns}	
 \end{frame}
