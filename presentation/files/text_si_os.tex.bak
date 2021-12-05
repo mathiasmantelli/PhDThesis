@@ -1,6 +1,6 @@
 \begin{frame}
 \centering
-\textcolor{red}{\textit{\textbf{Text} as \textbf{source} of \textbf{semantic information} for visual \textbf{object search} in large and \textbf{unknown environments}}}
+\textcolor{red}{\textit{\textbf{Text} as \textbf{source} of \textbf{semantic information} for \textbf{OS} }}
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -274,7 +274,7 @@
 			\item A \textbf{2D grid} map is build ({\small Simulation and real worlds})
 			\item \textbf{Voronoi} diagram 
 			\item \textbf{Visited} regions
-			\item Boundary Value Problem (\textbf{BVP})
+			\item \textbf{Frontiers} (visited and unvisited regions)
 		\end{itemize}
 		\column{.5\textwidth}	
 			\centering	
@@ -680,21 +680,21 @@
 %========================================== ############# ======================================================
 \begin{frame}{Distance}
 	\begin{columns}[T]
-		\column{0.55\textwidth}
+		\column{1\textwidth}
 		\begin{itemize}[<+->]
 			\item Voronoi diagram
 			\item Smallest number of Voronoi cells between the robot's position and each frontier
 			\item It guides the robot towards the closest frontier
 			\item It saves the robot's resources
 		\end{itemize}
-		\column{0.55\textwidth}
-			\centering	
-			\begin{figure}
-				\includegraphics[width=.4\linewidth]{figs/distance_1.png}\\
-				\includegraphics[width=.4\linewidth]{figs/distance_2.png}\\
-				\includegraphics[width=.4\linewidth]{figs/distance_3.png}			    	
-				 \caption{\tiny Initial works on SLAM}			 
-	         \end{figure}
+%		\column{0.55\textwidth}
+%			\centering	
+%			\begin{figure}
+%				\includegraphics[width=.4\linewidth]{figs/distance_1.png}\\
+%				\includegraphics[width=.4\linewidth]{figs/distance_2.png}\\
+%				\includegraphics[width=.4\linewidth]{figs/distance_3.png}			    	
+%				 \caption{\tiny Initial works on SLAM}			 
+%	         \end{figure}
 	\end{columns}
 \end{frame}
 %========================================== ############# ======================================================

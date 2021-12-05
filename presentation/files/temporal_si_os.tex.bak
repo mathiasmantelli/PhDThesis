@@ -356,8 +356,8 @@
 		\begin{itemize}
 			\item Results for each map:
 			\begin{itemize}
-				\item Static
-				\item Static-Inv
+%				\item Static
+%				\item Static-Inv
 				\item Mobile
 				\item Mobile-Inv			
 			\end{itemize}
@@ -380,10 +380,10 @@
 		\begin{itemize}
 			\item Results for each map:
 			\begin{itemize}
-				\item Static
-				\item Static-Inv
-				\item Mobile
-				\item Mobile-Inv			
+%				\item Static
+%				\item Static-Inv
+%				\item Mobile
+%				\item Mobile-Inv			
 				\item Shift
 			\end{itemize}
 		\end{itemize}
@@ -404,11 +404,11 @@
 		\begin{itemize}
 			\item Results for each map:
 			\begin{itemize}
-				\item Static
-				\item Static-Inv
-				\item Mobile
-				\item Mobile-Inv			
-				\item Shift
+%				\item Static
+%				\item Static-Inv
+%				\item Mobile
+%				\item Mobile-Inv			
+%				\item Shift
 				\item Mobile-Inv modified
 			\end{itemize}
 		\end{itemize}
@@ -446,12 +446,12 @@
 		\begin{itemize}
 			\item Results for each map:
 			\begin{itemize}
-				\item Static
-				\item Static-Inv
-				\item Mobile
-				\item Mobile-Inv			
-				\item Shift
-				\item Mobile-Inv modified
+%				\item Static
+%				\item Static-Inv
+%				\item Mobile
+%				\item Mobile-Inv			
+%				\item Shift
+%				\item Mobile-Inv modified
 				\item All combined
 			\end{itemize}
 		\end{itemize}
