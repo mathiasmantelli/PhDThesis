@@ -1,16 +1,6 @@
-slide 1: adicionar footnote com o paper "Simultaneous Localization And Mapping: Present, Future, and the Robust-Perception Age"
 do slide 9 para o 10, contar uma história que conecte os dois slides
 slide 9-10: adicionar um slide de related work
-slide 14: fazer referência ao Gmapping e deixar claro que não é nossa contribuição
-slide 15: fazer referência ao KDE
 adicionar as equações juntas com as imagens (tabela mostrando os extremos, sem entrar em detalhes de cada variável. Adicionar ao final tudo explicado)
-slide 24: trocar a imagem, deixar uma do Inf mostrando as portas
-slide 30: busca gulosa e não greedy os system
-slides 31-34: adicionar cor na tabela da direita, tirando a coluna "shortest path"
-slides 31-34: inverter as colunas do tabelão com a tabelinha e o mapa
-slide 35: transformar a tabela em um gráfico de coluna (eixo x as portas, eixo y as porcentagens)
-slide 40: segundo tópico adicionar "increasing"
-slide 46: inverter a ordem de apresentação dos testes (HH106 primeiro)
 ##################################################################################
 adicionar o nome dos orientadores
 slide 1: adicionar footnote com o paper "Simultaneous Localization And Mapping: Present, Future, and the Robust-Perception Age"

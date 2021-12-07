@@ -6,11 +6,11 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 \begin{frame}{Introduction}
-	\begin{columns}
+	\begin{columns}[T]
 	\column{.55\textwidth}
 		\begin{itemize}[<+->]
 			\item \textbf{Service robots} and their use in indoor environments
-			\item Number of older people living at home
+			\item Number of older people living at home is increasing
 			\item The \textbf{OS task} for young and old people
 			\item \textbf{Brute-force OS} strategy \textbf{is not practical} 
 			\item \textbf{Visual sensors} embedded in robots
@@ -40,7 +40,7 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 \begin{frame}{Proposal and contributions}
-	\begin{columns}
+	\begin{columns}[T]
 	\column{.5\textwidth}
 		\begin{itemize}[<+->]
 			\item \textbf{Semantic temporal OS system} for indoor environment
@@ -60,7 +60,7 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 \begin{frame}{System overview}
-	\begin{columns}
+	\begin{columns}[T]
 	\column{.3\textwidth}
 		\begin{itemize}
 			\item Two modes OS system:
@@ -80,7 +80,7 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 \begin{frame}[noframenumbering]{System overview}
-	\begin{columns}
+	\begin{columns}[T]
 	\column{.3\textwidth}
 		\begin{itemize}
 			\item Two modes OS system:
@@ -101,7 +101,7 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 \begin{frame}{The OS system}
-	\begin{columns}
+	\begin{columns}[T]
 	\column{.3\textwidth}
 	\begin{itemize}
 		\item Heat map
@@ -118,7 +118,7 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 \begin{frame}[noframenumbering]{The OS system}
-	\begin{columns}
+	\begin{columns}[T]
 	\column{.3\textwidth}
 		\begin{itemize}
 			\item Heat map
@@ -152,7 +152,7 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 \begin{frame}[noframenumbering]{The OS system}
-	\begin{columns}
+	\begin{columns}[T]
 	\column{.4\textwidth}
 	\begin{itemize}
 		\item Heat map
@@ -180,7 +180,7 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 \begin{frame}{The OS system}
-	\begin{columns}
+	\begin{columns}[T]
 	\column{.3\textwidth}
 	\begin{itemize}
 		\item Goal computation
@@ -197,10 +197,28 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 \begin{frame}{Experiments and results}
-	\begin{columns}
+	\begin{columns}[T]
 	\column{.4\textwidth}
 		\centering	
 		\begin{itemize}
+			\item HH106 dataset
+		\end{itemize}
+	\column{.6\textwidth}
+		\centering
+		\begin{figure}
+%			\begin{subfigure}{.8\columnwidth}
+				\includegraphics[width=.6\linewidth]{figs/hh106sensor_map.png}
+		\end{figure}		
+	\end{columns}					
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}[noframenumbering]{Experiments and results}
+	\begin{columns}[T]
+	\column{.4\textwidth}
+		\begin{itemize}
+			\item HH106 dataset		
 			\item Simulation setup and maps
 		\end{itemize}
 	\column{.6\textwidth}
@@ -216,25 +234,7 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 \begin{frame}[noframenumbering]{Experiments and results}
-	\begin{columns}
-	\column{.4\textwidth}
-		\begin{itemize}
-			\item Simulation setup and maps
-			\item HH106 dataset
-		\end{itemize}
-	\column{.6\textwidth}
-		\centering
-		\begin{figure}
-%			\begin{subfigure}{.8\columnwidth}
-				\includegraphics[width=.6\linewidth]{figs/hh106sensor_map.png}
-		\end{figure}		
-	\end{columns}					
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}[noframenumbering]{Experiments and results}
-	\begin{columns}
+	\begin{columns}[T]
 	\column{.4\textwidth}
 		\begin{itemize}
 			\item Simulation setup and maps
@@ -257,7 +257,141 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 \begin{frame}{Experiments and results}
-	\begin{columns}
+	\begin{columns}[T]
+	\column{.4\textwidth}
+		\begin{itemize}
+			\item The HH106 dataset:
+			\begin{itemize}
+				\item Long-term dataset (60 days)
+				\item Motion sensors provide the human location at different hours of the day
+				\item The person mimics an object that is moved many times every day
+				\item 59 days of data for the Recording mode
+			\end{itemize}			 			 
+		\end{itemize}
+	\column{.6\textwidth}
+	\vspace{-.5cm}
+\begin{table}
+\tiny
+\centering
+%\caption[The 59 days data from HH106 used by our OS system.]{The 59 days data from HH106 used by our OS system.}
+\begin{tabular}{c|cccccccc}\hline %
+\multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Daily \\ Hours\end{tabular}}} & \multicolumn{8}{c}{\textbf{Locations}} \\
+                                      & \textbf{W.A.} & \textbf{Liv.R.}    & \textbf{Kit.}    & \textbf{BedR.}    & \textbf{Chair}    & \textbf{Din.R.}    & \textbf{BathR.} & \textbf{O.D.}  \\ \hline
+00 & 0 & 2 & 1 & 21 & 0 & 1 & 3 & 2 \\\hline
+01 & 2 & 1 & 3 & 20 & 0 & 1 & 1 & 2 \\\hline
+02 & 3 & 5 & 1 & 29 & 0 & 0 & 0 & 0 \\\hline
+03 & 1 & 4 & 3 & 24 & 0 & 0 & 0 & 2 \\\hline
+04 & 3 & 0 & 1 & 28 & 0 & 2 & 0 & 1 \\\hline
+05 & 0 & 1 & 2 & 35 & 0 & 1 & 0 & 1 \\\hline
+06 & 1 & 3 & 3 & 31 & 0 & 1 & 4 & 10 \\\hline
+07 & 1 & 4 & 4 & 10 & 0 & 6 & 5 & 7 \\\hline
+08 & 3 & 2 & 4 & 4 & 1 & 14 & 8 & 5 \\\hline
+09 & 6 & 2 & 1 & 1 & 0 & 15 & 3 & 12 \\\hline
+10 & 3 & 1 & 1 & 3 & 0 & 3 & 11 & 19 \\\hline
+11 & 6 & 3 & 7 & 2 & 0 & 3 & 5 & 13 \\\hline
+12 & 7 & 3 & 2 & 1 & 1 & 14 & 4 & 12 \\\hline
+13 & 5 & 8 & 3 & 0 & 5 & 4 & 6 & 13 \\\hline
+14 & 4 & 5 & 1 & 0 & 2 & 5 & 4 & 16 \\\hline
+15 & 9 & 4 & 5 & 0 & 0 & 4 & 2 & 17 \\\hline
+16 & 16 & 5 & 4 & 1 & 2 & 6 & 2 & 7 \\\hline
+17 & 16 & 2 & 4 & 2 & 0 & 9 & 1 & 7 \\\hline
+18 & 21 & 4 & 3 & 1 & 0 & 3 & 2 & 13 \\\hline
+19 & 14 & 5 & 2 & 1 & 0 & 4 & 2 & 11 \\\hline
+20 & 13 & 8 & 2 & 0 & 0 & 6 & 7 & 2 \\\hline
+21 & 14 & 3 & 0 & 8 & 0 & 13 & 8 & 1 \\\hline
+22 & 1 & 3 & 2 & 37 & 0 & 1 & 6 & 0 \\\hline
+23 & 1 & 2 & 0 & 34 & 1 & 1 & 1 & 0 \\\hline
+\textbf{Total} & 150 & 80 & 59 & 293 & 12 & 117 & 85 & 173
+\end{tabular}
+%\label{tab:all_days_hh106}
+\end{table}	
+	\end{columns}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Experiments and results}
+	\begin{columns}[T]
+	\column{.3\textwidth}
+		\begin{itemize}
+			\item The HH106 dataset 
+		\end{itemize}
+	\column{.7\textwidth}
+	\vspace{-.5cm}
+\begin{table}
+\tiny
+\centering
+%\caption[The data from the last day of HH106 used to test our OS system.]{The data from the last day of HH106 used to test our OS system.}
+\begin{tabular}{c|cccccccc}\hline
+\multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Daily \\ Hours\end{tabular}}}  & \multicolumn{8}{c}{\textbf{Locations}}\\
+      & \textbf{W.A.} & \textbf{Liv.R.}    & \textbf{Kit.}    & \textbf{BedR.}    & \textbf{Chair}    & \textbf{Din.R.}    & \textbf{BathR.} & \textbf{O.D.}  \\\cline{1-9}
+%00 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0
+%\\\midrule
+01 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
+02 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
+%03 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0
+%\\\midrule
+04 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
+05 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
+06 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\\hline
+%07 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0
+%\\\midrule
+08 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 \\\hline
+09 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 \\\hline
+10 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\\hline
+11 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 \\\hline
+12 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\\hline
+13 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\\hline
+14 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\\hline
+15 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\\hline
+16 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\\hline
+%17 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0
+%\\\midrule
+18 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\\hline
+19 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\\hline
+20 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\\hline
+21 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
+22 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
+23 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
+\textbf{Total} & 4 & 1 & 1 & 7 & 0 & 1 & 1 & 5
+\end{tabular}
+\label{tab:first_day_hh106}
+\end{table}	
+	\end{columns}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Experiments and results}
+	\begin{columns}[T]
+	\column{.3\textwidth}
+		\begin{itemize}
+			\item The HH106 dataset
+		\end{itemize}
+	\column{.7\textwidth}
+	\vspace{-.5cm}
+\begin{table}
+\tiny
+\centering
+%\caption[The human's presence estimation from our OS system.]{The human's presence estimation from our OS system.}
+\begin{tabular}{c|cccccccc}\hline
+\textbf{Req.}  & \multicolumn{8}{c}{\textbf{Locations}}\\
+\textbf{Hours}  & \textbf{W.A.} & \textbf{Liv.R.}    & \textbf{Kit.}    & \textbf{BedR.}    & \textbf{Chair}    & \textbf{Din.R.}    & \textbf{BathR.} & \textbf{O.D.}  \\\cline{1-9}
+01 & 59.92 & 35.42 & 24.92 & \textbf{219.66} & 2.0 & 43.5 & 34.92 & 51.25 \\\hline
+10 & 67.42 & 38.58 & 33.83 & 106.08 & 7.83 & 69.58 & 48.33 & \textbf{115.00} \\\hline
+16 & 106.41 & 46.58 & 32.5 & 76.25 & 8.83 & 68.92 & 46.66 & \textbf{109.66} \\\hline
+18 & \textbf{108.41} & 46.08 & 29.66 & 101.25 & 7.16 & 61.75 & 42.66 & 93.50 \\\hline
+22 & 82.58 & 41.42 & 25.16 & \textbf{186.92} & 4.16 & 47.41 & 36.66 & 58.00 \\\hline
+\end{tabular}
+%\label{tab:all_days_hh106_estimations}
+\end{table}
+	\end{columns}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Experiments and results}
+	\begin{columns}[T]
 		\column{.3\textwidth}
 		\begin{itemize}
 			\item Maps
@@ -329,7 +463,7 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 \begin{frame}[noframenumbering]{Experiments and results}
-	\begin{columns}
+	\begin{columns}[T]
 		\column{.3\textwidth}
 		\begin{itemize}
 			\item Results for each map:
@@ -351,7 +485,7 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 \begin{frame}[noframenumbering]{Experiments and results}
-	\begin{columns}
+	\begin{columns}[T]
 		\column{.3\textwidth}
 		\begin{itemize}
 			\item Results for each map:
@@ -375,7 +509,7 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 \begin{frame}[noframenumbering]{Experiments and results}
-	\begin{columns}
+	\begin{columns}[T]
 		\column{.3\textwidth}
 		\begin{itemize}
 			\item Results for each map:
@@ -399,7 +533,7 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 \begin{frame}[noframenumbering]{Experiments and results}
-	\begin{columns}
+	\begin{columns}[T]
 		\column{.3\textwidth}
 		\begin{itemize}
 			\item Results for each map:
@@ -441,7 +575,7 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 \begin{frame}[noframenumbering]{Experiments and results}
-	\begin{columns}
+	\begin{columns}[T]
 		\column{.3\textwidth}
 		\begin{itemize}
 			\item Results for each map:
@@ -462,134 +596,6 @@
 					\includegraphics[width=.5\linewidth]{figs/all_combined_setup.png}
 			\end{figure}		
 	\end{columns}				
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}{Experiments and results}
-	\begin{columns}
-	\column{.3\textwidth}
-		\begin{itemize}
-			\item The HH106 dataset 
-		\end{itemize}
-	\column{.7\textwidth}
-	\vspace{-.5cm}
-\begin{table}
-\tiny
-\centering
-%\caption[The 59 days data from HH106 used by our OS system.]{The 59 days data from HH106 used by our OS system.}
-\begin{tabular}{c|cccccccc}\hline %
-\multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Daily \\ Hours\end{tabular}}} & \multicolumn{8}{c}{\textbf{Locations}} \\
-                                      & \textbf{W.A.} & \textbf{Liv.R.}    & \textbf{Kit.}    & \textbf{BedR.}    & \textbf{Chair}    & \textbf{Din.R.}    & \textbf{BathR.} & \textbf{O.D.}  \\ \hline
-00 & 0 & 2 & 1 & 21 & 0 & 1 & 3 & 2 \\\hline
-01 & 2 & 1 & 3 & 20 & 0 & 1 & 1 & 2 \\\hline
-02 & 3 & 5 & 1 & 29 & 0 & 0 & 0 & 0 \\\hline
-03 & 1 & 4 & 3 & 24 & 0 & 0 & 0 & 2 \\\hline
-04 & 3 & 0 & 1 & 28 & 0 & 2 & 0 & 1 \\\hline
-05 & 0 & 1 & 2 & 35 & 0 & 1 & 0 & 1 \\\hline
-06 & 1 & 3 & 3 & 31 & 0 & 1 & 4 & 10 \\\hline
-07 & 1 & 4 & 4 & 10 & 0 & 6 & 5 & 7 \\\hline
-08 & 3 & 2 & 4 & 4 & 1 & 14 & 8 & 5 \\\hline
-09 & 6 & 2 & 1 & 1 & 0 & 15 & 3 & 12 \\\hline
-10 & 3 & 1 & 1 & 3 & 0 & 3 & 11 & 19 \\\hline
-11 & 6 & 3 & 7 & 2 & 0 & 3 & 5 & 13 \\\hline
-12 & 7 & 3 & 2 & 1 & 1 & 14 & 4 & 12 \\\hline
-13 & 5 & 8 & 3 & 0 & 5 & 4 & 6 & 13 \\\hline
-14 & 4 & 5 & 1 & 0 & 2 & 5 & 4 & 16 \\\hline
-15 & 9 & 4 & 5 & 0 & 0 & 4 & 2 & 17 \\\hline
-16 & 16 & 5 & 4 & 1 & 2 & 6 & 2 & 7 \\\hline
-17 & 16 & 2 & 4 & 2 & 0 & 9 & 1 & 7 \\\hline
-18 & 21 & 4 & 3 & 1 & 0 & 3 & 2 & 13 \\\hline
-19 & 14 & 5 & 2 & 1 & 0 & 4 & 2 & 11 \\\hline
-20 & 13 & 8 & 2 & 0 & 0 & 6 & 7 & 2 \\\hline
-21 & 14 & 3 & 0 & 8 & 0 & 13 & 8 & 1 \\\hline
-22 & 1 & 3 & 2 & 37 & 0 & 1 & 6 & 0 \\\hline
-23 & 1 & 2 & 0 & 34 & 1 & 1 & 1 & 0 \\\hline
-\textbf{Total} & 150 & 80 & 59 & 293 & 12 & 117 & 85 & 173
-\end{tabular}
-%\label{tab:all_days_hh106}
-\end{table}	
-	\end{columns}
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}{Experiments and results}
-	\begin{columns}
-	\column{.3\textwidth}
-		\begin{itemize}
-			\item The HH106 dataset 
-		\end{itemize}
-	\column{.7\textwidth}
-	\vspace{-.5cm}
-\begin{table}
-\tiny
-\centering
-%\caption[The data from the last day of HH106 used to test our OS system.]{The data from the last day of HH106 used to test our OS system.}
-\begin{tabular}{c|cccccccc}\hline
-\multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Daily \\ Hours\end{tabular}}}  & \multicolumn{8}{c}{\textbf{Locations}}\\
-      & \textbf{W.A.} & \textbf{Liv.R.}    & \textbf{Kit.}    & \textbf{BedR.}    & \textbf{Chair}    & \textbf{Din.R.}    & \textbf{BathR.} & \textbf{O.D.}  \\\cline{1-9}
-%00 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0
-%\\\midrule
-01 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
-02 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
-%03 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0
-%\\\midrule
-04 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
-05 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
-06 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\\hline
-%07 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0
-%\\\midrule
-08 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 \\\hline
-09 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 \\\hline
-10 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\\hline
-11 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 \\\hline
-12 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\\hline
-13 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\\hline
-14 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\\hline
-15 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\\hline
-16 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\\hline
-%17 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0
-%\\\midrule
-18 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\\hline
-19 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\\hline
-20 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\\hline
-21 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
-22 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
-23 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
-\textbf{Total} & 4 & 1 & 1 & 7 & 0 & 1 & 1 & 5
-\end{tabular}
-\label{tab:first_day_hh106}
-\end{table}	
-	\end{columns}
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}{Experiments and results}
-	\begin{columns}
-	\column{.3\textwidth}
-		\begin{itemize}
-			\item The HH106 dataset 
-		\end{itemize}
-	\column{.7\textwidth}
-	\vspace{-.5cm}
-\begin{table}
-\tiny
-\centering
-%\caption[The human's presence estimation from our OS system.]{The human's presence estimation from our OS system.}
-\begin{tabular}{c|cccccccc}\hline
-\textbf{Req.}  & \multicolumn{8}{c}{\textbf{Locations}}\\
-\textbf{Hours}  & \textbf{W.A.} & \textbf{Liv.R.}    & \textbf{Kit.}    & \textbf{BedR.}    & \textbf{Chair}    & \textbf{Din.R.}    & \textbf{BathR.} & \textbf{O.D.}  \\\cline{1-9}
-01 & 59.92 & 35.42 & 24.92 & \textbf{219.66} & 2.0 & 43.5 & 34.92 & 51.25 \\\hline
-10 & 67.42 & 38.58 & 33.83 & 106.08 & 7.83 & 69.58 & 48.33 & \textbf{115.00} \\\hline
-16 & 106.41 & 46.58 & 32.5 & 76.25 & 8.83 & 68.92 & 46.66 & \textbf{109.66} \\\hline
-18 & \textbf{108.41} & 46.08 & 29.66 & 101.25 & 7.16 & 61.75 & 42.66 & 93.50 \\\hline
-22 & 82.58 & 41.42 & 25.16 & \textbf{186.92} & 4.16 & 47.41 & 36.66 & 58.00 \\\hline
-\end{tabular}
-%\label{tab:all_days_hh106_estimations}
-\end{table}
-	\end{columns}
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.7)  5 DEC 2021 01:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.7)  7 DEC 2021 00:18
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1282,58 +1282,58 @@ thkerncmss.
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./files/introducao.tex
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <10> not available
-(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 68.
+(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 69.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <9> not available
-(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 68.
+(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 69.
 
-<figs/CML_newman.png, id=72, 197.2971pt x 147.4308pt>
-File: figs/CML_newman.png Graphic file (type png)
-<use figs/CML_newman.png>
-Package pdftex.def Info: figs/CML_newman.png  used on input line 68.
-(pdftex.def)             Requested size: 101.40263pt x 75.77585pt.
-<figs/mapping_thrun.png, id=74, 197.7789pt x 100.6962pt>
+<figs/mapping_thrun.png, id=72, 197.7789pt x 100.6962pt>
 File: figs/mapping_thrun.png Graphic file (type png)
 <use figs/mapping_thrun.png>
-Package pdftex.def Info: figs/mapping_thrun.png  used on input line 68.
-(pdftex.def)             Requested size: 112.67036pt x 57.36514pt.
+Package pdftex.def Info: figs/mapping_thrun.png  used on input line 69.
+(pdftex.def)             Requested size: 101.40263pt x 51.62787pt.
+<figs/CML_newman.png, id=74, 197.2971pt x 147.4308pt>
+File: figs/CML_newman.png Graphic file (type png)
+<use figs/CML_newman.png>
+Package pdftex.def Info: figs/CML_newman.png  used on input line 69.
+(pdftex.def)             Requested size: 95.7705pt x 71.56683pt.
 
-Overfull \hbox (4.86665pt too wide) in paragraph at lines 68--68
+Overfull \hbox (4.86665pt too wide) in paragraph at lines 69--69
  []  [] 
  []
 
 [2
 
- <./figs/CML_newman.png> <./figs/mapping_thrun.png>]
-<figs/orbslam.png, id=110, 194.8881pt x 145.2627pt>
-File: figs/orbslam.png Graphic file (type png)
-<use figs/orbslam.png>
-Package pdftex.def Info: figs/orbslam.png  used on input line 146.
-(pdftex.def)             Requested size: 101.40263pt x 75.58357pt.
-<figs/gmapping.png, id=111, 198.0198pt x 104.5506pt>
+ <./figs/mapping_thrun.png> <./figs/CML_newman.png>]
+<figs/gmapping.png, id=110, 198.0198pt x 104.5506pt>
 File: figs/gmapping.png Graphic file (type png)
 <use figs/gmapping.png>
-Package pdftex.def Info: figs/gmapping.png  used on input line 146.
+Package pdftex.def Info: figs/gmapping.png  used on input line 148.
 (pdftex.def)             Requested size: 112.67036pt x 59.48756pt.
+<figs/orbslam.png, id=111, 194.8881pt x 145.2627pt>
+File: figs/orbslam.png Graphic file (type png)
+<use figs/orbslam.png>
+Package pdftex.def Info: figs/orbslam.png  used on input line 148.
+(pdftex.def)             Requested size: 101.40263pt x 75.58357pt.
 
-Overfull \hbox (4.86665pt too wide) in paragraph at lines 146--146
+Overfull \hbox (4.86665pt too wide) in paragraph at lines 148--148
  []  [] 
  []
 
 [3
 
- <./figs/orbslam.png> <./figs/gmapping.png>]
-File: figs/orbslam.png Graphic file (type png)
-<use figs/orbslam.png>
-Package pdftex.def Info: figs/orbslam.png  used on input line 188.
-(pdftex.def)             Requested size: 101.40263pt x 75.58357pt.
+ <./figs/gmapping.png> <./figs/orbslam.png>]
 File: figs/gmapping.png Graphic file (type png)
 <use figs/gmapping.png>
-Package pdftex.def Info: figs/gmapping.png  used on input line 188.
+Package pdftex.def Info: figs/gmapping.png  used on input line 191.
 (pdftex.def)             Requested size: 112.67036pt x 59.48756pt.
+File: figs/orbslam.png Graphic file (type png)
+<use figs/orbslam.png>
+Package pdftex.def Info: figs/orbslam.png  used on input line 191.
+(pdftex.def)             Requested size: 101.40263pt x 75.58357pt.
 
-Overfull \hbox (4.86665pt too wide) in paragraph at lines 188--188
+Overfull \hbox (4.86665pt too wide) in paragraph at lines 191--191
  []  [] 
  []
 
@@ -1343,56 +1343,56 @@ Overfull \hbox (4.86665pt too wide) in paragraph at lines 188--188
 <figs/vacuum_cleaner.png, id=169, 145.2627pt x 97.3236pt>
 File: figs/vacuum_cleaner.png Graphic file (type png)
 <use figs/vacuum_cleaner.png>
-Package pdftex.def Info: figs/vacuum_cleaner.png  used on input line 226.
+Package pdftex.def Info: figs/vacuum_cleaner.png  used on input line 229.
 (pdftex.def)             Requested size: 156.0004pt x 104.52576pt.
  [5
 
  <./figs/vacuum_cleaner.png>]
 File: figs/vacuum_cleaner.png Graphic file (type png)
 <use figs/vacuum_cleaner.png>
-Package pdftex.def Info: figs/vacuum_cleaner.png  used on input line 226.
+Package pdftex.def Info: figs/vacuum_cleaner.png  used on input line 229.
 (pdftex.def)             Requested size: 156.0004pt x 104.52576pt.
  [6
 
 ]
 File: figs/vacuum_cleaner.png Graphic file (type png)
 <use figs/vacuum_cleaner.png>
-Package pdftex.def Info: figs/vacuum_cleaner.png  used on input line 226.
+Package pdftex.def Info: figs/vacuum_cleaner.png  used on input line 229.
 (pdftex.def)             Requested size: 156.0004pt x 104.52576pt.
  [7
 
 ]
 File: figs/vacuum_cleaner.png Graphic file (type png)
 <use figs/vacuum_cleaner.png>
-Package pdftex.def Info: figs/vacuum_cleaner.png  used on input line 226.
+Package pdftex.def Info: figs/vacuum_cleaner.png  used on input line 229.
 (pdftex.def)             Requested size: 156.0004pt x 104.52576pt.
  [8
 
 ]
 File: figs/vacuum_cleaner.png Graphic file (type png)
 <use figs/vacuum_cleaner.png>
-Package pdftex.def Info: figs/vacuum_cleaner.png  used on input line 226.
+Package pdftex.def Info: figs/vacuum_cleaner.png  used on input line 229.
 (pdftex.def)             Requested size: 156.0004pt x 104.52576pt.
  [9
 
 ]
 File: figs/vacuum_cleaner.png Graphic file (type png)
 <use figs/vacuum_cleaner.png>
-Package pdftex.def Info: figs/vacuum_cleaner.png  used on input line 226.
+Package pdftex.def Info: figs/vacuum_cleaner.png  used on input line 229.
 (pdftex.def)             Requested size: 156.0004pt x 104.52576pt.
  [10
 
 ]
 File: figs/vacuum_cleaner.png Graphic file (type png)
 <use figs/vacuum_cleaner.png>
-Package pdftex.def Info: figs/vacuum_cleaner.png  used on input line 226.
+Package pdftex.def Info: figs/vacuum_cleaner.png  used on input line 229.
 (pdftex.def)             Requested size: 156.0004pt x 104.52576pt.
  [11
 
 ]
 File: figs/vacuum_cleaner.png Graphic file (type png)
 <use figs/vacuum_cleaner.png>
-Package pdftex.def Info: figs/vacuum_cleaner.png  used on input line 226.
+Package pdftex.def Info: figs/vacuum_cleaner.png  used on input line 229.
 (pdftex.def)             Requested size: 156.0004pt x 104.52576pt.
  [12
 
@@ -1400,46 +1400,46 @@ Package pdftex.def Info: figs/vacuum_cleaner.png  used on input line 226.
 <figs/firefighters.png, id=399, 178.266pt x 84.7968pt>
 File: figs/firefighters.png Graphic file (type png)
 <use figs/firefighters.png>
-Package pdftex.def Info: figs/firefighters.png  used on input line 264.
-(pdftex.def)             Requested size: 117.00327pt x 55.6568pt.
+Package pdftex.def Info: figs/firefighters.png  used on input line 268.
+(pdftex.def)             Requested size: 105.30222pt x 50.09177pt.
 <figs/door_open.png, id=400, 178.5069pt x 84.7968pt>
 File: figs/door_open.png Graphic file (type png)
 <use figs/door_open.png>
-Package pdftex.def Info: figs/door_open.png  used on input line 264.
-(pdftex.def)             Requested size: 117.00327pt x 55.58176pt.
+Package pdftex.def Info: figs/door_open.png  used on input line 268.
+(pdftex.def)             Requested size: 105.30222pt x 50.0232pt.
  [13
 
  <./figs/firefighters.png> <./figs/door_open.png>]
 File: figs/firefighters.png Graphic file (type png)
 <use figs/firefighters.png>
-Package pdftex.def Info: figs/firefighters.png  used on input line 264.
-(pdftex.def)             Requested size: 117.00327pt x 55.6568pt.
+Package pdftex.def Info: figs/firefighters.png  used on input line 268.
+(pdftex.def)             Requested size: 105.30222pt x 50.09177pt.
 File: figs/door_open.png Graphic file (type png)
 <use figs/door_open.png>
-Package pdftex.def Info: figs/door_open.png  used on input line 264.
-(pdftex.def)             Requested size: 117.00327pt x 55.58176pt.
+Package pdftex.def Info: figs/door_open.png  used on input line 268.
+(pdftex.def)             Requested size: 105.30222pt x 50.0232pt.
  [14
 
 ]
 File: figs/firefighters.png Graphic file (type png)
 <use figs/firefighters.png>
-Package pdftex.def Info: figs/firefighters.png  used on input line 264.
-(pdftex.def)             Requested size: 117.00327pt x 55.6568pt.
+Package pdftex.def Info: figs/firefighters.png  used on input line 268.
+(pdftex.def)             Requested size: 105.30222pt x 50.09177pt.
 File: figs/door_open.png Graphic file (type png)
 <use figs/door_open.png>
-Package pdftex.def Info: figs/door_open.png  used on input line 264.
-(pdftex.def)             Requested size: 117.00327pt x 55.58176pt.
+Package pdftex.def Info: figs/door_open.png  used on input line 268.
+(pdftex.def)             Requested size: 105.30222pt x 50.0232pt.
  [15
 
 ]
 File: figs/firefighters.png Graphic file (type png)
 <use figs/firefighters.png>
-Package pdftex.def Info: figs/firefighters.png  used on input line 264.
-(pdftex.def)             Requested size: 117.00327pt x 55.6568pt.
+Package pdftex.def Info: figs/firefighters.png  used on input line 268.
+(pdftex.def)             Requested size: 105.30222pt x 50.09177pt.
 File: figs/door_open.png Graphic file (type png)
 <use figs/door_open.png>
-Package pdftex.def Info: figs/door_open.png  used on input line 264.
-(pdftex.def)             Requested size: 117.00327pt x 55.58176pt.
+Package pdftex.def Info: figs/door_open.png  used on input line 268.
+(pdftex.def)             Requested size: 105.30222pt x 50.0232pt.
  [16
 
 ] [17
@@ -1451,7 +1451,7 @@ Package pdftex.def Info: figs/door_open.png  used on input line 264.
 ]
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 305.
+(Font)              using `OT1/cmss/bx/n' instead on input line 309.
 
 [20
 
@@ -1637,13 +1637,13 @@ Package pdftex.def Info: figs/lift_robot.png  used on input line 144.
 <figs/2d_map_simulation.png, id=1532, 101.4189pt x 81.1833pt>
 File: figs/2d_map_simulation.png Graphic file (type png)
 <use figs/2d_map_simulation.png>
-Package pdftex.def Info: figs/2d_map_simulation.png  used on input line 208.
-(pdftex.def)             Requested size: 104.004pt x 83.25554pt.
+Package pdftex.def Info: figs/2d_map_simulation.png  used on input line 212.
+(pdftex.def)             Requested size: 78.0035pt x 62.44196pt.
 <figs/2d_map_real.png, id=1533, 101.4189pt x 24.5718pt>
 File: figs/2d_map_real.png Graphic file (type png)
 <use figs/2d_map_real.png>
-Package pdftex.def Info: figs/2d_map_real.png  used on input line 208.
-(pdftex.def)             Requested size: 104.004pt x 25.19897pt.
+Package pdftex.def Info: figs/2d_map_real.png  used on input line 212.
+(pdftex.def)             Requested size: 78.0035pt x 18.89932pt.
  [53
 
  <./figs/2d_map_simulation.png> <./figs/2d_map_real.png>]
@@ -1651,15 +1651,15 @@ Package pdftex.def Info: figs/2d_map_real.png  used on input line 208.
 File: figs/2d_map_voronoi_simulation.png Graphic file (type png)
 <use figs/2d_map_voronoi_simulation.png>
 Package pdftex.def Info: figs/2d_map_voronoi_simulation.png  used on input line
- 236.
-(pdftex.def)             Requested size: 104.004pt x 95.80156pt.
+ 244.
+(pdftex.def)             Requested size: 78.0035pt x 71.85117pt.
 <figs/2d_map_voronoi_real.png, id=1565, 95.1555pt x 29.1489pt>
 File: figs/2d_map_voronoi_real.png Graphic file (type png)
 <use figs/2d_map_voronoi_real.png>
-Package pdftex.def Info: figs/2d_map_voronoi_real.png  used on input line 236.
-(pdftex.def)             Requested size: 104.004pt x 31.86148pt.
+Package pdftex.def Info: figs/2d_map_voronoi_real.png  used on input line 244.
+(pdftex.def)             Requested size: 78.0035pt x 23.896pt.
 
-Overfull \vbox (1.24756pt too high) detected at line 236
+Overfull \vbox (2.5005pt too high) detected at line 244
  []
 
 [54
@@ -1669,15 +1669,15 @@ Overfull \vbox (1.24756pt too high) detected at line 236
 File: figs/2d_map_visited_simulation.png Graphic file (type png)
 <use figs/2d_map_visited_simulation.png>
 Package pdftex.def Info: figs/2d_map_visited_simulation.png  used on input line
- 265.
-(pdftex.def)             Requested size: 104.004pt x 95.86697pt.
+ 277.
+(pdftex.def)             Requested size: 78.0035pt x 71.90056pt.
 <figs/2d_map_visited_real.png, id=1596, 95.6373pt x 29.1489pt>
 File: figs/2d_map_visited_real.png Graphic file (type png)
 <use figs/2d_map_visited_real.png>
-Package pdftex.def Info: figs/2d_map_visited_real.png  used on input line 265.
-(pdftex.def)             Requested size: 104.004pt x 31.70003pt.
+Package pdftex.def Info: figs/2d_map_visited_real.png  used on input line 277.
+(pdftex.def)             Requested size: 78.0035pt x 23.77502pt.
 
-Overfull \vbox (1.15152pt too high) detected at line 265
+Overfull \vbox (2.42892pt too high) detected at line 277
  []
 
 [55
@@ -1686,14 +1686,14 @@ Overfull \vbox (1.15152pt too high) detected at line 265
 File: figs/2d_map_visited_simulation.png Graphic file (type png)
 <use figs/2d_map_visited_simulation.png>
 Package pdftex.def Info: figs/2d_map_visited_simulation.png  used on input line
- 295.
-(pdftex.def)             Requested size: 104.004pt x 95.86697pt.
+ 311.
+(pdftex.def)             Requested size: 78.0035pt x 71.90056pt.
 File: figs/2d_map_visited_real.png Graphic file (type png)
 <use figs/2d_map_visited_real.png>
-Package pdftex.def Info: figs/2d_map_visited_real.png  used on input line 295.
-(pdftex.def)             Requested size: 104.004pt x 31.70003pt.
+Package pdftex.def Info: figs/2d_map_visited_real.png  used on input line 311.
+(pdftex.def)             Requested size: 78.0035pt x 23.77502pt.
 
-Overfull \vbox (1.15152pt too high) detected at line 295
+Overfull \vbox (2.42892pt too high) detected at line 311
  []
 
 [56
@@ -1702,25 +1702,25 @@ Overfull \vbox (1.15152pt too high) detected at line 295
 <figs/2d_map_segmented.png, id=1654, 101.9007pt x 93.951pt>
 File: figs/2d_map_segmented.png Graphic file (type png)
 <use figs/2d_map_segmented.png>
-Package pdftex.def Info: figs/2d_map_segmented.png  used on input line 319.
+Package pdftex.def Info: figs/2d_map_segmented.png  used on input line 335.
 (pdftex.def)             Requested size: 86.66748pt x 79.90747pt.
 <figs/2d_map_segmented_colors.png, id=1655, 101.9007pt x 93.951pt>
 File: figs/2d_map_segmented_colors.png Graphic file (type png)
 <use figs/2d_map_segmented_colors.png>
 Package pdftex.def Info: figs/2d_map_segmented_colors.png  used on input line 3
-19.
+35.
 (pdftex.def)             Requested size: 86.66748pt x 79.90747pt.
  [57
 
  <./figs/2d_map_segmented.png> <./figs/2d_map_segmented_colors.png>]
 File: figs/2d_map_segmented.png Graphic file (type png)
 <use figs/2d_map_segmented.png>
-Package pdftex.def Info: figs/2d_map_segmented.png  used on input line 344.
+Package pdftex.def Info: figs/2d_map_segmented.png  used on input line 360.
 (pdftex.def)             Requested size: 86.66748pt x 79.90747pt.
 File: figs/2d_map_segmented_colors.png Graphic file (type png)
 <use figs/2d_map_segmented_colors.png>
 Package pdftex.def Info: figs/2d_map_segmented_colors.png  used on input line 3
-44.
+60.
 (pdftex.def)             Requested size: 86.66748pt x 79.90747pt.
 
 [58
@@ -1728,24 +1728,24 @@ Package pdftex.def Info: figs/2d_map_segmented_colors.png  used on input line 3
 ]
 File: figs/2d_map_segmented.png Graphic file (type png)
 <use figs/2d_map_segmented.png>
-Package pdftex.def Info: figs/2d_map_segmented.png  used on input line 370.
+Package pdftex.def Info: figs/2d_map_segmented.png  used on input line 387.
 (pdftex.def)             Requested size: 86.66748pt x 79.90747pt.
 File: figs/2d_map_segmented_colors.png Graphic file (type png)
 <use figs/2d_map_segmented_colors.png>
 Package pdftex.def Info: figs/2d_map_segmented_colors.png  used on input line 3
-70.
+87.
 (pdftex.def)             Requested size: 86.66748pt x 79.90747pt.
  [59
 
 ]
 File: figs/2d_map_segmented.png Graphic file (type png)
 <use figs/2d_map_segmented.png>
-Package pdftex.def Info: figs/2d_map_segmented.png  used on input line 397.
+Package pdftex.def Info: figs/2d_map_segmented.png  used on input line 415.
 (pdftex.def)             Requested size: 86.66748pt x 79.90747pt.
 File: figs/2d_map_segmented_colors.png Graphic file (type png)
 <use figs/2d_map_segmented_colors.png>
-Package pdftex.def Info: figs/2d_map_segmented_colors.png  used on input line 3
-97.
+Package pdftex.def Info: figs/2d_map_segmented_colors.png  used on input line 4
+15.
 (pdftex.def)             Requested size: 86.66748pt x 79.90747pt.
  [60
 
@@ -1753,28 +1753,28 @@ Package pdftex.def Info: figs/2d_map_segmented_colors.png  used on input line 3
 <figs/image_processing.png, id=1767, 255.1131pt x 80.9424pt>
 File: figs/image_processing.png Graphic file (type png)
 <use figs/image_processing.png>
-Package pdftex.def Info: figs/image_processing.png  used on input line 414.
+Package pdftex.def Info: figs/image_processing.png  used on input line 432.
 (pdftex.def)             Requested size: 195.00348pt x 61.87132pt.
  [61
 
  <./figs/image_processing.png>]
 File: figs/image_processing.png Graphic file (type png)
 <use figs/image_processing.png>
-Package pdftex.def Info: figs/image_processing.png  used on input line 432.
+Package pdftex.def Info: figs/image_processing.png  used on input line 450.
 (pdftex.def)             Requested size: 195.00348pt x 61.87132pt.
  [62
 
 ]
 File: figs/image_processing.png Graphic file (type png)
 <use figs/image_processing.png>
-Package pdftex.def Info: figs/image_processing.png  used on input line 451.
+Package pdftex.def Info: figs/image_processing.png  used on input line 469.
 (pdftex.def)             Requested size: 195.00348pt x 61.87132pt.
  [63
 
 ]
 File: figs/image_processing.png Graphic file (type png)
 <use figs/image_processing.png>
-Package pdftex.def Info: figs/image_processing.png  used on input line 471.
+Package pdftex.def Info: figs/image_processing.png  used on input line 489.
 (pdftex.def)             Requested size: 195.00348pt x 61.87132pt.
  [64
 
@@ -1791,7 +1791,7 @@ Package pdftex.def Info: figs/image_processing.png  used on input line 471.
 <figs/growing_unknown.png, id=1990, 130.3269pt x 55.1661pt>
 File: figs/growing_unknown.png Graphic file (type png)
 <use figs/growing_unknown.png>
-Package pdftex.def Info: figs/growing_unknown.png  used on input line 544.
+Package pdftex.def Info: figs/growing_unknown.png  used on input line 562.
 (pdftex.def)             Requested size: 151.66974pt x 64.20651pt.
  [69
 
@@ -1799,22 +1799,22 @@ Package pdftex.def Info: figs/growing_unknown.png  used on input line 544.
 <figs/growing_1.png, id=2019, 84.7968pt x 35.8941pt>
 File: figs/growing_1.png Graphic file (type png)
 <use figs/growing_1.png>
-Package pdftex.def Info: figs/growing_1.png  used on input line 572.
+Package pdftex.def Info: figs/growing_1.png  used on input line 590.
 (pdftex.def)             Requested size: 99.66727pt x 42.19199pt.
 <figs/growing_2.png, id=2020, 84.7968pt x 35.8941pt>
 File: figs/growing_2.png Graphic file (type png)
 <use figs/growing_2.png>
-Package pdftex.def Info: figs/growing_2.png  used on input line 572.
+Package pdftex.def Info: figs/growing_2.png  used on input line 590.
 (pdftex.def)             Requested size: 99.66727pt x 42.19199pt.
 <figs/growing_4.png, id=2021, 84.7968pt x 35.8941pt>
 File: figs/growing_4.png Graphic file (type png)
 <use figs/growing_4.png>
-Package pdftex.def Info: figs/growing_4.png  used on input line 572.
+Package pdftex.def Info: figs/growing_4.png  used on input line 590.
 (pdftex.def)             Requested size: 99.66727pt x 42.19199pt.
 <figs/growing_3.png, id=2022, 84.7968pt x 35.8941pt>
 File: figs/growing_3.png Graphic file (type png)
 <use figs/growing_3.png>
-Package pdftex.def Info: figs/growing_3.png  used on input line 572.
+Package pdftex.def Info: figs/growing_3.png  used on input line 590.
 (pdftex.def)             Requested size: 99.66727pt x 42.19199pt.
  [70
 
@@ -1823,17 +1823,17 @@ rowing_3.png>]
 <figs/growing_goaldoor_2.png, id=2054, 130.3269pt x 55.1661pt>
 File: figs/growing_goaldoor_2.png Graphic file (type png)
 <use figs/growing_goaldoor_2.png>
-Package pdftex.def Info: figs/growing_goaldoor_2.png  used on input line 598.
+Package pdftex.def Info: figs/growing_goaldoor_2.png  used on input line 616.
 (pdftex.def)             Requested size: 130.00452pt x 55.03548pt.
 <figs/growing_goaldoor_32.png, id=2055, 130.3269pt x 55.1661pt>
 File: figs/growing_goaldoor_32.png Graphic file (type png)
 <use figs/growing_goaldoor_32.png>
-Package pdftex.def Info: figs/growing_goaldoor_32.png  used on input line 598.
+Package pdftex.def Info: figs/growing_goaldoor_32.png  used on input line 616.
 (pdftex.def)             Requested size: 130.00452pt x 55.03548pt.
 <figs/growing_goaldoor_15.png, id=2056, 130.3269pt x 55.1661pt>
 File: figs/growing_goaldoor_15.png Graphic file (type png)
 <use figs/growing_goaldoor_15.png>
-Package pdftex.def Info: figs/growing_goaldoor_15.png  used on input line 598.
+Package pdftex.def Info: figs/growing_goaldoor_15.png  used on input line 616.
 (pdftex.def)             Requested size: 130.00452pt x 55.03548pt.
  [71
 
@@ -1842,7 +1842,7 @@ ng_goaldoor_15.png>]
 <figs/growing_equation.png, id=2087, 414.79968pt x 68.50594pt>
 File: figs/growing_equation.png Graphic file (type png)
 <use figs/growing_equation.png>
-Package pdftex.def Info: figs/growing_equation.png  used on input line 606.
+Package pdftex.def Info: figs/growing_equation.png  used on input line 624.
 (pdftex.def)             Requested size: 86.66748pt x 14.31349pt.
  [72
 
@@ -1850,12 +1850,12 @@ Package pdftex.def Info: figs/growing_equation.png  used on input line 606.
 <figs/parity_even.png, id=2117, 130.3269pt x 55.1661pt>
 File: figs/parity_even.png Graphic file (type png)
 <use figs/parity_even.png>
-Package pdftex.def Info: figs/parity_even.png  used on input line 632.
+Package pdftex.def Info: figs/parity_even.png  used on input line 650.
 (pdftex.def)             Requested size: 130.00452pt x 55.03548pt.
 <figs/parity_odd.png, id=2118, 130.3269pt x 55.1661pt>
 File: figs/parity_odd.png Graphic file (type png)
 <use figs/parity_odd.png>
-Package pdftex.def Info: figs/parity_odd.png  used on input line 632.
+Package pdftex.def Info: figs/parity_odd.png  used on input line 650.
 (pdftex.def)             Requested size: 130.00452pt x 55.03548pt.
  [73
 
@@ -1863,104 +1863,88 @@ Package pdftex.def Info: figs/parity_odd.png  used on input line 632.
 <figs/parity_equation.png, id=2149, 666.23906pt x 98.61844pt>
 File: figs/parity_equation.png Graphic file (type png)
 <use figs/parity_equation.png>
-Package pdftex.def Info: figs/parity_equation.png  used on input line 640.
+Package pdftex.def Info: figs/parity_equation.png  used on input line 658.
 (pdftex.def)             Requested size: 216.67201pt x 32.07167pt.
  [74
 
  <./figs/parity_equation.png>]
-<figs/robot_orientation.png, id=2178, 81.6651pt x 41.9166pt>
-File: figs/robot_orientation.png Graphic file (type png)
-<use figs/robot_orientation.png>
-Package pdftex.def Info: figs/robot_orientation.png  used on input line 668.
-(pdftex.def)             Requested size: 107.2525pt x 55.0499pt.
-<figs/door_orientation.png, id=2179, 81.6651pt x 41.9166pt>
-File: figs/door_orientation.png Graphic file (type png)
-<use figs/door_orientation.png>
-Package pdftex.def Info: figs/door_orientation.png  used on input line 668.
-(pdftex.def)             Requested size: 107.2525pt x 55.0499pt.
+<figs/real_environment_map.png, id=2178, 183.084pt x 52.5162pt>
+File: figs/real_environment_map.png Graphic file (type png)
+<use figs/real_environment_map.png>
+Package pdftex.def Info: figs/real_environment_map.png  used on input line 687.
 
-Overfull \hbox (21.43698pt too wide) detected at line 668
+(pdftex.def)             Requested size: 178.75539pt x 51.2756pt.
+
+Overfull \hbox (21.43698pt too wide) detected at line 687
 [][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
 [75
 
- <./figs/robot_orientation.png> <./figs/door_orientation.png>]
-File: figs/robot_orientation.png Graphic file (type png)
-<use figs/robot_orientation.png>
-Package pdftex.def Info: figs/robot_orientation.png  used on input line 668.
-(pdftex.def)             Requested size: 107.2525pt x 55.0499pt.
-File: figs/door_orientation.png Graphic file (type png)
-<use figs/door_orientation.png>
-Package pdftex.def Info: figs/door_orientation.png  used on input line 668.
-(pdftex.def)             Requested size: 107.2525pt x 55.0499pt.
+ <./figs/real_environment_map.png>]
+File: figs/real_environment_map.png Graphic file (type png)
+<use figs/real_environment_map.png>
+Package pdftex.def Info: figs/real_environment_map.png  used on input line 687.
 
-Overfull \hbox (21.43698pt too wide) detected at line 668
+(pdftex.def)             Requested size: 178.75539pt x 51.2756pt.
+
+Overfull \hbox (21.43698pt too wide) detected at line 687
 [][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
 [76
 
 ]
-File: figs/robot_orientation.png Graphic file (type png)
-<use figs/robot_orientation.png>
-Package pdftex.def Info: figs/robot_orientation.png  used on input line 668.
-(pdftex.def)             Requested size: 107.2525pt x 55.0499pt.
-File: figs/door_orientation.png Graphic file (type png)
-<use figs/door_orientation.png>
-Package pdftex.def Info: figs/door_orientation.png  used on input line 668.
-(pdftex.def)             Requested size: 107.2525pt x 55.0499pt.
+File: figs/real_environment_map.png Graphic file (type png)
+<use figs/real_environment_map.png>
+Package pdftex.def Info: figs/real_environment_map.png  used on input line 687.
 
-Overfull \hbox (21.43698pt too wide) detected at line 668
+(pdftex.def)             Requested size: 178.75539pt x 51.2756pt.
+
+Overfull \hbox (21.43698pt too wide) detected at line 687
 [][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
 [77
 
 ]
-File: figs/robot_orientation.png Graphic file (type png)
-<use figs/robot_orientation.png>
-Package pdftex.def Info: figs/robot_orientation.png  used on input line 668.
-(pdftex.def)             Requested size: 107.2525pt x 55.0499pt.
-File: figs/door_orientation.png Graphic file (type png)
-<use figs/door_orientation.png>
-Package pdftex.def Info: figs/door_orientation.png  used on input line 668.
-(pdftex.def)             Requested size: 107.2525pt x 55.0499pt.
+File: figs/real_environment_map.png Graphic file (type png)
+<use figs/real_environment_map.png>
+Package pdftex.def Info: figs/real_environment_map.png  used on input line 687.
 
-Overfull \hbox (21.43698pt too wide) detected at line 668
+(pdftex.def)             Requested size: 178.75539pt x 51.2756pt.
+
+Overfull \hbox (21.43698pt too wide) detected at line 687
 [][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
 [78
 
 ]
-File: figs/robot_orientation.png Graphic file (type png)
-<use figs/robot_orientation.png>
-Package pdftex.def Info: figs/robot_orientation.png  used on input line 668.
-(pdftex.def)             Requested size: 107.2525pt x 55.0499pt.
-File: figs/door_orientation.png Graphic file (type png)
-<use figs/door_orientation.png>
-Package pdftex.def Info: figs/door_orientation.png  used on input line 668.
-(pdftex.def)             Requested size: 107.2525pt x 55.0499pt.
+File: figs/real_environment_map.png Graphic file (type png)
+<use figs/real_environment_map.png>
+Package pdftex.def Info: figs/real_environment_map.png  used on input line 687.
 
-Overfull \hbox (21.43698pt too wide) detected at line 668
+(pdftex.def)             Requested size: 178.75539pt x 51.2756pt.
+
+Overfull \hbox (21.43698pt too wide) detected at line 687
 [][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
 [79
 
 ]
-<figs/door_orientation_equation.png, id=2319, 216.81pt x 31.61812pt>
+<figs/door_orientation_equation.png, id=2317, 216.81pt x 31.61812pt>
 File: figs/door_orientation_equation.png Graphic file (type png)
 <use figs/door_orientation_equation.png>
 Package pdftex.def Info: figs/door_orientation_equation.png  used on input line
- 677.
+ 696.
 (pdftex.def)             Requested size: 86.66748pt x 12.63881pt.
-<figs/robot_orientation_equation.png, id=2320, 215.30438pt x 31.61812pt>
+<figs/robot_orientation_equation.png, id=2318, 215.30438pt x 31.61812pt>
 File: figs/robot_orientation_equation.png Graphic file (type png)
 <use figs/robot_orientation_equation.png>
 Package pdftex.def Info: figs/robot_orientation_equation.png  used on input lin
-e 677.
+e 696.
 (pdftex.def)             Requested size: 86.66748pt x 12.72758pt.
  [80
 
@@ -1974,94 +1958,94 @@ e 677.
 ] [84
 
 ]
-<figs/distance_equation.png, id=2460, 423.83344pt x 127.97812pt>
+<figs/distance_equation.png, id=2458, 423.83344pt x 127.97812pt>
 File: figs/distance_equation.png Graphic file (type png)
 <use figs/distance_equation.png>
-Package pdftex.def Info: figs/distance_equation.png  used on input line 707.
+Package pdftex.def Info: figs/distance_equation.png  used on input line 726.
 (pdftex.def)             Requested size: 216.67201pt x 65.4242pt.
  [85
 
  <./figs/distance_equation.png>]
-Overfull \hbox (21.43698pt too wide) detected at line 721
+Overfull \hbox (21.43698pt too wide) detected at line 740
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [86
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 721
+Overfull \hbox (21.43698pt too wide) detected at line 740
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [87
 
 ]
-Overfull \hbox (21.43698pt too wide) detected at line 721
+Overfull \hbox (21.43698pt too wide) detected at line 740
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [88
 
 ]
-<figs/semantic_factor_equation.png, id=2572, 219.06844pt x 31.61812pt>
+<figs/semantic_factor_equation.png, id=2570, 219.06844pt x 31.61812pt>
 File: figs/semantic_factor_equation.png Graphic file (type png)
 <use figs/semantic_factor_equation.png>
 Package pdftex.def Info: figs/semantic_factor_equation.png  used on input line 
-732.
+751.
 (pdftex.def)             Requested size: 216.67201pt x 31.27258pt.
-<figs/geometric_factor_equation.png, id=2573, 456.95718pt x 68.50594pt>
+<figs/geometric_factor_equation.png, id=2571, 456.95718pt x 68.50594pt>
 File: figs/geometric_factor_equation.png Graphic file (type png)
 <use figs/geometric_factor_equation.png>
 Package pdftex.def Info: figs/geometric_factor_equation.png  used on input line
- 732.
+ 751.
 (pdftex.def)             Requested size: 216.67201pt x 32.48212pt.
-<figs/final_formula_equation.png, id=2574, 420.06938pt x 30.1125pt>
+<figs/final_formula_equation.png, id=2572, 420.06938pt x 30.1125pt>
 File: figs/final_formula_equation.png Graphic file (type png)
 <use figs/final_formula_equation.png>
-Package pdftex.def Info: figs/final_formula_equation.png  used on input line 73
-2.
+Package pdftex.def Info: figs/final_formula_equation.png  used on input line 75
+1.
 (pdftex.def)             Requested size: 216.67201pt x 15.53221pt.
-<figs/max_final_equation.png, id=2575, 243.15843pt x 48.93282pt>
+<figs/max_final_equation.png, id=2573, 243.15843pt x 48.93282pt>
 File: figs/max_final_equation.png Graphic file (type png)
 <use figs/max_final_equation.png>
-Package pdftex.def Info: figs/max_final_equation.png  used on input line 732.
+Package pdftex.def Info: figs/max_final_equation.png  used on input line 751.
 (pdftex.def)             Requested size: 216.67201pt x 43.60231pt.
  [89
 
  <./figs/semantic_factor_equation.png> <./figs/geometric_factor_equation.png> <
 ./figs/final_formula_equation.png> <./figs/max_final_equation.png>]
-<figs/setup_simulation_text.png, id=2607, 470.2368pt x 152.4897pt>
+<figs/setup_simulation_text.png, id=2605, 470.2368pt x 152.4897pt>
 File: figs/setup_simulation_text.png Graphic file (type png)
 <use figs/setup_simulation_text.png>
-Package pdftex.def Info: figs/setup_simulation_text.png  used on input line 749
+Package pdftex.def Info: figs/setup_simulation_text.png  used on input line 768
 .
 (pdftex.def)             Requested size: 216.67201pt x 70.26244pt.
 
 [90
 
  <./figs/setup_simulation_text.png>]
-<figs/KTH_CampusValhallava_finished.png, id=2636, 222.5916pt x 290.7663pt>
+<figs/KTH_CampusValhallava_finished.png, id=2634, 222.5916pt x 290.7663pt>
 File: figs/KTH_CampusValhallava_finished.png Graphic file (type png)
 <use figs/KTH_CampusValhallava_finished.png>
 Package pdftex.def Info: figs/KTH_CampusValhallava_finished.png  used on input 
-line 792.
+line 811.
 (pdftex.def)             Requested size: 52.65111pt x 68.77376pt.
-<figs/hotel2_PAPER.png, id=2637, 428.5611pt x 256.7994pt>
+<figs/hotel2_PAPER.png, id=2635, 428.5611pt x 256.7994pt>
 File: figs/hotel2_PAPER.png Graphic file (type png)
 <use figs/hotel2_PAPER.png>
-Package pdftex.def Info: figs/hotel2_PAPER.png  used on input line 792.
+Package pdftex.def Info: figs/hotel2_PAPER.png  used on input line 811.
 (pdftex.def)             Requested size: 81.90192pt x 49.07451pt.
-<figs/map_normal_redcircles.png, id=2638, 287.8755pt x 192.4791pt>
+<figs/map_normal_redcircles.png, id=2636, 287.8755pt x 192.4791pt>
 File: figs/map_normal_redcircles.png Graphic file (type png)
 <use figs/map_normal_redcircles.png>
-Package pdftex.def Info: figs/map_normal_redcircles.png  used on input line 792
+Package pdftex.def Info: figs/map_normal_redcircles.png  used on input line 811
 .
 (pdftex.def)             Requested size: 70.20267pt x 46.93898pt.
-<figs/map_inverse_redcircles.png, id=2639, 287.8755pt x 192.2382pt>
+<figs/map_inverse_redcircles.png, id=2637, 287.8755pt x 192.2382pt>
 File: figs/map_inverse_redcircles.png Graphic file (type png)
 <use figs/map_inverse_redcircles.png>
-Package pdftex.def Info: figs/map_inverse_redcircles.png  used on input line 79
-2.
+Package pdftex.def Info: figs/map_inverse_redcircles.png  used on input line 81
+1.
 (pdftex.def)             Requested size: 70.20267pt x 46.88023pt.
  [91
 
@@ -2070,253 +2054,232 @@ ap_normal_redcircles.png> <./figs/map_inverse_redcircles.png>]
 File: figs/KTH_CampusValhallava_finished.png Graphic file (type png)
 <use figs/KTH_CampusValhallava_finished.png>
 Package pdftex.def Info: figs/KTH_CampusValhallava_finished.png  used on input 
-line 836.
+line 855.
 (pdftex.def)             Requested size: 52.65111pt x 68.77376pt.
 File: figs/hotel2_PAPER.png Graphic file (type png)
 <use figs/hotel2_PAPER.png>
-Package pdftex.def Info: figs/hotel2_PAPER.png  used on input line 836.
+Package pdftex.def Info: figs/hotel2_PAPER.png  used on input line 855.
 (pdftex.def)             Requested size: 81.90192pt x 49.07451pt.
 File: figs/map_normal_redcircles.png Graphic file (type png)
 <use figs/map_normal_redcircles.png>
-Package pdftex.def Info: figs/map_normal_redcircles.png  used on input line 836
+Package pdftex.def Info: figs/map_normal_redcircles.png  used on input line 855
 .
 (pdftex.def)             Requested size: 70.20267pt x 46.93898pt.
 File: figs/map_inverse_redcircles.png Graphic file (type png)
 <use figs/map_inverse_redcircles.png>
-Package pdftex.def Info: figs/map_inverse_redcircles.png  used on input line 83
-6.
+Package pdftex.def Info: figs/map_inverse_redcircles.png  used on input line 85
+5.
 (pdftex.def)             Requested size: 70.20267pt x 46.88023pt.
  [92
 
 ]
+<figs/normal_avrg_text.png, id=2698, 684.5575pt x 189.70876pt>
+File: figs/normal_avrg_text.png Graphic file (type png)
+<use figs/normal_avrg_text.png>
+Package pdftex.def Info: figs/normal_avrg_text.png  used on input line 882.
+(pdftex.def)             Requested size: 173.33496pt x 48.03496pt.
+File: figs/map_normal_redcircles.png Graphic file (type png)
+<use figs/map_normal_redcircles.png>
+Package pdftex.def Info: figs/map_normal_redcircles.png  used on input line 882
+.
+(pdftex.def)             Requested size: 138.66849pt x 92.72078pt.
+
 
 pdfTeX warning: pdflatex (file ./figs/RESULTS_NORMAL_NEW_T-eps-converted-to.pdf
 ): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/RESULTS_NORMAL_NEW_T-eps-converted-to.pdf, id=2700, 472.76625pt x 523.957
+<figs/RESULTS_NORMAL_NEW_T-eps-converted-to.pdf, id=2699, 472.76625pt x 523.957
 5pt>
 File: figs/RESULTS_NORMAL_NEW_T-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/RESULTS_NORMAL_NEW_T-eps-converted-to.pdf>
 Package pdftex.def Info: figs/RESULTS_NORMAL_NEW_T-eps-converted-to.pdf  used o
-n input line 863.
+n input line 882.
 (pdftex.def)             Requested size: 138.66849pt x 153.68668pt.
-
-
-pdfTeX warning: pdflatex (file ./figs/RESULTS_NORMAL_SHORTEST_NEW_T-eps-convert
-ed-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> a
-llowed
-<figs/RESULTS_NORMAL_SHORTEST_NEW_T-eps-converted-to.pdf, id=2701, 621.32124pt 
-x 163.61125pt>
-File: figs/RESULTS_NORMAL_SHORTEST_NEW_T-eps-converted-to.pdf Graphic file (typ
-e pdf)
-<use figs/RESULTS_NORMAL_SHORTEST_NEW_T-eps-converted-to.pdf>
-Package pdftex.def Info: figs/RESULTS_NORMAL_SHORTEST_NEW_T-eps-converted-to.pd
-f  used on input line 863.
-(pdftex.def)             Requested size: 173.33496pt x 45.64355pt.
-File: figs/map_normal_redcircles.png Graphic file (type png)
-<use figs/map_normal_redcircles.png>
-Package pdftex.def Info: figs/map_normal_redcircles.png  used on input line 863
-.
-(pdftex.def)             Requested size: 138.66849pt x 92.72078pt.
 [93
 
- <./figs/RESULTS_NORMAL_NEW_T-eps-converted-to.pdf> <./figs/RESULTS_NORMAL_SHOR
-TEST_NEW_T-eps-converted-to.pdf>]
+ <./figs/normal_avrg_text.png> <./figs/RESULTS_NORMAL_NEW_T-eps-converted-to.pd
+f>]
+<figs/inverse_avrg_text.png, id=2732, 683.55376pt x 172.645pt>
+File: figs/inverse_avrg_text.png Graphic file (type png)
+<use figs/inverse_avrg_text.png>
+Package pdftex.def Info: figs/inverse_avrg_text.png  used on input line 909.
+(pdftex.def)             Requested size: 173.33496pt x 43.77757pt.
+File: figs/map_inverse_redcircles.png Graphic file (type png)
+<use figs/map_inverse_redcircles.png>
+Package pdftex.def Info: figs/map_inverse_redcircles.png  used on input line 90
+9.
+(pdftex.def)             Requested size: 138.66849pt x 92.60474pt.
+
 
 pdfTeX warning: pdflatex (file ./figs/RESULTS_INVERSE_NEW_T-eps-converted-to.pd
 f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/RESULTS_INVERSE_NEW_T-eps-converted-to.pdf, id=2736, 472.76625pt x 525.96
+<figs/RESULTS_INVERSE_NEW_T-eps-converted-to.pdf, id=2733, 472.76625pt x 525.96
 5pt>
 File: figs/RESULTS_INVERSE_NEW_T-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/RESULTS_INVERSE_NEW_T-eps-converted-to.pdf>
 Package pdftex.def Info: figs/RESULTS_INVERSE_NEW_T-eps-converted-to.pdf  used 
-on input line 890.
+on input line 909.
 (pdftex.def)             Requested size: 138.66849pt x 154.27551pt.
-
-
-pdfTeX warning: pdflatex (file ./figs/RESULTS_INVERSE_SHORTEST_NEW_T-eps-conver
-ted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> 
-allowed
-<figs/RESULTS_INVERSE_SHORTEST_NEW_T-eps-converted-to.pdf, id=2737, 619.31375pt
- x 162.6075pt>
-File: figs/RESULTS_INVERSE_SHORTEST_NEW_T-eps-converted-to.pdf Graphic file (ty
-pe pdf)
-<use figs/RESULTS_INVERSE_SHORTEST_NEW_T-eps-converted-to.pdf>
-Package pdftex.def Info: figs/RESULTS_INVERSE_SHORTEST_NEW_T-eps-converted-to.p
-df  used on input line 890.
-(pdftex.def)             Requested size: 173.33496pt x 45.50993pt.
-File: figs/map_inverse_redcircles.png Graphic file (type png)
-<use figs/map_inverse_redcircles.png>
-Package pdftex.def Info: figs/map_inverse_redcircles.png  used on input line 89
-0.
-(pdftex.def)             Requested size: 138.66849pt x 92.60474pt.
 [94
 
- <./figs/RESULTS_INVERSE_NEW_T-eps-converted-to.pdf> <./figs/RESULTS_INVERSE_SH
-ORTEST_NEW_T-eps-converted-to.pdf>]
+ <./figs/inverse_avrg_text.png> <./figs/RESULTS_INVERSE_NEW_T-eps-converted-to.
+pdf>]
+<figs/hotel_avrg_text.png, id=2766, 684.5575pt x 171.64125pt>
+File: figs/hotel_avrg_text.png Graphic file (type png)
+<use figs/hotel_avrg_text.png>
+Package pdftex.def Info: figs/hotel_avrg_text.png  used on input line 936.
+(pdftex.def)             Requested size: 173.33496pt x 43.46019pt.
+File: figs/hotel2_PAPER.png Graphic file (type png)
+<use figs/hotel2_PAPER.png>
+Package pdftex.def Info: figs/hotel2_PAPER.png  used on input line 936.
+(pdftex.def)             Requested size: 138.66849pt x 83.09439pt.
+
 
 pdfTeX warning: pdflatex (file ./figs/RESULTS_HOTEL_NEW_T-eps-converted-to.pdf)
 : PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/RESULTS_HOTEL_NEW_T-eps-converted-to.pdf, id=2772, 472.76625pt x 525.965p
+<figs/RESULTS_HOTEL_NEW_T-eps-converted-to.pdf, id=2767, 472.76625pt x 525.965p
 t>
 File: figs/RESULTS_HOTEL_NEW_T-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/RESULTS_HOTEL_NEW_T-eps-converted-to.pdf>
 Package pdftex.def Info: figs/RESULTS_HOTEL_NEW_T-eps-converted-to.pdf  used on
- input line 917.
+ input line 936.
 (pdftex.def)             Requested size: 138.66849pt x 154.27551pt.
-
-
-pdfTeX warning: pdflatex (file ./figs/RESULTS_HOTEL_SHORTEST_NEW_T-eps-converte
-d-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> al
-lowed
-<figs/RESULTS_HOTEL_SHORTEST_NEW_T-eps-converted-to.pdf, id=2773, 621.32124pt x
- 162.6075pt>
-File: figs/RESULTS_HOTEL_SHORTEST_NEW_T-eps-converted-to.pdf Graphic file (type
- pdf)
-<use figs/RESULTS_HOTEL_SHORTEST_NEW_T-eps-converted-to.pdf>
-Package pdftex.def Info: figs/RESULTS_HOTEL_SHORTEST_NEW_T-eps-converted-to.pdf
-  used on input line 917.
-(pdftex.def)             Requested size: 173.33496pt x 45.36354pt.
-File: figs/hotel2_PAPER.png Graphic file (type png)
-<use figs/hotel2_PAPER.png>
-Package pdftex.def Info: figs/hotel2_PAPER.png  used on input line 917.
-(pdftex.def)             Requested size: 138.66849pt x 83.09439pt.
 [95
 
- <./figs/RESULTS_HOTEL_NEW_T-eps-converted-to.pdf> <./figs/RESULTS_HOTEL_SHORTE
-ST_NEW_T-eps-converted-to.pdf>]
-
-pdfTeX warning: pdflatex (file ./figs/RESULTS_KTH_NEW_T-eps-converted-to.pdf): 
-PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/RESULTS_KTH_NEW_T-eps-converted-to.pdf, id=2809, 473.77pt x 241.90375pt>
-File: figs/RESULTS_KTH_NEW_T-eps-converted-to.pdf Graphic file (type pdf)
-<use figs/RESULTS_KTH_NEW_T-eps-converted-to.pdf>
-Package pdftex.def Info: figs/RESULTS_KTH_NEW_T-eps-converted-to.pdf  used on i
-nput line 944.
-(pdftex.def)             Requested size: 138.66849pt x 70.80362pt.
-
-
-pdfTeX warning: pdflatex (file ./figs/RESULTS_KTH_SHORTEST_NEW_T-eps-converted-
-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allo
-wed
-<figs/RESULTS_KTH_SHORTEST_NEW_T-eps-converted-to.pdf, id=2810, 621.32124pt x 1
-00.375pt>
-File: figs/RESULTS_KTH_SHORTEST_NEW_T-eps-converted-to.pdf Graphic file (type p
-df)
-<use figs/RESULTS_KTH_SHORTEST_NEW_T-eps-converted-to.pdf>
-Package pdftex.def Info: figs/RESULTS_KTH_SHORTEST_NEW_T-eps-converted-to.pdf  
-used on input line 944.
-(pdftex.def)             Requested size: 173.33496pt x 28.00218pt.
+ <./figs/hotel_avrg_text.png> <./figs/RESULTS_HOTEL_NEW_T-eps-converted-to.pdf>
+]
+<figs/kth_avrg_text.png, id=2801, 683.55376pt x 103.38625pt>
+File: figs/kth_avrg_text.png Graphic file (type png)
+<use figs/kth_avrg_text.png>
+Package pdftex.def Info: figs/kth_avrg_text.png  used on input line 963.
+(pdftex.def)             Requested size: 173.33496pt x 26.21564pt.
 File: figs/KTH_CampusValhallava_finished.png Graphic file (type png)
 <use figs/KTH_CampusValhallava_finished.png>
 Package pdftex.def Info: figs/KTH_CampusValhallava_finished.png  used on input 
-line 944.
+line 963.
 (pdftex.def)             Requested size: 91.86731pt x 120.00468pt.
+
+
+pdfTeX warning: pdflatex (file ./figs/RESULTS_KTH_NEW_T-eps-converted-to.pdf): 
+PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figs/RESULTS_KTH_NEW_T-eps-converted-to.pdf, id=2802, 473.77pt x 241.90375pt>
+File: figs/RESULTS_KTH_NEW_T-eps-converted-to.pdf Graphic file (type pdf)
+<use figs/RESULTS_KTH_NEW_T-eps-converted-to.pdf>
+Package pdftex.def Info: figs/RESULTS_KTH_NEW_T-eps-converted-to.pdf  used on i
+nput line 963.
+(pdftex.def)             Requested size: 138.66849pt x 70.80362pt.
 [96
 
- <./figs/RESULTS_KTH_NEW_T-eps-converted-to.pdf> <./figs/RESULTS_KTH_SHORTEST_N
-EW_T-eps-converted-to.pdf>]
+ <./figs/kth_avrg_text.png> <./figs/RESULTS_KTH_NEW_T-eps-converted-to.pdf>]
+<figs/normal_shortest_path_percentage.png, id=2835, 395.97937pt x 255.95625pt>
+File: figs/normal_shortest_path_percentage.png Graphic file (type png)
+<use figs/normal_shortest_path_percentage.png>
+Package pdftex.def Info: figs/normal_shortest_path_percentage.png  used on inpu
+t line 994.
+(pdftex.def)             Requested size: 138.66849pt x 89.63289pt.
+<figs/inverse_shortest_path_percentage.png, id=2836, 398.23781pt x 255.95625pt>
 
-pdfTeX warning: pdflatex (file ./figs/RESULTS_COMPARISON_PERCENTAGE_NEW_T-eps-c
-onverted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <
-1.5> allowed
-<figs/RESULTS_COMPARISON_PERCENTAGE_NEW_T-eps-converted-to.pdf, id=2845, 506.89
-375pt x 211.79124pt>
-File: figs/RESULTS_COMPARISON_PERCENTAGE_NEW_T-eps-converted-to.pdf Graphic fil
-e (type pdf)
-<use figs/RESULTS_COMPARISON_PERCENTAGE_NEW_T-eps-converted-to.pdf>
-Package pdftex.def Info: figs/RESULTS_COMPARISON_PERCENTAGE_NEW_T-eps-converted
--to.pdf  used on input line 973.
-(pdftex.def)             Requested size: 173.33826pt x 72.42172pt.
+File: figs/inverse_shortest_path_percentage.png Graphic file (type png)
+<use figs/inverse_shortest_path_percentage.png>
+Package pdftex.def Info: figs/inverse_shortest_path_percentage.png  used on inp
+ut line 994.
+(pdftex.def)             Requested size: 138.66849pt x 89.12517pt.
+<figs/hotel_shortest_path_percentage.png, id=2837, 398.23781pt x 255.95625pt>
+File: figs/hotel_shortest_path_percentage.png Graphic file (type png)
+<use figs/hotel_shortest_path_percentage.png>
+Package pdftex.def Info: figs/hotel_shortest_path_percentage.png  used on input
+ line 994.
+(pdftex.def)             Requested size: 138.66849pt x 89.12517pt.
 
-Overfull \hbox (43.1055pt too wide) detected at line 973
+Overfull \hbox (82.10487pt too wide) detected at line 994
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [97
 
- <./figs/RESULTS_COMPARISON_PERCENTAGE_NEW_T-eps-converted-to.pdf>]
+ <./figs/normal_shortest_path_percentage.png (PNG copy)> <./figs/inverse_shorte
+st_path_percentage.png (PNG copy)> <./figs/hotel_shortest_path_percentage.png (
+PNG copy)>]
 
 pdfTeX warning: pdflatex (file ./figs/RESULTS_HUMANS_NEW_T-eps-converted-to.pdf
 ): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/RESULTS_HUMANS_NEW_T-eps-converted-to.pdf, id=2877, 617.30624pt x 336.256
+<figs/RESULTS_HUMANS_NEW_T-eps-converted-to.pdf, id=2866, 617.30624pt x 336.256
 26pt>
 File: figs/RESULTS_HUMANS_NEW_T-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/RESULTS_HUMANS_NEW_T-eps-converted-to.pdf>
 Package pdftex.def Info: figs/RESULTS_HUMANS_NEW_T-eps-converted-to.pdf  used o
-n input line 1000.
+n input line 1021.
 (pdftex.def)             Requested size: 138.66849pt x 75.53125pt.
 File: figs/map_normal_redcircles.png Graphic file (type png)
 <use figs/map_normal_redcircles.png>
-Package pdftex.def Info: figs/map_normal_redcircles.png  used on input line 100
-0.
+Package pdftex.def Info: figs/map_normal_redcircles.png  used on input line 102
+1.
 (pdftex.def)             Requested size: 121.33394pt x 81.12555pt.
 File: figs/hotel2_PAPER.png Graphic file (type png)
 <use figs/hotel2_PAPER.png>
-Package pdftex.def Info: figs/hotel2_PAPER.png  used on input line 1000.
+Package pdftex.def Info: figs/hotel2_PAPER.png  used on input line 1021.
 (pdftex.def)             Requested size: 109.20186pt x 65.43399pt.
 [98
 
  <./figs/RESULTS_HUMANS_NEW_T-eps-converted-to.pdf>]
-<figs/real_environment_map.png, id=2910, 183.084pt x 52.5162pt>
 File: figs/real_environment_map.png Graphic file (type png)
 <use figs/real_environment_map.png>
-Package pdftex.def Info: figs/real_environment_map.png  used on input line 1029
+Package pdftex.def Info: figs/real_environment_map.png  used on input line 1050
 .
 (pdftex.def)             Requested size: 119.17026pt x 34.18399pt.
-<figs/real_scenario_labeled2.png, id=2911, 181.6386pt x 170.5572pt>
+<figs/real_scenario_labeled2.png, id=2898, 181.6386pt x 170.5572pt>
 File: figs/real_scenario_labeled2.png Graphic file (type png)
 <use figs/real_scenario_labeled2.png>
 Package pdftex.def Info: figs/real_scenario_labeled2.png  used on input line 10
-29.
+50.
 (pdftex.def)             Requested size: 119.17026pt x 111.90186pt.
  [99
 
- <./figs/real_environment_map.png> <./figs/real_scenario_labeled2.png>]
-<figs/experiment_physical_robot.png, id=2941, 385.44pt x 201.1515pt>
+ <./figs/real_scenario_labeled2.png>]
+<figs/experiment_physical_robot.png, id=2928, 385.44pt x 201.1515pt>
 File: figs/experiment_physical_robot.png Graphic file (type png)
 <use figs/experiment_physical_robot.png>
 Package pdftex.def Info: figs/experiment_physical_robot.png  used on input line
- 1053.
+ 1074.
 (pdftex.def)             Requested size: 226.42278pt x 118.1627pt.
  [100
 
  <./figs/experiment_physical_robot.png>]
-Overfull \hbox (216.44048pt too wide) detected at line 1072
+Overfull \hbox (216.44048pt too wide) detected at line 1093
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [101
 
 ]
-Overfull \hbox (216.44048pt too wide) detected at line 1072
+Overfull \hbox (216.44048pt too wide) detected at line 1093
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [102
 
 ]
-Overfull \hbox (216.44048pt too wide) detected at line 1072
+Overfull \hbox (216.44048pt too wide) detected at line 1093
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [103
 
 ]
-Overfull \hbox (216.44048pt too wide) detected at line 1072
+Overfull \hbox (216.44048pt too wide) detected at line 1093
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [104
 
 ]
-Overfull \hbox (216.44048pt too wide) detected at line 1072
+Overfull \hbox (216.44048pt too wide) detected at line 1093
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 [105
 
 ]
-Overfull \hbox (216.44048pt too wide) detected at line 1072
+Overfull \hbox (216.44048pt too wide) detected at line 1093
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
@@ -2325,7 +2288,7 @@ Overfull \hbox (216.44048pt too wide) detected at line 1072
 ]) (./files/temporal_si_os.tex [107
 
 ]
-<figs/care_o_bot.png, id=3162, 164.5347pt x 82.3878pt>
+<figs/care_o_bot.png, id=3149, 164.5347pt x 82.3878pt>
 File: figs/care_o_bot.png Graphic file (type png)
 <use figs/care_o_bot.png>
 Package pdftex.def Info: figs/care_o_bot.png  used on input line 27.
@@ -2550,7 +2513,7 @@ or  <return>  to continue without it.
 ] [117
 
 ]
-<figs/general_idea_300dpi.png, id=3445, 208.8603pt x 100.4553pt>
+<figs/general_idea_300dpi.png, id=3431, 208.8603pt x 100.4553pt>
 File: figs/general_idea_300dpi.png Graphic file (type png)
 <use figs/general_idea_300dpi.png>
 Package pdftex.def Info: figs/general_idea_300dpi.png  used on input line 58.
@@ -2695,7 +2658,7 @@ or  <return>  to continue without it.
 [121
 
 ]
-<figs/system_overview_shade.png, id=3557, 244.9953pt x 161.1621pt>
+<figs/system_overview_shade.png, id=3544, 244.9953pt x 161.1621pt>
 File: figs/system_overview_shade.png Graphic file (type png)
 <use figs/system_overview_shade.png>
 Package pdftex.def Info: figs/system_overview_shade.png  used on input line 78.
@@ -2733,7 +2696,7 @@ or  <return>  to continue without it.
 [122
 
  <./figs/system_overview_shade.png>]
-<figs/system_overview.png, id=3586, 243.5499pt x 157.3077pt>
+<figs/system_overview.png, id=3573, 243.5499pt x 157.3077pt>
 File: figs/system_overview.png Graphic file (type png)
 <use figs/system_overview.png>
 Package pdftex.def Info: figs/system_overview.png  used on input line 99.
@@ -2770,7 +2733,7 @@ or  <return>  to continue without it.
 [123
 
  <./figs/system_overview.png>]
-<figs/environment_2Dgrid_heatmap_kernel.png, id=3615, 243.309pt x 107.2005pt>
+<figs/environment_2Dgrid_heatmap_kernel.png, id=3602, 243.309pt x 107.2005pt>
 File: figs/environment_2Dgrid_heatmap_kernel.png Graphic file (type png)
 <use figs/environment_2Dgrid_heatmap_kernel.png>
 Package pdftex.def Info: figs/environment_2Dgrid_heatmap_kernel.png  used on in
@@ -2808,19 +2771,19 @@ or  <return>  to continue without it.
 [124
 
  <./figs/environment_2Dgrid_heatmap_kernel.png>]
-<figs/bad_robot_placement_1.png, id=3644, 210.3057pt x 97.8054pt>
+<figs/bad_robot_placement_1.png, id=3631, 210.3057pt x 97.8054pt>
 File: figs/bad_robot_placement_1.png Graphic file (type png)
 <use figs/bad_robot_placement_1.png>
 Package pdftex.def Info: figs/bad_robot_placement_1.png  used on input line 150
 .
 (pdftex.def)             Requested size: 121.3389pt x 56.43018pt.
-<figs/bad_robot_placement_2.png, id=3645, 210.3057pt x 97.8054pt>
+<figs/bad_robot_placement_2.png, id=3632, 210.3057pt x 97.8054pt>
 File: figs/bad_robot_placement_2.png Graphic file (type png)
 <use figs/bad_robot_placement_2.png>
 Package pdftex.def Info: figs/bad_robot_placement_2.png  used on input line 150
 .
 (pdftex.def)             Requested size: 121.3389pt x 56.43018pt.
-<figs/good_robot_placement_1.png, id=3646, 211.0284pt x 94.6737pt>
+<figs/good_robot_placement_1.png, id=3633, 211.0284pt x 94.6737pt>
 File: figs/good_robot_placement_1.png Graphic file (type png)
 <use figs/good_robot_placement_1.png>
 Package pdftex.def Info: figs/good_robot_placement_1.png  used on input line 15
@@ -2831,7 +2794,7 @@ Overfull \hbox (6.0673pt too wide) in paragraph at lines 150--150
 [][] 
  []
 
-<figs/good_robot_placement_2.png, id=3647, 211.0284pt x 94.6737pt>
+<figs/good_robot_placement_2.png, id=3634, 211.0284pt x 94.6737pt>
 File: figs/good_robot_placement_2.png Graphic file (type png)
 <use figs/good_robot_placement_2.png>
 Package pdftex.def Info: figs/good_robot_placement_2.png  used on input line 15
@@ -2846,13 +2809,13 @@ Overfull \hbox (6.0673pt too wide) in paragraph at lines 150--150
 
  <./figs/bad_robot_placement_1.png> <./figs/bad_robot_placement_2.png> <./figs/
 good_robot_placement_1.png> <./figs/good_robot_placement_2.png>]
-<figs/normal_kernel_complete_reduced.png, id=3680, 156.8259pt x 104.5506pt>
+<figs/normal_kernel_complete_reduced.png, id=3667, 156.8259pt x 104.5506pt>
 File: figs/normal_kernel_complete_reduced.png Graphic file (type png)
 <use figs/normal_kernel_complete_reduced.png>
 Package pdftex.def Info: figs/normal_kernel_complete_reduced.png  used on input
  line 178.
 (pdftex.def)             Requested size: 117.00327pt x 78.00435pt.
-<figs/inversed_kernel_complete_reduced.png, id=3681, 156.8259pt x 104.5506pt>
+<figs/inversed_kernel_complete_reduced.png, id=3668, 156.8259pt x 104.5506pt>
 File: figs/inversed_kernel_complete_reduced.png Graphic file (type png)
 <use figs/inversed_kernel_complete_reduced.png>
 Package pdftex.def Info: figs/inversed_kernel_complete_reduced.png  used on inp
@@ -2870,30 +2833,29 @@ ut line 195.
  [127
 
 ]
-<figs/simulated_environment.png, id=3739, 127.677pt x 92.2647pt>
-File: figs/simulated_environment.png Graphic file (type png)
-<use figs/simulated_environment.png>
-Package pdftex.def Info: figs/simulated_environment.png  used on input line 214
-.
-(pdftex.def)             Requested size: 117.00327pt x 84.5537pt.
-<figs/husky_robot.png, id=3740, 163.812pt x 192.9609pt>
-File: figs/husky_robot.png Graphic file (type png)
-<use figs/husky_robot.png>
-Package pdftex.def Info: figs/husky_robot.png  used on input line 214.
-(pdftex.def)             Requested size: 65.00226pt x 76.57056pt.
- [128
-
- <./figs/simulated_environment.png> <./figs/husky_robot.png>]
-<figs/hh106sensor_map.png, id=3770, 602.25pt x 503.7219pt>
+<figs/hh106sensor_map.png, id=3726, 602.25pt x 503.7219pt>
 File: figs/hh106sensor_map.png Graphic file (type png)
 <use figs/hh106sensor_map.png>
-Package pdftex.def Info: figs/hh106sensor_map.png  used on input line 232.
+Package pdftex.def Info: figs/hh106sensor_map.png  used on input line 213.
 (pdftex.def)             Requested size: 156.007pt x 130.48036pt.
-
-[129
+ [128
 
  <./figs/hh106sensor_map.png>]
-<figs/brute_force_route2.png, id=3800, 668.4975pt x 488.57532pt>
+<figs/simulated_environment.png, id=3755, 127.677pt x 92.2647pt>
+File: figs/simulated_environment.png Graphic file (type png)
+<use figs/simulated_environment.png>
+Package pdftex.def Info: figs/simulated_environment.png  used on input line 232
+.
+(pdftex.def)             Requested size: 117.00327pt x 84.5537pt.
+<figs/husky_robot.png, id=3756, 163.812pt x 192.9609pt>
+File: figs/husky_robot.png Graphic file (type png)
+<use figs/husky_robot.png>
+Package pdftex.def Info: figs/husky_robot.png  used on input line 232.
+(pdftex.def)             Requested size: 65.00226pt x 76.57056pt.
+ [129
+
+ <./figs/simulated_environment.png> <./figs/husky_robot.png>]
+<figs/brute_force_route2.png, id=3787, 668.4975pt x 488.57532pt>
 File: figs/brute_force_route2.png Graphic file (type png)
 <use figs/brute_force_route2.png>
 Package pdftex.def Info: figs/brute_force_route2.png  used on input line 255.
@@ -2901,6 +2863,16 @@ Package pdftex.def Info: figs/brute_force_route2.png  used on input line 255.
  [130
 
  <./figs/brute_force_route2.png>]
+Overfull \vbox (15.75803pt too high) detected at line 309
+ []
+
+[131
+
+] [132
+
+] [133
+
+]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2908,7 +2880,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.327 \end{frame}
+l.461 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2916,87 +2888,77 @@ or  <return>  to continue without it.
 
 File: figs/brute_force_route2.png Graphic file (type png)
 <use figs/brute_force_route2.png>
-Package pdftex.def Info: figs/brute_force_route2.png  used on input line 327.
+Package pdftex.def Info: figs/brute_force_route2.png  used on input line 461.
 (pdftex.def)             Requested size: 88.40236pt x 64.60545pt.
-[131
+[134
 
 ]
-<figs/static_setup.png, id=3857, 527.571pt x 289.08pt>
+<figs/static_setup.png, id=3928, 527.571pt x 289.08pt>
 File: figs/static_setup.png Graphic file (type png)
 <use figs/static_setup.png>
-Package pdftex.def Info: figs/static_setup.png  used on input line 349.
+Package pdftex.def Info: figs/static_setup.png  used on input line 483.
 (pdftex.def)             Requested size: 151.66974pt x 83.10764pt.
-<figs/static_inv_setup.png, id=3858, 527.571pt x 289.08pt>
+<figs/static_inv_setup.png, id=3929, 527.571pt x 289.08pt>
 File: figs/static_inv_setup.png Graphic file (type png)
 <use figs/static_inv_setup.png>
-Package pdftex.def Info: figs/static_inv_setup.png  used on input line 349.
+Package pdftex.def Info: figs/static_inv_setup.png  used on input line 483.
 (pdftex.def)             Requested size: 151.66974pt x 83.10764pt.
 
-Overfull \hbox (4.86665pt too wide) in paragraph at lines 349--349
+Overfull \hbox (4.86665pt too wide) in paragraph at lines 483--483
  []  [] 
  []
 
-[132
+[135
 
  <./figs/static_setup.png> <./figs/static_inv_setup.png>]
-<figs/mobile_setup.png, id=3888, 527.571pt x 289.08pt>
+<figs/mobile_setup.png, id=3959, 527.571pt x 289.08pt>
 File: figs/mobile_setup.png Graphic file (type png)
 <use figs/mobile_setup.png>
-Package pdftex.def Info: figs/mobile_setup.png  used on input line 373.
+Package pdftex.def Info: figs/mobile_setup.png  used on input line 507.
 (pdftex.def)             Requested size: 151.66974pt x 83.10764pt.
-<figs/mobile_inv_setup.png, id=3889, 527.571pt x 289.08pt>
+<figs/mobile_inv_setup.png, id=3960, 527.571pt x 289.08pt>
 File: figs/mobile_inv_setup.png Graphic file (type png)
 <use figs/mobile_inv_setup.png>
-Package pdftex.def Info: figs/mobile_inv_setup.png  used on input line 373.
+Package pdftex.def Info: figs/mobile_inv_setup.png  used on input line 507.
 (pdftex.def)             Requested size: 151.66974pt x 83.10764pt.
 
-Overfull \hbox (4.86665pt too wide) in paragraph at lines 373--373
+Overfull \hbox (4.86665pt too wide) in paragraph at lines 507--507
  []  [] 
  []
 
-[133
+[136
 
  <./figs/mobile_setup.png> <./figs/mobile_inv_setup.png>]
-<figs/shift_setup.png, id=3921, 527.571pt x 289.08pt>
+<figs/shift_setup.png, id=3990, 527.571pt x 289.08pt>
 File: figs/shift_setup.png Graphic file (type png)
 <use figs/shift_setup.png>
-Package pdftex.def Info: figs/shift_setup.png  used on input line 397.
+Package pdftex.def Info: figs/shift_setup.png  used on input line 531.
 (pdftex.def)             Requested size: 151.66974pt x 83.10764pt.
- [134
+ [137
 
  <./figs/shift_setup.png>]
-<figs/mobile_inv_modified_setup.png, id=3950, 462.528pt x 346.896pt>
+<figs/mobile_inv_modified_setup.png, id=4020, 462.528pt x 346.896pt>
 File: figs/mobile_inv_modified_setup.png Graphic file (type png)
 <use figs/mobile_inv_modified_setup.png>
 Package pdftex.def Info: figs/mobile_inv_modified_setup.png  used on input line
- 439.
+ 573.
 (pdftex.def)             Requested size: 104.004pt x 78.00058pt.
-<figs/OUR_roomA_roomH2.png, id=3951, 529.98pt x 696.6025pt>
+<figs/OUR_roomA_roomH2.png, id=4021, 529.98pt x 696.6025pt>
 File: figs/OUR_roomA_roomH2.png Graphic file (type png)
 <use figs/OUR_roomA_roomH2.png>
-Package pdftex.def Info: figs/OUR_roomA_roomH2.png  used on input line 439.
+Package pdftex.def Info: figs/OUR_roomA_roomH2.png  used on input line 573.
 (pdftex.def)             Requested size: 91.00276pt x 119.61133pt.
- [135
+ [138
 
  <./figs/mobile_inv_modified_setup.png> <./figs/OUR_roomA_roomH2.png>]
-<figs/all_combined_setup.png, id=3981, 527.571pt x 289.08pt>
+<figs/all_combined_setup.png, id=4051, 527.571pt x 289.08pt>
 File: figs/all_combined_setup.png Graphic file (type png)
 <use figs/all_combined_setup.png>
-Package pdftex.def Info: figs/all_combined_setup.png  used on input line 465.
+Package pdftex.def Info: figs/all_combined_setup.png  used on input line 599.
 (pdftex.def)             Requested size: 151.66974pt x 83.10764pt.
- [136
+ [139
 
- <./figs/all_combined_setup.png>]
-Overfull \vbox (9.02467pt too high) detected at line 513
- []
-
-[137
-
-] [138
-
-] [139
-
-] [140
+ <./figs/all_combined_setup.png>] [140
 
 ] [141
 
@@ -3004,10 +2966,10 @@ Overfull \vbox (9.02467pt too high) detected at line 513
 
 ] [143
 
-] [144
+]
+[144
 
-]) (./files/thesis_progress.tex
-[145
+]) (./files/thesis_progress.tex [145
 
 ] [146
 
@@ -3019,7 +2981,8 @@ Overfull \vbox (9.02467pt too high) detected at line 513
 
 ] [150
 
-] [151
+]
+[151
 
 ] [152
 
@@ -3031,8 +2994,7 @@ Overfull \vbox (9.02467pt too high) detected at line 513
 
 ] [156
 
-])
-[157
+]) [157
 
 ]
 \tf@nav=\write6
@@ -3058,12 +3020,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
  ) 
 Here is how much of TeX's memory you used:
  20162 strings out of 492982
- 380018 string characters out of 6134896
- 467322 words of memory out of 5000000
+ 379338 string characters out of 6134896
+ 467321 words of memory out of 5000000
  22839 multiletter control sequences out of 15000+600000
  17832 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,18n,58p,771b,929s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,18n,58p,771b,931s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/tex
@@ -3075,10 +3037,10 @@ ype1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/symbols/msam10.pfb>
-Output written on main.pdf (157 pages, 15575133 bytes).
+Output written on main.pdf (157 pages, 15499606 bytes).
 PDF statistics:
- 4694 PDF objects out of 5155 (max. 8388607)
- 4294 compressed objects within 43 object streams
+ 4681 PDF objects out of 5155 (max. 8388607)
+ 4284 compressed objects within 43 object streams
  322 named destinations out of 1000 (max. 500000)
  536 words of extra memory for PDF output out of 10000 (max. 10000000)
 
