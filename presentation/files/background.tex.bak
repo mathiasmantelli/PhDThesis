@@ -20,10 +20,10 @@
 			\centering
 			\begin{figure}
 				 \includegraphics[width=.55\linewidth]{figs/localization.png}
-				 \caption{\tiny Illustration of the Markov localization algorithm.\footnotemark[7]}			 		 
+				 \caption{\tiny Illustration of the Markov localization algorithm.\footnotemark[8]}			 		 
 	         \end{figure}			
 	\end{columns}	
-	\footnotetext[7]{\tiny Thrun, Sebastian. ``\textit{Probabilistic robotics.}'' Communications of the ACM 45.3 (2002): 52-57.}					
+	\footnotetext[8]{\tiny Thrun, Sebastian. ``\textit{Probabilistic robotics.}'' Communications of the ACM 45.3 (2002): 52-57.}					
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -42,10 +42,10 @@
 			\centering
 			\begin{figure}
 				 \includegraphics[width=.45\linewidth]{figs/mapping.png}
-				 \caption{\tiny Mapping with position indexed by odometry.\footnotemark[8]}			 		 
+				 \caption{\tiny Mapping with position indexed by odometry.\footnotemark[9]}			 		 
 	         \end{figure}			
 	\end{columns}	
-	\footnotetext[8]{\tiny Thrun, Sebastian. ``\textit{Probabilistic robotics.}'' Communications of the ACM 45.3 (2002): 52-57.}					
+	\footnotetext[9]{\tiny Thrun, Sebastian. ``\textit{Probabilistic robotics.}'' Communications of the ACM 45.3 (2002): 52-57.}					
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -66,10 +66,10 @@
 			\centering
 			\begin{figure}
 				 \includegraphics[width=.6\linewidth]{figs/slam.png}
-				 \caption{\tiny Occupancy grid map.\footnotemark[9]}			 		 
+				 \caption{\tiny Occupancy grid map.\footnotemark[10]}			 		 
 	         \end{figure}			
 	\end{columns}	
-	\footnotetext[9]{\tiny Thrun, Sebastian. ``\textit{Probabilistic robotics.}'' Communications of the ACM 45.3 (2002): 52-57.}					
+	\footnotetext[10]{\tiny Thrun, Sebastian. ``\textit{Probabilistic robotics.}'' Communications of the ACM 45.3 (2002): 52-57.}					
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -77,7 +77,7 @@
 \begin{frame}{Problems involved in this work}
 	\begin{columns}[T]
 		\column{.55\textwidth}
-			\vspace{-.15cm}		
+%			\vspace{-.15cm}		
 			\begin{itemize}
 				\item Types of OS problems:
 				\begin{itemize}
@@ -98,7 +98,7 @@
 \begin{frame}[noframenumbering]{Problems involved in this work}
 	\begin{columns}[T]
 		\column{.55\textwidth}
-			\vspace{.22cm}		
+%			\vspace{.22cm}		
 			\begin{itemize}
 				\item Types of OS problems:
 				\begin{itemize}
@@ -120,7 +120,7 @@
 \begin{frame}[noframenumbering]{Problems involved in this work}
 	\begin{columns}[T]
 		\column{.55\textwidth}
-			\vspace{.75cm}		
+%			\vspace{.75cm}		
 			\begin{itemize}
 				\item Types of OS problems:
 				\begin{itemize}

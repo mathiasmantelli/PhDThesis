@@ -20,10 +20,10 @@
 		\centering
 		\begin{figure}
 			\includegraphics[width=.9\linewidth]{figs/care_o_bot.png}
-			\caption{\tiny Signs on primary routes, green backgrounds​.\footnotemark[13]}			 		 
+			\caption{\tiny Signs on primary routes, green backgrounds​.\footnotemark[15]}			 		 
 		\end{figure}			
 	\end{columns}
-	\footnotetext[13]{\tiny Figure extracted from \url{care-o-bot.de/en/care-o-bot-3/history.html}.}			
+	\footnotetext[15]{\tiny Figure extracted from \url{care-o-bot.de/en/care-o-bot-3/history.html}.}			
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -201,7 +201,7 @@
 	\column{.4\textwidth}
 		\centering	
 		\begin{itemize}
-			\item HH106 dataset
+			\item HH106 dataset\footnotemark[16]
 		\end{itemize}
 	\column{.6\textwidth}
 		\centering
@@ -209,7 +209,8 @@
 %			\begin{subfigure}{.8\columnwidth}
 				\includegraphics[width=.6\linewidth]{figs/hh106sensor_map.png}
 		\end{figure}		
-	\end{columns}					
+	\end{columns}	
+		\footnotetext[16]{\tiny Dataset available at \url{http://casas.wsu.edu/datasets/}.}
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -218,7 +219,7 @@
 	\begin{columns}[T]
 	\column{.4\textwidth}
 		\begin{itemize}
-			\item HH106 dataset		
+			\item HH106 dataset\footnotemark[16]	
 			\item Simulation setup and maps
 		\end{itemize}
 	\column{.6\textwidth}
@@ -229,6 +230,7 @@
 				\includegraphics[width=.25\linewidth]{figs/husky_robot.png}
 		\end{figure}		
 	\end{columns}					
+		\footnotetext[16]{\tiny Dataset available at \url{http://casas.wsu.edu/datasets/}.}	
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -237,8 +239,8 @@
 	\begin{columns}[T]
 	\column{.4\textwidth}
 		\begin{itemize}
+			\item HH106 dataset\footnotemark[16]		
 			\item Simulation setup and maps
-			\item HH106 dataset
 			\item Two other OS systems:
 			\begin{itemize}
 				\item Brute Force
@@ -251,7 +253,8 @@
 %			\begin{subfigure}{.8\columnwidth}
 				\includegraphics[width=.6\linewidth]{figs/brute_force_route2.png}
 		\end{figure}		
-	\end{columns}					
+	\end{columns}		
+		\footnotetext[16]{\tiny Dataset available at \url{http://casas.wsu.edu/datasets/}.}			
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================

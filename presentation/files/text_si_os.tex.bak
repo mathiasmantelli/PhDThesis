@@ -9,16 +9,16 @@
 	\begin{columns}[T]
 		\column{.55\textwidth}
 		\begin{itemize}
-			\item \textbf{Humans} in \textbf{daily tasks} and the importance of \textbf{texts}
+			\item \textbf{Humans} in \textbf{search tasks}
 		\end{itemize}			
 		\column{.45\textwidth}
 			\centering
 			\begin{figure}
 				 \includegraphics[width=.5\linewidth]{figs/traffic_sign.jpg}
-				 \caption{\tiny Signs on primary routes, green backgrounds​.\footnotemark[10]}			 		 
+				 \caption{\tiny Signs on primary routes, green backgrounds​.\footnotemark[11]}			 		 
 	         \end{figure}			
 	\end{columns}
-	\footnotetext[10]{\tiny Figure extracted from \url{highwaycodeuk.co.uk/direction-signs-on-roads-motorways.html}.}						
+	\footnotetext[11]{\tiny Figure extracted from \url{highwaycodeuk.co.uk/direction-signs-on-roads-motorways.html}.}						
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -27,7 +27,27 @@
 	\begin{columns}[T]
 		\column{.55\textwidth}
 		\begin{itemize}
-			\item \textbf{Humans} in \textbf{daily tasks} and the importance of \textbf{texts}
+			\item \textbf{Humans} in \textbf{search tasks}					
+			\item Importance of \textbf{texts} in the \textbf{human visual recognition}
+		\end{itemize}			
+		\column{.45\textwidth}
+			\centering
+			\begin{figure}
+				 \includegraphics[width=.5\linewidth]{figs/traffic_sign.jpg}
+				 \caption{\tiny Signs on primary routes, green backgrounds​.\footnotemark[11]}			 		 
+	         \end{figure}			
+	\end{columns}
+	\footnotetext[11]{\tiny Figure extracted from \url{highwaycodeuk.co.uk/direction-signs-on-roads-motorways.html}.}						
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ====================================================== 
+\begin{frame}[noframenumbering]{Introduction}
+	\begin{columns}[T]
+		\column{.55\textwidth}
+		\begin{itemize}
+			\item \textbf{Humans} in \textbf{search tasks}					
+			\item Importance of \textbf{texts} in the \textbf{human visual recognition}
 			\item Robots in the context of OS: \textbf{courier robot} 
 		\end{itemize}		 %
 		\column{.4\textwidth}
@@ -36,18 +56,18 @@
 			    \begin{subfigure}[b]{.5\columnwidth}
 			    		\centering			
 					 \includegraphics[width=1\linewidth]{figs/corridor_door_signs.jpg}
-     				 \caption{\tiny Corridor and door signs.\footnotemark[11]}			 		 
+     				 \caption{\tiny Corridor and door signs.\footnotemark[12]}			 		 
 			    	\end{subfigure}\\
 			    \begin{subfigure}[b]{.5\columnwidth}
 			    		\centering					    	
 			    		\includegraphics[width=1\linewidth]{figs/lift_robot.png}	         
-			    		\caption{\tiny Mobile robot in the lift\footnotemark[12]}					 
+			    		\caption{\tiny Mobile robot in the lift\footnotemark[13]}					 
 			    	\end{subfigure}					 
 				 \caption{\tiny Initial works on SLAM}			 
 	         \end{figure}	         		
 	\end{columns}
-	\footnotetext[11]{\tiny Figure extracted from \url{br.pinterest.com/pin/305611524696049040/}.}
-	\footnotetext[12]{\tiny Figure extracted from \url{youtube.com/watch?v=kYmnS_3iSdk}.}
+	\footnotetext[12]{\tiny Figure extracted from \url{br.pinterest.com/pin/305611524696049040/}.}
+	\footnotetext[13]{\tiny Figure extracted from \url{youtube.com/watch?v=kYmnS_3iSdk}.}
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -56,7 +76,8 @@
 	\begin{columns}[T]
 		\column{.55\textwidth}
 		\begin{itemize}
-			\item \textbf{Humans} in \textbf{daily tasks} and the importance of \textbf{texts}
+			\item \textbf{Humans} in \textbf{search tasks}					
+			\item Importance of \textbf{texts} in the \textbf{human visual recognition}
 			\item Robots in the context of OS: \textbf{courier robot} 
 			\item \textbf{Search strategy} in a large-scale unknown building \textbf{plays an important role}
 		\end{itemize}			
@@ -66,18 +87,18 @@
 			    \begin{subfigure}[b]{.5\columnwidth}
 			    		\centering			
 					 \includegraphics[width=1\linewidth]{figs/corridor_door_signs.jpg}
-     				 \caption{\tiny Corridor and door signs.\footnotemark[11]}			 		 
+     				 \caption{\tiny Corridor and door signs.\footnotemark[12]}			 		 
 			    	\end{subfigure}\\
 			    \begin{subfigure}[b]{.5\columnwidth}
 			    		\centering					    	
 			    		\includegraphics[width=1\linewidth]{figs/lift_robot.png}	         
-			    		\caption{\tiny Mobile robot in the lift\footnotemark[12]}					 
+			    		\caption{\tiny Mobile robot in the lift\footnotemark[13]}					 
 			    	\end{subfigure}					 
 				 \caption{\tiny Initial works on SLAM}			 
 	         \end{figure}	         		
 	\end{columns}
-	\footnotetext[11]{\tiny Figure extracted from \url{br.pinterest.com/pin/305611524696049040/}.}
-	\footnotetext[12]{\tiny Figure extracted from \url{youtube.com/watch?v=kYmnS_3iSdk}.}
+	\footnotetext[12]{\tiny Figure extracted from \url{br.pinterest.com/pin/305611524696049040/}.}
+	\footnotetext[13]{\tiny Figure extracted from \url{youtube.com/watch?v=kYmnS_3iSdk}.}
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -86,7 +107,8 @@
 	\begin{columns}[T]
 		\column{.55\textwidth}
 		\begin{itemize}
-			\item \textbf{Humans} in \textbf{daily tasks} and the importance of \textbf{texts}
+			\item \textbf{Humans} in \textbf{search tasks}					
+			\item Importance of \textbf{texts} in the \textbf{human visual recognition}
 			\item Robots in the context of OS: \textbf{courier robot} 
 			\item \textbf{Search strategy} in a large-scale unknown building \textbf{plays an important role}
 			\item \textbf{Semantic information} may be useful: \textbf{search cues} inferred from texts
@@ -97,18 +119,18 @@
 			    \begin{subfigure}[b]{.5\columnwidth}
 			    		\centering			
 					 \includegraphics[width=1\linewidth]{figs/corridor_door_signs.jpg}
-     				 \caption{\tiny Corridor and door signs.\footnotemark[11]}			 		 
+     				 \caption{\tiny Corridor and door signs.\footnotemark[12]}			 		 
 			    	\end{subfigure}\\
 			    \begin{subfigure}[b]{.5\columnwidth}
 			    		\centering					    	
 			    		\includegraphics[width=1\linewidth]{figs/lift_robot.png}	         
-			    		\caption{\tiny Mobile robot in the lift\footnotemark[12]}					 
+			    		\caption{\tiny Mobile robot in the lift\footnotemark[13]}					 
 			    	\end{subfigure}					 
 				 \caption{\tiny Initial works on SLAM}			 
 	         \end{figure}	         		
 	\end{columns}
-	\footnotetext[11]{\tiny Figure extracted from \url{br.pinterest.com/pin/305611524696049040/}.}
-	\footnotetext[12]{\tiny Figure extracted from \url{youtube.com/watch?v=kYmnS_3iSdk}.}
+	\footnotetext[12]{\tiny Figure extracted from \url{br.pinterest.com/pin/305611524696049040/}.}
+	\footnotetext[13]{\tiny Figure extracted from \url{youtube.com/watch?v=kYmnS_3iSdk}.}
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -117,7 +139,8 @@
 	\begin{columns}[T]
 		\column{.55\textwidth}
 		\begin{itemize}
-			\item \textbf{Humans} in \textbf{daily tasks} and the importance of \textbf{texts}
+			\item \textbf{Humans} in \textbf{search tasks}					
+			\item Importance of \textbf{texts} in the \textbf{human visual recognition}
 			\item Robots in the context of OS: \textbf{courier robot} 
 			\item \textbf{Search strategy} in a large-scale unknown building \textbf{plays an important role}
 			\item \textbf{Semantic information} may be useful: \textbf{search cues} inferred from texts
@@ -129,18 +152,18 @@
 			    \begin{subfigure}[b]{.5\columnwidth}
 			    		\centering			
 					 \includegraphics[width=1\linewidth]{figs/corridor_door_signs.jpg}
-     				 \caption{\tiny Corridor and door signs.\footnotemark[11]}			 		 
+     				 \caption{\tiny Corridor and door signs.\footnotemark[12]}			 		 
 			    	\end{subfigure}\\
 			    \begin{subfigure}[b]{.5\columnwidth}
 			    		\centering					    	
 			    		\includegraphics[width=1\linewidth]{figs/lift_robot.png}	         
-			    		\caption{\tiny Mobile robot in the lift\footnotemark[12]}					 
+			    		\caption{\tiny Mobile robot in the lift\footnotemark[13]}					 
 			    	\end{subfigure}					 
 				 \caption{\tiny Initial works on SLAM}			 
 	         \end{figure}	         		
 	\end{columns}
-	\footnotetext[11]{\tiny Figure extracted from \url{br.pinterest.com/pin/305611524696049040/}.}
-	\footnotetext[12]{\tiny Figure extracted from \url{youtube.com/watch?v=kYmnS_3iSdk}.}
+	\footnotetext[12]{\tiny Figure extracted from \url{br.pinterest.com/pin/305611524696049040/}.}
+	\footnotetext[13]{\tiny Figure extracted from \url{youtube.com/watch?v=kYmnS_3iSdk}.}
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -195,7 +218,7 @@
 			    \begin{subfigure}[b]{.6\columnwidth}
 			    		\centering			
 					 \includegraphics[width=.6\linewidth]{figs/2d_map_simulation.png}
-     				 \caption{\tiny Mapping in simulation with HIMM\footnotemark[4]}.			 
+     				 \caption{\tiny Mapping in simulation with HIMM\footnotemark[14]}.			 
 			    	\end{subfigure}
 			    	\vspace{-.3cm}\\
 			    \begin{subfigure}[b]{.6\columnwidth}
@@ -207,7 +230,7 @@
 				 \caption{\tiny The 2D grid maps used in this work.}			 
 	         \end{figure}		         		
 	\end{columns}		
-	\footnotetext[4]{\tiny Borenstein, J., and Yoram K. ``\textit{Histogramic in-motion mapping for mobile robot obstacle avoidance}.'' Transactions on robotics and automation. 1991.}
+	\footnotetext[14]{\tiny Borenstein, J., and Yoram K. ``\textit{Histogramic in-motion mapping for mobile robot obstacle avoidance}.'' Transactions on robotics and automation. 1991.}
 	\footnotetext[4]{\tiny Grisettiyz, G., Stachniss, C., and Burgard, W. ``\textit{Improving grid-based slam with rao-blackwellized particle filters by adaptive proposals and selective resampling.}'' ICRA. 2005.}		
 \end{frame}
 %========================================== ############# ======================================================        
@@ -227,7 +250,7 @@
 			    \begin{subfigure}[b]{.6\columnwidth}
 			    		\centering			
 					 \includegraphics[width=.6\linewidth]{figs/2d_map_voronoi_simulation.png}
-     				 \caption{\tiny Mapping in simulation with HIMM\footnotemark[4]}.			 
+     				 \caption{\tiny Mapping in simulation with HIMM\footnotemark[14]}.			 
 			    	\end{subfigure}
 			    	\vspace{-.3cm}\\
 			    \begin{subfigure}[b]{.6\columnwidth}
@@ -239,7 +262,7 @@
 				 \caption{\tiny The 2D grid maps used in this work.}			 
 	         \end{figure}		         		
 	\end{columns}		
-	\footnotetext[4]{\tiny Borenstein, J., and Yoram K. ``\textit{Histogramic in-motion mapping for mobile robot obstacle avoidance}.'' Transactions on robotics and automation. 1991.}
+	\footnotetext[14]{\tiny Borenstein, J., and Yoram K. ``\textit{Histogramic in-motion mapping for mobile robot obstacle avoidance}.'' Transactions on robotics and automation. 1991.}
 	\footnotetext[4]{\tiny Grisettiyz, G., Stachniss, C., and Burgard, W. ``\textit{Improving grid-based slam with rao-blackwellized particle filters by adaptive proposals and selective resampling.}'' ICRA. 2005.}		
 \end{frame}		
 %========================================== ############# ======================================================        
@@ -260,7 +283,7 @@
 			    \begin{subfigure}[b]{.6\columnwidth}
 			    		\centering			
 					 \includegraphics[width=.6\linewidth]{figs/2d_map_visited_simulation.png}
-     				 \caption{\tiny Mapping in simulation with HIMM\footnotemark[4]}.			 
+     				 \caption{\tiny Mapping in simulation with HIMM\footnotemark[14]}.			 
 			    	\end{subfigure}
 			    	\vspace{-.3cm}\\
 			    \begin{subfigure}[b]{.6\columnwidth}
@@ -272,7 +295,7 @@
 				 \caption{\tiny The 2D grid maps used in this work.}			 
 	         \end{figure}		         		
 	\end{columns}		
-	\footnotetext[4]{\tiny Borenstein, J., and Yoram K. ``\textit{Histogramic in-motion mapping for mobile robot obstacle avoidance}.'' Transactions on robotics and automation. 1991.}
+	\footnotetext[14]{\tiny Borenstein, J., and Yoram K. ``\textit{Histogramic in-motion mapping for mobile robot obstacle avoidance}.'' Transactions on robotics and automation. 1991.}
 	\footnotetext[4]{\tiny Grisettiyz, G., Stachniss, C., and Burgard, W. ``\textit{Improving grid-based slam with rao-blackwellized particle filters by adaptive proposals and selective resampling.}'' ICRA. 2005.}		
 \end{frame}			
 %========================================== ############# ======================================================        
@@ -294,7 +317,7 @@
 			    \begin{subfigure}[b]{.6\columnwidth}
 			    		\centering			
 					 \includegraphics[width=.6\linewidth]{figs/2d_map_visited_simulation.png}
-     				 \caption{\tiny Mapping in simulation with HIMM\footnotemark[4]}.			 
+     				 \caption{\tiny Mapping in simulation with HIMM\footnotemark[14]}.			 
 			    	\end{subfigure}
 			    	\vspace{-.3cm}\\
 			    \begin{subfigure}[b]{.6\columnwidth}
@@ -306,7 +329,7 @@
 				 \caption{\tiny The 2D grid maps used in this work.}			 
 	         \end{figure}		         		
 	\end{columns}		
-	\footnotetext[4]{\tiny Borenstein, J., and Yoram K. ``\textit{Histogramic in-motion mapping for mobile robot obstacle avoidance}.'' Transactions on robotics and automation. 1991.}
+	\footnotetext[14]{\tiny Borenstein, J., and Yoram K. ``\textit{Histogramic in-motion mapping for mobile robot obstacle avoidance}.'' Transactions on robotics and automation. 1991.}
 	\footnotetext[4]{\tiny Grisettiyz, G., Stachniss, C., and Burgard, W. ``\textit{Improving grid-based slam with rao-blackwellized particle filters by adaptive proposals and selective resampling.}'' ICRA. 2005.}		
 \end{frame}	
 %========================================== ############# ======================================================
@@ -367,7 +390,7 @@
 		\begin{itemize}
 			\item \textbf{Divides} the map based on the \textbf{free space}	
 			\item \textbf{Simultaneously} to the \textbf{Mapping module}
-			\item Kernel Density Estimation (\textbf{KDE})\footnotemark[4]
+			\item Kernel Density Estimation (\textbf{KDE})\footnotemark[15]
 		\end{itemize}
 		\column{.5\textwidth}	
 			\centering	
@@ -383,7 +406,7 @@
 				 \caption{\tiny The 2D grid maps used in this work.}				 
 	         \end{figure}		         		
 	\end{columns}		
-	\footnotetext[10]{\tiny Maffei, Renan, et al. ``\textit{Fast monte carlo localization using spatial density information.}'', ICRA, 2015}.							
+	\footnotetext[15]{\tiny Maffei, Renan, et al. ``\textit{Fast monte carlo localization using spatial density information.}'', ICRA, 2015}.							
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -394,7 +417,7 @@
 		\begin{itemize}
 			\item \textbf{Divides} the map based on the \textbf{free space}	
 			\item \textbf{Simultaneously} to the \textbf{Mapping module}
-			\item Kernel Density Estimation (\textbf{KDE})\footnotemark[4]
+			\item Kernel Density Estimation (\textbf{KDE})\footnotemark[15]
 			\item An \textbf{abstraction} of the \textbf{2D grid map} for \textbf{grouping} the \textbf{detected door signs}
 		\end{itemize}
 		\column{.5\textwidth}	
@@ -411,7 +434,7 @@
 				 \caption{\tiny The 2D grid maps used in this work.}				 
 	         \end{figure}	         		
 	\end{columns}		
-	\footnotetext[10]{\tiny Maffei, Renan, et al. ``\textit{Fast monte carlo localization using spatial density information.}'', ICRA, 2015}.	
+	\footnotetext[15]{\tiny Maffei, Renan, et al. ``\textit{Fast monte carlo localization using spatial density information.}'', ICRA, 2015}.	
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -457,7 +480,7 @@
 		\begin{itemize}
 			\item Optical character recognition (\textbf{OCR})
 			\item \textbf{Recognize} the number of \textbf{door signs} in \textbf{RGB images}
-			\item We use the work proposed by XXXXX
+			\item We use the work proposed by Neumann and Matas (2012)\footnotemark[16]
 		\end{itemize}
 		\column{0.5\textwidth}
 			\centering
@@ -466,6 +489,7 @@
 				 \caption{\tiny Illustration of the Image Processing module detecting a door label.}				 		 
 	        \end{figure}			
 	\end{columns}	
+	\footnotetext[16]{\tiny Neumann, Lukáš, and Jiří Matas. ``\textit{Real-time scene text localization and recognition}.'',Conference on Computer Vision and Pattern Recognition. 2012.}	
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -476,7 +500,7 @@
 		\begin{itemize}
 			\item Optical character recognition (\textbf{OCR})
 			\item \textbf{Recognize} the number of \textbf{door signs} in \textbf{RGB images}
-			\item We use the work proposed by XXXXX
+			\item We use the work proposed by Neumann and Matas (2012)\footnotemark[16]
 			\item The \textbf{recognized numbers} are \textbf{associated} to the \textbf{map segments}
 		\end{itemize}
 		\column{0.5\textwidth}
@@ -486,6 +510,7 @@
 				 \caption{\tiny Illustration of the Image Processing module detecting a door label.}		
 	        \end{figure}			
 	\end{columns}	
+	\footnotetext[16]{\tiny Neumann, Lukáš, and Jiří Matas. ``\textit{Real-time scene text localization and recognition}.'',Conference on Computer Vision and Pattern Recognition. 2012.}		
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -505,8 +530,8 @@
 		\item It \textbf{estimates} which \textbf{regions} are \textbf{more promising} to find the goal-door
 		\item It is composed of \textbf{five} different \textbf{factors}:
 		\begin{itemize}
+			\item Parity		
 			\item Growing Direction
-			\item Parity
 			\item Doors Orientation
 			\item Robot Orientation
 			\item Distance			
@@ -519,14 +544,14 @@
 \begin{frame}[noframenumbering]{Semantic Planner module}
 		\vspace{.8cm}		
 %		\hspace{.15cm}			
-	\begin{columns}			
+	\begin{columns}
 		\column{0.755\textwidth}		
 		\begin{itemize}
 			\item It estimates which regions are more promising to find the goal-door
 			\item It is composed of five different factors:	
 			\begin{itemize}
-				\item Growing Direction
 				\item Parity
+				\item Growing Direction
 				\item Doors Orientation
 				\item Robot Orientation
 				\item Distance			
@@ -544,14 +569,59 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
+\begin{frame}{Parity}
+	\begin{columns}[T]
+		\column{.5\textwidth}
+		\begin{itemize}
+			\item \textbf{Goal}: estimate whether the segment is promising regarding its door signs' parity		
+			\item Analysis based on the door sign numbers 
+			\item Parity of the segment
+			\item Comparison with the goal-door's parity
+		\end{itemize}
+		\column{.5\textwidth}	
+			\centering	
+			\begin{figure}
+			    \begin{subfigure}{.6\columnwidth}
+					 \includegraphics[width=1\linewidth]{figs/parity_even.png}
+     				 \caption{\tiny Door signs and goal-door with same parity.}			 		 
+			    	\end{subfigure}\\
+			    \begin{subfigure}{.6\columnwidth}
+			    		\includegraphics[width=1\linewidth]{figs/parity_odd.png}	         
+			    		\caption{\tiny Door signs and goal-door with different parity.}					 
+			    	\end{subfigure}					 
+				 \caption{\tiny Example to illustrate the parity factor.}			 
+	         \end{figure}	         		
+	\end{columns}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Parity} %
+	\begin{figure}
+%		\includegraphics[width=.5\linewidth]{figs/parity_equation.png}	         
+			    \begin{subfigure}{.4\columnwidth}
+					 \includegraphics[width=1\linewidth]{figs/parity_even.png}
+     				 \caption{\tiny Door signs and goal-door with same parity. $\varphi_p({c}) = 1$}			 		 
+			    	\end{subfigure}
+			    \begin{subfigure}{.4\columnwidth}
+			    		\includegraphics[width=1\linewidth]{figs/parity_odd.png}	         
+			    		\caption{\tiny Door signs and goal-door with different parity. $\varphi_p({c}) = 0$}	 
+			    	\end{subfigure}					 
+				 \caption{\tiny Example to illustrate the parity factor.}			 
+	\end{figure}					
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
 \begin{frame}{Growing Direction}
 	\begin{columns}[T]
 		\column{0.5\textwidth}
 			\centering
 			\begin{itemize}
+				\item \textbf{Goal}: estimate whether the segment is promising regarding the sequence of door signs
 				\item Find out the direction that the numbers of the segment is growing
-				\item The position of the detected door signs is considered
-				\item All detected door signs of the same segment
+%				\item The position of the detected door signs is considered
+%				\item All detected door signs of the same segment
 			\end{itemize}
 		\column{0.5\textwidth}
 			\begin{figure}
@@ -564,11 +634,11 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 \begin{frame}{Growing Direction}
-	\begin{columns}
+	\begin{columns}[T]
 		\centering
 		\column{1\textwidth}
 		\begin{itemize}
-			\item Angle in which the door sign sequence is increasing
+			\item Compute the angle in which the door sign sequence is increasing
 			\item For all possible pairs of two different door signs (one is larger)
 			\item Comparison with the angle of the Voronoi cell in the frontier
 		\end{itemize}
@@ -592,12 +662,12 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 \begin{frame}{Growing Direction}
-	\begin{columns}
+	\begin{columns}[T]
 		\centering
 		\column{1\textwidth}
 		\begin{itemize}
 			\item The door sign numbers of the segment matters
-			\item Comparison with the goal-door
+			\item Comparison with the goal-door (smaller and larger numbers are counted)
 		\end{itemize}
 	\end{columns}	
 	\begin{columns}
@@ -618,43 +688,33 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 \begin{frame}{Growing Direction}
-	\begin{figure}
-		\includegraphics[width=.2\linewidth]{figs/growing_equation.png}	         
-	\end{figure}					
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}{Parity}
-	\begin{columns}
-		\column{.5\textwidth}
-		\begin{itemize}
-			\item Analysis based on the door sign numbers 
-			\item Parity of the segment
-			\item Comparison with the goal-door's parity
-		\end{itemize}
-		\column{.5\textwidth}	
+	\begin{columns}					
+		\column{0.8\textwidth}
 			\centering	
 			\begin{figure}
-			    \begin{subfigure}{.6\columnwidth}
-					 \includegraphics[width=1\linewidth]{figs/parity_even.png}
-     				 \caption{\tiny Corridor and door signs.}			 		 
-			    	\end{subfigure}\\
-			    \begin{subfigure}{.6\columnwidth}
-			    		\includegraphics[width=1\linewidth]{figs/parity_odd.png}	         
-			    		\caption{\tiny Mobile robot in the lift.}					 
-			    	\end{subfigure}					 
-				 \caption{\tiny Initial works on SLAM}			 
-	         \end{figure}	         		
-	\end{columns}
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}{Parity}
-	\begin{figure}
-		\includegraphics[width=.5\linewidth]{figs/parity_equation.png}	         
-	\end{figure}					
+			    \begin{subfigure}{.45\columnwidth}
+			    		\centering
+					 \includegraphics[width=.9\linewidth]{figs/growing_direction_same_orient_higher.png}
+     				 \caption{\tiny $\gamma(\theta_f({c})) = 1$ and $\zeta\big(S({c})\big) = 1$, $\varphi_g({c}) = 1$.}			 		 
+			    	\end{subfigure}
+			    \begin{subfigure}{.45\columnwidth}
+			    		\centering			    
+			    		\includegraphics[width=.9\linewidth]{figs/growing_direction_same_orient_smaller.png}
+			    		\caption{\tiny $\gamma(\theta_f({c})) = 1$ and $\zeta\big(S({c})\big) = -1$, $\varphi_g({c}) = 0$.}					 
+			    	\end{subfigure}	\\	
+			    \begin{subfigure}{.45\columnwidth}
+			    		\centering			    
+					 \includegraphics[width=.9\linewidth]{figs/growing_direction_different_orient_smaller.png}
+     				 \caption{\tiny $\gamma(\theta_f({c})) = -1$ and $\zeta\big(S({c})\big) = -1$, $\varphi_g({c}) = 1$.}			 		 
+			    	\end{subfigure}
+			    \begin{subfigure}{.45\columnwidth}
+			    		\centering			    
+			    		\includegraphics[width=.9\linewidth]{figs/growing_direction_different_orient_higher.png}			    	
+			    		\caption{\tiny $\gamma(\theta_f({c})) = -1$ and $\zeta\big(S({c})\big) = 1$, $\varphi_g({c}) = 0$.}					 
+			    	\end{subfigure}				    				 
+				 \caption{\tiny Maps used in the simulated experiments.}			 
+	         \end{figure}	
+	\end{columns}					
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -663,9 +723,38 @@
 	\begin{columns}
 		\column{0.55\textwidth}
 		\begin{itemize}[<+->]
+			\item \textbf{Goal:} estimate how the door signs are organized in the environment
 			\item History of a certain amount of the most recent robot’s orientations (Robot orientation)
 			\item History of a certain amount of the most recent robot’s orientations when a door sign has been recognized (Door orientation)			
-			\item Histograms are computed
+		\end{itemize}
+		\column{0.55\textwidth}
+			\centering	
+			\begin{figure}
+%			    \begin{subfigure}{.45\columnwidth} , angle=90
+					 \includegraphics[width=.75\linewidth]{figs/real_environment_map.png}
+%     				 \caption{\tiny Corridor and door signs.}			 		 
+%			    	\end{subfigure}
+%			    	\\
+%			    \begin{subfigure}{.45\columnwidth}
+%			    		\includegraphics[width=1\linewidth]{figs/door_orientation.png}
+%			    		\caption{\tiny Mobile robot in the lift.}					 
+%			    	\end{subfigure}					 
+				 \caption{\tiny Initial works on SLAM}			 
+	         \end{figure}		
+	\end{columns}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}[noframenumbering]{Door and Robot Orientations}
+	\begin{columns}
+		\column{0.55\textwidth}
+		\begin{itemize}[<+->]
+			\item Histograms are computed (each bin corresponds to an angle)
+			\begin{itemize}
+				\item $\varphi_o({c}) = H_d[\theta_f({c})]$
+				\item $\varphi_r({c}) = H_r[\theta_f({c})]$
+			\end{itemize}
 			\item Door orientation prioritize orientations in which the robot has recognized most of the door signs
 			\item Robot orientation makes the robot consider other paths that may connect to other corridors
 		\end{itemize}
@@ -688,22 +777,13 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}{Door and Robot Orientations}
-	\begin{figure}
-		\includegraphics[width=.2\linewidth]{figs/door_orientation_equation.png}	  \\       
-		\includegraphics[width=.2\linewidth]{figs/robot_orientation_equation.png}	         		
-	\end{figure}					
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
 \begin{frame}{Distance}
 	\begin{columns}[T]
 		\column{1\textwidth}
 		\begin{itemize}[<+->]
 			\item Voronoi diagram
 			\item Smallest number of Voronoi cells between the robot's position and each frontier
-			\item It guides the robot towards the closest frontier
+			\item It guides the robot towards the closest frontier, $\varphi_d({c}) = 1$
 			\item It saves the robot's resources
 		\end{itemize}
 %		\column{0.55\textwidth}
@@ -719,37 +799,46 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}{Distance}
-	\begin{figure}
-		\includegraphics[width=.5\linewidth]{figs/distance_equation.png}	         
-	\end{figure}					
-\end{frame}
+%\begin{frame}{Distance}
+%	\begin{figure}
+%		\includegraphics[width=.5\linewidth]{figs/distance_equation.png}	         
+%	\end{figure}					
+%\end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 \begin{frame}{Final formula}
 	\begin{columns}[T]
-		\column{0.55\textwidth}
+		\column{0.85\textwidth}
 		\begin{itemize}[<+->]
-			\item Semantic part
-			\item Geometric part
-			\item Combination
+			\item Combining all the factors:
+			\begin{itemize}
+				\item Semantic part:\\$\mathtt{S}({c}) = \varphi_g({c}) \varphi_p({c})$			
+			\end{itemize}
+			\begin{itemize}
+				\item Geometric part:\\$\mathtt{G}({c}) = \frac{\big(\varphi_o({c}) + \varphi_r({c})\big)\varphi_d({c}) + \varphi_d({c})}{3.0}$
+			\end{itemize}		
+			\item Find the most promising frontier: $\varphi({c}) &= \mathtt{S}({c}) * \alpha + \mathtt{G}({c}) * (1.0 - \alpha)$	\\ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~${c}_* = \underset{{c} \in \mathbf{C}}{\textup{\textrm{}arg max}}(\varphi({c}))$
+%\begin{align}
+%    \varphi({c}) &= \mathtt{S}({c}) * \alpha + \mathtt{G}({c}) * (1.0 - \alpha) \label{eq:finalEquation}\\
+%    {c}_* &= \underset{{c} \in \mathbf{C}}{\argmax}(\varphi({c})) \label{eq:maxfinalEquation}
+%\end{align}			
 		\end{itemize}
-		\column{0.55\textwidth}
+		\column{0.15\textwidth}
 	\end{columns}
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}{Final formula}
-	\begin{figure}
-		\includegraphics[width=.5\linewidth]{figs/semantic_factor_equation.png}\\
-		\includegraphics[width=.5\linewidth]{figs/geometric_factor_equation.png}\\
-		\includegraphics[width=.5\linewidth]{figs/final_formula_equation.png}\\
-		\includegraphics[width=.5\linewidth]{figs/max_final_equation.png}
-	\end{figure}					
-\end{frame}
-%========================================== ############# ======================================================
+%\begin{frame}{Final formula}
+%	\begin{figure}
+%		\includegraphics[width=.5\linewidth]{figs/semantic_factor_equation.png}\\
+%		\includegraphics[width=.5\linewidth]{figs/geometric_factor_equation.png}\\
+%		\includegraphics[width=.5\linewidth]{figs/final_formula_equation.png}\\
+%		\includegraphics[width=.5\linewidth]{figs/max_final_equation.png}
+%	\end{figure}					
+%\end{frame}
+%%========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 \begin{frame}{Experiments and Results}
@@ -966,15 +1055,17 @@
 %========================================== ############# ======================================================
 \begin{frame}{Experiments and Results}
 	\begin{columns}[T]
-		\column{0.35\textwidth}
+		\column{0.44\textwidth}
 		\vspace{-1.2cm}
 		\begin{itemize}
 			\item Comparison with the shortest path
 		\end{itemize}
 		\column{0.8\textwidth}
 				\begin{figure}	
-					\hspace{-5cm}
-					\includegraphics[width=.5\linewidth]{figs/RESULTS_COMPARISON_PERCENTAGE_NEW_T-eps-converted-to}
+					\hspace{-9.5cm}
+					\includegraphics[width=.4\linewidth]{figs/normal_shortest_path_percentage.png}%RESULTS_COMPARISON_PERCENTAGE_NEW_T-eps-converted-to}
+					\includegraphics[width=.4\linewidth]{figs/inverse_shortest_path_percentage.png}%RESULTS_COMPARISON_PERCENTAGE_NEW_T-eps-converted-to}
+					\includegraphics[width=.4\linewidth]{figs/hotel_shortest_path_percentage.png}%RESULTS_COMPARISON_PERCENTAGE_NEW_T-eps-converted-to}					
 				\end{figure}
 %		\column{0.4\textwidth}					
 %				\begin{figure}
@@ -1077,11 +1168,11 @@
 	\begin{columns}[T]
 		\column{1\textwidth}
 		\begin{itemize}[<+->]
-			\item Semantic OS system that:
+			\item \textbf{Semantic OS system} that:
 			\begin{itemize}
-				\item  Relies on semantic information inferred from text within the environment
-				\item  Does not require that the door signs are set according to a specific pattern
-				\item  Performs better than the greedy search and humans participants
+				\item  Relies on \textbf{semantic information inferred from text} within the environment
+				\item  Does \textbf{not require} that the \textbf{door signs} are set according to a \textbf{specific pattern}
+				\item  \textbf{Performs better} than the \textbf{greedy search} and \textbf{humans participants}
 			\end{itemize}
 			\item It is possible to expand the robot's perception with semantic information
 			\item Analysis of the difficulty of the OS problem by the experiments with human participants

@@ -1,6 +1,17 @@
 do slide 9 para o 10, contar uma história que conecte os dois slides
 slide 9-10: adicionar um slide de related work
 adicionar as equações juntas com as imagens (tabela mostrando os extremos, sem entrar em detalhes de cada variável. Adicionar ao final tudo explicado)
+---
+SLIDES:
+slide 1: tirar o Z do grisetti
+slide 20: adicionar a legenda dele no 19 e fazer o "parity" em 1 slide só
+slide 23: remove esse slide e tenta juntar com os outros 3 do growing direction
+slide 29-32: tirar o tabelão e tentar juntar os mapas
+slides 35: remover os slides de experimento com o robô real (ou falar sobre ele primeiro)
+slide 48: colocar os 4 graficos juntos
+
+APRESENTAÇÃO:
+tentar não falar em 1º e 2º trabalhos (evitar em dividir o trabalho)
 ##################################################################################
 adicionar o nome dos orientadores
 slide 1: adicionar footnote com o paper "Simultaneous Localization And Mapping: Present, Future, and the Robust-Perception Age"
