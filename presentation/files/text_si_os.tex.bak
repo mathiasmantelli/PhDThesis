@@ -578,16 +578,18 @@
 			\item Parity of the segment
 			\item Comparison with the goal-door's parity
 		\end{itemize}
-		\column{.5\textwidth}	
+		\column{.65\textwidth}	
 			\centering	
 			\begin{figure}
 			    \begin{subfigure}{.6\columnwidth}
-					 \includegraphics[width=1\linewidth]{figs/parity_even.png}
-     				 \caption{\tiny Door signs and goal-door with same parity.}			 		 
+			    		\centering
+					 \includegraphics[width=.85\linewidth]{figs/parity_even.png}
+     				 \caption{\tiny Door signs and goal-door with same parity. $\varphi_p({c}) = 1$}			 		 
 			    	\end{subfigure}\\
 			    \begin{subfigure}{.6\columnwidth}
-			    		\includegraphics[width=1\linewidth]{figs/parity_odd.png}	         
-			    		\caption{\tiny Door signs and goal-door with different parity.}					 
+			    		\centering				    
+			    		\includegraphics[width=.85\linewidth]{figs/parity_odd.png}	         
+			    		\caption{\tiny Door signs and goal-door with different parity. $\varphi_p({c}) = 0$}					 
 			    	\end{subfigure}					 
 				 \caption{\tiny Example to illustrate the parity factor.}			 
 	         \end{figure}	         		
@@ -596,20 +598,20 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}{Parity} %
-	\begin{figure}
-%		\includegraphics[width=.5\linewidth]{figs/parity_equation.png}	         
-			    \begin{subfigure}{.4\columnwidth}
-					 \includegraphics[width=1\linewidth]{figs/parity_even.png}
-     				 \caption{\tiny Door signs and goal-door with same parity. $\varphi_p({c}) = 1$}			 		 
-			    	\end{subfigure}
-			    \begin{subfigure}{.4\columnwidth}
-			    		\includegraphics[width=1\linewidth]{figs/parity_odd.png}	         
-			    		\caption{\tiny Door signs and goal-door with different parity. $\varphi_p({c}) = 0$}	 
-			    	\end{subfigure}					 
-				 \caption{\tiny Example to illustrate the parity factor.}			 
-	\end{figure}					
-\end{frame}
+%\begin{frame}{Parity} %
+%	\begin{figure}
+%%		\includegraphics[width=.5\linewidth]{figs/parity_equation.png}	         
+%			    \begin{subfigure}{.4\columnwidth}
+%					 \includegraphics[width=1\linewidth]{figs/parity_even.png}
+%     				 \caption{\tiny Door signs and goal-door with same parity. $\varphi_p({c}) = 1$}			 		 
+%			    	\end{subfigure}
+%			    \begin{subfigure}{.4\columnwidth}
+%			    		\includegraphics[width=1\linewidth]{figs/parity_odd.png}	         
+%			    		\caption{\tiny Door signs and goal-door with different parity. $\varphi_p({c}) = 0$}	 
+%			    	\end{subfigure}					 
+%				 \caption{\tiny Example to illustrate the parity factor.}			 
+%	\end{figure}					
+%\end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -842,18 +844,21 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 \begin{frame}{Experiments and Results}
-	\begin{columns}[T]
-		\column{1\textwidth}
-		\vspace{-1.5cm}
+%	\begin{columns}[T]
+%		\column{.4\textwidth}
+%		\vspace{-1.5cm}
 		\begin{itemize}
 			\item Simulated experiment setup
 		\end{itemize}
-	\end{columns}
-	\begin{columns}
-		\column{1\textwidth}
-		\centering		
-		\includegraphics[width=.5\linewidth]{figs/setup_simulation_text.png}	   									
-	\end{columns}	
+%		\column{.6\textwidth}
+%		\centering		
+		\hspace{-7cm}
+		\begin{figure}
+			\centering
+			\includegraphics[width=.6\linewidth]{figs/setup_simulation_text.png}	   
+			\caption{\tiny System overview of our setup for the experiments in simulation.}											
+		\end{figure}
+%	\end{columns}	
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -876,26 +881,26 @@
 			\begin{figure}
 			    \begin{subfigure}{.45\columnwidth}
 			    		\centering
-					 \includegraphics[width=.45\linewidth]{figs/KTH_CampusValhallava_finished.png}
-     				 \caption{\tiny KTH.}			 		 
-			    	\end{subfigure}
-			    \begin{subfigure}{.45\columnwidth}
-			    		\centering			    
-			    		\includegraphics[width=.7\linewidth]{figs/hotel2_PAPER.png}
-			    		\caption{\tiny Hotel.}					 
-			    	\end{subfigure}	\\	
-			    \begin{subfigure}{.45\columnwidth}
-			    		\centering			    
-					 \includegraphics[width=.6\linewidth]{figs/map_normal_redcircles.png}
+					 \includegraphics[width=.6\linewidth]{figs/map_normal_redcircles.png}			    		
      				 \caption{\tiny Normal.}			 		 
 			    	\end{subfigure}
 			    \begin{subfigure}{.45\columnwidth}
-			    		\centering			    
-			    		\includegraphics[width=.6\linewidth]{figs/map_inverse_redcircles.png}			    	
+			    		\centering		
+			    		\includegraphics[width=.6\linewidth]{figs/map_inverse_redcircles.png}						    			    
 			    		\caption{\tiny Inverse.}					 
+			    	\end{subfigure}	\\	
+			    \begin{subfigure}{.45\columnwidth}
+			    		\centering			    
+			    		\includegraphics[width=.7\linewidth]{figs/hotel2_PAPER.png}
+     				 \caption{\tiny Hotel.}			 		 
+			    	\end{subfigure}
+			    \begin{subfigure}{.45\columnwidth}
+			    		\centering			    
+					 \includegraphics[width=.45\linewidth]{figs/KTH_CampusValhallava_finished.png}			    		    	
+			    		\caption{\tiny KTH.}					 
 			    	\end{subfigure}				    				 
-				 \caption{\tiny Maps used in the simulated experiments.}			 
-	         \end{figure}					
+				 \caption{\tiny Maps used in the simulated experiments.}					 
+	         \end{figure}				
 	\end{columns}
 \end{frame}
 %========================================== ############# ======================================================
@@ -920,23 +925,23 @@
 			\begin{figure}
 			    \begin{subfigure}{.45\columnwidth}
 			    		\centering
-					 \includegraphics[width=.45\linewidth]{figs/KTH_CampusValhallava_finished.png}
-     				 \caption{\tiny KTH.}			 		 
-			    	\end{subfigure}
-			    \begin{subfigure}{.45\columnwidth}
-			    		\centering			    
-			    		\includegraphics[width=.7\linewidth]{figs/hotel2_PAPER.png}
-			    		\caption{\tiny Hotel.}					 
-			    	\end{subfigure}	\\	
-			    \begin{subfigure}{.45\columnwidth}
-			    		\centering			    
-					 \includegraphics[width=.6\linewidth]{figs/map_normal_redcircles.png}
+					 \includegraphics[width=.6\linewidth]{figs/map_normal_redcircles.png}			    		
      				 \caption{\tiny Normal.}			 		 
 			    	\end{subfigure}
 			    \begin{subfigure}{.45\columnwidth}
-			    		\centering			    
-			    		\includegraphics[width=.6\linewidth]{figs/map_inverse_redcircles.png}			    	
+			    		\centering		
+			    		\includegraphics[width=.6\linewidth]{figs/map_inverse_redcircles.png}						    			    
 			    		\caption{\tiny Inverse.}					 
+			    	\end{subfigure}	\\	
+			    \begin{subfigure}{.45\columnwidth}
+			    		\centering			    
+			    		\includegraphics[width=.7\linewidth]{figs/hotel2_PAPER.png}
+     				 \caption{\tiny Hotel.}			 		 
+			    	\end{subfigure}
+			    \begin{subfigure}{.45\columnwidth}
+			    		\centering			    
+					 \includegraphics[width=.45\linewidth]{figs/KTH_CampusValhallava_finished.png}			    		    	
+			    		\caption{\tiny KTH.}					 
 			    	\end{subfigure}				    				 
 				 \caption{\tiny Maps used in the simulated experiments.}					 
 	         \end{figure}					
@@ -946,165 +951,201 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 \begin{frame}{Experiments and Results}
-	\begin{columns}[T]
-		\column{0.2\textwidth}
-		\begin{itemize}
-			\item Normal map
-		\end{itemize}		
-		\column{0.4\textwidth}					
-				\begin{figure}
-				    \begin{subfigure}{1\columnwidth}	
-				    		\centering								
-						\includegraphics[width=1\linewidth]{figs/normal_avrg_text.png}%RESULTS_NORMAL_SHORTEST_NEW_T-eps-converted-to}	
-				    	\end{subfigure}
-				    \begin{subfigure}{1\columnwidth}												
-				    		\centering		
-				    		\vspace{.15cm}		    
-						\includegraphics[width=.8\linewidth]{figs/map_normal_redcircles.png}					
-				    	\end{subfigure}						
-				\end{figure}			
-		\column{0.4\textwidth}
-				\begin{figure}		
-					\includegraphics[width=.8\linewidth]{figs/RESULTS_NORMAL_NEW_T-eps-converted-to}		
-				\end{figure}			    				         
-	\end{columns}
+			\centering	
+			\begin{figure}
+			    \begin{subfigure}{.45\columnwidth}
+			    		\centering
+					 \includegraphics[width=.85\linewidth]{figs/normal_avrg_text.png}
+     				 \caption{\tiny Average of the traveled distance in the Normal map.}			 		 
+			    	\end{subfigure}
+			    \begin{subfigure}{.45\columnwidth}
+			    		\centering			    
+			    		\includegraphics[width=.85\linewidth]{figs/inverse_avrg_text.png}
+     				 \caption{\tiny Average of the traveled distance in the Inverse map.}	
+			    	\end{subfigure}	\\	
+			    \begin{subfigure}{.45\columnwidth}
+			    		\centering			    
+					 \includegraphics[width=.85\linewidth]{figs/hotel_avrg_text.png}
+     				 \caption{\tiny Average of the traveled distance in the Hotel map.}		 
+			    	\end{subfigure}
+			    \begin{subfigure}{.45\columnwidth}
+			    		\centering			    
+			    		\includegraphics[width=.85\linewidth]{figs/kth_avrg_text.png}			    	
+     				 \caption{\tiny Average of the traveled distance in the KTH map.}				 
+			    	\end{subfigure}	
+			    \begin{subfigure}{.45\columnwidth}
+			    		\centering			    
+			    		\includegraphics[width=.55\linewidth]{figs/scale_colors.png}			    	
+			    		\caption{\tiny Meaning of the cell colors.}					 
+			    	\end{subfigure}				    				    				 
+				 \caption{\tiny Maps used in the simulated experiments.}					 
+	         \end{figure}	
 \end{frame}
+
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}{Experiments and Results}
-	\begin{columns}[T]
-		\column{0.2\textwidth}
-		\begin{itemize}
-			\item Inverse map
-		\end{itemize}
-		\column{0.4\textwidth}					
-				\begin{figure}
-				    \begin{subfigure}{1\columnwidth}	
-				    		\centering								
-						\includegraphics[width=1\linewidth]{figs/inverse_avrg_text.png}%RESULTS_INVERSE_SHORTEST_NEW_T-eps-converted-to}	
-				    	\end{subfigure}
-				    \begin{subfigure}{1\columnwidth}												
-				    		\centering		
-				    		\vspace{.15cm}		    
-						\includegraphics[width=.8\linewidth]{figs/map_inverse_redcircles.png}			
-				    	\end{subfigure}						
-				\end{figure}			
-		\column{0.4\textwidth}
-				\begin{figure}		
-					\includegraphics[width=.8\linewidth]{figs/RESULTS_INVERSE_NEW_T-eps-converted-to}
-				\end{figure}	         			
-	\end{columns}
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}{Experiments and Results}
-	\begin{columns}[T]
-		\column{0.2\textwidth}
-		\begin{itemize}
-			\item Hotel map
-		\end{itemize}
-		\column{0.4\textwidth}					
-				\begin{figure}
-				    \begin{subfigure}{1\columnwidth}	
-				    		\centering								
-						\includegraphics[width=1\linewidth]{figs/hotel_avrg_text.png}%RESULTS_HOTEL_SHORTEST_NEW_T-eps-converted-to	}
-				    	\end{subfigure}
-				    \begin{subfigure}{1\columnwidth}												
-				    		\centering		
-				    		\vspace{.15cm}		    
-						\includegraphics[width=.8\linewidth]{figs/hotel2_PAPER.png}
-				    	\end{subfigure}						
-				\end{figure}			
-		\column{0.4\textwidth}
-				\begin{figure}		
-					\includegraphics[width=.8\linewidth]{figs/RESULTS_HOTEL_NEW_T-eps-converted-to}
-				\end{figure}				         			
-	\end{columns}
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}{Experiments and Results}
-	\begin{columns}[T]
-		\column{0.2\textwidth}
-		\begin{itemize}
-			\item KTH map
-		\end{itemize}
-		\column{0.4\textwidth}					
-				\begin{figure}
-				    \begin{subfigure}{1\columnwidth}	
-				    		\centering								
-						\includegraphics[width=1\linewidth]{figs/kth_avrg_text.png}%RESULTS_KTH_SHORTEST_NEW_T-eps-converted-to}	
-				    	\end{subfigure}
-				    \begin{subfigure}{1\columnwidth}												
-				    		\centering		
-				    		\vspace{.15cm}		    
-						\includegraphics[width=.53\linewidth]{figs/KTH_CampusValhallava_finished.png}
-				    	\end{subfigure}						
-				\end{figure}				
-		\column{0.4\textwidth}
-				\begin{figure}		
-					\includegraphics[width=.8\linewidth]{figs/RESULTS_KTH_NEW_T-eps-converted-to}
-				\end{figure}	         		
-	\end{columns}
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}{Experiments and Results}
-	\begin{columns}[T]
-		\column{0.44\textwidth}
-		\vspace{-1.2cm}
-		\begin{itemize}
-			\item Comparison with the shortest path
-		\end{itemize}
-		\column{0.8\textwidth}
-				\begin{figure}	
-					\hspace{-9.5cm}
-					\includegraphics[width=.4\linewidth]{figs/normal_shortest_path_percentage.png}%RESULTS_COMPARISON_PERCENTAGE_NEW_T-eps-converted-to}
-					\includegraphics[width=.4\linewidth]{figs/inverse_shortest_path_percentage.png}%RESULTS_COMPARISON_PERCENTAGE_NEW_T-eps-converted-to}
-					\includegraphics[width=.4\linewidth]{figs/hotel_shortest_path_percentage.png}%RESULTS_COMPARISON_PERCENTAGE_NEW_T-eps-converted-to}					
-				\end{figure}
+%\begin{frame}{Experiments and Results}
+%	\begin{columns}[T]
+%		\column{0.2\textwidth}
+%		\begin{itemize}
+%			\item Normal map
+%		\end{itemize}		
 %		\column{0.4\textwidth}					
 %				\begin{figure}
 %				    \begin{subfigure}{1\columnwidth}	
 %				    		\centering								
-%						\includegraphics[width=1\linewidth]{figs/RESULTS_KTH_SHORTEST_NEW_T-eps-converted-to}	
+%						\includegraphics[width=1\linewidth]{figs/normal_avrg_text.png}%RESULTS_NORMAL_SHORTEST_NEW_T-eps-converted-to}	
+%				    	\end{subfigure}
+%				    \begin{subfigure}{1\columnwidth}												
+%				    		\centering		
+%				    		\vspace{.15cm}		    
+%						\includegraphics[width=.8\linewidth]{figs/map_normal_redcircles.png}					
+%				    	\end{subfigure}						
+%				\end{figure}			
+%		\column{0.4\textwidth}
+%				\begin{figure}		
+%					\includegraphics[width=.8\linewidth]{figs/RESULTS_NORMAL_NEW_T-eps-converted-to}		
+%				\end{figure}			    				         
+%	\end{columns}
+%\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%\begin{frame}{Experiments and Results}
+%	\begin{columns}[T]
+%		\column{0.2\textwidth}
+%		\begin{itemize}
+%			\item Inverse map
+%		\end{itemize}
+%		\column{0.4\textwidth}					
+%				\begin{figure}
+%				    \begin{subfigure}{1\columnwidth}	
+%				    		\centering								
+%						\includegraphics[width=1\linewidth]{figs/inverse_avrg_text.png}%RESULTS_INVERSE_SHORTEST_NEW_T-eps-converted-to}	
+%				    	\end{subfigure}
+%				    \begin{subfigure}{1\columnwidth}												
+%				    		\centering		
+%				    		\vspace{.15cm}		    
+%						\includegraphics[width=.8\linewidth]{figs/map_inverse_redcircles.png}			
+%				    	\end{subfigure}						
+%				\end{figure}			
+%		\column{0.4\textwidth}
+%				\begin{figure}		
+%					\includegraphics[width=.8\linewidth]{figs/RESULTS_INVERSE_NEW_T-eps-converted-to}
+%				\end{figure}	         			
+%	\end{columns}
+%\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%\begin{frame}{Experiments and Results}
+%	\begin{columns}[T]
+%		\column{0.2\textwidth}
+%		\begin{itemize}
+%			\item Hotel map
+%		\end{itemize}
+%		\column{0.4\textwidth}					
+%				\begin{figure}
+%				    \begin{subfigure}{1\columnwidth}	
+%				    		\centering								
+%						\includegraphics[width=1\linewidth]{figs/hotel_avrg_text.png}%RESULTS_HOTEL_SHORTEST_NEW_T-eps-converted-to	}
+%				    	\end{subfigure}
+%				    \begin{subfigure}{1\columnwidth}												
+%				    		\centering		
+%				    		\vspace{.15cm}		    
+%						\includegraphics[width=.8\linewidth]{figs/hotel2_PAPER.png}
+%				    	\end{subfigure}						
+%				\end{figure}			
+%		\column{0.4\textwidth}
+%				\begin{figure}		
+%					\includegraphics[width=.8\linewidth]{figs/RESULTS_HOTEL_NEW_T-eps-converted-to}
+%				\end{figure}				         			
+%	\end{columns}
+%\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%\begin{frame}{Experiments and Results}
+%	\begin{columns}[T]
+%		\column{0.2\textwidth}
+%		\begin{itemize}
+%			\item KTH map
+%		\end{itemize}
+%		\column{0.4\textwidth}					
+%				\begin{figure}
+%				    \begin{subfigure}{1\columnwidth}	
+%				    		\centering								
+%						\includegraphics[width=1\linewidth]{figs/kth_avrg_text.png}%RESULTS_KTH_SHORTEST_NEW_T-eps-converted-to}	
 %				    	\end{subfigure}
 %				    \begin{subfigure}{1\columnwidth}												
 %				    		\centering		
 %				    		\vspace{.15cm}		    
 %						\includegraphics[width=.53\linewidth]{figs/KTH_CampusValhallava_finished.png}
 %				    	\end{subfigure}						
-%				\end{figure}			         		
-	\end{columns}
+%				\end{figure}				
+%		\column{0.4\textwidth}
+%				\begin{figure}		
+%					\includegraphics[width=.8\linewidth]{figs/RESULTS_KTH_NEW_T-eps-converted-to}
+%				\end{figure}	         		
+%	\end{columns}
+%\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Experiments and Results}
+
+			\centering	
+			\begin{figure}
+			    \begin{subfigure}{.3\columnwidth}
+			    		\centering
+					 \includegraphics[width=1\linewidth]{figs/normal_shortest_path_percentage.png}
+     				 \caption{\tiny Normal map.}			 		 
+			    	\end{subfigure}
+			    \begin{subfigure}{.3\columnwidth}
+			    		\centering			    
+			    		\includegraphics[width=1\linewidth]{figs/inverse_shortest_path_percentage.png}
+     				 \caption{\tiny Inverse map.}	
+			    	\end{subfigure}		
+			    \begin{subfigure}{.3\columnwidth}
+			    		\centering			    
+					 \includegraphics[width=1\linewidth]{figs/hotel_shortest_path_percentage.png}
+     				 \caption{\tiny Hotel map.}		 
+			    	\end{subfigure}				    				    				 
+				 \caption{\tiny Comparison of the traveled distances for each goal-door with its respective shortest distance.}					 
+	         \end{figure}	
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 \begin{frame}{Experiments and Results}
 	\begin{columns}[T]
-		\column{0.2\textwidth}
+		\column{0.3\textwidth}
 		\begin{itemize}
-			\item Human participants in OS task
+			\item Human participants in the OS task
 		\end{itemize}
-		\column{0.4\textwidth}
-				\begin{figure}		
+		\column{0.35\textwidth}
+				\begin{figure}	
+					\centering	
 					\includegraphics[width=.8\linewidth]{figs/RESULTS_HUMANS_NEW_T-eps-converted-to}
+					\caption{Comparison of the traveled distances for two goal-doors.}
 				\end{figure}
 		\column{0.4\textwidth}					
+				\hspace{-1cm}
 				\begin{figure}
+					\centering
 				    \begin{subfigure}{1\columnwidth}	
 				    		\centering								
-						\includegraphics[width=.7\linewidth]{figs/map_normal_redcircles.png}
+						\includegraphics[width=.56\linewidth]{figs/map_normal_redcircles.png}
+						\caption{\tiny Normal map.}						
 				    	\end{subfigure}
 				    \begin{subfigure}{1\columnwidth}												
 				    		\centering		
 				    		\vspace{.15cm}		    
-						\includegraphics[width=.63\linewidth]{figs/hotel2_PAPER.png}
+						\includegraphics[width=.5\linewidth]{figs/hotel2_PAPER.png}
+						\caption{\tiny Hotel map.}						
 				    	\end{subfigure}						
+						\caption{\tiny Maps used for the experiments with the participants.}										    	
 				\end{figure}	
 	\end{columns}
 \end{frame}
@@ -1118,7 +1159,7 @@
 			\item Experiments with the physical Robot
 			\begin{itemize}
 				\item Pioneer 3DX
-				\item 2 cameras
+				\item 2 cameras (left and right)
 				\item Laptop
 				\item Inf, UFRGS
 			\end{itemize}			
@@ -1127,13 +1168,16 @@
 				\begin{figure}
 				    \begin{subfigure}{1\columnwidth}	
 				    		\centering								
-						\includegraphics[width=.5\linewidth]{figs/real_environment_map.png}	
+						\includegraphics[width=.4\linewidth]{figs/real_environment_map.png}	
+						\caption{\tiny Map of the environment used for this experiment.}												
 				    	\end{subfigure}
 				    \begin{subfigure}{1\columnwidth}												
 				    		\centering		
 				    		\vspace{.15cm}		    
-						\includegraphics[width=.5\linewidth]{figs/real_scenario_labeled2.png}
+						\includegraphics[width=.4\linewidth]{figs/real_scenario_labeled2.png}
+						\caption{\tiny Pioneer 3DX, sensors and the door signs.}												
 				    	\end{subfigure}						
+					\caption{\tiny Experiments with the physical robot.}										    	
 				\end{figure}	
 	\end{columns}
 \end{frame}
@@ -1148,7 +1192,7 @@
 			\item Experiments with the physical Robot
 			\begin{itemize}
 				\item Pioneer 3DX
-				\item 2 cameras
+				\item 2 cameras (left and right)
 				\item Laptop
 				\item Inf, UFRGS
 			\end{itemize}			
@@ -1158,6 +1202,7 @@
 				\begin{figure}
 				    	\centering								
 					\includegraphics[width=.95\linewidth]{figs/experiment_physical_robot.png}						
+					\caption{\tiny Step by step of the experiment with the physical robot.}
 				\end{figure}	
 	\end{columns}
 \end{frame}

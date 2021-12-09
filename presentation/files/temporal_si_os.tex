@@ -20,7 +20,7 @@
 		\centering
 		\begin{figure}
 			\includegraphics[width=.9\linewidth]{figs/care_o_bot.png}
-			\caption{\tiny Signs on primary routes, green backgrounds​.\footnotemark[15]}			 		 
+			\caption{\tiny Evolution of the Care-O-bot.\footnotemark[15]}			 		 
 		\end{figure}			
 	\end{columns}
 	\footnotetext[15]{\tiny Figure extracted from \url{care-o-bot.de/en/care-o-bot-3/history.html}.}			
@@ -52,7 +52,7 @@
 		\centering
 		\begin{figure}
 			\includegraphics[width=.8\linewidth]{figs/general_idea_300dpi.png}
-			\caption{\tiny Signs on primary routes, green backgrounds​.}
+			\caption{\tiny General idea of our OS system.}
 		\end{figure}			
 	\end{columns}	
 \end{frame}
@@ -72,7 +72,7 @@
 		\centering
 		\begin{figure}
 			\includegraphics[width=.8\linewidth]{figs/system_overview_shade.png}
-			\caption{\tiny Signs on primary routes, green backgrounds​.}
+			\caption{\tiny Flow chart of our Semantic, Temporal OS system.}
 		\end{figure}			
 	\end{columns}	
 \end{frame}
@@ -93,7 +93,7 @@
 		\centering
 		\begin{figure}
 			\includegraphics[width=.8\linewidth]{figs/system_overview.png}
-			\caption{\tiny Signs on primary routes, green backgrounds​.}
+			\caption{\tiny Flow chart of our Semantic, Temporal OS system.}
 		\end{figure}			
 	\end{columns}	
 \end{frame}
@@ -102,15 +102,19 @@
 %========================================== ############# ======================================================
 \begin{frame}{The OS system}
 	\begin{columns}[T]
-	\column{.3\textwidth}
+	\column{.38\textwidth}
 	\begin{itemize}
-		\item Heat map
+		\item \textbf{Heat map}
+		\begin{itemize}
+			\item Based on the 2D grid map
+			\item Circular kernel
+		\end{itemize}
 	\end{itemize}
-	\column{.7\textwidth}
+	\column{.65\textwidth}
 		\centering
 		\begin{figure}
 			\includegraphics[width=.8\linewidth]{figs/environment_2Dgrid_heatmap_kernel.png}
-			\caption{\tiny Signs on primary routes, green backgrounds​.}
+			\caption{\tiny Simulated world, its 2D grid map, and the heat map computed by our OS system.}
 		\end{figure}			
 	\end{columns}	
 \end{frame}
@@ -119,23 +123,31 @@
 %========================================== ############# ======================================================
 \begin{frame}[noframenumbering]{The OS system}
 	\begin{columns}[T]
-	\column{.3\textwidth}
+	\column{.4\textwidth}
 		\begin{itemize}
-			\item Heat map
-			\item Kernel angle reduction
+			\item \textbf{Heat map}
+			\begin{itemize}
+				\item Based on the 2D grid map
+				\item Circular kernel
+			\end{itemize}			
+			\item Kernel \textbf{angle reduction}
 		\end{itemize}
-	\column{.35\textwidth}
+	\column{.32\textwidth}
 		\centering
 		\begin{figure}
 			\begin{subfigure}{.8\columnwidth}
+				\centering
 				\includegraphics[width=1\linewidth]{figs/bad_robot_placement_1.png}
-%				\caption{\tiny Signs on primary routes, green backgrounds​.}
+%				\caption{\tiny backgrounds​.}
 			\end{subfigure}
 			\begin{subfigure}{.8\columnwidth}			
+				\centering			
 				\includegraphics[width=1\linewidth]{figs/bad_robot_placement_2.png}			
+%				\caption{\tiny backgrounds​.}				
 			\end{subfigure}
+			\caption{\tiny Bad robot placement.}			
 		\end{figure}		
-	\column{.35\textwidth}
+	\column{.32\textwidth}
 		\centering
 		\begin{figure}
 			\begin{subfigure}{.8\columnwidth}
@@ -143,8 +155,11 @@
 %				\caption{\tiny Signs on primary routes, green backgrounds​.}
 			\end{subfigure}
 			\begin{subfigure}{.8\columnwidth}		
+				\centering						
 				\includegraphics[width=1.05\linewidth]{figs/good_robot_placement_2.png}			
+%				\caption{\tiny backgrounds​.}								
 			\end{subfigure}
+				\caption{\tiny Good robot placement.}											
 		\end{figure}				
 	\end{columns}	
 \end{frame}
@@ -155,24 +170,28 @@
 	\begin{columns}[T]
 	\column{.4\textwidth}
 	\begin{itemize}
-		\item Heat map
-		\item Kernel angle reduction
-		\item Inverted kernel
+			\item \textbf{Heat map}
+			\begin{itemize}
+				\item Based on the 2D grid map
+				\item Circular kernel
+			\end{itemize}			
+			\item Kernel \textbf{angle reduction}
+		\item \textbf{Inverted kernel}
 	\end{itemize}
-	\column{.3\textwidth}
+	\column{.6\textwidth}
 		\centering
 		\begin{figure}
-%			\begin{subfigure}{.8\columnwidth}
-				\includegraphics[width=.9\linewidth]{figs/normal_kernel_complete_reduced.png}
-		\end{figure}						
-	\column{.3\textwidth}
-		\centering	
-		\begin{figure}			
-%				\caption{\tiny Signs on primary routes, green backgrounds​.}
-%			\end{subfigure}
-%			\begin{subfigure}{.8\columnwidth}		
-				\includegraphics[width=.9\linewidth]{figs/inversed_kernel_complete_reduced.png}			
-%			\end{subfigure}
+			\begin{subfigure}{.48\columnwidth}
+				\centering
+				\includegraphics[width=1\linewidth]{figs/normal_kernel_complete_reduced.png}
+				\caption{\tiny Heat map with the normal kernel.}
+			\end{subfigure}
+			\begin{subfigure}{.48\columnwidth}		
+				\centering			
+				\includegraphics[width=1\linewidth]{figs/inversed_kernel_complete_reduced.png}			
+				\caption{\tiny Heat map with the inverted kernel.}				
+			\end{subfigure}
+			\caption{\tiny Illustration of the different kernels and the Heat map.}
 		\end{figure}		
 	\end{columns}	
 \end{frame}
@@ -184,12 +203,16 @@
 	\column{.3\textwidth}
 	\begin{itemize}
 		\item Goal computation
+		\begin{itemize}
+			\item \textbf{Warmest area}
+		\end{itemize}
 	\end{itemize}
 	\column{.7\textwidth}
 		\centering
 		\begin{figure}
-			\includegraphics[width=.8\linewidth]{figs/inversed_kernel_complete_reduced.png}
-%			\caption{\tiny Signs on primary routes, green backgrounds​.}
+			\centering
+			\includegraphics[width=.65\linewidth]{figs/inversed_kernel_complete_reduced.png}
+			\caption{\tiny Inverted and reduced kernel for goal computation.}
 		\end{figure}			
 	\end{columns}	
 \end{frame}
@@ -208,6 +231,7 @@
 		\begin{figure}
 %			\begin{subfigure}{.8\columnwidth}
 				\includegraphics[width=.6\linewidth]{figs/hh106sensor_map.png}
+				\caption{\tiny The floorplan of the single-resident apartment from the HH106 dataset.}
 		\end{figure}		
 	\end{columns}	
 		\footnotetext[16]{\tiny Dataset available at \url{http://casas.wsu.edu/datasets/}.}
@@ -228,6 +252,7 @@
 %			\begin{subfigure}{.8\columnwidth}
 				\includegraphics[width=.45\linewidth]{figs/simulated_environment.png}
 				\includegraphics[width=.25\linewidth]{figs/husky_robot.png}
+				\caption{\tiny Environment and robot used in simulation.}
 		\end{figure}		
 	\end{columns}					
 		\footnotetext[16]{\tiny Dataset available at \url{http://casas.wsu.edu/datasets/}.}	
@@ -252,6 +277,33 @@
 		\begin{figure}
 %			\begin{subfigure}{.8\columnwidth}
 				\includegraphics[width=.6\linewidth]{figs/brute_force_route2.png}
+				\caption{\tiny The robot’s route for the Brute Force OS approach.}
+		\end{figure}		
+	\end{columns}		
+		\footnotetext[16]{\tiny Dataset available at \url{http://casas.wsu.edu/datasets/}.}			
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}[noframenumbering]{Experiments and results}
+	\begin{columns}[T]
+	\column{.4\textwidth}
+		\begin{itemize}
+			\item HH106 dataset\footnotemark[16]		
+			\item Simulation setup and maps
+			\item Two other OS systems:
+			\begin{itemize}
+				\item Brute Force
+				\item Last Seen 
+			\end{itemize}
+			\item The \textbf{shorter} the \textbf{traveled distance}, the \textbf{better}
+		\end{itemize}
+	\column{.6\textwidth}
+		\centering
+		\begin{figure}
+%			\begin{subfigure}{.8\columnwidth}
+				\includegraphics[width=.6\linewidth]{figs/brute_force_route2.png}
+				\caption{\tiny The robot’s route for the Brute Force OS approach.}				
 		\end{figure}		
 	\end{columns}		
 		\footnotetext[16]{\tiny Dataset available at \url{http://casas.wsu.edu/datasets/}.}			
@@ -265,14 +317,14 @@
 		\begin{itemize}
 			\item The HH106 dataset:
 			\begin{itemize}
-				\item Long-term dataset (60 days)
-				\item Motion sensors provide the human location at different hours of the day
-				\item The person mimics an object that is moved many times every day
-				\item 59 days of data for the Recording mode
+				\item \textbf{Long-term dataset} (60 days)
+				\item \textbf{Motion sensors} provide the \textbf{human location} at different hours of the day
+				\item The\textbf{ person mimics an object} that is moved many times every day
+				\item \textbf{59 days} of data for the \textbf{Recording mode}
 			\end{itemize}			 			 
 		\end{itemize}
 	\column{.6\textwidth}
-	\vspace{-.5cm}
+	\vspace{-.7cm}
 \begin{table}
 \tiny
 \centering
@@ -315,12 +367,16 @@
 %========================================== ############# ======================================================
 \begin{frame}{Experiments and results}
 	\begin{columns}[T]
-	\column{.3\textwidth}
+	\column{.4\textwidth}
 		\begin{itemize}
-			\item The HH106 dataset 
+			\item The HH106 dataset
+			\begin{itemize}
+				\item The \textbf{60th day} as the \textbf{ground-truth}
+			\end{itemize}			 
 		\end{itemize}
-	\column{.7\textwidth}
+	\column{.6\textwidth}
 	\vspace{-.5cm}
+	\hspace{2cm}
 \begin{table}
 \tiny
 \centering
@@ -367,11 +423,15 @@
 %========================================== ############# ======================================================
 \begin{frame}{Experiments and results}
 	\begin{columns}[T]
-	\column{.3\textwidth}
+	\column{.4\textwidth}
 		\begin{itemize}
 			\item The HH106 dataset
+			\begin{itemize}
+				\item \textbf{Estimations} based on the \textbf{59 days}
+				\item Requests for five different hours
+			\end{itemize}
 		\end{itemize}
-	\column{.7\textwidth}
+	\column{.65\textwidth}
 	\vspace{-.5cm}
 \begin{table}
 \tiny
@@ -397,7 +457,7 @@
 	\begin{columns}[T]
 		\column{.3\textwidth}
 		\begin{itemize}
-			\item Maps
+			\item Patterns:
 			\begin{itemize}
 				\item Static
 				\item Static-Inv
@@ -439,7 +499,7 @@
 \centering
 %\caption[Ground-truth of the mug's position for every setup according to the requesting hours.]{Ground-truth of the mug's position for every setup according to the requesting hours.}
 \begin{tabular}{c|cc}\hline
-\multirow{2}{*}{Setups}                                           & \multicolumn{2}{c}{Requesting hours}\\
+\multirow{2}{*}{Pattern}                                           & \multicolumn{2}{c}{Requesting hours}\\
      & ~~~12           & 00  \\\hline
 \textit{Static} & ~~~A & H
 \\\hline
@@ -469,45 +529,62 @@
 	\begin{columns}[T]
 		\column{.3\textwidth}
 		\begin{itemize}
-			\item Results for each map:
+			\item Results for each pattern:
 			\begin{itemize}
 				\item Static
 				\item Static-Inv
-			\end{itemize}
-		\end{itemize}
-		\column{.7\textwidth}
-			\centering
-			\begin{figure}
-	%			\begin{subfigure}{.8\columnwidth}
-					\includegraphics[width=.5\linewidth]{figs/static_setup.png}~
-					\includegraphics[width=.5\linewidth]{figs/static_inv_setup.png}					
-			\end{figure}		
-	\end{columns}				
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}[noframenumbering]{Experiments and results}
-	\begin{columns}[T]
-		\column{.3\textwidth}
-		\begin{itemize}
-			\item Results for each map:
-			\begin{itemize}
-%				\item Static
-%				\item Static-Inv
 				\item Mobile
-				\item Mobile-Inv			
+				\item Mobile-Inv					
 			\end{itemize}
 		\end{itemize}
-		\column{.7\textwidth}
-			\centering
+		\column{.85\textwidth}
+%			\centering
 			\begin{figure}
-	%			\begin{subfigure}{.8\columnwidth}
-					\includegraphics[width=.5\linewidth]{figs/mobile_setup.png}~
-					\includegraphics[width=.5\linewidth]{figs/mobile_inv_setup.png}	
-			\end{figure}		
+				\vspace{-.5cm}			
+				\begin{subfigure}{.4\columnwidth}
+					\includegraphics[width=.9\linewidth]{figs/static_setup.png}
+					\caption{\tiny Static pattern.}
+				\end{subfigure}
+				\begin{subfigure}{.4\columnwidth}					
+					\includegraphics[width=.9\linewidth]{figs/static_inv_setup.png}					
+					\caption{\tiny Static-Inv pattern.}
+				\end{subfigure}\\
+				\begin{subfigure}{.4\columnwidth}
+					\includegraphics[width=.9\linewidth]{figs/mobile_setup.png}
+					\caption{\tiny Mobile pattern.}
+				\end{subfigure}
+				\begin{subfigure}{.4\columnwidth}					
+					\includegraphics[width=.9\linewidth]{figs/mobile_inv_setup.png}					
+					\caption{\tiny Mobile-Inv pattern.}
+				\end{subfigure}				
+					\caption{\tiny Results for the first four patterns.}
+			\end{figure}					
 	\end{columns}				
 \end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%\begin{frame}[noframenumbering]{Experiments and results}
+%	\begin{columns}[T]
+%		\column{.3\textwidth}
+%		\begin{itemize}
+%			\item Results for each map:
+%			\begin{itemize}
+%%				\item Static
+%%				\item Static-Inv
+%				\item Mobile
+%				\item Mobile-Inv			
+%			\end{itemize}
+%		\end{itemize}
+%		\column{.7\textwidth}
+%			\centering
+%			\begin{figure}
+%	%			\begin{subfigure}{.8\columnwidth}
+%					\includegraphics[width=.5\linewidth]{figs/mobile_setup.png}~
+%					\includegraphics[width=.5\linewidth]{figs/mobile_inv_setup.png}	
+%			\end{figure}		
+%	\end{columns}				
+%\end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -522,82 +599,132 @@
 %				\item Mobile
 %				\item Mobile-Inv			
 				\item Shift
+				\item All combined			
 			\end{itemize}
 		\end{itemize}
-		\column{.7\textwidth}
-			\centering
+		\column{.85\textwidth}
+%			\centering
 			\begin{figure}
-	%			\begin{subfigure}{.8\columnwidth}
-					\includegraphics[width=.5\linewidth]{figs/shift_setup.png}
-			\end{figure}		
-	\end{columns}				
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}[noframenumbering]{Experiments and results}
-	\begin{columns}[T]
-		\column{.3\textwidth}
-		\begin{itemize}
-			\item Results for each map:
-			\begin{itemize}
-%				\item Static
-%				\item Static-Inv
-%				\item Mobile
-%				\item Mobile-Inv			
-%				\item Shift
-				\item Mobile-Inv modified
-			\end{itemize}
-		\end{itemize}
-		
-	\column{.3\textwidth}
-		\centering
-		\begin{figure}
-%			\begin{subfigure}{.8\columnwidth}
-				\includegraphics[width=.8\linewidth]{figs/mobile_inv_modified_setup.png}
-		\end{figure}						
-	\column{.3\textwidth}
-		\centering	
-		\begin{figure}			
-%				\caption{\tiny Signs on primary routes, green backgrounds​.}
-%			\end{subfigure}
-%			\begin{subfigure}{.8\columnwidth}		
-				\includegraphics[width=.7\linewidth]{figs/OUR_roomA_roomH2.png}			
-%			\end{subfigure}
-		\end{figure}				
-		
+				\vspace{-.5cm}			
+				\hspace{-.5cm}							
+				\begin{subfigure}{.4\columnwidth}
+					\centering				
+					\includegraphics[width=.9\linewidth]{figs/shift_setup.png}
+					\caption{\tiny Shift pattern.}
+				\end{subfigure}
+				\begin{subfigure}{.4\columnwidth}					
+					\centering				
+					\includegraphics[width=.9\linewidth]{figs/all_combined_setup.png}					
+					\caption{\tiny All patterns combined.}
+				\end{subfigure}\\
+				\begin{subfigure}{.4\columnwidth}
+					\centering				
+					\includegraphics[width=.4\linewidth]{figs/BF_roomH2.png}
+					\caption{\tiny Brute Force search.}
+				\end{subfigure}
+%				\begin{subfigure}{.4\columnwidth}	
+%					\centering									
+%					\includegraphics[width=.4\linewidth]{figs/OUR_roomA_roomH2.png}					
+%					\caption{\tiny Our OS system.}
+%				\end{subfigure}				
+					\caption{\tiny Results for the two other patterns.}
+			\end{figure}	
+
+%		
 %		\column{.7\textwidth}
 %			\centering
 %			\begin{figure}
 %	%			\begin{subfigure}{.8\columnwidth}
-%					\includegraphics[width=.35\linewidth]{figs/.png}
+%					\includegraphics[width=.5\linewidth]{figs/.png}
 %			\end{figure}		
 	\end{columns}				
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
+%\begin{frame}[noframenumbering]{Experiments and results}
+%	\begin{columns}[T]
+%		\column{.3\textwidth}
+%		\begin{itemize}
+%			\item Results for each map:
+%			\begin{itemize}
+%%				\item Static
+%%				\item Static-Inv
+%%				\item Mobile
+%%				\item Mobile-Inv			
+%%				\item Shift
+%				\item Mobile-Inv modified
+%			\end{itemize}
+%		\end{itemize}
+%		
+%	\column{.3\textwidth}
+%		\centering
+%		\begin{figure}
+%%			\begin{subfigure}{.8\columnwidth}
+%				\includegraphics[width=.8\linewidth]{figs/mobile_inv_modified_setup.png}
+%		\end{figure}						
+%	\column{.3\textwidth}
+%		\centering	
+%		\begin{figure}			
+%%				\caption{\tiny Signs on primary routes, green backgrounds​.}
+%%			\end{subfigure}
+%%			\begin{subfigure}{.8\columnwidth}		
+%				\includegraphics[width=.7\linewidth]{figs/OUR_roomA_roomH2.png}			
+%%			\end{subfigure}
+%		\end{figure}				
+%		
+%%		\column{.7\textwidth}
+%%			\centering
+%%			\begin{figure}
+%%	%			\begin{subfigure}{.8\columnwidth}
+%%					\includegraphics[width=.35\linewidth]{figs/.png}
+%%			\end{figure}		
+%	\end{columns}				
+%\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
 \begin{frame}[noframenumbering]{Experiments and results}
 	\begin{columns}[T]
 		\column{.3\textwidth}
 		\begin{itemize}
 			\item Results for each map:
 			\begin{itemize}
-%				\item Static
-%				\item Static-Inv
-%				\item Mobile
-%				\item Mobile-Inv			
-%				\item Shift
-%				\item Mobile-Inv modified
-				\item All combined
+				\item Modified Mobile-Inv pattern
 			\end{itemize}
 		\end{itemize}
 		\column{.7\textwidth}
-			\centering
 			\begin{figure}
-	%			\begin{subfigure}{.8\columnwidth}
-					\includegraphics[width=.5\linewidth]{figs/all_combined_setup.png}
-			\end{figure}		
+				\vspace{-.5cm}			
+				\hspace{-.5cm}							
+				\begin{subfigure}{.4\columnwidth}
+					\centering				
+					\includegraphics[width=.88\linewidth]{figs/mobile_inv_modified_setup.png}
+					\caption{\tiny Modified Mobile-Inv pattern.}
+				\end{subfigure}
+				\begin{subfigure}{.4\columnwidth}					
+					\centering				
+					\includegraphics[width=.5\linewidth]{figs/OUR_roomA_roomH2.png}					
+					\caption{\tiny Our OS system.}
+				\end{subfigure}\\
+				\begin{subfigure}{.4\columnwidth}
+					\centering				
+					\includegraphics[width=.6\linewidth]{figs/roomA_no_mugs.png}
+					\caption{\tiny Robot at location A.}
+				\end{subfigure}
+				\begin{subfigure}{.4\columnwidth}	
+					\centering									
+					\includegraphics[width=.6\linewidth]{figs/roomH_mugs.png}				
+					\caption{\tiny Robot at location H.}
+				\end{subfigure}				
+					\caption{\tiny Results for the modified Mobile-Inv pattern.}
+			\end{figure}	
+%
+%			\centering
+%			\begin{figure}
+%	%			\begin{subfigure}{.8\columnwidth}
+%					\includegraphics[width=.5\linewidth]{figs/.png}
+%			\end{figure}		
 	\end{columns}				
 \end{frame}
 %========================================== ############# ======================================================
@@ -605,10 +732,10 @@
 %========================================== ############# ======================================================
 \begin{frame}{Summary}
 	\begin{itemize}[<+->]
-		\item Heat map that represents the objects' presence
-		\item Search space reduction that provides better placement for the robot
-		\item Temporal Semantic OS system that observes the objects' position changes throughout a period of time
+		\item \textbf{Heat map} that represents the \textbf{objects' presence}
+		\item \textbf{Search space reduction} that provides \textbf{better placement} for the robot
+		\item \textbf{Temporal Semantic OS system} that observes the objects' position changes \textbf{throughout a period of time}
 		\item An OS system that does not depend on a specific SLAM or object-detection algorithm
-		\item Analysis of the advantages of using semantic information inferred from semi-dynamic objects
+		\item Analysis of the \textbf{advantages} of \textbf{using semantic information} inferred from \textbf{semi-dynamic objects}
 	\end{itemize}
 \end{frame}
