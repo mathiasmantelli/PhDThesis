@@ -88,7 +88,7 @@
 			\centering
 			\begin{figure}
 				 \includegraphics[width=.65\linewidth]{figs/os_map_distribution_known.png}
-				 \caption{\tiny Mapping with position indexed by odometry.}			 		 
+				 \caption{\tiny The 2D grid map and the object's position are known.}			 		 
 	         \end{figure}	
 	\end{columns}			
 \end{frame}
@@ -110,7 +110,7 @@
 			\centering
 			\begin{figure}
 				 \includegraphics[width=.65\linewidth]{figs/os_map_known.png}
-				 \caption{\tiny Mapping with position indexed by odometry.}			 		 
+				 \caption{\tiny The 2D grid map is known.}			 		 
 	         \end{figure}	
 	\end{columns}	
 \end{frame}
@@ -133,7 +133,7 @@
 			\centering
 			\begin{figure}
 				 \includegraphics[width=.65\linewidth]{figs/os_map_distribution_unknown.png}
-				 \caption{\tiny Mapping with position indexed by odometry.}			 		 
+				 \caption{\tiny The 2D grid map and the object's position are unknown.}			 			 		 
 	         \end{figure}		
 	\end{columns}	
 \end{frame}

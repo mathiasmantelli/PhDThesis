@@ -61,9 +61,9 @@
 			    \begin{subfigure}[b]{.5\columnwidth}
 			    		\centering					    	
 			    		\includegraphics[width=1\linewidth]{figs/lift_robot.png}	         
-			    		\caption{\tiny Mobile robot in the lift\footnotemark[13]}					 
+			    		\caption{\tiny Mobile robot in the lift.\footnotemark[13]}					 
 			    	\end{subfigure}					 
-				 \caption{\tiny Initial works on SLAM}			 
+				 \caption{\tiny Initial works on SLAM.}			 
 	         \end{figure}	         		
 	\end{columns}
 	\footnotetext[12]{\tiny Figure extracted from \url{br.pinterest.com/pin/305611524696049040/}.}
@@ -92,9 +92,9 @@
 			    \begin{subfigure}[b]{.5\columnwidth}
 			    		\centering					    	
 			    		\includegraphics[width=1\linewidth]{figs/lift_robot.png}	         
-			    		\caption{\tiny Mobile robot in the lift\footnotemark[13]}					 
+			    		\caption{\tiny Mobile robot in the lift.\footnotemark[13]}					 
 			    	\end{subfigure}					 
-				 \caption{\tiny Initial works on SLAM}			 
+				 \caption{\tiny Initial works on SLAM.}			 
 	         \end{figure}	         		
 	\end{columns}
 	\footnotetext[12]{\tiny Figure extracted from \url{br.pinterest.com/pin/305611524696049040/}.}
@@ -124,9 +124,9 @@
 			    \begin{subfigure}[b]{.5\columnwidth}
 			    		\centering					    	
 			    		\includegraphics[width=1\linewidth]{figs/lift_robot.png}	         
-			    		\caption{\tiny Mobile robot in the lift\footnotemark[13]}					 
+			    		\caption{\tiny Mobile robot in the lift.\footnotemark[13]}					 
 			    	\end{subfigure}					 
-				 \caption{\tiny Initial works on SLAM}			 
+				 \caption{\tiny Initial works on SLAM.}			 
 	         \end{figure}	         		
 	\end{columns}
 	\footnotetext[12]{\tiny Figure extracted from \url{br.pinterest.com/pin/305611524696049040/}.}
@@ -157,9 +157,9 @@
 			    \begin{subfigure}[b]{.5\columnwidth}
 			    		\centering					    	
 			    		\includegraphics[width=1\linewidth]{figs/lift_robot.png}	         
-			    		\caption{\tiny Mobile robot in the lift\footnotemark[13]}					 
+			    		\caption{\tiny Mobile robot in the lift.\footnotemark[13]}					 
 			    	\end{subfigure}					 
-				 \caption{\tiny Initial works on SLAM}			 
+				 \caption{\tiny Initial works on SLAM.}			 
 	         \end{figure}	         		
 	\end{columns}
 	\footnotetext[12]{\tiny Figure extracted from \url{br.pinterest.com/pin/305611524696049040/}.}
@@ -218,20 +218,20 @@
 			    \begin{subfigure}[b]{.6\columnwidth}
 			    		\centering			
 					 \includegraphics[width=.6\linewidth]{figs/2d_map_simulation.png}
-     				 \caption{\tiny Mapping in simulation with HIMM\footnotemark[14]}.			 
+     				 \caption{\tiny Mapping in simulation with HIMM.\footnotemark[14]}		 
 			    	\end{subfigure}
-			    	\vspace{-.3cm}\\
+%			    	\vspace{-.3cm}\\
 			    \begin{subfigure}[b]{.6\columnwidth}
 			    		\centering					    	
 			    		\includegraphics[width=.6\linewidth]{figs/2d_map_real.png}	         
-			    		\caption{\tiny Mapping the real world with Gmapping\footnotemark[4]}.					 
+			    		\caption{\tiny Mapping the real world with Gmapping.\footnotemark[4]}				 
 			    	\end{subfigure}				
-			    	\vspace{-.7cm}	 
+%			    	\vspace{-.7cm}	 
 				 \caption{\tiny The 2D grid maps used in this work.}			 
 	         \end{figure}		         		
 	\end{columns}		
 	\footnotetext[14]{\tiny Borenstein, J., and Yoram K. ``\textit{Histogramic in-motion mapping for mobile robot obstacle avoidance}.'' Transactions on robotics and automation. 1991.}
-	\footnotetext[4]{\tiny Grisettiyz, G., Stachniss, C., and Burgard, W. ``\textit{Improving grid-based slam with rao-blackwellized particle filters by adaptive proposals and selective resampling.}'' ICRA. 2005.}		
+	\footnotetext[4]{\tiny Grisetti, G., Stachniss, C., and Burgard, W. ``\textit{Improving grid-based slam with rao-blackwellized particle filters by adaptive proposals and selective resampling.}'' ICRA. 2005.}		
 \end{frame}
 %========================================== ############# ======================================================        
 %========================================== ############# ======================================================
@@ -250,20 +250,20 @@
 			    \begin{subfigure}[b]{.6\columnwidth}
 			    		\centering			
 					 \includegraphics[width=.6\linewidth]{figs/2d_map_voronoi_simulation.png}
-     				 \caption{\tiny Mapping in simulation with HIMM\footnotemark[14]}.			 
+     				 \caption{\tiny Mapping in simulation with HIMM.\footnotemark[14]}			 
 			    	\end{subfigure}
-			    	\vspace{-.3cm}\\
+%			    	\vspace{-.3cm}\\
 			    \begin{subfigure}[b]{.6\columnwidth}
 			    		\centering					    	
 			    		\includegraphics[width=.6\linewidth]{figs/2d_map_voronoi_real.png}	         
-			    		\caption{\tiny Mapping the real world with Gmapping\footnotemark[4]}.					 
+			    		\caption{\tiny Mapping the real world with Gmapping.\footnotemark[4]}					 
 			    	\end{subfigure}				
-			    	\vspace{-.7cm}	 
+%			    	\vspace{-.7cm}	 
 				 \caption{\tiny The 2D grid maps used in this work.}			 
 	         \end{figure}		         		
 	\end{columns}		
 	\footnotetext[14]{\tiny Borenstein, J., and Yoram K. ``\textit{Histogramic in-motion mapping for mobile robot obstacle avoidance}.'' Transactions on robotics and automation. 1991.}
-	\footnotetext[4]{\tiny Grisettiyz, G., Stachniss, C., and Burgard, W. ``\textit{Improving grid-based slam with rao-blackwellized particle filters by adaptive proposals and selective resampling.}'' ICRA. 2005.}		
+	\footnotetext[4]{\tiny Grisetti, G., Stachniss, C., and Burgard, W. ``\textit{Improving grid-based slam with rao-blackwellized particle filters by adaptive proposals and selective resampling.}'' ICRA. 2005.}		
 \end{frame}		
 %========================================== ############# ======================================================        
 %========================================== ############# ======================================================
@@ -283,20 +283,20 @@
 			    \begin{subfigure}[b]{.6\columnwidth}
 			    		\centering			
 					 \includegraphics[width=.6\linewidth]{figs/2d_map_visited_simulation.png}
-     				 \caption{\tiny Mapping in simulation with HIMM\footnotemark[14]}.			 
+     				 \caption{\tiny Mapping in simulation with HIMM.\footnotemark[14]}			 
 			    	\end{subfigure}
-			    	\vspace{-.3cm}\\
+%			    	\vspace{-.3cm}\\
 			    \begin{subfigure}[b]{.6\columnwidth}
 			    		\centering					    	
 			    		\includegraphics[width=.6\linewidth]{figs/2d_map_visited_real.png}	         
-			    		\caption{\tiny Mapping the real world with Gmapping\footnotemark[4]}.					 
+			    		\caption{\tiny Mapping the real world with Gmapping.\footnotemark[4]}					 
 			    	\end{subfigure}				
-			    	\vspace{-.7cm}	 
+%			    	\vspace{-.7cm}	 
 				 \caption{\tiny The 2D grid maps used in this work.}			 
 	         \end{figure}		         		
 	\end{columns}		
 	\footnotetext[14]{\tiny Borenstein, J., and Yoram K. ``\textit{Histogramic in-motion mapping for mobile robot obstacle avoidance}.'' Transactions on robotics and automation. 1991.}
-	\footnotetext[4]{\tiny Grisettiyz, G., Stachniss, C., and Burgard, W. ``\textit{Improving grid-based slam with rao-blackwellized particle filters by adaptive proposals and selective resampling.}'' ICRA. 2005.}		
+	\footnotetext[4]{\tiny Grisetti, G., Stachniss, C., and Burgard, W. ``\textit{Improving grid-based slam with rao-blackwellized particle filters by adaptive proposals and selective resampling.}'' ICRA. 2005.}		
 \end{frame}			
 %========================================== ############# ======================================================        
 %========================================== ############# ======================================================
@@ -317,20 +317,20 @@
 			    \begin{subfigure}[b]{.6\columnwidth}
 			    		\centering			
 					 \includegraphics[width=.6\linewidth]{figs/2d_map_visited_simulation.png}
-     				 \caption{\tiny Mapping in simulation with HIMM\footnotemark[14]}.			 
+     				 \caption{\tiny Mapping in simulation with HIMM.\footnotemark[14]}			 
 			    	\end{subfigure}
-			    	\vspace{-.3cm}\\
+%			    	\vspace{-.3cm}\\
 			    \begin{subfigure}[b]{.6\columnwidth}
 			    		\centering					    	
 			    		\includegraphics[width=.6\linewidth]{figs/2d_map_visited_real.png}	         
-			    		\caption{\tiny Mapping the real world with Gmapping\footnotemark[4]}.					 
+			    		\caption{\tiny Mapping the real world with Gmapping.\footnotemark[4]}					 
 			    	\end{subfigure}				
-			    	\vspace{-.7cm}	 
+%			    	\vspace{-.7cm}	 
 				 \caption{\tiny The 2D grid maps used in this work.}			 
 	         \end{figure}		         		
 	\end{columns}		
 	\footnotetext[14]{\tiny Borenstein, J., and Yoram K. ``\textit{Histogramic in-motion mapping for mobile robot obstacle avoidance}.'' Transactions on robotics and automation. 1991.}
-	\footnotetext[4]{\tiny Grisettiyz, G., Stachniss, C., and Burgard, W. ``\textit{Improving grid-based slam with rao-blackwellized particle filters by adaptive proposals and selective resampling.}'' ICRA. 2005.}		
+	\footnotetext[4]{\tiny Grisetti, G., Stachniss, C., and Burgard, W. ``\textit{Improving grid-based slam with rao-blackwellized particle filters by adaptive proposals and selective resampling.}'' ICRA. 2005.}		
 \end{frame}	
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -406,7 +406,7 @@
 				 \caption{\tiny The 2D grid maps used in this work.}				 
 	         \end{figure}		         		
 	\end{columns}		
-	\footnotetext[15]{\tiny Maffei, Renan, et al. ``\textit{Fast monte carlo localization using spatial density information.}'', ICRA, 2015}.							
+	\footnotetext[15]{\tiny Maffei, Renan, et al. ``\textit{Fast monte carlo localization using spatial density information.}'', ICRA. 2015}
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -434,7 +434,7 @@
 				 \caption{\tiny The 2D grid maps used in this work.}				 
 	         \end{figure}	         		
 	\end{columns}		
-	\footnotetext[15]{\tiny Maffei, Renan, et al. ``\textit{Fast monte carlo localization using spatial density information.}'', ICRA, 2015}.	
+	\footnotetext[15]{\tiny Maffei, Renan, et al. ``\textit{Fast monte carlo localization using spatial density information.}'', ICRA. 2015}	
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -515,33 +515,33 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
+%\begin{frame}{Semantic Planner module}
+%	\vspace{-1.4cm}	
+%	\begin{itemize}[<+->]
+%		\item It \textbf{estimates} which \textbf{regions} are \textbf{more promising} to find the goal-door
+%		\item It is composed of \textbf{five} different \textbf{factors}:
+%	\end{itemize}
+%\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%\begin{frame}[noframenumbering]{Semantic Planner module}
+%	\begin{itemize}
+%		\item It \textbf{estimates} which \textbf{regions} are \textbf{more promising} to find the goal-door
+%		\item It is composed of \textbf{five} different \textbf{factors}:
+%		\begin{itemize}
+%			\item Parity		
+%			\item Growing Direction
+%			\item Doors Orientation
+%			\item Robot Orientation
+%			\item Distance			
+%		\end{itemize}
+%	\end{itemize}
+%\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
 \begin{frame}{Semantic Planner module}
-	\vspace{-1.4cm}	
-	\begin{itemize}[<+->]
-		\item It \textbf{estimates} which \textbf{regions} are \textbf{more promising} to find the goal-door
-		\item It is composed of \textbf{five} different \textbf{factors}:
-	\end{itemize}
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}[noframenumbering]{Semantic Planner module}
-	\begin{itemize}
-		\item It \textbf{estimates} which \textbf{regions} are \textbf{more promising} to find the goal-door
-		\item It is composed of \textbf{five} different \textbf{factors}:
-		\begin{itemize}
-			\item Parity		
-			\item Growing Direction
-			\item Doors Orientation
-			\item Robot Orientation
-			\item Distance			
-		\end{itemize}
-	\end{itemize}
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}[noframenumbering]{Semantic Planner module}
 		\vspace{.8cm}		
 %		\hspace{.15cm}			
 	\begin{columns}
@@ -574,9 +574,9 @@
 		\column{.5\textwidth}
 		\begin{itemize}
 			\item \textbf{Goal}: estimate whether the segment is promising regarding its door signs' parity		
-			\item Analysis based on the door sign numbers 
-			\item Parity of the segment
-			\item Comparison with the goal-door's parity
+			\item \textbf{Analysis} based on the \textbf{door sign numbers} 
+			\item \textbf{Parity} of the \textbf{segment}
+			\item Comparison with the \textbf{goal-door's parity}
 		\end{itemize}
 		\column{.65\textwidth}	
 			\centering	
@@ -620,8 +620,9 @@
 		\column{0.5\textwidth}
 			\centering
 			\begin{itemize}
-				\item \textbf{Goal}: estimate whether the segment is promising regarding the sequence of door signs
+				\item \textbf{Goal}: \textbf{estimate} whether the \textbf{segment is promising} regarding the \textbf{sequence of door signs}
 				\item Find out the direction that the numbers of the segment is growing
+				\item \textbf{Angle} of the \textbf{growing direction} and the \textbf{numbers of the segment}
 %				\item The position of the detected door signs is considered
 %				\item All detected door signs of the same segment
 			\end{itemize}
@@ -635,13 +636,13 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}{Growing Direction}
+\begin{frame}{Angle of the Growing Direction}
 	\begin{columns}[T]
 		\centering
 		\column{1\textwidth}
 		\begin{itemize}
-			\item Compute the angle in which the door sign sequence is increasing
-			\item For all possible pairs of two different door signs (one is larger)
+			\item Compute the \textbf{angle} in which the door sign \textbf{sequence is increasing}
+			\item For all possible \textbf{pairs of two different door signs} (one is larger)
 			\item Comparison with the angle of the Voronoi cell in the frontier
 		\end{itemize}
 	\end{columns}	
@@ -649,10 +650,12 @@
 		\centering
 		\column{1\textwidth}
 			\begin{figure}
+			
 				\includegraphics[width=.23\linewidth]{figs/growing_1.png}
 				\includegraphics[width=.23\linewidth]{figs/growing_2.png}	         
 				\includegraphics[width=.23\linewidth]{figs/growing_4.png}				
 				\includegraphics[width=.23\linewidth]{figs/growing_3.png}	         				
+				\caption{\tiny Step by step of how the angle of the growing direction is computed.}
 	         \end{figure}			
 %		\column{0.5\textwidth}
 %			\begin{figure}
@@ -663,61 +666,97 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}{Growing Direction}
+\begin{frame}{Numbers of the segment}
 	\begin{columns}[T]
 		\centering
-		\column{1\textwidth}
+		\column{.3\textwidth}
 		\begin{itemize}
-			\item The door sign numbers of the segment matters
-			\item Comparison with the goal-door (smaller and larger numbers are counted)
-		\end{itemize}
-	\end{columns}	
-	\begin{columns}
-		\centering
-		\column{1\textwidth}
-			\begin{figure}
-				\includegraphics[width=.3\linewidth]{figs/growing_goaldoor_2.png}
-				\includegraphics[width=.3\linewidth]{figs/growing_goaldoor_32.png}	         
-				\includegraphics[width=.3\linewidth]{figs/growing_goaldoor_15.png}				
-	         \end{figure}			
-%		\column{0.5\textwidth}
-%			\begin{figure}
-%				
-%			\end{figure}					
-	\end{columns}
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}{Growing Direction}
-	\begin{columns}					
+			\item The door sign \textbf{numbers} of the \textbf{segment matters}
+			\item \textbf{Comparison} with the \textbf{goal-door} (\textbf{smaller} and \textbf{larger} numbers are counted)
+		\end{itemize}	
 		\column{0.8\textwidth}
 			\centering	
 			\begin{figure}
 			    \begin{subfigure}{.45\columnwidth}
 			    		\centering
-					 \includegraphics[width=.9\linewidth]{figs/growing_direction_same_orient_higher.png}
+					 \includegraphics[width=.83\linewidth]{figs/growing_direction_same_orient_higher.png}
      				 \caption{\tiny $\gamma(\theta_f({c})) = 1$ and $\zeta\big(S({c})\big) = 1$, $\varphi_g({c}) = 1$.}			 		 
 			    	\end{subfigure}
 			    \begin{subfigure}{.45\columnwidth}
 			    		\centering			    
-			    		\includegraphics[width=.9\linewidth]{figs/growing_direction_same_orient_smaller.png}
+			    		\includegraphics[width=.83\linewidth]{figs/growing_direction_same_orient_smaller.png}
 			    		\caption{\tiny $\gamma(\theta_f({c})) = 1$ and $\zeta\big(S({c})\big) = -1$, $\varphi_g({c}) = 0$.}					 
 			    	\end{subfigure}	\\	
 			    \begin{subfigure}{.45\columnwidth}
 			    		\centering			    
-					 \includegraphics[width=.9\linewidth]{figs/growing_direction_different_orient_smaller.png}
+					 \includegraphics[width=.83\linewidth]{figs/growing_direction_different_orient_smaller.png}
      				 \caption{\tiny $\gamma(\theta_f({c})) = -1$ and $\zeta\big(S({c})\big) = -1$, $\varphi_g({c}) = 1$.}			 		 
 			    	\end{subfigure}
 			    \begin{subfigure}{.45\columnwidth}
 			    		\centering			    
-			    		\includegraphics[width=.9\linewidth]{figs/growing_direction_different_orient_higher.png}			    	
+			    		\includegraphics[width=.83\linewidth]{figs/growing_direction_different_orient_higher.png}			    	
 			    		\caption{\tiny $\gamma(\theta_f({c})) = -1$ and $\zeta\big(S({c})\big) = 1$, $\varphi_g({c}) = 0$.}					 
 			    	\end{subfigure}				    				 
 				 \caption{\tiny Maps used in the simulated experiments.}			 
-	         \end{figure}	
-	\end{columns}					
+	         \end{figure}				
+	\end{columns}
 \end{frame}
+%---------------------------------------------------------------------------------------
+%\begin{frame}{Numbers of the segment}
+%	\begin{columns}[T]
+%		\centering
+%		\column{1\textwidth}
+%		\begin{itemize}
+%			\item The door sign \textbf{numbers} of the \textbf{segment matters}
+%			\item \textbf{Comparison} with the \textbf{goal-door} (\textbf{smaller} and \textbf{larger} numbers are counted)
+%		\end{itemize}
+%	\end{columns}	
+%	\begin{columns}
+%		\centering
+%		\column{1\textwidth}
+%			\begin{figure}
+%				\includegraphics[width=.3\linewidth]{figs/growing_goaldoor_2.png}
+%				\includegraphics[width=.3\linewidth]{figs/growing_goaldoor_32.png}	         
+%				\includegraphics[width=.3\linewidth]{figs/growing_goaldoor_15.png}				
+%	         \end{figure}			
+%%		\column{0.5\textwidth}
+%%			\begin{figure}
+%%				
+%%			\end{figure}					
+%	\end{columns}
+%\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%\begin{frame}{Growing Direction}
+%	\begin{columns}					
+%		\column{0.8\textwidth}
+%			\centering	
+%			\begin{figure}
+%			    \begin{subfigure}{.45\columnwidth}
+%			    		\centering
+%					 \includegraphics[width=.9\linewidth]{figs/growing_direction_same_orient_higher.png}
+%     				 \caption{\tiny $\gamma(\theta_f({c})) = 1$ and $\zeta\big(S({c})\big) = 1$, $\varphi_g({c}) = 1$.}			 		 
+%			    	\end{subfigure}
+%			    \begin{subfigure}{.45\columnwidth}
+%			    		\centering			    
+%			    		\includegraphics[width=.9\linewidth]{figs/growing_direction_same_orient_smaller.png}
+%			    		\caption{\tiny $\gamma(\theta_f({c})) = 1$ and $\zeta\big(S({c})\big) = -1$, $\varphi_g({c}) = 0$.}					 
+%			    	\end{subfigure}	\\	
+%			    \begin{subfigure}{.45\columnwidth}
+%			    		\centering			    
+%					 \includegraphics[width=.9\linewidth]{figs/growing_direction_different_orient_smaller.png}
+%     				 \caption{\tiny $\gamma(\theta_f({c})) = -1$ and $\zeta\big(S({c})\big) = -1$, $\varphi_g({c}) = 1$.}			 		 
+%			    	\end{subfigure}
+%			    \begin{subfigure}{.45\columnwidth}
+%			    		\centering			    
+%			    		\includegraphics[width=.9\linewidth]{figs/growing_direction_different_orient_higher.png}			    	
+%			    		\caption{\tiny $\gamma(\theta_f({c})) = -1$ and $\zeta\big(S({c})\big) = 1$, $\varphi_g({c}) = 0$.}					 
+%			    	\end{subfigure}				    				 
+%				 \caption{\tiny Maps used in the simulated experiments.}			 
+%	         \end{figure}	
+%	\end{columns}					
+%\end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -725,9 +764,9 @@
 	\begin{columns}
 		\column{0.55\textwidth}
 		\begin{itemize}[<+->]
-			\item \textbf{Goal:} estimate how the door signs are organized in the environment
-			\item History of a certain amount of the most recent robot’s orientations (Robot orientation)
-			\item History of a certain amount of the most recent robot’s orientations when a door sign has been recognized (Door orientation)			
+			\item \textbf{Goal:} \textbf{estimate} how the \textbf{door signs are organized} in the environment
+			\item \textbf{History} of a certain amount of the \textbf{most recent robot’s orientations} (Robot orientation)
+			\item \textbf{History} of a certain amount of the \textbf{most recent robot’s orientations} when a \textbf{door sign has been recognized} (Door orientation)			
 		\end{itemize}
 		\column{0.55\textwidth}
 			\centering	
@@ -752,13 +791,13 @@
 	\begin{columns}
 		\column{0.55\textwidth}
 		\begin{itemize}[<+->]
-			\item Histograms are computed (each bin corresponds to an angle)
+			\item \textbf{Histograms} are computed (each bin corresponds to an angle)
 			\begin{itemize}
 				\item $\varphi_o({c}) = H_d[\theta_f({c})]$
 				\item $\varphi_r({c}) = H_r[\theta_f({c})]$
 			\end{itemize}
-			\item Door orientation prioritize orientations in which the robot has recognized most of the door signs
-			\item Robot orientation makes the robot consider other paths that may connect to other corridors
+			\item \textbf{Door orientation prioritize orientations} in which the \textbf{robot} has \textbf{recognized} most of the \textbf{door signs}
+			\item \textbf{Robot orientation} makes the \textbf{robot} \textbf{consider} \textbf{other paths} that may connect to other corridors
 		\end{itemize}
 		\column{0.55\textwidth}
 			\centering	
@@ -783,10 +822,10 @@
 	\begin{columns}[T]
 		\column{1\textwidth}
 		\begin{itemize}[<+->]
-			\item Voronoi diagram
-			\item Smallest number of Voronoi cells between the robot's position and each frontier
-			\item It guides the robot towards the closest frontier, $\varphi_d({c}) = 1$
-			\item It saves the robot's resources
+			\item \textbf{Voronoi} diagram
+			\item \textbf{Smallest number} of \textbf{Voronoi cells} between the \textbf{robot's position} and each \textbf{frontier}
+			\item It guides the robot towards the \textbf{closest frontier}, $\varphi_d({c}) = 1$
+			\item It \textbf{saves} the \textbf{robot's resources}
 		\end{itemize}
 %		\column{0.55\textwidth}
 %			\centering	
@@ -812,15 +851,15 @@
 \begin{frame}{Final formula}
 	\begin{columns}[T]
 		\column{0.85\textwidth}
-		\begin{itemize}[<+->]
+		\begin{itemize}
 			\item Combining all the factors:
 			\begin{itemize}
-				\item Semantic part:\\$\mathtt{S}({c}) = \varphi_g({c}) \varphi_p({c})$			
+				\item \textbf{Semantic} part:\\$\mathtt{S}({c}) = \varphi_g({c}) \varphi_p({c})$			
 			\end{itemize}
 			\begin{itemize}
-				\item Geometric part:\\$\mathtt{G}({c}) = \frac{\big(\varphi_o({c}) + \varphi_r({c})\big)\varphi_d({c}) + \varphi_d({c})}{3.0}$
+				\item \textbf{Geometric} part:\\$\mathtt{G}({c}) = \frac{\big(\varphi_o({c}) + \varphi_r({c})\big)\varphi_d({c}) + \varphi_d({c})}{3.0}$
 			\end{itemize}		
-			\item Find the most promising frontier: $\varphi({c}) &= \mathtt{S}({c}) * \alpha + \mathtt{G}({c}) * (1.0 - \alpha)$	\\ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~${c}_* = \underset{{c} \in \mathbf{C}}{\textup{\textrm{}arg max}}(\varphi({c}))$
+			\item Find the \textbf{most promising frontier}: $\varphi({c}) &= \mathtt{S}({c}) * \alpha + \mathtt{G}({c}) * (1.0 - \alpha)$	\\ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~${c}_* = \underset{{c} \in \mathbf{C}}{\textup{\textup{arg max}}}(\varphi({c}))$
 %\begin{align}
 %    \varphi({c}) &= \mathtt{S}({c}) * \alpha + \mathtt{G}({c}) * (1.0 - \alpha) \label{eq:finalEquation}\\
 %    {c}_* &= \underset{{c} \in \mathbf{C}}{\argmax}(\varphi({c})) \label{eq:maxfinalEquation}
@@ -919,6 +958,51 @@
 				\item KTH
 			\end{itemize}
 			\item Greedy search
+		\end{itemize}
+		\column{0.6\textwidth}
+			\centering	
+			\begin{figure}
+			    \begin{subfigure}{.45\columnwidth}
+			    		\centering
+					 \includegraphics[width=.6\linewidth]{figs/map_normal_redcircles.png}			    		
+     				 \caption{\tiny Normal.}			 		 
+			    	\end{subfigure}
+			    \begin{subfigure}{.45\columnwidth}
+			    		\centering		
+			    		\includegraphics[width=.6\linewidth]{figs/map_inverse_redcircles.png}						    			    
+			    		\caption{\tiny Inverse.}					 
+			    	\end{subfigure}	\\	
+			    \begin{subfigure}{.45\columnwidth}
+			    		\centering			    
+			    		\includegraphics[width=.7\linewidth]{figs/hotel2_PAPER.png}
+     				 \caption{\tiny Hotel.}			 		 
+			    	\end{subfigure}
+			    \begin{subfigure}{.45\columnwidth}
+			    		\centering			    
+					 \includegraphics[width=.45\linewidth]{figs/KTH_CampusValhallava_finished.png}			    		    	
+			    		\caption{\tiny KTH.}					 
+			    	\end{subfigure}				    				 
+				 \caption{\tiny Maps used in the simulated experiments.}					 
+	         \end{figure}					
+	\end{columns}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}[noframenumbering]{Experiments and Results}
+	\begin{columns}[T]
+		\column{0.4\textwidth}
+		\begin{itemize}
+			\item Simulated experiment setup
+			\item Maps:
+			\begin{itemize}
+				\item Normal
+				\item Inverse
+				\item Hotel
+				\item KTH
+			\end{itemize}
+			\item Greedy search
+			\item The \textbf{shorter} the \textbf{traveled distance}, the \textbf{better}
 		\end{itemize}
 		\column{0.6\textwidth}
 			\centering	
@@ -1219,8 +1303,8 @@
 				\item  Does \textbf{not require} that the \textbf{door signs} are set according to a \textbf{specific pattern}
 				\item  \textbf{Performs better} than the \textbf{greedy search} and \textbf{humans participants}
 			\end{itemize}
-			\item It is possible to expand the robot's perception with semantic information
-			\item Analysis of the difficulty of the OS problem by the experiments with human participants
+			\item It is \textbf{possible} to \textbf{expand} the \textbf{robot's perception} with semantic information
+			\item Analysis of the \textbf{difficulty} of the \textbf{OS problem} by the experiments with human participants
 		\end{itemize}
 		\column{0.55\textwidth}
 	\end{columns}

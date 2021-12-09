@@ -1,0 +1,111 @@
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}[noframenumbering]{Equations - Semantic OS System based on text}
+	\begin{itemize}
+		\item Map segmentation: $\Psi({c}_k) = \sum_{c}^\mathbf{T} Q({c})K(\left \| {c} - {c}_k \right \|)$\\~~~~~~~~~~~~~~~~~~~~~~~~~~$Q({c}) = 
+\begin{cases}
+1 & \text{, if ${c}$ is a free cell} \\ 
+0 & \text{, otherwise.} 
+\end{cases}$\\~~~~~~~~~~~~~~~~~~~~~~~~~~$K(d) = \begin{cases}
+a & \text{, if $d \leq r$} \\ 
+0 & \text{, otherwise,} 
+\end{cases}$\\~~~~~~~~~~~~~~~~~~~~~~~~~~$\Upsilon({c}_k) = \left \lfloor  \Psi({c}_k) / \delta  \right \rfloor$
+	\end{itemize}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}[noframenumbering]{Equations - Semantic OS System based on text}
+	\begin{itemize}
+		\item Growing Direction factor: $\zeta\big(S({c})\big) = \frac{\Big(L^<\big(S({c})\big) - L^>\big(S({c})\big)\Big)}{\max\Big(L^<\big(S({c})\big)+L^>\big(S({c})\big), w_g\Big)},$\\~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~$\gamma(\theta_f({c})) = 1.0 + \left | \frac{\theta_f({c}) - \theta_i\big(S({c})\big)}{\pi} \right | * - 2.0$\\~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~$\varphi_g({c}) = \frac{\zeta\big(S({c})\big) * \gamma\big(\theta_f({c})\big) + 1.0}{2.0}$
+	\end{itemize}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}[noframenumbering]{Equations - Semantic OS System based on text}
+	\begin{itemize}
+		\item Parity factor: $\varphi_p({c}) = 0.5 + \frac{L^=\big(S({c})\big) - L^{\neq}\big(S({c})\big)}{\max\Big(L^=\big(S({c})\big) + L^{\neq}\big(S({c})\big), w_p\Big)}*0.5$
+	\end{itemize}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}[noframenumbering]{Equations - Semantic OS System based on text}
+	\begin{figure}
+		\includegraphics[width=.35\linewidth]{figs/RESULTS_NORMAL_NEW_T-eps-converted-to}		
+		\caption{\tiny Normal map.}
+	\end{figure}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}[noframenumbering]{Equations - Semantic OS System based on text}
+	\begin{figure}
+		\includegraphics[width=.35\linewidth]{figs/RESULTS_INVERSE_NEW_T-eps-converted-to}		
+		\caption{\tiny Inverse map.}
+	\end{figure}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}[noframenumbering]{Equations - Semantic OS System based on text}
+	\begin{figure}
+		\includegraphics[width=.35\linewidth]{figs/RESULTS_HOTEL_NEW_T-eps-converted-to}		
+		\caption{\tiny Hotel map.}
+	\end{figure}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}[noframenumbering]{Equations - Semantic OS System based on text}
+	\begin{figure}
+		\includegraphics[width=.35\linewidth]{figs/RESULTS_KTH_NEW_T-eps-converted-to}		
+		\caption{\tiny KTH map.}
+	\end{figure}
+\end{frame}
+
+
+
+
+
+%%========================================== ############# ======================================================
+%%========================================== ############# ======================================================
+%%========================================== ############# ======================================================
+%\begin{frame}[noframenumbering]{First years of mobile robotics}
+%	\begin{columns}[T]
+%		\column{0.48\textwidth}
+%		\begin{itemize}
+%			\item Ages of mobile robotics\footnotemark[1]:
+%			\begin{itemize}
+%				\item Classical age (1986-2004):
+%				\begin{itemize}
+%					\item {\scriptsize \textbf{Introduction} of the \textbf{main probabilistic} formulations for \textbf{SLAM}}
+%					\item {\scriptsize \textbf{Lidar} and \textbf{sonar} sensors}					
+%				\end{itemize}
+%				
+%			\end{itemize}
+%
+%		\end{itemize}
+%		\column{0.52\textwidth}
+%			\centering
+%			\begin{figure}
+%			    \begin{subfigure}[b]{.5\columnwidth}
+%			    		\centering			
+%			    		\includegraphics[width=.9\linewidth]{figs/mapping_thrun.png}
+%			    		\caption{\tiny Online mapping\footnotemark[2]}
+%			    	\end{subfigure}~
+%			    \begin{subfigure}[b]{.5\columnwidth}
+%			    		\centering					    	
+%			    		\includegraphics[width=.85\linewidth]{figs/CML_newman.png}	         
+%			    		\caption{\tiny Real Time CML\footnotemark[3]}					 
+%			    	\end{subfigure}					 
+%				 \caption{\tiny Initial works on SLAM}			 
+%	         \end{figure}
+%		
+%	\end{columns}	
+%	\footnotetext[1]{\tiny Cesar, Cadena, et al. ``\textit{Simultaneous Localization And Mapping: Present Future and the Robust-Perception Age.}'' arXiv preprint arXiv: 1606.05830. 2016.}
+%	\footnotetext[2]{\tiny Thrun, Sebastian. ``\textit{An Online Mapping Algorithm for Teams of Mobile Robots}''. Carnegie-Mellon Univ Pittsburgh PA School of Computer Science, 2000.}
+%	\footnotetext[3]{\tiny Newman, Paul, et al. ``\textit{Explore and return: Experimental validation of real-time concurrent mapping and localization.}'' ICRA, 2002}	
+%\end{frame}
