@@ -135,36 +135,36 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ====================================================== 
-\begin{frame}[noframenumbering]{Introduction}
-	\begin{columns}[T]
-		\column{.55\textwidth}
-		\begin{itemize}
-			\item \textbf{Humans} in \textbf{search tasks}					
-			\item Importance of \textbf{texts} in the \textbf{human visual recognition}
-			\item Robots in the context of OS: \textbf{courier robot} 
-			\item \textbf{Search strategy} in a large-scale unknown building \textbf{plays an important role}
-			\item \textbf{Semantic information} may be useful: \textbf{search cues} inferred from texts
-			\item Level of \textbf{abstraction} of the \textbf{environment}
-		\end{itemize}			
-		\column{.4\textwidth}
-			\centering	
-			\begin{figure}
-			    \begin{subfigure}[b]{.5\columnwidth}
-			    		\centering			
-					 \includegraphics[width=1\linewidth]{figs/corridor_door_signs.jpg}
-     				 \caption{\tiny Corridor and door signs.\footnotemark[12]}			 		 
-			    	\end{subfigure}\\
-			    \begin{subfigure}[b]{.5\columnwidth}
-			    		\centering					    	
-			    		\includegraphics[width=1\linewidth]{figs/lift_robot.png}	         
-			    		\caption{\tiny Mobile robot in the lift.\footnotemark[13]}					 
-			    	\end{subfigure}					 
-				 \caption{\tiny Initial works on SLAM.}			 
-	         \end{figure}	         		
-	\end{columns}
-	\footnotetext[12]{\tiny Figure extracted from \url{br.pinterest.com/pin/305611524696049040/}.}
-	\footnotetext[13]{\tiny Figure extracted from \url{youtube.com/watch?v=kYmnS_3iSdk}.}
-\end{frame}
+%\begin{frame}[noframenumbering]{Introduction}
+%	\begin{columns}[T]
+%		\column{.55\textwidth}
+%		\begin{itemize}
+%			\item \textbf{Humans} in \textbf{search tasks}					
+%			\item Importance of \textbf{texts} in the \textbf{human visual recognition}
+%			\item Robots in the context of OS: \textbf{courier robot} 
+%			\item \textbf{Search strategy} in a large-scale unknown building \textbf{plays an important role}
+%			\item \textbf{Semantic information} may be useful: \textbf{search cues} inferred from texts
+%			\item Level of \textbf{abstraction} of the \textbf{environment}
+%		\end{itemize}			
+%		\column{.4\textwidth}
+%			\centering	
+%			\begin{figure}
+%			    \begin{subfigure}[b]{.5\columnwidth}
+%			    		\centering			
+%					 \includegraphics[width=1\linewidth]{figs/corridor_door_signs.jpg}
+%     				 \caption{\tiny Corridor and door signs.\footnotemark[12]}			 		 
+%			    	\end{subfigure}\\
+%			    \begin{subfigure}[b]{.5\columnwidth}
+%			    		\centering					    	
+%			    		\includegraphics[width=1\linewidth]{figs/lift_robot.png}	         
+%			    		\caption{\tiny Mobile robot in the lift.\footnotemark[13]}					 
+%			    	\end{subfigure}					 
+%				 \caption{\tiny Initial works on SLAM.}			 
+%	         \end{figure}	         		
+%	\end{columns}
+%	\footnotetext[12]{\tiny Figure extracted from \url{br.pinterest.com/pin/305611524696049040/}.}
+%	\footnotetext[13]{\tiny Figure extracted from \url{youtube.com/watch?v=kYmnS_3iSdk}.}
+%\end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
