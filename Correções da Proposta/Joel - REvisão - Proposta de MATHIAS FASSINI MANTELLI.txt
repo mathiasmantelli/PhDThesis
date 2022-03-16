@@ -1,0 +1,104 @@
+
+Sobre o texto, acho que é importante melhorar para a tese. Acho que falta esclarecer algumas coisas, incluir referências, etc. 
+
+Senti um certo desconforto em relação à unificação das propostas sob uma mesma perspectiva. O fato de ter dois related works foi um pouco inusitado pra mim. Mas acho que esse ponto está um pouco relacionado ao fato de que da forma como é apresentado, dá a aimpressão de terem dois trabalhos de doutorado, em vez de um. 
+O que é semântica?
+Há muitas possibilidades de pensar sobre isso.
+Nas áreas de representação de conhecimento e raciocínio, em geral, a semântica é a interpretação de um modelo simbólico, que representa simbólica e sintaticamente o conhecimento.
+Mas no teu trabalho a noção de semântica é diferente. Não que esteja errada, mas está associada a uma ideia mais ampla.
+Pelo que entendi, tu usas a noção de semântica como "conhecimento abstrato de alto nível" a respeito do ambiente e sua dinâmica. Correto?
+Se for isso, acho que vale a pena pontuar bem essa questão.
+Acho interessante esclarecer melhor esse ponto e eventualmente até contrastar com como a semântica é vista em outras áreas próximas (como na Ia simbólica clássica, baseada em representação de conhecimento)
+Parece que a semântica nesse caso está representada nas heurísticas que tu desenvolveste. O que não tem nada de errado. Mas pode gerar expectativas incorretas para quem está pensando que vai encontrar conhecimento explícitamente representado em modelos simbólicos, com funções de interpretação.
+
+Formalização na seção 2.1.
+-Você diz que mi é a posição do objeto i no ambiente. 
+Mas depois diz que no vetor m, cada mj representa cada objeto j com suas propriedades. 
+Parece que tem algo que não se ajusta bem aqui. 
+Se por "propriedades" de cada objeto você quer dizer apenas posição, acho ok. 
+Ou se mi representa as propriedades do objeto, que podem ser mais do que uma única posição, também.  
+Mas acho importante deixar mais claro esse ponto na formalização.
+mi é apenas um valor escalar ou é um n-upla, contendo n propriedades do objeto i?
+
+Figura 2.1
+Na legenda tem dois "estimate of robot pose". Não ficou clara a diferença entre eles. Não sei se é um erro de legenda ou se é isso mesmo. Mas convém revisar e eventualmente esclarecer.
+
+Seção 2.2:
+-Vi que na seção seguinte tu define melhor o teu problema específico de busca de objeto, mas acho que aqui o objetivo era dar uma caracterização geral do problema. Certo?
+-Acho que nessa seção faltou um pouco de clareza sobre no que consiste a busca do objeto em si e o que significa "o objeto" aqui.
+-O objeto é algum objeto qualquer de uma classe específica? Por exemplo "Encontre um gato".
+-Ou o objeto pode ser uma instância específica de uma classe? Por exemplo, encontre o gato Tom?
+-O objeto é sempre estático ou pode também ser dinâmico?
+-Além disso, faz sentido pensar na busca do objeto desta forma mesmo? É algo parecido com uma query como essa? "Econtre x"? Como a query é representada?
+-Acho bom esclarecer melhor no que consiste essa tarefa na área da robórica e geral e eventualmente discutir esses pontos.
+
+Página 40, fórmula 3.11:
+Growing direction factor. Slide 49
+Tu falas que o range dela é [-1,1].
+Mas existe mesmo a possibilidade do resultado dessa função ser -1? Em que circunstâncias?
+Pelo que entendi, ambos zeta e gama variam de -1 a 1.
+Se ambos forem -1, temos:
+(-1*-1+1)/2 = 1
+Se um dos dois for zero, independentemente do outro, temos:
+(0+1)/2 = 0,5
+Se ambos forem 1, temos:
+(1*1+1)/2 = 1
+Se um dos dois for 1 e o outro -1, temos:
+(-1*1+1)/2 = 0
+Se for o caso, o range dessa função é [0,1]
+
+Figura 3.5,  página 41.
+Não ficou tão claro o raciocínio de por que o corredor 3 é melhor que o 4.
+Esse ângulo é medido em relação a que? à orientação atual do robô? Á orientação predominante do robô? É preciso esclarecer melhor.
+
+Página 43. 
+Considerando a semântica do Distance factor, parece que o nome é misleading.
+Talvez trocar pra closeness ou priximity fosse melhor.
+
+Tabela 3.2. Página 48.
+Nesse teste, as portas eram procuradas individualmente em cada execução a partir do início e não fazendo um percurso, buscando todas, certo?
+Faria sentido fazer um teste em que o robô precisa encontrar um conjunto de portas? Tenho a impressão de que em um teste assim a tua abordagem pode mostrar ganhos ainda maiores em relação à abordagem greedy.
+Podem ser dois testes inclusive...Um com uma sequência de portas que devem ser encontradas, com sequência fixa. E outro em que, dado um conjunto de portas, a partir da localização atual, o robô precisa visitar todas, em qualquer ordem, de forma eficiente.
+
+Por que tu achas que houve tanta variação de performance entre as diferentes portas?
+Quer dizer, por que em algumas tua abordagem foi melhor na média e em outras não?
+Acho que a análise do "fracasso" gera oportunidades de melhoria da abordagem.
+
+Por que tu achas que a performance variou tanto em relação ao percentual do peso à semântica, nas diferentes portas?
+O que faz com que maior peso à semântica, em alguns cenários, gere comportamentos piores?
+Talvez determinar isso ajude a identificar outras formas de melhorar ainda mais.
+
+Gostei muito da comparação com a performance humana! A ideia é ótima!
+
+Mas fiquei pensando sobre os dados da pessoa que esqueceu o alvo.
+A performance dela foi a pior dos humanos nesse cenário?
+Se for o caso, será que não seria melhor substituir ela por outra pessoa?
+Eu não tenho certeza sobre isso. Mas vale a pena pensar sobre por que é justo ou injusto manter esse dado na comparação.
+
+Em vez de portas numeradas, tu achas que essa abordagem pode ser facilmente adaptada para lidar com outras pistas do ambiente?
+É interessante trazer essa discussão quando fores falar de generalidade da técnica na tese final.
+
+O espaço de parametrização da abordagem é bastante grande. O que não desmerece o trabalho, é claro.
+Mas aparentemente, coloca um desafio para a correta calibragem desses parâmetros quando queremos colocar o robô num certo ambiente.
+Encontrar parâmetros adequados para os teus experimentos foi simples, ou envolveu bastante tentativa e erro?
+Como tu vês a viabilidade da aplicação dela para ambientes físicos reais bastante diferentes entre si?
+Como tu achas que essa heurística se comporta em casos de ambientes cujo regime pode variar bastante ao longo do dia?
+Tu vês alguma possibilidade de ajuste automático desses parâmetros em tempo real no futuro?
+
+Nos experimentos da seção 4.4.4 (acho). 
+Acho que seria interessante um experimento em que a caneca é deslocada à meia-noite para uma terceira localização nunca vista antes, que não é A, nem H. Porque esse é um cenário possível na vida real. 
+O que aconteceria?
+É preciso verificar a relevância desse experimento. Comentei só porque fiquei curioso.
+
+Em relação à estimativa de localização de humanos, enquanto eu lia eu ficava pensando que o comportamento humano em casa passa por mudanças sazonais de diversas frequências. Aparentemente, o teu sistema está focando em uma sazonalidade de alta frequêcia, que ocorre dentro de cada dia. No entanto, o comportamento também é alterado ao longo da semana (dia de semana e fim de semana), ao longo do mês não sei, mas ao longo do ano também (dependendo da estação, é possível que o comportamento altere). Como tu achas possível lidar com isso de uma forma suave na abordagem?
+
+Boa parte dos exemplos considerados são de ambiente indoor. Tu achas que a abordagem é específica pra esse tipo de ambiente ou também funciona ou pode ser adaptada para ambientes outdoor?
+
+Sempre que vejo trabalhos na robótica que buscam explorar informação semântica, eu fico bastante interessado.
+Sempre fico pensando num cenário desejável em que o robô é capaz de fazer o symbol grounding dinamicamente, a partir das percepções. 
+Com isso, alimentar um grafo de conhecimento, que codifica o conhecimento através de conceitos, relações, propriedades e que é capaz de usar esse conhecimento para melhorar a realização das suas tarefas, de uma forma que simule uma compreensão de alto nível a respeito do ambiente. 
+Ou seja, ele poderia usar restrições simbólicas impostas pelo conhecimento simbólico para realizar inferências lógicas e guiar a realização de tarefas, podando ainda mais os espaços de busca.
+Vejo teu trabalho como oferecendo contribuições para esse cenário desejável.
+Como tu vê teu trabalho nesse contexto?
+Talvez possa ser interessante pensar em como o teu trabalho se insere nesse contexto amplo, com esse horizonte do desejável em mente.
+
