@@ -2,6 +2,7 @@
 \babel@toc {brazilian}{}
 \babel@toc {english}{}
 \addvspace {10\p@ }
+\addvspace {10\p@ }
 \babel@toc {brazilian}{}
 \addvspace {10\p@ }
 \babel@toc {english}{}
@@ -11,37 +12,38 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Waymo's autonomous car driving itself in a city.}}{16}{figure.caption.1}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Waymo's autonomous car driving itself in a city.}}{17}{figure.caption.1}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Fundamental problems in mobile robots and their state estimation.}}{21}{figure.caption.2}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Graphical model of the fundamental mobile robotics problems.}}{23}{figure.caption.3}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Fundamental problems in mobile robots and their state estimation.}}{22}{figure.caption.2}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Graphical model of the fundamental mobile robotics problems.}}{24}{figure.caption.3}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Example of our mapping and segmentation modules.}}{32}{figure.caption.4}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Example of the Image Processing module processing two images}}{35}{figure.caption.5}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Demonstration of how the increasing angle $\theta _i{\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left (\vcenter to\@ne \big@size {}\right .$}\box \z@ }S({c}){\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left )\vcenter to\@ne \big@size {}\right .$}\box \z@ }$ is computed in a segment}}{38}{figure.caption.6}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Partial 2D map of the environment to show the importance of Growing Direction factor}}{39}{figure.caption.7}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Partial 2D map of the environment to explain the robot and door orientation factors}}{41}{figure.caption.8}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Partial 2D map of the environment to explain the distance factor.}}{43}{figure.caption.9}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Software setup used in the simulated experiments}}{45}{figure.caption.10}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces The four maps used in the simulated experiments.}}{46}{figure.caption.12}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Map used in the experiments with the real robot.}}{54}{figure.caption.23}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces The Pioneer 3DX robot used in the real environment experiment.}}{54}{figure.caption.24}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Step-by-step of the performance of our semantic OS system in the physical environment.}}{56}{figure.caption.25}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces One example of our proposed semantic.}}{64}{figure.caption.26}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Flowchart that explains how our OS system works.}}{66}{figure.caption.27}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Example of the computed heat map given a set of detected objects.}}{69}{figure.caption.28}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Example of the robot at the edge of the kernel, and yet not recognising the object.}}{71}{figure.caption.29}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Example of the modified kernel with an acute angle, and the recognized object.}}{71}{figure.caption.30}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Step by step of the space reduction performed by our OS system.}}{72}{figure.caption.31}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces The difference between the normal kernel and its inverse.}}{72}{figure.caption.32}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces The seven-rooms environment created on Gazebo simulator and the Husky robot.}}{75}{figure.caption.33}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces The floorplan of the single-resident apartment from the HH106 dataset.}}{76}{figure.caption.34}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces The robot's route for the Brute Force OS approach.}}{77}{figure.caption.35}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Results of the three OS systems for both request search times considering many different setups.}}{80}{figure.caption.38}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Examples of the robot's path for the search performed by the three OS systems in both locations A and H.}}{81}{figure.caption.39}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Results of the three OS systems for the request search at midnight in a modified version of \textit {Mobile-Inv}}}{82}{figure.caption.40}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Results of the three OS systems for both request search times considering many different setups.}}{83}{figure.caption.41}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Example of our mapping and segmentation modules.}}{43}{figure.caption.4}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Example of the Image Processing module processing two images}}{46}{figure.caption.5}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Demonstration of how the increasing angle $\theta _i\leavevmode@ifvmode {\setbox \z@ \hbox {\mathsurround \z@ $\nulldelimiterspace \z@ \left (\vcenter to\@ne \big@size {}\right .$}\box \z@ }S({c})\leavevmode@ifvmode {\setbox \z@ \hbox {\mathsurround \z@ $\nulldelimiterspace \z@ \left )\vcenter to\@ne \big@size {}\right .$}\box \z@ }$ is computed in a segment}}{49}{figure.caption.6}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Partial 2D map of the environment to show the importance of Growing Direction factor}}{50}{figure.caption.7}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Partial 2D map of the environment to explain the robot and door orientation factors}}{52}{figure.caption.8}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Partial 2D map of the environment to explain the distance factor.}}{54}{figure.caption.9}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Software setup used in the simulated experiments}}{56}{figure.caption.10}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces The four maps used in the simulated experiments.}}{57}{figure.caption.12}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Map used in the experiments with the real robot.}}{65}{figure.caption.23}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces The Pioneer 3DX robot used in the real environment experiment.}}{65}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Step-by-step of the performance of our semantic OS system in the physical environment.}}{67}{figure.caption.25}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces One example of our proposed semantic.}}{71}{figure.caption.26}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Flowchart that explains how our OS system works.}}{73}{figure.caption.27}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Example of the computed heat map given a set of detected objects.}}{76}{figure.caption.28}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Example of the robot at the edge of the kernel, and yet not recognising the object.}}{78}{figure.caption.29}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Example of the modified kernel with an acute angle, and the recognized object.}}{78}{figure.caption.30}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Step by step of the space reduction performed by our OS system.}}{79}{figure.caption.31}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces The difference between the normal kernel and its inverse.}}{79}{figure.caption.32}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces The seven-rooms environment created on Gazebo simulator and the Husky robot.}}{82}{figure.caption.33}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces The floorplan of the single-resident apartment from the HH106 dataset.}}{83}{figure.caption.34}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces The robot's route for the Brute Force OS approach.}}{84}{figure.caption.35}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Results of the three OS systems for both request search times considering many different setups.}}{87}{figure.caption.38}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Examples of the robot's path for the search performed by the three OS systems in both locations A and H.}}{88}{figure.caption.39}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Results of the three OS systems for the request search at midnight in a modified version of \textit {Mobile-Inv}}}{89}{figure.caption.40}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Results of the three OS systems for both request search times considering many different setups.}}{90}{figure.caption.41}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

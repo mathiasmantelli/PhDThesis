@@ -1,0 +1,55 @@
+SERVICE ROBOT:
+	- Robotics Industries Association:
+		- is an automatically controlled, reprogrammable, multipurpose manipulator programmable in three or more axes which may be either fixed in place or mobile for use in industrial automation applications (1)
+		- 
+ 	
+ 	
+ 	- International Federation of Robotics: 
+ 		- is a robot that operates semi or fully autonomously to perform services useful to the well-being of humans and equipment, excluding manufacturing operations.(1)
+ 		- is a robot that operates semi or fully autonomously to perform services useful to the well being of humans and equipment, excluding manufacturing operations.(2)
+ 		- is a robot that works semi or completely autonomously to perform useful services for the well-being of humans and equipment, excluding manufacturing operations.(7)
+ 
+ 
+ 	- International Standards Organization Standard: (5)
+ 		- is a robot or actuated mechanism programmable in two or more axes with a degree of autonomy, moving within its environment, that performs useful tasks for humans or equipment excluding industrial automation applications.(5)
+ 		- is a robot or actuated mechanism programmable in two or more axes with a degree of autonomy, moving within its environment, that performs useful tasks for humans or equipment excluding industrial automation applications.(10)
+ 		
+	- Robotics Tomorrow: (6) 
+		- semi-autonomous or fully autonomous robots that have some mobility and interact with people, usually in a retail, hospitality, healthcare, warehouse or fulfillment setting
+ 
+ 
+DIVISION:
+	(1)
+	-Industrial Robots
+	-Service Robots
+		- Personal Service Robots: are service robots that educate, assist, or entertain at home (domestic robots, assistive robots, companion robots)
+		- Professional Service Robots
+		
+	(2)	
+	-Service Robots: 
+		- Professional use
+		- Personal/domestic use (vacuum cleaning, lawn-mowing, food and beverage waiters, handicapped robots, elderly assistance)
+	
+	(5)
+	-Robots:
+		- Personal service robot (ex: assistive robots) 
+		- Industraial robots
+		- Professional service robots
+		
+	- Assistive robots: an actuated mechanism programmable in two or more axes with a degree of autonomy, moving within its environment, to perform tasks and services which are used by disabled and/or elderly people to overcome social, infrastructural and other barriers to independence, full participation in society and carrying out activities safely and easily
+	
+	(6)
+	-Robots:
+		- Industrial robots (manufacturing applications in factories and warehouses)
+		- Service robots (mechanical devices that can mimic human behaviors to provide, autonomously or semi-autonomously, services to humans
+		
+	(7)
+	-Service Robots: 
+		- Professional service robots
+		- Personal/domestic service robots
+		
+	(10)
+	-Robots: 
+		- Personal robots (assistant robots)
+		- Industrial robots
+		- Professional robots

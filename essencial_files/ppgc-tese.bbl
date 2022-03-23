@@ -248,6 +248,11 @@ Available from Internet: \url{http://radish.sourceforge.net/}.}
   Intelligent Control}. New York, NY, USA: Association for Computing Machinery,
   2020.}
 
+\bibitem[Kumar et al. 2005]{Kumar2005Industrial}
+\abntrefinfo{Kumar et al.}{KUMAR et al.}{2005}
+{KUMAR, V. et al. Industrial, personal, and service robots.
+\textbf{DRAFT REPORT}, v.~41, 2005.}
+
 \bibitem[Leonard and Durrant-Whyte 1991]{Leonard1991Mobile}
 \abntrefinfo{Leonard and Durrant-Whyte}{LEONARD; DURRANT-WHYTE}{1991}
 {LEONARD, J.~J.; DURRANT-WHYTE, H.~F. Mobile robot localization by tracking
@@ -320,11 +325,29 @@ Thesis (PhD) --- Federal University of Rio Grande do Sul, 2017.}
 {MURPHY, K.~P. et al. Bayesian map learning in dynamic environments.
 p. 1015--1021, 1999.}
 
+\bibitem[Narayana et al. 2020]{Barayana2020Lifelong}
+\abntrefinfo{Narayana et al.}{NARAYANA et al.}{2020}
+{NARAYANA, M. et al. Lifelong update of semantic maps in dynamic environments.
+  In:  IEEE. \textbf{2020 IEEE/RSJ International Conference on Intelligent
+  Robots and Systems (IROS)}. [S.l.], 2020. p. 6164--6171.}
+
 \bibitem[Neumann and Matas 2012]{Neumann2012Realtime}
 \abntrefinfo{Neumann and Matas}{NEUMANN; MATAS}{2012}
 {NEUMANN, L.; MATAS, J. Real-time scene text localization and recognition. In:
   \textbf{Conference on Computer Vision and Pattern Recognition}. [S.l.: s.n.],
   2012.}
+
+\bibitem[Oksanen et al. 2015]{Oksanen2015Methods}
+\abntrefinfo{Oksanen et al.}{OKSANEN et al.}{2015}
+{OKSANEN, J. et al. Methods for deriving and calibrating privacy-preserving
+  heat maps from mobile sports tracking application data.
+\textbf{Journal of Transport Geography}, Elsevier, v.~48, p. 135--144, 2015.}
+
+\bibitem[Pangercic et al. 2012]{Pangercic2012Semantic}
+\abntrefinfo{Pangercic et al.}{PANGERCIC et al.}{2012}
+{PANGERCIC, D. et al. Semantic object maps for robotic
+  housework-representation, acquisition and use.
+p. 4644--4651, 2012.}
 
 \bibitem[Paulius and Sun 2019]{Paulius2019Survey}
 \abntrefinfo{Paulius and Sun}{PAULIUS; SUN}{2019}

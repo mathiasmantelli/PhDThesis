@@ -3,57 +3,61 @@
 \babel@toc {english}{}
 \babel@toc {brazilian}{}
 \babel@toc {english}{}
-\contentsline {chapter}{1~Introduction}{14}{CHAPTER.1}
-\contentsline {section}{\numberline {1.1}Hypothesis and Goals}{15}{section.1.1}
-\contentsline {section}{\numberline {1.2}Contributions}{18}{section.1.2}
-\contentsline {section}{\numberline {1.3}Outline}{19}{section.1.3}
-\contentsline {chapter}{2~Theoretical Background}{20}{CHAPTER.2}
-\contentsline {section}{\numberline {2.1}The Basics of Mobile Robotics}{20}{section.2.1}
-\contentsline {section}{\numberline {2.2}Object search problem formulation}{25}{section.2.2}
-\contentsline {chapter}{3~Text as source of semantic information for visual object search in large and unknown environments}{27}{CHAPTER.3}
-\contentsline {section}{\numberline {3.1}Introduction}{27}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Proposal and contributions}{28}{subsection.3.1.1}
-\contentsline {section}{\numberline {3.2}Semantic-based object search system}{30}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Overview}{30}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Mapping module}{32}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Map Segmentation module}{33}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Image Processing module}{34}{subsection.3.2.4}
-\contentsline {section}{\numberline {3.3}Semantic Planner}{35}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Final formula}{36}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Growing Direction factor}{37}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Parity factor}{40}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Robot and Door Orientation factors}{41}{subsection.3.3.4}
-\contentsline {subsection}{\numberline {3.3.5}Distance factor}{42}{subsection.3.3.5}
-\contentsline {section}{\numberline {3.4}Experiments and Results}{43}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Simulated Experiment Setup}{44}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Semantic and Greedy Object Search systems}{46}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Human participants performance in object searching task}{51}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Experiments Using a Physical Robot}{54}{subsection.3.4.4}
-\contentsline {section}{\numberline {3.5}Related Work}{55}{section.3.5}
-\contentsline {section}{\numberline {3.6}Summary}{60}{section.3.6}
-\contentsline {chapter}{4~Temporal Semantic OS system based on heat maps}{62}{CHAPTER.4}
-\contentsline {section}{\numberline {4.1}Introduction}{62}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Proposal and contributions}{64}{subsection.4.1.1}
-\contentsline {section}{\numberline {4.2}System Overview}{65}{section.4.2}
-\contentsline {section}{\numberline {4.3}Our semantic strategy for the object search task}{67}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Heat Map}{68}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Inverse kernel $K(\cdot )$}{70}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Goal Computation in the Request mode}{73}{subsection.4.3.3}
-\contentsline {section}{\numberline {4.4}Experiments and Results}{74}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Simulation and dataset}{74}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Two other object search systems to be compared against ours}{76}{subsection.4.4.2}
-\contentsline {subsubsection}{\numberline {4.4.2.1}Brute Force object search system}{76}{subsubsection.4.4.2.1}
-\contentsline {subsubsection}{\numberline {4.4.2.2}Last Seen object search system}{77}{subsubsection.4.4.2.2}
-\contentsline {subsection}{\numberline {4.4.3}Simulated Experiment Setup}{77}{subsection.4.4.3}
-\contentsline {subsection}{\numberline {4.4.4}Results and discussion from the simulated experiments}{79}{subsection.4.4.4}
-\contentsline {subsection}{\numberline {4.4.5}Person presence estimation with HH106 dataset}{84}{subsection.4.4.5}
-\contentsline {section}{\numberline {4.5}Related Work}{85}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Object search approaches}{86}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Spatio-Temporal models}{90}{subsection.4.5.2}
-\contentsline {section}{\numberline {4.6}Summary}{94}{section.4.6}
-\contentsline {chapter}{5~Discussion on thesis progress}{96}{CHAPTER.5}
-\contentsline {section}{\numberline {5.1}Ongoing and Future Work}{97}{section.5.1}
-\contentsline {section}{\numberline {5.2}Thesis Schedule}{98}{section.5.2}
-\contentsline {chapter}{\xspace {}References}{101}{schapter.8}
-\contentsline {chapter}{\MakeUppercase {Appendix} A~--- Resumo expandido}{107}{CHAPTER.A}
-\contentsline {section}{\numberline {A.1}Hip\IeC {\'o}tese e objetivos}{108}{section.A.1}
+\contentsline {chapter}{1~Introduction}{15}{CHAPTER.1}%
+\contentsline {subsection}{\numberline {1.0.1}Scope}{15}{subsection.1.0.1}%
+\contentsline {subsection}{\numberline {1.0.2}Objective}{15}{subsection.1.0.2}%
+\contentsline {section}{\numberline {1.1}Hypothesis and Goals}{17}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Contributions}{19}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Outline}{20}{section.1.3}%
+\contentsline {chapter}{2~Theoretical Background}{21}{CHAPTER.2}%
+\contentsline {section}{\numberline {2.1}The Basics of Mobile Robotics}{21}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Object search problem formulation}{26}{section.2.2}%
+\contentsline {chapter}{3~Related Work}{28}{CHAPTER.3}%
+\contentsline {section}{\numberline {3.1}Object Search approaches}{28}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Spatio-Temporal models}{34}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Semantic map and heat map}{36}{section.3.3}%
+\contentsline {section}{\numberline {3.4}A discussion on the Related Works}{36}{section.3.4}%
+\contentsline {chapter}{4~Text as source of semantic information for visual object search in large and unknown environments}{38}{CHAPTER.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{38}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Proposal and contributions}{39}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Semantic-based object search system}{41}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Overview}{41}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Mapping module}{43}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Map Segmentation module}{44}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Image Processing module}{45}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}Semantic Planner}{46}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Final formula}{47}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Growing Direction factor}{48}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Parity factor}{51}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Robot and Door Orientation factors}{52}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Distance factor}{53}{subsection.4.3.5}%
+\contentsline {section}{\numberline {4.4}Experiments and Results}{54}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Simulated Experiment Setup}{55}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Semantic and Greedy Object Search systems}{57}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Human participants performance in object searching task}{62}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}Experiments Using a Physical Robot}{65}{subsection.4.4.4}%
+\contentsline {section}{\numberline {4.5}Summary}{66}{section.4.5}%
+\contentsline {chapter}{5~Temporal Semantic OS system based on heat maps}{69}{CHAPTER.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{69}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Proposal and contributions}{71}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.2}System Overview}{72}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Our semantic strategy for the object search task}{74}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Heat Map}{75}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Inverse kernel $K(\cdot )$}{77}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Goal Computation in the Request mode}{80}{subsection.5.3.3}%
+\contentsline {section}{\numberline {5.4}Experiments and Results}{81}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Simulation and dataset}{81}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Two other object search systems to be compared against ours}{83}{subsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.2.1}Brute Force object search system}{83}{subsubsection.5.4.2.1}%
+\contentsline {subsubsection}{\numberline {5.4.2.2}Last Seen object search system}{84}{subsubsection.5.4.2.2}%
+\contentsline {subsection}{\numberline {5.4.3}Simulated Experiment Setup}{84}{subsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.4.4}Results and discussion from the simulated experiments}{86}{subsection.5.4.4}%
+\contentsline {subsection}{\numberline {5.4.5}Person presence estimation with HH106 dataset}{91}{subsection.5.4.5}%
+\contentsline {subsection}{\numberline {5.4.6}Spatio-Temporal models}{92}{subsection.5.4.6}%
+\contentsline {section}{\numberline {5.5}Summary}{97}{section.5.5}%
+\contentsline {chapter}{6~Discussion on thesis progress}{99}{CHAPTER.6}%
+\contentsline {section}{\numberline {6.1}Ongoing and Future Work}{100}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Thesis Schedule}{101}{section.6.2}%
+\contentsline {chapter}{\xspace {}References}{104}{schapter.9}%
+\contentsline {chapter}{\MakeUppercase {Appendix} A~--- Resumo expandido}{110}{CHAPTER.A}%
+\contentsline {section}{\numberline {A.1}Hipótese e objetivos}{111}{section.A.1}%
