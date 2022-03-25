@@ -5,7 +5,7 @@
 % This is an example file and is hereby explicitly put in the
 % public domain.
 %
-\documentclass[ppgc,prop-tese, english]{iiufrgs}
+\documentclass[ppgc,tese, english]{iiufrgs}
 % Para usar o modelo, deve-se informar o programa e o tipo de documento.
 % Programas :
 %   * cic       -- Graduação em Ciência da Computação
@@ -55,6 +55,7 @@
 
 \usepackage[alf,abnt-emphasize=bf]{abntex2cite}	% pacote para usar citações abnt
 
+\definecolor{myred}{RGB}{255, 0, 0}
 
 \hyphenation{ro-bo-tics}
 \DeclareMathOperator*{\argmax}{arg\,max}
@@ -64,7 +65,7 @@
 %
 % Informações gerais
 %
-\title{Exploiting semantic information in indoor environments}
+\title{\textcolor{myred}{Exploiting semantic information in indoor environments}}
 
 \author{Mantelli}{Mathias Fassini}
 % alguns documentos podem ter varios autores:
@@ -157,14 +158,24 @@ helping others to find it!''\\}
 \end{flushright}
 
 % AGRADECIMENTOS
-%\chapter*{Agradecimentos}
-%Agradeço ao \LaTeX\ por não ter vírus de macro\ldots
+\chapter*{Acknowledgements}
+Agradeço ao \LaTeX\ por não ter vírus de macro\ldots
+%I would like to thank Professor Peter Glösekötter, who has been supportive since the days I was an undergraduate student, and whose drive for innovation I admire. It was with his supervision that this work came into existence. In addition to my stay in Brazil, he enabled me to both work and pursue my studies in England, Spain, and China. Thank you for the excellent cooperation and for all of the opportunities I was given to, besides boosting my technical skills, broaden my personal horizons during this incredibly instructive period.
 
+%Also, I must express my sincere gratitude to Mariana Kolberg and Edson Prestes for co-supervising this work. Thank you for the lively discussions and your patient mentoring. Collaborating with you and the whole team of the Φ-Robotics Research Group has enriched my experience in Porto Alegre tremendously. I have been extremely lucky to have been surrounded by people like you, who cared so much about my work and who responded to my questions and queries so promptly.
+
+%My wholehearted gratefulness and appreciation goes to Mathias Mantelli, who helped me grow personally beyond my work at the keyboard and who cheered me up during the most difficult times when writing this thesis. Without him, I would have been lost many times. Our stimulating discussions and his attention to detail profoundly contributed in the completion of this thesis. Thank you for all the fun we had in the past six months.
+
+%I heartily dedicate this thesis to my mother Karin and to my brother Manuel, whose love and guidance are with me in whatever I pursue. Thank you for providing me with unfailing support and continuous encouragement throughout my years of study and through the process of researching and writing this thesis. What I have accomplished would not have been possible without you.
+
+%Last but not least, I would like to express my very profound gratitude to my friends Nina, Denise, Sebastian and Tim. I am so blessed to have you by my side. During all the months-long periods that I spent abroad, you were the ones who waited patiently for me to return whilst encouraging me from back home. 
+
+%Thank you all for your unwavering support.
 
 
 % Resumo na língua do documento.
 \begin{abstract}
-Nowadays, the mobile robotics research community deals with different high-level tasks that require the robot to manipulate or interact with objects which are not in the robot's field of view or in an unexplored region of the environment. To find an object in unknown environments, the robot needs to look for it while gaining information about the environment and making decisions in real-time, known as the object search (OS) problem. The research community has proposed different approaches for dealing with the OS problem, relying on the objects' color, 3D shape, or its surroundings as visual cues to guide the search. However, this geometric information (i.e., color or size) limits the robot's perception and, consequently, the robot's performance during the search. Therefore, we proposed exploiting the advantages of semantic information inferred from two sources abundant in human-populated environments: text and dynamic agents. First, we propose an OS system for unknown indoor environments that relies on semantic information inferred from texts found in the environment, aiming to find a target door label. The use of semantic information in this scenario allowed the robot to reduce the search costs by avoiding not promising regions to contain the target door label. Our semantic planner reasons over the numbers detected from door labels to decide either to continue the search towards unknown parts of the environment or carefully search in the already known parts. Second, we present another OS system based on semantic information inferred from different objects' position over time in the environment. Composed by two modes, our system first gathers data from the objects' placement by executing its recording mode. This data is later used when the robot executes the request mode to search for the target object. Both systems were evaluated in different environments and compared against other OS approaches in simulated and real scenarios. The results support our systems' efficiency and demonstrate the improvement in the searching performance with the aid of semantic information.
+\textcolor{myred}{Nowadays, the mobile robotics research community deals with different high-level tasks that require the robot to manipulate or interact with objects which are not in the robot's field of view or in an unexplored region of the environment. To find an object in unknown environments, the robot needs to look for it while gaining information about the environment and making decisions in real-time, known as the object search (OS) problem. The research community has proposed different approaches for dealing with the OS problem, relying on the objects' color, 3D shape, or its surroundings as visual cues to guide the search. However, this geometric information (i.e., color or size) limits the robot's perception and, consequently, the robot's performance during the search. Therefore, we proposed exploiting the advantages of semantic information inferred from two sources abundant in human-populated environments: text and dynamic agents. First, we propose an OS system for unknown indoor environments that relies on semantic information inferred from texts found in the environment, aiming to find a target door label. The use of semantic information in this scenario allowed the robot to reduce the search costs by avoiding not promising regions to contain the target door label. Our semantic planner reasons over the numbers detected from door labels to decide either to continue the search towards unknown parts of the environment or carefully search in the already known parts. Second, we present another OS system based on semantic information inferred from different objects' position over time in the environment. Composed by two modes, our system first gathers data from the objects' placement by executing its recording mode. This data is later used when the robot executes the request mode to search for the target object. Both systems were evaluated in different environments and compared against other OS approaches in simulated and real scenarios. The results support our systems' efficiency and demonstrate the improvement in the searching performance with the aid of semantic information.}
 \end{abstract}
 
 % Resumo na outra língua, se o documento estiver em português, esse estará em inglês,
@@ -175,7 +186,7 @@ Nowadays, the mobile robotics research community deals with different high-level
 % Seguindo a ideia de não traduzir nomes próprios, nem UFRGS, nem ABNT, nem "Instituto de Informática
 % da UFRGS" são traduzidos.
 \begin{englishabstract}{Explorando Informações Semânticas em Ambientes Internos}{Robótica móvel. Busca por objectos. Informação semântica. Percepção robótica. Ambientes internos}
-Atualmente, a comunidade científica de robótica móvel está lidando com diferentes tarefas de alto-nível que requerem que o robô manipule ou interagir com objetos em partes não exploradas do ambiente ou que não estejam no campo de visão do robô. Para encontrar um objeto em um ambiente desconhecido, o robô precisa procurar por ele enquanto ganha informação sobre o ambiente e toma decisões em tempo-real, conhecido como o problema de busca por objetos (BPO). A comunidade de pesquisa propôs diferentes soluções para abordar o problema de BPO, se baseando na cor, tamanho ou no que existe ao redor dos objetos. Contudo, todas essas informações geométricas (como por exemplo cor ou tamanho) limita a percepção do robô e, por consequência, o seu desempenho durante a busca. Portanto, nós propomos explorar as vantagens de informações semânticas inferidas a partir de duas fontes que são abundantes em ambientes populados por humanos: textos e agentes dinâmicos. Em primeiro lugar, nós propomos um sistema para BPO para ambientes internos que se baseia em informações semânticas inferidas de textos encontrados no ambiente, o que permite que o robô reduza os custos da busca por evitar regiões não promissoras para o objeto buscado. Nosso planejador semântico raciocina sobre os números de placas de portas detectados para decidir se continua a busca em direção a regiões desconhecidas ou se realiza a busca cuidadosamente em regiões já conhecidas. Em segundo lugar, nós apresentamos outro sistema para BPO baseado em informações semânticas inferidas da diferente localização dos objectos no ambiente ao longo do tempo. Composto por dois modos, nosso sistema coleta dados do posicionamento dos objetos executando o seu modo de gravação, que depois será usado quando o robô executa o modo de busca. Ambos os sistemas foram avaliados em diferentes ambientes e comparados contra outros sistemas de BPO em simulação e ambiente real. Os resultados confirmam a eficiência dos nossos sistemas e demonstram a melhora no desempenho da busca com o auxílio das informações semânticas. 
+\textcolor{myred}{Atualmente, a comunidade científica de robótica móvel está lidando com diferentes tarefas de alto-nível que requerem que o robô manipule ou interagir com objetos em partes não exploradas do ambiente ou que não estejam no campo de visão do robô. Para encontrar um objeto em um ambiente desconhecido, o robô precisa procurar por ele enquanto ganha informação sobre o ambiente e toma decisões em tempo-real, conhecido como o problema de busca por objetos (BPO). A comunidade de pesquisa propôs diferentes soluções para abordar o problema de BPO, se baseando na cor, tamanho ou no que existe ao redor dos objetos. Contudo, todas essas informações geométricas (como por exemplo cor ou tamanho) limita a percepção do robô e, por consequência, o seu desempenho durante a busca. Portanto, nós propomos explorar as vantagens de informações semânticas inferidas a partir de duas fontes que são abundantes em ambientes populados por humanos: textos e agentes dinâmicos. Em primeiro lugar, nós propomos um sistema para BPO para ambientes internos que se baseia em informações semânticas inferidas de textos encontrados no ambiente, o que permite que o robô reduza os custos da busca por evitar regiões não promissoras para o objeto buscado. Nosso planejador semântico raciocina sobre os números de placas de portas detectados para decidir se continua a busca em direção a regiões desconhecidas ou se realiza a busca cuidadosamente em regiões já conhecidas. Em segundo lugar, nós apresentamos outro sistema para BPO baseado em informações semânticas inferidas da diferente localização dos objectos no ambiente ao longo do tempo. Composto por dois modos, nosso sistema coleta dados do posicionamento dos objetos executando o seu modo de gravação, que depois será usado quando o robô executa o modo de busca. Ambos os sistemas foram avaliados em diferentes ambientes e comparados contra outros sistemas de BPO em simulação e ambiente real. Os resultados confirmam a eficiência dos nossos sistemas e demonstram a melhora no desempenho da busca com o auxílio das informações semânticas. }
 \end{englishabstract}
 
 % lista de figuras
@@ -259,6 +270,7 @@ Atualmente, a comunidade científica de robótica móvel está lidando com difer
 % introducao
 \input{chapters/01_introduction}
 \input{chapters/02_theoretical_background}
+\input{chapters/03_related_work}
 \input{chapters/03_text_semantic_information}
 \input{chapters/04_temporal_semantic_information}
 \input{chapters/05_thesis_progress}
