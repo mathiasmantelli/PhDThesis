@@ -1292,3 +1292,25 @@ doi = {10.30564/aia.v1i1.925}
   year={2021},
   publisher={Oxford University Press}
 }
+
+@article{Liu2016Extracting,
+  title={Extracting semantic information from visual data: A survey},
+  author={Liu, Qiang and Li, Ruihao and Hu, Huosheng and Gu, Dongbing},
+  journal={Robotics},
+  volume={5},
+  number={1},
+  pages={8},
+  year={2016},
+  publisher={Multidisciplinary Digital Publishing Institute}
+}
+
+@article{Vasudevan2007Cognitive,
+  title={Cognitive maps for mobile robots—an object based approach},
+  author={Vasudevan, Shrihari and G{\"a}chter, Stefan and Nguyen, Viet and Siegwart, Roland},
+  journal={Robotics and Autonomous Systems},
+  volume={55},
+  number={5},
+  pages={359--371},
+  year={2007},
+  publisher={Elsevier}
+}
