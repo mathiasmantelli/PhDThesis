@@ -61,7 +61,7 @@
 \DeclareMathOperator*{\argmax}{arg\,max}
 \DeclareMathOperator*{\argmin}{arg\,min}
 \newcommand{\bs}{\boldsymbol}
-
+\newcommand{\comment}[1]{}
 %
 % Informações gerais
 %
