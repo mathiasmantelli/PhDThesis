@@ -58,6 +58,7 @@
 \definecolor{myred}{RGB}{255, 0, 0}
 
 \hyphenation{ro-bo-tics}
+\hyphenation{method-olo-gies}
 \DeclareMathOperator*{\argmax}{arg\,max}
 \DeclareMathOperator*{\argmin}{arg\,min}
 \newcommand{\bs}{\boldsymbol}
