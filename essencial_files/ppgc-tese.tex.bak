@@ -271,10 +271,10 @@ Agradeço ao \LaTeX\ por não ter vírus de macro\ldots
 % introducao
 \input{chapters/01_introduction}
 \input{chapters/02_theoretical_background}
-\input{chapters/03_related_work}
-\input{chapters/03_text_semantic_information}
-\input{chapters/04_temporal_semantic_information}
-\input{chapters/05_thesis_progress}
+%\input{chapters/03_related_work}
+%\input{chapters/03_text_semantic_information}
+%\input{chapters/04_temporal_semantic_information}
+%\input{chapters/05_thesis_progress}
 
 
 % e aqui vai a parte principal

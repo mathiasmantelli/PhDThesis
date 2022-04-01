@@ -7,11 +7,11 @@
 \section{Perception}
 \label{sec:chap2_perception}
 
-\subsection{OCR}
+\subsection{Text Localization and Recognition}
 \label{subsec:chap2_ocr}
-Text can be embedded into documents or into scenes as a mean of communicating information, and it is considered as one of the most expressive means of communications~\cite{Ye2014Text}. The process of Optical Character Recognition (OCR) aims to detect and recognize text in printed-materials, images or videos, to then convert it into digitized form, so machines can manipulate the digital text~\cite{Ye2014Text, Islam2017Survey}. The OCR process has been in the spotlight for several years~\cite{Islam2017Survey}. The motivation for such attention from the research community is the fact that text provides meaningful information to be used in many applications. Besides, the OCR is a complex problem due to the variety of languages, fonts, and styles in which text can be written, along with the complex rules of languages~\cite{Islam2017Survey}.
+Text can be embedded into documents or scenes as a means of communicating information, and it is considered one of the most expressive means of communications~\cite{Ye2014Text}. The process of Optical Character Recognition (OCR) aims to detect and recognize text in printed materials, images or videos, to then convert it into a digitized form so that machines can manipulate the digital text~\cite{Ye2014Text, Islam2017Survey}. The OCR process has been in the spotlight for several years~\cite{Islam2017Survey}. The motivation for such attention from the research community is that text provides meaningful information to be used in many applications. Besides, OCR is a complex problem due to the variety of languages, fonts, and styles in which text can be written, along with the complex rules of languages~\cite{Islam2017Survey}.
 
-There are two methodologies commonly used in OCR systems, integrated and stepwise~\cite{Ye2014Text}. The Integrated methodology recognizes words when the detection procedures share informatio nwith charactere classification, and relies on joint optimization statregies, as shown in Fig.~\ref{chp02_fig:integrated_methodlogy}. On the other hand, Stepwise methodologies have separated detection and recognition modules. Besides, it uses a feed-forward pipeline to detect, segment, and recognize text regions, also shown in Fig.~\ref{chp02_fig:stepwise_methodology}~\cite{Ye2014Text}. Lastly, it relies on a feedback procedure from text recognition to text detection to reduce false detections.
+There are two methodologies commonly used in OCR systems, integrated and stepwise~\cite{Ye2014Text}. The Integrated methodology recognizes words when the detection procedures share information with character classification and relies on joint optimization strategies, as shown in Fig.~\ref{chp02_fig:integrated_methodlogy}. On the other hand, Stepwise methodologies have separated detection and recognition modules. Besides, it uses a feed-forward pipeline to detect, segment, and recognize text regions, also shown in Fig.~\ref{chp02_fig:stepwise_methodology}~\cite{Ye2014Text}. Lastly, it relies on a feedback procedure from text recognition to text detection to reduce false detections.
 
 \begin{figure}[ht!]
     \footnotesize
@@ -30,9 +30,42 @@ There are two methodologies commonly used in OCR systems, integrated and stepwis
     \label{chp02_fig:problems_robotics}
 \end{figure}  
 
-The latter methodology usually employ a coarse-to-fine strategy, which done in four steps: localization, verification, segmentation, and recognition~\cite{Ye2014Text}. The goal of the first step, localization, is to coarsely classify components and groups into candidate text regions. Such regions are further classified into text or non-text regions in the second step, verification. The third step, segmentation, separates the characters in a way that exclusive, accurate outlines of image blocks remain for the recognition step. Lastly, the recognition step converts image blocks into characters. It is also possible that some stepwise methodologies ignore the verification and/or segmentation steps. Further, another adaptation is the inclusion of aditional steps to perform text enhancement and/or rectification~\cite{Ye2014Text}. 
+The latter methodology usually employs a coarse-to-fine strategy, which is done in four steps: localization, verification, segmentation, and recognition~\cite{Ye2014Text}. The goal of the first step, localization, is to classify components and groups into candidate text regions coarsely. In the second step, verification, such regions are further classified into text or non-text regions. The third step, segmentation, separates the characters in a way that exclusive, accurate outlines of image blocks remain for the recognition step. Lastly, the recognition step converts image blocks into characters. It is also possible that some stepwise methodologies ignore the verification and/or segmentation steps. Further, another adaptation is the inclusion of additional steps to perform text enhancement and/or rectification~\cite{Ye2014Text}. 
 
-One of the leading methods in scene text detection are based on detecting characters, such as the one proposed in ~\citet{Neumann2012Realtime}~\cite{Zhang2016Multi}.
+One of the leading methods in scene text detection is based on detecting characters, such as the one proposed in ~\citet{Neumann2012Realtime}~\cite{Zhang2016Multi}. It is an end-to-end real-time scene text localization and recognition method based on the stepwise methodology~\cite{Neumann2012Realtime, Ye2014Text}. Neumann and Matas addressed the character detection problem as an efficient sequential selection from the set of Extremal Regions (ERs) to achieve real-time performance. Such ER is a character detector that analyses image regions whose outer boundary pixels have higher values than the region itself. It is robust to blur, illumination, colour, and texture variation. Additionally, it also handles low-contrast text~\cite{Neumann2012Realtime}. The pixels within each ER's bounding box are described by a class of region descriptors that serve as features for the character classification.
+
+In a given grayscale image, Figure~\ref{chp02_fig:ocr_intensity_channel}, the authors do the text localization by estimating the probability of each ER being a character using a set of features, Figure~\ref{chp02_fig:ocr_ers_first_stage}. The verification step is done by selecting only the ERs from the previous step with locally maximal probability (of being a character), Figure~\ref{chp02_fig:ocr_ers_second_stage}. Since the verification step aims to eliminate not promising character candidates, the authors further classify the high-likely ERs with more computationally expensive features to improve the character classification. Then, they group the verified ERs into words and select the most probable character segmentation, Figure~\ref{chp02_fig:ocr_grouping}. The grouping is computed with a highly efficient exhaustive search with feedback loops. To get the text detected, Figure~\ref{chp02_fig:ocr_text_recognized}, the average run time of the proposed method on a $800 \times 600$ image is 0.3s on a standard PC~\cite{Neumann2012Realtime}. The method proposed by Neumann and Matas achieved state-of-the-art text localization results when evaluated in two public datasets. Besides, they were the first ones to report results for the end-to-end text recognition on the ICDAR 2011 Robust Reading competition dataset~\cite{Neumann2012Realtime}
+
+\begin{figure}[ht!]
+    \footnotesize
+    \centering
+    \begin{subfigure}[b]{0.16\columnwidth} 
+        \includegraphics[width=\textwidth]{figs/source_image.png} \caption{} 
+        \label{chp02_fig:ocr_source_image}        
+    \end{subfigure}~
+    \begin{subfigure}[b]{0.16\columnwidth} 
+        \includegraphics[width=\textwidth]{figs/intensity_channel_extracted.png} \caption{} 
+        \label{chp02_fig:ocr_intensity_channel}        
+    \end{subfigure}~ 
+    \begin{subfigure}[b]{0.16\columnwidth} 
+        \includegraphics[width=\textwidth]{figs/ers_selected_first_stage.png} \caption{}
+        \label{chp02_fig:ocr_ers_first_stage}        
+    \end{subfigure}~
+    \begin{subfigure}[b]{0.16\columnwidth} 
+        \includegraphics[width=\textwidth]{figs/ers_selected_second_stage.png} \caption{} 
+        \label{chp02_fig:ocr_ers_second_stage}        
+    \end{subfigure}~ 
+    \begin{subfigure}[b]{0.16\columnwidth} 
+        \includegraphics[width=\textwidth]{figs/text_lines_region_grouping.png} \caption{}
+        \label{chp02_fig:ocr_grouping}        
+    \end{subfigure}~ 
+    \begin{subfigure}[b]{0.16\columnwidth} 
+        \includegraphics[width=\textwidth]{figs/ers_text_lines_text_recognized.png} \caption{}
+        \label{chp02_fig:ocr_text_recognized}        
+    \end{subfigure}\\[0.1cm]
+    \caption[OCR PAPER.]{OCR PAPER~\cite{Neumann2012Realtime}.}
+    \label{chp02_fig:ocr_papger_overwall}
+\end{figure}  
 
 %They pose the character detection problem as a sequential selection from the set of Extremal Regions. Then, the recognition of candidate regions is done in a separete OCR stage using synthetic fonts~\cite{Almazan2014Word}
 
