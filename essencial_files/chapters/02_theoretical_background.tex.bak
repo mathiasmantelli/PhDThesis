@@ -69,9 +69,53 @@ In a given grayscale image, Figure~\ref{chp02_fig:ocr_intensity_channel}, the au
 
 %They pose the character detection problem as a sequential selection from the set of Extremal Regions. Then, the recognition of candidate regions is done in a separete OCR stage using synthetic fonts~\cite{Almazan2014Word}
 
-\subsection{YOLO}
-TO DO
+\subsection{You Only Look Once (YOLO)}
 
+Generic object detection problem is defined as, given an image, determine whether or not there are instances of obejcts from predefined categories. For the present instances, it is also necessary to return their spatial location and extent~\cite{Liu2020Deep}. This problem is also known as generic object category detection, object class detection, or even object category detection~\cite{Liu2020Deep}. It focuses on detecting a broad range of natural categories, as opposed to specific objec tcategory detection where only a narrower predefined category of interested may be present, such as faces, pedestrians, or cars. Nowadays the research community is more interested in detecting highly structure objects, like cars, bicycles, and airplanes, and articulated objects, such as humans and pets, rather than unstructured scenes (e.g., sky, grass, and cloud)~\citep{Liu2020Deep}. Regarding the spatial location and extend of an object within an image, like the detected objects in Figure~\ref{chp02_fig:yolo_object_classification}, it can be defined coarsly using a bounding box~\cite{Everingham2010Pascal, Redmon2016You}, which is a rectangle tightly bounding the object, Figure~\ref{chp02_fig:yolo_object_detection}, a precise pixelwise segmentation maks~\cite{Zhang2013Object}, Figure~\ref{chp02_fig:yolo_semantic_segmentation}, or a closed boundary~\cite{Russell2008Labelme, Lin2014Microsoft}, Figure~\ref{chp02_fig:yolo_object_instance_segmentation}~\cite{Liu2020Deep}.
+
+\begin{figure}[htbp]
+%    \footnotesize
+    \centering
+    \begin{subfigure}[t]{0.25\columnwidth} 
+        \includegraphics[width=\textwidth]{figs/yolo_object_classification.png} 
+        \caption{Object classification} 
+        \label{chp02_fig:yolo_object_classification}        
+    \end{subfigure}~
+    \begin{subfigure}[t]{0.25\columnwidth} 
+        \includegraphics[width=\textwidth]{figs/yolo_object_detection.png} 
+        \caption{Generic object detection \\ (Bounding box)} 
+        \label{chp02_fig:yolo_object_detection}        
+    \end{subfigure}~ 
+    \begin{subfigure}[t]{0.25\columnwidth} 
+        \includegraphics[width=\textwidth]{figs/yolo_semantic_segmentation.png} 
+        \caption{Semantic segmentation}
+        \label{chp02_fig:yolo_semantic_segmentation}        
+    \end{subfigure}~ 
+    \begin{subfigure}[t]{0.25\columnwidth} 
+        \includegraphics[width=\textwidth]{figs/yolo_object_instance_segmentation.png} 
+        \caption{Object instance segmentation}
+        \label{chp02_fig:yolo_object_instance_segmentation}        
+    \end{subfigure}
+    \caption[DEEP LEARNING SURVEY.]{DEEP LEARNING SURVEY~\cite{Liu2020Deep}.}
+    \label{chp02_fig:object_detection.}
+\end{figure} 
+
+Recently, deep learning-based techniques have been proposed to deal with the object detection problem~\cite{Redmon2016You}. In fact, deep learning has been used to solve many other challenging tasks, in areas such as image classification~\cite{Krizhevsky2012Imagenet, He2016Deep} and language modeling~\cite{Gong2018Frage, Dai2019Transformer}\cite{He2021Automl}. Deep learning techniques have arisen as powerful techniques for learning feature representations automatically from data~\cite{Liu2020Deep}. The success of deep learning in general in these areas is partially due to the rapidly developing computational resources, such as powerful graphical cards, the availability of big training data, and the effectiveness of deep learning to extract hidden representations from images, texts, and videos~\cite{Wu2020Comprehensive}.
+
+A popular deep learning approach for object detection that has been updated since its first version is called YOLO~\cite{Redmon2016You}. The name is an acronym, and is short for ``\textit{You Only Look Once}'', which partially explains the general idea o the approach. The YOLO's authors have completely abbandoned the initial object detection paradigm of ``\textit{proposal detection + verification}''. Instead, they followed a quite different idea: to apply a single neural network to the full image. This idea made YOLO the first one-stage object detector in deep learning era (where the name comes from)~\cite{Zou2019Object}.
+
+% **Zou2019Object**
+% - This network divides the image into regions and predicts bounding boxes and probabilities for each region simultaneously
+% - In spite of its great improvement of detection speed, YOLO suffers from a drop of the localization accuracy compared with two-stage detectors, especially for some small objects
+
+% **Liu2020Deep**
+% - proposed YOLO (You Only Look Once), a unified detector casting object detection as a regression problem from image pixels to spatially separated bounding boxes and associated class probabilities. Since the region proposal generation stage is completely dropped, YOLO directly predicts detections using a small set of candidate regions (YOLO uses far fewer bounding boxes, only 98 per image, compared to about 2000 from Selective Search.). Unlike region based approaches (e.g. Faster RCNN) that predict detections based on features from a local region, YOLO uses features from an entire image globally. In particular, YOLO divides an image into an S × S grid, each predicting C class probabilities, B bounding box locations, and confidence scores. By throwing out the region proposal generation step entirely, YOLO is fast by design, running in real time at 45 FPS and Fast YOLO [4] at 155 FPS. Since YOLO sees the entire image when making predictions, it implicitly encodes contextual information about object classes, and is less likely to predict false positives in the background. YOLO makes more localization errors than Fast RCNN, resulting from the coarse division of bounding box location, scale and aspect ratio. YOLO may fail to localize some objects, especially small ones, possibly because of the coarse grid division, and because each grid cell can only contain one object.
+
+% **Li2020Object**
+% - YOLO is a representative regression-based object detection method. It adopts a single CNN backbone to directly predict bounding boxes and class probabilities from the entire images in one evaluation. It works as follows. Given an input image, it is firstly divided into S × S grids. If the center of an object falls into a grid cell, that grid is responsible for the detection of that object. Then, each grid cell predicts B bounding boxes together with their confidence scores and C class probabilities. YOLO achieves object detection in real-time by reframing it as a single regression problem. However, it still struggles to precisely localize some objects, especially small-sized objects.
+
+% **Li2020Object**
+% - we frame object detection as a regression problem to spatially separated bounding boxes and associated class probabilities. A single neural network predicts bounding boxes and class probabilities directly from full images in one evaluation. Since the whole detection pipeline is a single network, it can be optimized end-to-end directly on detection performance.
 \section{Kernel Density Estimation} 
 TO DO 
 
