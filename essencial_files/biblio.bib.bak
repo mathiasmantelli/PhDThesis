@@ -1492,3 +1492,34 @@ doi = {10.30564/aia.v1i1.925}
   year={2020},
   publisher={Elsevier}
 }
+
+@article{Devroye1999Hilbert,
+  title={On the Hilbert kernel density estimate},
+  author={Devroye, Luc and Krzy{\.z}ak, Adam},
+  journal={Statistics \& probability letters},
+  volume={44},
+  number={3},
+  pages={299--308},
+  year={1999},
+  publisher={Elsevier}
+}
+
+@article{Bhattacharjee2021KAGO,
+  title={KAGO: an approximate adaptive grid-based outlier detection approach using kernel density estimate},
+  author={Bhattacharjee, Panthadeep and Garg, Ankur and Mitra, Pinaki},
+  journal={Pattern Analysis and Applications},
+  volume={24},
+  number={4},
+  pages={1825--1846},
+  year={2021},
+  publisher={Springer}
+}
+
+@article{Maffei2015Fast,
+  title={Fast monte carlo localization using spatial density information},
+  author={Maffei, Renan and Jorge, Vitor AM and Rey, Vitor F and Kolberg, Mariana and Prestes, Edson},
+  booktitle={2015 IEEE International Conference on Robotics and Automation (ICRA)},
+  pages={6352--6358},
+  year={2015},
+  organization={IEEE}
+}
