@@ -1523,3 +1523,79 @@ doi = {10.30564/aia.v1i1.925}
   year={2015},
   organization={IEEE}
 }
+
+@article{Jones1992Class,
+  title={On a class of kernel density estimate bandwidth selectors},
+  author={Jones, MC and Kappenman, RF},
+  journal={Scandinavian Journal of Statistics},
+  pages={337--349},
+  year={1992},
+  publisher={JSTOR}
+}
+
+@book{Silverman1986Density,
+  title={Density estimation for statistics and data analysis},
+  author={Silverman, Bernard W},
+  year={1986},
+  publisher={Chapman and Hall}
+}
+
+@article{Devroye1985Nonparametric,
+  title={Nonparametric density estimation},
+  author={Devroye, Luc},
+  journal={The L\_1 View},
+  year={1985},
+  publisher={John Wiley}
+}
+
+@book{Devroye2001Combinatorial,
+  title={Combinatorial methods in density estimation},
+  author={Devroye, Luc and Lugosi, G{\'a}bor},
+  year={2001},
+  publisher={Springer Science \& Business Media}
+}
+
+@article{Gretton2012Kernel,
+  title={A kernel two-sample test},
+  author={Gretton, Arthur and Borgwardt, Karsten M and Rasch, Malte J and Sch{\"o}lkopf, Bernhard and Smola, Alexander},
+  journal={The Journal of Machine Learning Research},
+  volume={13},
+  number={1},
+  pages={723--773},
+  year={2012},
+  publisher={JMLR. org}
+}
+
+@article{Muandet2017Kernel,
+  title={Kernel mean embedding of distributions: A review and beyond},
+  author={Muandet, Krikamol and Fukumizu, Kenji and Sriperumbudur, Bharath and Sch{\"o}lkopf, Bernhard and others},
+  journal={Foundations and Trends{\textregistered} in Machine Learning},
+  volume={10},
+  number={1-2},
+  pages={1--141},
+  year={2017},
+  publisher={Now Publishers, Inc.}
+}
+
+@book{Scholkopf2002Learning,
+  title={Learning with kernels: support vector machines, regularization, optimization, and beyond},
+  author={Sch{\"o}lkopf, Bernhard and Smola, Alexander J and Bach, Francis and others},
+  year={2002},
+  publisher={MIT press}
+}
+
+@book{Scott2015Multivariate,
+  title={Multivariate density estimation: theory, practice, and visualization},
+  author={Scott, David W},
+  year={2015},
+  publisher={John Wiley \& Sons}
+}
+
+@article{Maffei2016Long,
+  title={Long-term place recognition using multi-level words of spatial densities},
+  author={Maffei, Renan and Jorge, Vitor AM and Rey, Vitor F and Kolberg, Mariana and Prestes, Edson},
+  booktitle={2016 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  pages={3269--3274},
+  year={2016},
+  organization={IEEE}
+}
