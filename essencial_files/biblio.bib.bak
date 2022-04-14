@@ -19,6 +19,13 @@
   school={Federal University of Rio Grande do Sul}
 }
 
+@phdthesis{Jorge2017Enabling,
+  title={Enabling loop-closures and revisits in active SLAM techiniques by using dynamic boundary conditions an local potential distortions},
+  author={Jorge, Vitor Augusto Machado},
+  year={2017},
+  school={Federal University of Rio Grande do Sul}
+}
+
 
 @article{Cesar2016Simultaneous,
   title={Simultaneous Localization And Mapping: Present Future and the Robust-Perception Age},

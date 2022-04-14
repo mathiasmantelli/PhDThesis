@@ -297,6 +297,12 @@ The algorithms for the full SLAM problem calculate a posterior over the entire p
 
 Explaining the fundamental problems of mobile robotics, from the simplest localization to the more complex SLAM problems, helps to understand why the OS works for unknown environments depend on a SLAM system. Since our works presented in the following chapters are designed for similar conditions (large and unknown environments), we opted to rely on GMapping~\cite{Grisetti2007Improved}. It is an online SLAM algorithm based on RBPF that provides a 2D grid map, and each cell contains a value that means whether the region it represents is unknown (to the SLAM system), occupied (obstacle), or free.
 
+\section{The Boundary Value Problem (BVP) to deal with robotic problems}
+Exploration is one of the robotic problems that the research community has been working on for many decades~\cite{Thrun2006Probabilistic}. Approaches that deal with such a problem comes in handy when a robot is deployed in an environment which map is not available. This scenario requires the robot to safely move around within the environment at same time that it builds the map. This problem has two fundamental requirements, which are the safety of the robot while it is moving and the preference to movements towards unexplored regions of the environment~\cite{Jorge2017Enabling}. A simple idea to fulfil the safety requirement is to make the boundaries of obstacles to repel the robot, while the boundaries of unknown regions attract it. Similarly, the other requirement could be met by guiding the robot towards the boundaries (frontier) of unexplored regions until there is no such boundaries any more~\cite{Thrun2006Probabilistic}.
+
+
+
+
 \section{Object search problem formulation}
 The OS problem relies on an efficient strategy for finding a target object in a large unknown indoor environment. Since our works presented in this thesis are based on a 2D grid map, the search strategies from these works reason over the map $\bs{m}$, and they decide what cell $c$ is currently more promising to localize the target object while minimizing the total cost. We define cost as the distance traveled by the robot during the search, as the longer the robot's path, the higher is the amount of resources (battery and time) it spends. The robot is equipped with a 2D lidar to build the grid map and a camera used to gather visual cues for semantic information estimation. Both sensors are fixed to the robot's body, and hence, we consider only the movements performed by a ground mobile robot.  
 
