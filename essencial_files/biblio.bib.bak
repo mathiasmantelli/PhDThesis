@@ -1606,3 +1606,37 @@ doi = {10.30564/aia.v1i1.925}
   year={2016},
   organization={IEEE}
 }
+
+@article{Prestes2003BVPExploration,
+  author={e Silva, E.P. and Trevisan, M. and Idiart, M.A.P. and Engel, P.M.},
+  booktitle={Proceedings 2003 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2003) (Cat. No.03CH37453)}, 
+  title={BVP-exploration: further improvements}, 
+  year={2003},
+  volume={4},
+  number={},
+  pages={3239-3244 vol.3},
+  doi={10.1109/IROS.2003.1249655}
+}
+
+@article{Prestes2011Exploration,
+  author={Prestes, Edson and Engel, Paulo Martins},
+  booktitle={2011 IEEE/RSJ International Conference on Intelligent Robots and Systems}, 
+  title={Exploration driven by local potential distortions}, 
+  year={2011},
+  volume={},
+  number={},
+  pages={1122-1127},
+  doi={10.1109/IROS.2011.6094674}
+}
+
+@article{Connolly1993Applications,
+  title={The applications of harmonic functions to robotics},
+  author={Connolly, Christopher I and Grupen, Roderic A},
+  journal={Journal of robotic Systems},
+  volume={10},
+  number={7},
+  pages={931--946},
+  year={1993},
+  publisher={Wiley Online Library}
+}
+  

@@ -298,7 +298,23 @@ The algorithms for the full SLAM problem calculate a posterior over the entire p
 Explaining the fundamental problems of mobile robotics, from the simplest localization to the more complex SLAM problems, helps to understand why the OS works for unknown environments depend on a SLAM system. Since our works presented in the following chapters are designed for similar conditions (large and unknown environments), we opted to rely on GMapping~\cite{Grisetti2007Improved}. It is an online SLAM algorithm based on RBPF that provides a 2D grid map, and each cell contains a value that means whether the region it represents is unknown (to the SLAM system), occupied (obstacle), or free.
 
 \section{The Boundary Value Problem (BVP) to deal with robotic problems}
-Exploration is one of the robotic problems that the research community has been working on for many decades~\cite{Thrun2006Probabilistic}. Approaches that deal with such a problem comes in handy when a robot is deployed in an environment which map is not available. This scenario requires the robot to safely move around within the environment at same time that it builds the map. This problem has two fundamental requirements, which are the safety of the robot while it is moving and the preference to movements towards unexplored regions of the environment~\cite{Jorge2017Enabling}. A simple idea to fulfil the safety requirement is to make the boundaries of obstacles to repel the robot, while the boundaries of unknown regions attract it. Similarly, the other requirement could be met by guiding the robot towards the boundaries (frontier) of unexplored regions until there is no such boundaries any more~\cite{Thrun2006Probabilistic}.
+Exploration is one of the robotic problems that the research community has been working on for many decades~\cite{Thrun2006Probabilistic}. Approaches that deal with this problem comes in handy when a robot is deployed in an environment which map is not available. This scenario requires the robot to safely move around within the environment at same time that it builds the map. This problem has two fundamental requirements: the safety of the robot while it is moving, and the preference to movements towards unexplored regions of the environment~\cite{Jorge2017Enabling}. A simple idea to fulfil the safety requirement is to make the boundaries of obstacles to repel the robot. Similarly, the other requirement could be met by making the boundaries (frontiers) of unexplored regions attract the robot, as shown in Figure~\ref{chp02_fig:frontier_exploration}~\cite{Thrun2006Probabilistic}.
+
+\begin{figure}[ht!]
+    \footnotesize
+    \centering
+    \begin{subfigure}[b]{\columnwidth} 
+        \includegraphics[width=\textwidth]{figs/frountier_exploration.png} %\caption{SLAM} 
+    \end{subfigure}
+    \caption[Frontier-based exploration.]{Frontier-based exploration.}
+    \label{chp02_fig:frontier_exploration}
+\end{figure} 
+
+The robotics research community has published several approaches for exploratory tasks, and among them we highlight the the boundary-value problem (BVP)~\cite{Prestes2002Exploration, Prestes2003BVPExploration, Prestes2011Exploration}. Initially, \citet{Prestes2002Exploration} proposed an approach for the extension of the BVP, that was first used for path-planning by ~\citet{Connolly1993Applications}, to the exploration problem. In their work, \citet{Prestes2002Exploration} argued that harmonic functions provide optimal potential maps for robot navigation. Then, they used the harmonic potential in an algorithm for exploration in a grid map. 
+
+%potential field = solution of the laplace equation (which is an harmonic function)
+
+
 
 
 
