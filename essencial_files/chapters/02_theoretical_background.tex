@@ -313,10 +313,20 @@ Exploration is one of the robotic problems that the research community has been 
 Among the frontier-guided exploration approaches for exploratory tasks we highlight the squence of works proposed by Prestes and colleagues~\cite{Prestes2002Exploration, Prestes2003BVPExploration, Prestes2011Exploration}. Initially,~\citet{Prestes2002Exploration} proposed the use of a numeric solution of a boundary value problem (BVP) for the exploration problem. Their BVP exploration approach uses the gradient descent of the potential field generated over a grid to perform the map coverage with the robot. Using the finite difference method, this potential field is computed by solving the Laplace equation
 \begin{equation}
 \nabla^2 p(\mathbf{r}) = \sum^n_{i=1}\frac{\partial^2p(\mathbf{r})}{\partial x^2_i} = 0,
+\label{chp02_eq:laplace_equation}
 \end{equation} 
-where $p(\mathbf{r})$ is the potential value at position $\mathbf{r}$ in the free space.
-
-boundary-value problem (BVP). Initially, \citet{Prestes2002Exploration} proposed an approach for the extension of the BVP, that was first used for path-planning by ~\citet{Connolly1993Applications}, to the exploration problem. In their work, \citet{Prestes2002Exploration} argued that harmonic functions provide optimal potential maps for robot navigation. Then, they used the harmonic potential in an algorithm for exploration in a grid map. 
+where $p(\mathbf{r})$ is the potential value at position $\mathbf{r}$ in the free space. In the grid map, both the boundary of obstacles and unknown regions are considered as Dirichlet boundary conditions. The potential value associated to unknown cells is the minimum, i.e. 0, whereas the same value associated to obstacle cells is the maximum, i.e. 1. The free cells have their potential value updated with Equation~\ref{chp02_eq:laplace_equation}~\cite{Prestes2002Exploration, Prestes2003BVPExploration}. However, as we are working with a discrete regular grid map, we use the Gauss-Seidel method for the numerical approximation of Equation~\ref{chp02_eq:laplace_equation}. Therefore, to update the potential value of free cells we do
+\begin{equation}
+p(\mathbf{r}) = \frac{1}{4}(p(\mathbf{r_l}) + p(\mathbf{r_r}) + p(\mathbf{r_u}) +p(\mathbf{r_b}))
+\end{equation}
+where $p(\mathbf{r_l})$, $p(\mathbf{r_r})$, $p(\mathbf{r_u})$, and $p(\mathbf{r_b})$ are the left, right, top and bottom cells neighboring the center and reference cell $p(\mathbf{r})$. Figure~\ref{chp02_fig:grid_potential} illustrates an example of these cells. 
+\begin{figure}[ht!]
+    \footnotesize
+    \centering
+	\includegraphics[width=.3\textwidth]{figs/grid_potential.png} %\caption{SLAM} 
+    \caption[Representation of computing the potential value.]{Representation of computing the potential value.}
+    \label{chp02_fig:grid_potential}
+\end{figure} 
 
 %potential field = solution of the laplace equation (which is an harmonic function)
 
