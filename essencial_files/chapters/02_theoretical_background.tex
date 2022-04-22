@@ -318,20 +318,66 @@ Among the frontier-guided exploration approaches for exploratory tasks we highli
 where $p(\mathbf{r})$ is the potential value at position $\mathbf{r}$ in the free space. In the grid map, both the boundary of obstacles and unknown regions are considered as Dirichlet boundary conditions. The potential value associated to unknown cells is the minimum, i.e. 0, whereas the same value associated to obstacle cells is the maximum, i.e. 1. The free cells have their potential value updated with Equation~\ref{chp02_eq:laplace_equation}~\cite{Prestes2002Exploration, Prestes2003BVPExploration}. However, as we are working with a discrete regular grid map, we use the Gauss-Seidel method for the numerical approximation of Equation~\ref{chp02_eq:laplace_equation}. Therefore, to update the potential value of free cells we do
 \begin{equation}
 p(\mathbf{r}) = \frac{1}{4}(p(\mathbf{r_l}) + p(\mathbf{r_r}) + p(\mathbf{r_u}) +p(\mathbf{r_b}))
+\label{chp02_eq:gauss_seidel}
 \end{equation}
 where $p(\mathbf{r_l})$, $p(\mathbf{r_r})$, $p(\mathbf{r_u})$, and $p(\mathbf{r_b})$ are the left, right, top and bottom cells neighboring the center and reference cell $p(\mathbf{r})$. Figure~\ref{chp02_fig:grid_potential} illustrates an example of these cells. 
 \begin{figure}[ht!]
     \footnotesize
     \centering
-	\includegraphics[width=.3\textwidth]{figs/grid_potential.png} %\caption{SLAM} 
-    \caption[Representation of computing the potential value.]{Representation of computing the potential value.}
+
+	\includegraphics[width=.15\textwidth]{figs/grid_potential.png} %\caption{SLAM} 
+
+    \caption[Frontier-based exploration.]{Frontier-based exploration.}
     \label{chp02_fig:grid_potential}
 \end{figure} 
 
 %potential field = solution of the laplace equation (which is an harmonic function)
+The Equation~\ref{chp02_eq:gauss_seidel} applied to a 2D grid map to update the potential results in the exploratory behavior illustrated by Figure~\ref{chp02_fig:bvp_exploration}. The BVP exploration approach uses the gradient descent of the potential field over a grid map to perform the map coverage.  
+The angle of the robot's heading is computed based on the robot's current position on the potential field, i.e.
+\begin{equation}
+\theta = \arctan(p(\mathbf{r_l} - p(\mathbf{r_r}, p(\mathbf{r_u} - p(\mathbf{r_b})
+\end{equation}
+where $\arctan(x,y)$ is the inverse tangent taken in the interval $[-\pi, \pi]$. The robot's speed can also be adjusted based on the potential field. The difference between the robot's orientation and the negative potential gradient direction $\theta$ for the current position, represents how much the robot has to turn. Hence, this difference can be correlated to the robot's speed, i.e., the larger the difference, the slower is the robot's speed~\cite{Prestes2003BVPExploration}. Therefore, the BVP exploration has many advantages, including but not limited to smooth movements to the robot, easy understanding and implementation, and there is no local minima in the resulting potentiel field~\cite{Maffei2014Integrated, Jorge2015Ouroboros}.
 
 
 
+\begin{figure*}[h!]
+%    \footnotesize
+    \centering
+
+%    \begin{subfigure}[t]{0.2\columnwidth} 
+	\hspace{-1cm}
+        \includegraphics[width=.45\textwidth]{figs/bvp_exploration_map.png} 
+        \label{chp02_fig:bvp_exploration_map}        
+%    \end{subfigure}
+\medskip
+    \begin{subfigure}[t]{0.2\columnwidth} 
+		\vspace{-5.5cm}
+        \includegraphics[width=.75\textwidth]{figs/bvp_exploration_1.png} 
+        \caption{} 
+        \label{chp02_fig:bvp_exploration_1}        
+    \end{subfigure}
+    \begin{subfigure}[t]{0.2\columnwidth} 
+		\vspace{-5.5cm}    
+        \includegraphics[width=.75\textwidth]{figs/bvp_exploration_2.png} 
+        \caption{}
+        \label{chp02_fig:bvp_exploration_2}        
+    \end{subfigure}\\~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    \begin{subfigure}[t]{0.2\columnwidth} 
+		\vspace{-3.4cm}    
+        \includegraphics[width=.75\textwidth]{figs/bvp_exploration_3.png} 
+        \caption{}
+        \label{chp02_fig:bvp_exploration_3}        
+    \end{subfigure} 
+    \begin{subfigure}[t]{0.2\columnwidth} 
+		\vspace{-3.4cm}    
+        \includegraphics[width=.75\textwidth]{figs/bvp_exploration_4.png} 
+        \caption{}
+        \label{chp02_fig:bvp_exploration_4}        
+    \end{subfigure}    
+    \caption[BVP Exploration.]{BVP Exploration by~\cite{Prestes2002Exploration}.}
+    \label{chp02_fig:bvp_exploration}
+\end{figure*} 
 
 
 
