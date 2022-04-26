@@ -1,0 +1,9 @@
+\chapter{Application of the proposed approaches}
+This section describes how our approches proposed in Chapters~\ref{chap:3_text_os_system} and~\ref{chap:4_temporal_os_system} could be deployed in a service robot for disinfection tasks. Jaci is an autonomous service robot built for helping the fight against many bacterias and viruses, including the SARS-CoV-2. However, despite its efficiency while disinfecting indoor environments, it is not fully autonomous and there is room for improvements. First, Jaci still requires human assistance to properly position it within the room prior to disinfection, and second, it either disinfects the whole room or does not disinfect it at all. Although we have not been able to deploy our contributions presented in this thesis to the Jaci, we believe they could enhance the robot's autonomy. Hence, Jaci would become an even more complete and fully autonomous service robot.
+
+
+\section{Jaci against COVID-19}
+
+\section{Jaci and the environment organization}
+\subsection{Disinfecting a specific room}
+\subsection{Disinfecting a specific object within a room}

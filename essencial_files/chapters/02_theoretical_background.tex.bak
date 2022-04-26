@@ -130,7 +130,7 @@ where $K_h(d)$ is a circular kernel function that operates over all points at di
 
 For any given point $x_i \in X$ where $1 \leq i \leq n$, the KDE on dataset $X$ is used to estimate the likelihood of a point $x_i$ being drawn from $X$. The probability estimated through the kernel density estimator may be interpreted as the “point density” at any $x_i \in X$~\cite{Devroye1999Hilbert, Bhattacharjee2021KAGO}.
 
-A variety of kernel profiles may be applied for estimating the density using KDE. Even thought the Gaussian kernel is one of the most frequently used kernel functions, there are also other kernel profiles that are used by the research community~\cite{Silverman1986Density, Maffei2015Fast}. Below we show the uniform, gaussian, and the inverted ones: 
+A variety of kernel profiles may be applied for estimating the density using KDE. Even though the Gaussian kernel is one of the most frequently used kernel functions, other kernel profiles are used by the research community~\cite{Silverman1986Density, Maffei2015Fast}. Below we show the uniform, gaussian, and the inverted ones:
 \begin{equation}
 UK_{h}(d) = \left\{\begin{matrix}a & \text{, if}~d \leq r\\ 
 0 & \text{~~, otherwise} \end{matrix}\right.
@@ -144,7 +144,7 @@ h(b+c) - (\sqrt{h^2 - d^2})c~&\text{, if}~d \leq h\\
 0~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&\text{~~, otherwise}
 \end{matrix}\right.
 \end{equation}
-where $d$ signifies the distance from a kernel centre $x$ to the target point $x_i$, $r$ is the radius of the kernel, and $a$ is the height of the uniform kernel — typically $a = 1 / (\pi r^2)$. The kernel bandwidth $h$ is also known as the smoothing  factor that controls the smoothness of the curve obtained from the KDE function. A higher value of $h$ ensures a smoother curve of the kernel~\cite{Bhattacharjee2021KAGO}. For $IK(\cdot)$, $b$ and $c$ are respectively the height of the uniform circular kernel and the length of the semi-axis of the oblate ellipsoid~\cite{Maffei2015Fast}. Figure~\ref{chp02_fig:kernel_profiles} shows these three kernel profiles in their 2D and 2${~}^1/_2$D shapes. 
+where $d$ signifies the distance from a kernel centre $x$ to the target point $x_i$, $r$ is the radius of the kernel, and $a$ is the height of the uniform kernel — typically $a = 1 / (\pi r^2)$. The kernel bandwidth $h$ is also known as the smoothing factor that controls the smoothness of the curve obtained from the KDE function. A higher value of $h$ ensures a smoother curve of the kernel~\cite{Bhattacharjee2021KAGO}. For $IK(\cdot)$, $b$ and $c$ are respectively the height of the uniform circular kernel and the length of the semi-axis of the oblate ellipsoid~\cite{Maffei2015Fast}. Figure~\ref{chp02_fig:kernel_profiles} shows these three kernel profiles in their 2D and 2${~}^1/_2$D shapes. 
 
 \begin{figure}[htbp]
 %    \footnotesize
@@ -188,7 +188,7 @@ where $d$ signifies the distance from a kernel centre $x$ to the target point $x
     \label{chp02_fig:kernel_profiles}
 \end{figure} 
 
-The KDE is a fundamental too in statistics~\cite{Devroye1985Nonparametric, Silverman1986Density, Devroye2001Combinatorial, Scott2015Multivariate} and machine learning~\cite{Scholkopf2002Learning, Gretton2012Kernel, Muandet2017Kernel}. However, it can also be use in many other fields, such as robotics, like in the work proposed by~\citet{Maffei2015Fast}. In their work, the authors proposed an efficient KDE-based observation model for a localization approach. The KDE is estimated considering the density of free space cells in a 2D grid map, since these cells are more abundant and less noisy than the obstacle cells. One big advantage of using KDE for robotic applications is that it is orientation independent and has a low cost in terms of computational costs~\cite{Maffei2015Fast}. Their KDE of free space surrounding a point $x$ is computed through an equation similar to Equation~\ref{chp02_eq:kde}:
+The KDE is a fundamental too in statistics~\cite{Devroye1985Nonparametric, Silverman1986Density, Devroye2001Combinatorial, Scott2015Multivariate} and machine learning~\cite{Scholkopf2002Learning, Gretton2012Kernel, Muandet2017Kernel}. However, it can also be used in many other fields, such as robotics, like in work proposed by~\citet{Maffei2015Fast}. The authors proposed an efficient KDE-based observation model for a localization approach in their work. The KDE is estimated considering the density of free space cells in a 2D grid map, as these cells are more abundant and less noisy than the obstacle cells. One big advantage of using KDE for robotic applications is that it is orientation independent and has a low computational cost~\cite{Maffei2015Fast}. Their KDE of free space surrounding a point $x$ is computed through an equation similar to Equation~\ref{chp02_eq:kde}:
 \begin{equation}
 \hat{f}_h(x) = \frac{1}{n}\sum^n_{i=1}s(x)K_h(x - x_i)
 \label{chp02_eq:free_space_kde}
@@ -200,7 +200,7 @@ s(x) = \left\{\begin{matrix}1 \text{, if}~x~\text{is inside a free space cell}\\
               \hspace{-3.2cm} 0 \text{, otherwise.}\end{matrix}\right.
 \end{equation}
 
-Figure~\ref{chp02_fig:kde_uniform} shows the Equation~\ref{chp02_eq:free_space_kde} with an uniform kernel applied to a 2D grid map. Given four map cells in four different spots of the map (1, 2, 3, and 4) indicated in Figure~\ref{chp02_fig:kde_points}, the circular KDE would consider the neighbor cells highlighted in Figure~\ref{chp02_eq:free_space_kde}. The function $s(\cdot)$ in Equation~\ref{chp02_eq:free_space_kde} makes the KDE to consider only the free cells, as shown in Figure~\ref{chp02_fig:kde_free_cells}. The free space density estimation for each cell, estimated with KDE, is illustrated in Figure~\ref{chp02_fig:kde_info}. In this image, it is possible to see that the larger the amount of free cells within the kernel area, the higher is the density. Besides, this simple example also demonstrates the fact that KDE is invariant to rations, as the KDE for points 1 and 4 are equal, even though the free space are in different orientations. The point 3 has the highest KDE, which is explained by the largest area of free cells under the kernel coverage. 
+Figure~\ref{chp02_fig:kde_uniform} shows the Equation~\ref{chp02_eq:free_space_kde} with an uniform kernel applied to a 2D grid map. Given four map cells in four different spots of the map (1, 2, 3, and 4) indicated in Figure~\ref{chp02_fig:kde_points}, the circular KDE would consider the neighbor cells highlighted in Figure~\ref{chp02_eq:free_space_kde}. The function $s(\cdot)$ in Equation~\ref{chp02_eq:free_space_kde} makes the KDE to consider only the free cells, as shown in Figure~\ref{chp02_fig:kde_free_cells}. The free space density estimation for each cell, estimated with KDE, is illustrated in Figure~\ref{chp02_fig:kde_info}. In this image, it is possible to see that the larger the number of free cells within the kernel area, the higher the density. Besides, this simple example also demonstrates that KDE is invariant to rations, as the KDE for points 1 and 4 are equal, even though the free space is in different orientations. Point 3 has the highest KDE, which is explained by the highest number of free cells under the kernel's coverage among all the four kernels.  
 
 \begin{figure}[h!]
 %    \footnotesize
@@ -229,7 +229,7 @@ Figure~\ref{chp02_fig:kde_uniform} shows the Equation~\ref{chp02_eq:free_space_k
     \label{chp02_fig:kde_uniform}
 \end{figure} 
 
-The idea of estimating the free space density with the aid of KDE was later used by Maffei and colleagues in a second workd~\citet{Maffei2015Using}. This time, they were interested in using a robot to construct a topological map to localize itself using a laser range finder and odometry information. Their proposed algorithm uses an observation model based on kernel density estimates, similarly to their previous work, ~\citet{Maffei2015Fast}. The difference, however, is that this observation model separes the map into regions denominated workds, classified based on the density of free space estimated with the KDE, number of observations and segmentation orientation~\cite{Maffei2015Using}. The robustness of the free space density estimates in this second work motivated the authors to pursue a third work,~\citet{Maffei2016Long}. Now,~\citet{Maffei2016Long} proposed a long-term place recognition, which extends their strategy that represents environment regions using words, based on spatial density information extracted from laser readings. The novelty is in building multi-level words to account for possible changes in the observations of a place generaged by non-static objects. For example, when a robot is in front a door and estimates the free space density, the final KDE value will be different whether the door is open or not. For long-term opperations, this may happen, and even thought the density value is different, the place is still the same. 
+The idea of estimating the free space density with the aid of KDE was later used by Maffei and colleagues in a second workd~\citet{Maffei2015Using}. This time, they were interested in using a robot to construct a topological map to localize itself using a laser range finder and odometry information. Their proposed algorithm uses an observation model based on kernel density estimates, similarly to their previous work, ~\citet{Maffei2015Fast}. The difference, however, is that this observation model separates the map into regions denominated works, classified based on the density of free space estimated with the KDE, number of observations and segmentation orientation~\cite{Maffei2015Using}. The robustness of the free space density estimates in this second work motivated the authors to pursue a third work,~\citet{Maffei2016Long}. Now,~\citet{Maffei2016Long} proposed a long-term place recognition, which extends their strategy that represents environment regions using words based on spatial density information extracted from laser readings. The novelty is in building multi-level words to account for possible changes in the observations of a place generated by non-static objects. For example, when a robot is in front of a door and estimates the free space density, the final KDE value will differ whether the door is open. For long-term operations, this may happen, and even though the density value is different, the place is still the same. 
 
 \section{The Basics of Mobile Robotics}
 \label{sec:chap2_basic_mobile_robotics}
@@ -298,7 +298,7 @@ The algorithms for the full SLAM problem calculate a posterior over the entire p
 Explaining the fundamental problems of mobile robotics, from the simplest localization to the more complex SLAM problems, helps to understand why the OS works for unknown environments depend on a SLAM system. Since our works presented in the following chapters are designed for similar conditions (large and unknown environments), we opted to rely on GMapping~\cite{Grisetti2007Improved}. It is an online SLAM algorithm based on RBPF that provides a 2D grid map, and each cell contains a value that means whether the region it represents is unknown (to the SLAM system), occupied (obstacle), or free.
 
 \section{The Boundary Value Problem (BVP) to deal with robotic problems}
-Exploration is one of the robotic problems that the research community has been working on for many decades~\cite{Thrun2006Probabilistic}. Approaches that deal with this problem come in handy when a robot is deployed in an environment which map is not available. This scenario requires the robot to safely move around within the environment at same time that it builds the map. This problem has two fundamental requirements: the safety of the robot while it is moving, and the preference to movements towards unexplored regions of the environment~\cite{Jorge2017Enabling}. A simple strategy to fulfil the safety requirement is to make the boundaries of obstacles to repel the robot. Similarly, the other requirement could be met by making the boundaries (frontiers) of unexplored regions attract the robot, as shown in Figure~\ref{chp02_fig:frontier_exploration}~\cite{Thrun2006Probabilistic}. Exploration approaches that are guided by the frontier of unexplored regions of the environment are commonly called frontier-guided~\cite{Jorge2017Enabling}.
+Exploration is one of the robotic problems that the research community has been working on for many decades~\cite{Thrun2006Probabilistic}. Approaches that deal with this problem come in handy when a robot is deployed in an environment where a map is unavailable. This scenario requires the robot to safely move around within the environment at the same time that it builds the map. This problem has two fundamental requirements: the safety of the robot while it is moving and the preference for movements towards unexplored regions of the environment~\cite{Jorge2017Enabling}. A simple strategy to fulfil the safety requirement is to make the boundaries of obstacles to repel the robot. Similarly, the other requirement could be met by making the boundaries (frontiers) of unexplored regions attract the robot, as shown in Figure~\ref{chp02_fig:frontier_exploration}~\cite{Thrun2006Probabilistic}. Exploration approaches that are guided by the frontier of unexplored regions of the environment are commonly called frontier-guided~\cite{Jorge2017Enabling}.
 
 \begin{figure}[ht!]
     \footnotesize
@@ -310,18 +310,72 @@ Exploration is one of the robotic problems that the research community has been 
     \label{chp02_fig:frontier_exploration}
 \end{figure} 
 
-Among the frontier-guided exploration approaches for exploratory tasks we highlight the squence of works proposed by Prestes and colleagues~\cite{Prestes2002Exploration, Prestes2003BVPExploration, Prestes2011Exploration}. Initially,~\citet{Prestes2002Exploration} proposed the use of a numeric solution of a boundary value problem (BVP) for the exploration problem. Their BVP exploration approach uses the gradient descent of the potential field generated over a grid to perform the map coverage with the robot. Using the finite difference method, this potential field is computed by solving the Laplace equation
+Among the frontier-guided exploration approaches for exploratory tasks, we highlight the sequence of works proposed by Prestes and colleagues~\cite{Prestes2002Exploration, Prestes2003BVPExploration, Prestes2011Exploration}. Initially,~\citet{Prestes2002Exploration} proposed the use of a numeric solution to a boundary value problem (BVP) for the exploration problem. Their BVP exploration approach uses the gradient descent of the potential field generated over a grid to perform the map coverage with the robot. This potential field is computed with the finite difference method, by solving the Laplace equation,
 \begin{equation}
 \nabla^2 p(\mathbf{r}) = \sum^n_{i=1}\frac{\partial^2p(\mathbf{r})}{\partial x^2_i} = 0,
+\label{chp02_eq:laplace_equation}
 \end{equation} 
-where $p(\mathbf{r})$ is the potential value at position $\mathbf{r}$ in the free space.
+where $p(\mathbf{r})$ is the potential value at position $\mathbf{r}$ in the free space. In the grid map, the boundary of obstacles and unknown regions are considered Dirichlet boundary conditions. The potential value associated to unknown cells is the minimum, i.e. 0, whereas the same value associated to obstacle cells is the maximum, i.e. 1. The free cells have their potential value updated with Equation~\ref{chp02_eq:laplace_equation}~\cite{Prestes2002Exploration, Prestes2003BVPExploration}. However, as we are working with a discrete regular grid map, we use the Gauss-Seidel method for the numerical approximation of Equation~\ref{chp02_eq:laplace_equation}. Therefore, to update the potential value of free cells, we do
+\begin{equation}
+p(\mathbf{r}) = \frac{1}{4}(p(\mathbf{r_l}) + p(\mathbf{r_r}) + p(\mathbf{r_u}) +p(\mathbf{r_b}))
+\label{chp02_eq:gauss_seidel}
+\end{equation}
+where $p(\mathbf{r_l})$, $p(\mathbf{r_r})$, $p(\mathbf{r_u})$, and $p(\mathbf{r_b})$ are the left, right, top and bottom cells neighboring the center and reference cell $p(\mathbf{r})$. Figure~\ref{chp02_fig:grid_potential} illustrates an example of these cells. 
+\begin{figure}[ht!]
+    \footnotesize
+    \centering
 
-boundary-value problem (BVP). Initially, \citet{Prestes2002Exploration} proposed an approach for the extension of the BVP, that was first used for path-planning by ~\citet{Connolly1993Applications}, to the exploration problem. In their work, \citet{Prestes2002Exploration} argued that harmonic functions provide optimal potential maps for robot navigation. Then, they used the harmonic potential in an algorithm for exploration in a grid map. 
+	\includegraphics[width=.15\textwidth]{figs/grid_potential.png} %\caption{SLAM} 
+
+    \caption[Frontier-based exploration.]{Frontier-based exploration.}
+    \label{chp02_fig:grid_potential}
+\end{figure} 
 
 %potential field = solution of the laplace equation (which is an harmonic function)
+The Equation~\ref{chp02_eq:gauss_seidel} applied to a 2D grid map to update the potential results in the exploratory behavior illustrated by Figure~\ref{chp02_fig:bvp_exploration}. The BVP exploration approach uses the gradient descent of the potential field over a grid map to perform the map coverage.  
+The angle of the robot's heading is computed based on the robot's current position on the potential field, i.e.
+\begin{equation}
+\theta = \arctan(p(\mathbf{r_l} - p(\mathbf{r_r}, p(\mathbf{r_u} - p(\mathbf{r_b})
+\end{equation}
+where $\arctan(x,y)$ is the inverse tangent taken in the interval $[-\pi, \pi]$. The robot's speed can also be adjusted based on the potential field. The difference between the robot's orientation and the negative potential gradient direction $\theta$ for the current position represents how much the robot has to turn. Hence, this difference can be correlated to the robot's speed, i.e., the larger the difference, the slower is the robot's speed~\cite{Prestes2003BVPExploration}. Therefore, the BVP exploration has many advantages, including but not limited to smooth movements of the robot, easy understanding and implementation, and there are no local minima in the resulting potential field~\cite{Maffei2014Integrated, Jorge2015Ouroboros}.
 
+\begin{figure*}[h!]
+%    \footnotesize
+    \centering
 
-
+%    \begin{subfigure}[t]{0.2\columnwidth} 
+	\hspace{-1cm}
+        \includegraphics[width=.45\textwidth]{figs/bvp_exploration_map.png} 
+        \label{chp02_fig:bvp_exploration_map}        
+%    \end{subfigure}
+\medskip
+    \begin{subfigure}[t]{0.2\columnwidth} 
+		\vspace{-5.5cm}
+        \includegraphics[width=.75\textwidth]{figs/bvp_exploration_1.png} 
+        \caption{} 
+        \label{chp02_fig:bvp_exploration_1}        
+    \end{subfigure}
+    \begin{subfigure}[t]{0.2\columnwidth} 
+		\vspace{-5.5cm}    
+        \includegraphics[width=.75\textwidth]{figs/bvp_exploration_2.png} 
+        \caption{}
+        \label{chp02_fig:bvp_exploration_2}        
+    \end{subfigure}\\~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    \begin{subfigure}[t]{0.2\columnwidth} 
+		\vspace{-3.4cm}    
+        \includegraphics[width=.75\textwidth]{figs/bvp_exploration_3.png} 
+        \caption{}
+        \label{chp02_fig:bvp_exploration_3}        
+    \end{subfigure} 
+    \begin{subfigure}[t]{0.2\columnwidth} 
+		\vspace{-3.4cm}    
+        \includegraphics[width=.75\textwidth]{figs/bvp_exploration_4.png} 
+        \caption{}
+        \label{chp02_fig:bvp_exploration_4}        
+    \end{subfigure}    
+    \caption[BVP Exploration.]{BVP Exploration by~\cite{Prestes2002Exploration}.}
+    \label{chp02_fig:bvp_exploration}
+\end{figure*} 
 
 
 

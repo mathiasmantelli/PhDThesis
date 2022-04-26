@@ -274,6 +274,7 @@ Agradeço ao \LaTeX\ por não ter vírus de macro\ldots
 %\input{chapters/03_related_work}
 \input{chapters/03_text_semantic_information}
 \input{chapters/04_temporal_semantic_information}
+\input{chapters/05_thesis_application}
 %\input{chapters/05_thesis_progress}
 
 
