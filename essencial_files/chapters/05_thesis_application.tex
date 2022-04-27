@@ -1,9 +1,21 @@
 \chapter{Application of the proposed approaches}
 This section describes how our approches proposed in Chapters~\ref{chap:3_text_os_system} and~\ref{chap:4_temporal_os_system} could be deployed in a service robot for disinfection tasks. Jaci is an autonomous service robot built for helping the fight against many bacterias and viruses, including the SARS-CoV-2. However, despite its efficiency while disinfecting indoor environments, it is not fully autonomous and there is room for improvements. First, Jaci still requires human assistance to properly position it within the room prior to disinfection, and second, it either disinfects the whole room or does not disinfect it at all. Although we have not been able to deploy our contributions presented in this thesis to the Jaci, we believe they could enhance the robot's autonomy. Hence, Jaci would become an even more complete and fully autonomous service robot.
 
+Before explaning how our contributions can be adapted to the disinfection task carried out by Jaci, in Section~\ref{chap:5_jaci_against_covid} we introduce the service robot Jaci and how it performs the disinfection. Next, in Section~\ref{chap:5_env_org} we explain how semantic information about the organization of the environment can improve the Jaci's performance. In details, we show how the robot can become fully autonomous by guiding itself to the rooms to perfom the disinfection, Section~\ref{chap:5_jaci_disinf_room}, and how it can partialy disinfect the environment under certain circunstances, Section~\ref{chap:5_jaci_disinf_obj}.
 
 \section{Jaci against COVID-19}
+\label{chap:5_jaci_against_covid}
+In the past few years the Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2) has quickly and widely infected several countries, globaly threatening human lives~\cite{Zhang2020Challenges}. The high infection rate of SARS-CoV-2 is associated but not exclusively to the virus characteristic of remaining viable on surfaces for days, as demonstrated by studies~\cite{Kampf2020Persistence,Van2020Aerosol}. Besides, the environment disinfection has been recommended by researchers after they have found the SARS-CoV-2 present on surfaces of hospitals threating patients with COVID-19~\cite{Wu2020Environmental, Ong2020Air}. Thus, in addition to the other recommended practices to reduce the spreading of the virus, like facial masks and social distancing, it would be very appropriate the use of an effective tool to disinfect environments.
+
+According to some studies provided by the research community, the ultraviolet type-C (UV-C) irradiation has produced a significant reduction to the incidence of microorganisms~\cite{Anderson2017Enhanced, Marra2018No}. In addition to being a no-touch disinfection method, the UV lights have a wide range of incidence that quickly sanitizes the air and nearby surfaces, save water, and are reusable. The combination of all these characteristics make the UV lights the suitable candridate for environment disinfection, and their increasing deployment in hospital and other health centers supports their effectiveness~\cite{Mantelli2022Autonomous}. In contrast to these convenient characteristics of UV lights in light of the SARS-CoV-2 outbreak, prolonged exposure to them is not safe for humans due to the damage they can cause to the skin and eyes~\cite{Kitagawa2021Effectiveness}.
+
+The service robot Jaci comes into play to deal with the drawback of UV lights~\cite{Mantelli2022Autonomous}. Eitghteen UV lights in a tower shape are attatched to Jaci, which autonomously navigate throught the environment to perform the disinfection. This way, it prevents humans of getting harmed with long-term UV exposure, at the same time that it reduces the spreading of the virus. 
 
 \section{Jaci and the environment organization}
+\label{chap:5_env_org}
+
 \subsection{Disinfecting a specific room}
+\label{chap:5_jaci_disinf_room}
+
 \subsection{Disinfecting a specific object within a room}
+\label{chap:5_jaci_disinf_obj}
