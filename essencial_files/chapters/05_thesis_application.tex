@@ -9,7 +9,27 @@ In the past few years the Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-
 
 According to some studies provided by the research community, the ultraviolet type-C (UV-C) irradiation has produced a significant reduction to the incidence of microorganisms~\cite{Anderson2017Enhanced, Marra2018No}. In addition to being a no-touch disinfection method, the UV lights have a wide range of incidence that quickly sanitizes the air and nearby surfaces, save water, and are reusable. The combination of all these characteristics make the UV lights the suitable candridate for environment disinfection, and their increasing deployment in hospital and other health centers supports their effectiveness~\cite{Mantelli2022Autonomous}. In contrast to these convenient characteristics of UV lights in light of the SARS-CoV-2 outbreak, prolonged exposure to them is not safe for humans due to the damage they can cause to the skin and eyes~\cite{Kitagawa2021Effectiveness}.
 
-The service robot Jaci comes into play to deal with the drawback of UV lights~\cite{Mantelli2022Autonomous}. Eitghteen UV lights in a tower shape are attatched to Jaci, which autonomously navigate throught the environment to perform the disinfection. This way, it prevents humans of getting harmed with long-term UV exposure, at the same time that it reduces the spreading of the virus. 
+The service robot Jaci comes into play to deal with the drawback of UV lights~\cite{Mantelli2022Autonomous}. Eitghteen UV-C lights are attatched in a two-layers tower shape to Jaci, placed at the robot's sides and front, as shown in Figure~\ref{chap:5_fig_jaci_lights_on_front}. Equipped with a 2D lidar and a few cameras (RGB and RGB-D), Jaci aims to autonomously navigate throught the environment to perform the disinfection. The robot moves through free spaces within the environment next to the border of obstacles, keeping an ideal distance to them. Figure~\ref{chap:5_fig_jaci_lights_on_back} illustrates an example of Jaci disinfecting an operating room, circunventing the operating table and the surgical light. To ensure the inactivation of the existing viruses on obstacle surfaces, it is necessary to expose them to the UV-C irradiation for a certain time, i.e., an ideal UV dose must be delivered to a certain region to consider it sanitized~\cite{Chanprakon2019Ultra, Conte2020Design}. While Jaci navigates through the free spaces of the environment, it also computes a dose map, which estimates the amount of UV-C has been delivered on every part of the map. Hence, with such dose map that is constantly updated, the robot determines the regions that have already been sanitized and the ones have not. Therefore, Jaci is a suitable disinfection tool that prevents humans from getting harmed with long-term UV exposure, at the same time that it reduces the spreading of the virus. 
+
+\begin{figure}
+    \centering
+    \begin{subfigure}{0.2\columnwidth}
+        \centering
+        \includegraphics[height=14em]{figs/Jaci_ON.png}
+        \caption{}
+        \label{chap:5_fig_jaci_lights_on_front}
+    \end{subfigure}
+    ~~~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}{0.7\columnwidth}
+        \centering
+        \includegraphics[height=14em]{figs/Jaci_ON2.png}
+        \caption{}
+        \label{chap:5_fig_jaci_lights_on_back}
+    \end{subfigure}
+    \caption{\small Jaci is a disinfection robot developed by Instor \cite{INSTOR}, embedded with 18 UV-C lights in two different layers. (a) Jaci with the lights off. (b) Jaci in operation, disinfecting a hospital room.}
+        \label{chap:5_fig_jaci}
+\end{figure}
 
 \section{Jaci and the environment organization}
 \label{chap:5_env_org}
