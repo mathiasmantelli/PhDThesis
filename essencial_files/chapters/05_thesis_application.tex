@@ -9,7 +9,7 @@ In the past few years the Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-
 
 According to some studies provided by the research community, the ultraviolet type-C (UV-C) irradiation has produced a significant reduction to the incidence of microorganisms~\cite{Anderson2017Enhanced, Marra2018No}. In addition to being a no-touch disinfection method, the UV lights have a wide range of incidence that quickly sanitizes the air and nearby surfaces, save water, and are reusable. The combination of all these characteristics make the UV lights the suitable candridate for environment disinfection, and their increasing deployment in hospital and other health centers supports their effectiveness~\cite{Mantelli2022Autonomous}. In contrast to these convenient characteristics of UV lights in light of the SARS-CoV-2 outbreak, prolonged exposure to them is not safe for humans due to the damage they can cause to the skin and eyes~\cite{Kitagawa2021Effectiveness}.
 
-The service robot Jaci comes into play to replace humans in UV-C disinfection tasks and prevent them from getting hurt~\cite{Mantelli2022Autonomous}. Eitghteen UV-C lights are attatched in a two-layers tower shape to Jaci, placed at the robot's sides and front, as shown in Figure~\ref{chap:5_fig_jaci_lights_on_front}. Equipped with a 2D lidar and a few cameras (RGB and RGB-D), Jaci aims to autonomously navigate throught the environment to perform the disinfection. The robot moves through free spaces within the environment next to the border of obstacles, keeping an ideal distance to them. Figure~\ref{chap:5_fig_jaci_lights_on_back} illustrates an example of Jaci disinfecting an operating room, circunventing the operating table and the surgical light. To ensure the inactivation of the existing viruses on obstacle surfaces, it is necessary to expose them to the UV-C irradiation for a certain time, i.e., an ideal UV dose must be delivered to a certain region to consider it sanitized~\cite{Chanprakon2019Ultra, Conte2020Design}. While Jaci navigates through the free spaces of the environment, it also computes a dose map, which estimates the amount of UV-C has been delivered on every part of the map. Hence, with such dose map that is constantly updated, the robot determines the regions that have already been sanitized and the ones have not. Therefore, Jaci is a suitable disinfection tool that prevents humans from getting harmed with long-term UV exposure, at the same time that it reduces the spreading of the virus. 
+The service robot Jaci comes into play to replace humans in UV-C disinfection tasks and prevent them from getting hurt~\cite{Mantelli2022Autonomous}. \citet{INSTOR} has projected and built Jaci with eitghteen UV-C lights attatched to it in a two-layers tower shape, and placed at the robot's both sides and front, as shown in Figure~\ref{chap:5_fig_jaci_lights_on_front}. Equipped with a 2D lidar and a few cameras (RGB and RGB-D), Jaci aims to autonomously navigate throught the environment to perform the disinfection. The robot moves through free spaces within the environment and next to the border of obstacles, keeping an ideal distance to them. Figure~\ref{chap:5_fig_jaci_lights_on_back} illustrates an example of Jaci disinfecting an operating room, circunventing the operating table and the surgical light. To ensure the inactivation of the existing viruses on obstacle surfaces, it is necessary to expose them to the UV-C irradiation for a certain time, i.e., an ideal UV dose must be delivered to a certain region to consider it sanitized~\cite{Chanprakon2019Ultra, Conte2020Design}. The Jaci's autonomous system has been developed by~\citet{PhiLab} from the Federal University of Rio Grande do Sul, and it is responsible for both computing the disinfection trajectory and the delivered UV-C dose. While Jaci navigates through the free spaces of the environment, it also computes a dose map, which estimates the amount of UV-C has been delivered on every part of the map. Hence, with such dose map that is constantly updated, the robot determines the regions that have already been sanitized and the ones have not. Therefore, Jaci is a suitable disinfection tool that prevents humans from getting harmed with long-term UV exposure, at the same time that it reduces the spreading of the virus. 
 
 \begin{figure}
     \centering
@@ -31,7 +31,7 @@ The service robot Jaci comes into play to replace humans in UV-C disinfection ta
         \label{chap:5_fig_jaci}
 \end{figure}
 
-Although Jaci seems a thorough solution to fight viruses espreading, there is still room for improvements. Among the changes in Jaci's software, we highlight two of them: the Jaci's dependency of human aid to place it within the room that must be disinfected, and the lack of an object-oriented disinfection. The first change is related to the preparation phase before starting the disinfection. In its current version, Jaci relies on human assistance to be placed within the room to start the disinfecting process. On the other hand, the second change is associated to the Jaci's performance while performing the disinfection. Nowadays Jaci only finishes the disinfection when the object surfaces in the boundary of the free space received the ideal UV-C dose. It means that Jaci does not distinguish objects, it either disinfects the whole area or does not disinfect it at all. We believe that our contributions presented in this thesis can provide Jaci the positional semantic information necessary for these two improvements. Below we discuss how they could be addapted for Jaci's context. 
+Although Jaci seems a thorough solution to fight viruses espreading, there is still room for improvements. Among the changes in Jaci's software, we highlight two of them: the Jaci's dependency of human aid to place it within the room that must be disinfected, and the lack of an object-oriented disinfection. The first change is related to the preparation phase before starting the disinfection. In its current version, Jaci relies on human assistance to be placed within the room to start the disinfecting process. On the other hand, the second change is associated to the Jaci's performance while performing the disinfection. Nowadays Jaci only finishes the disinfection when the object surfaces in the boundary of the free space received the ideal UV-C dose. It means that Jaci does not distinguish objects, it either disinfects the whole area or does not disinfect it at all. We believe that our contributions presented in this thesis can provide Jaci the positional semantic information necessary for these two improvements. Unfortunately, we have not been able to deploy our code to Jaci and carry out some experiments to evaluete the improvements in the Jaci's performance. Instor, the company that has built Jaci, could not make it available for us for a certain time to conduct the experiments. However, based on how our proposals work and their results presented in this thesis, we can discuss how they could be addapted for Jaci's context and explain why they would be useful.
 
 \section{Jaci and the environment organization}
 \label{chap:5_env_org}
@@ -59,39 +59,9 @@ Equipped with our semantic OS system, Jaci could autonomously search for the tar
 
 \subsection{Disinfecting a specific object within a room}
 \label{chap:5_jaci_disinf_obj}
+The Jaci's autonomous system developed specifically to the sanitizing task guides the robot throughout the free space, maintaining a certain distance to the obstacle borders. The experiments with Jaci indicate that once the disinfection process has started, it only finishes when the objects surface has received the ideal UV-C dose (except for the objects that are positioned in regions that Jaci cannot reach)~\cite{Mantelli2022Autonomous}. In summary, it means that if Jaci can reach a certain region in the environment, it will be disinfected. Although the disinfection of the whole environment is ideal for most of the cases, Jaci could also offers the possibility of performing a partial disinfection of a certain objects in a room. For example, when operating in a library, Jaci could disinfect the tables and computers more often than the bookshelfs. Another scenario would be a school for children, in which Jaci could disinfect the water dispensers in the hallways right before the break instead of disinfecting all the hallways (including all walls and other obstacles). By focusing on disinfecting only an object (or a list of objects), Jaci would be more effective in providing safer and cleaner environment for people.
 
-does not differentiate obstacles, i.e., the map labels the regions of the environment as free, obstacle or unknown. 
-
-With such representation of the environment, Jaci only finishes the disinfection process when the obstacle surfaces (or borders to the free space) have received the ideal UV-C dose. However, in some cases disinfecting the whole environment is not needed, and instead, Jaci could only focus on disinfecting the objects that have been used by people. For example, in a hospital a doctor needs to use an electrocardiograph (or any other medical equippement) that has been used before by a second doctor. In this situation, Jaci could quickly disinfect only the electrocardiograph, so the first doctor could use it. By focusing on disinfecting only the object, Jaci would be more effective in providing the most appropriate working condition for the people in the environment.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+However, Jaci cannot provide such high-level option in its current version due to its purely geometric autonomous system. The map cells are represented only as free, occupied (obstacle), or unknown. As the obstacles are not differentiated, [escrever sobre os obstaculos e como nosso metodo poderia ser usado aqui. o fato do jaguar ficar fazendo disinfeccao multiplas vezes no mesmo lugar e favoravel para a nossa abordagem].
 
 
 
