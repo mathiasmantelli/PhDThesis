@@ -59,6 +59,7 @@
 
 \hyphenation{ro-bo-tics}
 \hyphenation{method-olo-gies}
+\hyphenation{wheth-er}
 \DeclareMathOperator*{\argmax}{arg\,max}
 \DeclareMathOperator*{\argmin}{arg\,min}
 \newcommand{\bs}{\boldsymbol}
@@ -213,7 +214,21 @@ Agradeço ao \LaTeX\ por não ter vírus de macro\ldots
         \item[KDE] Kernel Density Estimation
         \item[HIMM] Histogram In-Motion Mapping
         \item[DS] Door Simulator
-        \item[YOLO] You Only Look Once                                                        
+        \item[YOLO] You Only Look Once
+        \item[IR] Industrial Robot
+        \item[RIA] Robotic Industries Association
+        \item[SR] Service Robot
+        \item[IFR] International Federation of Robotics
+        \item[PSR] Professional Service Robot
+        \item[DSR] Domestic Service Robot
+        \item[PD] Population Division
+        \item[FoV] Field of View
+        \item[SARS-CoV-2] ~~~~~~~~~~~~~~Severe Acute Respiratory Syndrome Coronavirus 2
+        \item[OCR] Optical Character Recognition
+        \item[ER] Extremal Region
+        \item[FPS] Frames per Second
+        \item[RBPF] Rao-Blackwellized Particle Filter
+        
 
 \end{listofabbrv}
 
