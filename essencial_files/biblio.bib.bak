@@ -1640,3 +1640,127 @@ doi = {10.30564/aia.v1i1.925}
   publisher={Wiley Online Library}
 }
   
+@article{Zhang2020Challenges,
+  title={Challenges of SARS-CoV-2 and lessons learnt from SARS in Guangdong Province, China},
+  author={Zhang, Junguo and Lin, Guanwen and Zeng, Jie and Lin, Jianguo and Tian, Junzhang and Li, Guowei},
+  journal={Journal of Clinical Virology},
+  volume={126},
+  pages={104341},
+  year={2020},
+  publisher={Elsevier}
+}
+
+@article{Kampf2020Persistence,
+  title={Persistence of coronaviruses on inanimate surfaces and their inactivation with biocidal agents},
+  author={Kampf, G{\"u}nter and Todt, Daniel and Pfaender, Stephanie and Steinmann, Eike},
+  journal={Journal of hospital infection},
+  volume={104},
+  number={3},
+  pages={246--251},
+  year={2020},
+  publisher={Elsevier}
+}
+
+@article{Van2020Aerosol,
+  title={Aerosol and surface stability of SARS-CoV-2 as compared with SARS-CoV-1},
+  author={Van Doremalen, Neeltje and Bushmaker, Trenton and Morris, Dylan H and Holbrook, Myndi G and Gamble, Amandine and Williamson, Brandi N and Tamin, Azaibi and Harcourt, Jennifer L and Thornburg, Natalie J and Gerber, Susan I and others},
+  journal={New England journal of medicine},
+  volume={382},
+  number={16},
+  pages={1564--1567},
+  year={2020},
+  publisher={Mass Medical Soc}
+}
+
+
+@article{Wu2020Environmental,
+  title={Environmental contamination by SARS-CoV-2 in a designated hospital for coronavirus disease 2019},
+  author={Wu, Songjie and Wang, Ying and Jin, Xuelan and Tian, Jia and Liu, Jianzhong and Mao, Yiping},
+  journal={American journal of infection control},
+  volume={48},
+  number={8},
+  pages={910--914},
+  year={2020},
+  publisher={Elsevier}
+}
+
+@article{Ong2020Air,
+  title={Air, surface environmental, and personal protective equipment contamination by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) from a symptomatic patient},
+  author={Ong, Sean Wei Xiang and Tan, Yian Kim and Chia, Po Ying and Lee, Tau Hong and Ng, Oon Tek and Wong, Michelle Su Yen and Marimuthu, Kalisvar},
+  journal={Jama},
+  volume={323},
+  number={16},
+  pages={1610--1612},
+  year={2020},
+  publisher={American Medical Association}
+}
+
+
+@article{Anderson2017Enhanced,
+  title={Enhanced terminal room disinfection and acquisition and infection caused by multidrug-resistant organisms and Clostridium difficile (the Benefits of Enhanced Terminal Room Disinfection study): a cluster-randomised, multicentre, crossover study},
+  author={Anderson, Deverick J and Chen, Luke F and Weber, David J and Moehring, Rebekah W and Lewis, Sarah S and Triplett, Patricia F and Blocker, Michael and Becherer, Paul and Schwab, J Conrad and Knelson, Lauren P and others},
+  journal={The Lancet},
+  volume={389},
+  number={10071},
+  pages={805--814},
+  year={2017},
+  publisher={Elsevier}
+}
+
+@article{Marra2018No,
+  title={No-touch disinfection methods to decrease multidrug-resistant organism infections: a systematic review and meta-analysis},
+  author={Marra, Alexandre R and Schweizer, Marin L and Edmond, Michael B},
+  journal={infection control \& hospital epidemiology},
+  volume={39},
+  number={1},
+  pages={20--31},
+  year={2018},
+  publisher={Cambridge University Press}
+}
+
+
+@article{Kitagawa2021Effectiveness,
+  title={Effectiveness of 222-nm ultraviolet light on disinfecting SARS-CoV-2 surface contamination},
+  author={Kitagawa, Hiroki and Nomura, Toshihito and Nazmul, Tanuza and Omori, Keitaro and Shigemoto, Norifumi and Sakaguchi, Takemasa and Ohge, Hiroki},
+  journal={American journal of infection control},
+  volume={49},
+  number={3},
+  pages={299--301},
+  year={2021},
+  publisher={Elsevier}
+}
+
+@misc{INSTOR,
+  author={Instor},
+  title = {Instor Robotics \& Projects},
+  year={2022},
+  howpublished = {\url{https://www.instor.com.br/projeto/9}},
+  note = {Accessed: 2022-04-20}
+}
+
+@misc{PhiLab,
+  author={{Phi Lab}},
+  title = {$\Phi$ Robotics Research Lab},
+  year={2022},
+  howpublished = {\url{https://www.inf.ufrgs.br/phi-group/site/}},
+  note = {Accessed: 2022-04-20}
+}
+
+@article{Chanprakon2019Ultra,
+  title={An Ultra-violet sterilization robot for disinfection},
+  author={Chanprakon, Pacharawan and Sae-Oung, Tapparat and Treebupachatsakul, Treesukon and Hannanta-Anan, Pimkhuan and Piyawattanametha, Wibool},
+  booktitle={2019 5th International Conference on Engineering, Applied Sciences and Technology (ICEAST)},
+  pages={1--4},
+  year={2019},
+  organization={IEEE}
+}
+
+@article{Conte2020Design,
+  title={Design and map-based teleoperation of a robot for disinfection of COVID-19 in complex indoor environments},
+  author={Conte, Dean and Leamy, Spencer and Furukawa, Tomonari},
+  booktitle={2020 IEEE International Symposium on Safety, Security, and Rescue Robotics (SSRR)},
+  pages={276--282},
+  year={2020},
+  organization={IEEE}
+}
+

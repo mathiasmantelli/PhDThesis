@@ -122,7 +122,7 @@ Unlike sliding window and region proposal-based techniques, YOLO reasons globall
 
 
 \section{Kernel Density Estimation in grid maps} 
-
+\label{chap:2_kde_grid_maps}
 The process of computing the probability density function $f$ of any data sample $X = \{\bs{x}_1, \bs{x}_2,\bs{x}_3, \cdots, \bs{x}_n\}$ is called density estimation~\cite{Devroye1999Hilbert, Maffei2017Translating, Bhattacharjee2021KAGO}. The kernel density estimatation (KDE), $\hat{f}_h(\bs{x})$, is a non-parametric estimate of $f$ computed at point $\bs{x}$, defined as
 \begin{equation}
 \hat{f}_h(\bs{x}) = \frac{1}{n}\sum^n_{i=1}K_h(\bs{x} - \bs{x}_i)

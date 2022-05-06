@@ -235,16 +235,17 @@ Agradeço ao \LaTeX\ por não ter vírus de macro\ldots
 % idem para a lista de símbolos
 \begin{listofsymbols}{$\alpha\beta\pi\omega$}
 	\item [$\bs{x}_t$] robot's pose at time step $t$. It is composed by a three dimensional vector containing $x,y$, which represents the position, and $\theta$, which represents the orientation.
-	\item [$\bs{m}_i$] map of the environment, represented by a list of $N$ objects, in our case grid cells, with $1 \leq n \leq N$, in the environment along with their properties is given by the vector $\bs{m} = (\bs{m}_1, \bs{m}_2, \cdots, \bs{m}_N)^T$.
+	\item [$\bs{m}$] map of the environment as a vector of $N$ objects, $\bs{m} = (\bs{m}_1, \bs{m}_2, \cdots, \bs{m}_N)^T$, describing the scenario. In 2D grid maps, with $1 \leq n \leq N$, a cell $\bs{m}_i = (x,y)^T$ is associated to a 2D position $(x,y)$. In this thesis, the index $i$ refers to a random cell in $\bs{m}$, $r$ to the cell where the robot is in $\bs{m}$, and $k$ the cell at the center of a circular kernel.  
+	\item [$\bs{m}_i^*$] the candidate cell most promising to bring the robot to the goal-door.	
 	\item [$\bs{u}_t$] control data at instant $t$, and it corresponds to the change of state in the time interval $(t - 1;t]$.
 	\item [$\bs{z}_t$] measurement made by the robot at instant $t$. The vector of all of them acquired at the same instant $t$ is $\bs{z}_t = (\bs{z}^1_t, \bs{z}^2_t, \cdots, \bs{z}^K_t)^T$.
-	\item [$c$] a cell in the 2D grid map $\bs{m}$.
-	\item [$K(\cdot)$] uniform circular kernel that computes the size of the free area covered by it.
+%	\item [$c$] a cell in the 2D grid map $\bs{m}$.
+	\item [$K(\cdot)$] circular kernel that computes the density of the free area. Its possible profiles are identified as uniform, $UK(\cdot)$, gaussian, $GK(\cdot)$, and inverted, $IK(\cdot)$.
 	\item [$d$] Manhattan distance between two cells.
 	\item [$r$] radius of $K(\cdot)$.
 	\item [$a$] height of $K(\cdot)$.
 	\item [$\mathbf{T}$] subset of cells that are within the area of the kernel at any moment.
-	\item [$c_K$] centre of the kernel $K(\cdot)$.
+%	\item [$c_K$] centre of the kernel $K(\cdot)$.
 	\item [$Q(\cdot)$] function that tests whether a cell is free.
 	\item [$\Psi(\cdot)$] function that computes the free space.
 	\item [$\Upsilon(\cdot)$] function that computes the map segmentation.
@@ -255,16 +256,15 @@ Agradeço ao \LaTeX\ por não ter vírus de macro\ldots
 	\item [$S(\cdot)$] function that returns the nearest segment of a cell.
 	\item [$L(\cdot)$] function that returns the list of door signs from a segment.
 	\item [$l$] door number.
-	\item [$\varphi(\cdot)$] probability distribution for a map cell, $c$, where the target object is in $\bs{m}$.
-	\item [$ \mathtt{S}(\cdot)$] semantic factor, the outcome of the combination of growing direction, $\varphi_g(\cdot)$, parity, $\varphi_p(\cdot)$, factors.
-	\item [$ \mathtt{G}(\cdot)$] geometric factor, the outcome of the combination of  robot orientation, $\varphi_r(\cdot)$, door orientation, $\varphi_o(\cdot)$, and distance, $\varphi_d(\cdot)$, factors.
-	\item [$\mathbf{C}$] set of candidate cells for finding the goal-door.
-	\item [${c}_*$] the candidate cell most promising to bring the robot to the goal-door.
+	\item [$\varphi(\cdot)$] probability distribution for a map cell, $\bs{m}_i$, where the target object is in $\bs{m}$.
+	\item [$ \mathtt{SF}(\cdot)$] semantic factor, the outcome of the combination of growing direction, $\varphi_g(\cdot)$, parity, $\varphi_p(\cdot)$, factors.
+	\item [$ \mathtt{GF}(\cdot)$] geometric factor, the outcome of the combination of  robot orientation, $\varphi_r(\cdot)$, door orientation, $\varphi_o(\cdot)$, and closeness, $\varphi_c(\cdot)$, factors.
+	\item [$\mathbf{C}$] vector of candidate cells, $\bs{C} = (\bs{m}_1, \bs{m}_2, \cdots, \bs{m}_M)^T$, for finding the goal-door.
 	\item [$\theta(\cdot)$] function that returns the angle of the growing direction factor.
-	\item [$L^<$, $L^>$] functions that counts the amount of door labels are smaller and larger than the goal-door, respectively. 
+	\item [$SL$, $BL$] functions that counts the amount of door labels are smaller and larger than the goal-door, respectively. 
 	\item [$\zeta(\cdot)$] function that measures the possibility of a segment to have door signs smaller or larger than the goal-door.
 	\item [$\gamma(\cdot)$] function that measures the difference angle between the increasing angle and the Voronoi angle.
-	\item [$L^{\neq}$, $L^=$] functions that counts the amount of door labels have different or equal parity than the goal-door, respectively. 
+	\item [$AL$, $DL$] functions that counts the amount of door labels have their parities alike or different than the goal-door, respectively. 
 	\item [$w_p$] threshold used to control the minimum amount of detected door signs.
 	\item [${H_{r}[\cdot]}$] the door orientation histogram.
 	\item [$\lambda_r$]	a threshold used to define how many most recent robot's orientations are saved.
@@ -272,9 +272,9 @@ Agradeço ao \LaTeX\ por não ter vírus de macro\ldots
 	\item [$d_{\ll}$] smallest distance between two cells.
 	\item [$\mathbf{H}$] 2D grid heat map.
 	\item [$\mathbf{O}$]	set of detected objects. 
-	\item [$o$] detected object, composed by its position within~\textbf{H}, its category, the hour it has been detected, and the robot's position during the detection, i.e., ${o} = (p^{o}, c^{o}, h^{o}, r^{o})$.
+	\item [$\bs{o}$] detected object, composed by its position within~\textbf{H}, its category, the hour it has been detected, and the robot's position during the detection, i.e., ${\bs{o}} = (p^{o}, c^{o}, h^{o}, r^{o})$.
 	\item [$W(\cdot, \cdot)$] function that measures the weight of the time difference.
-	\item [$K^i(\cdot)$] inversed uniform circular kernel that computes the size of the free area covered by it.
+%	\item [$K^i(\cdot)$] inversed uniform circular kernel that computes the size of the free area covered by it.
 
 \end{listofsymbols}
 
