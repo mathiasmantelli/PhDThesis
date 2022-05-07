@@ -67,72 +67,72 @@ Over $\bs{m}$, the Mapping module also computes the Voronoi diagram to have the 
      \centering
      \begin{subfigure}[b]{0.45\columnwidth}
          \centering
-         \includegraphics[width=\textwidth]{figs/1.jpeg}
+         \includegraphics[width=\textwidth]{figs/11.png}
          \caption{}
          \label{fig:2dmapSegmentation_a}
      \end{subfigure}~~
      \begin{subfigure}[b]{0.45\columnwidth}
          \centering
-         \includegraphics[width=\textwidth]{figs/2.jpeg}
+         \includegraphics[width=\textwidth]{figs/22.png}
          \caption{}
          \label{fig:2dmapSegmentation_b}
      \end{subfigure}
      \\[.5em]
      \begin{subfigure}[b]{0.45\columnwidth}
          \centering
-         \includegraphics[width=\textwidth]{figs/3.jpeg}
+         \includegraphics[width=\textwidth]{figs/33.png}
          \caption{}
          \label{fig:2dmapSegmentation_c}
      \end{subfigure}~~ 
      \begin{subfigure}[b]{0.45\columnwidth}
          \centering
-         \includegraphics[width=\textwidth]{figs/4.jpeg}
+         \includegraphics[width=\textwidth]{figs/44.png}
          \caption{}
          \label{fig:2dmapSegmentation_d}
      \end{subfigure}
-     \caption[Example of our mapping and segmentation modules.]{\small Example of our mapping and segmentation modules. (a) It shows the white area representing the free cells and the pink line the robot path, (b) the marked yellow areas representing the visited cells and the Voronoi through the green lines, (c) our KDE-based module segmenting the visited cells of (b) as two types, and (d) the segment identification using different colors.}
+     \caption[Example of our mapping and segmentation modules.]{\small Example of our mapping and segmentation modules. (a) It shows the robot, the white area representing free cells, the pink line as the robot path, and the five frontier points, (b) the marked yellow areas representing the visited cells and the Voronoi through the green lines, (c) the segmented map, with the visited cells from (b) segmented into two different segment types, and (d) the segment identification using different colors with four distinct segments indicated.}
      \label{fig:2dmapSegmentation}
  \end{figure}
 
 
 \subsection{Map Segmentation module}
 \label{subsec:mapsegmentation}
-The Segmentation and Mapping modules are executed simultaneously, aiming to split the free space of $\bs{m}$ into multiple regions according to the size of free areas. Every segmented region, called a segment $\mathbf{s}$, is associated to a group of cells $\bs{m}_i$ of the grid map $\bs{m}$. In $\bs{m}$, there might be different types of segments. Figure \ref{fig:2dmapSegmentation_c} illustrates the case in which the Segmentation module considers only two types. In this case, all green segments, or all the red ones, have a similar size of free space computed using the KDE. Besides their type, each segment is also singularly identified, such as $\mathbf{s}_j$ for the $j$-th segment in $\bs{m}$. Figure~\ref{fig:2dmapSegmentation_d} shows the segmented 2D map as if each segment was identified as one color, to highlight that they are identified diferently (even though there are only two segment types in such figure).  
+The Segmentation and Mapping modules are executed simultaneously, aiming to split the free space of $\bs{m}$ into multiple regions according to the size of free areas. Every segmented region, called a segment $\mathbf{s}$, is associated to a group of cells $\bs{m}_i$ of the grid map $\bs{m}$. In $\bs{m}$, there might be different types of segments. Figure \ref{fig:2dmapSegmentation_c} illustrates the case in which the Segmentation module considers only two types. In this case, all green segments, or all the red ones, have a similar size of free space computed using the Free-Space Density (FSD). Besides their type, each segment is also singularly identified, such as $\mathbf{s}_j$ for the $j$-th segment in $\bs{m}$. Figure~\ref{fig:2dmapSegmentation_d} shows the segmented 2D map as if each segment was identified as one color, to highlight that they are identified diferently (even though there are only two segment types in such figure).  
 
-For this purpose, the Segmentation module uses the KDE approach, which is explained in Chapter~\ref{chap:2_kde_grid_maps}~\cite{Maffei2015Using}. The $K(\cdot)$ is a uniform kernel that computes the size of the free area covered by it, defined as
+For this purpose, the Segmentation module uses the FSD estimation approach~\cite{Maffei2015Using}. FSD computes the estimation of a given region surrounding a cell $\bs{m}_0$ by computing a KDE, $\Psi(\bs{m}_0)$, which is explained in Chapter~\ref{chap:2_kde_grid_maps}, centered on $\bs{m}_0$ by
 \begin{equation}
-    K(d) = \begin{cases}
-a & \text{, if $d \leq r$} \\ 
+\label{eq:kerneldefinition}
+    \Psi(\bs{m}_0) = \frac{1}{|T|}\sum_{\bs{m}_i}^\mathbf{T} Q(\bs{m}_i, \bs{m}_0)UK(\left \| \bs{m}_i - \bs{m}_0 \right \|).
+\end{equation}
+where $K(\cdot)$ is a uniform circular kernel function that over all cells at distance $d \leq r$ from $\bs{m_0}$, defined as
+\begin{equation}
+    UK(d) = \begin{cases}
+1 & \text{, if $d \leq r$} \\ 
 0 & \text{, otherwise,} 
 \end{cases}
 \label{eq:uniformKernel}
 \end{equation}
-where $r$ is the radius and $a$ is the height of $K(\cdot)$, and $d$ is the Manhattan distance from the current cell being measured, $\bs{m}_i \in \mathbf{T}$, to the centre of the kernel, cell $\bs{m}_k \in \bs{m}$. $\mathbf{T} \in \bs{m}$ is a subset of cells that have been within the area of the kernel at any moment. For a given cell $\bs{m}_i$, $Q(\cdot)$ tests whether it is free, and it is defined as
+where $r$ is the radius and $d$ is the Manhattan distance from the current cell being measured, $\bs{m}_i \in \mathbf{T}$, to the centre of the kernel, cell $\bs{m}_0 \in \bs{m}$. $\mathbf{T} \in \bs{m}$ is a subset of cells that are at maximum $r$ farther from $\bs{m}_0$. The function $Q(\bs{m}_i,\bs{m}_0)$ tests whether a cell $\bs{m}_i$ is free, and it is defined as
 \begin{equation}
 \label{eq:freeCell}
-    Q(\bs{m}_i) = 
+    Q(\bs{m}_i, \bs{m}_0) = 
 \begin{cases}
-1 & \text{, if $\bs{m}_i$ is a free cell} \\ 
+1 & \text{, if $\bs{m}_i$ is a cell that belongs to the free space region connected to $\bs{m}_0$} \\ 
 0 & \text{, otherwise.} 
 \end{cases}
 \end{equation}
 
-Combining the previous function into the KDE approach, it is possible to calculate the kernel density. For a cell $\bs{m}_k$, its free space $\Psi(\cdot)$ is computed by
-\begin{equation}
-\label{eq:kerneldefinition}
-    \Psi(\bs{m}_k) = \frac{1}{|T|}\sum_{\bs{m}_i}^\mathbf{T} Q(\bs{m}_i)K(\left \| \bs{m}_i - \bs{m}_k \right \|).
-\end{equation}
+%Combining the previous function into the KDE approach, it is possible to calculate the kernel density. For a cell $\bs{m}_k$, its free space $\Psi(\cdot)$ is computed by
+
 %The algorithm, in practice, is working over $\mathbf{M}$. Therefore, $\Psi$ is defined as a sum instead of an integral. 
 
-According to Equation \ref{eq:freeCell}, when unknown cells are found within the kernel area, it is still possible to compute $\Psi(\cdot)$. Therefore, once unknown cells return zero from Equation \ref{eq:freeCell}, $\Psi(\cdot)$ can differentiate density measures when obstacles are surrounding $\bs{m}_i$ and decrease the size of the area computed by the kernel.
-
-Assuming that the Segmentation module considers different sizes of free areas, and given that Equation \ref{eq:kerneldefinition} calculates the size of free area surrounding a cell $\bs{m}_k \in \bs{m}$, $\Psi(\cdot)$ can be used in the Segmentation module as
+According to Equation \ref{eq:freeCell}, $\Psi(\cdot)$ returns different density estimations based on the number of obstacle or unknown cells are surrounding $\bs{m}_0$. Assuming that the Segmentation module considers different FSD, and given that Equation~\ref{eq:kerneldefinition} estimates the density of free area surrounding a cell $\bs{m}_0 \in \bs{m}$, $\Psi(\cdot)$ can be used in the Segmentation module as
 \begin{equation}
 \label{eq:corridorNotcorridor}
-    \Upsilon(\bs{m}_k) = \left \lfloor  \frac{\Psi(\bs{m}_k)}{\delta}  \right \rfloor
+    \Upsilon(\bs{m}_0) = \left \lfloor  \frac{\Psi(\bs{m}_0)}{\delta}  \right \rfloor
 \end{equation}
-where $\delta$ is a threshold that defines how many different sizes of free areas are considered by the segmentation function, $\Upsilon(\cdot)$. %For instance, if $0 \leq \Psi(\mathbf{c}_k) \leq 800$ and $\delta = 400$, Equation \ref{eq:corridorNotcorridor} segments free areas in only two different sizes, as illustrated by Figure \ref{fig:2dmapSegmentation}-(b). On the other hand, if $\delta = 200$, it segments in four sizes. 
-Therefore, a high $\delta$ means Equation \ref{eq:corridorNotcorridor} considers few different sizes, whereas a low $\delta$ is the opposite. 
+where $\delta$ is a threshold that defines how many different densities of free regions are considered by the segmentation function, $\Upsilon(\cdot)$. %For instance, if $0 \leq \Psi(\mathbf{c}_k) \leq 800$ and $\delta = 400$, Equation \ref{eq:corridorNotcorridor} segments free areas in only two different sizes, as illustrated by Figure \ref{fig:2dmapSegmentation}-(b). On the other hand, if $\delta = 200$, it segments in four sizes. 
+Therefore, a high $\delta$ means Equation \ref{eq:corridorNotcorridor} considers few different densities, whereas a low $\delta$ is the opposite. 
 
 A segment $\mathbf{s}$ represents a group of free and adjacent cells from $\bs{m}$ that have the same $\Upsilon(\cdot)$. Figure \ref{fig:2dmapSegmentation_d} demonstrates different segments, in which each one has a different color. For example, given $\bs{m}_0$ and $\bs{m}_1$ as two free and neighbouring cells in $\bs{m}$, and that $\Upsilon(\bs{m}_0) = \Upsilon(\bs{m}_1)$, then both belong to the same segment $\mathbf{s}_0$. Otherwise, a new segment $\mathbf{s}_1$ is created and $\bs{m}_1$ is associated to it. Thus, the segmentation of free adjacent cells from $\bs{m}$ is based on Equation \ref{eq:corridorNotcorridor}.
 
@@ -166,7 +166,7 @@ The semantic factor, $\mathtt{SF}(\bs{m}_i)$, combines the Growing Direction and
         \mathtt{SF}(\bs{m}_i) = \varphi_g(\bs{m}_i) \varphi_p(\bs{m}_i)
 \end{equation}
 
-Differently, the geometric factor, $\mathtt{GF}(\bs{m}_i)$, multiplies the Robot and the Door Orientation factors, $\varphi_r(\cdot)$, $\varphi_o(\cdot)$ respectively, by the Closeness one, $\varphi_c(\cdot)$, once the further they are, the less they matter. Then, the outcome of these multiplications is summed to the $\varphi_c(\cdot)$. The geometric factor is given by
+Differently, the geometric factor, $\mathtt{GF}(\bs{m}_i)$ combines the three other factors (Door Orientation, Robot Orientation, and Closeness), which are computed based on the geometry of the environment. During the search, it is important that the semantic planner makes the most optimal decisions, like when the robot is in a crossroads and there are multiple options of where to go. In situations like this, the Door Orientation factor aims to suggest which corridors are more likely to contain door signs. Based on the robot's orientation when it recognised the all past door signs, this factor estimates the best option. Similarly, the Robot Orientation factor estimates how the corridors of the environment are organised. It projects which corridors are more frequent to happend based on their orientation (e.g. vertical or horizontal). These two orientation-based factors are important to the semantic planner because they provide vital geometric information of the organisation of the building, e.g., in which corridors is expected to contain door signs. The goal of the last factor, Closeness, is to save the robot's batery. Among the segments the planner has to choose to take the robot, it measures how close each one is to the robot's current position. The geometric factor multiplies the Robot and the Door Orientation factors, $\varphi_r(\cdot)$, $\varphi_o(\cdot)$ respectively, by the Closeness one, $\varphi_c(\cdot)$. The idea is that the further the segment is, the less it matters. Then, the outcome of these multiplications is summed to the $\varphi_c(\cdot)$. The geometric factor is given by
 \begin{equation}
         \mathtt{GF}(\bs{m}_i) = \frac{\big(\varphi_o(\bs{m}_i) + \varphi_r(\bs{m}_i)\big)\varphi_c(\bs{m}_i) + \varphi_c(\bs{m}_i)}{3.0}
         \label{eq:geometricfactor}
@@ -235,10 +235,26 @@ For each $\bs{m}_i \in \mathbf{C}$, the Growing Direction factor first calculate
 
 Figure~\ref{fig:groingDirection} illustrates a partial map from the simulator used in this chapter, and it helps to explain the importance of the Growing Direction. The robot has started at the intersection of three corridors, and it has chosen the corridor number 3, i.e., the one on the right. According to the robot's direction in this corridor 3, the door sign sequence is considered increasing. Hence, in this current scenario, if the goal-door was 40, for instance, the Growing Direction factor would consider corridor 3 as promising. In contrast to this, the same corridor 3 would not be promising if the goal-door was 2, because the sequence only increases. It means that the distance from door sign 2 also increases as the robot continues in that corridor and the robot will not get closer to the goal-door. Besides these two examples, which help to understand how the Growing Direction factor behaves, a third case is important to mention. Imagine that the goal-door was 21. This factor would be high until the door sign 20 in corridor 3. However, after that its value would decrease as the robot goes on, and the door sign sequence increases. Hence, in terms of only the Growing Direction factor, the robot should continue its search in either corridor 1 or 2. 
 
-\begin{figure}[!h]
-\centering
-\includegraphics[width=1\textwidth]{figs/all_doorlabelsequences.jpeg}\\
-(a)\hspace{4.5cm}(b)\hspace{4.5cm}(c)
+\begin{figure}[h]
+     \centering
+     \begin{subfigure}[b]{0.7\columnwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figs/all_doorlabelsequences1.png}
+         \caption{}
+         \label{fig:all_doorlabelsequences1}
+     \end{subfigure}\\
+     \begin{subfigure}[b]{0.7\columnwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figs/all_doorlabelsequences2.png}
+         \caption{}
+         \label{fig:all_doorlabelsequences2}
+     \end{subfigure}\\
+     \begin{subfigure}[b]{0.7\columnwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figs/all_doorlabelsequences3.png}
+         \caption{}
+         \label{fig:all_doorlabelsequences3}
+     \end{subfigure}
 \caption[Partial 2D map of the environment to show the importance of Growing Direction factor]{Partial 2D map of the environment to show the importance of Growing Direction factor. All images represent the same part of the environment, but (a) shows the simple 2D grid map, (b) shows the visited region, and (c) shows the two segments of the map.}
 \label{fig:groingDirection}
 \end{figure}
@@ -277,12 +293,28 @@ where $0 \leq \varphi_p(\bs{m}_i) \leq 1$, and $w_p$ is a threshold used to cont
 \label{subsec:robotDoorOrientation}
 The robot moves through the environment, and it detects door signs as they are in its path. Usually, the position of doors in the environment follows a pattern that includes the possibility of existing doors only on horizontal or vertical corridors. Therefore, aiming to find the goal-door quickly, it is better to prioritize corridors in the same orientation than the already visited ones containing many doors. If the robot can prioritize the corridors in the same orientation, by consequence, its most common orientation will be an angle similar to these corridors.  
 
-The scenario in Figure~\ref{fig:orientationFactors} illustrates the importance of both Robot and Door Orientation factors. The robot starts at the intersection of corridors 1 and 2 and goes to the right. Then, it finds a second intersection between corridors 3 and 4, and has to decide which one it should take. At this moment, all the door signs were detected in the horizontal corridor, with robot's orientation mostly at \ang{0}. Besides, the robot has most of the time moved heading \ang{0}, as illustrated by the pink line in Figure~\ref{fig:orientationFactors}a. Hence, when the robot has to decide between corridor 3 or 4, both Robot and Door Orientation factors would guide the robot to corridor 3.  It is due to the orientation of corridor 3 ($\sim$\ang{360}), which has a smaller difference to \ang{0}~than to the orientation of corridor 4 ($\sim$\ang{270}).
+The scenario in Figure~\ref{fig:orientationFactors} illustrates the importance of both Robot and Door Orientation factors. The robot starts at the intersection of corridors 1 and 2 and goes to the right. Then, it finds a second intersection between corridors 3 and 4, and has to decide which one it should take. At this moment, all the door signs were detected in the horizontal corridor, with robot's orientation mostly at \ang{0}. Besides, the robot has most of the time moved heading \ang{0}, as illustrated by the pink line in Figure~\ref{fig:all_direction1}. Hence, when the robot has to decide between corridor 3 or 4, both Robot and Door Orientation factors would guide the robot to corridor 3.  It is due to the orientation of corridor 3 ($\sim$\ang{360}), which has a smaller difference to \ang{0}~than to the orientation of corridor 4 ($\sim$\ang{270}).
 
 \begin{figure}[!h]
-\centering
-\includegraphics[width=1\textwidth]{figs/all_direction.jpeg}\\
-(a)\hspace{4.5cm}(b)\hspace{4.5cm}(c)
+     \centering
+     \begin{subfigure}[b]{0.7\columnwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figs/all_direction1.png}
+         \caption{}
+         \label{fig:all_direction1}
+     \end{subfigure}\\
+     \begin{subfigure}[b]{0.7\columnwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figs/all_direction2.png}
+         \caption{}
+         \label{fig:all_direction2}
+     \end{subfigure}\\
+     \begin{subfigure}[b]{0.7\columnwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figs/all_direction3.png}
+         \caption{}
+         \label{fig:all_direction3}
+     \end{subfigure}
 \caption[Partial 2D map of the environment to explain the robot and door orientation factors]{Partial 2D map of the environment to show the importance of the Robot and Door Orientation factors. All images represent the same part of the environment, but (a) shows the simple 2D grid map, (b) shows the visited region, and (c) shows the five segments of the map.}
 \label{fig:orientationFactors}
 \end{figure}
@@ -304,12 +336,28 @@ where $H_r[\cdot]$ is the robot orientation histogram, and the Robot Orientation
 
 \subsection{Closeness factor}
 \label{subsubsec:distance}
-The fifth factor considered by our Semantic Planner is the distance between the robot cell $\bs{m}_r$ and each $\bs{m}_i \in \mathbf{C}$, i.e. the smallest number of Voronoi cells that connects each pair of $(\bs{m}_r, \bs{m}_i)$. Its goal is to guide the robot towards the closest $\bs{m}_i$, instead of spending battery and time going to the farthest one. Take the Figure~\ref{fig:distanceFactor} as an example, and suppose that the goal-door was 71. The robot has started at the intersection between corridors 1 and 2, and it has moved to the right corridor, Figure~\ref{fig:distanceFactor}a. After a few minutes, guided by the Robot and Door Orientation factor, it has chosen to continue the searching on corridor 3. Even though this corridor has the same parity as the goal-door (both are odd), the Growing factor indicates that corridor 3 is not promising. Therefore, the robot should continue the searching in one of the other three options, corridors 1, 2, or 4. The Closeness factor is responsible for indicating the closest option to the robot, given by the sum of green cells that connect the robot's current position and each red point near the numbers 1, 2, and 4, as shown in Figure~\ref{fig:distanceFactor}b. 
+The fifth factor considered by our Semantic Planner is the distance between the robot cell $\bs{m}_r$ and each $\bs{m}_i \in \mathbf{C}$, i.e. the smallest number of Voronoi cells that connects each pair of $(\bs{m}_r, \bs{m}_i)$. Its goal is to guide the robot towards the closest $\bs{m}_i$, instead of spending battery and time going to the farthest one. Take the Figure~\ref{fig:distanceFactor} as an example, and suppose that the goal-door was 71. The robot has started at the intersection between corridors 1 and 2, and it has moved to the right corridor, Figure~\ref{fig:all_distance1}. After a few minutes, guided by the Robot and Door Orientation factor, it has chosen to continue the searching on corridor 3. Even though this corridor has the same parity as the goal-door (both are odd), the Growing factor indicates that corridor 3 is not promising. Therefore, the robot should continue the searching in one of the other three options, corridors 1, 2, or 4. The Closeness factor is responsible for indicating the closest option to the robot, given by the sum of green cells that connect the robot's current position and each red point near the numbers 1, 2, and 4, as shown in Figure~\ref{fig:all_distance2}. 
 
 \begin{figure}[!h]
-\centering
-\includegraphics[width=1\textwidth]{figs/all_distance.jpeg}\\ 
-(a)\hspace{4.5cm}(b)\hspace{4.5cm}(c)
+     \centering
+     \begin{subfigure}[b]{0.7\columnwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figs/all_distance1.png}
+         \caption{}
+         \label{fig:all_distance1}
+     \end{subfigure}\\
+     \begin{subfigure}[b]{0.7\columnwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figs/all_distance2.png}
+         \caption{}
+         \label{fig:all_distance2}
+     \end{subfigure}\\
+     \begin{subfigure}[b]{0.7\columnwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figs/all_distance3.png}
+         \caption{}
+         \label{fig:all_distance3}
+     \end{subfigure}
 \caption[Partial 2D map of the environment to explain the distance factor.]{Partial 2D map of the environment to show the importance of the Closeness factor. All images represent the same part of the environment, but (a) shows the simple 2D grid map, (b) shows the visited region, and (c) shows the six segments of the map.}
 \label{fig:distanceFactor}
 \end{figure}
@@ -330,7 +378,7 @@ where $0 \leq \varphi_c(\bs{m}_i) \leq 1$, in which $\varphi_c(\bs{m}_i) = 1$ me
 \label{sec:experimentsResults}
 This section presents the experiments carried out in simulation and in the real world. Section \ref{subsec:experimentSetup} explains the software setup used in our simulated experiments, as well as the differences between the physical and simulated experiments. Section \ref{subsec:comparativeMethods} presents the results of the simulation phase, comparing the performance of our proposed semantic OS system and an entirely geometric OS system, called \textit{Greedy}. Four different maps were considered in this comparison. Section~\ref{subsec:humanresults} introduces a second type of comparison, in which these two initial OS systems, ours and the Greedy one, are compared to human participants teleoperating the robot in the simulation setup while performing the searching task. Finally, Section~\ref{subsec:realResults} demonstrates how our semantic OS system performs in the physical world, as well as the information about where this test was performed. 
 
-\textcolor{black}{It is also important to report the parameters used by our approach throughout all the experiments presented below, either in simulation or in the real world. Both $\textit{w}_g$ and $\textit{w}_p$ are set to eight. This means that in Equations \ref{eq:growingdirectionwg} and \ref{eq:paritywp}, respectively, the closer or higher to eight the number of detected door signs is, the more important the Growing Direction and Parity factors become. The number eight was chosen to balance the importance of the factors since a small number would make them important soon in the search process, and a large number would play the opposite role. In addition to these two parameters, the Robot and Door orientation factors also have some parameters. The size of the $H_d[\cdot]$ is four, which is the outcome of dividing the range of [\ang{0},\ang{179}] by \ang{45}. It means our approach considers the robot's orientations when detecting a door sign in groups of \ang{45} (e.g., if the robot detects a door sign and its orientation is \ang{42}, $H_d[0]$ is incremented). For the histogram $H_d[\cdot]$, we consider the past $6.000$ orientations, as this sensor reading is noisy. For the case of $H_r[\cdot]$, we assume a finer setup since the robot may be in a different orientation in the range of [\ang{0},\ang{359}]. The size of $H_r[\cdot]$ is 18, and we consider the past $600.000$ readings due to our high reading rate from the robot's orientation, the presence of noise in the data, and to reduce the impact of an unexpected turning that may happen.}
+It is also important to report the parameters used by our approach throughout all the experiments presented below, either in simulation or in the real world. Both $\textit{w}_g$ and $\textit{w}_p$ are set to eight. This means that in Equations \ref{eq:growingdirectionwg} and \ref{eq:paritywp}, respectively, the closer or higher to eight the number of detected door signs is, the more important the Growing Direction and Parity factors become. The number eight was chosen to balance the importance of the factors since a small number would make them important soon in the search process, and a large number would play the opposite role. In addition to these two parameters, the Robot and Door orientation factors also have some parameters. The size of the $H_d[\cdot]$ is four, which is the outcome of dividing the range of [\ang{0},\ang{179}] by \ang{45}. It means our approach considers the robot's orientations when detecting a door sign in groups of \ang{45} (e.g., if the robot detects a door sign and its orientation is \ang{42}, $H_d[0]$ is incremented). For the histogram $H_d[\cdot]$, we consider the past $6.000$ orientations, as this sensor reading is noisy. For the case of $H_r[\cdot]$, we assume a finer setup since the robot may be in a different orientation in the range of [\ang{0},\ang{359}]. The size of $H_r[\cdot]$ is 18, and we consider the past $600.000$ readings due to our high reading rate from the robot's orientation, the presence of noise in the data, and to reduce the impact of an unexpected turning that may happen.
 
 \subsection{Simulated Experiment Setup}
 \label{subsec:experimentSetup}
@@ -362,27 +410,27 @@ The first evaluation of our semantic OS system was made through the comparison w
 
 \begin{figure*}[t!]
 \centering
-     \begin{subfigure}[b]{0.4\columnwidth}
+     \begin{subfigure}[b]{0.47\columnwidth}
          \centering
          \includegraphics[width=\textwidth]{figs/map_normal_redcircles.jpeg}
          \caption{}
          \label{fig:realResults_a}
      \end{subfigure}~~
-     \begin{subfigure}[b]{0.4\columnwidth}
+     \begin{subfigure}[b]{0.47\columnwidth}
          \centering
          \includegraphics[width=\textwidth]{figs/map_inverse_redcircles.jpeg}
          \caption{}
          \label{fig:realResults_b}
      \end{subfigure}
      \\[.5em]
-     \begin{subfigure}[b]{0.43\columnwidth}
+     \begin{subfigure}[b]{0.52\columnwidth}
          \centering
          \includegraphics[width=\textwidth]{figs/hotel2_PAPER.jpeg}
          \vspace{2cm}         
          \caption{}
          \label{fig:realResults_c}
      \end{subfigure}~~ 
-     \begin{subfigure}[b]{0.37\columnwidth}
+     \begin{subfigure}[b]{0.46\columnwidth}
          \centering
          \includegraphics[width=\textwidth]{figs/KTH_CampusValhallava_finished.jpeg}
          \caption{}
@@ -550,39 +598,39 @@ When submitted to finding the goal-door 232 in a physical environment, the perfo
      \centering
      \begin{subfigure}[b]{0.45\columnwidth}
          \centering
-         \includegraphics[width=\textwidth]{figs/1_Real_Exploration_111.eps}
+         \includegraphics[width=\textwidth]{figs/1_Real_Exploration_11.png}
          \caption{}
          \label{fig:realResults_a}
      \end{subfigure}~~
      \begin{subfigure}[b]{0.45\columnwidth}
          \centering
-         \includegraphics[width=\textwidth]{figs/2_Real_Exploration_22.eps}
+         \includegraphics[width=\textwidth]{figs/2_Real_Exploration_22.png}
          \caption{}
          \label{fig:realResults_b}
      \end{subfigure}
      \\[.5em]
      \begin{subfigure}[b]{0.45\columnwidth}
          \centering
-         \includegraphics[width=\textwidth]{figs/3_Real_Exploration_33.eps}
+         \includegraphics[width=\textwidth]{figs/3_Real_Exploration_33.png}
          \caption{}
          \label{fig:realResults_c}
      \end{subfigure}~~ 
      \begin{subfigure}[b]{0.45\columnwidth}
          \centering
-         \includegraphics[width=\textwidth]{figs/4_Real_Exploration_44.eps}
+         \includegraphics[width=\textwidth]{figs/4_Real_Exploration_44.png}
          \caption{}
          \label{fig:realResults_d}
      \end{subfigure}
      \\[.5em]
      \begin{subfigure}[b]{0.45\columnwidth}
          \centering
-         \includegraphics[width=\textwidth]{figs/5_Real_Exploration_55.eps}
+         \includegraphics[width=\textwidth]{figs/5_Real_Exploration_55.png}
          \caption{}
          \label{fig:realResults_e}
      \end{subfigure}~~ 
      \begin{subfigure}[b]{0.45\columnwidth}
          \centering
-         \includegraphics[width=\textwidth]{figs/6_Real_Exploration_66.eps}
+         \includegraphics[width=\textwidth]{figs/6_Real_Exploration_66.png}
          \caption{}
          \label{fig:realResults_f}
      \end{subfigure}     
