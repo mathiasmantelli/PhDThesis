@@ -138,9 +138,9 @@ A segment $\mathbf{s}$ represents a group of free and adjacent cells from $\bs{m
 
 \subsection{Image Processing module}
 \label{subsec:imageprocessing}
-The last module that completes the basis of our semantic OS system is the Image Processing one. It aims to recognize the number of door signs that may be in an RGB image. The idea here is to use one well-known existing character recognition algorithm \cite{Zhang2013Text,Jung2004Text,Neumann2012Realtime}, since this is not the focus of this thesis, and any approach can be used. The chosen work is the one proposed by \cite{Neumann2012Realtime} due to its real-time recognition aspect and its robustness against noise, and low contrast of characters. Besides, it does not require any information or preparation beforehand. The work proposed by~\citet{Neumann2012Realtime} is presented in details in Chapter~\ref{subsec:chap2_ocr}.
+The last module that completes the basis of our NSOS system is the Image Processing. It aims to recognize the number of door signs that may be in an RGB image. The idea here is to use one existing character recognition algorithm \cite{Zhang2013Text,Jung2004Text,Neumann2012Realtime}, since this is not the focus of this thesis and any approach can be used. The chosen work is the one proposed by \citet{Neumann2012Realtime} due to its real-time recognition aspect and its robustness against noise, and low contrast of characters. Besides, it does not require any information or preparation beforehand. The work proposed by~\citet{Neumann2012Realtime} is presented in details in Chapter~\ref{subsec:chap2_ocr}.
 
-For a given image $\mathbf{I}$ that was captured by the robot at cell $\bs{m}_i$, e.g., Figures~\ref{fig:imageProcessing}a and~\ref{fig:imageProcessing}c, the image processing module returns a list $\mathbf{L}$ containing the recognized number from door signs. In the case of Figure~\ref{fig:imageProcessing}, $\mathbf{L}$ would contain only the number 228. Figure~\ref{fig:imageProcessing} also shows where the detected door signs are included into the 2D map $\bs{m}$. Figure~\ref{fig:imageProcessing}c shows an image taken by the camera on the robot's right side, and hence, the number is included in the map at the same side, as shown in Figure~\ref{fig:imageProcessing}b. Given that the goal of signing rooms is to provide a unique door sign for each of them, it is assumed that there are not two door signs in an environment identified by the same number. In regions where there are multiple door signs in sequence with the same number, our system will consider only one instance of all these door signs. After receiving $\mathbf{L}$, it must be merged with the numbers of the door signs from the segment of $\bs{m}_i$. For this process, it is important to define $S(\bs{m}_i)$ as a function that returns the segment in which the cell $\bs{m}_i$ is associated with. In addition, there is also the function $L(\cdot)$ that returns the list of door signs from a segment. Thus, each door number $l \in \mathbf{L}$ is included in the list of door signs from the segment of $\bs{m}_i$, $l~\cup~L\big(S(\bs{m}_i)\big)$. Besides, each $l$ has an occurrence number that increases by one every time the image processing algorithm recognizes it. If the robot revisits a place and recognises a $l$ that already exists in $L\big(S(\bs{m}_i)\big)$, then its occurrence number is summed to the one in $L\big(S(\bs{m}_i)\big)$. 
+For a given image $\mathbf{I}$ that was captured by the robot at cell $\bs{m}_r$, e.g., Figures~\ref{fig:imageProcessing}a and~\ref{fig:imageProcessing}c, this module returns a list, $\mathbf{L}$, containing the recognized number from door signs. In the case of Figure~\ref{fig:imageProcessing}, $\mathbf{L}$ would contain only the number 228. Figure~\ref{fig:imageProcessing} also shows where the detected door signs are included into the 2D map $\bs{m}$. Figure~\ref{fig:imageProcessing}c shows an image taken by the robot's right camera, and hence, the number is included in $\bs{m}$, at the right side of the robot's position, $\bs{m}_r$, as shown in Figure~\ref{fig:imageProcessing}b. Given that the goal of signing rooms is to provide a unique door sign for each of them, it is assumed that there are not two door signs in an environment identified by the same number. In regions where there are multiple door signs in sequence with the same number, our system will consider only one instance of all these door signs. After receiving $\mathbf{L}$, it must be merged with the numbers of the door signs from the segment that $\bs{m}_r$ is associated. For this process, it is important to define $S(\bs{m}_i)$ as a function that returns the segment in which the cell $\bs{m}_i$ is associated with. In addition, there is also the function $L(\cdot)$ that returns the list of door signs from a segment. Thus, each door number $l \in \mathbf{L}$ is included in the list of door signs from the segment of $\bs{m}_r$, $l~\cup~L\big(S(\bs{m}_r)\big)$. Besides, each $l$ has an occurrence number that increases by one every time the image processing algorithm recognizes it. If the robot revisits a place and recognises a $l$ that already exists in $L\big(S(\bs{m}_r)\big)$, then its occurrence number is summed to the one in $L\big(S(\bs{m}_r)\big)$. 
 
 \begin{figure}[!h]
 \centering
@@ -293,46 +293,66 @@ where $0 \leq \varphi_p(\bs{m}_i) \leq 1$, and $w_p$ is a threshold used to cont
 \label{subsec:robotDoorOrientation}
 The robot moves through the environment, and it detects door signs as they are in its path. Usually, the position of doors in the environment follows a pattern that includes the possibility of existing doors only on horizontal or vertical corridors. Therefore, aiming to find the goal-door quickly, it is better to prioritize corridors in the same orientation than the already visited ones containing many doors. If the robot can prioritize the corridors in the same orientation, by consequence, its most common orientation will be an angle similar to these corridors.  
 
-The scenario in Figure~\ref{fig:orientationFactors} illustrates the importance of both Robot and Door Orientation factors. The robot starts at the intersection of corridors 1 and 2 and goes to the right. Then, it finds a second intersection between corridors 3 and 4, and has to decide which one it should take. At this moment, all the door signs were detected in the horizontal corridor, with robot's orientation mostly at \ang{0}. Besides, the robot has most of the time moved heading \ang{0}, as illustrated by the pink line in Figure~\ref{fig:all_direction1}. Hence, when the robot has to decide between corridor 3 or 4, both Robot and Door Orientation factors would guide the robot to corridor 3.  It is due to the orientation of corridor 3 ($\sim$\ang{360}), which has a smaller difference to \ang{0}~than to the orientation of corridor 4 ($\sim$\ang{270}).
+To calculate the Door Orientation factor, it is considered a history of the $\lambda_d$ most recent robot's orientations when a door sign was detected.
+Figure~\ref{fig:all_orientation_robots} illustrates an example, in which the robot's poses from \textbf{c} to \textbf{k} would be saved. Based on this history, it is computed a histogram of such orientations. Each bin saves the percentage of each possible robot's orientation. Then, given the orientation of $\bs{m}_i$, $\theta_f(\bs{m}_i)$, it is consulted in the robot's orientation histogram the probability of finding a door sign considering such orientation, 
+\begin{equation}
+\label{eq:doorOrientation}
+    \varphi_o(\bs{m}_i) = H_d[\theta_f(\bs{m}_i)],
+\end{equation}
+where $H_d[\cdot]$ is the door orientation histogram, and the Door Orientation factor is $0 \leq \varphi_o(\bs{m}_i) \leq 1$, in which 1 is 100\% and 0 is 0\%. The number of bins in the histogram $H_d[\cdot]$ defines its level of sampling. A $H_d[\cdot]$ with 360 bins provides a finer estimation than a $H_d[\cdot]$ with 45 bins. In our work, $H_d[\cdot]$ has maximum 179 bins, because we are not interested in saving the direction. Hence, if the robot's orientation is \ang{0} or \ang{180}, both will point to the same index in $H_d[\cdot]$ because they are in the horizontal line (although pointing to opposite directions).
+
+The Door and Robot Orientation factors are very similar to each other. The difference between them is that the first one saves the robot's orientation only when a door sign has been recognized. Therefore, it prioritises the $\theta_f(\bs{m}_i)$ that has the highest $H_d[\theta_f(\bs{m}_i)]$, i.e. the orientation in which the robot has detected most of the door signs. On the other hand, the idea of the second one, the Robot Orientation factor, is to prioritize the $\theta_f(\bs{m}_i)$ that is most similar to the robot's orientation that is more frequent. It does not consider when the door signs were recognized. This factor makes the robot consider other paths that, despite not having door signs, may connect to other more promising ones.
+
+As the robot moves through the environment, its $\lambda_r$ most recent orientations are saved, as shown by the robot's pose, from \textbf{a} to \textbf{o}, in Figure~\ref{fig:all_orientation_robots}. They are used to compute a histogram. Each histogram bin represents an angle and its percentage in the history of the robot's orientation. Given the calculated histogram, the $\theta_f(\bs{m}_i)$ is used as an index to get the probability of that angle, as presented by
+\begin{equation}
+    \varphi_r(\bs{m}_i) = H_r[\theta_f(\bs{m}_i)],
+\end{equation}
+where $H_r[\cdot]$ is the robot orientation histogram, and the Robot Orientation factor is $0 \leq \varphi_r(\bs{m}_i) \leq 1$. When $\varphi_r(\bs{m}_i) = 1$, it means that $\theta_f(\bs{m}_i)$ is an orientation that is equal to the unique robot's orientation saved. On the other hand, when $\varphi_r(\bs{m}_i) = 0$, it means that $\theta_f(\bs{m}_i)$ is an orientation that the robot did not do. %Similar to $H_d[\cdot]$, $H_r[\cdot]$ also may have different numbers of bins. As the robot's orientation is measured in the interval [$\pi$, -$\pi$], in our work $H_r[\cdot]$ may have maximum only 179 bins (the $H_r[\cdot]$ does not represent the direction, and hence, \ang{0} and \ang{180} are stored at the same bin in $H_r[\cdot]$).
+
+The scenario in Figure~\ref{fig:all_orientation_angles} illustrates the importance of both Robot and Door Orientation factors. The robot starts at the pose \textbf{a} in Figure~\ref{fig:all_orientation_robots}, and it moves forward until pose \textbf{p}. Then, it finds a second intersection between points 3 and 4, and it has to decide which one it should take. At this moment, the robot has detected door signs from pose \textbf{c} to \textbf{k}, with robot's orientation mostly at \ang{0} as the reference shown in Figure~\ref{fig:all_orientation_robots}. Then, $H_d[0] = 100\%$. Besides, the robot has moved most of the time heading \ang{0}, as illustrated by the 12 poses (from \textbf{a} to \textbf{l}) in Figure~\ref{fig:all_orientation_robots}, against the four poses (from \textbf{m} to \textbf{p}) heading approximately \ang{270}. Then, $H_r[0] > H_r[270]$. Hence, when the semantic planner has to decide where to go, among the four available points, the 3 and 4 will have higher priorities due their proximity to the robot's pose. Besides, point 3 will have the highest priority among the two because of its orientation, which is \ang{180}. In this case, $H_d[0] = 100\%$ (recall that \ang{0} and \ang{180} point to the same index in $H_d[\cdot]$) while point 4 is $H_d[90] = 0\%$ (converting \ang{270} to the range [\ang{0},\ang{180}] of $H_d[\cdot]$). Therefore, $H_d[\cdot]$ suggests that point 3 is the most promising one considering the organisation of the environment that has been observed by the robot. 
 
 \begin{figure}[!h]
      \centering
      \begin{subfigure}[b]{0.7\columnwidth}
          \centering
-         \includegraphics[width=\textwidth]{figs/all_direction1.png}
+         \includegraphics[width=\textwidth]{figs/all_orientation_robots.png}
          \caption{}
-         \label{fig:all_direction1}
+         \label{fig:all_orientation_robots}
      \end{subfigure}\\
      \begin{subfigure}[b]{0.7\columnwidth}
          \centering
-         \includegraphics[width=\textwidth]{figs/all_direction2.png}
+         \includegraphics[width=\textwidth]{figs/all_orientation_points.png}
          \caption{}
-         \label{fig:all_direction2}
-     \end{subfigure}\\
-     \begin{subfigure}[b]{0.7\columnwidth}
-         \centering
-         \includegraphics[width=\textwidth]{figs/all_direction3.png}
-         \caption{}
-         \label{fig:all_direction3}
+         \label{fig:all_orientation_points}
      \end{subfigure}
-\caption[Partial 2D map of the environment to explain the robot and door orientation factors]{Partial 2D map of the environment to show the importance of the Robot and Door Orientation factors. All images represent the same part of the environment, but (a) shows the simple 2D grid map, (b) shows the visited region, and (c) shows the five segments of the map.}
-\label{fig:orientationFactors}
+\caption[Partial 2D map of the environment to explain the robot and door orientation factors]{Partial 2D map of the environment to show the importance of the Robot and Door Orientation factors. (a) shows the robot's orientation during its trajectory and (b) the orientation of each point.}
+\label{fig:all_orientation_angles}
 \end{figure}
 
-To calculate the Door Orientation factor, it is considered a history of the $\lambda_d$ most recent robot's orientations when a door sign was detected. Based on this history, it is computed a histogram of such orientations. Each bin saves the percentage of each possible robot's orientation. Then, given the orientation of $\bs{m}_i$, $\theta_f(\bs{m}_i)$, it is consulted in the robot's orientation histogram the probability of finding a door sign considering such orientation, 
-\begin{equation}
-\label{eq:doorOrientation}
-    \varphi_o(\bs{m}_i) = H_d[\theta_f(\bs{m}_i)],
-\end{equation}
-where $H_d[\cdot]$ is the door orientation histogram, and the Door Orientation factor is $0 \leq \varphi_o(\bs{m}_i) \leq 1$, in which 1 is 100\% and 0 is 0\%. 
 
-The Door and Robot Orientation factors are very similar to each other. The difference between them is that the first one saves the robot's orientation only when a door sign has been recognized. Therefore, it prioritises the $\theta_f(\bs{m}_i)$ that has the highest $H_d[\theta_f(\bs{m}_i)]$, i.e. the orientation in which the robot has detected most of the door signs. On the other hand, the idea of the second one, the Robot Orientation factor, is to prioritize the $\theta_f(\bs{m}_i)$ that is most similar to the robot's orientation that is more frequent. It does not consider when the door signs were recognized. This factor makes the robot consider other paths that, despite not having door signs, may connect to other more promising ones.
-
-As the robot moves through the environment, its $\lambda_r$ most recent orientations are saved. They are used to compute a histogram. Each histogram bin represents an angle and its percentage in the history of the robot's orientation. Given the calculated histogram, the $\theta_f(\bs{m}_i)$ is used as an index to get the probability of that angle, as presented by
-\begin{equation}
-    \varphi_r(\bs{m}_i) = H_r[\theta_f(\bs{m}_i)],
-\end{equation}
-where $H_r[\cdot]$ is the robot orientation histogram, and the Robot Orientation factor is $0 \leq \varphi_r(\bs{m}_i) \leq 1$. When $\varphi_r(\bs{m}_i) = 1$, it means that $\theta_f(\bs{m}_i)$ is an orientation that is equal to the unique robot's orientation saved. On the other hand, when $\varphi_r(\bs{m}_i) = 0$, it means that $\theta_f(\bs{m}_i)$ is an orientation that the robot did not do.
+%\begin{figure}[!h]
+%     \centering
+%     \begin{subfigure}[b]{0.7\columnwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{figs/all_direction1.png}
+%         \caption{}
+%         \label{fig:all_direction1}
+%     \end{subfigure}\\
+%     \begin{subfigure}[b]{0.7\columnwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{figs/all_direction2.png}
+%         \caption{}
+%         \label{fig:all_direction2}
+%     \end{subfigure}\\
+%     \begin{subfigure}[b]{0.7\columnwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{figs/all_direction3.png}
+%         \caption{}
+%         \label{fig:all_direction3}
+%     \end{subfigure}
+%\caption[Partial 2D map of the environment to explain the robot and door orientation factors]{Partial 2D map of the environment to show the importance of the Robot and Door Orientation factors. All images represent the same part of the environment, but (a) shows the simple 2D grid map, (b) shows the visited region, and (c) shows the five segments of the map.}
+%\label{fig:orientationFactors}
+%\end{figure}
 
 \subsection{Closeness factor}
 \label{subsubsec:distance}
@@ -378,7 +398,7 @@ where $0 \leq \varphi_c(\bs{m}_i) \leq 1$, in which $\varphi_c(\bs{m}_i) = 1$ me
 \label{sec:experimentsResults}
 This section presents the experiments carried out in simulation and in the real world. Section \ref{subsec:experimentSetup} explains the software setup used in our simulated experiments, as well as the differences between the physical and simulated experiments. Section \ref{subsec:comparativeMethods} presents the results of the simulation phase, comparing the performance of our proposed semantic OS system and an entirely geometric OS system, called \textit{Greedy}. Four different maps were considered in this comparison. Section~\ref{subsec:humanresults} introduces a second type of comparison, in which these two initial OS systems, ours and the Greedy one, are compared to human participants teleoperating the robot in the simulation setup while performing the searching task. Finally, Section~\ref{subsec:realResults} demonstrates how our semantic OS system performs in the physical world, as well as the information about where this test was performed. 
 
-It is also important to report the parameters used by our approach throughout all the experiments presented below, either in simulation or in the real world. Both $\textit{w}_g$ and $\textit{w}_p$ are set to eight. This means that in Equations \ref{eq:growingdirectionwg} and \ref{eq:paritywp}, respectively, the closer or higher to eight the number of detected door signs is, the more important the Growing Direction and Parity factors become. The number eight was chosen to balance the importance of the factors since a small number would make them important soon in the search process, and a large number would play the opposite role. In addition to these two parameters, the Robot and Door orientation factors also have some parameters. The size of the $H_d[\cdot]$ is four, which is the outcome of dividing the range of [\ang{0},\ang{179}] by \ang{45}. It means our approach considers the robot's orientations when detecting a door sign in groups of \ang{45} (e.g., if the robot detects a door sign and its orientation is \ang{42}, $H_d[0]$ is incremented). For the histogram $H_d[\cdot]$, we consider the past $6.000$ orientations, as this sensor reading is noisy. For the case of $H_r[\cdot]$, we assume a finer setup since the robot may be in a different orientation in the range of [\ang{0},\ang{359}]. The size of $H_r[\cdot]$ is 18, and we consider the past $600.000$ readings due to our high reading rate from the robot's orientation, the presence of noise in the data, and to reduce the impact of an unexpected turning that may happen.
+It is also important to report the parameters used by our approach throughout all the experiments presented below, either in simulation or in the real world. Both $\textit{w}_g$ and $\textit{w}_p$ are set to eight. This means that in Equations \ref{eq:growingdirectionwg} and \ref{eq:paritywp}, respectively, the closer or higher to eight the number of detected door signs is, the more important the Growing Direction and Parity factors become. The number eight was chosen to balance the importance of the factors since a small number would make them important soon in the search process, and a large number would play the opposite role. In addition to these two parameters, the Robot and Door orientation factors also have some parameters. The size of the $H_d[\cdot]$ is four, which is the outcome of dividing the range of [\ang{0},\ang{179}] by \ang{45}. It means our approach considers the robot's orientations when detecting a door sign in groups of \ang{45} (e.g., if the robot detects a door sign and its orientation is \ang{42}, $H_d[0]$ is incremented). For the histogram $H_d[\cdot]$, we consider the past $6.000$ orientations, as this sensor reading is noisy. For the case of $H_r[\cdot]$, we assume a finer setup since the robot may be in a different orientation in the range of [\ang{0},\ang{359}]. The size of $H_d[\cdot]$ is 18, and we consider the past $600.000$ readings due to our high reading rate from the robot's orientation, the presence of noise in the data, and to reduce the impact of an unexpected turning that may happen.
 
 \subsection{Simulated Experiment Setup}
 \label{subsec:experimentSetup}
