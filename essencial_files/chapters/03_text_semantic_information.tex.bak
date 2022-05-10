@@ -2,7 +2,7 @@
 \label{chap:3_text_os_system}
 %\section{Introduction}
 %\label{introduction}
-The first of our OS systems is called Number-based Semantic OS (NSOS), and its goal is to guide the robot through and unknown environment until it finds a target door sign. The novelty of our system is that is relies on detecting numbers from door signs to estimate the organisation of indoor environments, aiming to reduce the search cost. Besides, another aspect of NSOS is the combination of semantic and geometric clues to improve the search estimations. The former clue type is inferred from the numbers of several door signs found in the environment, and they are useful for understanding how the doors are organised. The latter type is computed from the geometry of the environment, e.g., the corridors and intersections, and it indicates which regions are more likely to finding doors. An example of using our NSOS is an autonomous courier robot that delivers packages to a specific room within a large-scale and unknown building, where a previous map is not available.
+The first of our contribution is called Number-based Semantic OS system (NSOS), and its goal is to guide the robot through and unknown environment until it finds a target door sign. The novelty of our system is that is relies on detecting numbers from door signs to estimate the organisation of indoor environments, aiming to reduce the search cost. Besides, another aspect of NSOS is the combination of semantic and geometric clues to improve the search estimations. The former clue type is inferred from the numbers of several door signs found in the environment, and they are useful for understanding how the doors are organised. The latter type is computed from the geometry of the environment, e.g., the corridors and intersections, and it indicates which regions are more likely to finding doors. An example of using our NSOS is an autonomous courier robot that delivers packages to a specific room within a large-scale and unknown building, where a previous map is not available.
 
 %Humans perform several activities that are part of their routine in everyday living spaces, in which searching for objects or regions of interest (ROI) is one of them. It demands visual recognition and high-level reason as essential skills.~\cite{Dicarlo2012How}. In such a real situation, it is not prudent to assume that the desired object or ROI is always present in the human's field of view since the beginning. The environment navigation is another example of daily activities for humans, and it must be as intelligent as possible, even in unknown places~\cite{Talbot2016Find}. In such cases, humans must actively navigate and search for target objects in the environment, relying on their visual recognition abilities~\cite{Dicarlo2012How,Sjoo2012Topological}. 
 
@@ -67,80 +67,80 @@ Over $\bs{m}$, the Mapping module also computes the Voronoi diagram to have the 
      \centering
      \begin{subfigure}[b]{0.45\columnwidth}
          \centering
-         \includegraphics[width=\textwidth]{figs/1.jpeg}
+         \includegraphics[width=\textwidth]{figs/11.png}
          \caption{}
          \label{fig:2dmapSegmentation_a}
      \end{subfigure}~~
      \begin{subfigure}[b]{0.45\columnwidth}
          \centering
-         \includegraphics[width=\textwidth]{figs/2.jpeg}
+         \includegraphics[width=\textwidth]{figs/22.png}
          \caption{}
          \label{fig:2dmapSegmentation_b}
      \end{subfigure}
      \\[.5em]
      \begin{subfigure}[b]{0.45\columnwidth}
          \centering
-         \includegraphics[width=\textwidth]{figs/3.jpeg}
+         \includegraphics[width=\textwidth]{figs/33.png}
          \caption{}
          \label{fig:2dmapSegmentation_c}
      \end{subfigure}~~ 
      \begin{subfigure}[b]{0.45\columnwidth}
          \centering
-         \includegraphics[width=\textwidth]{figs/4.jpeg}
+         \includegraphics[width=\textwidth]{figs/44.png}
          \caption{}
          \label{fig:2dmapSegmentation_d}
      \end{subfigure}
-     \caption[Example of our mapping and segmentation modules.]{\small Example of our mapping and segmentation modules. (a) It shows the white area representing the free cells and the pink line the robot path, (b) the marked yellow areas representing the visited cells and the Voronoi through the green lines, (c) our KDE-based module segmenting the visited cells of (b) as two types, and (d) the segment identification using different colors.}
+     \caption[Example of our mapping and segmentation modules.]{\small Example of our mapping and segmentation modules. (a) It shows the robot, the white area representing free cells, the pink line as the robot path, and the five frontier points, (b) the marked yellow areas representing the visited cells and the Voronoi through the green lines, (c) the segmented map, with the visited cells from (b) segmented into two different segment types, and (d) the segment identification using different colors with four distinct segments indicated.}
      \label{fig:2dmapSegmentation}
  \end{figure}
 
 
 \subsection{Map Segmentation module}
 \label{subsec:mapsegmentation}
-The Segmentation and Mapping modules are executed simultaneously, aiming to split the free space of $\bs{m}$ into multiple regions according to the size of free areas. Every segmented region, called a segment $\mathbf{s}$, is associated to a group of cells $\bs{m}_i$ of the grid map $\bs{m}$. In $\bs{m}$, there might be different types of segments. Figure \ref{fig:2dmapSegmentation_c} illustrates the case in which the Segmentation module considers only two types. In this case, all green segments, or all the red ones, have a similar size of free space computed using the KDE. Besides their type, each segment is also singularly identified, such as $\mathbf{s}_j$ for the $j$-th segment in $\bs{m}$. Figure~\ref{fig:2dmapSegmentation_d} shows the segmented 2D map as if each segment was identified as one color, to highlight that they are identified diferently (even though there are only two segment types in such figure).  
+The Segmentation and Mapping modules are executed simultaneously, aiming to split the free space of $\bs{m}$ into multiple regions according to the size of free areas. Every segmented region, called a segment $\mathbf{s}$, is associated to a group of cells $\bs{m}_i$ of the grid map $\bs{m}$. In $\bs{m}$, there might be different types of segments. Figure \ref{fig:2dmapSegmentation_c} illustrates the case in which the Segmentation module considers only two types. In this case, all green segments, or all the red ones, have a similar size of free space computed using the Free-Space Density (FSD). Besides their type, each segment is also singularly identified, such as $\mathbf{s}_j$ for the $j$-th segment in $\bs{m}$. Figure~\ref{fig:2dmapSegmentation_d} shows the segmented 2D map as if each segment was identified as one color, to highlight that they are identified diferently (even though there are only two segment types in such figure).  
 
-For this purpose, the Segmentation module uses the KDE approach, which is explained in Chapter~\ref{chap:2_kde_grid_maps}~\cite{Maffei2015Using}. The $K(\cdot)$ is a uniform kernel that computes the size of the free area covered by it, defined as
+For this purpose, the Segmentation module uses the FSD estimation approach~\cite{Maffei2015Using}. FSD computes the estimation of a given region surrounding a cell $\bs{m}_0$ by computing a KDE, $\Psi(\bs{m}_0)$, which is explained in Chapter~\ref{chap:2_kde_grid_maps}, centered on $\bs{m}_0$ by
 \begin{equation}
-    K(d) = \begin{cases}
-a & \text{, if $d \leq r$} \\ 
+\label{eq:kerneldefinition}
+    \Psi(\bs{m}_0) = \frac{1}{|T|}\sum_{\bs{m}_i}^\mathbf{T} Q(\bs{m}_i, \bs{m}_0)UK(\left \| \bs{m}_i - \bs{m}_0 \right \|).
+\end{equation}
+where $K(\cdot)$ is a uniform circular kernel function that over all cells at distance $d \leq r$ from $\bs{m_0}$, defined as
+\begin{equation}
+    UK(d) = \begin{cases}
+1 & \text{, if $d \leq r$} \\ 
 0 & \text{, otherwise,} 
 \end{cases}
 \label{eq:uniformKernel}
 \end{equation}
-where $r$ is the radius and $a$ is the height of $K(\cdot)$, and $d$ is the Manhattan distance from the current cell being measured, $\bs{m}_i \in \mathbf{T}$, to the centre of the kernel, cell $\bs{m}_k \in \bs{m}$. $\mathbf{T} \in \bs{m}$ is a subset of cells that have been within the area of the kernel at any moment. For a given cell $\bs{m}_i$, $Q(\cdot)$ tests whether it is free, and it is defined as
+where $r$ is the radius and $d$ is the Manhattan distance from the current cell being measured, $\bs{m}_i \in \mathbf{T}$, to the centre of the kernel, cell $\bs{m}_0 \in \bs{m}$. $\mathbf{T} \in \bs{m}$ is a subset of cells that are at maximum $r$ farther from $\bs{m}_0$. The function $Q(\bs{m}_i,\bs{m}_0)$ tests whether a cell $\bs{m}_i$ is free, and it is defined as
 \begin{equation}
 \label{eq:freeCell}
-    Q(\bs{m}_i) = 
+    Q(\bs{m}_i, \bs{m}_0) = 
 \begin{cases}
-1 & \text{, if $\bs{m}_i$ is a free cell} \\ 
+1 & \text{, if $\bs{m}_i$ is a cell that belongs to the free space region connected to $\bs{m}_0$} \\ 
 0 & \text{, otherwise.} 
 \end{cases}
 \end{equation}
 
-Combining the previous function into the KDE approach, it is possible to calculate the kernel density. For a cell $\bs{m}_k$, its free space $\Psi(\cdot)$ is computed by
-\begin{equation}
-\label{eq:kerneldefinition}
-    \Psi(\bs{m}_k) = \frac{1}{|T|}\sum_{\bs{m}_i}^\mathbf{T} Q(\bs{m}_i)K(\left \| \bs{m}_i - \bs{m}_k \right \|).
-\end{equation}
+%Combining the previous function into the KDE approach, it is possible to calculate the kernel density. For a cell $\bs{m}_k$, its free space $\Psi(\cdot)$ is computed by
+
 %The algorithm, in practice, is working over $\mathbf{M}$. Therefore, $\Psi$ is defined as a sum instead of an integral. 
 
-According to Equation \ref{eq:freeCell}, when unknown cells are found within the kernel area, it is still possible to compute $\Psi(\cdot)$. Therefore, once unknown cells return zero from Equation \ref{eq:freeCell}, $\Psi(\cdot)$ can differentiate density measures when obstacles are surrounding $\bs{m}_i$ and decrease the size of the area computed by the kernel.
-
-Assuming that the Segmentation module considers different sizes of free areas, and given that Equation \ref{eq:kerneldefinition} calculates the size of free area surrounding a cell $\bs{m}_k \in \bs{m}$, $\Psi(\cdot)$ can be used in the Segmentation module as
+According to Equation \ref{eq:freeCell}, $\Psi(\cdot)$ returns different density estimations based on the number of obstacle or unknown cells are surrounding $\bs{m}_0$. Assuming that the Segmentation module considers different FSD, and given that Equation~\ref{eq:kerneldefinition} estimates the density of free area surrounding a cell $\bs{m}_0 \in \bs{m}$, $\Psi(\cdot)$ can be used in the Segmentation module as
 \begin{equation}
 \label{eq:corridorNotcorridor}
-    \Upsilon(\bs{m}_k) = \left \lfloor  \frac{\Psi(\bs{m}_k)}{\delta}  \right \rfloor
+    \Upsilon(\bs{m}_0) = \left \lfloor  \frac{\Psi(\bs{m}_0)}{\delta}  \right \rfloor
 \end{equation}
-where $\delta$ is a threshold that defines how many different sizes of free areas are considered by the segmentation function, $\Upsilon(\cdot)$. %For instance, if $0 \leq \Psi(\mathbf{c}_k) \leq 800$ and $\delta = 400$, Equation \ref{eq:corridorNotcorridor} segments free areas in only two different sizes, as illustrated by Figure \ref{fig:2dmapSegmentation}-(b). On the other hand, if $\delta = 200$, it segments in four sizes. 
-Therefore, a high $\delta$ means Equation \ref{eq:corridorNotcorridor} considers few different sizes, whereas a low $\delta$ is the opposite. 
+where $\delta$ is a threshold that defines how many different densities of free regions are considered by the segmentation function, $\Upsilon(\cdot)$. %For instance, if $0 \leq \Psi(\mathbf{c}_k) \leq 800$ and $\delta = 400$, Equation \ref{eq:corridorNotcorridor} segments free areas in only two different sizes, as illustrated by Figure \ref{fig:2dmapSegmentation}-(b). On the other hand, if $\delta = 200$, it segments in four sizes. 
+Therefore, a high $\delta$ means Equation \ref{eq:corridorNotcorridor} considers few different densities, whereas a low $\delta$ is the opposite. 
 
 A segment $\mathbf{s}$ represents a group of free and adjacent cells from $\bs{m}$ that have the same $\Upsilon(\cdot)$. Figure \ref{fig:2dmapSegmentation_d} demonstrates different segments, in which each one has a different color. For example, given $\bs{m}_0$ and $\bs{m}_1$ as two free and neighbouring cells in $\bs{m}$, and that $\Upsilon(\bs{m}_0) = \Upsilon(\bs{m}_1)$, then both belong to the same segment $\mathbf{s}_0$. Otherwise, a new segment $\mathbf{s}_1$ is created and $\bs{m}_1$ is associated to it. Thus, the segmentation of free adjacent cells from $\bs{m}$ is based on Equation \ref{eq:corridorNotcorridor}.
 
 \subsection{Image Processing module}
 \label{subsec:imageprocessing}
-The last module that completes the basis of our semantic OS system is the Image Processing one. It aims to recognize the number of door signs that may be in an RGB image. The idea here is to use one well-known existing character recognition algorithm \cite{Zhang2013Text,Jung2004Text,Neumann2012Realtime}, since this is not the focus of this thesis, and any approach can be used. The chosen work is the one proposed by \cite{Neumann2012Realtime} due to its real-time recognition aspect and its robustness against noise, and low contrast of characters. Besides, it does not require any information or preparation beforehand. The work proposed by~\citet{Neumann2012Realtime} is presented in details in Chapter~\ref{subsec:chap2_ocr}.
+The last module that completes the basis of our NSOS system is the Image Processing. It aims to recognize the number of door signs that may be in an RGB image. The idea here is to use one existing character recognition algorithm \cite{Zhang2013Text,Jung2004Text,Neumann2012Realtime}, since this is not the focus of this thesis and any approach can be used. The chosen work is the one proposed by \citet{Neumann2012Realtime} due to its real-time recognition aspect and its robustness against noise, and low contrast of characters. Besides, it does not require any information or preparation beforehand. The work proposed by~\citet{Neumann2012Realtime} is presented in details in Chapter~\ref{subsec:chap2_ocr}.
 
-For a given image $\mathbf{I}$ that was captured by the robot at cell $\bs{m}_i$, e.g., Figures~\ref{fig:imageProcessing}a and~\ref{fig:imageProcessing}c, the image processing module returns a list $\mathbf{L}$ containing the recognized number from door signs. In the case of Figure~\ref{fig:imageProcessing}, $\mathbf{L}$ would contain only the number 228. Figure~\ref{fig:imageProcessing} also shows where the detected door signs are included into the 2D map $\bs{m}$. Figure~\ref{fig:imageProcessing}c shows an image taken by the camera on the robot's right side, and hence, the number is included in the map at the same side, as shown in Figure~\ref{fig:imageProcessing}b. Given that the goal of signing rooms is to provide a unique door sign for each of them, it is assumed that there are not two door signs in an environment identified by the same number. In regions where there are multiple door signs in sequence with the same number, our system will consider only one instance of all these door signs. After receiving $\mathbf{L}$, it must be merged with the numbers of the door signs from the segment of $\bs{m}_i$. For this process, it is important to define $S(\bs{m}_i)$ as a function that returns the segment in which the cell $\bs{m}_i$ is associated with. In addition, there is also the function $L(\cdot)$ that returns the list of door signs from a segment. Thus, each door number $l \in \mathbf{L}$ is included in the list of door signs from the segment of $\bs{m}_i$, $l~\cup~L\big(S(\bs{m}_i)\big)$. Besides, each $l$ has an occurrence number that increases by one every time the image processing algorithm recognizes it. If the robot revisits a place and recognises a $l$ that already exists in $L\big(S(\bs{m}_i)\big)$, then its occurrence number is summed to the one in $L\big(S(\bs{m}_i)\big)$. 
+For a given image $\mathbf{I}$ that was captured by the robot at cell $\bs{m}_r$, e.g., Figures~\ref{fig:imageProcessing}a and~\ref{fig:imageProcessing}c, this module returns a list, $\mathbf{L}$, containing the recognized number from door signs. In the case of Figure~\ref{fig:imageProcessing}, $\mathbf{L}$ would contain only the number 228. Figure~\ref{fig:imageProcessing} also shows where the detected door signs are included into the 2D map $\bs{m}$. Figure~\ref{fig:imageProcessing}c shows an image taken by the robot's right camera, and hence, the number is included in $\bs{m}$, at the right side of the robot's position, $\bs{m}_r$, as shown in Figure~\ref{fig:imageProcessing}b. Given that the goal of signing rooms is to provide a unique door sign for each of them, it is assumed that there are not two door signs in an environment identified by the same number. In regions where there are multiple door signs in sequence with the same number, our system will consider only one instance of all these door signs. After receiving $\mathbf{L}$, it must be merged with the numbers of the door signs from the segment that $\bs{m}_r$ is associated. For this process, it is important to define $S(\bs{m}_i)$ as a function that returns the segment in which the cell $\bs{m}_i$ is associated with. In addition, there is also the function $L(\cdot)$ that returns the list of door signs from a segment. Thus, each door number $l \in \mathbf{L}$ is included in the list of door signs from the segment of $\bs{m}_r$, $l~\cup~L\big(S(\bs{m}_r)\big)$. Besides, each $l$ has an occurrence number that increases by one every time the image processing algorithm recognizes it. If the robot revisits a place and recognises a $l$ that already exists in $L\big(S(\bs{m}_r)\big)$, then its occurrence number is summed to the one in $L\big(S(\bs{m}_r)\big)$. 
 
 \begin{figure}[!h]
 \centering
@@ -166,7 +166,7 @@ The semantic factor, $\mathtt{SF}(\bs{m}_i)$, combines the Growing Direction and
         \mathtt{SF}(\bs{m}_i) = \varphi_g(\bs{m}_i) \varphi_p(\bs{m}_i)
 \end{equation}
 
-Differently, the geometric factor, $\mathtt{GF}(\bs{m}_i)$, multiplies the Robot and the Door Orientation factors, $\varphi_r(\cdot)$, $\varphi_o(\cdot)$ respectively, by the Closeness one, $\varphi_c(\cdot)$, once the further they are, the less they matter. Then, the outcome of these multiplications is summed to the $\varphi_c(\cdot)$. The geometric factor is given by
+Differently, the geometric factor, $\mathtt{GF}(\bs{m}_i)$ combines the three other factors (Door Orientation, Robot Orientation, and Closeness), which are computed based on the geometry of the environment. During the search, it is important that the semantic planner makes the most optimal decisions, like when the robot is in a crossroads and there are multiple options of where to go. In situations like this, the Door Orientation factor aims to suggest which corridors are more likely to contain door signs. Based on the robot's orientation when it recognised the all past door signs, this factor estimates the best option. Similarly, the Robot Orientation factor estimates how the corridors of the environment are organised. It projects which corridors are more frequent to happend based on their orientation (e.g. vertical or horizontal). These two orientation-based factors are important to the semantic planner because they provide vital geometric information of the organisation of the building, e.g., in which corridors is expected to contain door signs. The goal of the last factor, Closeness, is to save the robot's batery. Among the segments the planner has to choose to take the robot, it measures how close each one is to the robot's current position. The geometric factor multiplies the Robot and the Door Orientation factors, $\varphi_r(\cdot)$, $\varphi_o(\cdot)$ respectively, by the Closeness one, $\varphi_c(\cdot)$. The idea is that the further the segment is, the less it matters. Then, the outcome of these multiplications is summed to the $\varphi_c(\cdot)$. The geometric factor is given by
 \begin{equation}
         \mathtt{GF}(\bs{m}_i) = \frac{\big(\varphi_o(\bs{m}_i) + \varphi_r(\bs{m}_i)\big)\varphi_c(\bs{m}_i) + \varphi_c(\bs{m}_i)}{3.0}
         \label{eq:geometricfactor}
@@ -235,10 +235,26 @@ For each $\bs{m}_i \in \mathbf{C}$, the Growing Direction factor first calculate
 
 Figure~\ref{fig:groingDirection} illustrates a partial map from the simulator used in this chapter, and it helps to explain the importance of the Growing Direction. The robot has started at the intersection of three corridors, and it has chosen the corridor number 3, i.e., the one on the right. According to the robot's direction in this corridor 3, the door sign sequence is considered increasing. Hence, in this current scenario, if the goal-door was 40, for instance, the Growing Direction factor would consider corridor 3 as promising. In contrast to this, the same corridor 3 would not be promising if the goal-door was 2, because the sequence only increases. It means that the distance from door sign 2 also increases as the robot continues in that corridor and the robot will not get closer to the goal-door. Besides these two examples, which help to understand how the Growing Direction factor behaves, a third case is important to mention. Imagine that the goal-door was 21. This factor would be high until the door sign 20 in corridor 3. However, after that its value would decrease as the robot goes on, and the door sign sequence increases. Hence, in terms of only the Growing Direction factor, the robot should continue its search in either corridor 1 or 2. 
 
-\begin{figure}[!h]
-\centering
-\includegraphics[width=1\textwidth]{figs/all_doorlabelsequences.jpeg}\\
-(a)\hspace{4.5cm}(b)\hspace{4.5cm}(c)
+\begin{figure}[h]
+     \centering
+     \begin{subfigure}[b]{0.7\columnwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figs/all_doorlabelsequences1.png}
+         \caption{}
+         \label{fig:all_doorlabelsequences1}
+     \end{subfigure}\\
+     \begin{subfigure}[b]{0.7\columnwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figs/all_doorlabelsequences2.png}
+         \caption{}
+         \label{fig:all_doorlabelsequences2}
+     \end{subfigure}\\
+     \begin{subfigure}[b]{0.7\columnwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figs/all_doorlabelsequences3.png}
+         \caption{}
+         \label{fig:all_doorlabelsequences3}
+     \end{subfigure}
 \caption[Partial 2D map of the environment to show the importance of Growing Direction factor]{Partial 2D map of the environment to show the importance of Growing Direction factor. All images represent the same part of the environment, but (a) shows the simple 2D grid map, (b) shows the visited region, and (c) shows the two segments of the map.}
 \label{fig:groingDirection}
 \end{figure}
@@ -277,39 +293,91 @@ where $0 \leq \varphi_p(\bs{m}_i) \leq 1$, and $w_p$ is a threshold used to cont
 \label{subsec:robotDoorOrientation}
 The robot moves through the environment, and it detects door signs as they are in its path. Usually, the position of doors in the environment follows a pattern that includes the possibility of existing doors only on horizontal or vertical corridors. Therefore, aiming to find the goal-door quickly, it is better to prioritize corridors in the same orientation than the already visited ones containing many doors. If the robot can prioritize the corridors in the same orientation, by consequence, its most common orientation will be an angle similar to these corridors.  
 
-The scenario in Figure~\ref{fig:orientationFactors} illustrates the importance of both Robot and Door Orientation factors. The robot starts at the intersection of corridors 1 and 2 and goes to the right. Then, it finds a second intersection between corridors 3 and 4, and has to decide which one it should take. At this moment, all the door signs were detected in the horizontal corridor, with robot's orientation mostly at \ang{0}. Besides, the robot has most of the time moved heading \ang{0}, as illustrated by the pink line in Figure~\ref{fig:orientationFactors}a. Hence, when the robot has to decide between corridor 3 or 4, both Robot and Door Orientation factors would guide the robot to corridor 3.  It is due to the orientation of corridor 3 ($\sim$\ang{360}), which has a smaller difference to \ang{0}~than to the orientation of corridor 4 ($\sim$\ang{270}).
-
-\begin{figure}[!h]
-\centering
-\includegraphics[width=1\textwidth]{figs/all_direction.jpeg}\\
-(a)\hspace{4.5cm}(b)\hspace{4.5cm}(c)
-\caption[Partial 2D map of the environment to explain the robot and door orientation factors]{Partial 2D map of the environment to show the importance of the Robot and Door Orientation factors. All images represent the same part of the environment, but (a) shows the simple 2D grid map, (b) shows the visited region, and (c) shows the five segments of the map.}
-\label{fig:orientationFactors}
-\end{figure}
-
-To calculate the Door Orientation factor, it is considered a history of the $\lambda_d$ most recent robot's orientations when a door sign was detected. Based on this history, it is computed a histogram of such orientations. Each bin saves the percentage of each possible robot's orientation. Then, given the orientation of $\bs{m}_i$, $\theta_f(\bs{m}_i)$, it is consulted in the robot's orientation histogram the probability of finding a door sign considering such orientation, 
+To calculate the Door Orientation factor, it is considered a history of the $\lambda_d$ most recent robot's orientations when a door sign was detected.
+Figure~\ref{fig:all_orientation_robots} illustrates an example, in which the robot's poses from \textbf{c} to \textbf{k} would be saved. Based on this history, it is computed a histogram of such orientations. Each bin saves the percentage of each possible robot's orientation. Then, given the orientation of $\bs{m}_i$, $\theta_f(\bs{m}_i)$, it is consulted in the robot's orientation histogram the probability of finding a door sign considering such orientation, 
 \begin{equation}
 \label{eq:doorOrientation}
     \varphi_o(\bs{m}_i) = H_d[\theta_f(\bs{m}_i)],
 \end{equation}
-where $H_d[\cdot]$ is the door orientation histogram, and the Door Orientation factor is $0 \leq \varphi_o(\bs{m}_i) \leq 1$, in which 1 is 100\% and 0 is 0\%. 
+where $H_d[\cdot]$ is the door orientation histogram, and the Door Orientation factor is $0 \leq \varphi_o(\bs{m}_i) \leq 1$, in which 1 is 100\% and 0 is 0\%. The number of bins in the histogram $H_d[\cdot]$ defines its level of sampling. A $H_d[\cdot]$ with 360 bins provides a finer estimation than a $H_d[\cdot]$ with 45 bins. In our work, $H_d[\cdot]$ has maximum 179 bins, because we are not interested in saving the direction. Hence, if the robot's orientation is \ang{0} or \ang{180}, both will point to the same index in $H_d[\cdot]$ because they are in the horizontal line (although pointing to opposite directions).
 
 The Door and Robot Orientation factors are very similar to each other. The difference between them is that the first one saves the robot's orientation only when a door sign has been recognized. Therefore, it prioritises the $\theta_f(\bs{m}_i)$ that has the highest $H_d[\theta_f(\bs{m}_i)]$, i.e. the orientation in which the robot has detected most of the door signs. On the other hand, the idea of the second one, the Robot Orientation factor, is to prioritize the $\theta_f(\bs{m}_i)$ that is most similar to the robot's orientation that is more frequent. It does not consider when the door signs were recognized. This factor makes the robot consider other paths that, despite not having door signs, may connect to other more promising ones.
 
-As the robot moves through the environment, its $\lambda_r$ most recent orientations are saved. They are used to compute a histogram. Each histogram bin represents an angle and its percentage in the history of the robot's orientation. Given the calculated histogram, the $\theta_f(\bs{m}_i)$ is used as an index to get the probability of that angle, as presented by
+As the robot moves through the environment, its $\lambda_r$ most recent orientations are saved, as shown by the robot's pose, from \textbf{a} to \textbf{o}, in Figure~\ref{fig:all_orientation_robots}. They are used to compute a histogram. Each histogram bin represents an angle and its percentage in the history of the robot's orientation. Given the calculated histogram, the $\theta_f(\bs{m}_i)$ is used as an index to get the probability of that angle, as presented by
 \begin{equation}
     \varphi_r(\bs{m}_i) = H_r[\theta_f(\bs{m}_i)],
 \end{equation}
-where $H_r[\cdot]$ is the robot orientation histogram, and the Robot Orientation factor is $0 \leq \varphi_r(\bs{m}_i) \leq 1$. When $\varphi_r(\bs{m}_i) = 1$, it means that $\theta_f(\bs{m}_i)$ is an orientation that is equal to the unique robot's orientation saved. On the other hand, when $\varphi_r(\bs{m}_i) = 0$, it means that $\theta_f(\bs{m}_i)$ is an orientation that the robot did not do.
+where $H_r[\cdot]$ is the robot orientation histogram, and the Robot Orientation factor is $0 \leq \varphi_r(\bs{m}_i) \leq 1$. When $\varphi_r(\bs{m}_i) = 1$, it means that $\theta_f(\bs{m}_i)$ is an orientation that is equal to the unique robot's orientation saved. On the other hand, when $\varphi_r(\bs{m}_i) = 0$, it means that $\theta_f(\bs{m}_i)$ is an orientation that the robot did not do. %Similar to $H_d[\cdot]$, $H_r[\cdot]$ also may have different numbers of bins. As the robot's orientation is measured in the interval [$\pi$, -$\pi$], in our work $H_r[\cdot]$ may have maximum only 179 bins (the $H_r[\cdot]$ does not represent the direction, and hence, \ang{0} and \ang{180} are stored at the same bin in $H_r[\cdot]$).
+
+The scenario in Figure~\ref{fig:all_orientation_angles} illustrates the importance of both Robot and Door Orientation factors. The robot starts at the pose \textbf{a} in Figure~\ref{fig:all_orientation_robots}, and it moves forward until pose \textbf{p}. Then, it finds a second intersection between points 3 and 4, and it has to decide which one it should take. At this moment, the robot has detected door signs from pose \textbf{c} to \textbf{k}, with robot's orientation mostly at \ang{0} as the reference shown in Figure~\ref{fig:all_orientation_robots}. Then, $H_d[0] = 100\%$. Besides, the robot has moved most of the time heading \ang{0}, as illustrated by the 12 poses (from \textbf{a} to \textbf{l}) in Figure~\ref{fig:all_orientation_robots}, against the four poses (from \textbf{m} to \textbf{p}) heading approximately \ang{270}. Then, $H_r[0] > H_r[270]$. Hence, when the semantic planner has to decide where to go, among the four available points, the 3 and 4 will have higher priorities due their proximity to the robot's pose. Besides, point 3 will have the highest priority among the two because of its orientation, which is \ang{180}. In this case, $H_d[0] = 100\%$ (recall that \ang{0} and \ang{180} point to the same index in $H_d[\cdot]$) while point 4 is $H_d[90] = 0\%$ (converting \ang{270} to the range [\ang{0},\ang{180}] of $H_d[\cdot]$). Therefore, $H_d[\cdot]$ suggests that point 3 is the most promising one considering the organisation of the environment that has been observed by the robot. 
+
+\begin{figure}[!h]
+     \centering
+     \begin{subfigure}[b]{0.7\columnwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figs/all_orientation_robots.png}
+         \caption{}
+         \label{fig:all_orientation_robots}
+     \end{subfigure}\\
+     \begin{subfigure}[b]{0.7\columnwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figs/all_orientation_points.png}
+         \caption{}
+         \label{fig:all_orientation_points}
+     \end{subfigure}
+\caption[Partial 2D map of the environment to explain the robot and door orientation factors]{Partial 2D map of the environment to show the importance of the Robot and Door Orientation factors. (a) shows the robot's orientation during its trajectory and (b) the orientation of each point.}
+\label{fig:all_orientation_angles}
+\end{figure}
+
+
+%\begin{figure}[!h]
+%     \centering
+%     \begin{subfigure}[b]{0.7\columnwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{figs/all_direction1.png}
+%         \caption{}
+%         \label{fig:all_direction1}
+%     \end{subfigure}\\
+%     \begin{subfigure}[b]{0.7\columnwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{figs/all_direction2.png}
+%         \caption{}
+%         \label{fig:all_direction2}
+%     \end{subfigure}\\
+%     \begin{subfigure}[b]{0.7\columnwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{figs/all_direction3.png}
+%         \caption{}
+%         \label{fig:all_direction3}
+%     \end{subfigure}
+%\caption[Partial 2D map of the environment to explain the robot and door orientation factors]{Partial 2D map of the environment to show the importance of the Robot and Door Orientation factors. All images represent the same part of the environment, but (a) shows the simple 2D grid map, (b) shows the visited region, and (c) shows the five segments of the map.}
+%\label{fig:orientationFactors}
+%\end{figure}
 
 \subsection{Closeness factor}
 \label{subsubsec:distance}
-The fifth factor considered by our Semantic Planner is the distance between the robot cell $\bs{m}_r$ and each $\bs{m}_i \in \mathbf{C}$, i.e. the smallest number of Voronoi cells that connects each pair of $(\bs{m}_r, \bs{m}_i)$. Its goal is to guide the robot towards the closest $\bs{m}_i$, instead of spending battery and time going to the farthest one. Take the Figure~\ref{fig:distanceFactor} as an example, and suppose that the goal-door was 71. The robot has started at the intersection between corridors 1 and 2, and it has moved to the right corridor, Figure~\ref{fig:distanceFactor}a. After a few minutes, guided by the Robot and Door Orientation factor, it has chosen to continue the searching on corridor 3. Even though this corridor has the same parity as the goal-door (both are odd), the Growing factor indicates that corridor 3 is not promising. Therefore, the robot should continue the searching in one of the other three options, corridors 1, 2, or 4. The Closeness factor is responsible for indicating the closest option to the robot, given by the sum of green cells that connect the robot's current position and each red point near the numbers 1, 2, and 4, as shown in Figure~\ref{fig:distanceFactor}b. 
+The fifth factor considered by our Semantic Planner is the distance between the robot cell $\bs{m}_r$ and each $\bs{m}_i \in \mathbf{C}$, i.e. the smallest number of Voronoi cells that connects each pair of $(\bs{m}_r, \bs{m}_i)$. Its goal is to guide the robot towards the closest $\bs{m}_i$, instead of spending battery and time going to the farthest one. Take the Figure~\ref{fig:distanceFactor} as an example, and suppose that the goal-door was 71. The robot has started at the intersection between corridors 1 and 2, and it has moved to the right corridor, Figure~\ref{fig:all_distance1}. After a few minutes, guided by the Robot and Door Orientation factor, it has chosen to continue the searching on corridor 3. Even though this corridor has the same parity as the goal-door (both are odd), the Growing factor indicates that corridor 3 is not promising. Therefore, the robot should continue the searching in one of the other three options, corridors 1, 2, or 4. The Closeness factor is responsible for indicating the closest option to the robot, given by the sum of green cells that connect the robot's current position and each red point near the numbers 1, 2, and 4, as shown in Figure~\ref{fig:all_distance2}. 
 
 \begin{figure}[!h]
-\centering
-\includegraphics[width=1\textwidth]{figs/all_distance.jpeg}\\ 
-(a)\hspace{4.5cm}(b)\hspace{4.5cm}(c)
+     \centering
+     \begin{subfigure}[b]{0.7\columnwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figs/all_distance1.png}
+         \caption{}
+         \label{fig:all_distance1}
+     \end{subfigure}\\
+     \begin{subfigure}[b]{0.7\columnwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figs/all_distance2.png}
+         \caption{}
+         \label{fig:all_distance2}
+     \end{subfigure}\\
+     \begin{subfigure}[b]{0.7\columnwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figs/all_distance3.png}
+         \caption{}
+         \label{fig:all_distance3}
+     \end{subfigure}
 \caption[Partial 2D map of the environment to explain the distance factor.]{Partial 2D map of the environment to show the importance of the Closeness factor. All images represent the same part of the environment, but (a) shows the simple 2D grid map, (b) shows the visited region, and (c) shows the six segments of the map.}
 \label{fig:distanceFactor}
 \end{figure}
@@ -330,7 +398,7 @@ where $0 \leq \varphi_c(\bs{m}_i) \leq 1$, in which $\varphi_c(\bs{m}_i) = 1$ me
 \label{sec:experimentsResults}
 This section presents the experiments carried out in simulation and in the real world. Section \ref{subsec:experimentSetup} explains the software setup used in our simulated experiments, as well as the differences between the physical and simulated experiments. Section \ref{subsec:comparativeMethods} presents the results of the simulation phase, comparing the performance of our proposed semantic OS system and an entirely geometric OS system, called \textit{Greedy}. Four different maps were considered in this comparison. Section~\ref{subsec:humanresults} introduces a second type of comparison, in which these two initial OS systems, ours and the Greedy one, are compared to human participants teleoperating the robot in the simulation setup while performing the searching task. Finally, Section~\ref{subsec:realResults} demonstrates how our semantic OS system performs in the physical world, as well as the information about where this test was performed. 
 
-\textcolor{black}{It is also important to report the parameters used by our approach throughout all the experiments presented below, either in simulation or in the real world. Both $\textit{w}_g$ and $\textit{w}_p$ are set to eight. This means that in Equations \ref{eq:growingdirectionwg} and \ref{eq:paritywp}, respectively, the closer or higher to eight the number of detected door signs is, the more important the Growing Direction and Parity factors become. The number eight was chosen to balance the importance of the factors since a small number would make them important soon in the search process, and a large number would play the opposite role. In addition to these two parameters, the Robot and Door orientation factors also have some parameters. The size of the $H_d[\cdot]$ is four, which is the outcome of dividing the range of [\ang{0},\ang{179}] by \ang{45}. It means our approach considers the robot's orientations when detecting a door sign in groups of \ang{45} (e.g., if the robot detects a door sign and its orientation is \ang{42}, $H_d[0]$ is incremented). For the histogram $H_d[\cdot]$, we consider the past $6.000$ orientations, as this sensor reading is noisy. For the case of $H_r[\cdot]$, we assume a finer setup since the robot may be in a different orientation in the range of [\ang{0},\ang{359}]. The size of $H_r[\cdot]$ is 18, and we consider the past $600.000$ readings due to our high reading rate from the robot's orientation, the presence of noise in the data, and to reduce the impact of an unexpected turning that may happen.}
+It is also important to report the parameters used by our approach throughout all the experiments presented below, either in simulation or in the real world. Both $\textit{w}_g$ and $\textit{w}_p$ are set to eight. This means that in Equations \ref{eq:growingdirectionwg} and \ref{eq:paritywp}, respectively, the closer or higher to eight the number of detected door signs is, the more important the Growing Direction and Parity factors become. The number eight was chosen to balance the importance of the factors since a small number would make them important soon in the search process, and a large number would play the opposite role. In addition to these two parameters, the Robot and Door orientation factors also have some parameters. The size of the $H_d[\cdot]$ is four, which is the outcome of dividing the range of [\ang{0},\ang{179}] by \ang{45}. It means our approach considers the robot's orientations when detecting a door sign in groups of \ang{45} (e.g., if the robot detects a door sign and its orientation is \ang{42}, $H_d[0]$ is incremented). For the histogram $H_d[\cdot]$, we consider the past $6.000$ orientations, as this sensor reading is noisy. For the case of $H_r[\cdot]$, we assume a finer setup since the robot may be in a different orientation in the range of [\ang{0},\ang{359}]. The size of $H_d[\cdot]$ is 18, and we consider the past $600.000$ readings due to our high reading rate from the robot's orientation, the presence of noise in the data, and to reduce the impact of an unexpected turning that may happen.
 
 \subsection{Simulated Experiment Setup}
 \label{subsec:experimentSetup}
@@ -362,27 +430,27 @@ The first evaluation of our semantic OS system was made through the comparison w
 
 \begin{figure*}[t!]
 \centering
-     \begin{subfigure}[b]{0.4\columnwidth}
+     \begin{subfigure}[b]{0.47\columnwidth}
          \centering
          \includegraphics[width=\textwidth]{figs/map_normal_redcircles.jpeg}
          \caption{}
          \label{fig:realResults_a}
      \end{subfigure}~~
-     \begin{subfigure}[b]{0.4\columnwidth}
+     \begin{subfigure}[b]{0.47\columnwidth}
          \centering
          \includegraphics[width=\textwidth]{figs/map_inverse_redcircles.jpeg}
          \caption{}
          \label{fig:realResults_b}
      \end{subfigure}
      \\[.5em]
-     \begin{subfigure}[b]{0.43\columnwidth}
+     \begin{subfigure}[b]{0.52\columnwidth}
          \centering
          \includegraphics[width=\textwidth]{figs/hotel2_PAPER.jpeg}
          \vspace{2cm}         
          \caption{}
          \label{fig:realResults_c}
      \end{subfigure}~~ 
-     \begin{subfigure}[b]{0.37\columnwidth}
+     \begin{subfigure}[b]{0.47\columnwidth}
          \centering
          \includegraphics[width=\textwidth]{figs/KTH_CampusValhallava_finished.jpeg}
          \caption{}
@@ -397,7 +465,7 @@ The first evaluation of our semantic OS system was made through the comparison w
 %(c) \\
 %\includegraphics[width=.43\textwidth]{figs/KTH_CampusValhallava_finished.jpeg}\\
 %(d)
-\caption[The four maps used in the simulated experiments.]{The four maps used in the simulated experiments. The green squares represent the position where the robot has started, and the red circles highlight the goal-doors. The maps are \textit{Normal} (a), \textit{Inverse} (b), \textit{Hotel} (c), and \textit{KTH} (d).} 
+\caption[The four maps used in the simulated experiments.]{The four maps used in the simulated experiments. The green squares represent the position where the robot has started, and the red circles highlight the goal-doors. The maps are (a)~\textit{Normal}, (b)~\textit{Inverse}, (c)~\textit{Hotel}, and (d)~\textit{KTH}.} 
 \label{fig:simulationMaps}
 \end{figure*}
 
@@ -405,11 +473,11 @@ The first evaluation of our semantic OS system was made through the comparison w
 \label{subsec:comparativeMethods}
 Our semantic OS system was early introduced in Sections~\ref{sec:method} and~\ref{sec:semanticPlanner}. In this section, the performance of our system is compared to the Greedy OS system, which has the exact same basis presented in Section~\ref{sec:method}, but its planner is composed only by the geometric factor from Equation~\ref{eq:finalEquation}, i.e. the Equation~\ref{eq:finalEquation} with $\alpha = 0$. Therefore, both systems only differ by their planners, which are responsible for the reasoning over their inputs. In summary, the Greedy OS system searches for goal-doors based on the nearest frontier, whereas our semantic OS system considers environmental information to make smarter decisions.
 
-Both systems were tested using the same simulation setup. For the four scenarios, the door signs shown in Table~\ref{tab:scenarios} were set as goal-doors. They were chosen to cover as many corridors of the scenarios as possible. For each goal-door, both systems repeated their respective tests ten times to have statistically significant results. For every test, it was measured, in meters, the distance traveled by the robot from its initial position until it finds the goal-door. Since we consider the distance traveled as the search cost, the shorter the distance, the better is the system's performance. Even though we have not measured and presented the search cost in terms of time, it is important to mention that both our Semantic OS system and the Greedy one moved the robot with the same velocity, and at no moment the robot stood still, wasting time. Therefore, the system that provides the shortest distance traveled is also the fastest. Throughout the tests presented in this Section, in Equation~\ref{eq:uniformKernel} the $a = 1$, and in Equation~\ref{eq:corridorNotcorridor} the $\delta = 2$. These parameters mean that each cell of the 2D grid map $\bs{m}$ had value 1 to compute the kernel area and that the environment had only two types, a corridor and not a corridor, as shown in Figure~\ref{fig:2dmapSegmentation_c}. %\alpha
+Both systems were tested using the same simulation setup. For the four scenarios, the door signs shown in Table~\ref{tab:scenarios} were set as goal-doors. They were chosen to cover as many corridors of the scenarios as possible. For each goal-door, both systems repeated their respective tests ten times to have statistically significant results. For every test, it was measured, in meters, the distance traveled by the robot from its initial position until it finds the goal-door. Since we consider the distance traveled as the search cost, the shorter the distance, the better is the system's performance. Even though we have not measured and presented the search cost in terms of time, it is important to mention that both our Semantic OS system and the Greedy one moved the robot with the same velocity, and at no moment the robot stood still, wasting time. Therefore, the system that provides the shortest distance traveled is also the fastest. Throughout the tests presented in this Section, in Equation~\ref{eq:corridorNotcorridor} we used $\delta = 2$. These parameters mean that each cell of the 2D grid map $\bs{m}$ had value 1 to compute the kernel area and that the environment had only two types, a corridor and not a corridor, as shown in Figure~\ref{fig:2dmapSegmentation_c}. %\alpha
 
 Tables~\ref{fig:resultsNormal},~\ref{fig:resultsInverse},~\ref{fig:resultsHotel}, and~\ref{fig:resultsKTH} present the results of both approaches in each scenario in the simulated tests, \textit{Normal}, \textit{Inverse}, \textit{Hotel}, and \textit{KTH}, respectively. The colorful columns represent the results achieved by tested OS systems. The first one is the result from the Greedy OS system, and the other three are from our semantic one. In the greedy column, the value $0,00\%$ means that $\alpha = 0\%$ in Equation~\ref{eq:finalEquation}, and hence, the planner becomes fully geometric. In the semantic columns, the same value ranges from $80,0\%$ until $100,0\%$, which means that the $\alpha$ ranges from $0.80$ until $1.0$ in Equation~\ref{eq:finalEquation}. Hence, it changes the importance of the semantic factor in that equation. Our semantic OS system was also tested with $\alpha$ ranging from $0.5$ up to $0.7$, but the results were not significant and not presented in the tables. The rows of the tables correspond to the two OS systems' performance while searching for each goal-door. Each system's performance for every goal-door was evaluated in terms of Median, Average, Standard Deviation, Minimum, and Maximum distances. It is also important to highlight that within a row, the color of the table cells ranges from green to red. Green represents the cell with the smallest value within a row, and red represents the largest one.
 
-The results in Table~\ref{fig:resultsNormal}, \textit{Normal} scenario, and in Table~\ref{fig:resultsInverse}, \textit{Inverse} scenario, are similar in terms of which column has the most red cells. In both cases, our semantic OS system has a better performance than the greedy one,  as most of the green cells are within the semantic columns, mainly when $\alpha = 80.0\%$ and $\alpha = 90.0\%$. It is also important to highlight that when there are green values within the greedy column, such as the case of door sign $54$ in Table~\ref{fig:resultsNormal}, its standard deviation is the highest one for that door sign, $41.59 m$. In Table~\ref{fig:resultsInverse}, the lowest average and minimum of the goal-door 111 are from the greedy OS system, but again its standard deviation is the highest. It means that the ten tests of the greedy system vary considerably, as shown by the difference between its minimum and maximum values, $61.86 m$ and $278.57 m$, respectively. On the other hand, the standard deviation within the semantic columns is lower, meaning our semantic system has a constant behavior during the searches. It guides the robot through a similar path through the ten runs, making the same decisions in different executions.
+The results in Table~\ref{fig:resultsNormal}, \textit{Normal} scenario, and in Table~\ref{fig:resultsInverse}, \textit{Inverse} scenario, are similar in terms of which column has the most red cells. In both cases, our semantic OS system has a better performance than the greedy one,  as most of the green cells are within the semantic columns, mainly when $\alpha = 80.0\%$ and $\alpha = 90.0\%$. In one of its ten runs for such map, the Greedy OS system made a sequence of decisions that lead it to find the goal-door 54 with the shortest distance ($82.19 m$ in Table~\ref{fig:resultsNormal}). This low result probably contributed to the lowest average being achieved by it, $121.94 m$ in the same table. However, it is also important to highlight that the standard deviation for the Greedy system for that goal-door is the highest one, $41.59 m$. It means that it did not find the goal-door 54 traveling the shortest distance every test. A similar behaviour for this system can be seen when searching for goal-door 124, in which the minimum traveled distance was achieved by the Greedy system, $49.56 m$, but not for all the ten runs (its standard deviation for this goal-door was the highest, $70.09 m$). In Table~\ref{fig:resultsInverse}, the lowest average and minimum of the goal-door 111 are from the greedy OS system, but again its standard deviation is the highest. It means that the ten tests of the greedy system vary considerably, as shown by the difference between its minimum and maximum values, $61.86 m$ and $278.57 m$, respectively. On the other hand, the standard deviation within the semantic columns is lower, meaning our semantic system has a constant behavior during the searches. It guides the robot through a similar path through the ten runs, making the same decisions in different executions. 
 
 \begin{table}[h!]
 \centering
@@ -425,7 +493,9 @@ The results in Table~\ref{fig:resultsNormal}, \textit{Normal} scenario, and in T
   \includegraphics[width=.5\textwidth]{figs/RESULTS_INVERSE_NEW_T.eps}
 \end{table}
 
-The Tables~\ref{fig:resultsHotel} and~\ref{fig:resultsKTH}, from \textit{Hotel} and \textit{KTH}, present similar results than the two previous tables in terms of the greedy column having most of the red cells. Besides, in general our semantic OS system has better performance than the greedy system. Both tables also show that our proposed system is efficient in real scenarios. Even though the $\alpha = 100.00\%$ column within the semantic columns presents satisfying results, mainly in Table~\ref{fig:resultsKTH}, a purely semantic OS system is not always suitable for searching tasks. The geometric factor in Equation~\ref{eq:finalEquation} is essential and, combined with the semantic factor, may provide the best results.  
+The Tables~\ref{fig:resultsHotel} and~\ref{fig:resultsKTH}, from \textit{Hotel} and \textit{KTH}, present similar results than the two previous tables in terms of the greedy column having most of the red cells. Besides, in general our semantic OS system has better performance than the greedy system. Both tables also show that our proposed system is efficient in real scenarios. Even though the $\alpha = 100.00\%$ column within the semantic columns presents satisfying results, mainly in Table~\ref{fig:resultsKTH}, a purely semantic OS system is not always suitable for searching tasks. The geometric factor in Equation~\ref{eq:finalEquation} is essential and, combined with the semantic factor, may provide the best results. The Greedy system presents good results for all the four goal-doors in terms of minimum traveled distance. Again, as this system does not repeat the sequence of decisions during the search over all the ten runs, sometimes it is lucky enough to make a sequence of decisions that lead it to find the goal-door very quickly. The lack of consistency and robustness on Greedy's performance is demonstrated by its poor results in terms of standard deviation, being the worst of all for all goal-doors in Tables~\ref{fig:resultsHotel} and~\ref{fig:resultsKTH}.
+
+The two OS systems were submitted to search for one goal-door at time in all scenarios. Hence, we do not have their results as if they were searching for a sequence of goal-doors in a single attempt. However, we can speculate their performance in such conditions, based on their results in the previous experiments. In general, our NSOS system finds the first goal quickly, demonstrating that it is efficient even when there is no information available \textit{a priori} about the environment. After finding the first goal-door, NSOS will be partially aware about the organisation of the environment, which may gives it advantages for more accurate searches in the future. On the other hand, in most of the cases the Greedy system wastes too much robot's resources to find the first goal-door of the sequence. In this process, it may discover the next goal-doors of the sequence and improve its performance a little bit. However, if the next goal-doors were not found during the first search, its performance will be even worse. 
 
 \begin{table}[!h]
 \centering
@@ -496,7 +566,7 @@ Instead of using the planner of either our semantic or the greedy OS system to f
 
 In this experiment, only two scenarios were tested, with one goal-door each. The \textit{Normal} and \textit{Inverse} scenarios are certainly similar, differing only on how the door signs are set. Given that humans can memorize what they have seen, it would be unfair to submit them to two similar scenarios or more than one goal-door for the same scenario. Therefore, the \textit{Normal} and \textit{Hotel} scenarios were used for this experiment. Door signs picked as the target were $111$ to \textit{Normal} and $148$ to \textit{Hotel}. They are not too far nor too near to the robot's initial position. Hence, the participants would have to explore at least a small part of both scenarios. Throughout all the tests, the only data considered for the evaluation was the traveled distance. 
 
-Table~\ref{fig:humansresults} summarises the analysis of the ten participants. Besides, it also compares human performance to the greedy and our semantic OS systems. As in the previous tables, green represents the cells with the smallest value within a row, and red represents the largest. As can be seen, our semantic OS system presents a smaller average in both goal-doors, with the lowest indices compared to the others. The minimum traveled distance for the goal-door $148$ is the only case where our semantic system does not have the lowest result.
+Table~\ref{fig:humansresults} summarises the analysis of the ten participants. Besides, it also compares human performance to the greedy and our NSOS systems. As in the previous tables, green represents the cells with the smallest value within a row, and red represents the largest. As can be seen, our system presents a smaller average in both goal-doors, with the lowest indices compared to the others. The minimum traveled distance for the goal-door $148$ is the only case where our NSOS system does not have the lowest result. For that result, one of the ten participants made some decisions that luckly brought them to the goal-door with the shortest traveled distance. The second shortest traveled distance from the participants was $199.23 m$, a result two times larger than the $75.23 m$ shown in Table~\ref{fig:humansresults}, and which supports that humans do not have a regular and efficient performance.
 
 \begin{table}[!h]
 \centering
@@ -505,9 +575,9 @@ Table~\ref{fig:humansresults} summarises the analysis of the ten participants. B
   \includegraphics[width=.5\textwidth]{figs/RESULTS_HUMANS_NEW_T.eps}
 \end{table}
 
-In contrast to our semantic system, the greedy one presents the worst results for both goal-doors, which confirms the previous results presented in Section~\ref{subsec:comparativeMethods}. It is also worth mentioning the high standard deviation of the Human participants for both goal-doors. It shows that they had different performances, in which some had a shorter traveled distance than others. Some participants did not follow the same pattern when making decisions throughout their run. At the end of their participation, they have reported that they did not have an efficient strategy to search for the target, and no reasoning was made based on the door signs. One specific participant forgot, for only a few seconds, the goal-door for the \textit{Hotel} scenario. The participant mentioned that as soon as they realized they could not remember de number, they look at a paper that was in front of them to read it again. The human eye has a wider field of view than the two cameras used in this experiment setup, which provides advantages to humans when searching for objects in an unknown environment. However, as previously mentioned, the goal of this experiment was to test humans as the decision-maker within the system. That is why they used the same software setup for the experiments as our semantic and greedy systems. 
+In contrast to our NSOS system, the greedy one presents the worst results for both goal-doors, which confirms the previous results presented in Section~\ref{subsec:comparativeMethods}. It is also worth mentioning the high standard deviation of the Human participants for both goal-doors. It shows that they had different performances, in which some had a shorter traveled distance than others. Some participants did not follow the same pattern when making decisions throughout their run. At the end of their participation, they have reported that they did not have an efficient strategy to search for the target, and no reasoning was made based on the door signs. One specific participant forgot, for only a few seconds, the goal-door for the \textit{Hotel} scenario. The participant mentioned that as soon as they realized they could not remember de number, they look at a paper that was in front of them to read it again. The human eye has a wider field of view than the two cameras used in this experiment setup, which provides advantages to humans when searching for objects in an unknown environment. However, as previously mentioned, the goal of this experiment was to test humans as the decision-maker within the system. That is why they used the same software setup for the experiments as our semantic and greedy systems. 
 
-Besides the lowest average from our OS system, there are other advantages compared to the participants' results. Its slight standard deviation means that the same decisions were taken in all the ten test repetitions, which suggests that our system does not make random decisions. On the other hand, the same does not apply to the Human results, which means that every participant had their particular reasoning to make a decision. Hence, some participants are more efficient than others in this OS task. Besides the standard deviation, another advantage is that robots are not disturbed by other moving objects or agents in the environment. Therefore, they can focus on the task, and they do not forget the goal-door, what happened to one of the humans during the experiment. 
+Besides the lowest average from the NSOS system, there are other advantages compared to the participants' results. Its slight standard deviation means that the same decisions were taken in all the ten test repetitions, which suggests that our system does not make random decisions. On the other hand, the same does not apply to the Human results, which means that every participant had their particular reasoning to make a decision. Hence, some participants are more efficient than others in this OS task. Besides the standard deviation, another advantage is that robots are not disturbed by other moving objects or agents in the environment. Therefore, they can focus on the task, and they do not forget the goal-door, what happened to one of the humans during the experiment. 
 
 
 \subsection{Experiments Using a Physical Robot}
@@ -550,39 +620,39 @@ When submitted to finding the goal-door 232 in a physical environment, the perfo
      \centering
      \begin{subfigure}[b]{0.45\columnwidth}
          \centering
-         \includegraphics[width=\textwidth]{figs/1_Real_Exploration_111.eps}
+         \includegraphics[width=\textwidth]{figs/1_Real_Exploration_11.png}
          \caption{}
          \label{fig:realResults_a}
      \end{subfigure}~~
      \begin{subfigure}[b]{0.45\columnwidth}
          \centering
-         \includegraphics[width=\textwidth]{figs/2_Real_Exploration_22.eps}
+         \includegraphics[width=\textwidth]{figs/2_Real_Exploration_22.png}
          \caption{}
          \label{fig:realResults_b}
      \end{subfigure}
      \\[.5em]
      \begin{subfigure}[b]{0.45\columnwidth}
          \centering
-         \includegraphics[width=\textwidth]{figs/3_Real_Exploration_33.eps}
+         \includegraphics[width=\textwidth]{figs/3_Real_Exploration_33.png}
          \caption{}
          \label{fig:realResults_c}
      \end{subfigure}~~ 
      \begin{subfigure}[b]{0.45\columnwidth}
          \centering
-         \includegraphics[width=\textwidth]{figs/4_Real_Exploration_44.eps}
+         \includegraphics[width=\textwidth]{figs/4_Real_Exploration_44.png}
          \caption{}
          \label{fig:realResults_d}
      \end{subfigure}
      \\[.5em]
      \begin{subfigure}[b]{0.45\columnwidth}
          \centering
-         \includegraphics[width=\textwidth]{figs/5_Real_Exploration_55.eps}
+         \includegraphics[width=\textwidth]{figs/5_Real_Exploration_55.png}
          \caption{}
          \label{fig:realResults_e}
      \end{subfigure}~~ 
      \begin{subfigure}[b]{0.45\columnwidth}
          \centering
-         \includegraphics[width=\textwidth]{figs/6_Real_Exploration_66.eps}
+         \includegraphics[width=\textwidth]{figs/6_Real_Exploration_66.png}
          \caption{}
          \label{fig:realResults_f}
      \end{subfigure}     
