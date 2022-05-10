@@ -1764,3 +1764,36 @@ doi = {10.30564/aia.v1i1.925}
   organization={IEEE}
 }
 
+@misc{Street1950American,
+  title={Street Naming and House Numbering Systems},
+  author={American Planning Association},
+  year={1950},
+  howpublished = {\url{https://www.https://www.planning.org/pas/reports/report13.htm}},
+  note = {Accessed: 2022-05-09},
+  publisher={AMERICAN SOCIETY OF PLANNING OFFICIALS}
+}
+
+@article{Oosterman2010Geolocation,
+  title={Geolocation on the iPhone by automatic street sign reading},
+  author={Oosterman, Joshua and Green, Richard},
+  booktitle={2010 25th International Conference of Image and Vision Computing New Zealand},
+  pages={1--6},
+  year={2010},
+  organization={IEEE}
+}
+
+@book{Thomas2018Ontology,
+  title={Ontology in Information Science},
+  author={Thomas, Ciza},
+  year={2018},
+  publisher={BoD--Books on Demand}
+}
+
+@article{Radwan2016You,
+  title={Do you see the bakery? Leveraging geo-referenced texts for global localization in public maps},
+  author={Radwan, Noha and Tipaldi, Gian Diego and Spinello, Luciano and Burgard, Wolfram},
+  booktitle={2016 IEEE international conference on robotics and automation (ICRA)},
+  pages={4837--4842},
+  year={2016},
+  organization={IEEE}
+}
