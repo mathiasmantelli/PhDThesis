@@ -618,7 +618,7 @@ For this experiment, goal-door 232 is chosen as the target, which is located on 
 %\label{fig:realResults}
 %\end{figure*}
 
-When submitted to finding the goal-door 232 in a physical environment, the performance of our proposed semantic OS system was similar to the situation described above. Figure~\ref{fig:realResults} depicts six steps of the system, and all of them show important moments for the searching. In Figure~\ref{fig:realResults_a}, the robot just had finished one complete rotation to map its surroundings, and then it detected the door sign 240. In Figure~\ref{fig:realResults_b}, the robot had chosen to turn right, where the door sign 242 has been found. This figure demonstrates how our planner decides on changing: \textit{i}) the door signs 240 and 242 were recognized in an increasing sequence, and it means that as the robot goes forward, the distance from the goal-door increases; \textit{ii}) the robot is between two frontiers, and even though the robot is closer to the one that is in front of it, the other is not that far from it; \textit{iii}) the first two door signs were found in a horizontal corridor, and so far, the horizontal corridors are the more likely ones to contain other door signs. Combining all this information, the decision is that the frontier that the robot is following is less promising than the other one that is behind it. In Figure~\ref{fig:realResults_c}, the robot has changed its orientation to the opposite one. The door sign 238 was recognized, which supports the orientation change. In Figure~\ref{fig:realResults_d}, as the robot has not recognized any other door sign that contradicts its decision, the searching continues towards the left direction. In Figure~\ref{fig:realResults_e}, it recognizes the door sign 234, which indicates a decreasing sequence towards the goal-door. Finally, in Figure~\ref{fig:realResults_f}, the robot detects the goal-door 232, and the robot finishes the searching. %Unfortunately, due to the COVID-19 pandemic, the university where the robot is located and this experiment was conducted is closed, as the health organizations recommend. Therefore, we were not allowed to perform more experiments like this to other goal-doors to show further the good performance of our semantic OS system in the physical world. 
+When submitted to finding the goal-door 232 in a physical environment, the performance of our proposed semantic OS system was similar to the situation described above. Figure~\ref{fig:realResults} depicts six steps of the system, and all of them show important moments for the searching. In Figure~\ref{fig:realResults_aa}, the robot just had finished one complete rotation to map its surroundings, and then it detected the door sign 240. In Figure~\ref{fig:realResults_bb}, the robot had chosen to turn right, where the door sign 242 has been found. This figure demonstrates how our planner decides on changing: \textit{i}) the door signs 240 and 242 were recognized in an increasing sequence, and it means that as the robot goes forward, the distance from the goal-door increases; \textit{ii}) the robot is between two frontiers, and even though the robot is closer to the one that is in front of it, the other is not that far from it; \textit{iii}) the first two door signs were found in a horizontal corridor, and so far, the horizontal corridors are the more likely ones to contain other door signs. Combining all this information, the decision is that the frontier that the robot is following is less promising than the other one that is behind it. In Figure~\ref{fig:realResults_cc}, the robot has changed its orientation to the opposite one. The door sign 238 was recognized, which supports the orientation change. In Figure~\ref{fig:realResults_dd}, as the robot has not recognized any other door sign that contradicts its decision, the searching continues towards the left direction. In Figure~\ref{fig:realResults_ee}, it recognizes the door sign 234, which indicates a decreasing sequence towards the goal-door. Finally, in Figure~\ref{fig:realResults_ff}, the robot detects the goal-door 232, and the robot finishes the searching. %Unfortunately, due to the COVID-19 pandemic, the university where the robot is located and this experiment was conducted is closed, as the health organizations recommend. Therefore, we were not allowed to perform more experiments like this to other goal-doors to show further the good performance of our semantic OS system in the physical world. 
 
 
 \begin{figure}[h]
@@ -627,39 +627,39 @@ When submitted to finding the goal-door 232 in a physical environment, the perfo
          \centering
          \includegraphics[width=\textwidth]{figs/1_Real_Exploration_11.png}
          \caption{}
-         \label{fig:realResults_a}
+         \label{fig:realResults_aa}
      \end{subfigure}~~
      \begin{subfigure}[b]{0.45\columnwidth}
          \centering
          \includegraphics[width=\textwidth]{figs/2_Real_Exploration_22.png}
          \caption{}
-         \label{fig:realResults_b}
+         \label{fig:realResults_bb}
      \end{subfigure}
      \\[.5em]
      \begin{subfigure}[b]{0.45\columnwidth}
          \centering
          \includegraphics[width=\textwidth]{figs/3_Real_Exploration_33.png}
          \caption{}
-         \label{fig:realResults_c}
+         \label{fig:realResults_cc}
      \end{subfigure}~~ 
      \begin{subfigure}[b]{0.45\columnwidth}
          \centering
          \includegraphics[width=\textwidth]{figs/4_Real_Exploration_44.png}
          \caption{}
-         \label{fig:realResults_d}
+         \label{fig:realResults_dd}
      \end{subfigure}
      \\[.5em]
      \begin{subfigure}[b]{0.45\columnwidth}
          \centering
          \includegraphics[width=\textwidth]{figs/5_Real_Exploration_55.png}
          \caption{}
-         \label{fig:realResults_e}
+         \label{fig:realResults_ee}
      \end{subfigure}~~ 
      \begin{subfigure}[b]{0.45\columnwidth}
          \centering
          \includegraphics[width=\textwidth]{figs/6_Real_Exploration_66.png}
          \caption{}
-         \label{fig:realResults_f}
+         \label{fig:realResults_ff}
      \end{subfigure}     
      \caption[Step-by-step of the performance of our semantic OS system in the physical environment.]{\small Step-by-step of the performance of our semantic OS system in the physical environment. \textit{a} shows the initial position, where the robot has started the searching, whereas \textit{f} shows the final step when the robot has found the goal-door 232.}
      \label{fig:realResults}

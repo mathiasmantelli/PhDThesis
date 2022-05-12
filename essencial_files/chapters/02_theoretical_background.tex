@@ -101,7 +101,7 @@ There are two methodologies commonly used in OCR systems, \textit{integrated} an
         \label{chp02_fig:stepwise_methodology}
     \end{subfigure}~
     \caption[Frameworks of two popular text detection and recognition methodologies.]{Frameworks of two popular text detection and recognition methodologies, where (a) is the Stepwise methodology, and (b) is the Integrated methodology. Adapted from~\citet{Ye2014Text}.}
-    \label{chp02_fig:problems_robotics}
+    \label{chp02_fig:text_architectures}
 \end{figure}  
 
 The latter methodology usually employs a coarse-to-fine strategy, which is done in four steps: localization, verification, segmentation, and recognition~\cite{Ye2014Text}. The goal of the first step, localization, is to coarsely classify components and groups into candidate text regions. In the second step, verification, such regions are further classified into text or non-text regions. The third step, segmentation, separates the characters in a way that exclusive, accurate outlines of image blocks remain for the recognition step. Lastly, the recognition step converts image blocks into characters. It is also possible that some stepwise methodologies ignore the verification and/or segmentation steps. Further, another adaptation is the inclusion of additional steps to perform text enhancement and/or rectification~\cite{Ye2014Text}. 
