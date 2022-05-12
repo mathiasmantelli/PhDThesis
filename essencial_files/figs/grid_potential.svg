@@ -1,21 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="210mm"
    height="297mm"
    viewBox="0 0 210 297"
    version="1.1"
    id="svg8"
-   inkscape:version="1.0.2 (1.0.2+r75+1)"
-   sodipodi:docname="grid_potential.svg">
+   inkscape:version="1.1.2 (1:1.1+202202050950+0a00cf5339)"
+   sodipodi:docname="grid_potential.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
-     id="defs2" />
+     id="defs2">
+    <linearGradient
+       id="linearGradient13935"
+       inkscape:swatch="gradient">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop13931" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0"
+         offset="1"
+         id="stop13933" />
+    </linearGradient>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter15874"
+       x="-0.053614769"
+       y="-0.053861497"
+       width="1.1072295"
+       height="1.107723">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.82335342"
+         id="feGaussianBlur15876" />
+    </filter>
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -23,20 +49,21 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="429.75801"
-     inkscape:cy="311.67395"
+     inkscape:zoom="2.8"
+     inkscape:cx="318.75"
+     inkscape:cy="209.10714"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="false"
      inkscape:snap-to-guides="false"
      inkscape:snap-grids="true"
-     inkscape:window-width="1871"
-     inkscape:window-height="1025"
-     inkscape:window-x="49"
+     inkscape:window-width="1866"
+     inkscape:window-height="1016"
+     inkscape:window-x="1414"
      inkscape:window-y="27"
-     inkscape:window-maximized="1">
+     inkscape:window-maximized="1"
+     inkscape:pagecheckerboard="0">
     <inkscape:grid
        type="xygrid"
        id="grid10" />
@@ -49,7 +76,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -69,13 +96,18 @@
          y="56.31543"
          style="stroke-width:0.264583" /></text>
     <g
-       id="g1425"
-       transform="translate(13.70554,-0.97834611)"
-       inkscape:export-xdpi="300.10333"
-       inkscape:export-ydpi="300.10333">
+       id="g23302">
+      <rect
+         style="mix-blend-mode:normal;fill:#656565;fill-opacity:0.998057;fill-rule:nonzero;stroke:none;stroke-width:0.7;stroke-linejoin:round;filter:url(#filter15874)"
+         id="rect13885"
+         width="36.856415"
+         height="36.687584"
+         x="80.309914"
+         y="40.770493"
+         transform="matrix(1.0447778,0,0,1.0447778,-4.4212766,-2.6470081)" />
       <g
          id="g1216"
-         transform="translate(2.35995,-0.25)">
+         transform="translate(16.06549,-1.2283461)">
         <path
            style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            d="M 66.630941,41.826239 V 79.236018"
@@ -99,7 +131,7 @@
       </g>
       <g
          id="g1216-2"
-         transform="rotate(90,84.030855,61.586103)">
+         transform="rotate(90,91.372798,67.9497)">
         <path
            style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            d="M 66.630941,41.826239 V 79.236018"
@@ -123,69 +155,69 @@
       </g>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-weight:normal;line-height:1.25;font-family:sans-serif;baseline-shift:baseline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-         x="79.759949"
-         y="51.384987"
+         style="font-style:normal;font-weight:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;baseline-shift:baseline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="94.126976"
+         y="49.650688"
          id="text1260-6"><tspan
            sodipodi:role="line"
            id="tspan1258-6"
-           x="79.759949"
-           y="51.384987"
-           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum Italic';baseline-shift:baseline;stroke-width:0.264583">r<tspan
-   style="font-size:7.05556px;baseline-shift:sub"
+           x="94.126976"
+           y="49.650688"
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum Italic';baseline-shift:baseline;stroke-width:0.264583">m<tspan
+   style="font-size:5.64444px;baseline-shift:sub"
    id="tspan1286">u</tspan></tspan></text>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-weight:normal;line-height:1.25;font-family:sans-serif;baseline-shift:baseline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-         x="79.989258"
-         y="72.998299"
+         style="font-style:normal;font-weight:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;baseline-shift:baseline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="94.310425"
+         y="71.263969"
          id="text1260-6-4"><tspan
            sodipodi:role="line"
            id="tspan1258-6-6"
-           x="79.989258"
-           y="72.998299"
-           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum Italic';baseline-shift:baseline;stroke-width:0.264583">r<tspan
-   style="font-size:7.05556px;baseline-shift:sub"
+           x="94.310425"
+           y="71.263969"
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum Italic';baseline-shift:baseline;stroke-width:0.264583">m<tspan
+   style="font-size:5.64444px;baseline-shift:sub"
    id="tspan1286-2">b</tspan></tspan></text>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-weight:normal;line-height:1.25;font-family:sans-serif;baseline-shift:baseline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-         x="70.42337"
-         y="62.012333"
+         style="font-style:normal;font-weight:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;baseline-shift:baseline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="84.128914"
+         y="60.186077"
          id="text1260-6-4-8"><tspan
            sodipodi:role="line"
            id="tspan1258-6-6-9"
-           x="70.42337"
-           y="62.012333"
-           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum Italic';baseline-shift:baseline;stroke-width:0.264583">r<tspan
-   style="font-size:7.05556px;baseline-shift:sub"
+           x="84.128914"
+           y="60.186077"
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum Italic';baseline-shift:baseline;stroke-width:0.264583">m<tspan
+   style="font-size:5.64444px;baseline-shift:sub"
    id="tspan1286-2-6">l</tspan></tspan></text>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-weight:normal;line-height:1.25;font-family:sans-serif;baseline-shift:baseline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-         x="91.665848"
-         y="62.044083"
+         style="font-style:normal;font-weight:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;baseline-shift:baseline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="105.37139"
+         y="60.155029"
          id="text1260-6-4-8-0"><tspan
            sodipodi:role="line"
            id="tspan1258-6-6-9-7"
-           x="91.665848"
-           y="62.044083"
-           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum Italic';baseline-shift:baseline;stroke-width:0.264583">r<tspan
-   style="font-size:7.05556px;baseline-shift:sub"
+           x="105.37139"
+           y="60.155029"
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum Italic';baseline-shift:baseline;stroke-width:0.264583">m<tspan
+   style="font-size:5.64444px;baseline-shift:sub"
    id="tspan1286-2-6-0">r</tspan></tspan></text>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-weight:normal;line-height:1.25;font-family:sans-serif;baseline-shift:baseline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-         x="81.69635"
-         y="63.244083"
-         id="text1260-6-4-8-0-0"><tspan
+         style="font-style:normal;font-weight:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;baseline-shift:baseline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="95.072426"
+         y="60.129631"
+         id="text1260-6-4-8-3"><tspan
            sodipodi:role="line"
-           id="tspan1258-6-6-9-7-1"
-           x="81.69635"
-           y="63.244083"
-           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum Italic';baseline-shift:baseline;stroke-width:0.264583">r<tspan
-   style="font-size:7.05556px;baseline-shift:sub"
-   id="tspan1286-2-6-0-3" /></tspan></text>
+           id="tspan1258-6-6-9-6"
+           x="95.072426"
+           y="60.129631"
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum Italic';baseline-shift:baseline;stroke-width:0.264583">m<tspan
+   style="font-size:5.64444px;baseline-shift:sub"
+   id="tspan1286-2-6-7">i</tspan></tspan></text>
     </g>
   </g>
 </svg>
