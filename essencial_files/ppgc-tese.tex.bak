@@ -129,7 +129,7 @@
 %
 \keyword{Mobile robotics}
 \keyword{Object search}
-\keyword{Semantic information}
+\keyword{Organisational semantic information}
 \keyword{Robotics perception}
 \keyword{Indoor environments}
 
@@ -161,7 +161,24 @@ helping others to find it!''\\}
 
 % AGRADECIMENTOS
 \chapter*{Acknowledgements}
-Agradeço ao \LaTeX\ por não ter vírus de macro\ldots
+My supervisors Prof. Mariana Kolberg and Prof. Renan Maffei have been endless sources of guidance during all these years. I have been under Prof. Mariana's supervision since I was a master's degree student, and I have grown and learned immensely since then. I am thankful for the two opportunities she gave me to learn not just about Mobile Robotics but many other exciting topics. Prof. Renan has been my co-supervisor even before becoming a professor, when he was still a PhD candidate at Phi Group. I have always admired him for his skills, critical thinking and out of the box ideas. His passion for Phi Group and his dedication have motivated me to do the same during these years. It was with their supervision that this work came into existence. Thank you for the excellent cooperation and for all of the opportunities I was given to, besides boosting my technical skills, broaden my personal horizons during this incredibly instructive period. Besides, I would like to thank Prof. Edson Prestes, head of Phi Group, for the moments we shared in the lab and for how much he taught me throughout these years.
+
+I would like to thank Prof. Jim Torresen for receiving me at his ROBIN lab in Norway. This opportunity to live abroad and exchange knowledge with other research labs was essential for me as a PhD candidate, and I am thankful for that. Many thanks go to the ROBIN members for the great time I had in the group. 
+
+Many special thanks to two international friends, Robin Weiss and Sadegh Hosseinpoor. Robin has not only helped me to grow personally with great conversations about essential aspects of life, but he also has encouraged me to study and live abroad until it came true. Our road trip through Europe was a memorable adventure, and it changed my life. Sadegh has been a special friend for a long time, and we had great moments in Norway that I will not forget. My life experience in Norway would be way more challenging without our volleyball training sections, pool games, and camping adventures. 
+
+I should also thank the members of Phi Group for the great time I had in our group. I enjoyed the atmosphere and their support. A special thank goes to a close friend Diego Pittol. He has been a partner in crime since my master's, and I have learned a lot with him. Our discussions and his attention to every detail contributed to completing this thesis. I would not be able to go through this unique adventure without him. I thank him for everything he has done for me, mainly for taking care of me during the challenging moments of my life. 
+
+Additionally, I wish to thank my family, Vadirlei, Luiza, Fabiane, and Marcelo, who have always supported me and lovingly understood my absence during special moments. I also would like to express my gratitude to Fernanda for her unconditional support over the past two years and for enjoying life together with me. 
+
+My PhD course has been a long journey that has taken me to many places, where I had the great opportunity to meet, collaborate, work, and have fun with amazing people. It is impossible to sum up years of experience and interaction with all of them, but I am sure they already know how awesome I think they are. Hence, I made this instead. 
+
+%\begin{figure}[!h]
+%\centering
+\vspace{.5cm}\hspace{1.65cm}\includegraphics[width=.65\textwidth]{figs/acknowledgment.png}
+%\caption{}
+%\end{figure}
+
 %I would like to thank Professor Peter Glösekötter, who has been supportive since the days I was an undergraduate student, and whose drive for innovation I admire. It was with his supervision that this work came into existence. In addition to my stay in Brazil, he enabled me to both work and pursue my studies in England, Spain, and China. Thank you for the excellent cooperation and for all of the opportunities I was given to, besides boosting my technical skills, broaden my personal horizons during this incredibly instructive period.
 
 %Also, I must express my sincere gratitude to Mariana Kolberg and Edson Prestes for co-supervising this work. Thank you for the lively discussions and your patient mentoring. Collaborating with you and the whole team of the Φ-Robotics Research Group has enriched my experience in Porto Alegre tremendously. I have been extremely lucky to have been surrounded by people like you, who cared so much about my work and who responded to my questions and queries so promptly.
@@ -202,34 +219,32 @@ Atualmente, a comunidade científica de robótica móvel está lidando com difer
 % As abreviações devem estar em ordem alfabética (levando em conta só a abreviação mesmo,
 % não o que significa cada palavra).
 \begin{listofabbrv}{SPMD}
-        \item[OS] Object Search
-        \item[SLAM] Simultaneous Localization and Mapping
-        \item[MCL] Monte Carlo Localization
-        \item[RBPF] Rao-Blackwellized Particle Filter
-        \item[ROI] Region of Interest
-        \item[RGB] Red, Green, Blue
-        \item[RGB-D] Red, Green, Blue, Depth
-        \item[GPS] Global Positioning System
         \item[BVP] Boundary Value Problem
-        \item[KDE] Kernel Density Estimation
-        \item[HIMM] Histogram In-Motion Mapping
-        \item[DS] Door Simulator
-        \item[YOLO] You Only Look Once
-        \item[IR] Industrial Robot
-        \item[RIA] Robotic Industries Association
-        \item[SR] Service Robot
-        \item[IFR] International Federation of Robotics
-        \item[PSR] Professional Service Robot
+        \item[DS] Door Simulator        
         \item[DSR] Domestic Service Robot
-        \item[PD] Population Division
-        \item[FoV] Field of View
-        \item[SARS-CoV-2] ~~~~~~~~~~~~~~Severe Acute Respiratory Syndrome Coronavirus 2
-        \item[OCR] Optical Character Recognition
         \item[ER] Extremal Region
+        \item[FoV] Field of View
         \item[FPS] Frames per Second
+        \item[GPS] Global Positioning System
+        \item[HIMM] Histogram In-Motion Mapping                
+        \item[IFR] International Federation of Robotics
+        \item[IR] Industrial Robot
+        \item[KDE] Kernel Density Estimation
+        \item[MCL] Monte Carlo Localization
+        \item[OCR] Optical Character Recognition
+        \item[OS] Object Search
+        \item[PD] Population Division
+        \item[PSR] Professional Service Robot
         \item[RBPF] Rao-Blackwellized Particle Filter
+        \item[RGB] Red, Green, Blue
+        \item[RGB-D] Red, Green, Blue, Depth                        
+        \item[RIA] Robotic Industries Association
+        \item[ROI] Region of Interest
+        \item[SARS-CoV-2] ~~~~~~~~~~~~~~Severe Acute Respiratory Syndrome Coronavirus 2
+        \item[SLAM] Simultaneous Localization and Mapping
+        \item[SR] Service Robot        
+        \item[YOLO] You Only Look Once
         
-
 \end{listofabbrv}
 
 % idem para a lista de símbolos
