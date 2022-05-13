@@ -290,7 +290,7 @@ Atualmente, a comunidade científica de robótica móvel está lidando com difer
 	\item [$\bs{h}$] 2D gri heat map of the environment as a vector of $N$ objects, $\bs{h} = (\bs{h}_1, \bs{h}_2, \cdots, \bs{h}_N)^T$, describing the scenario.	
 %	\item [$\mathbf{H}$] 2D grid heat map.
 	\item [$\mathbf{O}$]	set of detected objects. 
-	\item [$\bs{o}$] detected object, composed by its position within~\textbf{H}, its category, the hour it has been detected, and the robot's position during the detection, i.e., ${\bs{o}_j} = (\bs{o}_j^p, \bs{o}_j^c, \bs{o}_j^h, \bs{o}_j^r)$.
+	\item [$\bs{o}$] detected object, composed by its position within~\textbf{H}, its category, the hour it has been detected, and the robot's position during the detection, i.e., ${\bs{o}_j} = ({o}_j^p, {o}_j^c, {o}_j^h, {o}_j^r)$.
 	\item [$W(\cdot, \cdot)$] function that measures the weight of the time difference.
 	\item [$U$] number of rows and columns of a grid that an image is divided into.
 	\item [$B$] number of bounding boxes predicted in each grid cell of an image.
