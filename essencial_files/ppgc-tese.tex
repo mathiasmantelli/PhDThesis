@@ -250,23 +250,24 @@ Atualmente, a comunidade científica de robótica móvel está lidando com difer
 % idem para a lista de símbolos
 \begin{listofsymbols}{$\alpha\beta\pi\omega$}
 	\item [$\bs{x}_t$] robot's pose at time step $t$. It is composed by a three dimensional vector containing $x,y$, which represents the position, and $\theta$, which represents the orientation.
-	\item [$\bs{m}$] map of the environment as a vector of $N$ objects, $\bs{m} = (\bs{m}_1, \bs{m}_2, \cdots, \bs{m}_N)^T$, describing the scenario. In 2D grid maps, with $1 \leq n \leq N$, a cell $\bs{m}_i = (x,y)^T$ is associated to a 2D position $(x,y)$. In this thesis, the index $i$ refers to a random cell in $\bs{m}$, $r$ to the cell where the robot is in $\bs{m}$, and $k$ the cell at the center of a circular kernel.  
+	\item [$\bs{m}$] map of the environment as a vector of $N$ objects, $\bs{m} = (\bs{m}_1, \bs{m}_2, \cdots, \bs{m}_N)^T$, describing the scenario. In 2D grid maps, with $1 \leq i \leq N$, a cell $\bs{m}_i = (x,y)^T$ is associated to a 2D position $(x,y)$. In this thesis, the index $i$ refers to a random cell in $\bs{m}$, $r$ to the cell where the robot is in $\bs{m}$, and $k$ the cell at the center of a circular kernel.  
 	\item [$\bs{m}_i^*$] the candidate cell most promising to bring the robot to the goal-door.	
 	\item [$\bs{u}_t$] control data at instant $t$, and it corresponds to the change of state in the time interval $(t - 1;t]$.
 	\item [$\bs{z}_t$] measurement made by the robot at instant $t$. The vector of all of them acquired at the same instant $t$ is $\bs{z}_t = (\bs{z}^1_t, \bs{z}^2_t, \cdots, \bs{z}^K_t)^T$.
 %	\item [$c$] a cell in the 2D grid map $\bs{m}$.
-	\item [$K(\cdot)$] circular kernel that computes the density of the free area. Its possible profiles are identified as uniform, $UK(\cdot)$, gaussian, $GK(\cdot)$, and inverted, $IK(\cdot)$.
+	\item [$K(\cdot)$] circular kernel that computes the free space density of a group of cells. Its possible profiles are identified as uniform, $UK(\cdot)$, gaussian, $GK(\cdot)$, and inverted, $IK(\cdot)$.
 	\item [$d$] Manhattan distance between two cells.
 	\item [$r$] radius of $K(\cdot)$.
-	\item [$a$] height of $K(\cdot)$.
+%	\item [$a$] height of $K(\cdot)$.
 	\item [$\mathbf{T}$] subset of cells that are within the area of the kernel at any moment.
 %	\item [$c_K$] centre of the kernel $K(\cdot)$.
 	\item [$Q(\cdot)$] function that tests whether a cell is free.
-	\item [$\Psi(\cdot)$] function that computes the free space.
+	\item [$\Psi(\cdot)$] function that computes the free space density.
 	\item [$\Upsilon(\cdot)$] function that computes the map segmentation.
 	\item [$\delta$] a threshold that defines how many different sizes of free areas are considered by the segmentation function.
 	\item [$\mathbf{s}$] segment from $\bs{m}$.
 	\item [$\mathbf{I}$] image.
+	\item [$X$] a set of data sample.	
 	\item [$\mathbf{L}$] list containing the recognized number from door signs.
 	\item [$S(\cdot)$] function that returns the nearest segment of a cell.
 	\item [$L(\cdot)$] function that returns the list of door signs from a segment.
@@ -285,10 +286,14 @@ Atualmente, a comunidade científica de robótica móvel está lidando com difer
 	\item [$\lambda_r$]	a threshold used to define how many most recent robot's orientations are saved.
 	\item [$D(\cdot, \cdot)$] function that counts the number of cells between two other specific cells.
 	\item [$d_{\ll}$] smallest distance between two cells.
-	\item [$\mathbf{H}$] 2D grid heat map.
+	\item [$\bs{h}$] 2D gri heat map of the environment as a vector of $N$ objects, $\bs{h} = (\bs{h}_1, \bs{h}_2, \cdots, \bs{h}_N)^T$, describing the scenario.	
+%	\item [$\mathbf{H}$] 2D grid heat map.
 	\item [$\mathbf{O}$]	set of detected objects. 
-	\item [$\bs{o}$] detected object, composed by its position within~\textbf{H}, its category, the hour it has been detected, and the robot's position during the detection, i.e., ${\bs{o}} = (p^{o}, c^{o}, h^{o}, r^{o})$.
+	\item [$\bs{o}$] detected object, composed by its position within~\textbf{H}, its category, the hour it has been detected, and the robot's position during the detection, i.e., ${\bs{o}_j} = (\bs{o}_j^p, \bs{o}_j^c, \bs{o}_j^h, \bs{o}_j^r)$.
 	\item [$W(\cdot, \cdot)$] function that measures the weight of the time difference.
+	\item [$U$] number of rows and columns of a grid that an image is divided into.
+	\item [$B$] number of bounding boxes predicted in each grid cell of an image.
+	\item [$C$] number of conditional class probabilities for each grid cell of an image.
 %	\item [$K^i(\cdot)$] inversed uniform circular kernel that computes the size of the free area covered by it.
 
 \end{listofsymbols}
