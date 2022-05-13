@@ -30,7 +30,7 @@ Figure~\ref{chap:5_fig_jaci_lights_on_back} illustrates Jaci disinfecting an ope
         \caption{}
         \label{chap:5_fig_jaci_lights_on_back}
     \end{subfigure}
-    \caption[Jaci disinfecting a cirurgical room.]{ Jaci is a disinfection robot developed by Instor, embedded with 18 UV-C lights in two different layers. (a) Jaci with the lights on, but not operating yet. (b) Jaci in operation, disinfecting a hospital room.}
+    \caption[Jaci disinfecting a cirurgical room.]{ Jaci is a disinfection robot developed by Instor, embedded with 18 UV-C lights in two different layers. (a) Jaci with the lights on, but not operating yet, and (b) Jaci in operation, disinfecting a hospital room.}
         \label{chap:5_fig_jaci}
 \end{figure}
 
@@ -72,7 +72,7 @@ However, Jaci does not provide such a high-level disinfection option in its curr
 
 An alternative to overcome these issues is another contribution of our thesis presented in Chapter~\ref{chap:4_temporal_os_system}, a temporal semantic OS system. Besides providing the high-level representation of the environment, our OS system also performs the OS considering the object organisation over time. Combining our system with Jaci would allow the robot to efficiently search for the object when its position is unknown and perform the local disinfection. Another advantage would be scheduling the disinfection for more convenient periods for every place and situation. Since our semantic OS system is temporal, it can estimate the most likely spot where the target object will be based on previous observations. Lastly, as it is very likely that the environment constantly needs to be disinfected, Jaci will have the opportunity of collecting more data about the objects for our TSOS system. Hence, it is a mutual collaboration between Jaci and our OS system. Jaci gathers more data for the OS system while performing constant disinfection. Simultaneously, our OS system makes Jaci save resources by travelling short distances when searching for the target object. 
 
-\subsection{Summary}
+\section{Summary}
 \label{chap:5_jaci_further_discussion}
 The deployment of our contributions to Jaci would completely change how the user interacts with it. The current interaction is for a person to move it to the room and request it to start the disinfection process. However, with our first semantic OS system, the user could send a request to Jaci in a high-level form, e.g. ``\textit{disinfect the room number 12, and then the room number 15}''. The inclusion of our second semantic OS system would allow requests at an even higher level, such as ``\textit{disinfect the computer on room 12 at 11:00}''. The difference in the user's request to Jaci reflects the improvement in terms of human-robot interaction and Jaci's autonomy during the disinfection process. Although we were unable to carry out experiments with our contributions deployed to Jaci, their results presented in both Chapters~\ref{chap:3_text_os_system} and~\ref{chap:4_temporal_os_system} suggest the improvements that Jaci could achieve. The semantic information inferred from the organisation of the environment could bridge the gap between Jaci's purely geometric autonomous disinfection system and its improved high-level version. Judging by the characteristics of this thesis contributions, they offer an ideal combination to boost Jaci's performance, making it less human-dependent and easier for human-robot to interact. 
 
