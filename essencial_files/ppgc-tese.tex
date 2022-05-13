@@ -225,10 +225,10 @@ Atualmente, a comunidade científica de robótica móvel está lidando com difer
         \item[ER] Extremal Region
         \item[FoV] Field of View
         \item[FPS] Frames per Second
-        \item[GPS] Global Positioning System
+%        \item[GPS] Global Positioning System
         \item[HIMM] Histogram In-Motion Mapping                
         \item[IFR] International Federation of Robotics
-        \item[IR] Industrial Robot
+ %       \item[IR] Industrial Robot
         \item[KDE] Kernel Density Estimation
         \item[MCL] Monte Carlo Localization
         \item[OCR] Optical Character Recognition
@@ -238,11 +238,12 @@ Atualmente, a comunidade científica de robótica móvel está lidando com difer
         \item[RBPF] Rao-Blackwellized Particle Filter
         \item[RGB] Red, Green, Blue
         \item[RGB-D] Red, Green, Blue, Depth                        
-        \item[RIA] Robotic Industries Association
-        \item[ROI] Region of Interest
+%        \item[RIA] Robotic Industries Association
+%        \item[ROI] Region of Interest
         \item[SARS-CoV-2] ~~~~~~~~~~~~~~Severe Acute Respiratory Syndrome Coronavirus 2
         \item[SLAM] Simultaneous Localization and Mapping
         \item[SR] Service Robot        
+        \item[UAV] Unmanned Aerial Vehicle
         \item[YOLO] You Only Look Once
         
 \end{listofabbrv}
@@ -259,6 +260,7 @@ Atualmente, a comunidade científica de robótica móvel está lidando com difer
 	\item [$d$] Manhattan distance between two cells.
 	\item [$r$] radius of $K(\cdot)$.
 %	\item [$a$] height of $K(\cdot)$.
+	\item [$\bs{m}_j^{\ll}$] smallest distance between two cells.
 	\item [$\mathbf{T}$] subset of cells that are within the area of the kernel at any moment.
 %	\item [$c_K$] centre of the kernel $K(\cdot)$.
 	\item [$Q(\cdot)$] function that tests whether a cell is free.
@@ -285,7 +287,6 @@ Atualmente, a comunidade científica de robótica móvel está lidando com difer
 	\item [${H_{r}[\cdot]}$] the door orientation histogram.
 	\item [$\lambda_r$]	a threshold used to define how many most recent robot's orientations are saved.
 	\item [$D(\cdot, \cdot)$] function that counts the number of cells between two other specific cells.
-	\item [$d_{\ll}$] smallest distance between two cells.
 	\item [$\bs{h}$] 2D gri heat map of the environment as a vector of $N$ objects, $\bs{h} = (\bs{h}_1, \bs{h}_2, \cdots, \bs{h}_N)^T$, describing the scenario.	
 %	\item [$\mathbf{H}$] 2D grid heat map.
 	\item [$\mathbf{O}$]	set of detected objects. 
