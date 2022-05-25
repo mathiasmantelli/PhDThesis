@@ -12,16 +12,16 @@
 			\item \textbf{Indoor environments} and \textbf{semi-dynamic objects}
 %			\item Number of \textbf{older people living at home} is increasing			
 			\item \textbf{SR} and their use in indoor environments
-			\item The \textbf{OS task} and SR
+%			\item The \textbf{OS task} and SR
 			\item \textbf{Brute-force OS} strategy \textbf{is not practical} 
-			\item Why are objects moved?
+			\item \textbf{Why} are objects moved?
 %			\item The \textbf{advantages} of visual sensors for the \textbf{OS problem}
 		\end{itemize}
 	\column{.45\textwidth}
 		\centering
 		\begin{figure}
 			\includegraphics[width=.9\linewidth]{figs/jaci_on.jpg}
-			\caption{\tiny Jaci disinfecting a cirurgical room}			 		 
+			\caption{\tiny An SR robot disinfecting a cirurgical room}			 		 
 		\end{figure}			
 	\end{columns}
 \end{frame}
@@ -33,7 +33,7 @@
 		\item \textbf{Humans activities} have an influence in the \textbf{objects' placement}
 		\item \textbf{Semi-dynamic} or \textbf{dynamic objects} in \textbf{routines} and \textbf{habits} 
 		\item \textbf{Understanding} how the \textbf{objects are moved} throughout a period of time \textbf{may help in the OS problem}
-		\item \textbf{Realistic} (the environment changes) and \textbf{customized} (adapts to the local habits and routines) \textbf{OS system}
+		\item \textbf{Realistic} (the environment changes) and \textbf{customized} (adapts to the local habits and routines) \textbf{LSOS system}
 	\end{itemize}
 \end{frame}
 %========================================== ############# ======================================================
@@ -43,8 +43,8 @@
 	\begin{columns}[T]
 	\column{.5\textwidth}
 		\begin{itemize}[<+->]
-			\item \textbf{Organisational semantic OS system} for indoor environment
-			\item Searches based on the \textbf{request hour}			
+			\item \textbf{LSOS system} for indoor environment
+			\item Searches based on the \textbf{request hour} %({\footnotesize e.g. ``\textit{search for my \textbf{glasses} at \textbf{7 pm}}})			
 			\item Self-contained LSOS system
 			\item Advantages of \textbf{organisational semantic information} from \textbf{dynamic environments}
 		\end{itemize}
@@ -178,7 +178,7 @@
 			\item Kernel \textbf{angle reduction}
 		\item \textbf{Inverted kernel}
 			\begin{itemize}
-				\item Object and robot position
+				\item Object's and robot's position
 			\end{itemize}
 	\end{itemize}
 	\column{.6\textwidth}
@@ -729,8 +729,8 @@
 \begin{frame}{Summary}
 	\begin{itemize}[<+->]
 		\item \textbf{Heat map} that represents the \textbf{objects' presence}
-		\item \textbf{Search space reduction} that provides \textbf{better placement} for the robot
-		\item \textbf{LSOS system} that observes the objects' position changes \textbf{throughout a period of time}
+		\item \textbf{Reduction of the kernel's angle} provides \textbf{better placement} for the robot
+		\item \textbf{LSOS system} that observes the objects arrangement \textbf{throughout a period of time}
 		\item An OS system that does not depend on a specific SLAM or object-detection algorithm
 		\item Analysis of the \textbf{advantages} of \textbf{using semantic information} inferred from \textbf{semi-dynamic objects}
 	\end{itemize}

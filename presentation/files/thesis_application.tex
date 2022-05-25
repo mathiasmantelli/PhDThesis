@@ -1,0 +1,149 @@
+\begin{frame}
+\centering
+\textcolor{red}{\textit{A discussion of our OS systems deployed in an SR for disinfection}}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ====================================================== 
+\begin{frame}{Introduction}
+	\begin{columns}[T]
+		\column{.6\textwidth}
+		\begin{itemize}[<+->]
+			\item \textbf{Outbreaks} (COVID-19) and \textbf{hospital infections}
+			\item It is necessary an \textbf{efficient disinfection tool}
+			\item \textbf{UV-lights}
+			\begin{itemize}[<+->]
+				\item Its \textbf{benefits}
+				\item Its \textbf{harms}
+			\end{itemize}
+			\item \textbf{How} to \textbf{move} the \textbf{UV-lights} around the environment?
+		\end{itemize}			
+		\column{.4\textwidth}
+			\centering
+			\begin{figure}
+				 \includegraphics[width=.7\linewidth]{figs/uv_light.jpg}
+				 \caption{\tiny UV light.\footnotemark[11]}			 		 
+	         \end{figure}			
+	\end{columns} 
+	\footnotetext[11]{\tiny Figure extracted from \url{https://www.istockphoto.com/br/fotos/ultraviolet-light}.}	
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ====================================================== 
+\begin{frame}{Introduction}
+	\begin{columns}[T]
+		\column{.6\textwidth}
+		\begin{itemize}[<+->]
+			\item \textbf{Instor} + \textbf{Phi Group} = \textbf{Jaci}
+			\item An \textbf{autonomous SR} for indoor environment \textbf{disinfection}
+			\item \textbf{18 UV-lights} and a kit of sensors
+			\item \textbf{Limitations}
+			\begin{itemize}[<+->]
+				\item Human dependency to move it between rooms
+				\item Lack of object-oriented disinfection mode
+			\end{itemize}
+			\item How to \textbf{overcome} such \textbf{limitations}?
+			\item No experiments were allowed
+		\end{itemize}			
+		\column{.4\textwidth}
+			\centering
+			\begin{figure}
+				 \includegraphics[width=.5\linewidth]{figs/jaci_mathias.jpg}
+				 \caption{\tiny Jaci at Instor.}
+	         \end{figure}			
+	\end{columns} 
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ====================================================== 
+\begin{frame}{Combining our thesis with Jaci}
+	\begin{columns}[T]
+		\column{.6\textwidth}
+		\begin{itemize}[<+->]
+			\item Human dependency:
+			\begin{itemize}[<+->]
+				\item \textbf{Preparation} steps \textbf{before} the \textbf{disinfection}
+				\item \textbf{Multiple rooms} scenarios
+				\item The \textbf{longer} the \textbf{waiting time}, the \textbf{worse}
+			\end{itemize}
+			\item What if Jaci could search for the rooms?
+		\end{itemize}			
+		\column{.4\textwidth}
+			\centering
+			\begin{figure}
+				 \includegraphics[width=.5\linewidth]{figs/hospital_simulation.png}
+				 \caption{\tiny Jaci at Instor.}
+	         \end{figure}			
+	\end{columns} 
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ====================================================== 
+\begin{frame}{Combining our thesis with Jaci}
+	\begin{columns}[T]
+		\column{.6\textwidth}
+		\begin{itemize}[<+->]
+			\item NSOS deployed to Jaci:
+			\begin{itemize}[<+->]
+				\item Jaci could search for a target door
+				\item If the door is known, path planning algorithm
+				\item The more doors searched, the larger the map
+				\item Shorter waiting time with more searchers
+				\item Human out of the loop
+			\end{itemize}
+			\item \textit{``Jaci, disinfect room 5 and later room 12''}
+		\end{itemize}			
+		\column{.4\textwidth}
+			\centering
+			\begin{figure}
+				 \includegraphics[width=.8\linewidth]{figs/hospital_simulation.png}
+				 \caption{\tiny Jaci at Instor.}
+	         \end{figure}			
+	\end{columns} 
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ====================================================== 
+\begin{frame}{Combining our thesis with Jaci}
+	\begin{columns}[T]
+		\column{.6\textwidth}
+		\begin{itemize}[<+->]
+			\item How about the object-oriented disinfection?
+			\item LSOS deployed to Jaci:
+			\begin{itemize}[<+->]
+				\item Jaci could search for a target object
+				\item Find and object and disinfect it
+				\item Faster and specific disinfections
+				\item Booked disinfections for different times
+				\item Human out of the loop
+			\end{itemize}
+			\item \textit{``Jaci, disinfect the laptop at room 5 at 11 am''}
+		\end{itemize}			
+		\column{.4\textwidth}
+			\centering
+			\begin{figure}
+				 \includegraphics[width=.8\linewidth]{figs/hospital_simulation.png}
+				 \caption{\tiny Jaci at Instor.}
+	         \end{figure}			
+	\end{columns} 
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ====================================================== 
+\begin{frame}{Combining our thesis with Jaci}
+	\begin{columns}[T]
+		\column{.6\textwidth}
+		\begin{itemize}[<+->]
+			\item Both our NSOS and LSOS systems would improve the Jaci's performance
+			\item Jaci's system and sensors are enough for both of our systems
+			\item The discussion is based on the previous experiments
+			\item Deploy our systems and carry out experiments
+		\end{itemize}			
+		\column{.4\textwidth}
+			\centering
+			\begin{figure}
+				 \includegraphics[width=.65\linewidth]{figs/jaci_sensors_front.png}
+				 \caption{\tiny Jaci and its sensors.}
+	         \end{figure}			
+	\end{columns} 
+\end{frame}
