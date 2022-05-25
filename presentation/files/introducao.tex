@@ -175,6 +175,19 @@ irradiation map''}. IEEE Robotics and Automation Letters, IEEE, 2022..}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
+\begin{frame}{Object search problem}
+	\begin{itemize}[<+->]
+		\item \textbf{Challenging} and unsolved \textbf{task for robots}
+		\item \textbf{Goal:} estimate the \textbf{target object's} position in an \textbf{environment} and \textbf{move the robot} to \textbf{find} it
+		\item {Computation of the \textbf{optimal solution} \textit{vs} Estimation that the current goal \textbf{is not promising}}
+		\item The robot's \textbf{perception} is \textbf{crucial}
+		\item \textbf{Brute Force} \textit{vs} \textbf{Searching strategy}
+		\item \textbf{Human-like} behavior
+	\end{itemize}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
 \begin{frame}{Searching for objects in organised environments}
 	\begin{columns}[T]
 		\column{0.52\textwidth}
@@ -188,7 +201,7 @@ irradiation map''}. IEEE Robotics and Automation Letters, IEEE, 2022..}
 			\begin{figure}
 			    \begin{subfigure}[b]{.4\columnwidth}
 			    		\centering			
-			    		\includegraphics[width=.55\linewidth]{figs/dictionary.jpg}
+			    		\includegraphics[width=.57\linewidth]{figs/dictionary.jpg}
 			    		\caption{\tiny Dictionary\footnotemark[5]}
 			    	\end{subfigure}
 			    \begin{subfigure}[b]{.55\columnwidth}
@@ -214,81 +227,71 @@ infer \textbf{semantic search cues} to address the \textbf{OS problem}}}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}{Geometric perception}
-	\begin{columns}[T]
-		\column{0.6\textwidth}
-			\begin{itemize}[<+->]
-				\item Raw sensor readings
-				\item Useful for many \textbf{robotic tasks}			
-				\item Efficient for \textbf{building maps} and \textbf{state estimation}
-				\item Suitable for \textbf{path-planning} and \textbf{obstacle avoidance}
-				\item \textbf{Limitations}:
-				\begin{itemize}[<+->]	
-					\item Type of maps (\textcolor{cyan}{free}, \textcolor{darkgray}{occupied}, \textcolor{lightgray}{unknown})
-					\item Does not distinguish obstacles
-					\item Insufficient for high-level tasks
-				\end{itemize}				
-				\item How to \textbf{overcome} these \textbf{limitations}?
-			\end{itemize}
-		
-		\column{0.4\textwidth}	
-			\centering
-			\begin{figure}
-%			    \begin{subfigure}[b]{.5\columnwidth}
+%\begin{frame}{Geometric perception}
+%	\begin{columns}[T]
+%		\column{0.6\textwidth}
+%			\begin{itemize}[<+->]
+%				\item Raw sensor readings
+%				\item Useful for many \textbf{robotic tasks}			
+%				\item Efficient for \textbf{building maps} and \textbf{state estimation}
+%				\item Suitable for \textbf{path-planning} and \textbf{obstacle avoidance}
+%				\item \textbf{Limitations}:
+%				\begin{itemize}[<+->]	
+%					\item Type of maps (\textcolor{cyan}{free}, \textcolor{darkgray}{occupied}, \textcolor{lightgray}{unknown})
+%					\item Does not distinguish obstacles
+%					\item Insufficient for high-level tasks
+%				\end{itemize}				
+%				\item How to \textbf{overcome} these \textbf{limitations}?
+%			\end{itemize}
+%		
+%		\column{0.4\textwidth}	
+%			\centering
+%			\begin{figure}
+%				 \includegraphics[width=.9\linewidth]{figs/vacuum_cleaner.png}
+%				 \caption{\tiny Vacuum cleaner robot in operation.\footnotemark[6]}			 		 
+%	         \end{figure}			
+%	\end{columns}	
+%	\footnotetext[6]{\tiny Extracted from \url{youtube.com/watch?v=5O8VmDiab3w}}
+%\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%\begin{frame}{Expand the geometric perception}
+%	\begin{columns}[T]
+%		\column{0.55\textwidth}
+%		\vspace{.7cm}
+%		\begin{itemize}
+%			\item Ages of mobile robotics\footnotemark[1]: 
+%			\begin{itemize}
+%				\item Robust-perception age (2015-now):
+%				\begin{itemize}[<+->]
+%					\item \textbf{Understand} the \textbf{concepts} of parts of the \textbf{sensor readings} ({\small {Semantic} information})		
+%					\item \textbf{Associate them} to the \textbf{map} ({\small {Semantic} mapping})
+%					\item Enhance robot's autonomy and robustness, \textbf{facilitate} more \textbf{complex tasks}
+%					\item Essential for \textbf{high-level reasoning} and \textbf{human-robot interaction}
+%				\end{itemize}
+%			\end{itemize}
+%		\end{itemize}
+%		\column{0.45\textwidth}	
+%			\centering
+%			\begin{figure}
+%			    \begin{subfigure}[b]{.6\columnwidth}
 %			    		\centering				
-%			    		\includegraphics[width=.9\linewidth]{figs/orbslam.png}
-%			    		\caption{\tiny ORB-SLAM\footnotemark[3]}
-%			    	\end{subfigure}~
-%			    \begin{subfigure}[b]{.5\columnwidth}
+%			    		\includegraphics[width=.9\linewidth]{figs/firefighters.png}
+%			    		\caption{\tiny The sire of the fire truck.}
+%			    	\end{subfigure}\\
+%			    \begin{subfigure}[b]{.6\columnwidth}
 %			    		\centering			    	
-%			    		\includegraphics[width=1\linewidth]{figs/gmapping.png}
-%			    		\caption{\tiny GMapping\footnotemark[4]}
+%			    		\includegraphics[width=.9\linewidth]{figs/door_open.png}
+%			    		\caption{\tiny The car door.}
 %			    	\end{subfigure}
-				 \includegraphics[width=.9\linewidth]{figs/vacuum_cleaner.png}
-				 \caption{\tiny Vacuum cleaner robot in operation.\footnotemark[6]}			 		 
-	         \end{figure}			
-	\end{columns}	
-	\footnotetext[6]{\tiny Extracted from \url{youtube.com/watch?v=5O8VmDiab3w}}
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}{Expand the geometric perception}
-	\begin{columns}[T]
-		\column{0.55\textwidth}
-		\vspace{.7cm}
-		\begin{itemize}
-			\item Ages of mobile robotics\footnotemark[1]: 
-			\begin{itemize}
-				\item Robust-perception age (2015-now):
-				\begin{itemize}[<+->]
-					\item \textbf{Understand} the \textbf{concepts} of parts of the \textbf{sensor readings} ({\small {Semantic} information})		
-					\item \textbf{Associate them} to the \textbf{map} ({\small {Semantic} mapping})
-					\item Enhance robot's autonomy and robustness, \textbf{facilitate} more \textbf{complex tasks}
-					\item Essential for \textbf{high-level reasoning} and \textbf{human-robot interaction}
-				\end{itemize}
-			\end{itemize}
-		\end{itemize}
-		\column{0.45\textwidth}	
-			\centering
-			\begin{figure}
-			    \begin{subfigure}[b]{.6\columnwidth}
-			    		\centering				
-			    		\includegraphics[width=.9\linewidth]{figs/firefighters.png}
-			    		\caption{\tiny The sire of the fire truck.}
-			    	\end{subfigure}\\
-			    \begin{subfigure}[b]{.6\columnwidth}
-			    		\centering			    	
-			    		\includegraphics[width=.9\linewidth]{figs/door_open.png}
-			    		\caption{\tiny The car door.}
-			    	\end{subfigure}
 
-				 \caption{\tiny Self-Driving System of an autonomous driving car.\footnotemark[7]}			 		 
-	         \end{figure}				
-	\end{columns}
-	\footnotetext[1]{\tiny Cesar, Cadena, et al. ``\textit{Simultaneous Localization And Mapping: Present Future and the Robust-Perception Age.}'' arXiv preprint arXiv: 1606.05830. 2016.}
-	\footnotetext[7]{\tiny Extracted from \url{youtube.com/watch?v=BVRMh9NO9Cs}}
-\end{frame}
+%				 \caption{\tiny Self-Driving System of an autonomous driving car.\footnotemark[7]}			 		 
+%	         \end{figure}				
+%	\end{columns}
+%	\footnotetext[1]{\tiny Cesar, Cadena, et al. ``\textit{Simultaneous Localization And Mapping: Present Future and the Robust-Perception Age.}'' arXiv preprint arXiv: 1606.05830. 2016.}
+%	\footnotetext[7]{\tiny Extracted from \url{youtube.com/watch?v=BVRMh9NO9Cs}}
+%\end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -298,61 +301,14 @@ infer \textbf{semantic search cues} to address the \textbf{OS problem}}}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}{Semantic information within mobile robotics}
-	\begin{itemize}[<+->]
-		\item Three questions:
-		\begin{itemize}[<+->]
-			\item \textbf{Which} type of \textbf{semantic information} is \textbf{relevant} to the \textbf{task}?	
-			\item \textbf{How} to perform the \textbf{inference/estimation} of the semantic information?	
-			\item \textbf{How} to \textbf{use} the \textbf{semantic information} to improve the \textbf{robot's performance}?	
-		\end{itemize}
-		\item We \textbf{investigate} these questions in the context of a \textbf{high-level task}: \textbf{object search} (OS)		
-	\end{itemize}		
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}{Object search problem}
-	\begin{itemize}[<+->]
-		\item \textbf{Challenging} and unsolved \textbf{task for robots}
-		\item \textbf{Goal:} the robot \textbf{searches} for a \textbf{target object} in an \textbf{unknown environment}
-		\item {Computation of the \textbf{optimal solution} \textit{vs} Estimation that the current goal \textbf{is not promising}}
-		\item The robot's \textbf{perception} is \textbf{crucial}
-		\item We \textbf{complement} the robot's \textbf{perception} by \textbf{inferring semantic information} from:
-		\begin{itemize}
-			\item Texts
-			\item Semi-dynamic objects
-		\end{itemize}
-		\item \textbf{Human-like} behavior
-	\end{itemize}
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%\begin{frame}{First years of robotics}
-%	\begin{columns}
-%		\column{0.5\textwidth}
-%		\begin{itemize}
-%			\item<+-> First decades of mobile roboticsff
-%			\begin{itemize}
-%				\item<+-> Lorem ipsum dolor sit amet, consectetur adipiscing elit			
-%				\begin{itemize}
-%					\item<+-> Lorem ipsum dolor sit amet, consectetur adipiscing elit			
-%				\end{itemize}								
-%			\end{itemize}				
-%			\item<+-> Aliquam blandit faucibus nisi, sit amet dapibus enim tempus eu
-%			\item<+-> Nulla commodo, erat quis gravida posuere, elit lacus lobortis est, quis porttitor odio mauris at libero
-%			\item<+-> Nam cursus est eget velit posuere pellentesque
-%			\item<+-> Vestibulum faucibus velit a augue condimentum quis convallis nulla gravida
+%\begin{frame}{Semantic information within mobile robotics}
+%	\begin{itemize}[<+->]
+%		\item Three questions:
+%		\begin{itemize}[<+->]
+%			\item \textbf{Which} type of \textbf{semantic information} is \textbf{relevant} to the \textbf{task}?	
+%			\item \textbf{How} to perform the \textbf{inference/estimation} of the semantic information?	
+%			\item \textbf{How} to \textbf{use} the \textbf{semantic information} to improve the \textbf{robot's performance}?	
 %		\end{itemize}
-%		\column{0.5\textwidth}
-%			\centering
-%			\includegraphics<1>[width=.45\linewidth]{example-image-a}
-%			\includegraphics<2>[width=.45\linewidth]{example-image-b}
-%			\includegraphics<3>[width=.45\linewidth]{example-image-c}						
-%	\end{columns}	
-%\end{frame}
-%
-%\begin{frame}{Olá}
-%    Olá, tudo bem?
+%		\item We \textbf{investigate} these questions in the context of a \textbf{high-level task}: \textbf{object search} (OS)		
+%	\end{itemize}		
 %\end{frame}

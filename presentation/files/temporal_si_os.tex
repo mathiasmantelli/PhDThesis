@@ -1,6 +1,6 @@
 \begin{frame}
 \centering
-\textcolor{red}{\textit{\textbf{Temporal semantic} OS system based on heat maps}}
+\textcolor{red}{\textit{\textbf{LSOS}: using \textbf{changes} in the \textbf{organisation} of the environment \textbf{over time}}}
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -11,8 +11,8 @@
 		\begin{itemize}[<+->]
 			\item \textbf{Indoor environments} and \textbf{semi-dynamic objects}
 %			\item Number of \textbf{older people living at home} is increasing			
-			\item \textbf{Service robots} and their use in indoor environments
-			\item The \textbf{OS task} and service robots
+			\item \textbf{SR} and their use in indoor environments
+			\item The \textbf{OS task} and SR
 			\item \textbf{Brute-force OS} strategy \textbf{is not practical} 
 			\item Why are objects moved?
 %			\item The \textbf{advantages} of visual sensors for the \textbf{OS problem}
@@ -20,11 +20,10 @@
 	\column{.45\textwidth}
 		\centering
 		\begin{figure}
-			\includegraphics[width=.9\linewidth]{figs/care_o_bot.png}
-			\caption{\tiny Evolution of the Care-O-bot.\footnotemark[15]}			 		 
+			\includegraphics[width=.9\linewidth]{figs/jaci_on.jpg}
+			\caption{\tiny Jaci disinfecting a cirurgical room}			 		 
 		\end{figure}			
 	\end{columns}
-	\footnotetext[15]{\tiny Figure extracted from \url{care-o-bot.de/en/care-o-bot-3/history.html}.}			
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -44,16 +43,16 @@
 	\begin{columns}[T]
 	\column{.5\textwidth}
 		\begin{itemize}[<+->]
-			\item \textbf{Semantic temporal OS system} for indoor environment
+			\item \textbf{Organisational semantic OS system} for indoor environment
 			\item Searches based on the \textbf{request hour}			
-			\item Self-contained OS system
-			\item Advantages of \textbf{semantic information} from \textbf{dynamic environments}
+			\item Self-contained LSOS system
+			\item Advantages of \textbf{organisational semantic information} from \textbf{dynamic environments}
 		\end{itemize}
 	\column{.5\textwidth}
 		\centering
 		\begin{figure}
 			\includegraphics[width=.8\linewidth]{figs/general_idea_300dpi.png}
-			\caption{\tiny General idea of our OS system.}
+			\caption{\tiny General idea of our LSOS system.}
 		\end{figure}			
 	\end{columns}	
 \end{frame}
@@ -73,7 +72,7 @@
 		\centering
 		\begin{figure}
 			\includegraphics[width=.8\linewidth]{figs/system_overview_shade.png}
-			\caption{\tiny Flow chart of our Semantic, Temporal OS system.}
+			\caption{\tiny Flow chart of our LSOS system.}
 		\end{figure}			
 	\end{columns}	
 \end{frame}
@@ -94,7 +93,7 @@
 		\centering
 		\begin{figure}
 			\includegraphics[width=.8\linewidth]{figs/system_overview.png}
-			\caption{\tiny Flow chart of our Semantic, Temporal OS system.}
+			\caption{\tiny Flow chart of our LSOS system.}
 		\end{figure}			
 	\end{columns}	
 \end{frame}
@@ -115,7 +114,7 @@
 		\centering
 		\begin{figure}
 			\includegraphics[width=.8\linewidth]{figs/environment_2Dgrid_heatmap_kernel.png}
-			\caption{\tiny Simulated world, its 2D grid map, and the heat map computed by our OS system.}
+			\caption{\tiny Simulated world, its 2D grid map, and the heat map computed by our LSOS system.}
 		\end{figure}			
 	\end{columns}	
 \end{frame}
@@ -731,7 +730,7 @@
 	\begin{itemize}[<+->]
 		\item \textbf{Heat map} that represents the \textbf{objects' presence}
 		\item \textbf{Search space reduction} that provides \textbf{better placement} for the robot
-		\item \textbf{Temporal Semantic OS system} that observes the objects' position changes \textbf{throughout a period of time}
+		\item \textbf{LSOS system} that observes the objects' position changes \textbf{throughout a period of time}
 		\item An OS system that does not depend on a specific SLAM or object-detection algorithm
 		\item Analysis of the \textbf{advantages} of \textbf{using semantic information} inferred from \textbf{semi-dynamic objects}
 	\end{itemize}
