@@ -1,3 +1,310 @@
+\begin{frame}{Mapping module}
+	\begin{columns}[T]
+		\column{.5\textwidth}
+		\vspace{.95cm}
+		\begin{itemize}
+			\item A \textbf{2D grid} map is build ({\small Simulation and real worlds})
+		\end{itemize}
+		\column{.5\textwidth}	
+			\centering	
+			\begin{figure}
+			    \begin{subfigure}[b]{.6\columnwidth}
+			    		\centering			
+					 \includegraphics[width=.6\linewidth]{figs/2d_map_simulation.png}
+     				 \caption{\tiny Mapping in simulation with HIMM.\footnotemark[14]}		 
+			    	\end{subfigure}
+%			    	\vspace{-.3cm}\\
+			    \begin{subfigure}[b]{.6\columnwidth}
+			    		\centering					    	
+			    		\includegraphics[width=.6\linewidth]{figs/2d_map_real.png}	         
+			    		\caption{\tiny Mapping the real world with Gmapping.\footnotemark[15]}				 
+			    	\end{subfigure}				
+%			    	\vspace{-.7cm}	 
+				 \caption{\tiny The 2D grid maps used in this work.}			 
+	         \end{figure}		         		
+	\end{columns}		
+	\footnotetext[14]{\tiny Borenstein, J., and Yoram K. ``\textit{Histogramic in-motion mapping for mobile robot obstacle avoidance}.'' Transactions on robotics and automation. 1991.}
+	\footnotetext[15]{\tiny Grisetti, G., Stachniss, C., and Burgard, W. ``\textit{Improving grid-based slam with rao-blackwellized particle filters by adaptive proposals and selective resampling.}'' ICRA. 2005.}		
+\end{frame}
+%========================================== ############# ======================================================        
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}[noframenumbering]{Mapping module}
+	\begin{columns}[T]
+		\column{.5\textwidth}
+		\vspace{1.2cm}		
+		\begin{itemize}
+			\item A \textbf{2D grid} map is build ({\small Simulation and real worlds})
+			\item \textbf{Voronoi} diagram 
+		\end{itemize}
+		\column{.5\textwidth}	
+			\centering	
+			\begin{figure}
+			    \begin{subfigure}[b]{.6\columnwidth}
+			    		\centering			
+					 \includegraphics[width=.6\linewidth]{figs/2d_map_voronoi_simulation.png}
+     				 \caption{\tiny Mapping in simulation with HIMM.\footnotemark[14]}			 
+			    	\end{subfigure}
+%			    	\vspace{-.3cm}\\
+			    \begin{subfigure}[b]{.6\columnwidth}
+			    		\centering					    	
+			    		\includegraphics[width=.6\linewidth]{figs/2d_map_voronoi_real.png}	         
+			    		\caption{\tiny Mapping the real world with Gmapping.\footnotemark[15]}					 
+			    	\end{subfigure}				
+%			    	\vspace{-.7cm}	 
+				 \caption{\tiny The 2D grid maps used in this work.}			 
+	         \end{figure}		         		
+	\end{columns}		
+	\footnotetext[14]{\tiny Borenstein, J., and Yoram K. ``\textit{Histogramic in-motion mapping for mobile robot obstacle avoidance}.'' Transactions on robotics and automation. 1991.}
+	\footnotetext[15]{\tiny Grisetti, G., Stachniss, C., and Burgard, W. ``\textit{Improving grid-based slam with rao-blackwellized particle filters by adaptive proposals and selective resampling.}'' ICRA. 2005.}		
+\end{frame}		
+%========================================== ############# ======================================================        
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}[noframenumbering]{Mapping module}
+	\begin{columns}[T]
+		\column{.5\textwidth}
+		\vspace{1.2cm}		
+		\begin{itemize}
+			\item A \textbf{2D grid} map is build ({\small Simulation and real worlds})
+			\item \textbf{Voronoi} diagram 
+			\item \textbf{Visited} regions
+		\end{itemize}
+		\column{.5\textwidth}	
+			\centering	
+			\begin{figure}
+			    \begin{subfigure}[b]{.6\columnwidth}
+			    		\centering			
+					 \includegraphics[width=.6\linewidth]{figs/2d_map_visited_simulation.png}
+     				 \caption{\tiny Mapping in simulation with HIMM.\footnotemark[14]}			 
+			    	\end{subfigure}
+%			    	\vspace{-.3cm}\\
+			    \begin{subfigure}[b]{.6\columnwidth}
+			    		\centering					    	
+			    		\includegraphics[width=.6\linewidth]{figs/2d_map_visited_real.png}	         
+			    		\caption{\tiny Mapping the real world with Gmapping.\footnotemark[15]}					 
+			    	\end{subfigure}				
+%			    	\vspace{-.7cm}	 
+				 \caption{\tiny The 2D grid maps used in this work.}			 
+	         \end{figure}		         		
+	\end{columns}		
+	\footnotetext[14]{\tiny Borenstein, J., and Yoram K. ``\textit{Histogramic in-motion mapping for mobile robot obstacle avoidance}.'' Transactions on robotics and automation. 1991.}
+	\footnotetext[15]{\tiny Grisetti, G., Stachniss, C., and Burgard, W. ``\textit{Improving grid-based slam with rao-blackwellized particle filters by adaptive proposals and selective resampling.}'' ICRA. 2005.}		
+\end{frame}			
+%========================================== ############# ======================================================        
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}[noframenumbering]{Mapping module}
+	\begin{columns}[T]
+		\column{.5\textwidth}
+		\vspace{1.2cm}		
+		\begin{itemize}
+			\item A \textbf{2D grid} map is build ({\small Simulation and real worlds})
+			\item \textbf{Voronoi} diagram 
+			\item \textbf{Visited} regions
+			\item \textbf{Frontiers} (visited and unvisited regions)
+		\end{itemize}
+		\column{.5\textwidth}	
+			\centering	
+			\begin{figure}
+			    \begin{subfigure}[b]{.6\columnwidth}
+			    		\centering			
+					 \includegraphics[width=.6\linewidth]{figs/2d_map_visited_simulation.png}
+     				 \caption{\tiny Mapping in simulation with HIMM.\footnotemark[14]}			 
+			    	\end{subfigure}
+%			    	\vspace{-.3cm}\\
+			    \begin{subfigure}[b]{.6\columnwidth}
+			    		\centering					    	
+			    		\includegraphics[width=.6\linewidth]{figs/2d_map_visited_real.png}	         
+			    		\caption{\tiny Mapping the real world with Gmapping.\footnotemark[15]}					 
+			    	\end{subfigure}				
+%			    	\vspace{-.7cm}	 
+				 \caption{\tiny The 2D grid maps used in this work.}			 
+	         \end{figure}		         		
+	\end{columns}		
+	\footnotetext[14]{\tiny Borenstein, J., and Yoram K. ``\textit{Histogramic in-motion mapping for mobile robot obstacle avoidance}.'' Transactions on robotics and automation. 1991.}
+	\footnotetext[15]{\tiny Grisetti, G., Stachniss, C., and Burgard, W. ``\textit{Improving grid-based slam with rao-blackwellized particle filters by adaptive proposals and selective resampling.}'' ICRA. 2005.}		
+\end{frame}	
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Map Segmentation module}
+	\begin{columns}[T]
+		\column{.5\textwidth}
+		\begin{itemize}
+			\item \textbf{Divides} the map based on the \textbf{free space}	
+		\end{itemize}
+		\column{.5\textwidth}	
+			\centering	
+			\begin{figure}
+			    \begin{subfigure}{.4\columnwidth}		
+					 \includegraphics[width=1\linewidth]{figs/33.png}
+     				 \caption{\tiny The 2D grid map segmented.}			 		 
+			    	\end{subfigure}
+			    \begin{subfigure}{.4\columnwidth}
+			    		\includegraphics[width=1\linewidth]{figs/44.png}	         
+			    		\caption{\tiny The different segments identified by different colors.}					 
+			    	\end{subfigure}					 
+				 \caption{\tiny The 2D grid maps used in this work.}				 
+	         \end{figure}		         		
+	\end{columns}		
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}[noframenumbering]{Map Segmentation module}
+	\begin{columns}[T]
+		\column{.5\textwidth}
+		\begin{itemize}
+			\item \textbf{Divides} the map based on the \textbf{free space}	
+			\item \textbf{Simultaneously} to the \textbf{Mapping module}
+		\end{itemize}
+		\column{.5\textwidth}	
+			\centering	
+			\begin{figure}
+			    \begin{subfigure}{.4\columnwidth}		
+					 \includegraphics[width=1\linewidth]{figs/33.png}
+     				 \caption{\tiny The 2D grid map segmented.}			 		 
+			    	\end{subfigure}
+			    \begin{subfigure}{.4\columnwidth}
+			    		\includegraphics[width=1\linewidth]{figs/44.png}	         
+			    		\caption{\tiny The different segments identified by different colors.}					 
+			    	\end{subfigure}					 
+				 \caption{\tiny The 2D grid maps used in this work.}				 
+	         \end{figure}			         		
+	\end{columns}		
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}[noframenumbering]{Map Segmentation module}
+	\begin{columns}[T]
+		\column{.5\textwidth}
+		\begin{itemize}
+			\item \textbf{Divides} the map based on the \textbf{free space}	
+			\item \textbf{Simultaneously} to the \textbf{Mapping module}
+			\item Kernel Density Estimation (\textbf{KDE})\footnotemark[16]
+		\end{itemize}
+		\column{.5\textwidth}	
+			\centering	
+			\begin{figure}
+			    \begin{subfigure}{.4\columnwidth}		
+					 \includegraphics[width=1\linewidth]{figs/33.png}
+     				 \caption{\tiny The 2D grid map segmented.}			 		 
+			    	\end{subfigure}
+			    \begin{subfigure}{.4\columnwidth}
+			    		\includegraphics[width=1\linewidth]{figs/44.png}	         
+			    		\caption{\tiny The different segments identified by different colors.}					 
+			    	\end{subfigure}					 
+				 \caption{\tiny The 2D grid maps used in this work.}				 
+	         \end{figure}		         		
+	\end{columns}		
+	\footnotetext[16]{\tiny Maffei, Renan, et al. ``\textit{Fast monte carlo localization using spatial density information.}'', ICRA. 2015}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}[noframenumbering]{Map Segmentation module}
+	\begin{columns}[T]
+		\column{.5\textwidth}
+		\begin{itemize}
+			\item \textbf{Divides} the map based on the \textbf{free space}	
+			\item \textbf{Simultaneously} to the \textbf{Mapping module}
+			\item Kernel Density Estimation (\textbf{KDE})\footnotemark[16]
+			\item An \textbf{abstraction} of the \textbf{2D grid map} for \textbf{grouping} the \textbf{detected door signs}
+		\end{itemize}
+		\column{.5\textwidth}	
+			\centering	
+			\begin{figure}
+			    \begin{subfigure}{.4\columnwidth}		
+					 \includegraphics[width=1\linewidth]{figs/33.png}
+     				 \caption{\tiny The 2D grid map segmented.}			 		 
+			    	\end{subfigure}
+			    \begin{subfigure}{.4\columnwidth}
+			    		\includegraphics[width=1\linewidth]{figs/44.png}	         
+			    		\caption{\tiny The different segments identified by different colors.}					 
+			    	\end{subfigure}					 
+				 \caption{\tiny The 2D grid maps used in this work.}				 
+	         \end{figure}	         		
+	\end{columns}		
+	\footnotetext[16]{\tiny Maffei, Renan, et al. ``\textit{Fast monte carlo localization using spatial density information.}'', ICRA. 2015}	
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Image Processing module}
+	\begin{columns}[T]
+		\column{0.5\textwidth}
+		\begin{itemize}
+			\item Optical character recognition (\textbf{OCR})
+		\end{itemize}
+		\column{0.5\textwidth}
+			\centering
+			\begin{figure}
+				 \includegraphics[width=.9\linewidth]{figs/image_processing.png}
+				 \caption{\tiny Illustration of the Image Processing module detecting a door label.}			 		 
+	        \end{figure}			
+	\end{columns}	
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}[noframenumbering]{Image Processing module}
+	\begin{columns}[T]
+		\column{0.5\textwidth}
+		\begin{itemize}
+			\item Optical character recognition (\textbf{OCR})
+			\item \textbf{Recognize} the number of \textbf{door signs} in \textbf{RGB images}
+		\end{itemize}
+		\column{0.5\textwidth}
+			\centering
+			\begin{figure}
+				 \includegraphics[width=.9\linewidth]{figs/image_processing.png}
+				 \caption{\tiny Illustration of the Image Processing module detecting a door label.}		
+	        \end{figure}			
+	\end{columns}	
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}[noframenumbering]{Image Processing module}
+	\begin{columns}[T]
+		\column{0.5\textwidth}
+		\begin{itemize}
+			\item Optical character recognition (\textbf{OCR})
+			\item \textbf{Recognize} the number of \textbf{door signs} in \textbf{RGB images}
+			\item We use the work proposed by Neumann and Matas (2012)\footnotemark[9]
+		\end{itemize}
+		\column{0.5\textwidth}
+			\centering
+			\begin{figure}
+				 \includegraphics[width=.9\linewidth]{figs/image_processing.png}
+				 \caption{\tiny Illustration of the Image Processing module detecting a door label.}				 		 
+	        \end{figure}			
+	\end{columns}	
+	\footnotetext[9]{\tiny Neumann, Lukáš, and Jiří Matas. ``\textit{Real-time scene text localization and recognition}.'',Conference on Computer Vision and Pattern Recognition. 2012.}	
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}[noframenumbering]{Image Processing module}
+	\begin{columns}[T]
+		\column{0.5\textwidth}
+		\begin{itemize}
+			\item Optical character recognition (\textbf{OCR})
+			\item \textbf{Recognize} the number of \textbf{door signs} in \textbf{RGB images}
+			\item We use the work proposed by Neumann and Matas (2012)\footnotemark[9]
+			\item The \textbf{recognized numbers} are \textbf{associated} to the \textbf{map segments}
+		\end{itemize}
+		\column{0.5\textwidth}
+			\centering
+			\begin{figure}
+				 \includegraphics[width=.9\linewidth]{figs/image_processing.png}
+				 \caption{\tiny Illustration of the Image Processing module detecting a door label.}		
+	        \end{figure}			
+	\end{columns}	
+	\footnotetext[9]{\tiny Neumann, Lukáš, and Jiří Matas. ``\textit{Real-time scene text localization and recognition}.'',Conference on Computer Vision and Pattern Recognition. 2012.}		
+\end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================

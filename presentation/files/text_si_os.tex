@@ -1,15 +1,15 @@
-\begin{frame}
-\centering
-\textcolor{red}{\textit{\textbf{NSOS}: using \textbf{numbers} to \textbf{interpret} the \textbf{organisation of the environments}}}
-\end{frame}
+%\begin{frame}
+%\centering
+%\textcolor{red}{\textit{\textbf{NSOS}: using \textbf{numbers} to \textbf{interpret} the \textbf{organisation of the environments}}}
+%\end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ====================================================== 
-\begin{frame}{Introduction}
+\begin{frame}{Humans in search tasks}
 	\begin{columns}[T]
 		\column{.55\textwidth}
 		\begin{itemize}
-			\item \textbf{Humans} in \textbf{search tasks}
+			\item \textbf{Humans} \textbf{searching} in \textbf{unknown environments}
 		\end{itemize}			
 		\column{.45\textwidth}
 			\centering
@@ -23,11 +23,11 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ====================================================== 
-\begin{frame}[noframenumbering]{Introduction}
+\begin{frame}[noframenumbering]{Humans in search tasks}
 	\begin{columns}[T]
 		\column{.55\textwidth}
 		\begin{itemize}
-			\item \textbf{Humans} in \textbf{search tasks}					
+			\item \textbf{Humans} \textbf{searching} in \textbf{unknown environments}		
 			\item \textbf{Text} provides \textbf{meaningful information}
 		\end{itemize}			
 		\column{.45\textwidth}
@@ -42,28 +42,28 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ====================================================== 
-\begin{frame}[noframenumbering]{Introduction}
+\begin{frame}[noframenumbering]{Humans in search tasks}
 	\begin{columns}[T]
 		\column{.55\textwidth}
 		\begin{itemize}
-			\item \textbf{Humans} in \textbf{search tasks}	
+			\item \textbf{Humans} \textbf{searching} in \textbf{unknown environments}
 			\item \textbf{Text} provides \textbf{meaningful information}
-			\item Example of robots in the context of OS: \textbf{courier robot} 
+			\item Example of SRs in the context of OS: \textbf{courier SR} 
 		\end{itemize}		 %
 		\column{.4\textwidth}
 			\centering	
 			\begin{figure}
 			    \begin{subfigure}[b]{.45\columnwidth}
-			    		\centering			
-					 \includegraphics[width=.95\linewidth]{figs/corridor_door_signs.jpg}
-     				 \caption{\tiny Corridor and door signs.\footnotemark[12]}			 		 
-			    	\end{subfigure}
+			    	\centering			
+			    	\includegraphics[width=.95\linewidth]{figs/corridor_door_signs.jpg}
+			    	\caption{\tiny Corridor and door signs.\footnotemark[12]}			 		 
+			    \end{subfigure}
 			    \begin{subfigure}[b]{.45\columnwidth}
-			    		\centering					    	
-			    		\includegraphics[width=1.07\linewidth]{figs/lift_robot.png}	         
-			    		\caption{\tiny Mobile robot in the lift.\footnotemark[13]}					 
-			    	\end{subfigure}					 
-				 \caption{\tiny Initial works on SLAM.}			 
+			    	\centering					    	
+			    	\includegraphics[width=1.07\linewidth]{figs/lift_robot.png}	         
+			    	\caption{\tiny Mobile robot in the lift.\footnotemark[13]}					 
+			    \end{subfigure}					 
+			    \caption{\tiny Initial works on SLAM.}			 
 	         \end{figure}	         		
 	\end{columns}
 	\footnotetext[12]{\tiny Figure extracted from \url{br.pinterest.com/pin/305611524696049040/}.}
@@ -72,13 +72,13 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ====================================================== 
-\begin{frame}[noframenumbering]{Introduction}
+\begin{frame}[noframenumbering]{Humans in search tasks}
 	\begin{columns}[T]
 		\column{.55\textwidth}
 		\begin{itemize}
-			\item \textbf{Humans} in \textbf{search tasks}	
+			\item \textbf{Humans} \textbf{searching} in \textbf{unknown environments}
 			\item \textbf{Text} provides \textbf{meaningful information}
-			\item Example of robots in the context of OS: \textbf{courier robot} 
+			\item Example of SRs in the context of OS: \textbf{courier SR}  
 			\item \textbf{Search strategy} in a large-scale unknown building \textbf{plays an important role}
 		\end{itemize}			
 		\column{.4\textwidth}
@@ -103,13 +103,13 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ====================================================== 
-\begin{frame}[noframenumbering]{Introduction}
+\begin{frame}[noframenumbering]{Humans in search tasks}
 	\begin{columns}[T]
 		\column{.55\textwidth}
 		\begin{itemize}
-			\item \textbf{Humans} in \textbf{search tasks}	
+			\item \textbf{Humans} \textbf{searching} in \textbf{unknown environments}
 			\item \textbf{Text} provides \textbf{meaningful information}
-			\item Example of robots in the context of OS: \textbf{courier robot} 
+			\item Example of SRs in the context of OS: \textbf{courier SR} 
 			\item \textbf{Search strategy} in a large-scale unknown building \textbf{plays an important role}
 			\item \textbf{Organisational semantic information} may be useful: \textbf{search cues} inferred from text signs
 		\end{itemize}			
@@ -168,12 +168,13 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}{Proposal and contributions}
+\begin{frame}{Number-based Semantic OS system (NSOS)}
 	\begin{itemize}[<+->]
-		\item \textbf{Semantic OS system} for indoor environment
+	
+%		\item Number-based Semantic OS system (\textbf{NSOS})
 		\item It searches for a specific door sign (\textbf{goal-door})
 		\item It was \textbf{evaluated} in \textbf{simulated} and \textbf{real indoor environments}, \textbf{compared} against \textbf{other OS systems} and \textbf{humans participants}
-		\item The \textbf{novelties} of this work:
+		\item The \textbf{novelties} of NSOS:
 		\begin{itemize}[<+->]
 			\item \textbf{Target object} and scenario
 			\item \textbf{Numbers} and \textbf{organisation of the environment}
@@ -184,7 +185,7 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}{System overview}
+\begin{frame}{NSOS system overview}
 	\begin{columns}[T]
 		\column{.35\textwidth}
 		\begin{itemize}
@@ -202,316 +203,475 @@
 			$\}$ \textit{\textbf{Core} of our NSOS system}
 	\end{columns}
 \end{frame} 
-%========================================== ############# ======================================================        
+%AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}{Mapping module}
+%========================================== ############# ======================================================
+\begin{frame}{NSOS system overview}
 	\begin{columns}[T]
 		\column{.5\textwidth}
-		\vspace{.95cm}
 		\begin{itemize}
-			\item A \textbf{2D grid} map is build ({\small Simulation and real worlds})
+			\item Our NSOS system is composed by:
+			\begin{itemize}
+				\item Mapping 
+				\begin{itemize}
+					\item It builds and updates a 2D grid map
+				\end{itemize}
+				\item Image Processing
+%				\begin{itemize}
+%					\item It recognizes numbers in door signs and include them into the map
+%				\end{itemize}
+				\item Map Segmentation
+%				\begin{itemize}
+%					\item It segments the free space of the 2D grid map
+%				\end{itemize}
+				\item Semantic Planner
+%				\begin{itemize}
+%					\item It estimates where the SR should during the OS
+%				\end{itemize}
+			\end{itemize}
 		\end{itemize}
-		\column{.5\textwidth}	
-			\centering	
+		\column{.5\textwidth}
 			\begin{figure}
-			    \begin{subfigure}[b]{.6\columnwidth}
+			    \begin{subfigure}[b]{.5\columnwidth}
 			    		\centering			
-					 \includegraphics[width=.6\linewidth]{figs/2d_map_simulation.png}
-     				 \caption{\tiny Mapping in simulation with HIMM.\footnotemark[14]}		 
-			    	\end{subfigure}
-%			    	\vspace{-.3cm}\\
-			    \begin{subfigure}[b]{.6\columnwidth}
+					 \includegraphics[width=.67\linewidth]{figs/2d_map_simulation.png}
+     				 \caption{\tiny Mapping in simulation with HIMM.\footnotemark[14]}				 		 
+			    	\end{subfigure}\\
+			    \begin{subfigure}[b]{.5\columnwidth}
 			    		\centering					    	
-			    		\includegraphics[width=.6\linewidth]{figs/2d_map_real.png}	         
-			    		\caption{\tiny Mapping the real world with Gmapping.\footnotemark[4]}				 
-			    	\end{subfigure}				
-%			    	\vspace{-.7cm}	 
-				 \caption{\tiny The 2D grid maps used in this work.}			 
-	         \end{figure}		         		
-	\end{columns}		
+			    		\includegraphics[width=.75\linewidth]{figs/2d_map_real.png}	         
+			    		\caption{\tiny Mapping the real world with Gmapping.\footnotemark[15]}					 
+			    	\end{subfigure}					 
+				 \caption{\tiny Initial works on SLAM.}			 
+	         \end{figure}	
+	\end{columns}
 	\footnotetext[14]{\tiny Borenstein, J., and Yoram K. ``\textit{Histogramic in-motion mapping for mobile robot obstacle avoidance}.'' Transactions on robotics and automation. 1991.}
-	\footnotetext[4]{\tiny Grisetti, G., Stachniss, C., and Burgard, W. ``\textit{Improving grid-based slam with rao-blackwellized particle filters by adaptive proposals and selective resampling.}'' ICRA. 2005.}		
-\end{frame}
-%========================================== ############# ======================================================        
+	\footnotetext[15]{\tiny Grisetti, G., Stachniss, C., and Burgard, W. ``\textit{Improving grid-based slam with rao-blackwellized particle filters by adaptive proposals and selective resampling.}'' ICRA. 2005.}	
+\end{frame} 
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}[noframenumbering]{Mapping module}
+%========================================== ############# ======================================================
+\begin{frame}{NSOS system overview}
 	\begin{columns}[T]
 		\column{.5\textwidth}
-		\vspace{1.2cm}		
 		\begin{itemize}
-			\item A \textbf{2D grid} map is build ({\small Simulation and real worlds})
-			\item \textbf{Voronoi} diagram 
+			\item Our NSOS system is composed by:
+			\begin{itemize}
+				\item Mapping 
+%				\begin{itemize}
+%					\item It builds and segments a 2D grid map
+%				\end{itemize}
+				\item Image Processing
+				\begin{itemize}
+					\item It recognizes numbers in door signs and include them into the map
+				\end{itemize}
+				\item Map Segmentation
+%				\begin{itemize}
+%					\item It segments the free space of the 2D grid map
+%				\end{itemize}
+				\item Semantic Planner
+%				\begin{itemize}
+%					\item It estimates where the SR should during the OS
+%				\end{itemize}
+			\end{itemize}
 		\end{itemize}
-		\column{.5\textwidth}	
-			\centering	
+		\column{.5\textwidth}
 			\begin{figure}
-			    \begin{subfigure}[b]{.6\columnwidth}
 			    		\centering			
-					 \includegraphics[width=.6\linewidth]{figs/2d_map_voronoi_simulation.png}
-     				 \caption{\tiny Mapping in simulation with HIMM.\footnotemark[14]}			 
-			    	\end{subfigure}
-%			    	\vspace{-.3cm}\\
-			    \begin{subfigure}[b]{.6\columnwidth}
-			    		\centering					    	
-			    		\includegraphics[width=.6\linewidth]{figs/2d_map_voronoi_real.png}	         
-			    		\caption{\tiny Mapping the real world with Gmapping.\footnotemark[4]}					 
-			    	\end{subfigure}				
-%			    	\vspace{-.7cm}	 
-				 \caption{\tiny The 2D grid maps used in this work.}			 
-	         \end{figure}		         		
-	\end{columns}		
+			    		\includegraphics[width=.65\linewidth]{figs/image_processing.png}
+			    		\caption{\tiny Illustration of the Image Processing module detecting a door label.}			 
+	         \end{figure}	
+	\end{columns}
 	\footnotetext[14]{\tiny Borenstein, J., and Yoram K. ``\textit{Histogramic in-motion mapping for mobile robot obstacle avoidance}.'' Transactions on robotics and automation. 1991.}
-	\footnotetext[4]{\tiny Grisetti, G., Stachniss, C., and Burgard, W. ``\textit{Improving grid-based slam with rao-blackwellized particle filters by adaptive proposals and selective resampling.}'' ICRA. 2005.}		
-\end{frame}		
-%========================================== ############# ======================================================        
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}[noframenumbering]{Mapping module}
-	\begin{columns}[T]
-		\column{.5\textwidth}
-		\vspace{1.2cm}		
-		\begin{itemize}
-			\item A \textbf{2D grid} map is build ({\small Simulation and real worlds})
-			\item \textbf{Voronoi} diagram 
-			\item \textbf{Visited} regions
-		\end{itemize}
-		\column{.5\textwidth}	
-			\centering	
-			\begin{figure}
-			    \begin{subfigure}[b]{.6\columnwidth}
-			    		\centering			
-					 \includegraphics[width=.6\linewidth]{figs/2d_map_visited_simulation.png}
-     				 \caption{\tiny Mapping in simulation with HIMM.\footnotemark[14]}			 
-			    	\end{subfigure}
-%			    	\vspace{-.3cm}\\
-			    \begin{subfigure}[b]{.6\columnwidth}
-			    		\centering					    	
-			    		\includegraphics[width=.6\linewidth]{figs/2d_map_visited_real.png}	         
-			    		\caption{\tiny Mapping the real world with Gmapping.\footnotemark[4]}					 
-			    	\end{subfigure}				
-%			    	\vspace{-.7cm}	 
-				 \caption{\tiny The 2D grid maps used in this work.}			 
-	         \end{figure}		         		
-	\end{columns}		
-	\footnotetext[14]{\tiny Borenstein, J., and Yoram K. ``\textit{Histogramic in-motion mapping for mobile robot obstacle avoidance}.'' Transactions on robotics and automation. 1991.}
-	\footnotetext[4]{\tiny Grisetti, G., Stachniss, C., and Burgard, W. ``\textit{Improving grid-based slam with rao-blackwellized particle filters by adaptive proposals and selective resampling.}'' ICRA. 2005.}		
-\end{frame}			
-%========================================== ############# ======================================================        
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}[noframenumbering]{Mapping module}
-	\begin{columns}[T]
-		\column{.5\textwidth}
-		\vspace{1.2cm}		
-		\begin{itemize}
-			\item A \textbf{2D grid} map is build ({\small Simulation and real worlds})
-			\item \textbf{Voronoi} diagram 
-			\item \textbf{Visited} regions
-			\item \textbf{Frontiers} (visited and unvisited regions)
-		\end{itemize}
-		\column{.5\textwidth}	
-			\centering	
-			\begin{figure}
-			    \begin{subfigure}[b]{.6\columnwidth}
-			    		\centering			
-					 \includegraphics[width=.6\linewidth]{figs/2d_map_visited_simulation.png}
-     				 \caption{\tiny Mapping in simulation with HIMM.\footnotemark[14]}			 
-			    	\end{subfigure}
-%			    	\vspace{-.3cm}\\
-			    \begin{subfigure}[b]{.6\columnwidth}
-			    		\centering					    	
-			    		\includegraphics[width=.6\linewidth]{figs/2d_map_visited_real.png}	         
-			    		\caption{\tiny Mapping the real world with Gmapping.\footnotemark[4]}					 
-			    	\end{subfigure}				
-%			    	\vspace{-.7cm}	 
-				 \caption{\tiny The 2D grid maps used in this work.}			 
-	         \end{figure}		         		
-	\end{columns}		
-	\footnotetext[14]{\tiny Borenstein, J., and Yoram K. ``\textit{Histogramic in-motion mapping for mobile robot obstacle avoidance}.'' Transactions on robotics and automation. 1991.}
-	\footnotetext[4]{\tiny Grisetti, G., Stachniss, C., and Burgard, W. ``\textit{Improving grid-based slam with rao-blackwellized particle filters by adaptive proposals and selective resampling.}'' ICRA. 2005.}		
-\end{frame}	
+	\footnotetext[15]{\tiny Grisetti, G., Stachniss, C., and Burgard, W. ``\textit{Improving grid-based slam with rao-blackwellized particle filters by adaptive proposals and selective resampling.}'' ICRA. 2005.}	
+\end{frame} 
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}{Map Segmentation module}
+\begin{frame}{NSOS system overview}
 	\begin{columns}[T]
 		\column{.5\textwidth}
 		\begin{itemize}
-			\item \textbf{Divides} the map based on the \textbf{free space}	
+			\item Our NSOS system is composed by:
+			\begin{itemize}
+				\item Mapping 
+%				\begin{itemize}
+%					\item It builds and segments a 2D grid map
+%				\end{itemize}
+				\item Image Processing
+%				\begin{itemize}
+%					\item It recognizes numbers in door signs and include them into the map
+%				\end{itemize}
+				\item Map Segmentation
+				\begin{itemize}
+					\item It segments the free space of the 2D grid map
+				\end{itemize}
+				\item Semantic Planner
+%				\begin{itemize}
+%					\item It estimates where the SR should during the OS
+%				\end{itemize}
+			\end{itemize}
 		\end{itemize}
-		\column{.5\textwidth}	
-			\centering	
+		\column{.5\textwidth}
 			\begin{figure}
 			    \begin{subfigure}{.4\columnwidth}		
-					 \includegraphics[width=1\linewidth]{figs/33.png}
+					 \includegraphics[width=.85\linewidth]{figs/33.png}
      				 \caption{\tiny The 2D grid map segmented.}			 		 
 			    	\end{subfigure}
 			    \begin{subfigure}{.4\columnwidth}
-			    		\includegraphics[width=1\linewidth]{figs/44.png}	         
+			    		\includegraphics[width=.85\linewidth]{figs/44.png}	         
 			    		\caption{\tiny The different segments identified by different colors.}					 
 			    	\end{subfigure}					 
-				 \caption{\tiny The 2D grid maps used in this work.}				 
-	         \end{figure}		         		
-	\end{columns}		
-\end{frame}
+				 \caption{\tiny The 2D grid maps used in this work.}		 
+	         \end{figure}	
+	\end{columns}
+	\footnotetext[14]{\tiny Borenstein, J., and Yoram K. ``\textit{Histogramic in-motion mapping for mobile robot obstacle avoidance}.'' Transactions on robotics and automation. 1991.}
+	\footnotetext[15]{\tiny Grisetti, G., Stachniss, C., and Burgard, W. ``\textit{Improving grid-based slam with rao-blackwellized particle filters by adaptive proposals and selective resampling.}'' ICRA. 2005.}	
+\end{frame} 
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}[noframenumbering]{Map Segmentation module}
+\begin{frame}{NSOS system overview}
 	\begin{columns}[T]
-		\column{.5\textwidth}
+		\column{.7\textwidth}
 		\begin{itemize}
-			\item \textbf{Divides} the map based on the \textbf{free space}	
-			\item \textbf{Simultaneously} to the \textbf{Mapping module}
-		\end{itemize}
-		\column{.5\textwidth}	
-			\centering	
-			\begin{figure}
-			    \begin{subfigure}{.4\columnwidth}		
-					 \includegraphics[width=1\linewidth]{figs/33.png}
-     				 \caption{\tiny The 2D grid map segmented.}			 		 
-			    	\end{subfigure}
-			    \begin{subfigure}{.4\columnwidth}
-			    		\includegraphics[width=1\linewidth]{figs/44.png}	         
-			    		\caption{\tiny The different segments identified by different colors.}					 
-			    	\end{subfigure}					 
-				 \caption{\tiny The 2D grid maps used in this work.}				 
-	         \end{figure}			         		
-	\end{columns}		
-\end{frame}
+			\item Our NSOS system is composed by:
+			\begin{itemize}
+				\item Mapping 
+%				\begin{itemize}
+%					\item It builds and segments a 2D grid map
+%				\end{itemize}
+				\item Image Processing
+%				\begin{itemize}
+%					\item It recognizes numbers in door signs and include them into the map
+%				\end{itemize}
+				\item Map Segmentation
+%				\begin{itemize}
+%					\item It segments the free space of the 2D grid map
+%				\end{itemize}
+				\item Semantic Planner
+				\begin{itemize}
+					\item It estimates where the SR should during the OS
+				\end{itemize}
+			\end{itemize}
+		\end{itemize}	
+		\column{.3\textwidth}
+	\end{columns}
+	\footnotetext[14]{\tiny Borenstein, J., and Yoram K. ``\textit{Histogramic in-motion mapping for mobile robot obstacle avoidance}.'' Transactions on robotics and automation. 1991.}
+	\footnotetext[15]{\tiny Grisetti, G., Stachniss, C., and Burgard, W. ``\textit{Improving grid-based slam with rao-blackwellized particle filters by adaptive proposals and selective resampling.}'' ICRA. 2005.}	
+\end{frame} 
+%AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+%========================================== ############# ======================================================        
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%\begin{frame}{Mapping module}
+%	\begin{columns}[T]
+%		\column{.5\textwidth}
+%		\vspace{.95cm}
+%		\begin{itemize}
+%			\item A \textbf{2D grid} map is build ({\small Simulation and real worlds})
+%		\end{itemize}
+%		\column{.5\textwidth}	
+%			\centering	
+%			\begin{figure}
+%			    \begin{subfigure}[b]{.6\columnwidth}
+%			    		\centering			
+%					 \includegraphics[width=.6\linewidth]{figs/2d_map_simulation.png}
+%     				 \caption{\tiny Mapping in simulation with HIMM.\footnotemark[14]}		 
+%			    	\end{subfigure}
+%%			    	\vspace{-.3cm}\\
+%			    \begin{subfigure}[b]{.6\columnwidth}
+%			    		\centering					    	
+%			    		\includegraphics[width=.6\linewidth]{figs/2d_map_real.png}	         
+%			    		\caption{\tiny Mapping the real world with Gmapping.\footnotemark[15]}				 
+%			    	\end{subfigure}				
+%%			    	\vspace{-.7cm}	 
+%				 \caption{\tiny The 2D grid maps used in this work.}			 
+%	         \end{figure}		         		
+%	\end{columns}		
+%	\footnotetext[14]{\tiny Borenstein, J., and Yoram K. ``\textit{Histogramic in-motion mapping for mobile robot obstacle avoidance}.'' Transactions on robotics and automation. 1991.}
+%	\footnotetext[15]{\tiny Grisetti, G., Stachniss, C., and Burgard, W. ``\textit{Improving grid-based slam with rao-blackwellized particle filters by adaptive proposals and selective resampling.}'' ICRA. 2005.}		
+%\end{frame}
+%========================================== ############# ======================================================        
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%\begin{frame}[noframenumbering]{Mapping module}
+%	\begin{columns}[T]
+%		\column{.5\textwidth}
+%		\vspace{1.2cm}		
+%		\begin{itemize}
+%			\item A \textbf{2D grid} map is build ({\small Simulation and real worlds})
+%			\item \textbf{Voronoi} diagram 
+%		\end{itemize}
+%		\column{.5\textwidth}	
+%			\centering	
+%			\begin{figure}
+%			    \begin{subfigure}[b]{.6\columnwidth}
+%			    		\centering			
+%					 \includegraphics[width=.6\linewidth]{figs/2d_map_voronoi_simulation.png}
+%     				 \caption{\tiny Mapping in simulation with HIMM.\footnotemark[14]}			 
+%			    	\end{subfigure}
+%%			    	\vspace{-.3cm}\\
+%			    \begin{subfigure}[b]{.6\columnwidth}
+%			    		\centering					    	
+%			    		\includegraphics[width=.6\linewidth]{figs/2d_map_voronoi_real.png}	         
+%			    		\caption{\tiny Mapping the real world with Gmapping.\footnotemark[15]}					 
+%			    	\end{subfigure}				
+%%			    	\vspace{-.7cm}	 
+%				 \caption{\tiny The 2D grid maps used in this work.}			 
+%	         \end{figure}		         		
+%	\end{columns}		
+%	\footnotetext[14]{\tiny Borenstein, J., and Yoram K. ``\textit{Histogramic in-motion mapping for mobile robot obstacle avoidance}.'' Transactions on robotics and automation. 1991.}
+%	\footnotetext[15]{\tiny Grisetti, G., Stachniss, C., and Burgard, W. ``\textit{Improving grid-based slam with rao-blackwellized particle filters by adaptive proposals and selective resampling.}'' ICRA. 2005.}		
+%\end{frame}		
+%========================================== ############# ======================================================        
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%\begin{frame}[noframenumbering]{Mapping module}
+%	\begin{columns}[T]
+%		\column{.5\textwidth}
+%		\vspace{1.2cm}		
+%		\begin{itemize}
+%			\item A \textbf{2D grid} map is build ({\small Simulation and real worlds})
+%			\item \textbf{Voronoi} diagram 
+%			\item \textbf{Visited} regions
+%		\end{itemize}
+%		\column{.5\textwidth}	
+%			\centering	
+%			\begin{figure}
+%			    \begin{subfigure}[b]{.6\columnwidth}
+%			    		\centering			
+%					 \includegraphics[width=.6\linewidth]{figs/2d_map_visited_simulation.png}
+%     				 \caption{\tiny Mapping in simulation with HIMM.\footnotemark[14]}			 
+%			    	\end{subfigure}
+%%			    	\vspace{-.3cm}\\
+%			    \begin{subfigure}[b]{.6\columnwidth}
+%			    		\centering					    	
+%			    		\includegraphics[width=.6\linewidth]{figs/2d_map_visited_real.png}	         
+%			    		\caption{\tiny Mapping the real world with Gmapping.\footnotemark[15]}					 
+%			    	\end{subfigure}				
+%%			    	\vspace{-.7cm}	 
+%				 \caption{\tiny The 2D grid maps used in this work.}			 
+%	         \end{figure}		         		
+%	\end{columns}		
+%	\footnotetext[14]{\tiny Borenstein, J., and Yoram K. ``\textit{Histogramic in-motion mapping for mobile robot obstacle avoidance}.'' Transactions on robotics and automation. 1991.}
+%	\footnotetext[15]{\tiny Grisetti, G., Stachniss, C., and Burgard, W. ``\textit{Improving grid-based slam with rao-blackwellized particle filters by adaptive proposals and selective resampling.}'' ICRA. 2005.}		
+%\end{frame}			
+%========================================== ############# ======================================================        
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%\begin{frame}[noframenumbering]{Mapping module}
+%	\begin{columns}[T]
+%		\column{.5\textwidth}
+%		\vspace{1.2cm}		
+%		\begin{itemize}
+%			\item A \textbf{2D grid} map is build ({\small Simulation and real worlds})
+%			\item \textbf{Voronoi} diagram 
+%			\item \textbf{Visited} regions
+%			\item \textbf{Frontiers} (visited and unvisited regions)
+%		\end{itemize}
+%		\column{.5\textwidth}	
+%			\centering	
+%			\begin{figure}
+%			    \begin{subfigure}[b]{.6\columnwidth}
+%			    		\centering			
+%					 \includegraphics[width=.6\linewidth]{figs/2d_map_visited_simulation.png}
+%     				 \caption{\tiny Mapping in simulation with HIMM.\footnotemark[14]}			 
+%			    	\end{subfigure}
+%%			    	\vspace{-.3cm}\\
+%			    \begin{subfigure}[b]{.6\columnwidth}
+%			    		\centering					    	
+%			    		\includegraphics[width=.6\linewidth]{figs/2d_map_visited_real.png}	         
+%			    		\caption{\tiny Mapping the real world with Gmapping.\footnotemark[15]}					 
+%			    	\end{subfigure}				
+%%			    	\vspace{-.7cm}	 
+%				 \caption{\tiny The 2D grid maps used in this work.}			 
+%	         \end{figure}		         		
+%	\end{columns}		
+%	\footnotetext[14]{\tiny Borenstein, J., and Yoram K. ``\textit{Histogramic in-motion mapping for mobile robot obstacle avoidance}.'' Transactions on robotics and automation. 1991.}
+%	\footnotetext[15]{\tiny Grisetti, G., Stachniss, C., and Burgard, W. ``\textit{Improving grid-based slam with rao-blackwellized particle filters by adaptive proposals and selective resampling.}'' ICRA. 2005.}		
+%\end{frame}	
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}[noframenumbering]{Map Segmentation module}
-	\begin{columns}[T]
-		\column{.5\textwidth}
-		\begin{itemize}
-			\item \textbf{Divides} the map based on the \textbf{free space}	
-			\item \textbf{Simultaneously} to the \textbf{Mapping module}
-			\item Kernel Density Estimation (\textbf{KDE})\footnotemark[15]
-		\end{itemize}
-		\column{.5\textwidth}	
-			\centering	
-			\begin{figure}
-			    \begin{subfigure}{.4\columnwidth}		
-					 \includegraphics[width=1\linewidth]{figs/33.png}
-     				 \caption{\tiny The 2D grid map segmented.}			 		 
-			    	\end{subfigure}
-			    \begin{subfigure}{.4\columnwidth}
-			    		\includegraphics[width=1\linewidth]{figs/44.png}	         
-			    		\caption{\tiny The different segments identified by different colors.}					 
-			    	\end{subfigure}					 
-				 \caption{\tiny The 2D grid maps used in this work.}				 
-	         \end{figure}		         		
-	\end{columns}		
-	\footnotetext[15]{\tiny Maffei, Renan, et al. ``\textit{Fast monte carlo localization using spatial density information.}'', ICRA. 2015}
-\end{frame}
+%\begin{frame}{Map Segmentation module}
+%	\begin{columns}[T]
+%		\column{.5\textwidth}
+%		\begin{itemize}
+%			\item \textbf{Divides} the map based on the \textbf{free space}	
+%		\end{itemize}
+%		\column{.5\textwidth}	
+%			\centering	
+%			\begin{figure}
+%			    \begin{subfigure}{.4\columnwidth}		
+%					 \includegraphics[width=1\linewidth]{figs/33.png}
+%     				 \caption{\tiny The 2D grid map segmented.}			 		 
+%			    	\end{subfigure}
+%			    \begin{subfigure}{.4\columnwidth}
+%			    		\includegraphics[width=1\linewidth]{figs/44.png}	         
+%			    		\caption{\tiny The different segments identified by different colors.}					 
+%			    	\end{subfigure}					 
+%				 \caption{\tiny The 2D grid maps used in this work.}				 
+%	         \end{figure}		         		
+%	\end{columns}		
+%\end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}[noframenumbering]{Map Segmentation module}
-	\begin{columns}[T]
-		\column{.5\textwidth}
-		\begin{itemize}
-			\item \textbf{Divides} the map based on the \textbf{free space}	
-			\item \textbf{Simultaneously} to the \textbf{Mapping module}
-			\item Kernel Density Estimation (\textbf{KDE})\footnotemark[15]
-			\item An \textbf{abstraction} of the \textbf{2D grid map} for \textbf{grouping} the \textbf{detected door signs}
-		\end{itemize}
-		\column{.5\textwidth}	
-			\centering	
-			\begin{figure}
-			    \begin{subfigure}{.4\columnwidth}		
-					 \includegraphics[width=1\linewidth]{figs/33.png}
-     				 \caption{\tiny The 2D grid map segmented.}			 		 
-			    	\end{subfigure}
-			    \begin{subfigure}{.4\columnwidth}
-			    		\includegraphics[width=1\linewidth]{figs/44.png}	         
-			    		\caption{\tiny The different segments identified by different colors.}					 
-			    	\end{subfigure}					 
-				 \caption{\tiny The 2D grid maps used in this work.}				 
-	         \end{figure}	         		
-	\end{columns}		
-	\footnotetext[15]{\tiny Maffei, Renan, et al. ``\textit{Fast monte carlo localization using spatial density information.}'', ICRA. 2015}	
-\end{frame}
+%\begin{frame}[noframenumbering]{Map Segmentation module}
+%	\begin{columns}[T]
+%		\column{.5\textwidth}
+%		\begin{itemize}
+%			\item \textbf{Divides} the map based on the \textbf{free space}	
+%			\item \textbf{Simultaneously} to the \textbf{Mapping module}
+%		\end{itemize}
+%		\column{.5\textwidth}	
+%			\centering	
+%			\begin{figure}
+%			    \begin{subfigure}{.4\columnwidth}		
+%					 \includegraphics[width=1\linewidth]{figs/33.png}
+%     				 \caption{\tiny The 2D grid map segmented.}			 		 
+%			    	\end{subfigure}
+%			    \begin{subfigure}{.4\columnwidth}
+%			    		\includegraphics[width=1\linewidth]{figs/44.png}	         
+%			    		\caption{\tiny The different segments identified by different colors.}					 
+%			    	\end{subfigure}					 
+%				 \caption{\tiny The 2D grid maps used in this work.}				 
+%	         \end{figure}			         		
+%	\end{columns}		
+%\end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}{Image Processing module}
-	\begin{columns}[T]
-		\column{0.5\textwidth}
-		\begin{itemize}
-			\item Optical character recognition (\textbf{OCR})
-		\end{itemize}
-		\column{0.5\textwidth}
-			\centering
-			\begin{figure}
-				 \includegraphics[width=.9\linewidth]{figs/image_processing.png}
-				 \caption{\tiny Illustration of the Image Processing module detecting a door label.}			 		 
-	        \end{figure}			
-	\end{columns}	
-\end{frame}
+%\begin{frame}[noframenumbering]{Map Segmentation module}
+%	\begin{columns}[T]
+%		\column{.5\textwidth}
+%		\begin{itemize}
+%			\item \textbf{Divides} the map based on the \textbf{free space}	
+%			\item \textbf{Simultaneously} to the \textbf{Mapping module}
+%			\item Kernel Density Estimation (\textbf{KDE})\footnotemark[16]
+%		\end{itemize}
+%		\column{.5\textwidth}	
+%			\centering	
+%			\begin{figure}
+%			    \begin{subfigure}{.4\columnwidth}		
+%					 \includegraphics[width=1\linewidth]{figs/33.png}
+%     				 \caption{\tiny The 2D grid map segmented.}			 		 
+%			    	\end{subfigure}
+%			    \begin{subfigure}{.4\columnwidth}
+%			    		\includegraphics[width=1\linewidth]{figs/44.png}	         
+%			    		\caption{\tiny The different segments identified by different colors.}					 
+%			    	\end{subfigure}					 
+%				 \caption{\tiny The 2D grid maps used in this work.}				 
+%	         \end{figure}		         		
+%	\end{columns}		
+%	\footnotetext[16]{\tiny Maffei, Renan, et al. ``\textit{Fast monte carlo localization using spatial density information.}'', ICRA. 2015}
+%\end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}[noframenumbering]{Image Processing module}
-	\begin{columns}[T]
-		\column{0.5\textwidth}
-		\begin{itemize}
-			\item Optical character recognition (\textbf{OCR})
-			\item \textbf{Recognize} the number of \textbf{door signs} in \textbf{RGB images}
-		\end{itemize}
-		\column{0.5\textwidth}
-			\centering
-			\begin{figure}
-				 \includegraphics[width=.9\linewidth]{figs/image_processing.png}
-				 \caption{\tiny Illustration of the Image Processing module detecting a door label.}		
-	        \end{figure}			
-	\end{columns}	
-\end{frame}
+%\begin{frame}[noframenumbering]{Map Segmentation module}
+%	\begin{columns}[T]
+%		\column{.5\textwidth}
+%		\begin{itemize}
+%			\item \textbf{Divides} the map based on the \textbf{free space}	
+%			\item \textbf{Simultaneously} to the \textbf{Mapping module}
+%			\item Kernel Density Estimation (\textbf{KDE})\footnotemark[16]
+%			\item An \textbf{abstraction} of the \textbf{2D grid map} for \textbf{grouping} the \textbf{detected door signs}
+%		\end{itemize}
+%		\column{.5\textwidth}	
+%			\centering	
+%			\begin{figure}
+%			    \begin{subfigure}{.4\columnwidth}		
+%					 \includegraphics[width=1\linewidth]{figs/33.png}
+%     				 \caption{\tiny The 2D grid map segmented.}			 		 
+%			    	\end{subfigure}
+%			    \begin{subfigure}{.4\columnwidth}
+%			    		\includegraphics[width=1\linewidth]{figs/44.png}	         
+%			    		\caption{\tiny The different segments identified by different colors.}					 
+%			    	\end{subfigure}					 
+%				 \caption{\tiny The 2D grid maps used in this work.}				 
+%	         \end{figure}	         		
+%	\end{columns}		
+%	\footnotetext[16]{\tiny Maffei, Renan, et al. ``\textit{Fast monte carlo localization using spatial density information.}'', ICRA. 2015}	
+%\end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}[noframenumbering]{Image Processing module}
-	\begin{columns}[T]
-		\column{0.5\textwidth}
-		\begin{itemize}
-			\item Optical character recognition (\textbf{OCR})
-			\item \textbf{Recognize} the number of \textbf{door signs} in \textbf{RGB images}
-			\item We use the work proposed by Neumann and Matas (2012)\footnotemark[16]
-		\end{itemize}
-		\column{0.5\textwidth}
-			\centering
-			\begin{figure}
-				 \includegraphics[width=.9\linewidth]{figs/image_processing.png}
-				 \caption{\tiny Illustration of the Image Processing module detecting a door label.}				 		 
-	        \end{figure}			
-	\end{columns}	
-	\footnotetext[16]{\tiny Neumann, Lukáš, and Jiří Matas. ``\textit{Real-time scene text localization and recognition}.'',Conference on Computer Vision and Pattern Recognition. 2012.}	
-\end{frame}
+%\begin{frame}{Image Processing module}
+%	\begin{columns}[T]
+%		\column{0.5\textwidth}
+%		\begin{itemize}
+%			\item Optical character recognition (\textbf{OCR})
+%		\end{itemize}
+%		\column{0.5\textwidth}
+%			\centering
+%			\begin{figure}
+%				 \includegraphics[width=.9\linewidth]{figs/image_processing.png}
+%				 \caption{\tiny Illustration of the Image Processing module detecting a door label.}			 		 
+%	        \end{figure}			
+%	\end{columns}	
+%\end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}[noframenumbering]{Image Processing module}
-	\begin{columns}[T]
-		\column{0.5\textwidth}
-		\begin{itemize}
-			\item Optical character recognition (\textbf{OCR})
-			\item \textbf{Recognize} the number of \textbf{door signs} in \textbf{RGB images}
-			\item We use the work proposed by Neumann and Matas (2012)\footnotemark[16]
-			\item The \textbf{recognized numbers} are \textbf{associated} to the \textbf{map segments}
-		\end{itemize}
-		\column{0.5\textwidth}
-			\centering
-			\begin{figure}
-				 \includegraphics[width=.9\linewidth]{figs/image_processing.png}
-				 \caption{\tiny Illustration of the Image Processing module detecting a door label.}		
-	        \end{figure}			
-	\end{columns}	
-	\footnotetext[16]{\tiny Neumann, Lukáš, and Jiří Matas. ``\textit{Real-time scene text localization and recognition}.'',Conference on Computer Vision and Pattern Recognition. 2012.}		
-\end{frame}
+%\begin{frame}[noframenumbering]{Image Processing module}
+%	\begin{columns}[T]
+%		\column{0.5\textwidth}
+%		\begin{itemize}
+%			\item Optical character recognition (\textbf{OCR})
+%			\item \textbf{Recognize} the number of \textbf{door signs} in \textbf{RGB images}
+%		\end{itemize}
+%		\column{0.5\textwidth}
+%			\centering
+%			\begin{figure}
+%				 \includegraphics[width=.9\linewidth]{figs/image_processing.png}
+%				 \caption{\tiny Illustration of the Image Processing module detecting a door label.}		
+%	        \end{figure}			
+%	\end{columns}	
+%\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%\begin{frame}[noframenumbering]{Image Processing module}
+%	\begin{columns}[T]
+%		\column{0.5\textwidth}
+%		\begin{itemize}
+%			\item Optical character recognition (\textbf{OCR})
+%			\item \textbf{Recognize} the number of \textbf{door signs} in \textbf{RGB images}
+%			\item We use the work proposed by Neumann and Matas (2012)\footnotemark[9]
+%		\end{itemize}
+%		\column{0.5\textwidth}
+%			\centering
+%			\begin{figure}
+%				 \includegraphics[width=.9\linewidth]{figs/image_processing.png}
+%				 \caption{\tiny Illustration of the Image Processing module detecting a door label.}				 		 
+%	        \end{figure}			
+%	\end{columns}	
+%	\footnotetext[9]{\tiny Neumann, Lukáš, and Jiří Matas. ``\textit{Real-time scene text localization and recognition}.'',Conference on Computer Vision and Pattern Recognition. 2012.}	
+%\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%\begin{frame}[noframenumbering]{Image Processing module}
+%	\begin{columns}[T]
+%		\column{0.5\textwidth}
+%		\begin{itemize}
+%			\item Optical character recognition (\textbf{OCR})
+%			\item \textbf{Recognize} the number of \textbf{door signs} in \textbf{RGB images}
+%			\item We use the work proposed by Neumann and Matas (2012)\footnotemark[9]
+%			\item The \textbf{recognized numbers} are \textbf{associated} to the \textbf{map segments}
+%		\end{itemize}
+%		\column{0.5\textwidth}
+%			\centering
+%			\begin{figure}
+%				 \includegraphics[width=.9\linewidth]{figs/image_processing.png}
+%				 \caption{\tiny Illustration of the Image Processing module detecting a door label.}		
+%	        \end{figure}			
+%	\end{columns}	
+%	\footnotetext[9]{\tiny Neumann, Lukáš, and Jiří Matas. ``\textit{Real-time scene text localization and recognition}.'',Conference on Computer Vision and Pattern Recognition. 2012.}		
+%\end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -547,7 +707,7 @@
 	\begin{columns}
 		\column{0.755\textwidth}		
 		\begin{itemize}
-			\item It estimates which regions are more promising to find the goal-door
+%			\item It estimates which regions are more promising to find the goal-door
 			\item It is composed of five different factors:	
 			\begin{itemize}
 				\item Parity
@@ -1175,6 +1335,286 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
+%\begin{frame}{Experiments and Results}
+%
+%			\centering	
+%			\begin{figure}
+%			    \begin{subfigure}{.45\columnwidth}
+%			    		\centering
+%					 \includegraphics[width=.7\linewidth]{figs/4_111_0.8_inverse_map/1222.png}
+%     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 80\%$.}
+%			    	\end{subfigure}
+%			    \begin{subfigure}{.45\columnwidth}
+%			    		\centering			    
+%			    		\includegraphics[width=.7\linewidth]{figs/7_111_0.9_inverse_map/1222.png}
+%     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 90\%$.}
+%			    	\end{subfigure}						    				    				 
+%				 \caption{\tiny Comparison of our NSOS system searching for goal-door 111 in the Inverse map with different $\alpha$ values.}					
+%	         \end{figure}	
+%\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%\begin{frame}{Experiments and Results}
+%
+%			\centering	
+%			\begin{figure}
+%			    \begin{subfigure}{.45\columnwidth}
+%			    		\centering
+%					 \includegraphics[width=.7\linewidth]{figs/4_111_0.8_inverse_map/22.png}
+%     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 80\%$.}
+%			    	\end{subfigure}
+%			    \begin{subfigure}{.45\columnwidth}
+%			    		\centering			    
+%			    		\includegraphics[width=.7\linewidth]{figs/7_111_0.9_inverse_map/22.png}
+%     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 90\%$.}
+%			    	\end{subfigure}						    				    				 
+%				 \caption{\tiny Comparison of our NSOS system searching for goal-door 111 in the Inverse map with different $\alpha$ values.}					
+%	         \end{figure}	
+%\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%\begin{frame}{Experiments and Results}
+%
+%			\centering	
+%			\begin{figure}
+%			    \begin{subfigure}{.45\columnwidth}
+%			    		\centering
+%					 \includegraphics[width=.7\linewidth]{figs/4_111_0.8_inverse_map/32.png}
+%     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 80\%$.}
+%			    	\end{subfigure}
+%			    \begin{subfigure}{.45\columnwidth}
+%			    		\centering			    
+%			    		\includegraphics[width=.7\linewidth]{figs/7_111_0.9_inverse_map/32.png}
+%     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 90\%$.}
+%			    	\end{subfigure}						    				    				 
+%				 \caption{\tiny Comparison of our NSOS system searching for goal-door 111 in the Inverse map with different $\alpha$ values.}					
+%	         \end{figure}	
+%\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%\begin{frame}{Experiments and Results}
+%
+%			\centering	
+%			\begin{figure}
+%			    \begin{subfigure}{.45\columnwidth}
+%			    		\centering
+%					 \includegraphics[width=.7\linewidth]{figs/4_111_0.8_inverse_map/42.png}
+%     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 80\%$.}
+%			    	\end{subfigure}
+%			    \begin{subfigure}{.45\columnwidth}
+%			    		\centering			    
+%			    		\includegraphics[width=.7\linewidth]{figs/7_111_0.9_inverse_map/42.png}
+%     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 90\%$.}
+%			    	\end{subfigure}						    				    				 
+%				 \caption{\tiny Comparison of our NSOS system searching for goal-door 111 in the Inverse map with different $\alpha$ values.}					
+%	         \end{figure}	
+%\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%\begin{frame}{Experiments and Results}
+%
+%			\centering	
+%			\begin{figure}
+%			    \begin{subfigure}{.45\columnwidth}
+%			    		\centering
+%					 \includegraphics[width=.7\linewidth]{figs/4_111_0.8_inverse_map/52.png}
+%     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 80\%$.}
+%			    	\end{subfigure}
+%			    \begin{subfigure}{.45\columnwidth}
+%			    		\centering			    
+%			    		\includegraphics[width=.7\linewidth]{figs/7_111_0.9_inverse_map/52.png}
+%     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 90\%$.}
+%			    	\end{subfigure}						    				    				 
+%				 \caption{\tiny Comparison of our NSOS system searching for goal-door 111 in the Inverse map with different $\alpha$ values.}					
+%	         \end{figure}	
+%\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%\begin{frame}{Experiments and Results}
+%
+%			\centering	
+%			\begin{figure}
+%			    \begin{subfigure}{.45\columnwidth}
+%			    		\centering
+%					 \includegraphics[width=.7\linewidth]{figs/4_111_0.8_inverse_map/62.png}
+%     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 80\%$.}
+%			    	\end{subfigure}
+%			    \begin{subfigure}{.45\columnwidth}
+%			    		\centering			    
+%			    		\includegraphics[width=.7\linewidth]{figs/7_111_0.9_inverse_map/62.png}
+%     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 90\%$.}
+%			    	\end{subfigure}						    				    				 
+%				 \caption{\tiny Comparison of our NSOS system searching for goal-door 111 in the Inverse map with different $\alpha$ values.}					
+%	         \end{figure}	
+%\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%\begin{frame}{Experiments and Results}
+%
+%			\centering	
+%			\begin{figure}
+%			    \begin{subfigure}{.45\columnwidth}
+%			    		\centering
+%					 \includegraphics[width=.7\linewidth]{figs/4_111_0.8_inverse_map/72.png}
+%     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 80\%$.}
+%			    	\end{subfigure}
+%			    \begin{subfigure}{.45\columnwidth}
+%			    		\centering			    
+%			    		\includegraphics[width=.7\linewidth]{figs/7_111_0.9_inverse_map/72.png}
+%     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 90\%$.}
+%			    	\end{subfigure}						    				    				 
+%				 \caption{\tiny Comparison of our NSOS system searching for goal-door 111 in the Inverse map with different $\alpha$ values.}					
+%	         \end{figure}	
+%\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%\begin{frame}{Experiments and Results}
+%
+%			\centering	
+%			\begin{figure}
+%			    \begin{subfigure}{.45\columnwidth}
+%			    		\centering
+%					 \includegraphics[width=.7\linewidth]{figs/4_111_0.8_inverse_map/82.png}
+%     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 80\%$.}
+%			    	\end{subfigure}
+%			    \begin{subfigure}{.45\columnwidth}
+%			    		\centering			    
+%			    		\includegraphics[width=.7\linewidth]{figs/7_111_0.9_inverse_map/82.png}
+%     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 90\%$.}
+%			    	\end{subfigure}						    				    				 
+%				 \caption{\tiny Comparison of our NSOS system searching for goal-door 111 in the Inverse map with different $\alpha$ values.}					
+%	         \end{figure}	
+%\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%\begin{frame}{Experiments and Results}
+%
+%			\centering	
+%			\begin{figure}
+%			    \begin{subfigure}{.45\columnwidth}
+%			    		\centering
+%					 \includegraphics[width=.7\linewidth]{figs/4_111_0.8_inverse_map/92.png}
+%     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 80\%$.}
+%			    	\end{subfigure}
+%			    \begin{subfigure}{.45\columnwidth}
+%			    		\centering			    
+%			    		\includegraphics[width=.7\linewidth]{figs/7_111_0.9_inverse_map/92.png}
+%     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 90\%$.}
+%			    	\end{subfigure}						    				    				 
+%				 \caption{\tiny Comparison of our NSOS system searching for goal-door 111 in the Inverse map with different $\alpha$ values.}					
+%	         \end{figure}	
+%\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%\begin{frame}{Experiments and Results}
+%
+%			\centering	
+%			\begin{figure}
+%			    \begin{subfigure}{.45\columnwidth}
+%			    		\centering
+%					 \includegraphics[width=.7\linewidth]{figs/4_111_0.8_inverse_map/102.png}
+%     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 80\%$.}
+%			    	\end{subfigure}
+%			    \begin{subfigure}{.45\columnwidth}
+%			    		\centering			    
+%			    		\includegraphics[width=.7\linewidth]{figs/7_111_0.9_inverse_map/102.png}
+%     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 90\%$.}
+%			    	\end{subfigure}						    				    				 
+%				 \caption{\tiny Comparison of our NSOS system searching for goal-door 111 in the Inverse map with different $\alpha$ values.}					
+%	         \end{figure}	
+%\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%\begin{frame}{Experiments and Results}
+%
+%			\centering	
+%			\begin{figure}
+%			    \begin{subfigure}{.45\columnwidth}
+%			    		\centering
+%					 \includegraphics[width=.7\linewidth]{figs/4_111_0.8_inverse_map/112.png}
+%     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 80\%$.}
+%			    	\end{subfigure}
+%			    \begin{subfigure}{.45\columnwidth}
+%			    		\centering			    
+%			    		\includegraphics[width=.7\linewidth]{figs/7_111_0.9_inverse_map/112.png}
+%     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 90\%$.}
+%			    	\end{subfigure}						    				    				 
+%				 \caption{\tiny Comparison of our NSOS system searching for goal-door 111 in the Inverse map with different $\alpha$ values.}					
+%	         \end{figure}	
+%\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%\begin{frame}{Experiments and Results}
+%
+%			\centering	
+%			\begin{figure}
+%			    \begin{subfigure}{.45\columnwidth}
+%			    		\centering
+%					 \includegraphics[width=.7\linewidth]{figs/4_111_0.8_inverse_map/122.png}
+%     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 80\%$.}
+%			    	\end{subfigure}
+%			    \begin{subfigure}{.45\columnwidth}
+%			    		\centering			    
+%			    		\includegraphics[width=.7\linewidth]{figs/7_111_0.9_inverse_map/112.png}
+%     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 90\%$.}
+%			    	\end{subfigure}						    				    				 
+%				 \caption{\tiny Comparison of our NSOS system searching for goal-door 111 in the Inverse map with different $\alpha$ values.}					
+%	         \end{figure}	
+%\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%\begin{frame}{Experiments and Results}
+%
+%			\centering	
+%			\begin{figure}
+%			    \begin{subfigure}{.45\columnwidth}
+%			    		\centering
+%					 \includegraphics[width=.7\linewidth]{figs/4_111_0.8_inverse_map/132.png}
+%     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 80\%$.}
+%			    	\end{subfigure}
+%			    \begin{subfigure}{.45\columnwidth}
+%			    		\centering			    
+%			    		\includegraphics[width=.7\linewidth]{figs/7_111_0.9_inverse_map/112.png}
+%     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 90\%$.}
+%			    	\end{subfigure}						    				    				 
+%				 \caption{\tiny Comparison of our NSOS system searching for goal-door 111 in the Inverse map with different $\alpha$ values.}					
+%	         \end{figure}	
+%\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Experiments and Results}
+
+			\centering	
+			\begin{figure}
+			    \begin{subfigure}{.45\columnwidth}
+			    		\centering
+					 \includegraphics[width=.7\linewidth]{figs/4_111_0.8_inverse_map/142.png}
+     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 80\%$.}
+			    	\end{subfigure}
+			    \begin{subfigure}{.45\columnwidth}
+			    		\centering			    
+			    		\includegraphics[width=.7\linewidth]{figs/7_111_0.9_inverse_map/112.png}
+     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 90\%$.}
+			    	\end{subfigure}						    				    				 
+				 \caption{\tiny Comparison of our NSOS system searching for goal-door 111 in the Inverse map with different $\alpha$ values.}					
+	         \end{figure}	
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
 \begin{frame}{Experiments and Results}
 
 			\centering	
@@ -1195,286 +1635,6 @@
      				 \caption{\tiny Hotel map.}		 
 			    	\end{subfigure}				    				    				 
 				 \caption{\tiny Comparison of the traveled distances for each goal-door with its respective shortest distance.}					 
-	         \end{figure}	
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}{Experiments and Results}
-
-			\centering	
-			\begin{figure}
-			    \begin{subfigure}{.45\columnwidth}
-			    		\centering
-					 \includegraphics[width=.7\linewidth]{figs/4_111_0.8_inverse_map/1222.png}
-     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 80\%$.}
-			    	\end{subfigure}
-			    \begin{subfigure}{.45\columnwidth}
-			    		\centering			    
-			    		\includegraphics[width=.7\linewidth]{figs/7_111_0.9_inverse_map/1222.png}
-     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 90\%$.}
-			    	\end{subfigure}						    				    				 
-				 \caption{\tiny Comparison of our NSOS system searching for goal-door 111 in the Inverse map with different $\alpha$ values.}					
-	         \end{figure}	
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}{Experiments and Results}
-
-			\centering	
-			\begin{figure}
-			    \begin{subfigure}{.45\columnwidth}
-			    		\centering
-					 \includegraphics[width=.7\linewidth]{figs/4_111_0.8_inverse_map/22.png}
-     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 80\%$.}
-			    	\end{subfigure}
-			    \begin{subfigure}{.45\columnwidth}
-			    		\centering			    
-			    		\includegraphics[width=.7\linewidth]{figs/7_111_0.9_inverse_map/22.png}
-     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 90\%$.}
-			    	\end{subfigure}						    				    				 
-				 \caption{\tiny Comparison of our NSOS system searching for goal-door 111 in the Inverse map with different $\alpha$ values.}					
-	         \end{figure}	
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}{Experiments and Results}
-
-			\centering	
-			\begin{figure}
-			    \begin{subfigure}{.45\columnwidth}
-			    		\centering
-					 \includegraphics[width=.7\linewidth]{figs/4_111_0.8_inverse_map/32.png}
-     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 80\%$.}
-			    	\end{subfigure}
-			    \begin{subfigure}{.45\columnwidth}
-			    		\centering			    
-			    		\includegraphics[width=.7\linewidth]{figs/7_111_0.9_inverse_map/32.png}
-     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 90\%$.}
-			    	\end{subfigure}						    				    				 
-				 \caption{\tiny Comparison of our NSOS system searching for goal-door 111 in the Inverse map with different $\alpha$ values.}					
-	         \end{figure}	
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}{Experiments and Results}
-
-			\centering	
-			\begin{figure}
-			    \begin{subfigure}{.45\columnwidth}
-			    		\centering
-					 \includegraphics[width=.7\linewidth]{figs/4_111_0.8_inverse_map/42.png}
-     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 80\%$.}
-			    	\end{subfigure}
-			    \begin{subfigure}{.45\columnwidth}
-			    		\centering			    
-			    		\includegraphics[width=.7\linewidth]{figs/7_111_0.9_inverse_map/42.png}
-     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 90\%$.}
-			    	\end{subfigure}						    				    				 
-				 \caption{\tiny Comparison of our NSOS system searching for goal-door 111 in the Inverse map with different $\alpha$ values.}					
-	         \end{figure}	
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}{Experiments and Results}
-
-			\centering	
-			\begin{figure}
-			    \begin{subfigure}{.45\columnwidth}
-			    		\centering
-					 \includegraphics[width=.7\linewidth]{figs/4_111_0.8_inverse_map/52.png}
-     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 80\%$.}
-			    	\end{subfigure}
-			    \begin{subfigure}{.45\columnwidth}
-			    		\centering			    
-			    		\includegraphics[width=.7\linewidth]{figs/7_111_0.9_inverse_map/52.png}
-     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 90\%$.}
-			    	\end{subfigure}						    				    				 
-				 \caption{\tiny Comparison of our NSOS system searching for goal-door 111 in the Inverse map with different $\alpha$ values.}					
-	         \end{figure}	
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}{Experiments and Results}
-
-			\centering	
-			\begin{figure}
-			    \begin{subfigure}{.45\columnwidth}
-			    		\centering
-					 \includegraphics[width=.7\linewidth]{figs/4_111_0.8_inverse_map/62.png}
-     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 80\%$.}
-			    	\end{subfigure}
-			    \begin{subfigure}{.45\columnwidth}
-			    		\centering			    
-			    		\includegraphics[width=.7\linewidth]{figs/7_111_0.9_inverse_map/62.png}
-     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 90\%$.}
-			    	\end{subfigure}						    				    				 
-				 \caption{\tiny Comparison of our NSOS system searching for goal-door 111 in the Inverse map with different $\alpha$ values.}					
-	         \end{figure}	
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}{Experiments and Results}
-
-			\centering	
-			\begin{figure}
-			    \begin{subfigure}{.45\columnwidth}
-			    		\centering
-					 \includegraphics[width=.7\linewidth]{figs/4_111_0.8_inverse_map/72.png}
-     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 80\%$.}
-			    	\end{subfigure}
-			    \begin{subfigure}{.45\columnwidth}
-			    		\centering			    
-			    		\includegraphics[width=.7\linewidth]{figs/7_111_0.9_inverse_map/72.png}
-     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 90\%$.}
-			    	\end{subfigure}						    				    				 
-				 \caption{\tiny Comparison of our NSOS system searching for goal-door 111 in the Inverse map with different $\alpha$ values.}					
-	         \end{figure}	
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}{Experiments and Results}
-
-			\centering	
-			\begin{figure}
-			    \begin{subfigure}{.45\columnwidth}
-			    		\centering
-					 \includegraphics[width=.7\linewidth]{figs/4_111_0.8_inverse_map/82.png}
-     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 80\%$.}
-			    	\end{subfigure}
-			    \begin{subfigure}{.45\columnwidth}
-			    		\centering			    
-			    		\includegraphics[width=.7\linewidth]{figs/7_111_0.9_inverse_map/82.png}
-     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 90\%$.}
-			    	\end{subfigure}						    				    				 
-				 \caption{\tiny Comparison of our NSOS system searching for goal-door 111 in the Inverse map with different $\alpha$ values.}					
-	         \end{figure}	
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}{Experiments and Results}
-
-			\centering	
-			\begin{figure}
-			    \begin{subfigure}{.45\columnwidth}
-			    		\centering
-					 \includegraphics[width=.7\linewidth]{figs/4_111_0.8_inverse_map/92.png}
-     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 80\%$.}
-			    	\end{subfigure}
-			    \begin{subfigure}{.45\columnwidth}
-			    		\centering			    
-			    		\includegraphics[width=.7\linewidth]{figs/7_111_0.9_inverse_map/92.png}
-     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 90\%$.}
-			    	\end{subfigure}						    				    				 
-				 \caption{\tiny Comparison of our NSOS system searching for goal-door 111 in the Inverse map with different $\alpha$ values.}					
-	         \end{figure}	
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}{Experiments and Results}
-
-			\centering	
-			\begin{figure}
-			    \begin{subfigure}{.45\columnwidth}
-			    		\centering
-					 \includegraphics[width=.7\linewidth]{figs/4_111_0.8_inverse_map/102.png}
-     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 80\%$.}
-			    	\end{subfigure}
-			    \begin{subfigure}{.45\columnwidth}
-			    		\centering			    
-			    		\includegraphics[width=.7\linewidth]{figs/7_111_0.9_inverse_map/102.png}
-     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 90\%$.}
-			    	\end{subfigure}						    				    				 
-				 \caption{\tiny Comparison of our NSOS system searching for goal-door 111 in the Inverse map with different $\alpha$ values.}					
-	         \end{figure}	
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}{Experiments and Results}
-
-			\centering	
-			\begin{figure}
-			    \begin{subfigure}{.45\columnwidth}
-			    		\centering
-					 \includegraphics[width=.7\linewidth]{figs/4_111_0.8_inverse_map/112.png}
-     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 80\%$.}
-			    	\end{subfigure}
-			    \begin{subfigure}{.45\columnwidth}
-			    		\centering			    
-			    		\includegraphics[width=.7\linewidth]{figs/7_111_0.9_inverse_map/112.png}
-     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 90\%$.}
-			    	\end{subfigure}						    				    				 
-				 \caption{\tiny Comparison of our NSOS system searching for goal-door 111 in the Inverse map with different $\alpha$ values.}					
-	         \end{figure}	
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}{Experiments and Results}
-
-			\centering	
-			\begin{figure}
-			    \begin{subfigure}{.45\columnwidth}
-			    		\centering
-					 \includegraphics[width=.7\linewidth]{figs/4_111_0.8_inverse_map/122.png}
-     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 80\%$.}
-			    	\end{subfigure}
-			    \begin{subfigure}{.45\columnwidth}
-			    		\centering			    
-			    		\includegraphics[width=.7\linewidth]{figs/7_111_0.9_inverse_map/112.png}
-     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 90\%$.}
-			    	\end{subfigure}						    				    				 
-				 \caption{\tiny Comparison of our NSOS system searching for goal-door 111 in the Inverse map with different $\alpha$ values.}					
-	         \end{figure}	
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}{Experiments and Results}
-
-			\centering	
-			\begin{figure}
-			    \begin{subfigure}{.45\columnwidth}
-			    		\centering
-					 \includegraphics[width=.7\linewidth]{figs/4_111_0.8_inverse_map/132.png}
-     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 80\%$.}
-			    	\end{subfigure}
-			    \begin{subfigure}{.45\columnwidth}
-			    		\centering			    
-			    		\includegraphics[width=.7\linewidth]{figs/7_111_0.9_inverse_map/112.png}
-     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 90\%$.}
-			    	\end{subfigure}						    				    				 
-				 \caption{\tiny Comparison of our NSOS system searching for goal-door 111 in the Inverse map with different $\alpha$ values.}					
-	         \end{figure}	
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}{Experiments and Results}
-
-			\centering	
-			\begin{figure}
-			    \begin{subfigure}{.45\columnwidth}
-			    		\centering
-					 \includegraphics[width=.7\linewidth]{figs/4_111_0.8_inverse_map/142.png}
-     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 80\%$.}
-			    	\end{subfigure}
-			    \begin{subfigure}{.45\columnwidth}
-			    		\centering			    
-			    		\includegraphics[width=.7\linewidth]{figs/7_111_0.9_inverse_map/112.png}
-     				 \caption{\tiny Inverse map, goal-door 111, $\alpha = 90\%$.}
-			    	\end{subfigure}						    				    				 
-				 \caption{\tiny Comparison of our NSOS system searching for goal-door 111 in the Inverse map with different $\alpha$ values.}					
 	         \end{figure}	
 \end{frame}
 %========================================== ############# ======================================================
@@ -1571,21 +1731,22 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}{Summary}
+\begin{frame}{Organisational semantic information from numbers}
 	\begin{columns}[T]
 		\column{1\textwidth}
 		\begin{itemize}[<+->]
+			\item It is \textbf{possible} to \textbf{expand} the \textbf{robot's perception} with \textbf{organisational semantic information} inferred from numbers
+			\item The \textbf{organisational semantic information} helps in the estimations
 			\item \textbf{NSOS system} that:
 			\begin{itemize}
 				\item  Relies on \textbf{organisational semantic information} within the environment
 				\item  Does \textbf{not require} that the \textbf{door signs} are set according to a \textbf{specific pattern}
 				\item  \textbf{Performs better} than the \textbf{greedy search} and \textbf{humans participants}
+%				\item  Demonstrates the \textbf{difficulty} of the \textbf{OS problem} by the experiments with human participants
 			\end{itemize}
-			\item It is \textbf{possible} to \textbf{expand} the \textbf{robot's perception} with \textbf{organisational semantic information}
-			\item Analysis of the \textbf{difficulty} of the \textbf{OS problem} by the experiments with human participants
 			\item \textbf{Door signs} and \textbf{corridors} do \textbf{not change} very \textbf{often}
-			\item What about \textbf{OS} in \textbf{non-static environments}?
+			\item What about \textbf{OS} in \textbf{semi-dynamic environments}?
 		\end{itemize}
-		\column{0.55\textwidth}
+%		\column{0.55\textwidth}
 	\end{columns}
 \end{frame}

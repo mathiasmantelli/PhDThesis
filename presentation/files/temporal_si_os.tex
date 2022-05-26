@@ -1,11 +1,11 @@
-\begin{frame}
-\centering
-\textcolor{red}{\textit{\textbf{LSOS}: using \textbf{changes} in the \textbf{organisation} of the environment \textbf{over time}}}
-\end{frame}
+%\begin{frame}
+%\centering
+%\textcolor{red}{\textit{\textbf{LSOS}: using \textbf{changes} in the \textbf{organisation} of the environment \textbf{over time}}}
+%\end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}{Introduction}
+\begin{frame}{OS in Semi-dynamic scenarios}
 	\begin{columns}[T]
 	\column{.55\textwidth}
 		\begin{itemize}[<+->]
@@ -21,10 +21,10 @@
 		\centering
 		\begin{figure}
 			\includegraphics[width=.5\linewidth]{figs/care_o_bot_4.jpg}
-			\caption{\tiny A mobile robot assistant\footnotemark[11]}			 		 
+			\caption{\tiny A mobile robot assistant\footnotemark[17]}			 		 
 		\end{figure}			
 	\end{columns}%
-	\footnotetext[11]{\tiny Figure extracted from \url{https://www.care-o-bot.de/en/care-o-bot-4/download/images.html}.}			
+	\footnotetext[17]{\tiny Figure extracted from \url{https://www.care-o-bot.de/en/care-o-bot-4/download/images.html}.}			
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -40,14 +40,13 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}{Proposal and contributions}
+\begin{frame}{Long-term Semantic OS system (LSOS)}
 	\begin{columns}[T]
 	\column{.5\textwidth}
 		\begin{itemize}[<+->]
-			\item \textbf{LSOS system} for indoor environment
 			\item Searches based on the \textbf{request hour} %({\footnotesize e.g. ``\textit{search for my \textbf{glasses} at \textbf{7 pm}}})			
-			\item Self-contained LSOS system
-			\item Advantages of \textbf{organisational semantic information} from \textbf{dynamic environments}
+			\item Computes the objects' position estimation in a Heat map
+			\item Demonstrates the advantages of \textbf{organisational semantic information} from \textbf{semi-dynamic environments}
 		\end{itemize}
 	\column{.5\textwidth}
 		\centering
@@ -60,7 +59,7 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}{System overview}
+\begin{frame}{LSOS system overview}
 	\begin{columns}[T]
 	\column{.3\textwidth}
 		\begin{itemize}
@@ -101,15 +100,12 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}{The OS system}
+\begin{frame}{Heat Map}
 	\begin{columns}[T]
 	\column{.38\textwidth}
 	\begin{itemize}
-		\item \textbf{Heat map}
-		\begin{itemize}
 			\item Based on the 2D grid map
 			\item Circular kernel
-		\end{itemize}
 	\end{itemize}
 	\column{.65\textwidth}
 		\centering
@@ -122,15 +118,12 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}[noframenumbering]{The OS system}
+\begin{frame}[noframenumbering]{Heat Map}
 	\begin{columns}[T]
 	\column{.4\textwidth}
 		\begin{itemize}
-			\item \textbf{Heat map}
-			\begin{itemize}
-				\item Based on the 2D grid map
-				\item Circular kernel
-			\end{itemize}			
+			\item Based on the 2D grid map
+			\item Circular kernel			
 			\item Kernel \textbf{angle reduction}
 		\end{itemize}
 	\column{.32\textwidth}
@@ -167,15 +160,12 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}[noframenumbering]{The OS system}
+\begin{frame}[noframenumbering]{Heat Map}
 	\begin{columns}[T]
 	\column{.4\textwidth}
 	\begin{itemize}
-			\item \textbf{Heat map}
-			\begin{itemize}
-				\item Based on the 2D grid map
-				\item Circular kernel
-			\end{itemize}			
+			\item Based on the 2D grid map
+			\item Circular kernel			
 			\item Kernel \textbf{angle reduction}
 		\item \textbf{Inverted kernel}
 			\begin{itemize}
@@ -202,11 +192,11 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}{The OS system}
+\begin{frame}{Heat Map}
 	\begin{columns}[T]
 	\column{.3\textwidth}
 	\begin{itemize}
-		\item Goal computation
+		\item Goal computation in the Heat map
 		\begin{itemize}
 			\item \textbf{Warmest area}: ${c}_* = \underset{{c}\in\mathbf{H}}{\textup{arg max}}\big(\varphi({c})\big)$
 		\end{itemize}
@@ -299,7 +289,8 @@
 	\begin{columns}[T]
 		\column{.3\textwidth}
 		\begin{itemize}
-			\item Patterns:
+			\item The LSOS had to find a mug
+			\item The target object's positions over time:
 			\begin{itemize}
 				\item Static
 				\item Static-Inv
@@ -577,7 +568,7 @@
 	\column{.4\textwidth}
 		\centering	
 		\begin{itemize}
-			\item HH106 dataset\footnotemark[16]
+			\item HH106 dataset\footnotemark[18]
 		\end{itemize}
 	\column{.6\textwidth}
 		\centering
@@ -587,7 +578,7 @@
 				\caption{\tiny The floorplan of the single-resident apartment from the HH106 dataset.}
 		\end{figure}		
 	\end{columns}	
-		\footnotetext[16]{\tiny Dataset available at \url{http://casas.wsu.edu/datasets/}.}
+		\footnotetext[18]{\tiny Dataset available at \url{http://casas.wsu.edu/datasets/}.}
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -751,12 +742,31 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}{Summary}
+\begin{frame}{Organisational semantic information from semi-dynamic objects}
 	\begin{itemize}[<+->]
-		\item \textbf{Heat map} that represents the \textbf{objects' presence}
-		\item \textbf{Reduction of the kernel's angle} provides \textbf{better placement} for the robot
-		\item \textbf{LSOS system} that observes the objects arrangement \textbf{throughout a period of time}
-		\item An OS system that does not depend on a specific SLAM or object-detection algorithm
-		\item Analysis of the \textbf{advantages} of \textbf{using semantic information} inferred from \textbf{semi-dynamic objects}
+		\item The \textbf{organisational semantic information} helps in the estimations in dynamic environments
+		\item \textbf{LSOS system} that:
+		\begin{itemize}
+			\item Observes the objects arrangement \textbf{throughout a period of time} to make estimations
+			\item Relies on \textbf{Heat maps} to represent the \textbf{objects' presence}
+			\item Performs an efficient search with small and large amount of previous observations
+%			\item \textbf{Reduction of the kernel's angle} provides \textbf{better placement} for the robot		
+		\end{itemize}
+		\item The \textbf{advantages} of using \textbf{organisational semantic information} in the OS problem
+		\item Combining both NSOS and LSOS produces a coarse-to-fine OS in indoor environments
 	\end{itemize}
 \end{frame}
+
+%		\begin{itemize}[<+->]
+%			\item It is \textbf{possible} to \textbf{expand} the \textbf{robot's perception} with \textbf{organisational semantic information}
+%			\item The \textbf{organisational semantic information} helps in the estimations
+%			\item \textbf{NSOS system} that:
+%			\begin{itemize}
+%				\item  Relies on \textbf{organisational semantic information} within the environment
+%				\item  Does \textbf{not require} that the \textbf{door signs} are set according to a \textbf{specific pattern}
+%				\item  \textbf{Performs better} than the \textbf{greedy search} and \textbf{humans participants}
+%				\item Analysis of the \textbf{difficulty} of the \textbf{OS problem} by the experiments with human participants
+%			\end{itemize}
+%			\item \textbf{Door signs} and \textbf{corridors} do \textbf{not change} very \textbf{often}
+%			\item What about \textbf{OS} in \textbf{semi-dynamic environments}?
+%		\end{itemize}

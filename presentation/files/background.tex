@@ -16,10 +16,10 @@
 			\centering
 			\begin{figure}
 				 \includegraphics[width=.55\linewidth]{figs/localization_custom.png}
-				 \caption{\tiny Illustration of the Markov localization algorithm.\footnotemark[8]}			 		 
+				 \caption{\tiny Illustration of the Markov localization algorithm.\footnotemark[7]}			 		 
 	         \end{figure}			
 	\end{columns}	
-	\footnotetext[8]{\tiny Thrun, Sebastian. ``\textit{Probabilistic robotics.}'' Communications of the ACM 45.3 (2002): 52-57.}					
+	\footnotetext[7]{\tiny Thrun, Sebastian. ``\textit{Probabilistic robotics.}'' Communications of the ACM 45.3 (2002): 52-57.}					
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -38,10 +38,10 @@
 			\centering
 			\begin{figure}
 				 \includegraphics[width=.45\linewidth]{figs/mapping.png}
-				 \caption{\tiny Mapping with position indexed by odometry.\footnotemark[8]}			 		 
-	         \end{figure}				
+				 \caption{\tiny Mapping with position indexed by odometry.\footnotemark[7]}			 		 
+	         \end{figure}			
 	\end{columns}	
-	\footnotetext[8]{\tiny Thrun, Sebastian. ``\textit{Probabilistic robotics.}'' Communications of the ACM 45.3 (2002): 52-57.}					
+	\footnotetext[7]{\tiny Thrun, Sebastian. ``\textit{Probabilistic robotics.}'' Communications of the ACM 45.3 (2002): 52-57.}				
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -61,10 +61,10 @@
 			\centering
 			\begin{figure}
 				 \includegraphics[width=.6\linewidth]{figs/slam.png}
-				 \caption{\tiny Occupancy grid map.\footnotemark[8]}			 		 
+				 \caption{\tiny Occupancy grid map.\footnotemark[7]}			 		 
 	         \end{figure}				
 	\end{columns}	
-	\footnotetext[8]{\tiny Thrun, Sebastian. ``\textit{Probabilistic robotics.}'' Communications of the ACM 45.3 (2002): 52-57.}					
+	\footnotetext[7]{\tiny Thrun, Sebastian. ``\textit{Probabilistic robotics.}'' Communications of the ACM 45.3 (2002): 52-57.}					
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -83,63 +83,95 @@
 			\end{itemize}
 		\column{0.45\textwidth}
 			\centering
+
 			\begin{figure}
-				 \includegraphics[width=.4\linewidth]{figs/object_detection.png}
-				 \caption{\tiny Example of detected objects in an RGB image.\footnotemark[8]}			 		 
-	         \end{figure}				
+			    \begin{subfigure}[b]{.4\columnwidth}
+			    		\centering			
+			    		\includegraphics[width=.55\linewidth]{figs/object_detection.png}
+			    		\caption{\tiny Objects detected in RGB image.\footnotemark[8]}			 		 
+			    	\end{subfigure}
+			    \begin{subfigure}[b]{.55\columnwidth}
+			    		\centering					    	
+			    		\includegraphics[width=.65\linewidth]{figs/text_recognition.png}
+			    		\caption{\tiny Text detected in RGB image.\footnotemark[9]}					 
+			    	\end{subfigure}					 
+				 \caption{\tiny Examples of how robot's perception.}			 
+	         \end{figure}
 	\end{columns}	
-	\footnotetext[8]{\tiny Redmon, J., et al. ``\textit{You only look once: Unified, real-time object detection.}'' Proceedings of the IEEE CVPR. 2016.}					
+	\footnotetext[8]{\tiny Redmon, J., et al. ``\textit{You only look once: Unified, real-time object detection.}'' Proceedings of the IEEE CVPR. 2016.}			\footnotetext[9]{\tiny Neumann, L., and Jiří M. ``\textit{Real-time scene text localization and recognition.}'' Proceedings of the IEEE CVPR. 2012.}	
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}{Theoretical background}
-	\begin{columns}[T]
-		\column{0.55\textwidth}
-			\begin{itemize}
-				\item \textbf{Perception} problems:
-				\begin{itemize}
-					\item \textbf{Localization}
-					\item \textbf{Mapping}
-					\item Simultaneous localization and mapping (\textbf{SLAM})
-					\item \textbf{Object detection}
-					\item \textbf{Text localization} and \textbf{detection}
-				\end{itemize}
-			\end{itemize}
-		\column{0.45\textwidth}
-			\centering
-			\begin{figure}
-				 \includegraphics[width=.6\linewidth]{figs/text_recognition.png}
-				 \caption{\tiny Example of detected text in RGB image.\footnotemark[8]}			 		 
-	         \end{figure}				
-	\end{columns}	
-	\footnotetext[8]{\tiny Neumann, L., and Jiří M. ``\textit{Real-time scene text localization and recognition.}'' Proceedings of the IEEE CVPR. 2012.}					
-\end{frame}
+%\begin{frame}{Theoretical background}
+%	\begin{columns}[T]
+%		\column{0.55\textwidth}
+%			\begin{itemize}
+%				\item \textbf{Perception} problems:
+%				\begin{itemize}
+%					\item \textbf{Localization}
+%					\item \textbf{Mapping}
+%					\item Simultaneous localization and mapping (\textbf{SLAM})
+%					\item \textbf{Object detection}
+%					\item \textbf{Text localization} and \textbf{detection}
+%				\end{itemize}
+%			\end{itemize}
+%		\column{0.45\textwidth}
+%			\centering
+%			\begin{figure}
+%			    		\includegraphics[width=.6\linewidth]{figs/text_recognition.png}
+%			    		\caption{\tiny Example of detected text in RGB image.\footnotemark[9]}	 
+%	         \end{figure}				
+%	\end{columns}
+%	\footnotetext[9]{\tiny Neumann, L., and Jiří M. ``\textit{Real-time scene text localization and recognition.}'' Proceedings of the IEEE CVPR. 2012.}
+%\end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}{Theoretical background}
-	\begin{columns}[T]
-		\column{0.55\textwidth}
-			\begin{itemize}
-				\item \textbf{Perception} problems:
-				\begin{itemize}
-					\item \textbf{Localization}
-					\item \textbf{Mapping}
-					\item Simultaneous localization and mapping (\textbf{SLAM})
-					\item \textbf{Object detection}
-					\item \textbf{Text localization} and \textbf{detection}
-					\item \textbf{Free space segmentation}
-				\end{itemize}
-			\end{itemize}
-		\column{0.45\textwidth}
-			\centering
-			\begin{figure}
-				 \includegraphics[width=.6\linewidth]{figs/kde_free_cells.png}
-				 \caption{\tiny Example of free space density estimation in a 2D grid map.}			 		 
-	         \end{figure}				
-	\end{columns}	
-\end{frame}
+%\begin{frame}{Theoretical background}
+%	\begin{columns}[T]
+%		\column{0.55\textwidth}
+%			\begin{itemize}
+%				\item \textbf{Perception} problems:
+%				\begin{itemize}
+%					\item \textbf{Localization}
+%					\item \textbf{Mapping}
+%					\item Simultaneous localization and mapping (\textbf{SLAM})
+%					\item \textbf{Object detection}
+%					\item \textbf{Text localization} and \textbf{detection}
+%					\item \textbf{Free space segmentation}
+%				\end{itemize}
+%			\end{itemize}
+%		\column{0.45\textwidth}
+%			\centering
+%			\begin{figure}
+%				 \includegraphics[width=.6\linewidth]{figs/kde_free_cells.png}
+%				 \caption{\tiny Example of free space density estimation in a 2D grid map.}			 		 
+%	         \end{figure}				
+%	\end{columns}	
+%\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%\begin{frame}{Theoretical background}
+%	\begin{columns}[T]
+%		\column{0.55\textwidth}
+%			\begin{itemize}
+%				\item \textbf{Perception} problems
+%				\item \textbf{Action} problems:
+%				\begin{itemize}
+%					\item \textbf{Exploration}
+%				\end{itemize}
+%			\end{itemize}
+%		\column{0.45\textwidth}
+%			\centering
+%			\begin{figure}
+%				 \includegraphics[width=.8\linewidth]{figs/frountier_exploration.png}
+%				 \caption{\tiny Example of BVP Exploration.\footnotemark[10]}			 		 
+%	         \end{figure}				
+%	\end{columns}	
+%	\footnotetext[10]{\tiny e Silva, E. P., et al. ``\textit{Bvp-exploration: further improvements}.'' Proceedings of the IEEE IROS. 2003.}					
+%\end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -150,29 +182,7 @@
 				\item \textbf{Perception} problems
 				\item \textbf{Action} problems:
 				\begin{itemize}
-					\item \textbf{Exploration}
-				\end{itemize}
-			\end{itemize}
-		\column{0.45\textwidth}
-			\centering
-			\begin{figure}
-				 \includegraphics[width=.8\linewidth]{figs/frountier_exploration.png}
-				 \caption{\tiny Example of BVP Exploration.\footnotemark[8]}			 		 
-	         \end{figure}				
-	\end{columns}	
-	\footnotetext[8]{\tiny e Silva, E. P., et al. ``\textit{Bvp-exploration: further improvements}.'' Proceedings of the IEEE IROS. 2003.}					
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}{Theoretical background}
-	\begin{columns}[T]
-		\column{0.55\textwidth}
-			\begin{itemize}
-				\item \textbf{Perception} problems
-				\item \textbf{Action} problems:
-				\begin{itemize}
-					\item \textbf{Exploration}
+%					\item \textbf{Exploration}
 					\item \textbf{OS} 
 					\begin{itemize}
 						\item {\footnotesize \textbf{Map} and \textbf{object's position} are \textbf{known}}
@@ -197,7 +207,7 @@
 				\item \textbf{Perception} problems
 				\item \textbf{Action} problems:
 				\begin{itemize}
-					\item \textbf{Exploration}
+%					\item \textbf{Exploration}
 					\item \textbf{OS} 
 					\begin{itemize}
 						\item {\footnotesize \textbf{Map} and \textbf{object's position} are \textbf{known}}
@@ -223,7 +233,7 @@
 				\item \textbf{Perception} problems
 				\item \textbf{Action} problems:
 				\begin{itemize}
-					\item \textbf{Exploration}
+%					\item \textbf{Exploration}
 					\item \textbf{OS} 
 					\begin{itemize}
 						\item {\footnotesize \textbf{Map} and \textbf{object's position} are \textbf{known}}
