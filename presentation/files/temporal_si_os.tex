@@ -20,10 +20,11 @@
 	\column{.45\textwidth}
 		\centering
 		\begin{figure}
-			\includegraphics[width=.9\linewidth]{figs/jaci_on.jpg}
-			\caption{\tiny An SR robot disinfecting a cirurgical room}			 		 
+			\includegraphics[width=.5\linewidth]{figs/care_o_bot_4.jpg}
+			\caption{\tiny A mobile robot assistant\footnotemark[11]}			 		 
 		\end{figure}			
-	\end{columns}
+	\end{columns}%
+	\footnotetext[11]{\tiny Figure extracted from \url{https://www.care-o-bot.de/en/care-o-bot-4/download/images.html}.}			
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -222,31 +223,11 @@
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
-\begin{frame}{Experiments and results}
-	\begin{columns}[T]
-	\column{.4\textwidth}
-		\centering	
-		\begin{itemize}
-			\item HH106 dataset\footnotemark[16]
-		\end{itemize}
-	\column{.6\textwidth}
-		\centering
-		\begin{figure}
-%			\begin{subfigure}{.8\columnwidth}
-				\includegraphics[width=.6\linewidth]{figs/hh106sensor_map.png}
-				\caption{\tiny The floorplan of the single-resident apartment from the HH106 dataset.}
-		\end{figure}		
-	\end{columns}	
-		\footnotetext[16]{\tiny Dataset available at \url{http://casas.wsu.edu/datasets/}.}
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
 \begin{frame}[noframenumbering]{Experiments and results}
 	\begin{columns}[T]
 	\column{.4\textwidth}
 		\begin{itemize}
-			\item HH106 dataset\footnotemark[16]	
+%			\item HH106 dataset\footnotemark[16]	
 			\item Simulation setup and maps
 		\end{itemize}
 	\column{.6\textwidth}
@@ -258,7 +239,7 @@
 				\caption{\tiny Environment and robot used in simulation.}
 		\end{figure}		
 	\end{columns}					
-		\footnotetext[16]{\tiny Dataset available at \url{http://casas.wsu.edu/datasets/}.}	
+%		\footnotetext[16]{\tiny Dataset available at \url{http://casas.wsu.edu/datasets/}.}	
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -267,7 +248,7 @@
 	\begin{columns}[T]
 	\column{.4\textwidth}
 		\begin{itemize}
-			\item HH106 dataset\footnotemark[16]		
+%			\item HH106 dataset\footnotemark[16]		
 			\item Simulation setup and maps
 			\item Two other OS systems:
 			\begin{itemize}
@@ -283,7 +264,7 @@
 				\caption{\tiny The robot’s route for the Brute Force OS approach.}
 		\end{figure}		
 	\end{columns}		
-		\footnotetext[16]{\tiny Dataset available at \url{http://casas.wsu.edu/datasets/}.}			
+%		\footnotetext[16]{\tiny Dataset available at \url{http://casas.wsu.edu/datasets/}.}			
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -292,7 +273,7 @@
 	\begin{columns}[T]
 	\column{.4\textwidth}
 		\begin{itemize}
-			\item HH106 dataset\footnotemark[16]		
+%			\item HH106 dataset\footnotemark[16]		
 			\item Simulation setup and maps
 			\item Two other OS systems:
 			\begin{itemize}
@@ -309,215 +290,80 @@
 				\caption{\tiny The robot’s route for the Brute Force OS approach.}				
 		\end{figure}		
 	\end{columns}		
-		\footnotetext[16]{\tiny Dataset available at \url{http://casas.wsu.edu/datasets/}.}			
+%		\footnotetext[16]{\tiny Dataset available at \url{http://casas.wsu.edu/datasets/}.}			
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 \begin{frame}{Experiments and results}
 	\begin{columns}[T]
-	\column{.4\textwidth}
+		\column{.3\textwidth}
 		\begin{itemize}
-			\item The HH106 dataset:
+			\item Patterns:
 			\begin{itemize}
-				\item \textbf{Long-term dataset} (60 days)
-				\item \textbf{Motion sensors} provide the \textbf{human location} at different hours of the day
-				\item The\textbf{ person mimics an object} that is moved many times every day
-				\item \textbf{59 days} of data for the \textbf{Recording mode}
-			\end{itemize}			 			 
-		\end{itemize}
-	\column{.6\textwidth}
-	\vspace{-.7cm}
-\begin{table}
-\tiny
-\centering
-%\caption[The 59 days data from HH106 used by our OS system.]{The 59 days data from HH106 used by our OS system.}
-\begin{tabular}{c|cccccccc}\hline %
-\multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Daily \\ Hours\end{tabular}}} & \multicolumn{8}{c}{\textbf{Locations}} \\
-                                      & \textbf{W.A.} & \textbf{Liv.R.}    & \textbf{Kit.}    & \textbf{BedR.}    & \textbf{Chair}    & \textbf{Din.R.}    & \textbf{BathR.} & \textbf{O.D.}  \\ \hline
-00 & 0 & 2 & 1 & 21 & 0 & 1 & 3 & 2 \\\hline
-01 & 2 & 1 & 3 & 20 & 0 & 1 & 1 & 2 \\\hline
-02 & 3 & 5 & 1 & 29 & 0 & 0 & 0 & 0 \\\hline
-03 & 1 & 4 & 3 & 24 & 0 & 0 & 0 & 2 \\\hline
-04 & 3 & 0 & 1 & 28 & 0 & 2 & 0 & 1 \\\hline
-05 & 0 & 1 & 2 & 35 & 0 & 1 & 0 & 1 \\\hline
-06 & 1 & 3 & 3 & 31 & 0 & 1 & 4 & 10 \\\hline
-07 & 1 & 4 & 4 & 10 & 0 & 6 & 5 & 7 \\\hline
-08 & 3 & 2 & 4 & 4 & 1 & 14 & 8 & 5 \\\hline
-09 & 6 & 2 & 1 & 1 & 0 & 15 & 3 & 12 \\\hline
-10 & 3 & 1 & 1 & 3 & 0 & 3 & 11 & 19 \\\hline
-11 & 6 & 3 & 7 & 2 & 0 & 3 & 5 & 13 \\\hline
-12 & 7 & 3 & 2 & 1 & 1 & 14 & 4 & 12 \\\hline
-13 & 5 & 8 & 3 & 0 & 5 & 4 & 6 & 13 \\\hline
-14 & 4 & 5 & 1 & 0 & 2 & 5 & 4 & 16 \\\hline
-15 & 9 & 4 & 5 & 0 & 0 & 4 & 2 & 17 \\\hline
-16 & 16 & 5 & 4 & 1 & 2 & 6 & 2 & 7 \\\hline
-17 & 16 & 2 & 4 & 2 & 0 & 9 & 1 & 7 \\\hline
-18 & 21 & 4 & 3 & 1 & 0 & 3 & 2 & 13 \\\hline
-19 & 14 & 5 & 2 & 1 & 0 & 4 & 2 & 11 \\\hline
-20 & 13 & 8 & 2 & 0 & 0 & 6 & 7 & 2 \\\hline
-21 & 14 & 3 & 0 & 8 & 0 & 13 & 8 & 1 \\\hline
-22 & 1 & 3 & 2 & 37 & 0 & 1 & 6 & 0 \\\hline
-23 & 1 & 2 & 0 & 34 & 1 & 1 & 1 & 0 \\\hline
-\textbf{Total} & 150 & 80 & 59 & 293 & 12 & 117 & 85 & 173
-\end{tabular}
-%\label{tab:all_days_hh106}
-\end{table}	
-	\end{columns}
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}{Experiments and results}
-	\begin{columns}[T]
-	\column{.4\textwidth}
-		\begin{itemize}
-			\item The HH106 dataset
-			\begin{itemize}
-				\item The \textbf{60th day} as the \textbf{ground-truth}
-			\end{itemize}			 
-		\end{itemize}
-	\column{.6\textwidth}
-	\vspace{-.5cm}
-	\hspace{2cm}
-\begin{table}
-\tiny
-\centering
-%\caption[The data from the last day of HH106 used to test our OS system.]{The data from the last day of HH106 used to test our OS system.}
-\begin{tabular}{c|cccccccc}\hline
-\multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Daily \\ Hours\end{tabular}}}  & \multicolumn{8}{c}{\textbf{Locations}}\\
-      & \textbf{W.A.} & \textbf{Liv.R.}    & \textbf{Kit.}    & \textbf{BedR.}    & \textbf{Chair}    & \textbf{Din.R.}    & \textbf{BathR.} & \textbf{O.D.}  \\\cline{1-9}
-%00 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0
-%\\\midrule
-01 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
-02 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
-%03 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0
-%\\\midrule
-04 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
-05 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
-06 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\\hline
-%07 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0
-%\\\midrule
-08 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 \\\hline
-09 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 \\\hline
-10 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\\hline
-11 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 \\\hline
-12 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\\hline
-13 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\\hline
-14 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\\hline
-15 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\\hline
-16 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\\hline
-%17 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0
-%\\\midrule
-18 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\\hline
-19 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\\hline
-20 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\\hline
-21 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
-22 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
-23 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
-\textbf{Total} & 4 & 1 & 1 & 7 & 0 & 1 & 1 & 5
-\end{tabular}
-\label{tab:first_day_hh106}
-\end{table}	
-	\end{columns}
-\end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}{Experiments and results}
-	\begin{columns}[T]
-	\column{.4\textwidth}
-		\begin{itemize}
-			\item The HH106 dataset
-			\begin{itemize}
-				\item \textbf{Estimations} based on the \textbf{59 days}
-				\item Requests for five different hours
+				\item Static
+				\item Static-Inv
+				\item Mobile
+				\item Mobile-Inv			
+				\item Shift
 			\end{itemize}
 		\end{itemize}
-	\column{.65\textwidth}
-	\vspace{-.5cm}
-\begin{table}
+		\column{.6\textwidth}
+		\begin{table}
+		\tiny
+		\centering
+%		\caption[Mug's position recorded in five setups by the recording mode of our proposal.]{Mug's position recorded in five setups by the recording mode of our proposal.}
+		\begin{tabular}{c|cccccccccc}\hline
+		\multirow{3}{*}{Pattern}                                         & \multicolumn{10}{c}{Recording hours}\\
+		                                         & \multicolumn{5}{c}{Morning} & \multicolumn{5}{c}{Evening}\\
+		  & 3 & 5 & 7 & 9 & 11~ & ~15 & 17 & 19 & 21 & 23  \\\hline
+		\textit{Static} & A & A & A & A & A~ & ~H & H & H & H & H
+		\\\hline
+		\textit{Static-Inv} & H & H & H & H & H~ & ~A & A & A & A & A
+		\\\hline
+		\textit{Mobile} & A & H & A & H & A~ & ~H & A & H & A & H
+		\\\hline
+		\textit{Mobile-Inv} & H & A & H & A & H~ & ~A & H & A & H & A
+		\\\hline
+		\textit{Shift} & H & H & H & H & A~ & ~A & A & A & A & H
+		%\\\midrule
+		%6 & H & H & H & H & A~ & ~A & A & A & A & H
+		\\\hline
+		\end{tabular}
+%		\label{tab:objects_presence_setups}
+		\end{table}		
+%		\column{.4\textwidth}	
+\\
+		\begin{columns}
+		\column{.6\textwidth}
+\begin{table}[!h]
 \tiny
 \centering
-%\caption[The human's presence estimation from our OS system.]{The human's presence estimation from our OS system.}
-\begin{tabular}{c|cccccccc}\hline
-\textbf{Req.}  & \multicolumn{8}{c}{\textbf{Locations}}\\
-\textbf{Hours}  & \textbf{W.A.} & \textbf{Liv.R.}    & \textbf{Kit.}    & \textbf{BedR.}    & \textbf{Chair}    & \textbf{Din.R.}    & \textbf{BathR.} & \textbf{O.D.}  \\\cline{1-9}
-01 & 59.92 & 35.42 & 24.92 & \textbf{219.66} & 2.0 & 43.5 & 34.92 & 51.25 \\\hline
-10 & 67.42 & 38.58 & 33.83 & 106.08 & 7.83 & 69.58 & 48.33 & \textbf{115.00} \\\hline
-16 & 106.41 & 46.58 & 32.5 & 76.25 & 8.83 & 68.92 & 46.66 & \textbf{109.66} \\\hline
-18 & \textbf{108.41} & 46.08 & 29.66 & 101.25 & 7.16 & 61.75 & 42.66 & 93.50 \\\hline
-22 & 82.58 & 41.42 & 25.16 & \textbf{186.92} & 4.16 & 47.41 & 36.66 & 58.00 \\\hline
+%\caption[Ground-truth of the mug's position for every setup according to the requesting hours.]{Ground-truth of the mug's position for every setup according to the requesting hours.}
+\begin{tabular}{c|c|c}\hline
+\multirow{2}{*}{Pattern}                                           & \multicolumn{2}{c}{Requesting hours}\\
+     & ~~~12:00           & 00:00  \\\hline
+\textit{Static} & ~~~A & H
+\\\hline
+\textit{Static-Inv} & ~~~H & A
+\\\hline
+\textit{Mobile} & ~~~A & H
+\\\hline
+\textit{Mobile-Inv} & ~~~H & A
+\\\hline
+\textit{Shift} & ~~~A & H
+\\\hline
 \end{tabular}
-%\label{tab:all_days_hh106_estimations}
-\end{table}
+\label{tab:ground_truth_mugs}
+\end{table}		
+		\column{.4\textwidth}
+		\begin{figure}
+%			\begin{subfigure}{.8\columnwidth}
+				\includegraphics[width=.85\linewidth]{figs/brute_force_route2.png}
+		\end{figure}			
+		\end{columns}				
 	\end{columns}
 \end{frame}
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%\begin{frame}{Experiments and results}
-%	\begin{columns}[T]
-%		\column{.3\textwidth}
-%		\begin{itemize}
-%			\item Patterns:
-%			\begin{itemize}
-%				\item Static
-%				\item Static-Inv
-%				\item Mobile
-%				\item Mobile-Inv			
-%				\item Shift
-%			\end{itemize}
-%		\end{itemize}
-%		\column{.6\textwidth}
-%		\begin{table}
-%		\tiny
-%		\centering
-%		\begin{tabular}{c|cccccccccc}\hline
-%		\multirow{3}{*}{Pattern}                                         & \multicolumn{10}{c}{Recording hours}\\
-%		                                         & \multicolumn{5}{c}{Morning} & \multicolumn{5}{c}{Evening}\\
-%		  & 3 & 5 & 7 & 9 & 11~ & ~15 & 17 & 19 & 21 & 23  \\\hline
-%		\textit{Static} & A & A & A & A & A~ & ~H & H & H & H & H
-%		\\\hline
-%		\textit{Static-Inv} & H & H & H & H & H~ & ~A & A & A & A & A
-%		\\\hline
-%		\textit{Mobile} & A & H & A & H & A~ & ~H & A & H & A & H
-%		\\\hline
-%		\textit{Mobile-Inv} & H & A & H & A & H~ & ~A & H & A & H & A
-%		\\\hline
-%		\textit{Shift} & H & H & H & H & A~ & ~A & A & A & A & H
-%		\\\hline
-%		\end{tabular}
-%		\end{table}		
-%\\
-%		\begin{columns}
-%		\column{.6\textwidth}
-%\begin{table}[!h]
-%\tiny
-%\centering
-%\begin{tabular}{c|cc}\hline
-%\multirow{2}{*}{Pattern}                                           & \multicolumn{2}{c}{Requesting hours}\\
-%     & ~~~12           & 00  \\\hline
-%\textit{Static} & ~~~A & H
-%\\\hline
-%\textit{Static-Inv} & ~~~H & A
-%\\\hline
-%\textit{Mobile} & ~~~A & H
-%\\\hline
-%\textit{Mobile-Inv} & ~~~H & A
-%\\\hline
-%\textit{Shift} & ~~~A & H
-%\\\hline
-%\end{tabular}
-%\label{tab:ground_truth_mugs}
-%\end{table}		
-%		\column{.4\textwidth}
-%		\begin{figure}
-%				\includegraphics[width=.85\linewidth]{figs/brute_force_route2.png}
-%		\end{figure}			
-%		\end{columns}				
-%	\end{columns}
-%\end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -722,6 +568,185 @@
 %					\includegraphics[width=.5\linewidth]{figs/.png}
 %			\end{figure}		
 	\end{columns}				
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Experiments and results}
+	\begin{columns}[T]
+	\column{.4\textwidth}
+		\centering	
+		\begin{itemize}
+			\item HH106 dataset\footnotemark[16]
+		\end{itemize}
+	\column{.6\textwidth}
+		\centering
+		\begin{figure}
+%			\begin{subfigure}{.8\columnwidth}
+				\includegraphics[width=.6\linewidth]{figs/hh106sensor_map.png}
+				\caption{\tiny The floorplan of the single-resident apartment from the HH106 dataset.}
+		\end{figure}		
+	\end{columns}	
+		\footnotetext[16]{\tiny Dataset available at \url{http://casas.wsu.edu/datasets/}.}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Experiments and results}
+	\begin{columns}[T]
+	\column{.4\textwidth}
+		\begin{itemize}
+			\item The HH106 dataset:
+			\begin{itemize}
+				\item \textbf{Long-term dataset} (60 days)
+				\item \textbf{Motion sensors} provide the \textbf{human location} at different hours of the day
+				\item The\textbf{ person mimics an object} that is moved many times every day
+				\item \textbf{59 days} of data for the \textbf{Recording mode}
+			\end{itemize}			 			 
+		\end{itemize}
+	\column{.6\textwidth}
+	\vspace{-.7cm}
+\begin{table}
+\tiny
+\centering
+%\caption[The 59 days data from HH106 used by our OS system.]{The 59 days data from HH106 used by our OS system.}
+\begin{tabular}{c|cccccccc}\hline %
+\multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Daily \\ Hours\end{tabular}}} & \multicolumn{8}{c}{\textbf{Locations}} \\
+                                      & \textbf{W.A.} & \textbf{Liv.R.}    & \textbf{Kit.}    & \textbf{BedR.}    & \textbf{Chair}    & \textbf{Din.R.}    & \textbf{BathR.} & \textbf{O.D.}  \\ \hline
+00 & 0 & 2 & 1 & 21 & 0 & 1 & 3 & 2 \\\hline
+01 & 2 & 1 & 3 & 20 & 0 & 1 & 1 & 2 \\\hline
+02 & 3 & 5 & 1 & 29 & 0 & 0 & 0 & 0 \\\hline
+03 & 1 & 4 & 3 & 24 & 0 & 0 & 0 & 2 \\\hline
+04 & 3 & 0 & 1 & 28 & 0 & 2 & 0 & 1 \\\hline
+05 & 0 & 1 & 2 & 35 & 0 & 1 & 0 & 1 \\\hline
+06 & 1 & 3 & 3 & 31 & 0 & 1 & 4 & 10 \\\hline
+07 & 1 & 4 & 4 & 10 & 0 & 6 & 5 & 7 \\\hline
+08 & 3 & 2 & 4 & 4 & 1 & 14 & 8 & 5 \\\hline
+09 & 6 & 2 & 1 & 1 & 0 & 15 & 3 & 12 \\\hline
+10 & 3 & 1 & 1 & 3 & 0 & 3 & 11 & 19 \\\hline
+11 & 6 & 3 & 7 & 2 & 0 & 3 & 5 & 13 \\\hline
+12 & 7 & 3 & 2 & 1 & 1 & 14 & 4 & 12 \\\hline
+13 & 5 & 8 & 3 & 0 & 5 & 4 & 6 & 13 \\\hline
+14 & 4 & 5 & 1 & 0 & 2 & 5 & 4 & 16 \\\hline
+15 & 9 & 4 & 5 & 0 & 0 & 4 & 2 & 17 \\\hline
+16 & 16 & 5 & 4 & 1 & 2 & 6 & 2 & 7 \\\hline
+17 & 16 & 2 & 4 & 2 & 0 & 9 & 1 & 7 \\\hline
+18 & 21 & 4 & 3 & 1 & 0 & 3 & 2 & 13 \\\hline
+19 & 14 & 5 & 2 & 1 & 0 & 4 & 2 & 11 \\\hline
+20 & 13 & 8 & 2 & 0 & 0 & 6 & 7 & 2 \\\hline
+21 & 14 & 3 & 0 & 8 & 0 & 13 & 8 & 1 \\\hline
+22 & 1 & 3 & 2 & 37 & 0 & 1 & 6 & 0 \\\hline
+23 & 1 & 2 & 0 & 34 & 1 & 1 & 1 & 0 \\\hline
+\textbf{Total} & 150 & 80 & 59 & 293 & 12 & 117 & 85 & 173
+\end{tabular}
+%\label{tab:all_days_hh106}
+\end{table}	
+	\end{columns}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Experiments and results}
+	\begin{columns}[T]
+	\column{.4\textwidth}
+		\begin{itemize}
+			\item The HH106 dataset
+			\begin{itemize}
+				\item The \textbf{60th day} as the \textbf{ground-truth}
+			\end{itemize}			 
+		\end{itemize}
+	\column{.6\textwidth}
+	\vspace{-.5cm}
+	\hspace{2cm}
+\begin{table}
+\tiny
+\centering
+%\caption[The data from the last day of HH106 used to test our OS system.]{The data from the last day of HH106 used to test our OS system.}
+\begin{tabular}{c|cccccccc}\hline
+\multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Daily \\ Hours\end{tabular}}}  & \multicolumn{8}{c}{\textbf{Locations}}\\
+      & \textbf{W.A.} & \textbf{Liv.R.}    & \textbf{Kit.}    & \textbf{BedR.}    & \textbf{Chair}    & \textbf{Din.R.}    & \textbf{BathR.} & \textbf{O.D.}  \\\cline{1-9}
+%00 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0
+%\\\midrule
+01 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
+02 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
+%03 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0
+%\\\midrule
+04 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
+05 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
+06 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\\hline
+%07 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0
+%\\\midrule
+08 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 \\\hline
+09 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 \\\hline
+10 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\\hline
+11 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 \\\hline
+12 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\\hline
+13 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\\hline
+14 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\\hline
+15 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\\hline
+16 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\\hline
+%17 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0
+%\\\midrule
+18 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\\hline
+19 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\\hline
+20 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\\hline
+21 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
+22 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
+23 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
+\textbf{Total} & 4 & 1 & 1 & 7 & 0 & 1 & 1 & 5
+\end{tabular}
+\label{tab:first_day_hh106}
+\end{table}	
+	\end{columns}
+\end{frame}
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{Experiments and results}
+	\begin{columns}[T]
+	\column{.4\textwidth}
+		\begin{itemize}
+			\item The HH106 dataset
+			\begin{itemize}
+				\item \textbf{Estimations} based on the \textbf{59 days}
+				\item Requests for five different hours
+			\end{itemize}
+		\end{itemize}
+	\column{.65\textwidth}
+	\vspace{-.5cm}
+\begin{table}
+\tiny
+\centering
+\caption[The human's presence estimation from our OS system.]{The human's presence estimation from our OS system.}
+\begin{tabular}{c|cccccccc}\hline
+\textbf{Req.}  & \multicolumn{8}{c}{\textbf{Locations}}\\
+\textbf{Hours}  & \textbf{W.A.} & \textbf{Liv.R.}    & \textbf{Kit.}    & \textbf{BedR.}    & \textbf{Chair}    & \textbf{Din.R.}    & \textbf{BathR.} & \textbf{O.D.}  \\\cline{1-9}
+01 & 59.92 & 35.42 & 24.92 & \textbf{219.66} & 2.0 & 43.5 & 34.92 & 51.25 \\\hline
+10 & 67.42 & 38.58 & 33.83 & 106.08 & 7.83 & 69.58 & 48.33 & \textbf{115.00} \\\hline
+16 & 106.41 & 46.58 & 32.5 & 76.25 & 8.83 & 68.92 & 46.66 & \textbf{109.66} \\\hline
+18 & \textbf{108.41} & 46.08 & 29.66 & 101.25 & 7.16 & 61.75 & 42.66 & 93.50 \\\hline
+22 & 82.58 & 41.42 & 25.16 & \textbf{186.92} & 4.16 & 47.41 & 36.66 & 58.00 \\\hline
+\end{tabular}
+%\label{tab:all_days_hh106_estimations}
+\end{table}
+\vspace{-.5cm}
+\begin{table}
+\tiny
+\centering
+\caption[The data from the last day of HH106 used to test our OS system.]{The data from the last day of HH106 used to test our OS system.}
+\begin{tabular}{c|cccccccc}\hline %
+\multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Daily \\ Hours\end{tabular}}} & \multicolumn{8}{c}{\textbf{Locations}} \\
+                                      & \textbf{W.A.} & \textbf{Liv.R.}    & \textbf{Kit.}    & \textbf{BedR.}    & \textbf{Chair}    & \textbf{Din.R.}    & \textbf{BathR.} & \textbf{O.D.}  \\ \hline
+01 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
+10 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\\hline
+16 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\\hline
+18 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\\hline
+22 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\\hline
+\end{tabular}
+%\label{tab:all_days_hh106}
+\end{table}	
+
+	\end{columns}
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================

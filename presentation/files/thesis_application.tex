@@ -32,26 +32,41 @@
 %========================================== ############# ====================================================== 
 \begin{frame}{Introduction}
 	\begin{columns}[T]
-		\column{.6\textwidth}
+		\column{.55\textwidth}
 		\begin{itemize}[<+->]
-			\item \textbf{Instor} + \textbf{Phi Group} = \textbf{Jaci}
+			\item \textbf{Instor} + \textbf{Phi Group} = \textbf{Jaci}\footnotemark[11]
 			\item An \textbf{autonomous SR} for indoor environment \textbf{disinfection}
-			\item \textbf{18 UV-lights} and a kit of sensors
+			\item \textbf{18 UV-lights} and a sensor kit
 			\item \textbf{Limitations}
 			\begin{itemize}[<+->]
 				\item Human dependency to move it between rooms
-				\item Lack of object-oriented disinfection mode
+				\item The lack of an object-oriented disinfection mode
 			\end{itemize}
 			\item How to \textbf{overcome} such \textbf{limitations}?
-			\item No experiments were allowed
+%			\item No experiments were allowed
 		\end{itemize}			
-		\column{.4\textwidth}
+		\column{.45\textwidth}
 			\centering
 			\begin{figure}
-				 \includegraphics[width=.5\linewidth]{figs/jaci_mathias.jpg}
-				 \caption{\tiny Jaci at Instor.}
-	         \end{figure}			
-	\end{columns} 
+
+	         \end{figure}		
+				\begin{figure}
+				    \begin{subfigure}{.48\columnwidth}	
+				    		\centering								
+						\includegraphics[width=1\linewidth]{figs/jaci_dose_map.png}
+						\caption{\tiny Jaci in simulation.}												
+				    	\end{subfigure}
+				    \begin{subfigure}{.48\columnwidth}												
+				    		\centering		
+				    		\includegraphics[width=.7\linewidth]{figs/jaci_mathias.jpg}
+				    		\caption{\tiny Jaci at Instor.}
+				    	\end{subfigure}						
+%					\caption{\tiny Experiments with the physical robot.}										    	
+				\end{figure}	         	         
+	         
+	         	
+	\end{columns} %
+	\footnotetext[11]{\tiny Mantelli, Mathias, et al. ``\textit{Autonomous Environment Disinfection Based on Dynamic UV-C Irradiation Map}.'' IEEE Robotics and Automation Letters, 2022}
 \end{frame}
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
@@ -71,7 +86,7 @@
 		\column{.4\textwidth}
 			\centering
 			\begin{figure}
-				 \includegraphics[width=.5\linewidth]{figs/hospital_simulation.png}
+				 \includegraphics[width=.9\linewidth]{figs/hospital_simulation.png}
 				 \caption{\tiny Jaci at Instor.}
 	         \end{figure}			
 	\end{columns} 
@@ -96,7 +111,7 @@
 		\column{.4\textwidth}
 			\centering
 			\begin{figure}
-				 \includegraphics[width=.8\linewidth]{figs/hospital_simulation.png}
+				 \includegraphics[width=.9\linewidth]{figs/hospital_simulation.png}
 				 \caption{\tiny Jaci at Instor.}
 	         \end{figure}			
 	\end{columns} 
@@ -108,13 +123,13 @@
 	\begin{columns}[T]
 		\column{.6\textwidth}
 		\begin{itemize}[<+->]
-			\item How about the object-oriented disinfection?
+			\item How about the object-oriented disinfection mode?
 			\item LSOS deployed to Jaci:
 			\begin{itemize}[<+->]
-				\item Jaci could search for a target object
-				\item Find and object and disinfect it
+				\item Jaci could search for a target object within a room
+				\item Find and disinfect the target
 				\item Faster and specific disinfections
-				\item Booked disinfections for different times
+				\item Booked disinfections for different periods
 				\item Human out of the loop
 			\end{itemize}
 			\item \textit{``Jaci, disinfect the laptop at room 5 at 11 am''}
@@ -134,9 +149,9 @@
 	\begin{columns}[T]
 		\column{.6\textwidth}
 		\begin{itemize}[<+->]
-			\item Both our NSOS and LSOS systems would improve the Jaci's performance
 			\item Jaci's system and sensors are enough for both of our systems
 			\item The discussion is based on the previous experiments
+			\item Both our NSOS and LSOS systems would improve the Jaci's performance
 			\item Deploy our systems and carry out experiments
 		\end{itemize}			
 		\column{.4\textwidth}

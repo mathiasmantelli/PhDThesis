@@ -198,8 +198,8 @@
 		\end{itemize}
 		\column{.65\textwidth}
 			\vspace{1.1cm}
-			$\Bigg\}$\textit{\textbf{Foundation} of our system}\\
-			$\}$ \textit{\textbf{Core} of our system}
+			$\Bigg\}$\textit{\textbf{Foundation} of our NSOS system}\\
+			$\}$ \textit{\textbf{Core} of our NSOS system}
 	\end{columns}
 \end{frame} 
 %========================================== ############# ======================================================        
@@ -764,9 +764,9 @@
 	\begin{columns}
 		\column{0.55\textwidth}
 		\begin{itemize}[<+->]
-			\item \textbf{Goal:} \textbf{estimate} how the \textbf{door signs are organized} in the environment
-			\item \textbf{History} of a certain amount of the \textbf{most recent robot’s orientations} (Robot orientation)
+			\item \textbf{Goal:} \textbf{estimate} how the \textbf{door signs are organised} in the environment
 			\item \textbf{History} of a certain amount of the \textbf{most recent robot’s orientations} when a \textbf{door sign has been recognized} (Door orientation)			
+			\item \textbf{History} of a certain amount of the \textbf{most recent robot’s orientations} (Robot orientation)
 		\end{itemize}
 		\column{0.55\textwidth}
 			\centering	
@@ -860,7 +860,7 @@
 				\item \textbf{Geometric} part:\\$\mathtt{G}({c}) = \frac{\big(\varphi_o({c}) + \varphi_r({c})\big)\varphi_d({c}) + \varphi_d({c})}{3.0}$
 			\end{itemize}	
 %I SHOULD UNCOMMENT THIS ########################################################################################				
-			\item Find the \textbf{most promising frontier}: $\varphi({c}) = \mathtt{S}({c}) * \alpha + \mathtt{G}({c}) * (1.0 - \alpha)$	\\ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~${c}_* = \underset{{c} \in \mathbf{C}}{\textup{\textup{arg max}}}(\varphi({c}))$			
+			\item Find the \textbf{most promising frontier}: $\varphi({c}) = \mathtt{S}({c})\alpha + \mathtt{G}({c})(1.0 - \alpha)$	\\ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~${c}_* = \underset{{c} \in \mathbf{C}}{\textup{\textup{arg max}}}(\varphi({c}))$			
 %I SHOULD UNCOMMENT THIS ########################################################################################
 		\end{itemize}
 		\column{0.15\textwidth}
