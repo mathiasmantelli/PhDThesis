@@ -310,14 +310,14 @@
 %========================================== ############# ======================================================
 \begin{frame}[noframenumbering]{Equations - Semantic OS System based on text}
 	\begin{itemize}
-		\item Map segmentation: $\Psi({c}_k) = \sum_{c}^\mathbf{T} Q({c})K(\left \| {c} - {c}_k \right \|)$\\~~~~~~~~~~~~~~~~~~~~~~~~~~$Q({c}) = 
+		\item Map segmentation:\\ $\Psi(\mathbf{m}_0) = \frac{1}{|T|}\sum_{\mathbf{m}_i}^\mathbf{T} Q(\mathbf{m}_i, \mathbf{m}_0)UK(\left \| \mathbf{m}_i - \mathbf{m}_0 \right \|)$\\$Q(\mathbf{m}_i, \mathbf{m}_0) = 
 \begin{cases}
-1 & \text{, if ${c}$ is a free cell} \\ 
+1 & \text{, if $\mathbf{m}_i$ is a cell that belongs to the free space region connected to $\mathbf{m}_0$} \\ 
 0 & \text{, otherwise.} 
-\end{cases}$\\~~~~~~~~~~~~~~~~~~~~~~~~~~$K(d) = \begin{cases}
+\end{cases}$\\$UK(d) = \begin{cases}
 a & \text{, if $d \leq r$} \\ 
 0 & \text{, otherwise,} 
-\end{cases}$\\~~~~~~~~~~~~~~~~~~~~~~~~~~$\Upsilon({c}_k) = \left \lfloor  \Psi({c}_k) / \delta  \right \rfloor$
+\end{cases}$\\$\Upsilon(\mathbf{m}_0) = \left \lfloor  \frac{\Psi(\mathbf{m}_0)}{\delta}  \right \rfloor$
 	\end{itemize}
 \end{frame}
 %========================================== ############# ======================================================
@@ -325,7 +325,7 @@ a & \text{, if $d \leq r$} \\
 %========================================== ############# ======================================================
 \begin{frame}[noframenumbering]{Equations - Semantic OS System based on text}
 	\begin{itemize}
-		\item Growing Direction factor: $\zeta\big(S({c})\big) = \frac{\Big(L^<\big(S({c})\big) - L^>\big(S({c})\big)\Big)}{\max\Big(L^<\big(S({c})\big)+L^>\big(S({c})\big), w_g\Big)},$\\~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~$\gamma(\theta_f({c})) = 1.0 + \left | \frac{\theta_f({c}) - \theta_i\big(S({c})\big)}{\pi} \right | * - 2.0$\\~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~$\varphi_g({c}) = \frac{\zeta\big(S({c})\big) * \gamma\big(\theta_f({c})\big) + 1.0}{2.0}$
+		\item Growing Direction factor:\\$\zeta\big(S(\mathbf{m}_i)\big) = \frac{\Big(SL\big(S(\mathbf{m}_i)\big) - BL\big(S(\mathbf{m}_i)\big)\Big)}{\max\Big(SL\big(S(\mathbf{m}_i)\big)+BL\big(S(\mathbf{m}_i)\big), w_g\Big)}$\\$\gamma(\theta_f(\mathbf{m}_i)) = 1.0 + \left | \frac{\theta_f(\mathbf{m}_i) - \theta_i\big(S(\mathbf{m}_i)\big)}{\pi} \right | (- 2.0)$\\$\varphi_g(\mathbf{m}_i) = \frac{\zeta\big(S(\mathbf{m}_i)\big) \gamma\big(\theta_f(\mathbf{m}_i)\big) + 1.0}{2.0}$
 	\end{itemize}
 \end{frame}
 %========================================== ############# ======================================================
@@ -333,7 +333,7 @@ a & \text{, if $d \leq r$} \\
 %========================================== ############# ======================================================
 \begin{frame}[noframenumbering]{Equations - Semantic OS System based on text}
 	\begin{itemize}
-		\item Parity factor: $\varphi_p({c}) = 0.5 + \frac{L^=\big(S({c})\big) - L^{\neq}\big(S({c})\big)}{\max\Big(L^=\big(S({c})\big) + L^{\neq}\big(S({c})\big), w_p\Big)}*0.5$
+		\item Parity factor:\\$\varphi_p(\mathbf{m}_i) = 0.5 + \frac{AL\big(S(\mathbf{m}_i)\big) - DL\big(S(\mathbf{m}_i)\big)}{\max\Big(AL\big(S(\mathbf{m}_i)\big) + DL\big(S(\mathbf{m}_i)\big), w_p\Big)}0.5$
 	\end{itemize}
 \end{frame}
 %========================================== ############# ======================================================
