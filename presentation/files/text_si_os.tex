@@ -192,8 +192,8 @@
 			\item Our system is composed by:
 			\begin{itemize}
 				\item Mapping 
-				\item Image Processing
 				\item Map Segmentation
+				\item Image Processing
 				\item Semantic Planner
 			\end{itemize}
 		\end{itemize}
@@ -217,11 +217,11 @@
 				\begin{itemize}
 					\item It \textbf{builds} and \textbf{updates} a \textbf{2D grid map}
 				\end{itemize}
-				\item Image Processing
+				\item Map Segmentation
 %				\begin{itemize}
 %					\item It recognizes numbers in door signs and include them into the map
 %				\end{itemize}
-				\item Map Segmentation
+				\item Image Processing
 %				\begin{itemize}
 %					\item It segments the free space of the 2D grid map
 %				\end{itemize}
@@ -262,51 +262,14 @@
 %				\begin{itemize}
 %					\item It builds and segments a 2D grid map
 %				\end{itemize}
-				\item \textbf{Image Processing}:
-				\begin{itemize}
-					\item It \textbf{recognizes numbers} in \textbf{door signs} and \textbf{include} them into the \textbf{map}
-				\end{itemize}
-				\item Map Segmentation
-%				\begin{itemize}
-%					\item It segments the free space of the 2D grid map
-%				\end{itemize}
-%				\item Semantic Planner
-%				\begin{itemize}
-%					\item It estimates where the SR should during the OS
-%				\end{itemize}
-			\end{itemize}
-		\end{itemize}
-		\column{.5\textwidth}
-			\begin{figure}
-			    		\centering			
-			    		\includegraphics[width=.65\linewidth]{figs/image_processing.png}
-			    		\caption{\tiny Illustration of the Image Processing module detecting a door label.}			 
-	         \end{figure}	
-	\end{columns}
-	\footnotetext[14]{\tiny Borenstein, J., and Yoram K. ``\textit{Histogramic in-motion mapping for mobile robot obstacle avoidance}.'' Transactions on robotics and automation. 1991.}
-	\footnotetext[15]{\tiny Grisetti, G., Stachniss, C., and Burgard, W. ``\textit{Improving grid-based slam with rao-blackwellized particle filters by adaptive proposals and selective resampling.}'' ICRA. 2005.}	
-\end{frame} 
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-%========================================== ############# ======================================================
-\begin{frame}{NSOS system overview}
-	\begin{columns}[T]
-		\column{.5\textwidth}
-		\begin{itemize}
-			\item Foundation of the NSOS system:
-			\begin{itemize}
-				\item Mapping 
-%				\begin{itemize}
-%					\item It builds and segments a 2D grid map
-%				\end{itemize}
-				\item Image Processing
-%				\begin{itemize}
-%					\item It recognizes numbers in door signs and include them into the map
-%				\end{itemize}
 				\item \textbf{Map Segmentation}:
 				\begin{itemize}
 					\item It \textbf{segments} the \textbf{free space} of the \textbf{2D grid map}
 				\end{itemize}
+				\item Image Processing
+%				\begin{itemize}
+%					\item It recognizes numbers in door signs and include them into the map
+%				\end{itemize}
 	%			\item Semantic Planner
 %				\begin{itemize}
 %					\item It estimates where the SR should during the OS
@@ -326,8 +289,45 @@
 				 \caption{\tiny The 2D grid maps used in this work.}		 
 	         \end{figure}	
 	\end{columns}
-	\footnotetext[14]{\tiny Borenstein, J., and Yoram K. ``\textit{Histogramic in-motion mapping for mobile robot obstacle avoidance}.'' Transactions on robotics and automation. 1991.}
-	\footnotetext[15]{\tiny Grisetti, G., Stachniss, C., and Burgard, W. ``\textit{Improving grid-based slam with rao-blackwellized particle filters by adaptive proposals and selective resampling.}'' ICRA. 2005.}	
+%	\footnotetext[14]{\tiny Borenstein, J., and Yoram K. ``\textit{Histogramic in-motion mapping for mobile robot obstacle avoidance}.'' Transactions on robotics and automation. 1991.}
+%	\footnotetext[15]{\tiny Grisetti, G., Stachniss, C., and Burgard, W. ``\textit{Improving grid-based slam with rao-blackwellized particle filters by adaptive proposals and selective resampling.}'' ICRA. 2005.}	
+\end{frame} 
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+%========================================== ############# ======================================================
+\begin{frame}{NSOS system overview}
+	\begin{columns}[T]
+		\column{.5\textwidth}
+		\begin{itemize}
+			\item Foundation of the NSOS system:
+			\begin{itemize}
+				\item Mapping 
+%				\begin{itemize}
+%					\item It builds and segments a 2D grid map
+%				\end{itemize}
+				\item Map Segmentation
+%				\begin{itemize}
+%					\item It segments the free space of the 2D grid map
+%				\end{itemize}
+				\item \textbf{Image Processing}:
+				\begin{itemize}
+					\item It \textbf{recognizes numbers} in \textbf{door signs} and \textbf{include} them into the \textbf{map}
+				\end{itemize}
+%				\item Semantic Planner
+%				\begin{itemize}
+%					\item It estimates where the SR should during the OS
+%				\end{itemize}
+			\end{itemize}
+		\end{itemize}
+		\column{.5\textwidth}
+			\begin{figure}
+			    		\centering			
+			    		\includegraphics[width=.65\linewidth]{figs/image_processing.png}
+			    		\caption{\tiny Illustration of the Image Processing module detecting a door label.}			 
+	         \end{figure}	
+	\end{columns}
+%	\footnotetext[14]{\tiny Borenstein, J., and Yoram K. ``\textit{Histogramic in-motion mapping for mobile robot obstacle avoidance}.'' Transactions on robotics and automation. 1991.}
+%	\footnotetext[15]{\tiny Grisetti, G., Stachniss, C., and Burgard, W. ``\textit{Improving grid-based slam with rao-blackwellized particle filters by adaptive proposals and selective resampling.}'' ICRA. 2005.}	
 \end{frame} 
 %========================================== ############# ======================================================
 %========================================== ############# ======================================================
