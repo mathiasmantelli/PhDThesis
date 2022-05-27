@@ -213,7 +213,7 @@
 		\begin{itemize}
 			\item Foundation of the NSOS system:
 			\begin{itemize}
-				\item \textbf{Mapping} 
+				\item \textbf{Mapping}: 
 				\begin{itemize}
 					\item It \textbf{builds} and \textbf{updates} a \textbf{2D grid map}
 				\end{itemize}
@@ -262,7 +262,7 @@
 %				\begin{itemize}
 %					\item It builds and segments a 2D grid map
 %				\end{itemize}
-				\item \textbf{Image Processing}
+				\item \textbf{Image Processing}:
 				\begin{itemize}
 					\item It \textbf{recognizes numbers} in \textbf{door signs} and \textbf{include} them into the \textbf{map}
 				\end{itemize}
@@ -303,7 +303,7 @@
 %				\begin{itemize}
 %					\item It recognizes numbers in door signs and include them into the map
 %				\end{itemize}
-				\item \textbf{Map Segmentation}
+				\item \textbf{Map Segmentation}:
 				\begin{itemize}
 					\item It \textbf{segments} the \textbf{free space} of the \textbf{2D grid map}
 				\end{itemize}
@@ -950,8 +950,8 @@
 \begin{frame}[noframenumbering]{Door and Robot Orientations}
 	\begin{columns}
 		\column{0.55\textwidth}
-		\begin{itemize}[<+->]
-			\item \textbf{Histograms} are computed (each bin corresponds to an angle)
+		\begin{itemize}
+			\item \textbf{Histograms} are computed (each bin corresponds to an angle):
 			\begin{itemize}
 				\item $\varphi_o({c}) = H_d[\theta_f({c})]$
 				\item $\varphi_r({c}) = H_r[\theta_f({c})]$
@@ -1017,7 +1017,7 @@
 				\item \textbf{Semantic}:\\$\mathtt{SF}(\mathbf{m}_i) = \varphi_g(\mathbf{m}_i) \varphi_p(\mathbf{m}_i)$			
 			\end{itemize}
 			\begin{itemize}
-				\item \textbf{Geometric} part:\\$\mathtt{GF}(\mathbf{m}_i) = \frac{\big(\varphi_o(\mathbf{m}_i) + \varphi_r(\mathbf{m}_i)\big)\varphi_c(\mathbf{m}_i) + \varphi_c(\mathbf{m}_i)}{3.0}$
+				\item \textbf{Geometric}:\\$\mathtt{GF}(\mathbf{m}_i) = \frac{\big(\varphi_o(\mathbf{m}_i) + \varphi_r(\mathbf{m}_i)\big)\varphi_c(\mathbf{m}_i) + \varphi_c(\mathbf{m}_i)}{3.0}$
 			\end{itemize}	
 %I SHOULD UNCOMMENT THIS ########################################################################################				
 			\item Find the \textbf{most promising frontier}: $\varphi(\mathbf{m}_i) = \mathtt{SF}(\mathbf{m}_i)\alpha + \mathtt{GF}(\mathbf{m}_i)(1.0 - \alpha)$	\\ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~${\mathbf{m}_i}^* = \underset{\mathbf{m}_i \in \mathbf{C}}{\textup{\textup{arg max}}}(\varphi(\mathbf{m}_i))$			
@@ -1718,7 +1718,7 @@
 				\item Laptop
 				\item Inf, UFRGS
 			\end{itemize}			
-			\item Goal-door: 232
+			\item Goal-door: \textbf{232}
 		\end{itemize}
 		\column{0.55\textwidth}					
 				\begin{figure}
