@@ -137,7 +137,7 @@ where $r$ is the radius and $d$ is the Manhattan distance from the current cell 
 
 %The algorithm, in practice, is working over $\mathbf{M}$. Therefore, $\Psi$ is defined as a sum instead of an integral. 
 
-According to Equation \ref{eq:freeCell}, $\Psi(\cdot)$ returns different density estimations based on the number of obstacle or unknown cells are surrounding $\bs{m}_0$. Assuming that the Segmentation module considers different values, and given that Equation~\ref{eq:kerneldefinition} estimates the density of free space´ surrounding a cell $\bs{m}_0 \in \bs{m}$, $\Psi(\cdot)$ can be used in the Segmentation module as
+According to Equation \ref{eq:freeCell}, $\Psi(\cdot)$ returns different density estimations based on the number of obstacle or unknown cells are surrounding $\bs{m}_0$. Assuming that the Segmentation module considers different values, and given that Equation~\ref{eq:kerneldefinition} estimates the density of free space surrounding a cell $\bs{m}_0 \in \bs{m}$, $\Psi(\cdot)$ can be used in the Segmentation module as
 \begin{equation}
 \label{eq:corridorNotcorridor}
     \Upsilon(\bs{m}_0) = \left \lfloor  \frac{\Psi(\bs{m}_0)}{\delta}  \right \rfloor
