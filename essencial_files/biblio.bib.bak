@@ -70,7 +70,7 @@
   year={1991}
 }
 
-@article{Burgard1998Integrating,
+@inproceedings{Burgard1998Integrating,
   title={Integrating global position estimation and position tracking for mobile robots: the Dynamic Markov Localization approach},
   author={Burgard, Wolfram and Derr, Andrcas and Fox, Dieter and Cremers, Armin B},
   booktitle={Proceedings. 1998 IEEE/RSJ International Conference on Intelligent Robots and Systems. Innovations in Theory, Practice and Applications (Cat. No. 98CH36190)},
@@ -80,7 +80,7 @@
   organization={IEEE}
 }
 
-@article{Dellaert1999Monte,
+@inproceedings{Dellaert1999Monte,
   title={Monte carlo localization for mobile robots},
   author={Dellaert, Frank and Fox, Dieter and Burgard, Wolfram and Thrun, Sebastian},
   booktitle={Proceedings 1999 IEEE International Conference on Robotics and Automation (Cat. No. 99CH36288C)},
@@ -101,7 +101,7 @@
   publisher={IEEE}
 }
 
-@article{Murphy1999Bayesian,
+@inproceedings{Murphy1999Bayesian,
   title={Bayesian Map Learning in Dynamic Environments.},
   author={Murphy, Kevin P and others},
   booktitle={NIPS},
@@ -116,7 +116,7 @@
   year={2000}
 }
 
-@article{Grisettiyz2005Improving,
+@inproceedings{Grisettiyz2005Improving,
   title={Improving grid-based slam with rao-blackwellized particle filters by adaptive proposals and selective resampling},
   author={Grisettiyz, Giorgio and Stachniss, Cyrill and Burgard, Wolfram},
   booktitle={Proceedings of the 2005 IEEE international conference on robotics and automation},
@@ -136,7 +136,7 @@
   publisher={IEEE}
 }
 
-@article{Salas2013Slam++,
+@inproceedings{Salas2013Slam++,
   title={Slam++: Simultaneous localisation and mapping at the level of objects},
   author={Salas-Moreno, Renato F and Newcombe, Richard A and Strasdat, Hauke and Kelly, Paul HJ and Davison, Andrew J},
   booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
@@ -144,7 +144,7 @@
   year={2013}
 }
 
-@article{Engel2014Lsd,
+@inproceedings{Engel2014Lsd,
   title={LSD-SLAM: Large-scale direct monocular SLAM},
   author={Engel, Jakob and Sch{\"o}ps, Thomas and Cremers, Daniel},
   booktitle={European conference on computer vision},
@@ -562,7 +562,7 @@ year = {2015}
   title={Mobile Robot Navigation in Indoor Environments: Geometric, Topological, and Semantic Navigation},
   author={Barber, Ramon and Crespo, Jonathan and Gomez, Clara and Hernandez, Alejandra C and Galli, Marina},
   year={2018},
-  publisher={IntechOpen}
+  booktitle={IntechOpen}
 }
 
 @book{Riemer2015TheRoutledge,
@@ -643,7 +643,7 @@ year = 1919
   publisher={SAGE Publications Sage UK: London, England}
 }
 
-@inproceedings{Paulius2019Survey,
+@article{Paulius2019Survey,
   title={A survey of knowledge representation in service robotics},
   author={Paulius, David and Sun, Yu},
   journal={Robotics and Autonomous Systems},
@@ -653,7 +653,7 @@ year = 1919
   publisher={Elsevier}
 }
 
-@inproceedings{Torresen2020Special,
+@article{Torresen2020Special,
   title={Special Issue on Elderly Care Robotics -- Technology and Ethics},
   author={Torresen, Jim and Kurazume, Ryo and Prestes, Edson},
   journal={Journal of Intelligent \& Robotic Systems},
@@ -672,7 +672,7 @@ year = 1919
   publisher={Emerald Publishing Limited}
 }
 
-@inproceedings{Torresen2018Robot,
+@article{Torresen2018Robot,
   title={Robot companions for older people -- Ethical concerns},
   author={Torresen, Jim and Schulz, Trenton and Uddin, Zia and Khaksar, Weria and Prestes, Edson},
   journal={International Conference on Robot Ethics and Standards},
@@ -750,7 +750,7 @@ year = 1919
   organization={IEEE}
 }
 
-@inproceedings{Wang2018Efficient,
+@article{Wang2018Efficient,
   title={Efficient object search with belief road map using mobile robot},
   author={Wang, Chaoqun and Cheng, Jiyu and Wang, Jiankun and Li, Xintong and Meng, Max Q-H},
   journal={IEEE Robotics and Automation Letters},
@@ -780,7 +780,7 @@ articleno = {19},
 numpages = {8}
 }
 
-@inproceedings{Ye1999Sensor,
+@article{Ye1999Sensor,
   title={Sensor planning for 3D object search},
   author={Ye, Yiming and Tsotsos, John K},
   journal={Computer Vision and Image Understanding},
@@ -865,7 +865,7 @@ numpages = {8}
   organization={IEEE}
 }
 
-@inproceedings{Afif2019ANovel,
+@article{Afif2019ANovel,
 author = {Afif, Mouna and Ayachi, Riadh and Said, Yahia and Pissaloux, Edwige and Atri, Mohamed},
 year = {2019},
 month = {07},
@@ -876,7 +876,7 @@ journal = {Artificial Intelligence Advances},
 doi = {10.30564/aia.v1i1.925}
 }
 
-@inproceedings{Cook2010Learning,
+@article{Cook2010Learning,
   title={Learning setting-generalized activity models for smart spaces},
   author={Cook, Diane J},
   journal={IEEE intelligent systems},
@@ -917,7 +917,7 @@ doi = {10.30564/aia.v1i1.925}
   publisher={Elsevier}
 }
 
-@article{Pangercic2012Semantic,
+@inproceedings{Pangercic2012Semantic,
   title={Semantic object maps for robotic housework-representation, acquisition and use},
   author={Pangercic, Dejan and Pitzer, Benjamin and Tenorth, Moritz and Beetz, Michael},
   booktitle={2012 IEEE/RSJ International Conference on Intelligent Robots and Systems},
@@ -955,7 +955,7 @@ doi = {10.30564/aia.v1i1.925}
   publisher={IEEE}
 }
 
-@article{Rosete2020Service,
+@inproceedings{Rosete2020Service,
   title={Service robots in the hospitality industry: An exploratory literature review},
   author={Rosete, Ana and Soares, Barbara and Salvadorinho, Juliana and Reis, Jo{\~a}o and Amorim, Marlene},
   booktitle={International Conference on Exploring Services Science},
@@ -1028,7 +1028,7 @@ doi = {10.30564/aia.v1i1.925}
   publisher={Wiley Online Library}
 }
 
-@article{Lin2018Qualitative,
+@inproceedings{Lin2018Qualitative,
   title={A qualitative approach for the elderly's needs in service robots design},
   author={Lin, Xiaoman and Chen, Tianning},
   booktitle={Proceedings of the 2018 International Conference on Service Robotics Technologies},
@@ -1153,7 +1153,7 @@ doi = {10.30564/aia.v1i1.925}
   note={Accessed: 2022-03-23}
 }
 
-@article{Forlizzi2006Service,
+@inproceedings{Forlizzi2006Service,
   title={Service robots in the domestic environment: a study of the roomba vacuum in the home},
   author={Forlizzi, Jodi and DiSalvo, Carl},
   booktitle={Proceedings of the 1st ACM SIGCHI/SIGART conference on Human-robot interaction},
@@ -1201,7 +1201,7 @@ doi = {10.30564/aia.v1i1.925}
   publisher={Elsevier}
 }
 
-@article{Abubakar2020Arna,
+@inproceedings{Abubakar2020Arna,
   title={Arna, a service robot for nursing assistance: System overview and user acceptability},
   author={Abubakar, Shamsudeen and Das, Sumit K and Robinson, Chris and Saadatzi, Mohammed N and Logsdon, M Cynthia and Mitchell, Heather and Chlebowy, Diane and Popa, Dan O},
   booktitle={2020 IEEE 16th International Conference on Automation Science and Engineering (CASE)},
@@ -1210,7 +1210,7 @@ doi = {10.30564/aia.v1i1.925}
   organization={IEEE}
 }
 
-@article{Thamrongaphichartkul2020Framework,
+@inproceedings{Thamrongaphichartkul2020Framework,
   title={A Framework of IoT Platform for Autonomous Mobile Robot in Hospital Logistics Applications},
   author={Thamrongaphichartkul, Kitti and Worrasittichai, Nitisak and Prayongrak, Teeraya and Vongbunyong, Supachai},
   booktitle={2020 15th International Joint Symposium on Artificial Intelligence and Natural Language Processing (iSAI-NLP)},
@@ -1389,7 +1389,7 @@ doi = {10.30564/aia.v1i1.925}
   publisher={Springer}
 }
 
-@article{Redmon2016You,
+@inproceedings{Redmon2016You,
   title={You only look once: Unified, real-time object detection},
   author={Redmon, Joseph and Divvala, Santosh and Girshick, Ross and Farhadi, Ali},
   booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
@@ -1408,7 +1408,7 @@ doi = {10.30564/aia.v1i1.925}
   publisher={ACM New York, NY, USA}
 }
 
-@article{Lin2014Microsoft,
+@inproceedings{Lin2014Microsoft,
   title={Microsoft coco: Common objects in context},
   author={Lin, Tsung-Yi and Maire, Michael and Belongie, Serge and Hays, James and Perona, Pietro and Ramanan, Deva and Doll{\'a}r, Piotr and Zitnick, C Lawrence},
   booktitle={European conference on computer vision},
@@ -1446,7 +1446,7 @@ doi = {10.30564/aia.v1i1.925}
   year={2012}
 }
 
-@article{He2016Deep,
+@inproceedings{He2016Deep,
   title={Deep residual learning for image recognition},
   author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
   booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
@@ -1595,7 +1595,7 @@ doi = {10.30564/aia.v1i1.925}
   publisher={John Wiley \& Sons}
 }
 
-@article{Maffei2016Long,
+@inproceedings{Maffei2016Long,
   title={Long-term place recognition using multi-level words of spatial densities},
   author={Maffei, Renan and Jorge, Vitor AM and Rey, Vitor F and Kolberg, Mariana and Prestes, Edson},
   booktitle={2016 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
@@ -1604,7 +1604,7 @@ doi = {10.30564/aia.v1i1.925}
   organization={IEEE}
 }
 
-@article{Prestes2003BVPExploration,
+@inproceedings{Prestes2003BVPExploration,
   author={e Silva, E.P. and Trevisan, M. and Idiart, M.A.P. and Engel, P.M.},
   booktitle={Proceedings 2003 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2003) (Cat. No.03CH37453)}, 
   title={BVP-exploration: further improvements}, 
@@ -1615,7 +1615,7 @@ doi = {10.30564/aia.v1i1.925}
   doi={10.1109/IROS.2003.1249655}
 }
 
-@article{Prestes2011Exploration,
+@inproceedings{Prestes2011Exploration,
   author={Prestes, Edson and Engel, Paulo Martins},
   booktitle={2011 IEEE/RSJ International Conference on Intelligent Robots and Systems}, 
   title={Exploration driven by local potential distortions}, 
@@ -1752,7 +1752,7 @@ doi = {10.30564/aia.v1i1.925}
   organization={IEEE}
 }
 
-@article{Conte2020Design,
+@inproceedings{Conte2020Design,
   title={Design and map-based teleoperation of a robot for disinfection of COVID-19 in complex indoor environments},
   author={Conte, Dean and Leamy, Spencer and Furukawa, Tomonari},
   booktitle={2020 IEEE International Symposium on Safety, Security, and Rescue Robotics (SSRR)},
@@ -1770,7 +1770,7 @@ doi = {10.30564/aia.v1i1.925}
   publisher={AMERICAN SOCIETY OF PLANNING OFFICIALS}
 }
 
-@article{Oosterman2010Geolocation,
+@inproceedings{Oosterman2010Geolocation,
   title={Geolocation on the iPhone by automatic street sign reading},
   author={Oosterman, Joshua and Green, Richard},
   booktitle={2010 25th International Conference of Image and Vision Computing New Zealand},
